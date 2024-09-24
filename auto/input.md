@@ -42,6 +42,7 @@ Vienna, Austria Hermann Kopetz Wilfried Steiner
 
 May 2022
 
+```
 # Contents
 
 ## 1 The Real-Time Environment  1
@@ -540,6 +541,7 @@ Review Questions and Problems 365
 Annexes 367
 References 383
 Index 395
+```
 
 # Chapter 1 The Real-Time Environment
 
@@ -6631,92 +6633,520 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 ## A
 
-Absolute timestamp, 60 Abstraction, 31, 34–38, 40, 41, 43–47, 51, 52, 54, 55, 94, 95, 100, 104, 112, 113, 117, 120, 138, 164, 213, 277–281, 318, 349, 352, 355, 374 Abstraction ladder, 43–45, 47, 50, 53 Accuracy, 4, 15, 24, 26, 57, 61–63, 79, 82,
-84, 96, 124–130, 133, 136, 140, 141, 158, 168, 179, 229, 235, 301, 344, 369, 379 Accuracy interval, 4, 125–127, 129, 133, 139, 235, 369 Accuracy of any analog control signal, 235 Acknowledgment, 99 ACRN, 353, 354, 363 Action delay, 119, 131–133, 140, 141, 179, 193, 344, 369 Activation energy, 209 Advanced encryption standard (AES), 153, 156, 367, 369 Adversary argument, 247, 250–251, 265 Avionics Full-Duplex Switched Ethernet (AFDX), 177, 191, 195, 199 Agreed data, 5, 241, 246, 369, 375, 377 Agreement protocols, 57, 69–71, 83, 84, 134–136, 166, 223, 239, 241–243, 369 Alarm analysis, 5 Alarm monitoring, 5, 90, 91, 131, 231, 246, 369 Alarm shower, 5 Alternative scheduling strategies, 248, 264–267 Analog input/output, 234–235
+Absolute timestamp, 60
 
-Analysis, 1, 4, 16, 33, 34, 36, 38, 40, 44, 51, 52, 60, 68, 95, 152, 159, 160, 172, 175, 178, 187–191, 198, 199, 215, 219, 229, 230, 245, 252–256, 261, 262, 264, 266, 269–271, 274, 275, 277, 278, 280, 281, 286–288, 290, 291, 294, 297, 298, 304, 305, 308, 309, 313, 315–319, 327, 344, 356, 359, 380 Analytic rational, 31–33, 53, 55, 369 Anomaly detection, 143, 152, 158–162, 174, 175, 297, 313, 350 Anytime algorithm, 219, 247, 255, 256, 266, 267, 369 Aperiodic task, 250, 267, 369, 376, 378 Application program interface (API), 226–229, 279, 367, 369 Architectural styles, 42, 54, 87, 89, 105, 106, 114–117, 218, 301, 336, 343, 345, 348, 351 Architecture, 11, 41, 50, 51, 53, 76, 82, 87, 100, 106, 109, 111–113, 115, 117, 118, 130, 148, 151, 152, 154, 165, 167–169, 173, 175, 180, 200, 201, 213–217, 220, 221, 238, 241, 256, 269–272, 274, 276, 277, 280, 281, 284, 285, 290, 291, 293, 295, 296, 300–305, 310, 318, 320, 322, 330–333, 348–352, 357–365, 368, 371, 380 Architecture Analysis and Design Language (AADL), 280, 281, 305 Architecture design languages, 280–281 ARINC 629 protocol, 138 As low as reasonably practical (ALARP), 286, 291, 367
-
-Assertion, 109, 159, 161, 312 Assumption coverage, 16, 370 Atomic, 40, 59, 63, 80, 89, 93–95, 97, 98, 112, 116, 121, 139, 171, 233, 331, 340, 370, 373, 376 Atomicity requirement, 25 Attack strategy, 152 Attribute, 10, 41, 42, 54, 106, 108, 120, 124, 140, 280, 281, 335, 337, 355, 363 Audio/Video Bridging (AVB), 177, 181, 192, 197, 199, 367, 369 Automotive electronics, 20 Autonomic components, 170, 332–333, 341 Availability, 12, 13, 15–17, 21, 27, 28, 40, 53, 73, 115, 150, 169, 173, 229, 288, 297, 300, 326, 338, 345, 363, 370
+Abstraction, 31, 34–38, 40, 41, 43–47, 51, 52, 54, 55, 94, 95, 100, 104, 112, 113, 117, 120, 138, 164, 213, 277–281, 318, 349, 352, 355, 374 
+Abstraction ladder, 43–45, 47, 50, 53 
+Accuracy, 4, 15, 24, 26, 57, 61–63, 79, 82, 84, 96, 124–130, 133, 136, 140, 141, 158, 168, 179, 229, 235, 301, 344, 369, 379 
+Accuracy interval, 4, 125–127, 129, 133, 139, 235, 369 
+Accuracy of any analog control signal, 235 
+Acknowledgment, 99 
+ACRN, 353, 354, 363 
+Action delay, 119, 131–133, 140, 141, 179, 193, 344, 369 
+Activation energy, 209 
+Advanced encryption standard (AES), 153, 156, 367, 369 
+Adversary 
+argument, 247, 250–251, 265 
+Avionics Full-Duplex Switched Ethernet (AFDX), 177, 191, 195, 199 
+Agreed data, 5, 241, 246, 369, 375, 377 
+Agreement protocols, 57, 69–71, 83, 84, 134–136, 166, 223, 239, 241–243, 369 
+Alarm  analysis, 5 
+Alarm monitoring, 5, 90, 91, 131, 231, 246, 369 
+Alarm shower, 5 
+Alternative scheduling strategies, 248, 264–267 
+Analog input/output, 234–235
+Analysis, 1, 4, 16, 33, 34, 36, 38, 40, 44, 51, 52, 60, 68, 95, 152, 159, 160, 172, 175, 178, 187–191, 198, 199, 215, 219, 229, 230, 245, 252–256, 261, 262, 264, 266, 269–271, 274, 275, 277, 278, 280, 281, 286–288, 290, 291, 294, 297, 298, 304, 305, 308, 309, 313, 315–319, 327, 344, 356, 359, 380 
+Analytic rational, 31–33, 53, 55, 369 
+Anomaly detection, 143, 152, 158–162, 174, 175, 297, 313, 350 
+Anytime algorithm, 219, 247, 255, 256, 266, 267, 369 
+Aperiodic task, 250, 267, 369, 376, 378 
+Application program interface (API), 226–229, 279, 367, 369 
+Architectural styles, 42, 54, 87, 89, 105, 106, 114–117, 218, 301, 336, 343, 345, 348, 351 
+Architecture, 11, 41, 50, 51, 53, 76, 82, 87, 100, 106, 109, 111–113, 115, 117, 118, 130, 148, 151, 152, 154, 165, 167–169, 173, 175, 180, 200, 201, 213–217, 220, 221, 238, 241, 256, 269–272, 274, 276, 277, 280, 281, 284, 285, 290, 291, 293, 295, 296, 300–305, 310, 318, 320, 322, 330–333, 348–352, 357–365, 368, 371, 380 
+Architecture Analysis and Design Language (AADL), 280, 281, 305 
+Architecture design languages, 280–281 
+ARINC 629 protocol, 138 
+As low as reasonably practical (ALARP), 286, 291, 367
+Assertion, 109, 159, 161, 312 
+Assumption coverage, 16, 370 
+Atomic, 40, 59, 63, 80, 89, 93–95, 97, 98, 112, 116, 121, 139, 171, 233, 331, 340, 370, 373, 376 
+Atomicity requirement, 25 
+Attack strategy, 152 
+Attribute, 10, 41, 42, 54, 106, 108, 120, 124, 140, 280, 281, 335, 337, 355, 363 
+Audio/Video Bridging (AVB), 177, 181, 192, 197, 199, 367, 369 
+Automotive electronics, 20 
+Autonomic components, 170, 332–333, 341 
+Availability, 12, 13, 15–17, 21, 27, 28, 40, 53, 73, 115, 150, 169, 173, 229, 288, 297, 300, 326, 338, 345, 363, 370
 
 ## B
 
-Babbling idiot, 112, 195, 321, 370 Back-pressure flow control, 97, 370 Bandwidth, 22, 72, 138, 140, 181, 184, 185, 189, 191–193, 196, 199, 200, 345 Basic level concept, 38, 44, 55 Basic message transport service (BMTS), 40, 41, 182, 226, 302, 310, 315, 367, 370 Batteries, 19, 203, 204, 212, 222, 272, 273, 332, 335, 338, 339 Behavior, 2, 3, 5, 17, 18, 26, 32, 36, 37, 43–52, 55, 57, 58, 72, 74, 78, 87, 88, 91, 92, 95, 96, 101, 102, 107, 110–112, 115–117, 119, 129, 131, 134, 135, 138–140, 143, 144, 147–149, 152, 159, 160, 164, 165, 174, 180, 183, 189, 224, 238, 243, 248, 251, 253, 254, 256, 260, 261, 264–266, 272, 273, 280, 288, 290, 301, 302, 304, 307–313, 315, 316, 319, 322, 326, 329, 333, 369, 374, 377, 379 Benefits from the Application of Formal Methods, 318 Benign failure, 12, 27, 148, 370 Best-effort, 13, 16, 219, 264, 266, 267, 370, 374 Best-effort paradigm, 16 Best-effort system, 16 Bit length of a channel, 184, 370 Blocking synchronization statement, 229, 371 Bohrbug, 146, 175 Botnet attack, 153, 154 Bus guardian, 195, 321, 370 Byzantine, 74, 75, 77, 78, 80, 83, 84, 149, 164, 166, 167, 175, 241, 242, 282, 370, 373 Byzantine error, 74 Byzantine error term, 78 Byzantine resilient fault-tolerant unit, 166
+Babbling idiot, 112, 195, 321, 370
+Back-pressure flow control, 97, 370
+Bandwidth, 22, 72, 138, 140, 181, 184, 185, 189, 191–193, 196, 199, 200, 345
+Basic level concept, 38, 44, 55
+Basic message transport service (BMTS), 40, 41, 182, 226, 302, 310, 315, 367, 370
+Batteries, 19, 203, 204, 212, 222, 272, 273, 332, 335, 338, 339
+Behavior, 2, 3, 5, 17, 18, 26, 32, 36, 37, 43–52, 55, 57, 58, 72, 74, 78, 87, 88, 91, 92, 95, 96, 101, 102, 107, 110–112, 115–117, 119, 129, 131, 134, 135, 138–140, 143, 144, 147–149, 152, 159, 160, 164, 165, 174, 180, 183, 189, 224, 238, 243, 248, 251, 253, 254, 256, 260, 261, 264–266, 272, 273, 280, 288, 290, 301, 302, 304, 307–313, 315, 316, 319, 322, 326, 329, 333, 369, 374, 377, 379
+Benefits from the Application of Formal Methods, 318
+Benign failure, 12, 27, 148, 370
+Best-effort, 13, 16, 219, 264, 266, 267, 370, 374
+Best-effort paradigm, 16
+Best-effort system, 16
+Bit length of a channel, 184, 370
+Blocking synchronization statement, 229, 371
+Bohrbug, 146, 175
+Botnet attack, 153, 154
+Bus guardian, 195, 321, 370
+Byzantine, 74, 75, 77, 78, 80, 83, 84, 149, 164, 166, 167, 175, 241, 242, 282, 370, 373
+Byzantine error, 74
+Byzantine error term, 78
+Byzantine resilient fault-tolerant unit, 166
 
 ## C
 
-Cache reload time, 254 Calibration point, 236 CAN protocol, 200 Causal order, 57, 59, 82, 84, 370 Causality, 33, 52, 53, 59, 134, 140, 280, 369, 370 Celestial mechanics, 43 Central master synchronization, 75 Certification, 1, 11, 190, 224, 284, 288, 289, 291–293, 304, 307, 316, 319, 323 Checkpoint, 15, 170 Checkpoint data, 15 Checkpoint recovery, 14, 96 Chronos copy property, 79 Cipher, 154, 180 Classification of real-time systems, 13–18 Classification of scheduling algorithms, 248–249 Clean failures, 148 Clock, 2, 4, 17, 26, 57, 59–65, 67–69, 71–85, 88, 91, 95, 96, 98, 115, 118, 119, 124, 129, 132–134, 139, 156, 160, 179, 192, 194, 196, 197, 206, 211, 217, 228, 229, 237, 257, 280, 290, 318, 335, 354, 369–377, 379 Clock drift, 60, 61, 79, 84, 85 Clock synchronization unit, 76 Closed-loop control, 21, 307 Cloud computing, 20, 22, 96, 219, 332, 341, 343–347, 349, 351, 352, 356, 359, 360, 363–365 Clusters, 2–4, 52, 67, 70, 71, 79–81, 83, 87, 89, 90, 100–106, 110–113, 116, 119, 168, 170, 172, 173, 194, 227, 246, 277, 281–283, 301, 302, 333, 370, 372, 373 Cognitive complexity, 31, 35–36, 54, 55, 89, 327, 370 Communication network interface (CNI), 112 Communication system, 25, 52, 57, 59, 89, 92, 97, 100, 101, 107, 108, 111, 112, 118, 128, 131–134, 137, 149, 165–167, 186, 200, 233, 264, 282, 290, 301, 302, 315, 352, 356, 357, 365, 373 Compiler analysis, 253 Complex systems, 47–51, 260, 286, 303 Complex task (C-task), 229, 245, 246, 254, 371, 379 Component, 22, 45–49, 51, 52, 87–97, 100–117, 119, 128, 135–137, 143–150, 159, 160, 162–164, 166–175, 180, 182, 213, 214, 216, 219, 223–226, 228, 230, 232, 233, 244, 245, 256, 270, 272–274, 277, 279–288, 290, 291, 297, 298,
-
-300–302, 304, 305, 310–312, 314–316, 323, 326, 332, 333, 359, 369–371, 373–376, 379, 380 Component-based, 100, 223, 244, 269, 279–280, 300, 304, 305, 314–316, 323 Component cycle, 172 Component restart, 172–174 Composability, 111, 130, 141, 225, 279, 290, 371 Composite interfaces, 102, 116, 117 Computational cluster, 2, 89, 106, 371, 372, 374, 377 Computer delay, 8 Computer safety in cars, 20 Computer system, 1–10, 13–21, 26–28, 31, 41, 43–46, 48, 50, 53, 55, 58, 59, 63, 66, 69–72, 88, 93, 103, 104, 120, 124, 134–136, 139, 144, 150, 152, 153, 167, 170, 172, 173, 177–179, 200, 201, 223, 224, 228, 230, 235, 238, 240, 250, 257, 266, 269, 270, 277, 278, 283, 285, 288, 289, 291–293, 295, 296, 300, 304, 307, 308, 310, 315, 316, 318, 322, 334, 338, 340, 361, 370–375, 377, 378, 380 Concept, 23, 31, 33–47, 50, 53–55, 64, 84, 87, 89, 91–93, 97–100, 106, 108–110, 117, 119, 121, 134, 140, 141, 143–150, 154, 168–170, 174, 201–204, 226, 241, 247, 264, 279, 280, 301, 305, 317, 318, 331, 333, 347, 359, 360, 371, 376, 380 Concept formation, 31, 38–40, 55, 105 Conceptualization, 38, 40, 46, 50, 105, 116 Conceptual landscape, 31, 33, 35–43, 53–55, 110, 326, 371, 380 Concurrency control field (CCF), 233, 234, 367, 371 Configuration, 27, 151, 165, 166, 174, 180, 181, 187, 193, 195, 197, 198, 224, 244, 249, 302, 332, 340, 343, 348, 350–354, 357–358, 363, 364, 380 Consistent failure, 148, 371 Contact bounce, 235, 236, 246, 371 Container, 124, 139, 240, 343, 354, 355, 363, 364, 377 Container orchestration, 355 Context switches, 254 Control algorithm, 8 Control application, 6 Control engineering, 6 Control interface, 87, 101, 103 Control l ability of the test inputs, 309 Controlled object, 2–4, 6–9, 14–17, 23, 26, 28, 58, 71, 72, 88, 90, 119, 120, 123, 125, 126, 129, 131, 173, 186, 200, 227, 237,
-
-238, 241, 242, 277, 278, 286, 304, 343, 344, 348, 369–371, 374, 376, 378, 381 Control loop, 1, 7–10, 21, 25, 26, 58, 70, 72, 120, 138, 158, 167, 179, 235, 245, 264, 281, 300 Control of pace, 14 Control structure, 23, 146, 224, 227, 230, 231, 236, 243–245, 256, 310, 313 Control valve, 8 Control variable, 7 Convergence function, 57, 73–79, 83, 84, 371, 379 Crash failure, 148, 246, 321–322 Critical failure mode, 11 Critical instant, 111, 112, 261 Criticality levels, 152, 284, 288, 289, 292, 293 Critical task sections, 232 Cryptographic methods, 151, 152, 154–156, 299, 336 Cyber-physical, 1, 2, 27, 47, 58, 66, 119, 326 Cyberspace, 136, 150, 223, 321–323, 326, 336, 337, 339, 340
+Cache reload time, 254
+Calibration point, 236
+CAN protocol, 200
+Causal order, 57, 59, 82, 84, 370
+Causality, 33, 52, 53, 59, 134, 140, 280, 369, 370
+Celestial mechanics, 43
+Central master synchronization, 75
+Certification, 1, 11, 190, 224, 284, 288, 289, 291–293, 304, 307, 316, 319, 323
+Checkpoint, 15, 170
+Checkpoint data, 15
+Checkpoint recovery, 14, 96
+Chronos copy property, 79
+Cipher, 154, 180
+Classification of real-time systems, 13–18
+Classification of scheduling algorithms, 248–249
+Clean failures, 148
+Clock, 2, 4, 17, 26, 57, 59–65, 67–69, 71–85, 88, 91, 95, 96, 98, 115, 118, 119, 124, 129, 132–134, 139, 156, 160, 179, 192, 194, 196, 197, 206, 211, 217, 228, 229, 237, 257, 280, 290, 318, 335, 354, 369–377, 379
+Clock drift, 60, 61, 79, 84, 85
+Clock synchronization unit, 76
+Closed-loop control, 21, 307
+Cloud computing, 20, 22, 96, 219, 332, 341, 343–347, 349, 351, 352, 356, 359, 360, 363–365
+Clusters, 2–4, 52, 67, 70, 71, 79–81, 83, 87, 89, 90, 100–106, 110–113, 116, 119, 168, 170, 172, 173, 194, 227, 246, 277, 281–283, 301, 302, 333, 370, 372, 373
+Cognitive complexity, 31, 35–36, 54, 55, 89, 327, 370
+Communication network interface (CNI), 112
+Communication system, 25, 52, 57, 59, 89, 92, 97, 100, 101, 107, 108, 111, 112, 118, 128, 131–134, 137, 149, 165–167, 186, 200, 233, 264, 282, 290, 301, 302, 315, 352, 356, 357, 365, 373
+Compiler analysis, 253
+Complex systems, 47–51, 260, 286, 303
+Complex task (C-task), 229, 245, 246, 254, 371, 379
+Component, 22, 45–49, 51, 52, 87–97, 100–117, 119, 128, 135–137, 143–150, 159, 160, 162–164, 166–175, 180, 182, 213, 214, 216, 219, 223–226, 228, 230, 232, 233, 244, 245, 256, 270, 272–274, 277, 279–288, 290, 291, 297, 298, 300–302, 304, 305, 310–312, 314–316, 323, 326, 332, 333, 359, 369–371, 373–376, 379, 380
+Component-based, 100, 223, 244, 269, 279–280, 300, 304, 305, 314–316, 323
+Component cycle, 172
+Component restart, 172–174
+Composability, 111, 130, 141, 225, 279, 290, 371
+Composite interfaces, 102, 116, 117
+Computational cluster, 2, 89, 106, 371, 372, 374, 377
+Computer delay, 8
+Computer safety in cars, 20
+Computer system, 1–10, 13–21, 26–28, 31, 41, 43–46, 48, 50, 53, 55, 58, 59, 63, 66, 69–72, 88, 93, 103, 104, 120, 124, 134–136, 139, 144, 150, 152, 153, 167, 170, 172, 173, 177–179, 200, 201, 223, 224, 228, 230, 235, 238, 240, 250, 257, 266, 269, 270, 277, 278, 283, 285, 288, 289, 291–293, 295, 296, 300, 304, 307, 308, 310, 315, 316, 318, 322, 334, 338, 340, 361, 370–375, 377, 378, 380
+Concept, 23, 31, 33–47, 50, 53–55, 64, 84, 87, 89, 91–93, 97–100, 106, 108–110, 117, 119, 121, 134, 140, 141, 143–150, 154, 168–170, 174, 201–204, 226, 241, 247, 264, 279, 280, 301, 305, 317, 318, 331, 333, 347, 359, 360, 371, 376, 380
+Concept formation, 31, 38–40, 55, 105
+Conceptualization, 38, 40, 46, 50, 105, 116
+Conceptual landscape, 31, 33, 35–43, 53–55, 110, 326, 371, 380
+Concurrency control field (CCF), 233, 234, 367, 371
+Configuration, 27, 151, 165, 166, 174, 180, 181, 187, 193, 195, 197, 198, 224, 244, 249, 302, 332, 340, 343, 348, 350–354, 357–358, 363, 364, 380
+Consistent failure, 148, 371
+Contact bounce, 235, 236, 246, 371
+Container, 124, 139, 240, 343, 354, 355, 363, 364, 377
+Container orchestration, 355
+Context switches, 254
+Control algorithm, 8
+Control application, 6
+Control engineering, 6
+Control interface, 87, 101, 103
+Control l ability of the test inputs, 309
+Controlled object, 2–4, 6–9, 14–17, 23, 26, 28, 58, 71, 72, 88, 90, 119, 120, 123, 125, 126, 129, 131, 173, 186, 200, 227, 237, 238, 241, 242, 277, 278, 286, 304, 343, 344, 348, 369–371, 374, 376, 378, 381
+Control loop, 1, 7–10, 21, 25, 26, 58, 70, 72, 120, 138, 158, 167, 179, 235, 245, 264, 281, 300
+Control of pace, 14
+Control structure, 23, 146, 224, 227, 230, 231, 236, 243–245, 256, 310, 313
+Control valve, 8
+Control variable, 7
+Convergence function, 57, 73–79, 83, 84, 371, 379
+Crash failure, 148, 246, 321–322
+Critical failure mode, 11
+Critical instant, 111, 112, 261
+Criticality levels, 152, 284, 288, 289, 292, 293
+Critical task sections, 232
+Cryptographic methods, 151, 152, 154–156, 299, 336
+Cyber-physical, 1, 2, 27, 47, 58, 66, 119, 326
+Cyberspace, 136, 150, 223, 321–323, 326, 336, 337, 339, 340
 
 ## D
 
-Damage, 286, 304 Data collection, 3–5, 344, 359, 362, 364 Data Distribution Service (DDS), 356, 357 Data efficiency, 184, 185, 231 Data logging, 6 Database components, 96, 117 Data-Distribution Service (DDS), 356 Deadline, 3, 14, 15, 22, 26, 102, 138, 228, 237, 245, 247–251, 255–261, 264–267, 352, 353, 358, 369, 371, 373–375, 378 Dead time, 8, 9, 25, 26, 72, 138, 235, 245, 264, 300 Definitely occurred later , 59 Delay jitter, 9, 10, 26, 28, 76 Delivery order, 57, 59, 64, 82, 84 Denial of service, 115, 150, 153, 154, 336, 338, 340 Dense time, 44, 68–73, 134 Dependability, 10–13, 20, 28, 31, 44, 144–174, 179–180, 199, 270, 276, 282, 288–291, 294, 302, 303, 305, 319, 320, 345, 350, 351, 355, 363 Dependability analysis, 285–288 Derived properties, 46–47 Design diversity, 269, 293–296, 305 Design for test ability, 307, 310, 322 Design tradeoffs, 12 Designed for validation , 11 Determinism, 33, 119, 133–141, 223, 310, 371 Development cost, 18, 21, 27–29, 274, 308, 322 Device scaling, 209–211, 213, 221 Difficult task, 36, 51, 53, 330 Digital input/output, 235–236 Digitalization error, 60, 65, 66, 68, 242 Digital signature, 156, 337 Digital twin, 359, 360, 362, 364, 365 Direct digital control (DDC), 3, 6, 344 Directed timeline, 58 Dispatcher, 227 Distributed RT object, 124 Distributed synchronization algorithms, 75–79 Diverse software, 293–296 Diverse software versions, 293–294 DO-254, 292 Domain controllers, 352, 361 Domain expert, 34, 55 Double execution of tasks, 243–244 Drift offset, 57, 73, 78, 80, 83, 372, 379 Drift rates, 61, 62, 73, 77, 78, 80, 82, 84, 85 Dual role of time, 229–231 Duration of the action delay, 132 Duration, 2, 4, 7, 8, 24, 25, 44, 58–60, 62, 63, 65–69, 72, 76, 82, 91, 95, 98, 118, 119, 132, 133, 138, 158, 164, 168, 171, 173, 179, 183, 184, 228, 229, 231, 233, 237, 250, 253, 257, 264, 280, 309, 322, 372, 375, 381 Dynamic fault tree, 287 Dynamic schedulers, 248 Dynamic scheduling, 17, 228, 247–249, 251, 260–264, 267 in distributed systems, 264
+Damage, 286, 304
+Data collection, 3–5, 344, 359, 362, 364
+Data Distribution Service (DDS), 356, 357
+Data efficiency, 184, 185, 231
+Data logging, 6
+Database components, 96, 117
+Data-Distribution Service (DDS), 356
+Deadline, 3, 14, 15, 22, 26, 102, 138, 228, 237, 245, 247–251, 255–261, 264–267, 352, 353, 358, 369, 371, 373–375, 378
+Dead time, 8, 9, 25, 26, 72, 138, 235, 245, 264, 300
+Definitely occurred later , 59
+Delay jitter, 9, 10, 26, 28, 76
+Delivery order, 57, 59, 64, 82, 84
+Denial of service, 115, 150, 153, 154, 336, 338, 340
+Dense time, 44, 68–73, 134
+Dependability, 10–13, 20, 28, 31, 44, 144–174, 179–180, 199, 270, 276, 282, 288–291, 294, 302, 303, 305, 319, 320, 345, 350, 351, 355, 363
+Dependability analysis, 285–288
+Derived properties, 46–47
+Design diversity, 269, 293–296, 305
+Design for test ability, 307, 310, 322
+Design tradeoffs, 12
+Designed for validation , 11
+Determinism, 33, 119, 133–141, 223, 310, 371
+Development cost, 18, 21, 27–29, 274, 308, 322
+Device scaling, 209–211, 213, 221
+Difficult task, 36, 51, 53, 330
+Digital input/output, 235–236
+Digitalization error, 60, 65, 66, 68, 242
+Digital signature, 156, 337
+Digital twin, 359, 360, 362, 364, 365
+Direct digital control (DDC), 3, 6, 344
+Directed timeline, 58
+Dispatcher, 227
+Distributed RT object, 124
+Distributed synchronization algorithms, 75–79
+Diverse software, 293–296
+Diverse software versions, 293–294
+DO-254, 292
+Domain controllers, 352, 361
+Domain expert, 34, 55
+Double execution of tasks, 243–244
+Drift offset, 57, 73, 78, 80, 83, 372, 379
+Drift rates, 61, 62, 73, 77, 78, 80, 82, 84, 85
+Dual role of time, 229–231
+Duration of the action delay, 132
+Duration, 2, 4, 7, 8, 24, 25, 44, 58–60, 62, 63, 65–69, 72, 76, 82, 91, 95, 98, 118, 119, 132, 133, 138, 158, 164, 168, 171, 173, 179, 183, 184, 228, 229, 231, 233, 237, 250, 253, 257, 264, 280, 309, 322, 372, 375, 381
+Dynamic fault tree, 287
+Dynamic schedulers, 248
+Dynamic scheduling, 17, 228, 247–249, 251, 260–264, 267 in distributed systems, 264
 
 ## E
 
-Earliest-deadline-first (EDF), 261, 262, 266, 267, 367, 372 algorithm, 261 Edge computing, 343, 347, 351 Efficiency of the search, 258 Elastic compute, 346 Electronic product code (EPC), 330, 331, 334–335, 337, 339, 341, 367, 372 Elementary interfaces, 102, 116, 117 Elevator example, 17 Embedded real-time systems, 1, 18–20, 53, 273, 280 Embedded systems characteristics, 18 Embedded systems market, 19 Emergence, 32, 46–51, 53, 55, 372 Emergent behavior, 47, 49, 114, 186, 315 Encapsulation, 89, 215
-
-Encryption, 151, 153–156, 173, 336, 369 End-to-end error detection, 321 End-to-end protocol, 23, 28, 372 Endianness, 105 Energy estimation, 204–208, 218 Energy harvesting, 221, 340 Engine control, 20, 24, 28, 29, 101, 102, 127 Entity, 35, 58, 105, 114, 119–121, 179–181, 302, 326, 334, 344, 345, 350, 369, 376, 377 Error-containment regions, 290 Error detection, 10, 14, 15, 41, 48, 99, 100, 112, 143, 146, 147, 150, 161–162, 175, 194, 237, 239, 243–246, 276, 301, 321, 322 Error detection coverage, 15, 28, 147, 237, 284, 320, 321 Error detection latency, 10, 28, 147, 282 Error term, 8 ESTEREL, 91 Event, 2, 4, 5, 17, 18, 26, 32, 33, 37, 49, 53, 57–60, 63–71, 75, 79–84, 92, 98, 99, 110, 116, 117, 121, 123–125, 129, 131–137, 139, 141, 147, 167, 169, 171, 173, 182, 188, 192, 198, 205, 212, 226–231, 236, 237, 242, 245, 257, 259–261, 265, 280, 286, 300, 303, 311, 333, 357, 368, 370–373, 376–380 Event information, 2 Event observation, 123 Event-triggered (ET), 4, 13, 17, 18, 25, 26, 29, 48, 87, 92, 99, 108, 109, 118, 123, 132, 146, 167, 168, 175, 177, 182, 183, 187–190, 194–196, 199, 200, 226–228, 231, 233, 246, 264, 302, 310, 315, 367, 371, 372 Exact voting, 166, 372, 380 Execution time, 91, 92, 115, 122, 131, 138, 161, 214, 217, 219, 221, 226, 228, 233, 247, 248, 250–256, 258, 259, 266, 344, 345, 372, 373, 375 Expansion and contraction of the state, 94 Explicit flow control, 183, 184, 200, 373, 374 Explicit synchronization, 234, 256 External clock synchronization, 79–85, 217, 373 External synchronization, 62
+Earliest-deadline-first (EDF), 261, 262, 266, 267, 367, 372
+Edge computing, 343, 347, 351
+Efficiency of the search, 258
+Elastic compute, 346
+Electronic product code (EPC), 330, 331, 334–335, 337, 339, 341, 367, 372
+Elementary interfaces, 102, 116, 117
+Elevator example, 17
+Embedded real-time systems, 1, 18–20, 53, 273, 280
+Embedded systems characteristics, 18
+Embedded systems market, 19
+Emergence, 32, 46–51, 53, 55, 372
+Emergent behavior, 47, 49, 114, 186, 315
+Encapsulation, 89, 215
+Encryption, 151, 153–156, 173, 336, 369
+End-to-end error detection, 321
+End-to-end protocol, 23, 28, 372
+Endianness, 105
+Energy estimation, 204–208, 218
+Energy harvesting, 221, 340
+Engine control, 20, 24, 28, 29, 101, 102, 127
+Entity, 35, 58, 105, 114, 119–121, 179–181, 302, 326, 334, 344, 345, 350, 369, 376, 377
+Error-containment regions, 290
+Error detection, 10, 14, 15, 41, 48, 99, 100, 112, 143, 146, 147, 150, 161–162, 175, 194, 237, 239, 243–246, 276, 301, 321, 322
+Error detection coverage, 15, 28, 147, 237, 284, 320, 321
+Error detection latency, 10, 28, 147, 282
+Error term, 8
+ESTEREL, 91
+Event, 2, 4, 5, 17, 18, 26, 32, 33, 37, 49, 53, 57–60, 63–71, 75, 79–84, 92, 98, 99, 110, 116, 117, 121, 123–125, 129, 131–137, 139, 141, 147, 167, 169, 171, 173, 182, 188, 192, 198, 205, 212, 226–231, 236, 237, 242, 245, 257, 259–261, 265, 280, 286, 300, 303, 311, 333, 357, 368, 370–373, 376–380
+Event information, 2
+Event observation, 123
+Event-triggered (ET), 4, 13, 17, 18, 25, 26, 29, 48, 87, 92, 99, 108, 109, 118, 123, 132, 146, 167, 168, 175, 177, 182, 183, 187–190, 194–196, 199, 200, 226–228, 231, 233, 246, 264, 302, 310, 315, 367, 371, 372
+Exact voting, 166, 372, 380
+Execution time, 91, 92, 115, 122, 131, 138, 161, 214, 217, 219, 221, 226, 228, 233, 247, 248, 250–256, 258, 259, 266, 344, 345, 372, 373, 375
+Expansion and contraction of the state, 94
+Explicit flow control, 183, 184, 200, 373, 374
+Explicit synchronization, 234, 256
+External clock synchronization, 79–85, 217, 373
+External synchronization, 62
 
 ## F
 
-Fail-operational, 13, 15, 16, 169, 241, 284, 285, 290, 295, 373 Fail-safe, 13, 15, 28, 169, 284, 290, 294–295, 373
-
-Fail-safeness, 15 Fail-silent, 147, 164, 165, 167, 169, 196, 238, 244, 302, 373 Fail-silent architecture, 238 Fail-stop, 148 Failure, 1, 10–12, 15, 16, 22, 25–27, 52, 61, 62, 75, 79, 81, 88, 94, 96, 101, 112, 115, 117, 119, 123, 124, 134–137, 143, 144, 147–150, 152–154, 158–170, 172–175, 178–180, 186, 187, 196, 199, 209, 220, 226, 239–242, 244, 246, 249, 269, 274, 281–298, 301–305, 309, 319, 321–323, 329, 332, 339, 340, 346, 351, 353, 355, 357, 360, 370, 373, 375, 378–380 Failure detection, 148, 160–161, 164, 174 Failure in time (FIT), 10, 164, 211, 373 Failure mode and effect analysis (FMEA), 287 Failure mode of a clock, 61 Failure rate, 10–12, 26, 28, 146, 163, 164, 173–175, 178, 199, 209, 210, 241, 246, 283, 284, 288, 297, 298, 373 Fate-sharing model, 302 Fault containment unit (FCU), 145, 163–166, 169, 174, 175, 274, 283, 290, 298, 301, 302, 333, 373 Fault hypothesis, 11, 16, 143, 162–164, 167, 170, 174, 175, 194, 311, 312, 320, 370, 373, 374, 377, 381 Fault injection, 148, 161, 243, 289, 308, 311, 319–323 Fault nature, 145 Fault perception, 145 Fault tolerance, 58, 80, 89, 119, 133, 135, 143, 162–168, 174, 175, 178, 196, 224, 229, 272, 282, 289–291, 298, 299, 302–305, 311, 319, 320, 357 Fault-tolerant actuators, 238–239 Fault-tolerant average algorithm(FTA), 75, 77, 78, 83–85, 194, 373 Fault-tolerant unit (FTU), 79, 164–167, 172, 174, 241, 283, 293, 367, 373, 380 Fault tree analysis, 269, 286, 287, 305 Feasibility analysis, 270 Feedback scheduling, 248, 264–267 Firewall, 152, 330, 350 Firm deadline, 3, 26, 371, 373 Flexibility in static schedules, 258–260, 265 Flow control, 23, 41, 52, 183–184, 188, 200, 315, 373, 374 Flow in a pipe, 23 Fog computing, 343–365 Formalization, 193, 316
-
-Formal methods, 293, 294, 307, 309, 316–319, 323, 346 Free-running clock, 61 Frequency scaling, 211–212, 218 Functional coherence, 281 Functional requirements, 3–6 Fundamental limits of time measurement, 68 Fundamental limit in time measurement, 60
+Fail-operational, 13, 15, 16, 169, 241, 284, 285, 290, 295, 373
+Fail-safe, 13, 15, 28, 169, 284, 290, 294–295, 373
+Fail-safeness, 15
+Fail-silent, 147, 164, 165, 167, 169, 196, 238, 244, 302, 373
+Fail-silent architecture, 238
+Fail-stop, 148
+Failure, 1, 10–12, 15, 16, 22, 25–27, 52, 61, 62, 75, 79, 81, 88, 94, 96, 101, 112, 115, 117, 119, 123, 124, 134–137, 143, 144, 147–150, 152–154, 158–170, 172–175, 178–180, 186, 187, 196, 199, 209, 220, 226, 239–242, 244, 246, 249, 269, 274, 281–298, 301–305, 309, 319, 321–323, 329, 332, 339, 340, 346, 351, 353, 355, 357, 360, 370, 373, 375, 378–380
+Failure detection, 148, 160–161, 164, 174
+Failure in time (FIT), 10, 164, 211, 373
+Failure mode and effect analysis (FMEA), 287
+Failure mode of a clock, 61
+Failure rate, 10–12, 26, 28, 146, 163, 164, 173–175, 178, 199, 209, 210, 241, 246, 283, 284, 288, 297, 298, 373
+Fate-sharing model, 302
+Fault containment unit (FCU), 145, 163–166, 169, 174, 175, 274, 283, 290, 298, 301, 302, 333, 373
+Fault hypothesis, 11, 16, 143, 162–164, 167, 170, 174, 175, 194, 311, 312, 320, 370, 373, 374, 377, 381
+Fault injection, 148, 161, 243, 289, 308, 311, 319–323
+Fault nature, 145
+Fault perception, 145
+Fault tolerance, 58, 80, 89, 119, 133, 135, 143, 162–168, 174, 175, 178, 196, 224, 229, 272, 282, 289–291, 298, 299, 302–305, 311, 319, 320, 357
+Fault-tolerant actuators, 238–239
+Fault-tolerant average algorithm(FTA), 75, 77, 78, 83–85, 194, 373
+Fault-tolerant unit (FTU), 79, 164–167, 172, 174, 241, 283, 293, 367, 373, 380
+Fault tree analysis, 269, 286, 287, 305
+Feasibility analysis, 270
+Feedback scheduling, 248, 264–267
+Firewall, 152, 330, 350
+Firm deadline, 3, 26, 371, 373
+Flexibility in static schedules, 258–260, 265
+Flow control, 23, 41, 52, 183–184, 188, 200, 315, 373, 374
+Flow in a pipe, 23
+Fog computing, 343–365
+Formalization, 193, 316
+Formal methods, 293, 294, 307, 309, 316–319, 323, 346
+Free-running clock, 61
+Frequency scaling, 211–212, 218
+Functional coherence, 281
+Functional requirements, 3–6
+Fundamental limits of time measurement, 68
+Fundamental limit in time measurement, 60
 
 ## G
 
-Gateway component, 42, 52, 54, 87, 89, 103–107, 112, 113, 116, 118, 301, 302, 336, 348, 349, 369, 373 Generic middleware (GM), 224–226 GENESYS, 113, 118 Global positioning system (GPS), 63, 79, 81, 115, 326, 367 Global time, 17, 53, 60, 64–66, 69, 71, 73, 75, 76, 79–81, 83, 84, 92, 115, 118, 121, 122, 124, 132, 136, 141, 160, 164, 183, 193, 196, 198, 227, 244, 300–302, 354, 355, 371, 373–375, 377, 379, 380 Global time base, 53, 57–59, 65, 66, 68, 71, 73, 79, 80, 83, 122, 129, 132, 134, 135, 141, 144, 165, 166, 197, 229, 230, 300, 371 Good clock, 61 Granularity, 17, 60, 61, 64–66, 68–70, 84, 94, 119, 124, 132, 134, 139, 141, 217, 231, 310, 374, 377 Granularity of the clock, 60 Granularity of the global time, 17 Granules of the clock, 2 Ground state, 87, 95–96, 116, 117, 171, 281, 310, 374 G-state recovery, 96 Guaranteed response, 16, 17, 27, 246, 377
+Gateway component, 42, 52, 54, 87, 89, 103–107, 112, 113, 116, 118, 301, 302, 336, 348, 349, 369, 373
+Generic middleware (GM), 224–226
+GENESYS, 113, 118
+Global positioning system (GPS), 63, 79, 81, 115, 326, 367
+Global time, 17, 53, 60, 64–66, 69, 71, 73, 75, 76, 79–81, 83, 84, 92, 115, 118, 121, 122, 124, 132, 136, 141, 160, 164, 183, 193, 196, 198, 227, 244, 300–302, 354, 355, 371, 373–375, 377, 379, 380
+Global time base, 53, 57–59, 65, 66, 68, 71, 73, 79, 80, 83, 122, 129, 132, 134, 135, 141, 144, 165, 166, 197, 229, 230, 300, 371
+Good clock, 61
+Granularity, 17, 60, 61, 64–66, 68–70, 84, 94, 119, 124, 132, 134, 139, 141, 217, 231, 310, 374, 377
+Granularity of the clock, 60
+Granularity of the global time, 17
+Granules of the clock, 2
+Ground state, 87, 95–96, 116, 117, 171, 281, 310, 374
+G-state recovery, 96
+Guaranteed response, 16, 17, 27, 246, 377
 
 ## H
 
-Hamming distance, 161, 374 Hard deadlines, 3, 22, 258, 260, 371, 374 Hard real-time, 1, 3, 10, 13–15, 17, 22, 26–28, 178, 187, 199, 248, 251, 256, 258, 260, 264, 266, 273, 283, 311, 343–345, 348, 352, 353, 355, 357, 363, 365, 374, 378 Hard real-time computer system, 3 Hard real-time system, 14 Hazards, 150, 253, 286, 288, 304, 374, 378 Heisenbugs, 146, 147, 175 Hidden channel, 131, 141, 374 High-level protocol, 226
-
-Human perception delay, 7 Hypervisor, 273, 284, 353, 354, 363, 365
+Hamming distance, 161, 374
+Hard deadlines, 3, 22, 258, 260, 371, 374
+Hard real-time, 1, 3, 10, 13–15, 17, 22, 26–28, 178, 187, 199, 248, 251, 256, 258, 260, 264, 266, 273, 283, 311, 343–345, 348, 352, 353, 355, 357, 363, 365, 374, 378
+Hard real-time computer system, 3
+Hard real-time system, 14
+Hazards, 150, 253, 286, 288, 304, 374, 378
+Heisenbugs, 146, 147, 175
+Hidden channel, 131, 141, 374
+High-level protocol, 226
+Human perception delay, 7
+Hypervisor, 273, 284, 353, 354, 363, 365
 
 ## I
 
-Ideal and complete verification environment, 317 Idempotency, 130–133, 374 Implicit flow control, 183, 184, 373, 374 Impossibility result, 76 In-car compute platform (ICCP), 361, 362, 364, 367 Inconsistent failures, 148, 149 Increase the robustness, 19 Indirect observation, 122 Industrial plant automation, 21 Inexact voting, 166, 374, 380 Information pull, 101, 116, 117, 282 Information push, 101, 117, 282 Information security, 150–158, 173, 330, 336, 340 Input/output, 23, 102, 103, 210, 223, 224, 234–241, 248, 281, 282 Instance, 58 Instant, 2, 3, 5, 7, 10, 14, 15, 24, 37, 41, 44, 54, 58, 60, 66, 67, 69, 72, 82, 84, 88, 89, 91–99, 102, 109, 111, 115, 116, 119–126, 129, 134, 136, 139, 140, 144, 146–149, 165, 167, 171, 173, 179, 193–198, 227–231, 235, 236, 242, 245, 250, 255, 261, 276, 298, 320, 355, 369, 371, 374–380 Instrumentation interface, 2, 178, 374 Integrated Modular Avionics (IMA), 191, 281, 293 Integration viewpoints, 112–113 Intelligent instrumentation, 239–240 Intelligent product, 18 Intentional fault, 145 Interactive-consistency, 74 Intermediate forms, 52, 276 Intermittent faults, 145, 146 Internal clock synchronization, 57, 73–79, 84, 85, 124, 375 Internal synchronization, 62 International Atomic Time (TAI), 63, 80, 82, 84, 368, 375, 380 Internet of Things (IoT), 13, 20, 22, 115, 143, 150, 325–341, 367, 375 Interoperability, 87, 107, 108, 110, 111, 177, 327 Inter process communication, 232–234 Interrupts, 17, 76, 92, 93, 98, 101, 123, 137, 227, 228, 236–238, 243, 245, 246, 252, 254, 257, 263
-
-Interval measurements, 67, 79 Interval on the time line, 2 Intrusion, 143, 150, 152, 158, 159, 173, 175, 326, 350, 375, 380 Intuitive-experiential, 31–33, 53, 55, 375 Invalid codeword, 161 Invisible information flows, 36, 54 Ir red uci bil it y, 46 Irrevocable action, 131, 375
+Ideal and complete verification environment, 317
+Idempotency, 130–133, 374
+Implicit flow control, 183, 184, 373, 374
+Impossibility result, 76
+In-car compute platform (ICCP), 361, 362, 364, 367
+Inconsistent failures, 148, 149
+Increase the robustness, 19
+Indirect observation, 122
+Industrial plant automation, 21
+Inexact voting, 166, 374, 380
+Information pull, 101, 116, 117, 282
+Information push, 101, 117, 282
+Information security, 150–158, 173, 330, 336, 340
+Input/output, 23, 102, 103, 210, 223, 224, 234–241, 248, 281, 282
+Instance, 58
+Instant, 2, 3, 5, 7, 10, 14, 15, 24, 37, 41, 44, 54, 58, 60, 66, 67, 69, 72, 82, 84, 88, 89, 91–99, 102, 109, 111, 115, 116, 119–126, 129, 134, 136, 139, 140, 144, 146–149, 165, 167, 171, 173, 179, 193–198, 227–231, 235, 236, 242, 245, 250, 255, 261, 276, 298, 320, 355, 369, 371, 374–380
+Instrumentation interface, 2, 178, 374
+Integrated Modular Avionics (IMA), 191, 281, 293
+Integration viewpoints, 112–113
+Intelligent instrumentation, 239–240
+Intelligent product, 18
+Intentional fault, 145
+Interactive-consistency, 74
+Intermediate forms, 52, 276
+Intermittent faults, 145, 146
+Internal clock synchronization, 57, 73–79, 84, 85, 124, 375
+Internal synchronization, 62
+International Atomic Time (TAI), 63, 80, 82, 84, 368, 375, 380
+Internet of Things (IoT), 13, 20, 22, 115, 143, 150, 325–341, 367, 375
+Interoperability, 87, 107, 108, 110, 111, 177, 327
+Inter process communication, 232–234
+Interrupts, 17, 76, 92, 93, 98, 101, 123, 137, 227, 228, 236–238, 243, 245, 246, 252, 254, 257, 263
+Interval measurements, 67, 79
+Interval on the time line, 2
+Intrusion, 143, 150, 152, 158, 159, 173, 175, 326, 350, 375, 380
+Intuitive-experiential, 31–33, 53, 55, 375
+Invalid codeword, 161
+Invisible information flows, 36, 54
+Ir red uci bil it y, 46
+Irrevocable action, 131, 375
 
 ## J
 
-Jitter, 1, 8–10, 25, 28, 57, 76–78, 118, 122, 124, 129, 131–134, 160, 178, 179, 182, 183, 193, 230, 264, 302, 344, 375 Jitterless system, 10 Jitter reduction, 76
+Jitter, 1, 8–10, 25, 28, 57, 76–78, 118, 122, 124, 129, 131–134, 160, 178, 179, 182, 183, 193, 230, 264, 302, 344, 375 
+Jitterless system, 10 
+Jitter reduction, 76
 
 ## K
 
-KERBEROS, 155, 157Key management, 154, 155
+KERBEROS, 155, 157
+Key management, 154, 155
 
 ## L
 
-Latency jitter, 9, 24, 25, 75, 76, 83–85 Layering, 185, 226, 273, 303, 332, 343, 348–351, 353, 356–364 L-determinism, 134, 137, 141 Least-laxity (LL), 261, 262, 266, 267, 367, 375 Least-laxity (LL) algorithm, 261 Legacy systems, 113 Life-cycle cost, 18, 19 Linking interface (LIF), 52, 87, 100–112, 115, 116, 118, 165, 224–226, 278, 281, 301, 302, 312, 314, 315, 367 Load hypothesis, 16, 27 Local interfaces, 101–107, 110, 112, 116, 117, 224, 225, 277, 281 Logical control, 87, 90–92, 115, 117, 217, 375, 379 Low-level protocols, 39, 335 Long-term integrity of large data files, 15 Low-power hardware design, 211 LUSTRE, 91
+Latency jitter, 9, 24, 25, 75, 76, 83–85
+Layering, 185, 226, 273, 303, 332, 343, 348–351, 353, 356–364
+L-determinism, 134, 137, 141
+Least-laxity (LL), 261, 262, 266, 267, 367, 375
+Least-laxity (LL) algorithm, 261
+Legacy systems, 113
+Life-cycle cost, 18, 19
+Linking interface (LIF), 52, 87, 100–112, 115, 116, 118, 165, 224–226, 278, 281, 301, 302, 312, 314, 315, 367
+Load hypothesis, 16, 27
+Local interfaces, 101–107, 110, 112, 116, 117, 224, 225, 277, 281
+Logical control, 87, 90–92, 115, 117, 217, 375, 379
+Low-level protocols, 39, 335
+Long-term integrity of large data files, 15
+Low-power hardware design, 211
+LUSTRE, 91
 
 ## M
 
-Macro granule, 65 Maintainability, 12, 27, 28, 269, 276, 296–300, 305, 375 Maintenance cost, 18, 19, 21 Maintenance strategy, 19, 296–299 Malicious failure, 149, 166, 282
-
-Malign failure, 11, 26, 148 Malign failure mode, 11 Man-machine interface (MMI), 2, 6, 7, 18, 19, 27, 89–91, 104, 106, 107, 118, 161, 277, 313, 372 Manufacturing cost, 19 Mark method, 59 MARS project, 42, 320 Mass production, 18 Maximum drift rate, 61 Mean time between failures (MTBF), 13 Mean-time-to-failure (MTTF), 10–13, 28, 211, 284, 309, 322 Mean time to repair (MTTR), 12, 13, 146 Measured data, 5, 241–243, 245, 246, 369, 375, 377, 378 Measured variable, 7 Media-access protocols, 184, 185, 188 Membership, 124, 163, 167–168, 174, 175, 186, 194, 195, 375, 376 Membership point, 167 Membership service, 124, 167–168 Message interface, 106 Messages, 10, 17, 25, 26, 29, 38, 40–41, 45–48, 50, 52, 53, 55, 69, 71, 74–81, 83, 84, 87–89, 92, 95–113, 115–119, 121–123, 125–127, 130–136, 138, 140, 147–149, 153, 155–160, 162, 163, 165–168, 171–173, 177–200, 207, 208, 215, 216, 218, 222–227, 229–233, 236, 237, 239, 245, 246, 258, 264, 270, 276, 278, 280–283, 300–302, 310, 315, 316, 320, 329, 339, 344, 356, 357, 364, 368–370, 372–374, 376, 377, 379, 380 Meta-level specification, 87, 107, 108, 110–111, 116 Micro-architecture, 214, 215, 221, 254 Micro-architecture timing analysis, 253 Micro-Electro-Mechanical Systems (MEMS), 239, 338 Microticks, 60–62, 64–66, 73, 79, 81, 83, 370, 372–374, 376, 379 Minimizing the H-state, 171–172 mi XEd computer/mechanical system, 20 Mode changes, 259 Model, 2, 5, 12, 21, 25, 31–33, 35–38, 41–46, 48, 50–55, 57, 58, 65, 68, 70, 72, 84, 87–97, 99, 100, 106, 108, 110, 117, 122, 128, 129, 134, 136, 139–141, 144, 145, 147, 149, 151–153, 157, 163, 164, 175, 177, 181, 182, 199, 201, 205, 208, 215, 217, 221, 223, 226, 242, 256, 260, 262, 264, 266, 274, 277, 278, 280, 282, 284, 286, 288–290, 304, 307–309, 311,
-
-312, 314–317, 319, 322, 323, 333, 341, 347, 359–363, 368–370, 376, 378–380 Monitoring interrupts, 243 Monitoring task execution times, 243 Monitoring the occurrence of an interrupt, 237 Monolithic systems, 113–115, 303 MotionWise, 358 MPSOCs, 213, 215, 256 MQTT, 356, 363 MTBF, 13 MTTF, 11 MTTR, 12 Multicast, 25 Multi casting, 89, 310 Multilevel system, 295–296 Multimedia, 22, 57, 95, 108, 148, 168, 169, 171, 219, 234, 264–266, 369 Multimedia market, 22 Multi-processor systems-on-chips (MPSoCs), 113, 163, 208, 213, 215–217, 219, 256, 273
+Macro granule, 65
+Maintainability, 12, 27, 28, 269, 276, 296–300, 305, 375
+Maintenance cost, 18, 19, 21
+Maintenance strategy, 19, 296–299
+Malicious failure, 149, 166, 282
+Malign failure, 11, 26, 148
+Malign failure mode, 11
+Man-machine interface (MMI), 2, 6, 7, 18, 19, 27, 89–91, 104, 106, 107, 118, 161, 277, 313, 372
+Manufacturing cost, 19
+Mark method, 59
+MARS project, 42, 320
+Mass production, 18
+Maximum drift rate, 61
+Mean time between failures (MTBF), 13
+Mean-time-to-failure (MTTF), 10–13, 28, 211, 284, 309, 322
+Mean time to repair (MTTR), 12, 13, 146
+Measured data, 5, 241–243, 245, 246, 369, 375, 377, 378
+Measured variable, 7
+Media-access protocols, 184, 185, 188
+Membership, 124, 163, 167–168, 174, 175, 186, 194, 195, 375, 376
+Membership point, 167
+Membership service, 124, 167–168
+Message interface, 106
+Messages, 10, 17, 25, 26, 29, 38, 40–41, 45–48, 50, 52, 53, 55, 69, 71, 74–81, 83, 84, 87–89, 92, 95–113, 115–119, 121–123, 125–127, 130–136, 138, 140, 147–149, 153, 155–160, 162, 163, 165–168, 171–173, 177–200, 207, 208, 215, 216, 218, 222–227, 229–233, 236, 237, 239, 245, 246, 258, 264, 270, 276, 278, 280–283, 300–302, 310, 315, 316, 320, 329, 339, 344, 356, 357, 364, 368–370, 372–374, 376, 377, 379, 380
+Meta-level specification, 87, 107, 108, 110–111, 116
+Micro-architecture, 214, 215, 221, 254
+Micro-architecture timing analysis, 253
+Micro-Electro-Mechanical Systems (MEMS), 239, 338
+Microticks, 60–62, 64–66, 73, 79, 81, 83, 370, 372–374, 376, 379
+Minimizing the H-state, 171–172 mi XEd computer/mechanical system, 20
+Mode changes, 259
+Model, 2, 5, 12, 21, 25, 31–33, 35–38, 41–46, 48, 50–55, 57, 58, 65, 68, 70, 72, 84, 87–97, 99, 100, 106, 108, 110, 117, 122, 128, 129, 134, 136, 139–141, 144, 145, 147, 149, 151–153, 157, 163, 164, 175, 177, 181, 182, 199, 201, 205, 208, 215, 217, 221, 223, 226, 242, 256, 260, 262, 264, 266, 274, 277, 278, 280, 282, 284, 286, 288–290, 304, 307–309, 311, 312, 314–317, 319, 322, 323, 333, 341, 347, 359–363, 368–370, 376, 378–380
+Monitoring interrupts, 243
+Monitoring task execution times, 243
+Monitoring the occurrence of an interrupt, 237
+Monolithic systems, 113–115, 303
+MotionWise, 358
+MPSOCs, 213, 215, 256
+MQTT, 356, 363
+MTBF, 13
+MTTF, 11
+MTTR, 12
+Multicast, 25
+Multi casting, 89, 310
+Multilevel system, 295–296
+Multimedia, 22, 57, 95, 108, 148, 168, 169, 171, 219, 234, 264–266, 369
+Multimedia market, 22
+Multi-processor systems-on-chips (MPSoCs), 113, 163, 208, 213, 215–217, 219, 256, 273
 
 ## N
 
-Naming, 42, 104, 105, 116, 330–331, 336, 339, 341 Near-field communication, 330–332, 341 Necessary s ched ul ability, 250 Nerve, 344, 353, 362–365 Network authentication, 155, 157 Network time protocol (NTP), 57, 81–84, 368 Newtonian mechanics, 58 Node as a unit of failure, 159 Node restart, 172–175 Nominal drift rate, 78 Non-blocking write (NBW) protocol, 233–234 Non-deterministic design constructs (NDDC), 137, 368, 376 Non-preemptive, 228, 249, 252, 254, 264 NP-complete problems, 249
+Naming, 42, 104, 105, 116, 330–331, 336, 339, 341
+Near-field communication, 330–332, 341
+Necessary s ched ul ability, 250
+Nerve, 344, 353, 362–365
+Network authentication, 155, 157
+Network time protocol (NTP), 57, 81–84, 368
+Newtonian mechanics, 58
+Node as a unit of failure, 159
+Node restart, 172–175
+Nominal drift rate, 78
+Non-blocking write (NBW) protocol, 233–234
+Non-deterministic design constructs (NDDC), 137, 368, 376
+Non-preemptive, 228, 249, 252, 254, 264
+NP-complete problems, 249
 
 ## O
 
-Object delay, 7, 8 Ob ser v ability, 309 Observation, 2, 4, 8, 9, 17, 23, 26, 34, 47, 48, 58, 63, 70, 83, 89, 93, 94, 98–100, 114, 116, 119, 121–127, 129, 130, 133, 134, 136, 139–141, 152, 179, 229–231, 241, 242, 262, 264–266, 313, 315, 329, 336, 369, 371, 372, 376, 380 Occam’s razor, 38, 54 Offset, 61 Omniscient observer, 60
-
-One tick difference, 65 One-way functions, 337, 340 OPC UA, 356 Open-loop control, 21 Operating system, 47, 49, 76, 77, 94, 99, 103, 150, 160, 171, 173, 212, 215, 218, 223–246, 252, 254–257, 273, 279, 347, 352–355, 369, 379, 381 Operational specification, 87, 107–111, 116 Operator cluster, 2
+Object delay, 7, 8
+Observability, 309
+Observation, 2, 4, 8, 9, 17, 23, 26, 34, 47, 48, 58, 63, 70, 83, 89, 93, 94, 98–100, 114, 116, 119, 121–127, 129, 130, 133, 134, 136, 139–141, 152, 179, 229–231, 241, 242, 262, 264–266, 313, 315, 329, 336, 369, 371, 372, 376, 380
+Occam’s razor, 38, 54
+Offset, 61
+Omniscient observer, 60
+One tick difference, 65
+One-way functions, 337, 340
+OPC UA, 356
+Open-loop control, 21
+Operating system, 47, 49, 76, 77, 94, 99, 103, 150, 160, 171, 173, 212, 215, 218, 223–246, 252, 254–257, 273, 279, 347, 352–355, 369, 379, 381
+Operational specification, 87, 107–111, 116
+Operator cluster, 2
 
 ## P
 
-Parametric RT image, 127, 128, 141 Partitioning, 12, 19, 37, 52, 54, 172, 215, 284, 290, 293, 310, 349 Password attacks, 153 Pathfinder, 162, 263 Peak-load, 1, 5, 14, 16, 26, 27, 29, 200, 231, 243, 311, 377 Peak-load performance, 14 Peak-load scenario, 311 Perfect clock, 61, 78 Periodic and sporadic tasks, 250 Periodic clock interrupt, 17 Periodic tasks, 250, 251, 258, 259, 262, 265–267, 369, 376–378Permanence, 119, 130–133, 141, 376 Permanent failure, 164, 173, 174, 209, 211, 220, 298 Phase-aligned transaction, 126, 376 Phase-sensitive RT image, 128 Physical clock, 60 Physical fault injection, 320–321 Physical installation, 240–241 Physical one-way function (POWF), 337, 340, 341 Physical second, 58 Pin-level fault-injection, 321 Plant automation systems, 18, 21, 22, 25, 27–29 Platform-independent model (PIM), 100, 213, 214, 272, 273, 279–281, 312, 315, 316, 368 Platform-specific model (PSM), 100, 101, 213, 214, 273, 279, 312, 313, 316, 368 Pocket calculator, 93–94 Pollack’s rule, 214–215, 221, 273 Power blackout, 5 Power supply, 240 Precedence, 66–68 Precedence graph, 256–258 Precision, 23, 24, 40, 41, 57, 61–64, 67, 71–78, 82–85, 98, 108, 118, 124, 129, 134, 160, 179, 183, 217, 229, 230, 242, 257, 276, 354, 375–377, 379 Precision of the FTA, 77 Predictive maintenance, 359 Preemptive scheduling, 137, 249, 266, 372, 375, 377 Pre-run time, 248 Primary event, 5, 59, 84, 369, 376 Principles of com pos ability, 88, 111–112, 117, 118 Priority ceiling protocol, 247, 249, 255, 262, 263, 266, 267, 376 Privacy, 13, 150, 156, 173, 325, 326, 328, 330, 332, 336–338, 340 Private keys, 155–157 Probe effect, 52, 159, 273, 282, 309, 310, 312–313, 322, 323, 333 Problem solving, 31–34, 36, 37, 50, 52–55, 249, 270, 369, 375 Process lag, 7, 26, 376 Production cost, 18 Propagation delay, 184, 189, 370, 376 Property mismatches, 105, 107, 114, 116, 117, 218, 301, 336 Protocol, 23, 41, 42, 48, 55, 57, 76, 84, 105, 106, 122, 129, 131, 137, 138, 155, 157, 158, 163, 179, 180, 182–184, 186–190, 192, 194–198, 200, 207, 220, 223, 226, 230–234, 237, 244, 263, 276, 302, 318, 330, 332, 335, 336, 339, 346, 354, 356, 357, 363, 364, 369, 371, 372, 376, 380 Provision of sufficient resources, 17 Public key, 154–157, 173 Purpose and viewpoint, 43–45
+Parametric RT image, 127, 128, 141
+Partitioning, 12, 19, 37, 52, 54, 172, 215, 284, 290, 293, 310, 349
+Password attacks, 153
+Pathfinder, 162, 263
+Peak-load, 1, 5, 14, 16, 26, 27, 29, 200, 231, 243, 311, 377
+Peak-load performance, 14
+Peak-load scenario, 311
+Perfect clock, 61, 78
+Periodic and sporadic tasks, 250
+Periodic clock interrupt, 17
+Periodic tasks, 250, 251, 258, 259, 262, 265–267, 369, 376–378
+Permanence, 119, 130–133, 141, 376
+Permanent failure, 164, 173, 174, 209, 211, 220, 298
+Phase-aligned transaction, 126, 376
+Phase-sensitive RT image, 128
+Physical clock, 60
+Physical fault injection, 320–321
+Physical installation, 240–241
+Physical one-way function (POWF), 337, 340, 341
+Physical second, 58
+Pin-level fault-injection, 321
+Plant automation systems, 18, 21, 22, 25, 27–29
+Platform-independent model (PIM), 100, 213, 214, 272, 273, 279–281, 312, 315, 316, 368
+Platform-specific model (PSM), 100, 101, 213, 214, 273, 279, 312, 313, 316, 368
+Pocket calculator, 93–94
+Pollack’s rule, 214–215, 221, 273
+Power blackout, 5
+Power supply, 240
+Precedence, 66–68
+Precedence graph, 256–258
+Precision, 23, 24, 40, 41, 57, 61–64, 67, 71–78, 82–85, 98, 108, 118, 124, 129, 134, 160, 179, 183, 217, 229, 230, 242, 257, 276, 354, 375–377, 379
+Precision of the FTA, 77
+Predictive maintenance, 359
+Preemptive scheduling, 137, 249, 266, 372, 375, 377
+Pre-run time, 248
+Primary event, 5, 59, 84, 369, 376
+Principles of com pos ability, 88, 111–112, 117, 118
+Priority ceiling protocol, 247, 249, 255, 262, 263, 266, 267, 376
+Privacy, 13, 150, 156, 173, 325, 326, 328, 330, 332, 336–338, 340
+Private keys, 155–157
+Probe effect, 52, 159, 273, 282, 309, 310, 312–313, 322, 323, 333
+Problem solving, 31–34, 36, 37, 50, 52–55, 249, 270, 369, 375
+Process lag, 7, 26, 376
+Production cost, 18
+Propagation delay, 184, 189, 370, 376
+Property mismatches, 105, 107, 114, 116, 117, 218, 301, 336
+Protocol, 23, 41, 42, 48, 55, 57, 76, 84, 105, 106, 122, 129, 131, 137, 138, 155, 157, 158, 163, 179, 180, 182–184, 186–190, 192, 194–198, 200, 207, 220, 223, 226, 230–234, 237, 244, 263, 276, 302, 318, 330, 332, 335, 336, 339, 346, 354, 356, 357, 363, 364, 369, 371, 372, 376, 380
+Provision of sufficient resources, 17
+Public key, 154–157, 173
+Purpose and viewpoint, 43–45
 
 ## Q
 
@@ -6724,37 +7154,238 @@ Quality of service, 18
 
 ## R
 
-Race conditions, 138 Radio frequency identification (RFID), 325, 327, 329, 330, 333–341, 368, 372, 377 Rain signaling system, 294 Rapid prototyping, 270 Rare event, 5, 14, 16, 28, 162, 174, 264, 266, 278, 311, 319, 377 Rare-event situation, 5 Rate constrained, 97, 177, 182, 183, 187, 190–192, 194–196, 198–200 Rate correction, 79, 81, 83 Rate monotonic, 247, 249, 260–262, 266, 267, 377
-
-Rate monotonic algorithm, 260 Raw data, 5, 241, 242, 246, 369, 375, 377, 378 Raw data element (e.g., a voltage), 5 Real-time (RT), 1–29, 41, 43, 44, 46–48, 52, 53, 57–59, 63, 64, 72, 73, 79, 82, 83, 87–89, 91–93, 96, 98, 99, 102, 114, 115, 117–122, 124, 127–129, 133–136, 139, 140, 147, 151, 157–160, 165, 167, 168, 170, 173, 177–200, 212, 216, 217, 219, 221, 223–246, 248–266, 272, 273, 278–280, 294, 295, 301, 305, 308, 318, 320, 322, 327, 334, 344, 345, 348–350, 352–359, 361–364, 367–380 Real-time computer system, 2 Real-time database, 4, 15 Real-time systems, 1–3, 6, 7, 11, 13–18, 22–27, 46, 68, 84, 101, 109, 116, 117, 154, 160, 177–181, 186, 187, 190, 191, 199, 200, 213, 219, 234, 245, 247, 249, 251, 260, 262, 264, 266, 273, 276, 279, 294, 296, 309, 343–346, 349, 351–353, 355, 357, 363, 365 Reasonableness condition, 64–67, 83, 377, 379 Recovery of determinism, 138–141 Redundant sensors, 166, 241, 242 Reference clock, 57, 60–62, 64, 65, 67, 125, 217, 368, 372–374, 376, 377 Reintegration cycle, 96, 171, 173 Reintegration of a repaired node, 170–175 Reintegration point, 95, 170–171, 173, 224, 310 Reliability, 10–12, 19–21, 26, 28, 46, 47, 123, 145, 162–164, 174, 178–180, 186, 197, 199, 201, 208–211, 213, 220, 281, 283, 284, 287, 288, 290, 293, 294, 297, 298, 305, 313, 332, 345, 350, 377, 378 Repeated failure, 148 Replica determinism, 128, 133, 135, 137, 138, 140, 166, 228, 234, 245, 377 Resource adequacy, 16, 377 Resource adequate design, 11 Resource pooling, 343, 345, 346, 348, 349, 351–355, 360, 363, 364 Response function, 7 Response time requirements, 14, 21 Re synchronization interval, 73, 74, 78, 79, 83, 372 RFID security, 336–338 RFID tags, 327, 330, 334–338, 341 Rigger signal, 230 RISC processor, 253 Rise time, 7–9, 26, 28, 44, 235, 378 Risk, 20, 181, 273, 286, 289, 291, 304, 328, 343, 346, 349–351, 361, 365, 378
-
-Robot Operating System (ROS), 356 Robustness of the embedded computer system, 19 Roll-back/recovery, 15 Rolling mill, 25, 90, 118 RT entity, 3–6, 8–10, 15, 26, 28, 119–127, 129, 130, 133, 139, 140, 159, 171, 223, 229, 230, 235, 238, 241, 242, 369, 370, 377–379 RT image, 4, 5, 15, 26, 119, 120, 124–129, 133, 139–141, 239, 344, 377, 379 RT objects, 119, 120, 124, 125, 129, 130, 133, 139, 377, 379 RT transaction, 25 RTCA/DO-178B, 292
+Race conditions, 138
+Radio frequency identification (RFID), 325, 327, 329, 330, 333–341, 368, 372, 377
+Rain signaling system, 294
+Rapid prototyping, 270
+Rare event, 5, 14, 16, 28, 162, 174, 264, 266, 278, 311, 319, 377
+Rare-event situation, 5
+Rate constrained, 97, 177, 182, 183, 187, 190–192, 194–196, 198–200
+Rate correction, 79, 81, 83
+Rate monotonic, 247, 249, 260–262, 266, 267, 377
+Rate monotonic algorithm, 260
+Raw data, 5, 241, 242, 246, 369, 375, 377, 378
+Raw data element (e.g., a voltage), 5
+Real-time (RT), 1–29, 41, 43, 44, 46–48, 52, 53, 57–59, 63, 64, 72, 73, 79, 82, 83, 87–89, 91–93, 96, 98, 99, 102, 114, 115, 117–122, 124, 127–129, 133–136, 139, 140, 147, 151, 157–160, 165, 167, 168, 170, 173, 177–200, 212, 216, 217, 219, 221, 223–246, 248–266, 272, 273, 278–280, 294, 295, 301, 305, 308, 318, 320, 322, 327, 334, 344, 345, 348–350, 352–359, 361–364, 367–380
+Real-time computer system, 2
+Real-time database, 4, 15
+Real-time systems, 1–3, 6, 7, 11, 13–18, 22–27, 46, 68, 84, 101, 109, 116, 117, 154, 160, 177–181, 186, 187, 190, 191, 199, 200, 213, 219, 234, 245, 247, 249, 251, 260, 262, 264, 266, 273, 276, 279, 294, 296, 309, 343–346, 349, 351–353, 355, 357, 363, 365
+Reasonableness condition, 64–67, 83, 377, 379
+Recovery of determinism, 138–141
+Redundant sensors, 166, 241, 242
+Reference clock, 57, 60–62, 64, 65, 67, 125, 217, 368, 372–374, 376, 377
+Reintegration cycle, 96, 171, 173
+Reintegration of a repaired node, 170–175
+Reintegration point, 95, 170–171, 173, 224, 310
+Reliability, 10–12, 19–21, 26, 28, 46, 47, 123, 145, 162–164, 174, 178–180, 186, 197, 199, 201, 208–211, 213, 220, 281, 283, 284, 287, 288, 290, 293, 294, 297, 298, 305, 313, 332, 345, 350, 377, 378
+Repeated failure, 148
+Replica determinism, 128, 133, 135, 137, 138, 140, 166, 228, 234, 245, 377
+Resource adequacy, 16, 377
+Resource adequate design, 11
+Resource pooling, 343, 345, 346, 348, 349, 351–355, 360, 363, 364
+Response function, 7
+Response time requirements, 14, 21
+Re synchronization interval, 73, 74, 78, 79, 83, 372
+RFID security, 336–338
+RFID tags, 327, 330, 334–338, 341
+Rigger signal, 230
+RISC processor, 253
+Rise time, 7–9, 26, 28, 44, 235, 378
+Risk, 20, 181, 273, 286, 289, 291, 304, 328, 343, 346, 349–351, 361, 365, 378
+Robot Operating System (ROS), 356
+Robustness of the embedded computer system, 19
+Roll-back/recovery, 15
+Rolling mill, 25, 90, 118
+RT entity, 3–6, 8–10, 15, 26, 28, 119–127, 129, 130, 133, 139, 140, 159, 171, 223, 229, 230, 235, 238, 241, 242, 369, 370, 377–379
+RT image, 4, 5, 15, 26, 119, 120, 124–129, 133, 139–141, 239, 344, 377, 379
+RT objects, 119, 120, 124, 125, 129, 130, 133, 139, 377, 379
+RT transaction, 25
+RTCA/DO-178B, 292
 
 ## S
 
-Safe state, 10, 15 Safety, 1, 11–12, 14–16, 20, 26, 28, 31, 143, 150, 160, 169, 200, 256, 282, 284–288, 290–292, 294–296, 304, 325, 328–330, 345, 352, 361, 378 Safety analysis, 151, 269, 286, 292, 304, 305 Safety bag, 295 Safety case, 269, 288–292, 304, 305, 322, 378 Safety-critical real-time computer system., 3 Safety-critical subsystem, 11 Safety-critical systems, 102, 160, 162, 174, 181, 194, 241, 245, 269, 283–293, 295, 302, 309, 323, 352, 357 Safety integrity level (SIL), 278, 291, 292, 305 Safety standards, 291–293, 305, 352 Sample point, 8 Sampling frequency, 8 Sampling period, 8–10, 28, 228 Sampling point, 9 Schedulability test, 247, 249–251, 262, 265, 267, 378 S ched ul ability test for the priority ceiling protocol, 262 Schedule period, 247, 250, 257 Scheduler, 248 Scheduler is called static (or pre-run time), 248, 265 Scheduling dependent tasks, 262–263 Scheduling independent tasks, 260–262 Scientific concepts, 39–40, 55 Search tree, 247, 258 Security, 13, 19, 27, 31, 115, 143, 150–158, 170, 173–175, 179–180, 199, 216, 325, 328, 330, 332, 336, 337, 346, 350, 351, 355, 378, 380 Security threats, 152–154, 175, 336, 340, 341, 346, 350
-
-Segmentation, 37, 52, 54, 76 Self checking component, 148 Semantic agreement, 241–243, 246, 378 Semantic content, 4, 31, 39, 41–43, 54, 55, 101, 104–106, 120, 378 Semaphore operations, 234 Sensor data, 5 Server task, 259 Serverless computing, 343, 352, 364 Service, 10, 12, 13, 16, 17, 26, 27, 40, 41, 44, 45, 47, 55, 72, 88, 89, 100, 102, 103, 108, 110–113, 115–117, 122, 124, 144, 147, 148, 150, 153, 163, 167, 168, 170, 173–175, 178, 179, 182, 186–187, 190, 194, 195, 200, 207, 214, 216, 225–227, 237, 249–252, 254–259, 270, 274, 275, 277, 279, 285, 287, 290, 294, 297, 299, 300, 304, 305, 311, 314, 325, 326, 331, 332, 335, 338, 340, 344–352, 355, 357, 359, 363–365, 367, 368, 370, 373, 375–377, 381 Serviceable interface, 12 Service-level agreement (SLA), 347, 365, 368 Shadow master, 75 Short-term temporal accuracy, 15 Signal conditioning, 5, 26, 28, 239, 241, 378 Significant state variable, 3 Simple control loop, 7 Simple task (S-task), 51, 226–228, 246, 252, 254, 255 Simple verification procedures, 45 Simplicity, 31–55, 134 Simplification strategies, 36, 37, 55, 349 Simultaneous events, 58, 135, 231 Size of data files, 15 SL, 91 Smallest replaceable unit (SRU), 12, 28, 29, 368Soft programmable logic control (soft PLC), 361, 362, 364 Soft real-time, 1, 3, 13–15, 28, 245, 264, 266, 343–345, 359, 363, 378 Soft real-time computer system, 3 Software component, 305 Software-implemented fault injection, 320 Software maintenance, 299–300 Source code analysis, 252 Space-time lattice, 71 Sparse time, 57, 68–73, 83, 84, 92, 93, 110, 136, 248, 310, 369, 378 Sparse time-base, 70–71 Sphere of control (SOC), 4, 8, 9, 69, 71, 113, 114, 120, 182, 235, 236, 368, 378 Spoofing attack, 153, 378 Sporadic request, 259
-
-Sporadic server task, 259 Stability of the control loop, 9 Standardized message interfaces, 107 Start event, 2 State, 2–4, 6, 8, 12, 14–16, 18, 26, 37, 38, 41, 46, 53, 58, 60, 70, 72–76, 79, 83, 87, 88, 92–96, 98–100, 111, 116, 117, 119–124, 127, 129, 133–141, 143–147, 149, 151, 153, 158, 159, 161–163, 167–174, 188, 194, 197, 198, 202, 216, 221, 226–229, 235, 236, 239, 241, 250, 251, 255–256, 265, 271, 272, 282, 284–287, 290, 292, 294, 295, 300, 302–304, 307, 317, 319, 321–323, 347, 368, 369, 371–379, 381 State correction, 79 State estimation, 119, 124, 126–130, 133, 139–141, 173, 301, 379 Stateless voter, 239 State observation, 122 State variables, 3 Static configuration, 19 Static scheduling, 256–260 Step function, 7 Step-response function, 8 Stochastic drift rate, 78 Sufficient s ched ul ability tests, 249, 250, 256, 262, 263, 265 Synchronization condition, 57, 73–75, 78, 83, 84, 379 Synchronized actions, 127 Syntactic agreement, 241–243, 246 SysML, 280, 281 Systematic error compensation, 78 System C, 100, 213, 281 System design, 16, 28, 32, 48, 100, 111, 154, 186, 257, 259, 269–305, 350, 351, 354 System design automation, 352, 358, 364, 365 System evolution, 113, 313–314 System of system, 42, 52, 88, 113–117, 139, 170, 349, 379 System-under-test (SUT), 307–309, 312, 322
+Safe state, 10, 15 
+Safety, 1, 11–12, 14–16, 20, 26, 28, 31, 143, 150, 160, 169, 200, 256, 282, 284–288, 290–292, 294–296, 304, 325, 328–330, 345, 352, 361, 378 
+Safety analysis, 151, 269, 286, 292, 304, 305 
+Safety bag, 295 
+Safety case, 269, 288–292, 304, 305, 322, 378 
+Safety-critical real-time computer system., 3 
+Safety-critical subsystem, 11 
+Safety-critical systems, 102, 160, 162, 174, 181, 194, 241, 245, 269, 283–293, 295, 302, 309, 323, 352, 357 
+Safety integrity level (SIL), 278, 291, 292, 305 
+Safety standards, 291–293, 305, 352 
+Sample point, 8 
+Sampling frequency, 8 
+Sampling period, 8–10, 28, 228 
+Sampling point, 9 
+Schedulability test, 247, 249–251, 262, 265, 267, 378 
+S ched ul ability test for the priority ceiling protocol, 262 
+Schedule period, 247, 250, 257 
+Scheduler, 248 
+Scheduler is called static (or pre-run time), 248, 265 
+Scheduling dependent tasks, 262–263 
+Scheduling independent tasks, 260–262 
+Scientific concepts, 39–40, 55 
+Search tree, 247, 258 
+Security, 13, 19, 27, 31, 115, 143, 150–158, 170, 173–175, 179–180, 199, 216, 325, 328, 330, 332, 336, 337, 346, 350, 351, 355, 378, 380 
+Security threats, 152–154, 175, 336, 340, 341, 346, 350
+Segmentation, 37, 52, 54, 76 
+Self checking component, 148 
+Semantic agreement, 241–243, 246, 378 
+Semantic content, 4, 31, 39, 41–43, 54, 55, 101, 104–106, 120, 378 
+Semaphore operations, 234 
+Sensor data, 5 
+Server task, 259 
+Serverless computing, 343, 352, 364 
+Service, 10, 12, 13, 16, 17, 26, 27, 40, 41, 44, 45, 47, 55, 72, 88, 89, 100, 102, 103, 108, 110–113, 115–117, 122, 124, 144, 147, 148, 150, 153, 163, 167, 168, 170, 173–175, 178, 179, 182, 186–187, 190, 194, 195, 200, 207, 214, 216, 225–227, 237, 249–252, 254–259, 270, 274, 275, 277, 279, 285, 287, 290, 294, 297, 299, 300, 304, 305, 311, 314, 325, 326, 331, 332, 335, 338, 340, 344–352, 355, 357, 359, 363–365, 367, 368, 370, 373, 375–377, 381 
+Serviceable interface, 12 
+Service-level agreement (SLA), 347, 365, 368 
+Shadow master, 75 
+Short-term temporal accuracy, 15 
+Signal conditioning, 5, 26, 28, 239, 241, 378 
+Significant state variable, 3 
+Simple control loop, 7 
+Simple task (S-task), 51, 226–228, 246, 252, 254, 255 
+Simple verification procedures, 45 
+Simplicity, 31–55, 134 
+Simplification strategies, 36, 37, 55, 349 
+Simultaneous events, 58, 135, 231 
+Size of data files, 15 
+SL, 91 
+Smallest replaceable unit (SRU), 12, 28, 29, 368Soft programmable logic control (soft PLC), 361, 362, 364 
+Soft real-time, 1, 3, 13–15, 28, 245, 264, 266, 343–345, 359, 363, 378 
+Soft real-time computer system, 3 
+Software component, 305 
+Software-implemented fault injection, 320 
+Software maintenance, 299–300 
+Source code analysis, 252 
+Space-time lattice, 71 
+Sparse time, 57, 68–73, 83, 84, 92, 93, 110, 136, 248, 310, 369, 378 
+Sparse time-base, 70–71 
+Sphere of control (SOC), 4, 8, 9, 69, 71, 113, 114, 120, 182, 235, 236, 368, 378 
+Spoofing attack, 153, 378 
+Sporadic request, 259
+Sporadic server task, 259 
+Stability of the control loop, 9 
+Standardized message interfaces, 107 
+Start event, 2 
+State, 2–4, 6, 8, 12, 14–16, 18, 26, 37, 38, 41, 46, 53, 58, 60, 70, 72–76, 79, 83, 87, 88, 92–96, 98–100, 111, 116, 117, 119–124, 127, 129, 133–141, 143–147, 149, 151, 153, 158, 159, 161–163, 167–174, 188, 194, 197, 198, 202, 216, 221, 226–229, 235, 236, 239, 241, 250, 251, 255–256, 265, 271, 272, 282, 284–287, 290, 292, 294, 295, 300, 302–304, 307, 317, 319, 321–323, 347, 368, 369, 371–379, 381 
+State correction, 79 
+State estimation, 119, 124, 126–130, 133, 139–141, 173, 301, 379 
+Stateless voter, 239 
+State observation, 122 
+State variables, 3 
+Static configuration, 19 
+Static scheduling, 256–260 
+Step function, 7 
+Step-response function, 8 
+Stochastic drift rate, 78 
+Sufficient s ched ul ability tests, 249, 250, 256, 262, 263, 265 
+Synchronization condition, 57, 73–75, 78, 83, 84, 379 
+Synchronized actions, 127 
+Syntactic agreement, 241–243, 246 
+SysML, 280, 281 
+Systematic error compensation, 78 
+System C, 100, 213, 281 
+System design, 16, 28, 32, 48, 100, 111, 154, 186, 257, 259, 269–305, 350, 351, 354 
+System design automation, 352, 358, 364, 365 
+System evolution, 113, 313–314 
+System of system, 42, 52, 88, 113–117, 139, 170, 349, 379 
+System-under-test (SUT), 307–309, 312, 322
 
 ## T
 
-Task, 5, 17, 22, 24, 26, 29, 32–34, 36, 45, 50, 51, 55, 81, 90, 91, 95, 98, 102, 103, 105, 115, 118, 126, 128, 138, 139, 147, 150, 154, 159–161, 166–168, 171, 173, 174, 177, 188, 189, 201, 212, 218, 219, 223, 225–229, 231–237, 240, 242–252, 254–267, 292, 311, 320–322, 330, 332, 340, 344, 348, 352–354, 358, 362–364, 368, 369, 371, 372, 374–376, 378–380 Task-Descriptor List (TADL), 227, 244, 368, 379 Technology-agnostic, 102, 213–214, 221 Technology catalysts, 20 Technology dependent interface (TDI), 100, 101, 103, 224, 225, 314 Technology independent interface (TII), 100, 101, 103, 172, 224–226, 314 Temporal accuracy, 125 Temporal accuracy interval, 125 Temporal order, 58 Temporal requirements, 7–10 Temporally accurate, 4 Terminating event, 2 Testability, 135, 273, 282, 305, 310, 323 Test coverage, 310 Test data selection, 310, 311, 323 Testing, 308 Testing challenges, 309–314 Test of a decomposition, 281–283 Test oracles, 307, 312, 322, 323 Theft-avoidance system, 13 Thermal effects, 206, 208–209, 221 Thrashing, 187, 200, 379 Three Mile Island, 186 Tick, 60 Ticks of the clock, 2 Time as control, 230, 231 Time as data, 230 Timed message, 230 Time-Division Multiple Access (TDMA), 118, 368, 379 Time encoded signals, 236 Time formats, 81–82 Time gateway, 79, 81 Time measurement, 64–68 Time message, 79 Time-sensitive networking (TSN), 22, 177, 178, 181, 187, 192, 194, 197–200, 350, 356, 357, 363, 368, 380 Time server, 79 Timestamp, 60, 121–123, 125, 130, 179 Time standards, 63–64 Time-triggered (TT), 4, 9, 13, 17, 18, 26, 29, 48, 72, 76, 82, 83, 87, 92, 99–100, 108, 109, 113, 116–118, 122, 123, 130, 132, 146, 165, 168, 177, 178, 183, 187, 192–200, 226–228, 232, 237, 244–246, 257, 264, 269, 276, 281, 293, 300–305, 310, 313, 355, 368, 379, 380 Time-triggered (TT) observation, 4 Time-triggered ethernet (TTEthernet), 178, 195–196, 199, 200, 231, 281, 302, 318, 352, 368, 380 Time-triggered network-on-chip (TTNoC), 302 Time-triggered protocol (TTP), 48, 109, 163, 177–178, 194–195, 199, 200, 302, 368, 370, 380
-
-Time-triggered virtual machines (TTVM), 343, 354, 364, 368 Timing schema , 253 Top event, 286, 287 Top event of the fault tree, 286 Traffic light, 4 Transaction processing system, 14 Transient failure, 148 Transient fault, 145, 146, 169, 170, 175, 216, 239, 283, 288, 380 Transitory fault, 145, 146 Transport specification, 87, 107–109, 111, 116 Trigger, 17, 26, 228, 230, 280, 369, 380 Trigger task, 228, 231, 236, 246, 380 Triggering mechanisms, 17 Triple-modular redundancy (TMR), 143, 164–166, 174, 175, 238, 239, 245, 290, 295, 296, 368, 380 Triple-modular redundant (TMR) actuator, 238 Trusted network authority (TNA) Trusted security server, 155, 157 Two-faced failures, 149
+Task, 5, 17, 22, 24, 26, 29, 32–34, 36, 45, 50, 51, 55, 81, 90, 91, 95, 98, 102, 103, 105, 115, 118, 126, 128, 138, 139, 147, 150, 154, 159–161, 166–168, 171, 173, 174, 177, 188, 189, 201, 212, 218, 219, 223, 225–229, 231–237, 240, 242–252, 254–267, 292, 311, 320–322, 330, 332, 340, 344, 348, 352–354, 358, 362–364, 368, 369, 371, 372, 374–376, 378–380
+Task-Descriptor List (TADL), 227, 244, 368, 379
+Technology-agnostic, 102, 213–214, 221
+Technology catalysts, 20
+Technology dependent interface (TDI), 100, 101, 103, 224, 225, 314
+Technology independent interface (TII), 100, 101, 103, 172, 224–226, 314
+Temporal accuracy, 125
+Temporal accuracy interval, 125
+Temporal order, 58
+Temporal requirements, 7–10
+Temporally accurate, 4
+Terminating event, 2
+Testability, 135, 273, 282, 305, 310, 323
+Test coverage, 310
+Test data selection, 310, 311, 323
+Testing, 308
+Testing challenges, 309–314
+Test of a decomposition, 281–283
+Test oracles, 307, 312, 322, 323
+Theft-avoidance system, 13
+Thermal effects, 206, 208–209, 221
+Thrashing, 187, 200, 379
+Three Mile Island, 186
+Tick, 60
+Ticks of the clock, 2
+Time as control, 230, 231
+Time as data, 230
+Timed message, 230
+Time-Division Multiple Access (TDMA), 118, 368, 379
+Time encoded signals, 236
+Time formats, 81–82
+Time gateway, 79, 81
+Time measurement, 64–68
+Time message, 79
+Time-sensitive networking (TSN), 22, 177, 178, 181, 187, 192, 194, 197–200, 350, 356, 357, 363, 368, 380
+Time server, 79
+Timestamp, 60, 121–123, 125, 130, 179
+Time standards, 63–64
+Time-triggered (TT), 4, 9, 13, 17, 18, 26, 29, 48, 72, 76, 82, 83, 87, 92, 99–100, 108, 109, 113, 116–118, 122, 123, 130, 132, 146, 165, 168, 177, 178, 183, 187, 192–200, 226–228, 232, 237, 244–246, 257, 264, 269, 276, 281, 293, 300–305, 310, 313, 355, 368, 379, 380
+Time-triggered (TT) observation, 4
+Time-triggered ethernet (TTEthernet), 178, 195–196, 199, 200, 231, 281, 302, 318, 352, 368, 380
+Time-triggered network-on-chip (TTNoC), 302
+Time-triggered protocol (TTP), 48, 109, 163, 177–178, 194–195, 199, 200, 302, 368, 370, 380
+Time-triggered virtual machines (TTVM), 343, 354, 364, 368
+Timing schema , 253
+Top event, 286, 287
+Top event of the fault tree, 286
+Traffic light, 4
+Transaction processing system, 14
+Transient failure, 148
+Transient fault, 145, 146, 169, 170, 175, 216, 239, 283, 288, 380
+Transitory fault, 145, 146
+Transport specification, 87, 107–109, 111, 116
+Trigger, 17, 26, 228, 230, 280, 369, 380
+Trigger task, 228, 231, 236, 246, 380
+Triggering mechanisms, 17
+Triple-modular redundancy (TMR), 143, 164–166, 174, 175, 238, 239, 245, 290, 295, 296, 368, 380
+Triple-modular redundant (TMR) actuator, 238
+Trusted network authority (TNA)
+Trusted security server, 155, 157
+Two-faced failures, 149
 
 ## U
 
-Ultra-high dependability, 303 Ultrahigh reliability, 11 UML MARTE, 213, 280, 305 Understanding, 1, 33–36, 39, 40, 43, 44, 46, 49–55, 89, 103, 110, 119, 135, 201, 205, 242, 270, 271, 273, 275, 277, 304, 327, 380 Unified Modeling Language (UML),
-280, 281 Universal time coordinated (UTC), 63, 82–84, 368, 380
+Ultra-high dependability, 303
+Ultrahigh reliability, 11
+UML MARTE, 213, 280, 305
+Understanding, 1, 33–36, 39, 40, 43, 44, 46, 49–55, 89, 103, 110, 119, 135, 201, 205, 242, 270, 271, 273, 275, 277, 304, 327, 380
+Unified Modeling Language (UML), 280, 281
+Universal time coordinated (UTC), 63, 82–84, 368, 380
 
 ## V
 
-Validation, 5, 45, 274, 289, 292, 293, 302, 303, 307–323, 359, 360 Value failure, 134, 147, 165, 380 Virtualization, 343, 352–354, 364 VOTRICS, 294, 295 Vulnerability, 143, 150, 152, 158, 173, 175, 299, 304, 336, 338, 375, 380
+Validation, 5, 45, 274, 289, 292, 293, 302, 303, 307–323, 359, 360
+Value failure, 134, 147, 165, 380
+Virtualization, 343, 352–354, 364
+VOTRICS, 294, 295
+Vulnerability, 143, 150, 152, 158, 173, 175, 299, 304, 336, 338, 375, 380
 
 ## W
 
-Watchdogs, 16, 168, 244–246, 263, 380, 381 WCET of complex tasks, 254–255 WCET of S-tasks, 252 Wireless sensor network (WSN), 207, 325, 338–341, 368 Worst-case administrative overhead (WCAO), 227, 252, 254, 267, 368, 381
+Watchdogs, 16, 168, 244–246, 263, 380, 381
+WCET of complex tasks, 254–255
+WCET of S-tasks, 252
+Wireless sensor network (WSN), 207, 325, 338–341, 368
+Worst-case administrative overhead (WCAO), 227, 252, 254, 267, 368, 381
+Worst-case execution time (WCET), 92, 126, 160, 161, 212, 219, 227, 229, 233, 236, 243, 245, 247, 251–256, 264–267, 280
+Worst-case communication delay (WCCOM)
 
-Worst-case communication delay (WCCOM), X 126, 368, 381 Xen, 353, 363 Worst-case execution time (WCET), 92, 126, 160, 161, 212, 219, 227, 229, 233, 236, 243, 245, 247, 251–256, 264–267, 280, Z 295, 311, 355, 358, 368, 373, 375, 381 Zonal architecture, 361
+## X/Z
+
+Xen, 353, 363
+Z 295, 311, 355, 358, 368, 373, 375, 381
+Zonal architecture, 361
