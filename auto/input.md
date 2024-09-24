@@ -1,6 +1,6 @@
 # Hermann Kopetz Wilfried Steiner
 
-# Real-Time Systems
+## Real-Time Systems
 
 Design Principles for Distributed Embedded Applications 3rd ed. 2022
 
@@ -8,7 +8,7 @@ Hermann Kopetz Vienna University of Technology Vienna, Austria
 
 Wilfried Steiner TTTech Computer tech nik AG Vienna, Austria
 
-# ISBN 978-3-031-11991-0 ISBN 978-3-031-11992-7  (eBook) https://doi.org/10.1007/978-3-031-11992-7
+## ISBN 978-3-031-11991-0 ISBN 978-3-031-11992-7 (eBook) https://doi.org/10.1007/978-3-031-11992-7
 
 $\copyright$ The Editor(s) (if applicable) and The Author(s), under exclusive license to Springer Nature Switzerland AG 2022
 
@@ -20,7 +20,7 @@ The publisher, the authors, and the editors are safe to assume that the advice a
 
 This Springer imprint is published by the registered company Springer Nature Switzerland AG The registered company address is: G ewer best rass e 11, 6330 Cham, Switzerland
 
-# Preface
+## Preface
 
 The primary objective of this book is to serve as a textbook for students who take a senior undergraduate or a first-year graduate course on real-time embedded sys­ tems, also called cyber-physical systems . The book’s structure—the material is organized into 14 chapters—maps to the 14 weeks of a semester. The book is also intended for practitioners in industry who want to learn about the state of the art in real-time embedded system design and need a reference book that explains the fun­ damental concepts of the field. More than a 1000 students used the first edition of this book, published about 25 years ago, as a text for the real-time systems course at the Vienna University of Technology. The feedback from these students and many new developments in this dynamic field of embedded real-time systems have been incorporated in the second edition. This third edition of the book includes learnings from industrial applications of its elaborated design principles and addresses the ongoing convergence of real-time embedded systems with IT (information technol­ ogy) systems. It also covers emerging autonomous system developments.
 
@@ -34,7 +34,7 @@ It is assumed that the reader of this book has a background in basic computer sc
 
 The glossary, provided at the end, is an integral part of this book, providing defi­ nitions for many of the technical terms used throughout. If the reader is not sure about the meaning of a term, they are advised to refer to the glossary.
 
-# Acknowledgments
+## Acknowledgments
 
 It is impossible to name all students, colleagues from industry, and fellow scientists who have contributed to this third edition of the book by asking intelligent questions or making constructive comments over the last decade—thanks to all of you.
 
@@ -44,132 +44,132 @@ May 2022
 
 # Contents
 
-## 1 The Real-Time Environment    1
+## 1 The Real-Time Environment  1
 
-1.1 When Is a Computer System Real-Time?   2
+1.1 When Is a Computer System Real-Time?  2
 
-1.2 Functional Requirements   3
- 1.2.1 Data Collection    3
- 1.2.2 Direct Digital Control    6
+1.2 Functional Requirements  3
+ 1.2.1 Data Collection  3
+ 1.2.2 Direct Digital Control  6
  1.2.3 Man-Machine Interaction 6
 
-1.3 Temporal Requirements   7
- 1.3.1 Where Do Temporal Requirements Come From?   7
- 1.3.2 Minimal Latency Jitter   9
- 1.3.3 Minimal Error-Detection Latency  10
+1.3 Temporal Requirements  7
+ 1.3.1 Where Do Temporal Requirements Come From?  7
+ 1.3.2 Minimal Latency Jitter  9
+ 1.3.3 Minimal Error-Detection Latency 10
 
-1.4 Dependability Requirements  10
- 1.4.1 Reliability  10
- 1.4.2 Safety  11
- 1.4.3 Maintainability  12
- 1.4.4 Availability  12
- 1.4.5 Security   13
+1.4 Dependability Requirements 10
+ 1.4.1 Reliability 10
+ 1.4.2 Safety 11
+ 1.4.3 Maintainability 12
+ 1.4.4 Availability 12
+ 1.4.5 Security  13
 
-1.5 Classification of Real-Time Systems  13
- 1.5.1 Hard Real-Time System Versus Soft Real-Time System  14
- 1.5.2 Fail-Safe Versus Fail-Operational  16
- 1.5.3 Guaranteed Response Versus Best Effort  16
- 1.5.4 Resource-Adequate Versus Resource-Inadequate  17
- 1.5.5 Event-Triggered Versus Time-Triggered  17
+1.5 Classification of Real-Time Systems 13
+ 1.5.1 Hard Real-Time System Versus Soft Real-Time System 14
+ 1.5.2 Fail-Safe Versus Fail-Operational 16
+ 1.5.3 Guaranteed Response Versus Best Effort 16
+ 1.5.4 Resource-Adequate Versus Resource-Inadequate 17
+ 1.5.5 Event-Triggered Versus Time-Triggered 17
 
-1.6 The Real-Time System Market  18
- 1.6.1 Embedded Real-Time Systems  18
- 1.6.2 Plant Automation Systems  21
- 1.6.3 Multimedia Systems   22
+1.6 The Real-Time System Market 18
+ 1.6.1 Embedded Real-Time Systems 18
+ 1.6.2 Plant Automation Systems 21
+ 1.6.3 Multimedia Systems  22
 
-1.7 Examples of Real-Time Systems  23
- 1.7.1 Controlling the Flow in a Pipe  23
- 1.7.2 Engine Control  24
- 1.7.3 Rolling Mill  25
+1.7 Examples of Real-Time Systems 23
+ 1.7.1 Controlling the Flow in a Pipe 23
+ 1.7.2 Engine Control 24
+ 1.7.3 Rolling Mill 25
 
-Bibliographic Notes   27
-Review Questions and Problems  28
+Bibliographic Notes  27
+Review Questions and Problems 28
 
-## 2 Simplicity   31
+## 2 Simplicity  31
 
-2.1 Cognition  32
- 2.1.1 Problem-Solving   32
- 2.1.2 Definition of a Concept  34
- 2.1.3 Cognitive Complexity  35
- 2.1.4 Simplification Strategies  37
+2.1 Cognition 32
+ 2.1.1 Problem-Solving  32
+ 2.1.2 Definition of a Concept 34
+ 2.1.3 Cognitive Complexity 35
+ 2.1.4 Simplification Strategies 37
 
-2.2 The Conceptual Landscape  38
- 2.2.1 Concept Formation  38
+2.2 The Conceptual Landscape 38
+ 2.2.1 Concept Formation 38
  2.2.2 Scientific Concepts 40
- 2.2.3 The Concept of a Message  41
- 2.2.4 Semantic Content of a Variable  42
+ 2.2.3 The Concept of a Message 41
+ 2.2.4 Semantic Content of a Variable 42
 
-2.3 The Essence of Model Building  43
- 2.3.1 Purpose and Viewpoint   44
- 2.3.2 The Grand Challenge  46
+2.3 The Essence of Model Building 43
+ 2.3.1 Purpose and Viewpoint  44
+ 2.3.2 The Grand Challenge 46
 
-2.4 Emergence  46
- 2.4.1 Irreducibility   47
- 2.4.2 Prior and Derived Properties  47
- 2.4.3 Complex Systems  48
+2.4 Emergence 46
+ 2.4.1 Irreducibility  47
+ 2.4.2 Prior and Derived Properties 47
+ 2.4.3 Complex Systems 48
 
-2.5 How Can We Achieve Simplicity?  51
+2.5 How Can We Achieve Simplicity? 51
 
-Bibliographic Notes   53
-Points to Remember  53
-Review Questions and Problems  55
+Bibliographic Notes  53
+Points to Remember 53
+Review Questions and Problems 55
 
-## 3 Global Time   57
+## 3 Global Time  57
 
-3.1 Time and Order  58
- 3.1.1 Different Orders  58
- 3.1.2 Clocks   59
- 3.1.3 Precision and Accuracy  61
- 3.1.4 Time Standards   63
+3.1 Time and Order 58
+ 3.1.1 Different Orders 58
+ 3.1.2 Clocks  59
+ 3.1.3 Precision and Accuracy 61
+ 3.1.4 Time Standards  63
 
-3.2 Time Measurement   64
- 3.2.1 Global Time  64
- 3.2.2 Interval Measurement   66
- 3.2.3  π / Δ -Precedence  66
- 3.2.4 Fundamental Limits of Time Measurement  68
+3.2 Time Measurement  64
+ 3.2.1 Global Time 64
+ 3.2.2 Interval Measurement  66
+ 3.2.3 π / Δ -Precedence 66
+ 3.2.4 Fundamental Limits of Time Measurement 68
 
-3.3 Dense Time Versus Sparse Time  68
- 3.3.1 Dense Time Base  69
- 3.3.2 Sparse Time Base  70
- 3.3.3 Space-Time Lattice   71
- 3.3.4 Cyclic Representation of Time   72
+3.3 Dense Time Versus Sparse Time 68
+ 3.3.1 Dense Time Base 69
+ 3.3.2 Sparse Time Base 70
+ 3.3.3 Space-Time Lattice  71
+ 3.3.4 Cyclic Representation of Time  72
 
-3.4 Internal Clock Synchronization  73
- 3.4.1 The Synchronization Condition  73
- 3.4.2 Central Master Synchronization   75
- 3.4.3 Fault-Tolerant Synchronization Algorithms  75
+3.4 Internal Clock Synchronization 73
+ 3.4.1 The Synchronization Condition 73
+ 3.4.2 Central Master Synchronization  75
+ 3.4.3 Fault-Tolerant Synchronization Algorithms 75
 
-3.4.4 State Correction Versus Rate Correction  79
- 3.5 External Clock Synchronization   79
- 3.5.1 External Time Sources  79
- 3.5.2 Time Gateway  81
- 3.5.3 Time Formats  81
+3.4.4 State Correction Versus Rate Correction 79
+ 3.5 External Clock Synchronization  79
+ 3.5.1 External Time Sources 79
+ 3.5.2 Time Gateway 81
+ 3.5.3 Time Formats 81
 
-Points to Remember  82
-Bibliographic Notes   83
-Review Questions and Problems  83
+Points to Remember 82
+Bibliographic Notes  83
+Review Questions and Problems 83
 
-## 4 Real-Time (RT) Model   87
+## 4 Real-Time (RT) Model  87
 
-4.1 Model Outline  88
- 4.1.1 Components and Messages  88
- 4.1.2 Cluster of Components   89
- 4.1.3 Temporal Control Versus Logical Control  90
- 4.1.4 Event-Triggered Control Versus Time-Triggered Control  92
+4.1 Model Outline 88
+ 4.1.1 Components and Messages 88
+ 4.1.2 Cluster of Components  89
+ 4.1.3 Temporal Control Versus Logical Control 90
+ 4.1.4 Event-Triggered Control Versus Time-Triggered Control 92
 
-4.2 Component State  92
- 4.2.1 Definition of State  93
- 4.2.2 The Pocket Calculator Example  93
- 4.2.3 Ground State   95
- 4.2.4 Database Components  96
+4.2 Component State 92
+ 4.2.1 Definition of State 93
+ 4.2.2 The Pocket Calculator Example 93
+ 4.2.3 Ground State  95
+ 4.2.4 Database Components 96
 
-4.3 The Message Concept  97
- 4.3.1 Message Structure  97
- 4.3.2 Event Information Versus State Information  98
- 4.3.3 Event-Triggered (ET) Message  99
- 4.3.4 Time-Triggered (TT) Message  99
+4.3 The Message Concept 97
+ 4.3.1 Message Structure 97
+ 4.3.2 Event Information Versus State Information 98
+ 4.3.3 Event-Triggered (ET) Message 99
+ 4.3.4 Time-Triggered (TT) Message 99
 
-4.4 Component Interfaces  100
+4.4 Component Interfaces 100
  4.4.1 Interface Characterization 101
  4.4.2 Linking Interface (LIF) 102
  4.4.3 Technology-Independent Interface (TII) 103
@@ -179,22 +179,22 @@ Review Questions and Problems  83
 4.5 Gateway Component 104
  4.5.1 Property Mismatches 105
  4.5.2 LIF Versus Local Interface of a Gateway Component 105
- 4.5.3 Standardized Message Interface  107
+ 4.5.3 Standardized Message Interface 107
 
 4.6 Linking Interface Specification 107
- 4.6.1 Transport Specification  108
+ 4.6.1 Transport Specification 108
  4.6.2 Operational Specification 109
  4.6.3 Meta-Level Specification 110
 
-4.7 Component Integration  111
+4.7 Component Integration 111
  4.7.1 Principles of Composability 111
  4.7.2 Integration Viewpoints 112
  4.7.3 System of Systems 113
 
-Bibliographic Notes  117
+Bibliographic Notes 117
 Review Questions and Problems 117
 
-## 5 Temporal Relations  119
+## 5 Temporal Relations 119
 
 5.1 Real-Time Entities 120
  5.1.1 Sphere of Control 120
@@ -210,7 +210,7 @@ Review Questions and Problems 117
  5.3.1 Real-Time Images 124
  5.3.2 Real-Time Objects 124
 
-5.4 Temporal Accuracy  125
+5.4 Temporal Accuracy 125
  5.4.1 Definition 125
  5.4.2 Classification of Real-Time Images 127
  5.4.3 State Estimation 129
@@ -229,7 +229,7 @@ Review Questions and Problems 117
  5.6.4 Recovery of Determinism 138
 
 Points to Remember 139
-Bibliographic Notes  140
+Bibliographic Notes 140
 Review Questions and Problems 140
 
 ## 6 Dependability 143
@@ -260,16 +260,16 @@ Review Questions and Problems 140
  6.5.1 The Concept of Robustness 168
  6.5.2 The Concept of Resilience 170
 
-6.6 Component Reintegration  170
+6.6 Component Reintegration 170
  6.6.1 Finding a Reintegration Point 170
  6.6.2 Minimizing the Ground State 171
  6.6.3 Component Restart 172
 
 Points to Remember 173
-Bibliographic Notes  174
+Bibliographic Notes 174
 Review Questions and Problems 174
 
-## 7 Real-Time Communication  177
+## 7 Real-Time Communication 177
 
 7.1 Requirements 178
  7.1.1 Timeliness 178
@@ -280,7 +280,7 @@ Review Questions and Problems 174
 7.2 Design Principles and Pitfalls 181
  7.2.1 Real-Time Network Model 182
  7.2.2 Message Types 182
- 7.2.3 Flow Control  183
+ 7.2.3 Flow Control 183
  7.2.4 Design Limitations 184
  7.2.5 Design Pitfalls 186
 
@@ -290,25 +290,25 @@ Review Questions and Problems 174
 
 7.4 Rate-Constrained Communication 190
  7.4.1 Avionics Full-Duplex Switched Ethernet (AFDX): ARINC 664-p7 191
- 7.4.2 Audio/Video Bridging: IEEE 802.1 AVB  192
+ 7.4.2 Audio/Video Bridging: IEEE 802.1 AVB 192
 
 7.5 Time-Triggered Communication 192
- 7.5.1 TTP  194
+ 7.5.1 TTP 194
  7.5.2 TTEthernet 195
  7.5.3 Time-Sensitive Networking: IEEE 802.1 TSN 197
 
 Points to Remember 198
-Bibliographic Notes  200
+Bibliographic Notes 200
 Review Questions and Problems 200
 
-## 8 Power and Energy Awareness  201
+## 8 Power and Energy Awareness 201
 
-8.1 Power and Energy  202
+8.1 Power and Energy 202
  8.1.1 Basic Concepts 202
  8.1.2 Energy Estimation 204
  8.1.3 Thermal Effects and Reliability 208
 
-8.2 Hardware Power Reduction Techniques  209
+8.2 Hardware Power Reduction Techniques 209
  8.2.1 Device Scaling 209
  8.2.2 Low-Power Hardware Design 211
  8.2.3 Voltage and Frequency Scaling 211
@@ -316,20 +316,20 @@ Review Questions and Problems 200
 
 8.3 System Architecture 213
  8.3.1 Technology-Agnostic Design 213
- 8.3.2 Pollack’s Rule  214
+ 8.3.2 Pollack’s Rule 214
  8.3.3 Power Gating 216
  8.3.4 Real Time Versus Execution Time 217
 
 8.4 Software Techniques 218
- 8.4.1 System Software  218
+ 8.4.1 System Software 218
  8.4.2 Application Software 219
  8.4.3 Software Tools 219
 
 Points to Remember 198
-Bibliographic Notes  200
+Bibliographic Notes 200
 Review Questions and Problems 200
 
-## 9 Real-Time Operating Systems  223
+## 9 Real-Time Operating Systems 223
 
 9.1 Inter-Component Communication 224
  9.1.1 Technology-Independent Interface (TII) 224
@@ -337,17 +337,17 @@ Review Questions and Problems 200
  9.1.3 Technology-Dependent Interface (TDI) 225
  9.1.4 Generic Middleware (GM) 225
 
-9.2 Task Management  226
- 9.2.1 Simple Tasks  226
+9.2 Task Management 226
+ 9.2.1 Simple Tasks 226
  9.2.2 Trigger Tasks 228
  9.2.3 Complex Tasks 229
 
-9.3 The Dual Role of Time  229
- 9.3.1 Time as Data  230
+9.3 The Dual Role of Time 229
+ 9.3.1 Time as Data 230
  9.3.2 Time as Control 231
 
 9.4 Inter-Task Interactions 232
- 9.4.1 Coordinated Static Schedules  232
+ 9.4.1 Coordinated Static Schedules 232
  9.4.2 The Non-blocking Write (NBW) Protocol 233
  9.4.3 Semaphore Operations 234
 
@@ -355,26 +355,26 @@ Review Questions and Problems 200
  9.5.1 Analog Input/Output 234
  9.5.2 Digital Input/Output 235
  9.5.3 Interrupts 236
- 9.5.4 Fault-Tolerant Actuators  238
+ 9.5.4 Fault-Tolerant Actuators 238
  9.5.5 Intelligent Instrumentation 239
  9.5.6 Physical Installation 240
 
 9.6 Agreement Protocols 241
- 9.6.1 Raw Data, Measured Data, and Agreed Data  241
+ 9.6.1 Raw Data, Measured Data, and Agreed Data 241
  9.6.2 Syntactic Agreement 242
  9.6.3 Semantic Agreement 242
 
 9.7 Error Detection 243
  9.7.1 Monitoring Task Execution Times 243
  9.7.2 Monitoring Interrupts 243
- 9.7.3 Double Execution of Tasks  243
+ 9.7.3 Double Execution of Tasks 243
  9.7.4 Watchdogs 244
 
 Points to Remember 245
-Bibliographic Notes  245
+Bibliographic Notes 245
 Review Questions and Problems 246
 
-## 10 Real-Time Scheduling  247
+## 10 Real-Time Scheduling 247
 
 10.1 The Scheduling Problem 248
  10.1.1 Classification of Scheduling Algorithms 248
@@ -383,7 +383,7 @@ Review Questions and Problems 246
 
 10.2 Worst-Case Execution Time 251
  10.2.1 WCET of Simple Tasks 252
- 10.2.2 WCET of Complex Tasks  254
+ 10.2.2 WCET of Complex Tasks 254
  10.2.3 Anytime Algorithms 255
  10.2.4 State of Practice 255
 
@@ -400,17 +400,17 @@ Review Questions and Problems 246
  10.5.2 Feedback Scheduling 264
 
 Points to Remember 265
-Bibliographic Notes  266
+Bibliographic Notes 266
 Review Questions and Problems 267
 
-## 11 System Design  269
+## 11 System Design 269
 
 11.1 System Design 270
  11.1.1 The Design Process 270
  11.1.2 The Role of Constraints 272
- 11.1.3 System Design Versus Software Design  272
+ 11.1.3 System Design Versus Software Design 272
 
-11.2 Design Phases  274
+11.2 Design Phases 274
  11.2.1 Purpose Analysis 275
  11.2.2 Requirements Capture 275
  11.2.3 Architecture Design 276
@@ -420,7 +420,7 @@ Review Questions and Problems 267
  11.3.1 Model-Based Design 277
  11.3.2 Component-Based Design 279
  11.3.3 Architecture Design Languages 280
- 11.3.4 Test of a Decomposition  281
+ 11.3.4 Test of a Decomposition 281
 
 11.4 Design of Safety-Critical Systems 283
  11.4.1 What Is Safety? 284
@@ -428,40 +428,40 @@ Review Questions and Problems 267
  11.4.3 Safety Case 288
  11.4.4 Safety Standards 291
 
-11.5 Design Diversity  293
+11.5 Design Diversity 293
  11.5.1 Diverse Software Versions 294
  11.5.2 An Example of a Fail-Safe System 295
- 11.5.3 Multilevel System  296
+ 11.5.3 Multilevel System 296
 
 11.6 Design for Maintainability 296
- 11.6.1 Cost of Maintenance  297
+ 11.6.1 Cost of Maintenance 297
  11.6.2 Maintenance Strategy 298
  11.6.3 Software Maintenance 299
 
-11.7 The Time-Triggered Architecture  300
+11.7 The Time-Triggered Architecture 300
  11.7.1 Principle of a Consistent Global Time 300
  11.7.2 Principle of Component Orientation 301
- 11.7.3 Principle of Coherent Communication  302
+ 11.7.3 Principle of Coherent Communication 302
  11.7.4 Principle of Fault Tolerance 303
 
-Bibliographic Notes  303
+Bibliographic Notes 303
 Points to Remember 303
 Review Questions and Problems 305
 
-## 12 Validation  307
+## 12 Validation 307
 
-12.1 Validation Versus Verification  308
+12.1 Validation Versus Verification 308
 
 12.2 Testing Challenges 309
  12.2.1 Design for Testability 310
- 12.2.2 Test Data Selection  310
+ 12.2.2 Test Data Selection 310
  12.2.3 Test Oracle 312
  12.2.4 System Evolution and Technology Readiness Levels (TRLs) 313
 
-12.3 Testing of Component-Based Systems  314
+12.3 Testing of Component-Based Systems 314
  12.3.1 Component Provider 314
- 12.3.2 Component User  314
- 12.3.3 Communicating Components  315
+ 12.3.2 Component User 314
+ 12.3.3 Communicating Components 315
 
 12.4 Formal Methods 316
  12.4.1 Formal Methods in the Real World 316
@@ -469,34 +469,34 @@ Review Questions and Problems 305
  12.4.3 Benefits of Formal Methods 317
  12.4.4 Model Checking 319
 
-12.5 Fault Injection  319
- 12.5.1 Software-Implemented Fault Injection  320
+12.5 Fault Injection 319
+ 12.5.1 Software-Implemented Fault Injection 320
  12.5.2 Physical Fault Injection 320
  12.5.3 Sensor and Actuator Failures 321
 
 Points to Remember 322
-Bibliographic Notes  323
+Bibliographic Notes 323
 Review Questions and Problems 323
 
-## 13 Internet of Things  325
+## 13 Internet of Things 325
 
 13.1 The Vision of the Internet of Things (IoT) 326
 
-13.2 Drivers for an IoT  327
+13.2 Drivers for an IoT 327
  13.2.1 Uniformity of Access 327
  13.2.2 Logistics 327
- 13.2.3 Energy Savings  328
+ 13.2.3 Energy Savings 328
  13.2.4 Physical Security and Safety 328
- 13.2.5 Industrial  329
- 13.2.6 Medical  329
+ 13.2.5 Industrial 329
+ 13.2.6 Medical 329
  13.2.7 Lifestyle 329
 
-13.3 Technical Issues of the IoT  329
+13.3 Technical Issues of the IoT 329
  13.3.1 Internet Integration 329
  13.3.2 Naming and Identification 330
  13.3.3 Near-Field Communication 331
  13.3.4 IoT Device Capabilities Versus Cloud Computing 332
- 13.3.5 Autonomic Components  332
+ 13.3.5 Autonomic Components 332
 
 13.4 RFID Technology 333
  13.4.1 Overview 334
@@ -508,16 +508,16 @@ Review Questions and Problems 323
 13.5 Wireless Sensor Networks (WSN) 338
 
 Points to Remember 339
-Bibliographic Notes  340
+Bibliographic Notes 340
 Review Questions and Problems 341
 
-## 14 Cloud and Fog Computing  343
+## 14 Cloud and Fog Computing 343
 
 14.1 Introduction 344
 
 14.2 Characteristics of the Cloud 345
 
-14.3 The Advent of Fog Computing  347
+14.3 The Advent of Fog Computing 347
  14.3.1 Fog Computing for Distributed Embedded Systems 348
  14.3.2 Fog Computing Benefits and Risks 349
  14.3.3 General Fog Computing and Comparison to Edge Computing 351
@@ -530,43 +530,37 @@ Review Questions and Problems 341
 
 14.5 Example Use Cases 358
  14.5.1 Cloud Computing-Enabled Use Cases 359
- 14.5.2 Fog Computing-Enabled Use Cases  360
+ 14.5.2 Fog Computing-Enabled Use Cases 360
  14.5.3 Nerve 362
 
 Points to Remember 363
-Bibliographic Notes  364
+Bibliographic Notes 364
 Review Questions and Problems 365
 
-
-
-Annexes  367
-References  383
-Index  395
+Annexes 367
+References 383
+Index 395
 
 # Chapter 1 The Real-Time Environment
 
-# Overview
+## Overview
 
 The purpose of this introductory chapter is to describe the environment of real-time computer systems from a number of different perspectives. A solid understanding of the technical and economic factors that characterize a real-time application helps to interpret the demands that the system designer must cope with. The chapter starts with the definition of a real-time system and with a discussion of its functional and non functional requirements. Particular emphasis is placed on the temporal require­ ments that are derived from the well-understood properties of control applications. The objective of a control algorithm is to drive a process such that a performance criterion is satisfied. Random disturbances occurring in the environment degrade system performance and must be taken into account by the control algorithm. Any additional uncertainty that is introduced into the control loop by the control system itself, e.g., a non-predictable jitter of the control loop, results in a degradation of the quality of control.
 
 In Sects. 1.2 , 1.3 , 1.4 and 1.5 , real-time applications are classified from a number of viewpoints. Special emphasis is placed on the fundamental differences between hard and soft real-time systems. Because soft real-time systems do not have severe failure modes, a less rigorous approach to their design is often followed. Sometimes resource-inadequate solutions that will not handle the rarely occurring peak-load scenarios are accepted on economic arguments. In a hard real-time application, such an approach is unacceptable because the safety of a design in all specified situa­ tions, even if they occur only very rarely, must be demonstrated vis-a-vis a certifica­ tion agency. In Sect. 1.6 , a brief analysis of the real-time system market is carried out with emphasis on the field of embedded real-time systems. An embedded real-­ time system is a part of a self-contained product, e.g., a television set or an automo­ bile. Embedded real-time systems, also called cyber-physical systems (CPS), form the most important market segment for real-time technology and the computer industry in general.
 
-# 1.1  When Is a Computer System Real-Time?
+## 1.1 When Is a Computer System Real-Time?
 
 A real-time computer system is a computer system where the correctness of the system behavior depends not only on the logical results of the computations but also on the physical time when these results are produced. By system behavior we mean the sequence of outputs in time of a system.
 
 We model the flow of time by a directed timeline that extends from the past into the future. A cut of the timeline is called an instant . Any ideal occurrence that hap­ pens at an instant is called an event . Information that describes an event (see also Sect. 5.2.4 on event observation) is called event information. The present point in time, now , is a very special event that separates the past from the future (the pre­ sented model of time is based on Newtonian physics and disregards relativistic effects). An interval on the timeline, called a duration , is defined by two events, the start event and the terminating event of the interval . A digital clock partitions the timeline into a sequence of equally spaced durations, called the granules of the clock, which are delimited by special periodic events, the ticks of the clock.
 
-Figure_1.1 ­ Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1­ Figure_1.1 Figure_1.1 1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1­ Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1 Figure_1.1­ Figure_1 .1 F igur e_1.1 Figure_1. 1 F igure_1.1 Figure_1.1 F igu re_1.1 Figure_1.1 Figure_1.1
-
 If the real-time computer system is distributed (and most of them are), it consists of a set of (computer) nodes interconnected by a real-time communication network.
 
-The interface between the human operator and the real-time computer system is called the man-machine interface , and the interface between the controlled object and the real-time computer system is called the instrumentation interface . The man-­ machine interface consists of input devices (e.g., keyboard) and output devices (e.g., display) that interface to the human operator. The instrumentation interface consists
+The interface between the human operator and the real-time computer system is called the man-machine interface , and the interface between the controlled object and the real-time computer system is called the instrumentation interface . The man-­ machine interface consists of input devices (e.g., keyboard) and output devices (e.g., display) that interface to the human operator. The instrumentation interface consists of the sensors and actuators that transform the physical signals (e.g., voltages, cur­ rents) in the controlled cluster into a digital form and vice versa.
 
-![](images/d8903c26ea2685eced632dea6d53cb5820d77fa291635fb8f477e8380140683a.jpg)
-Fig. 1.1  Real-time system
-
-of the sensors and actuators that transform the physical signals (e.g., voltages, cur­ rents) in the controlled cluster into a digital form and vice versa.
+> ![](images/d8903c26ea2685eced632dea6d53cb5820d77fa291635fb8f477e8380140683a.jpg)
+> Fig.1.1 Real-time system
 
 A real-time computer system must react to stimuli from its environment (the controlled cluster or the operator cluster) within time intervals dictated by its envi­ ronment. The instant when a result must be produced is called a deadline . If a result has utility even after the deadline has passed, the deadline is classified as soft ; oth­ erwise it is firm . If severe consequences could result if a firm deadline is missed, the deadline is called hard.
 
@@ -576,11 +570,11 @@ A real-time computer system that must meet at least one hard deadline is called 
 
 The design of a hard real-time system is fundamentally different from the design of a soft real-time system. While a hard real-time computer system must sustain a guaranteed temporal behavior under all specified load and fault conditions, it is permissible for a soft real-time computer system to miss a deadline occasionally. The differences between soft and hard real-time systems will be discussed in detail in the following sections. The focus of this book is on the design of hard real-time systems.
 
-# 1.2  Functional Requirements
+## 1.2 Functional Requirements
 
 The functional requirements of real-time systems are concerned with the functions that a real-time computer system must perform. They are grouped into data collec­ tion requirements, direct digital control requirements, and man-machine interaction requirements.
 
-# 1.2.1  Data Collection
+### 1.2.1 Data Collection
 
 A controlled object, e.g., a car or an industrial plant, changes its state as a function of time (whenever we use the word time without a qualifier, we mean physical time as described in Sect. 3.1 ). If we freeze the time, we can describe the current state of the controlled object by recording the values of its state variables at that moment. Possible state variables of a controlled object car are the position of the car, the speed of the car, the position of switches on the dashboard, and the position of a piston in a cylinder. We are normally not interested in all state variables, but only in the subset of state variables that is significant for our purpose. A significant state variable is called a real-time (RT) entity .
 
@@ -588,16 +582,14 @@ Every RT entity is in the sphere of control (SOC) of a subsystem, i.e., it belon
 
 The first functional requirement of a real-time computer system is the observa­ tion of the RT entities in a controlled cluster and the collection of these observa­ tions. An observation of an RT entity is represented by a real-time (RT) image in the computer system. Since the state of a controlled object in the controlled cluster is a function of real time, a given RT image is only temporally accurate for a limited time interval. The length of this time interval depends on the dynamics of the con­ trolled object. If the state of the controlled object changes very quickly, the corre­ sponding RT image has a very short accuracy interval .
 
-Figure_1.2 Figure_1.2 1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 Figure_1.2 rigure_1.2
-
 The set of all temporally accurate real-time images of the controlled cluster is called the real-time database . The real-time database must be updated whenever an RT entity changes its value. These updates can be performed periodically, triggered by the progression of the real-time clock by a fixed period ( time-triggered (TT) observation ), or immediately after a change of state, which constitutes an event, occurs in the RT entity ( event-triggered (ET) observation ). A more detailed analysis of time-triggered and event-triggered observations will be presented in Chaps. 4 and 5 .
 
-![](images/e2bb8304f34cf8532434c092d8a0cd251d3fc677da709e91bbc8562054217ce0.jpg)
-Fig. 1.2  Temporal accuracy of the traffic light information
+> ![](images/e2bb8304f34cf8532434c092d8a0cd251d3fc677da709e91bbc8562054217ce0.jpg)
+> Fig.1.2 Temporal accuracy of the traffic light information
 
-Signal Conditioning   A physical sensor, e.g., a thermocouple, produces a raw data element (e.g., a voltage). Often, a sequence of raw data elements is collected and an averaging algorithm is applied to reduce the measurement error. In the next step, the raw data must be calibrated and transformed to standard measurement units. The term signal conditioning is used to refer to all the processing steps that are neces­ sary to obtain meaningful measured data of an RT entity from the raw sensor data. After signal conditioning, the measured data must be checked for plausibility and related to other measured data to detect a possible fault of the sensor. A data element that is judged to be a correct RT image of the corresponding RT entity is called an agreed data element .
+Signal Conditioning A physical sensor, e.g., a thermocouple, produces a raw data element (e.g., a voltage). Often, a sequence of raw data elements is collected and an averaging algorithm is applied to reduce the measurement error. In the next step, the raw data must be calibrated and transformed to standard measurement units. The term signal conditioning is used to refer to all the processing steps that are neces­ sary to obtain meaningful measured data of an RT entity from the raw sensor data. After signal conditioning, the measured data must be checked for plausibility and related to other measured data to detect a possible fault of the sensor. A data element that is judged to be a correct RT image of the corresponding RT entity is called an agreed data element .
 
-Alarm Monitoring   An important function of a real-time computer system is the continuous monitoring of the RT entities to detect abnormal process behaviors.
+Alarm Monitoring An important function of a real-time computer system is the continuous monitoring of the RT entities to detect abnormal process behaviors.
 
 Example : The rupture of a pipe, a primary event , in a chemical plant will cause many RT entities (diverse pressures, temperatures, liquid levels) to deviate from their normal operat­ ing ranges and to cross some preset alarm limits, thereby generating a set of correlated alarms, which is called an alarm shower .
 
@@ -609,13 +601,13 @@ A situation that occurs infrequently but is of utmost concern when it does occur
 
 Example : The sole purpose of a nuclear power plant monitoring and shutdown system is reliable performance in a peak-load alarm situation (a rare event ). Hopefully, this rare event will never occur during the operational life of the plant.
 
-# 1.2.2  Direct Digital Control
+### 1.2.2 Direct Digital Control
 
 Many real-time computer systems must calculate the actuating variables for the actuators in order to control the controlled object directly ( direct digital control— DDC ), i.e., without any underlying conventional control system.
 
 Control applications are highly regular, consisting of an (infinite) sequence of control cycles, each one starting with sampling (observing) of the RT entities, fol­ lowed by the execution of the control algorithm to calculate a new actuating variable and subsequently by the output of the actuating variable to the actuator. The design of a proper control algorithm that achieves the desired control objective, and com­ pensates for the random disturbances that perturb the controlled object, is the topic of the field of control engineering. In the next section on temporal requirements, some basic notions of control engineering will be introduced.
 
-# 1.2.3  Man-Machine Interaction
+### 1.2.3 Man-Machine Interaction
 
 A real-time computer system must inform the operator of the current state of the controlled object and must assist the operator in controlling the machine or plant object. This is accomplished via the man-machine interface, a critical subsystem of major importance. Many severe computer-related accidents in safety-critical real-­ time systems have been traced to mistakes made at the man-machine interface [Lev95].
 
@@ -627,71 +619,56 @@ Example : In some countries, the pharmaceutical industry is required by law to r
 
 Man-machine interfacing has become such an important issue in the design of computer-based systems that a number of courses dealing with this topic have been developed. In the context of this book, we will introduce an abstract man-machine interface in Sect. 4.5.2 , but we will not cover its design in detail. The interested reader is referred to standard textbooks on user interface design.
 
-# 1.3  Temporal Requirements
+## 1.3 Temporal Requirements
 
-# 1.3.1  Where Do Temporal Requirements Come From?
+### 1.3.1 Where Do Temporal Requirements Come From?
 
 The most stringent temporal demands for real-time systems have their origin in the requirements of control loops, e.g., in the control of a fast process such as an auto­ motive engine. The temporal requirements at the man-machine interface are, in comparison, less stringent because the human perception delay, in the range of $50{-}100\,\mathrm{ms}$ , is orders of magnitude larger than the latency requirements of fast con­ trol loops.
 
-Figure_1.3   Figure_1.3 1.3 Figure_1.3 Figure_1.3 Figure_1.3 Figu re_1.3 Figure_1 .3 Fi gure_1.3 Figure_1.3 Figure_1.3 Figure_1.3 Figure_1.3
-
 The focus of the following discussion is on the temporal properties of this simple control loop consisting of a controlled object and a controlling computer system .
 
-Figu re*1.4   Figure* 1.4 1.4 F igu re\_ 1.4 Figure_1.4 Figure_1.4 1.4 Figure_1.4 rigure_1.4 Figure_1.4 Figure_1.4 Figure_1.4 Figure_1.4 Figure_1.4 $d$ Figure_1.4 Figure_1.4 Figur $t$ Figure_1.4 Figure_1.4 Figure_1.4 Figure_1.4
+There are two important temporal parameters characterizing this elementary step-response function, the object delay $d^{\mathrm{object}}$ (sometimes called the lag time or lag ) after which the measured variable temperature begins to rise (caused by the initial inertia of the process and the instrumentation, called the process lag ) and the rise time $d^{\mathrm{rise}}$ of the temperature until the new equilibrium state has been reached. To determine the object delay $d^{\mathrm{object}}$ and the rise time $d^{\mathrm{rise}}$ from a given experimentally recorded shape of the step-response function, one finds the two points in time where the response function has reached $I O\%$ and $90\%$ of the difference between the two stationary equilibrium values. These two points are connected by a straight line (Fig.1.4 ). The significant points in time that characterize the object delay $d^{\mathrm{object}}$ and the rise time $d^{\mathrm{rise}}$ of the step-response function are constructed by finding the inter­ section of this straight line with the two horizontal lines that denote the two liquid temperatures that correspond to the stable equilibrium states before and after the application of the step function.
 
-There are two important temporal parameters characterizing this elementary step-response function, the object delay $d^{\mathrm{object}}$ (sometimes called the lag time or lag ) after which the measured variable temperature begins to rise (caused by the initial inertia of the process and the instrumentation, called the process lag ) and the rise
+> ![](images/f336c161f787c7c3ca0fe01171042bf8c716e6ffce7e61faff0d6d3e040f646e.jpg)
+> Fig.1.3 A simple control loop
 
-![](images/f336c161f787c7c3ca0fe01171042bf8c716e6ffce7e61faff0d6d3e040f646e.jpg)
-Fig. 1.3  A simple control loop
+> ![](images/494153be51c4dc8177b24971b0c95b986f500bf8cf91800dd1e4703793439568.jpg)
+> Fig.1.4 Delay and rise time of the step response
 
-![](images/494153be51c4dc8177b24971b0c95b986f500bf8cf91800dd1e4703793439568.jpg)
-Fig. 1.4  Delay and rise time of the step response
-
-time $d^{\mathrm{rise}}$ of the temperature until the new equilibrium state has been reached. To determine the object delay $d^{\mathrm{object}}$ and the rise time $d^{\mathrm{rise}}$ from a given experimentally recorded shape of the step-response function, one finds the two points in time where the response function has reached $I O\%$ and $90\%$ of the difference between the two stationary equilibrium values. These two points are connected by a straight line (Fig.  1.4 ). The significant points in time that characterize the object delay $d^{\mathrm{object}}$ and the rise time $d^{\mathrm{rise}}$ of the step-response function are constructed by finding the inter­ section of this straight line with the two horizontal lines that denote the two liquid temperatures that correspond to the stable equilibrium states before and after the application of the step function.
-
-Controlling Computer System   The controlling computer system must sample the temperature of the vessel periodically to detect any deviation between the intended value and the actual value of the controlled variable temperature . The constant dura­ tion between two sampling points is called the sampling period $d^{\mathrm{sample}}$ , and the ­reciprocal $\boldsymbol{I}/d^{\mathrm{sample}}$ is the sampling frequency, $\boldsymbol f^{\mathrm{sample}}$ . A rule of thumb says that, in a digital system which is expected to behave like a quasi-continuous system, the sam­ pling period should be less than one-tenth of the rise time $d^{\mathrm{rise}}$ of the step-response function of the controlled object, i.e., $\begin{array}{r}{d^{\mathrm{sample}}<(d^{\mathrm{rise}}/I O).}\end{array}$ . The computer compares the measured temperature to the temperature set point selected by the operator and calculates the error term . This error term forms the basis for the calculation of a new value of the control variable by a control algorithm . Given a time interval after each sampling point, called the computer delay $d^{\mathrm{{counter}}}$ , the controlling computer will output this new value of the actuating variable to the control valve, thus closing the control loop. The delay $d^{\mathrm{{counter}}}$ should be smaller than the sampling period $d^{\mathrm{sample}}$ .
+Controlling Computer System The controlling computer system must sample the temperature of the vessel periodically to detect any deviation between the intended value and the actual value of the controlled variable temperature . The constant dura­ tion between two sampling points is called the sampling period $d^{\mathrm{sample}}$ , and the ­reciprocal $\boldsymbol{I}/d^{\mathrm{sample}}$ is the sampling frequency, $\boldsymbol f^{\mathrm{sample}}$ . A rule of thumb says that, in a digital system which is expected to behave like a quasi-continuous system, the sam­ pling period should be less than one-tenth of the rise time $d^{\mathrm{rise}}$ of the step-response function of the controlled object, i.e., $\begin{array}{r}{d^{\mathrm{sample}}<(d^{\mathrm{rise}}/I O).}\end{array}$ . The computer compares the measured temperature to the temperature set point selected by the operator and calculates the error term . This error term forms the basis for the calculation of a new value of the control variable by a control algorithm . Given a time interval after each sampling point, called the computer delay $d^{\mathrm{{counter}}}$ , the controlling computer will output this new value of the actuating variable to the control valve, thus closing the control loop. The delay $d^{\mathrm{{counter}}}$ should be smaller than the sampling period $d^{\mathrm{sample}}$ .
 
 The difference between the maximum and the minimum values of the delay of the computer is called the jitter of the computer delay, $\Delta d^{\mathrm{{counter}}}$ . This jitter is a sensi­ tive parameter for the quality of control.
 
-Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 Figure $d^{\mathrm{object}}$ Figure_1.5 Figure_1.5 $d^{\mathrm{{counter}}}$ Figure_1.5
+> Table 1.1 Parameters of an elementary control loop
+> ![](images/2fa5d2c0d20e9c13971b83936cb6481767ef5b43bd15cdfa757b6168a4868884.jpg)
 
-Table 1.1  Parameters of an elementary control loop
-![](images/2fa5d2c0d20e9c13971b83936cb6481767ef5b43bd15cdfa757b6168a4868884.jpg)
+> ![](images/b6d317839c150fccf93ddddb3fddbcdf5d7817d92aeda6fad535dbc98260cda1.jpg)
+> Figure_1.5 $d^{\mathrm{{counter}}}$
 
-![](images/b6d317839c150fccf93ddddb3fddbcdf5d7817d92aeda6fad535dbc98260cda1.jpg)
+### 1.3.2 Minimal Latency Jitter
 
-Figure_1.5 Figure_1.5 Figure_1.5 $d^{\mathrm{{counter}}}$ Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 1.5 Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 Figure_1.5 rigure_1.5
+> Figure_1.6
 
-Table_1.1   Table_1.1 1.1 Table_1.1 Table_1.1 1.3 Table_1.1 Table_1.1 Table_1.1 Table_1.1 ­ Table_1.1
+### 1.3.3 Minimal Error-Detection Latency
 
-# 1.3.2  Minimal Latency Jitter
-
-Figure*1.6 Figure_1.6 ­ Figure_1.6 ­ Figure_1.6 Figure_1.6 Figure_1.6 Figure* $\Delta d^{\mathrm{{counter}}}$ Figure_1.6 Figur $d^{\mathrm{{counter}}}$ Figure_1.6 Figure_1.6 Figure_1.6 Figure_1.6 Figure_1.6 Figure_1.6
-
-$\Delta d$ Figure_1.6 Figure_1.6 $\Delta T$ Figure_1.6 Figure_1.6 $T$ Figure_1.6 1.6 Figure_1.6 Figure_1.6 $1\;\mathrm{ms}$ Figure_1.6 $\upmu\mathrm{s}$ igure_1.6
-
-# 1.3.3  Minimal Error-Detection Latency
-
-![](images/6a05a89c686000e877cd9c313ea09d0fe33b9b3e769cc69797efb503132b195a.jpg)
-Fig. 1.6  The effect of jitter on the measured variable $T$
+> ![](images/6a05a89c686000e877cd9c313ea09d0fe33b9b3e769cc69797efb503132b195a.jpg)
+> Fig.1.6 The effect of jitter on the measured variable $T$
 
 Hard real-time applications are, by definition, safety-critical. It is therefore impor­ tant that any error within the control system, e.g., the loss or corruption of a message or the failure of a node, is detected within a short time with a very high probability. The required error-detection latency must be in the same order of magnitude as the sampling period of the fastest critical control loop. It is then possible to perform some corrective action, or to bring the system into a safe state, before the conse­ quences of an error can cause any severe system failure. Almost-no-jitter systems will have shorter guaranteed error-detection latencies than systems that allow for jitter.
 
-# 1.4  Dependability Requirements
+## 1.4 Dependability Requirements
 
 The notion of dependability covers the non functional attributes of a computer sys­ tem that relate to the quality of service a system delivers to its users during an extended interval of time. (A user could be a human or another technical system.) The following measures of dependability attributes are of importance [Avi04].
 
-# 1.4.1  Reliability
+### 1.4.1 Reliability
 
-The reliability $R(t)$ of a system is the probability that a system will provide the specified service until time $t$ , given that the system was operational at the beginning, i.e., $t\,=\,t_{0}$ . The probability that a system will fail in a given interval of time is expressed by the failure rate , measured in FITs (failure in time). A failure rate of $I$ $F I T$ means that the mean time to a failure (MTTF) of a device is $I O^{9}$ hours, i.e., one failure occurs in about 115,000 years . If a system has a constant failure rate of $\lambda$ failures/hour , then the reliability at time $t$ is given by
+The reliability $R(t)$ of a system is the probability that a system will provide the specified service until time $t$ , given that the system was operational at the beginning, i.e., $t\,=\,t_{0}$ . The probability that a system will fail in a given interval of time is expressed by the failure rate , measured in FITs (failure in time). A failure rate of $I$ $F I T$ means that the mean time to a failure (MTTF) of a device is $I O^{9}$ hours, i.e., one failure occurs in about 115,000 years . If a system has a constant failure rate of $\lambda$ failures/hour , then the reliability at time $t$ is given by where $t{-}t_{0}$ is given in hours. The inverse of the failure rate ${\cal{I}}/\lambda={\cal{M T T F}}$ is called the mean time to failure (MTTF) (in hours) . If the failure rate of a system is required to be in the order of $I O^{-9}$ failures/h or lower, then we speak of a system with an ultra­ high reliability requirement.
 
 $$
 \begin{array}{l}{R\mathopen{}\mathclose\bgroup\left(t\aftergroup\egroup\right)=\exp\mathopen{}\mathclose\bgroup\left(-\lambda\mathopen{}\mathclose\bgroup\left(t-t_{0}\aftergroup\egroup\right)\aftergroup\egroup\right),}\end{array}
 $$
 
-where $t{-}t_{0}$ is given in hours. The inverse of the failure rate ${\cal{I}}/\lambda={\cal{M T T F}}$ is called the mean time to failure (MTTF) (in hours) . If the failure rate of a system is required to be in the order of $I O^{-9}$ failures/h or lower, then we speak of a system with an ultra­ high reliability requirement.
-
-# 1.4.2  Safety
+### 1.4.2 Safety
 
 Safety is reliability regarding critical failure modes . A critical failure mode is said to be malign , in contrast with a non critical failure, which is benign . In a malign failure mode, the cost of a failure can be orders of magnitude higher than the utility of the system during normal operation. Examples of malign failures are an airplane crash due to a failure in the flight-control system and an automobile accident due to a failure of a computer-controlled intelligent brake in the automobile. Safety-critical (hard) real-time systems must have a failure rate with regard to critical failure modes that conforms to the ultrahigh reliability requirement.
 
@@ -699,7 +676,7 @@ Example : Consider the example of a computer-controlled brake in an automobile. 
 
 Similarly low failure rates are required in flight-control systems, train-signaling systems, and nuclear power plant monitoring systems.
 
-Certification   In many cases the design of a safety-critical real-time system must be approved by an independent certification agency. The certification process can be simplified if the certification agency can be convinced that:
+Certification In many cases the design of a safety-critical real-time system must be approved by an independent certification agency. The certification process can be simplified if the certification agency can be convinced that:
 
 (i) The subsystems that are critical for the safe operation of the system are pro­ tected by fault-containment mechanisms that eliminate the possibility of error propagation from the rest of the system into these safety-critical subsystems.
 
@@ -715,7 +692,7 @@ Certification   In many cases the design of a safety-critical real-time system
 
 (iii) Design tradeoffs are made in favor of designs that minimize the number of parameters that must be measured.
 
-# 1.4.3  Maintainability
+### 1.4.3 Maintainability
 
 Maintainability is a measure of the time interval required to repair a system after the occurrence of a benign failure. Maintainability is measured by the probability $M\left(d\right)$ that the system is restored within a time interval $d$ after the failure. In keeping with the reliability formalism, a constant repair rate $\mu$ (repairs per hour) and a mean time to repair (MTTR) are introduced to define a quantitative maintainability measure.
 
@@ -723,7 +700,7 @@ There is a fundamental conflict between reliability and maintainability. A main�
 
 In the field of ambient intelligence , automatic diagnosis and maintainability by an untrained end user are important system properties that are critical for the mar­ ket success of a product.
 
-# 1.4.4  Availability
+### 1.4.4 Availability
 
 Availability is a measure of the delivery of correct service with respect to the alter­ nation of correct and incorrect service. It is measured by the fraction of time that the system is ready to provide the service.
 
@@ -735,41 +712,39 @@ $$
 A=M T T F/\big(M T T F+M T T R\big).
 $$
 
-![](images/0cd4e22199a484cf5718c9dcfa037d416f83b7789c1d2ff25c4a87865cbd6848.jpg)
-Fig. 1.7  Relationship between MTTF , MTBF , and MTTR
-
-Figure_1 $M T T F\mathrm{~+~}M T T R$ Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7 Figure_1.7
+> ![](images/0cd4e22199a484cf5718c9dcfa037d416f83b7789c1d2ff25c4a87865cbd6848.jpg)
+> Fig.1.7 Relationship between MTTF , MTBF , and MTTR
 
 A high availability can be achieved either by a long MTTF or by a short MTTR . The designer has thus some freedom in the selection of her/his approach to the construction of a high-availability system.
 
-# 1.4.5  Security
+### 1.4.5 Security
 
 A dependable system must also be secure. Security is concerned with the authentic­ ity and integrity of information and the ability of a system to prevent unauthorized access to information or services (see also Sect. 6.2 ). There are difficulties in defin­ ing a quantitative security measure, e.g., the specification of a standard burglar that takes a certain time to intrude a system. Traditionally, security issues have been associated with large databases, where the concerns are confidentiality, privacy, and authenticity of information. During the last few years, security issues have also become important in real-time systems, e.g., a cryptographic theft-avoidance sys­ tem that locks the ignition of a car if the user cannot present the specified access code. In the Internet of Things (IoT) , where the endpoints of the Internet are embed­ ded systems that bridge the gap between the cyber world and physical world, secu­ rity concerns are of crucial importance, since an intruder cannot only corrupt a data structure in a computer, but can cause harm in the physical environment.
 
-# 1.5  Classification of Real-Time Systems
+## 1.5 Classification of Real-Time Systems
 
 In this section we classify real-time systems from different perspectives. The first two classifications, hard real-time versus soft real-time (online) and fail-safe versus fail-operational , depend on the characteristics of the application, i.e., on factors outside the computer system. The second three classifications, guaranteed timeli­ ness versus best effort , resource-adequate versus resource-inadequate , and event-­ triggered versus time-triggered , depend on the design and implementation of the computer application, i.e., on factors inside the computer system.
 
-# 1.5.1  Hard Real-Time System Versus Soft Real-Time System
+### 1.5.1 Hard Real-Time System Versus Soft Real-Time System
 
 Table_1.2 Table_1.2 Table_1.2 Table_1.2 Table_1.2 Table_1.2 Table_1.2 Table_1.2 Table_1.2 Table_1.2 ­ Table_1.2 1.2 Table_1.2 Table_1.2
 
-Response Time   The demanding response time requirements of hard real-time applications, often in the order of milliseconds or less, preclude direct human inter­ vention during normal operation or in critical situations. A hard real-time system must be highly autonomous to maintain safe operation of the process. In contrast, the response time requirements of soft real-time and online systems are often in the order of seconds. Furthermore, if a deadline is missed in a soft real-time system, no catastrophe can result.
+Response Time The demanding response time requirements of hard real-time applications, often in the order of milliseconds or less, preclude direct human inter­ vention during normal operation or in critical situations. A hard real-time system must be highly autonomous to maintain safe operation of the process. In contrast, the response time requirements of soft real-time and online systems are often in the order of seconds. Furthermore, if a deadline is missed in a soft real-time system, no catastrophe can result.
 
-Peak-Load Performance   In a hard real-time system, the peak-load scenario must be well defined. It must be guaranteed by design that the computer system meets the specified deadlines in all situations, since the utility of many hard real-time applica­ tions depends on their predictable performance during rare-event scenarios leading to a peak load. This is in contrast to the situation in a soft real-time system, where the average performance is important, and a degraded operation in a rarely occur­ ring peak-load case is tolerated for economic reasons.
+Peak-Load Performance In a hard real-time system, the peak-load scenario must be well defined. It must be guaranteed by design that the computer system meets the specified deadlines in all situations, since the utility of many hard real-time applica­ tions depends on their predictable performance during rare-event scenarios leading to a peak load. This is in contrast to the situation in a soft real-time system, where the average performance is important, and a degraded operation in a rarely occur­ ring peak-load case is tolerated for economic reasons.
 
-Control of Pace   A hard real-time computer system is often paced by the state changes occurring in the environment. It must keep up with the state of the environ­ ment (the controlled object and the human operator) under all circumstances. This is in contrast to an online system, which can exercise some control over the environ­ ment in case it cannot process the offered load.
+Control of Pace A hard real-time computer system is often paced by the state changes occurring in the environment. It must keep up with the state of the environ­ ment (the controlled object and the human operator) under all circumstances. This is in contrast to an online system, which can exercise some control over the environ­ ment in case it cannot process the offered load.
 
 Example : Consider the case of a transaction processing system, such as an airline reserva­ tion system. If the computer cannot keep up with the demands of the users, it just extends the response time and forces the users to slow down.
 
-Table 1.2  Hard real-time versus soft real-time systems
-![](images/6bd67091d28d32dd677bd8af066b5dac3da674721736571cd4fa0c53cb04492e.jpg)
+> Table 1.2 Hard real-time versus soft real-time systems
+> ![](images/6bd67091d28d32dd677bd8af066b5dac3da674721736571cd4fa0c53cb04492e.jpg)
 
-Safety   The safety critical it y of many real-time applications has a number of conse­ quences for the system designer. In particular, error detection and recovery must be autonomous such that the system can initiate appropriate recovery actions and arrive at a safe state within the time intervals dictated by the application without human intervention.
+Safety The safety critical it y of many real-time applications has a number of conse­ quences for the system designer. In particular, error detection and recovery must be autonomous such that the system can initiate appropriate recovery actions and arrive at a safe state within the time intervals dictated by the application without human intervention.
 
-Size of Data Files   The real-time database that is composed of the temporally accurate images of the RT entities is normally of small size. The key concern in hard real-time systems is on the short-term temporal accuracy of the real-time database that is invalidated by the flow of real time. In contrast, in online transaction process­ ing systems, the maintenance of the long-term integrity and availability of large data files is the key issue. Large data files may also be present in hard real-time applica­ tions, like real-time camera data for self-driving cars. However, these large files are typically only part of the state during a computation that contracts them into small-­ sized RT images of the RT entities (see Sect. 5.3 for RT images and Sect. 4.2.2 for state expansion and contraction). For example, although the cameras of self-driving cars produce large data files, the resulting information of the position, speed, and direction of surrounding objects is only of small size.
+Size of Data Files The real-time database that is composed of the temporally accurate images of the RT entities is normally of small size. The key concern in hard real-time systems is on the short-term temporal accuracy of the real-time database that is invalidated by the flow of real time. In contrast, in online transaction process­ ing systems, the maintenance of the long-term integrity and availability of large data files is the key issue. Large data files may also be present in hard real-time applica­ tions, like real-time camera data for self-driving cars. However, these large files are typically only part of the state during a computation that contracts them into small-­ sized RT images of the RT entities (see Sect. 5.3 for RT images and Sect. 4.2.2 for state expansion and contraction). For example, although the cameras of self-driving cars produce large data files, the resulting information of the position, speed, and direction of surrounding objects is only of small size.
 
-Redundancy Type   After an error has been detected in an online system, the com­ putation is rolled back to a previously established checkpoint to initiate a recovery action. In hard real-time systems, rollback/recovery is of limited utility for the fol­ lowing reasons:
+Redundancy Type After an error has been detected in an online system, the com­ putation is rolled back to a previously established checkpoint to initiate a recovery action. In hard real-time systems, rollback/recovery is of limited utility for the fol­ lowing reasons:
 
 (i) It is difficult to guarantee the deadline after the occurrence of an error, since the rollback/recovery action can take an unpredictable amount of time.
 
@@ -779,7 +754,7 @@ Redundancy Type   After an error has been detected in an online system, the co
 
 The topic of temporal accuracy of real-time data is discussed at length in Sect. 5.4 , while the issues of error detection and types of redundancy are dealt with in Chap. 6 .
 
-# 1.5.2  Fail-Safe Versus Fail-Operational
+### 1.5.2 Fail-Safe Versus Fail-Operational
 
 In many hard real-time systems, one or more safe states, which can be reached in case of a system failure, can be identified. If such a safe state can be identified and quickly reached upon the occurrence of a failure, then we call the system fail-safe. Fail safeness is a characteristic of the controlled object, not the computer system. In fail-safe applications, the computer system must have a high error-detection cover­ age , i.e., the probability that an error is detected, provided it has occurred, must be close to one.
 
@@ -789,19 +764,19 @@ In many real-time computer systems, a special external device, a watchdog , is p
 
 There are, however, applications where a safe state that can be reached quickly cannot be identified, e.g., a flight-control system aboard an airplane. In such an application, the computer system must remain operational and provide a minimal level of service even in the case of a failure to avoid a catastrophe. This is why these applications are called fail-operational .
 
-# 1.5.3  Guaranteed Response Versus Best Effort
+### 1.5.3 Guaranteed Response Versus Best Effort
 
 If we start out with a specified fault and load hypothesis and deliver a design that makes it possible to reason about the adequacy of the design without reference to probabilistic arguments (even in the case of a peak-load and fault scenario), then we can speak of a system with a guaranteed response . The probability of failure of a perfect system with guaranteed response is reduced to the probability that the assumptions about the peak load and the number and types of faults do not hold in reality. This probability is called assumption coverage [Pow95]. Guaranteed response systems require careful planning and extensive analysis during the design phase.
 
 If such an analytic response guarantee cannot be given, we speak of a best-effort design. Best-effort systems do not require a rigorous specification of the load and fault hypothesis. The design proceeds according to the principle best possible effort taken , and the sufficiency of the design is established during the test and integration phases. It is difficult to establish that a best-effort design operates correctly in a rare-­ event scenario. At present, many non-safety-critical real-time systems are designed according to the best-effort paradigm.
 
-# 1.5.4  Resource-Adequate Versus Resource-Inadequate
+### 1.5.4 Resource-Adequate Versus Resource-Inadequate
 
 Guaranteed response systems are based on the principle of resource adequacy, i.e., there are enough computing resources available to handle the specified peak-load and the fault scenario. Many non-safety-critical real-time system designs are based on the principle of resource inadequacy. It is assumed that the provision of sufficient resources to handle every possible situation is not economically viable and that a dynamic resource allocation strategy based on resource sharing and probabilistic arguments about the expected load and fault scenarios is acceptable.
 
 It is expected that, in the future, there will be a paradigm shift to resource-­ adequate designs in many applications. The use of computers in important volume-­ based applications, e.g., in cars, raises both the public awareness and concerns about computer-related incidents and forces the designer to provide convincing arguments that the design functions properly under all stated conditions. Hard real-time sys­ tems must be designed according to the guaranteed response paradigm that requires the availability of adequate resources.
 
-# 1.5.5  Event-Triggered Versus Time-Triggered
+### 1.5.5 Event-Triggered Versus Time-Triggered
 
 The distinction between event-triggered and time-triggered depends on the type of internal triggers and not the external behavior of a real-time system. A trigger is an event that causes the start of some action in the computer, e.g., the execution of a task or the transmission of a message. Depending on the triggering mechanisms for the start of communication and processing actions in each node of a computer sys­ tem, two distinctly different approaches to the design of the control mechanisms of real-time computer applications can be identified, event-triggered control and time-­ triggered control .
 
@@ -813,15 +788,15 @@ Example : The distinction between event-triggered and time-triggered can be expl
 
 button push is stored locally, and periodically, e.g., every second, the computer asks to get the state of all push buttons. The flow of control in a time-triggered system is managed by the progression of time, while in an event-triggered system, the flow of control is deter­ mined by the events that happen in the environment or the computer system.
 
-# 1.6  The Real-Time System Market
+## 1.6 The Real-Time System Market
 
 In a market economy, the cost/performance relation is a decisive parameter for the market success of any product. There are only a few scenarios where cost arguments are not the major concern. The total life-cycle cost of a product can be broken down into three rough categories: non-recurring development cost, production cost, and operation and maintenance cost. Depending on the product type, the distribution of the total life-cycle cost over these three cost categories can vary significantly. We will examine this life-cycle cost distribution by looking at two important examples of real-time systems, embedded real-time systems and plant automation systems.
 
-# 1.6.1  Embedded Real-Time Systems
+### 1.6.1 Embedded Real-Time Systems
 
 The ever-decreasing price/performance ratio of microcontrollers makes it economi­ cally attractive to replace conventional mechanical or electronic control system within many products by an embedded real-time computer system. There are numerous examples of products with embedded computer systems: cellular phones, engine controllers in cars, heart pacemakers, computer printers, television sets, washing machines, and even some electric razors contain a microcontroller with some thousand instructions of software code. Because the external interfaces (par­ ticularly the man-machine interface) of the product often remain unchanged relative to the previous product generation, it is often not visible from the outside that a real-time computer system is controlling the product behavior.
 
-Characteristics   An embedded real-time computer system is always part of a well-­ specified larger system, which we call an intelligent product . An intelligent product consists of a physical (mechanical) subsystem: the controlling embedded computer and, most often, a man-machine interface. The ultimate success of any intelligent product depends on the relevance and quality of service it can provide to its users. A focus on the genuine user needs is thus of utmost importance.
+Characteristics An embedded real-time computer system is always part of a well-­ specified larger system, which we call an intelligent product . An intelligent product consists of a physical (mechanical) subsystem: the controlling embedded computer and, most often, a man-machine interface. The ultimate success of any intelligent product depends on the relevance and quality of service it can provide to its users. A focus on the genuine user needs is thus of utmost importance.
 
 Embedded systems have a number of distinctive characteristics that influence the system development process:
 
@@ -845,7 +820,7 @@ A large fraction of the life-cycle cost of many intelligent products is in the p
 
 Example : In [Neu96] we find the following laconic one-liner: General Motors recalls almost 300 K cars for engine software flaw.
 
-Future Trends   During the last few years, the variety and number of embedded computer applications have grown to the point that, by now, this segment is by far the most important one in the computer market. The embedded system market is driven by the continuing improvements in the cost/performance ratio of the semi­ conductor industry that makes computer-based control systems cost-competitive relative to their mechanical, hydraulic, and electronic counterparts. Among the key mass markets are the domains of consumer electronics and automotive electronics. The automotive electronics market is of particular interest, because of stringent tim­ ing, dependability, and cost requirements that act as technology catalysts .
+Future Trends During the last few years, the variety and number of embedded computer applications have grown to the point that, by now, this segment is by far the most important one in the computer market. The embedded system market is driven by the continuing improvements in the cost/performance ratio of the semi­ conductor industry that makes computer-based control systems cost-competitive relative to their mechanical, hydraulic, and electronic counterparts. Among the key mass markets are the domains of consumer electronics and automotive electronics. The automotive electronics market is of particular interest, because of stringent tim­ ing, dependability, and cost requirements that act as technology catalysts .
 
 Automotive manufacturers view the proper exploitation of computer technology as a key competitive element in the never-ending quest for increased vehicle perfor­ mance and reduced manufacturing cost. While some years ago, the computer appli­ cations on board a car focused on non critical body electronics or comfort functions, there is now a substantial growth in the computer control of core vehicle functions, e.g., engine control, brake control, transmission control, and suspension control. We observe an integration of many of these functions with the goal of increasing the vehicle stability in critical driving maneuvers. Obviously, an error in any of these core vehicle functions has severe safety implications.
 
@@ -859,13 +834,13 @@ At present the topic of computer safety in cars is approached at two levels. At 
 
 The embedded system market is expected to continue steep growth during the next 10 years. Today many embedded systems already connect to the Internet, form­ ing the Internet of Things (see Chap. 13 ). We expect this trend to even intensify by fog and cloud computing (see Chap. 14 ).
 
-# 1.6.2  Plant Automation Systems
+### 1.6.2 Plant Automation Systems
 
-Characteristics   Historically, industrial plant automation was the first field for the application of real-time digital computer control. This is understandable since the benefits that can be gained by the computerization of a sizable plant are much larger than the cost of even an expensive process-control computer of the late 1960s. In the early days, human operators controlled the industrial plants locally. With the ­refinement of industrial plant instrumentation and the availability of remote auto­ matic controllers, plant monitoring and command facilities were concentrated into a central control room, thus reducing the number of operators required to run the plant. In the 1970s, the next logical step was the introduction of central processcontrol computers to monitor the plant and assist the operator in her/his routine functions, e.g., data logging and operator guidance. In the beginning, the computer was considered an add-on facility that was not fully trusted. It was the duty of the operator to judge whether a set point calculated by a computer made sense and could be applied to the process ( open-loop control ). In the next phase, Supervisory Control and Data Acquisition (SCADA) systems calculated the set points for the programmable logic controllers (PLCs) in the plant. With the improvement of the process models and the growth of the reliability of the computer, control functions have been increasingly allocated to the computer, and gradually the operator has been taken out of the control loop ( closed-loop control ). Sophisticated nonlinear control techniques, which have response time requirements beyond human capabili­ ties, have been implemented.
+Characteristics Historically, industrial plant automation was the first field for the application of real-time digital computer control. This is understandable since the benefits that can be gained by the computerization of a sizable plant are much larger than the cost of even an expensive process-control computer of the late 1960s. In the early days, human operators controlled the industrial plants locally. With the ­refinement of industrial plant instrumentation and the availability of remote auto­ matic controllers, plant monitoring and command facilities were concentrated into a central control room, thus reducing the number of operators required to run the plant. In the 1970s, the next logical step was the introduction of central processcontrol computers to monitor the plant and assist the operator in her/his routine functions, e.g., data logging and operator guidance. In the beginning, the computer was considered an add-on facility that was not fully trusted. It was the duty of the operator to judge whether a set point calculated by a computer made sense and could be applied to the process ( open-loop control ). In the next phase, Supervisory Control and Data Acquisition (SCADA) systems calculated the set points for the programmable logic controllers (PLCs) in the plant. With the improvement of the process models and the growth of the reliability of the computer, control functions have been increasingly allocated to the computer, and gradually the operator has been taken out of the control loop ( closed-loop control ). Sophisticated nonlinear control techniques, which have response time requirements beyond human capabili­ ties, have been implemented.
 
 Usually, every plant automation system is unique. There is an extensive amount of engineering and software effort required to adapt the computer system to the physical layout, the operating strategy, the rules and regulations, and the reporting system of a particular plant. To reduce these engineering and software efforts, many process-control companies have developed a set of modular building blocks, which can be configured individually to meet the requirements of a customer. Compared to the development cost, the production cost (hardware cost) is of minor importance. Maintenance cost can be an issue if a maintenance technician must be on-site for $24{\mathrm{~h~}}$ in order to minimize the downtime of a plant.
 
-Future Trends   The market of industrial plant automation systems is limited by the number of plants that are newly constructed or are refurbished to install a computer-­ control system. During the last 30 years, many plants have already been automated. This investment must pay off before a new generation of computers and control equipment is installed.
+Future Trends The market of industrial plant automation systems is limited by the number of plants that are newly constructed or are refurbished to install a computer-­ control system. During the last 30 years, many plants have already been automated. This investment must pay off before a new generation of computers and control equipment is installed.
 
 Furthermore, the installation of a new generation of control equipment in a pro­ duction plant causes disruption in the operation of the plant with a costly loss of production that must be justified economically. This is difficult if the plant’s effi­ ciency is already high, and the margin for further improvement by refined computer control is limited.
 
@@ -873,26 +848,24 @@ The size of the plant automation market is too small to support the mass produc�
 
 We also expect a steep increase in the connectivity of industrial automation sys­ tems to fog and cloud computing systems (for use cases, see Sect. 14.5 ) to realize Industry 4.0 and the Industrial Internet of Things (Industrial IoT).
 
-# 1.6.3  Multimedia Systems
+### 1.6.3 Multimedia Systems
 
-Characteristics   The multimedia market is a mass market for specially designed soft and firm real-time systems. Although the deadlines for many multimedia tasks, such as the synchronization of audio and video streams, are firm, they are not hard deadlines. An occasional failure to meet a deadline results in a degradation of the quality of the user experience , but will not cause a catastrophe. The processing power required to transport and render a continuous video stream is large and dif­ ficult to estimate, because it is possible to improve a good picture even further. The resource allocation strategy in multimedia applications is thus quite different from that of hard real-time applications; it is not determined by the given application requirements, but by the amount of available resources. A fraction of the given com­ putational resources (processing power, memory, bandwidth) is allocated to a user domain. Quality of experience considerations at the end user determine the detailed resource allocation strategy. For example, if a user reduces the size of a window and enlarges the size of another window on his multimedia terminal, then the system can reduce the bandwidth and the processing allocated to the first window to free the resources for the other window that has been enlarged. Other users of the system should not be affected by this local reallocation of resources.
+Characteristics The multimedia market is a mass market for specially designed soft and firm real-time systems. Although the deadlines for many multimedia tasks, such as the synchronization of audio and video streams, are firm, they are not hard deadlines. An occasional failure to meet a deadline results in a degradation of the quality of the user experience , but will not cause a catastrophe. The processing power required to transport and render a continuous video stream is large and dif­ ficult to estimate, because it is possible to improve a good picture even further. The resource allocation strategy in multimedia applications is thus quite different from that of hard real-time applications; it is not determined by the given application requirements, but by the amount of available resources. A fraction of the given com­ putational resources (processing power, memory, bandwidth) is allocated to a user domain. Quality of experience considerations at the end user determine the detailed resource allocation strategy. For example, if a user reduces the size of a window and enlarges the size of another window on his multimedia terminal, then the system can reduce the bandwidth and the processing allocated to the first window to free the resources for the other window that has been enlarged. Other users of the system should not be affected by this local reallocation of resources.
 
-Future Trends   The marriage of the Internet with smartphones and multimedia personal computers leads to many new volume applications. The focus of this book is not on multimedia systems, because these systems belong to the class of soft and firm real-time applications.
+Future Trends The marriage of the Internet with smartphones and multimedia personal computers leads to many new volume applications. The focus of this book is not on multimedia systems, because these systems belong to the class of soft and firm real-time applications.
 
-# 1.7  Examples of Real-Time Systems
+## 1.7 Examples of Real-Time Systems
 
 In this section, three typical examples of real-time systems are introduced. These examples will be used throughout the book to explain the evolving concepts. We start with an example of a very simple system for flow control to demonstrate the need for end-to-end protocols in process input/output.
 
-# 1.7.1  Controlling the Flow in a Pipe
+### 1.7.1 Controlling the Flow in a Pipe
 
-Figure_1.8 1.8 Figure_1.8 Figure_1.8 Figure_1.8 ­ Figure_1.8 ­ Figure_1.8 Figure_1.8 Figure_1.8 $F$ Figure_1.8 Figure_1.8 Figure_1.8 Figure_1.8 Figure_1.8 Figure_1.8 7.2.5.1 Figure_1.8 Figure_1.8 Figure_1.8 Figure_1.8 1.8 Figure_1.8 Figure_1.8 Figure_1.8 Figure_1.8 Figure_1.8
+The dynamics of the system in Fig.1.8 is essentially determined by the speed of the control valve. Assume that the control valve takes $I O$  s to open or close from $O\%$ to $I O O\%$ and that the flow sensor $F$ has a precision of $I\%$ . If a sampling interval of ${\mathit{l00}}\;\mathrm{ms}$ is chosen, the maximum change of the valve position within one sampling interval is $I\%$ , the same as the precision of the flow sensor. Because of this finite speed of the control valve, an output action taken by the computer at a given time will lead to an effect in the environment at some later time. The observation of this effect by the computer will be further delayed by the given latency of the sensor. All these latencies must either be derived analytically or measured experimentally, before the temporal control structure for a stable control system can be designed.
 
-The dynamics of the system in Fig.  1.8 is essentially determined by the speed of the control valve. Assume that the control valve takes $I O$  s to open or close from $O\%$ to $I O O\%$ and that the flow sensor $F$ has a precision of $I\%$ . If a sampling interval of ${\mathit{l00}}\;\mathrm{ms}$ is chosen, the maximum change of the valve position within one sampling interval is $I\%$ , the same as the precision of the flow sensor. Because of this finite speed of the control valve, an output action taken by the computer at a given time will lead to an effect in the environment at some later time. The observation of this effect by the computer will be further delayed by the given latency of the sensor. All these latencies must either be derived analytically or measured experimentally, before the temporal control structure for a stable control system can be designed.
+> ![](images/dba4cbc179c064260c1722767b4605e65c2b3f147fb0ac3b9e0815b043f45eea.jpg)
+> Fig.1.8 Flow of liquid in a pipe
 
-![](images/dba4cbc179c064260c1722767b4605e65c2b3f147fb0ac3b9e0815b043f45eea.jpg)
-Fig. 1.8  Flow of liquid in a pipe
-
-# 1.7.2  Engine Control
+### 1.7.2 Engine Control
 
 The task of an engine controller in an automobile engine is the calculation of the proper amount of fuel and the exact moment at which the fuel must be injected into the combustion chamber of each cylinder. The amount of fuel and the timing depend on a multitude of parameters: the intentions of the driver, articulated by the position of the accelerator pedal, the current load on the engine, the temperature of the engine, the condition of the cylinder, and many more. A modern engine controller is a complex piece of equipment. Up to 100 concurrently executing software tasks must cooperate in tight synchronization to achieve the desired goal, a smoothly run­ ning and efficient engine with a minimal output of pollutants.
 
@@ -900,18 +873,16 @@ The up- and downward moving piston in each cylinder of a combustion engine is co
 
 This example of an engine controller has been chosen because it demonstrates convincingly the need for extremely precise temporal control. For example, if the processing of the signal that measures the exact position of the crankshaft in the engine is delayed by a few $\upmu\mathrm{{sec}}$ , the quality of control of the whole system is com­ promised. It can even happen that the engine is mechanically damaged if a valve is opened at an incorrect moment.
 
-# 1.7.3  Rolling Mill
+### 1.7.3 Rolling Mill
 
-Figure_1.9 Figure_1.9 Figure_1.9 1.9 Figure_1.9 Figure_1.9 Figure_1.9 rigure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9 Figure_1.9
-
-The total duration of the RT transaction (bold line in Fig.  1.9 ) is an important parameter for the quality of control. The shorter the duration of this transaction, the better the control quality and the stability of the control loop, since this transaction contributes to the dead time of the critical control loop. The other important term of the dead time is the time it takes for the strip to travel from the drive to the sensor. A jitter in the dead time that is not compensated for will reduce the quality of con­ trol significantly. It is evident from Fig.  1.9 that the latency jitter in an event-­ triggered system is the sum of the jitter of all processing and communication actions that form the critical RT transaction.
+The total duration of the RT transaction (bold line in Fig.1.9 ) is an important parameter for the quality of control. The shorter the duration of this transaction, the better the control quality and the stability of the control loop, since this transaction contributes to the dead time of the critical control loop. The other important term of the dead time is the time it takes for the strip to travel from the drive to the sensor. A jitter in the dead time that is not compensated for will reduce the quality of con­ trol significantly. It is evident from Fig.1.9 that the latency jitter in an event-­ triggered system is the sum of the jitter of all processing and communication actions that form the critical RT transaction.
 
 Note that the communication pattern among the nodes of this control system is multicast , not point-to-point . This is typical for most distributed real-time control systems. Furthermore, the communication between the model node and the drive nodes has an atomicity requirement . Either all of the drives are changed according to the output of the model or none of them is changed. The loss of a message, which may result in the failure of a drive to readjust to a new position, may cause mechani­ cal damage to the drive.
 
-![](images/c7f2e2544e6e135d2635593140075cbc865e53347bd5ad9f917159df0a90d1da.jpg)
-Fig. 1.9  An RT transaction
+> ![](images/c7f2e2544e6e135d2635593140075cbc865e53347bd5ad9f917159df0a90d1da.jpg)
+> Fig.1.9 An RT transaction
 
-# Points to Remember
+## Points to Remember
 
 • A real-time computer system must react to stimuli from the controlled object (or the operator) within time intervals dictated by its environment. If a catastrophe could result in case a firm deadline is missed, the deadline is called hard .
 
@@ -961,11 +932,11 @@ Fig. 1.9  An RT transaction
 
 • The embedded system market continues to grow significantly during the next 10 years. Automated vehicles like self-driving cars and Industry 4.0 are example drivers. Compared with other information technology markets, this market will offer the best employment opportunities for the computer engineers of the future.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 There exist a number of textbooks on real-time and embedded systems, such as Introduction to Embedded Systems – A Cyber-Physical Systems Approach [Lee10] by Ed Lee and Seshia, Real-Time Systems by Jane Liu [Liu00], Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications by Giorgio Buttazzo [But04], and Real-Time Systems and Programming Languages: Ada, Real-Time Java and C/Real-Time POSIX by Burns and Wellings [Bur09]. Principles of Cyber-Physical Systems by Rajeev Alur [Alu15] emphasizes cyber-­ physical systems’ formal and theoretical aspects. The Journal Real-Time Systems by Springer publishes archival research articles on the topic.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 1.1 What makes a computer system a real-time computer system?
 
@@ -1011,7 +982,7 @@ There exist a number of textbooks on real-time and embedded systems, such as Int
 
 # Chapter 2 Simplicity
 
-# Overview
+## Overview
 
 The report on Software for Dependable Systems: Sufficient Evidence? [Jac07] by the National Academies contains as one of its central recommendations : One key to achieving dependability at reasonable cost is a serious and sustained commitment to simplicity, including simplicity of critical functions and simplicity in system inter­ actions. This commitment is often the mark of true expertise. We consider simplicity to be the antonym of cognitive complexity (in the rest of this book, we mean cogni­ tive complexity whenever we use the word complexity ). In everyday life, many embedded systems seem to move in the opposite direction. The ever-increasing demands on the functionality and the non functional constraints (such as safety, security, or energy consumption) that must be satisfied by embedded systems lead to a growth in system complexity.
 
@@ -1021,16 +992,15 @@ This chapter is structured as follows. Section 2.1 focuses on the topic of cogni
 
 Section 2.3 looks at the essence of model building and investigates what makes a task difficult. Section 2.4 deals with the important topic of emergence in large sys­ tems and system complexity. Finally, Sect. 2.5 defines seven principles that guide system design.
 
-# 2.1  Cognition
+## 2.1 Cognition
 
 Cognition deals with the study of thought processes and the interpretation and bind­ ing of sensory inputs to the existing knowledge base of an individual [Rei10]. It is an interdisciplinary effort that stands between the humanities, i.e., philosophy, lan­ guage studies, and social science on one side and the natural sciences, such as neu­ ral science, logic, and computer science, on the other side. The study of model building, problem-solving, and knowledge representation forms an important part of the cognitive sciences.
 
-# 2.1.1  Problem-Solving
+### 2.1.1 Problem-Solving
 
-Table_2 .1 Table_2.1 ­ Table_2.1 Table_2.1 T able \_2.1 Table_2.1 Table_2.1 Table_2.1 T able_2.1 Table_2.1 Table_2.1 2.1 Table_2.1 ­ Table_2.1
+> Table 2.1 Intuitive-experiential versus analytic-rational problem-solving strategy
+> ![](images/cc3f2f1935b1959f8469d55dd9def8671e194e0c619aeaffdc48c08be8c3262c.jpg)
 
-Table 2.1  Intuitive-experiential versus analytic-rational problem-solving strategy
-![](images/cc3f2f1935b1959f8469d55dd9def8671e194e0c619aeaffdc48c08be8c3262c.jpg)
 Adapted from [Eps08, p. 26]
 
 Example : A typical task for the intuitive-experiential subsystem is face recognition , a demanding task that a baby at the age of 6 months can accomplish. A typical task for the analytic-rational subsystem is the confirmation of a proof of a mathematical theorem .
@@ -1049,7 +1019,7 @@ Similarly, the significance of a new scenario is often recognized at first by th
 
 Example : A brain-imaging study of the chess-playing strategy of amateurs vs. grandmas­ ters investigated the activity in different sections of the brain immediately after a chess move by the partner. The amateurs displayed the highest activity in the medial temporal lobe of the brain, which is consistent with the interpretation that their mental activity is focused on the rational analysis of the new move. The highly skilled grandmasters showed more activity in the frontal and parietal cortices , indicating that they are retrieving stored information about previous games from expert memory in order to develop an understand­ ing of the scenario [Ami01].
 
-# 2.1.2  Definition of a Concept
+### 2.1.2 Definition of a Concept
 
 In a changing world, knowledge about permanent and characteristic properties of objects and situations must be identified and maintained since such knowledge is of critical importance for survival. This knowledge is acquired by the process of abstraction , by which the particular is subordinated to the general, so that what is known about the general is applicable to many particulars. Abstraction is a funda­ mental task of the human cognitive system.
 
@@ -1059,7 +1029,7 @@ Abstraction forms categories, where a category is a set of elements that share c
 
 A concept is a category that is augmented by a set of beliefs about its relations to other categories [Rei01, pp. 261–300] . The set of beliefs relates a new concept to already existing concepts and provides for an implicit theory (a subjective mental model). As a new domain is penetrated, new concepts are formed and linked to the concepts that are already present in the conceptual landscape. A concept is a mental construct of the general iz able aspects of a known entity. It has an intension ( What is the essence? ) and an extension, answering the question as to which things and mental constructs are exemplars of the concept. A concept can also be considered as a unit of thought [Vig62].
 
-# 2.1.3  Cognitive Complexity
+### 2.1.3 Cognitive Complexity
 
 What do we mean when we say an observer understands a scenario ? It means that the concepts and relationships that are employed in the representation of the sce­ nario have been adequately linked with the conceptual landscape and the methods of reasoning of the observer. The tighter the links are, the better is the understand­ ing. Understanding (and therefore simplicity ) is thus a relation between an observer and a scenario, not a property of the scenario.
 
@@ -1071,8 +1041,6 @@ According to the scientific tradition , it would be desirable to introduce an ob
 
 The perceived complexity of a model depends on the relationship between the existing subjective conceptual landscape and the problem-solving capability of the observer and the concepts deployed in the representation of the model, the interrela­ tions among these concepts, and the notation used to represent these concepts. If the observer is an expert, such as the chess grandmaster in the previous example, the experiential subsystem provides an understanding of the scenario within a short time and without any real effort. According to our metric, the scenario will be judged as simple . An amateur has to go through a tedious cause-and-effect analysis of every move employing the rational subsystem that takes time and explicit cogni­ tive effort. According to the above metric, the same chess scenario will be judged as complex .
 
-Table_2.3Table_2.3­Table_2.3 Table_2.3 2.3 Table_2.3 2.5 Table_2.3 Table_2.3­Table_2.3 Table_2.3
-
 In order to gain an understanding of a large system, we have to understand many models that describe the system from different viewpoints at different abstraction levels (see also Sect. 2.3.1 ). The cognitive complexity of a large system depends on the number and complexity of the different models that must be comprehended in order to understand the complete system. The time it takes to understand all these models can be considered as a measure for the cognitive complexity of a large system .
 
 Case studies about the understanding of the behavior of large systems have shown that the perceptual ly available information plays an important role for devel­ oping an understanding of a system [Hme04]. Invisible information flows between identified subsystems pose a considerable barrier to understanding.
@@ -1081,7 +1049,7 @@ If every embedded system is one of its kind and no relationships between differ�
 
 One route to simplification is thus the development of a generic model of an embedded system that can be successfully deployed in many different domains at a proper level of abstraction. This model should contain few orthogonal mechanisms that are used recursively. The model must support simplification strategies and make public the internal information flow between identified subsystems, such that the process of gaining an understanding of the behavior is supported. By getting intimately acquainted with this model and gaining experience by using this model over and over again, the engineer can incorporate this model in the experiential subsystem and become an expert. It is one stated goal of this book to develop such a generic cross-domain model of embedded systems.
 
-# 2.1.4  Simplification Strategies
+### 2.1.4 Simplification Strategies
 
 The resources in the rational problem-solving subsystem of humans, both in storage and processing capacity, are limited. The seminal work of Miller [Mil56] introduced a limit of five to seven chunks of information that can be stored in short-term mem­ ory at a given instant. Processing limitations are established by the relational com­ plexity theory of Halford [Hal96]. Relational complexity is considered to correspond to the arity (number of arguments) of a relation. For example, binary relations have two arguments as in LARGER-THAN (elephant, mouse). The relational complexity theory states that the upper limits of adult cognition seem to be relations at the qua­ ternary level.
 
@@ -1095,11 +1063,11 @@ If a scenario requires cognitive resources that are beyond the given limits, the
 
 • Segmentation refers to the temporal decomposition of intricate behavior into smaller parts that can be processed sequentially , one after the other. Segmentation reduces the amount of information that must be processed in parallel at any par­ ticular instant. Segmentation is difficult or impossible if the behavior is formed by highly concurrent processes, depends on many interdependent variables, and is strongly nonlinear, caused by positive or negative feedback loops.
 
-# 2.2  The Conceptual Landscape
+## 2.2 The Conceptual Landscape
 
 The notion of conceptual landscape , or the image [Bou61], refers to the personal knowledge base that is built up and maintained by an individual in the experiential and rational subsystem of the mind. The knowledge base in the experiential subsystem is implicit , while the knowledge base in the rational subsystem is explicit . The conceptual landscape can be thought of as a structured network of interrelated concepts that defines the world model , the personality , and the intentions of an indi­ vidual. It is built up over the lifetime of an individual, starting from pre-wired struc­ tures that are established during the development of the genotype to the phenotype , and continually augmented as the individual interacts with its environment by exchanging messages via the sensory systems.
 
-# 2.2.1  Concept Formation
+### 2.2.1 Concept Formation
 
 The formation of concepts is governed by the following two principles [And01]:
 
@@ -1131,7 +1099,7 @@ If we change the language community, the names of concepts will be changed, alth
 
 Example : The semantic content of the concept speed is precisely defined in the realm of physics. Different language communities give different names to the same concept: in German Ge schw in dig ke it , in French vitesse , and in Spanish velocidad .
 
-# 2.2.2  Scientific Concepts
+### 2.2.2 Scientific Concepts
 
 In the world of science, new concepts are introduced in many publications in order to be able to express new units of thought . Often these concepts are named by a mnemonic , leading to, what is often called, scientific jargon. In order to make an exposition understandable , new concepts should be introduced sparingly and with utmost care. A new scientific concept should have the following properties [Kop08]:
 
@@ -1153,7 +1121,7 @@ Example : The main contributions of Newton in the field of mechanics are not onl
 
 Clear concept formation is an essential prerequisite for any formal analysis or for­ mal verification of a given scenario. The mere replacement of fuzzy concepts by formal symbols will not improve the understanding.
 
-# 2.2.3  The Concept of a Message
+### 2.2.3 The Concept of a Message
 
 We consider a message as a basic concept in the realm of communication. A mes­ sage is an atomic unit that captures the value domain and the temporal domain of a unidirectional information transport at a level of abstraction that is applicable in many diverse scenarios of human communication [Bou61] and machine communi­ cation. A basic message-transport service (BMTS) transports a message from a sender to one or a set of receivers. The BMTS can be realized by different means, e.g., biological or electrical.
 
@@ -1165,7 +1133,7 @@ The message concept is also a basic concept in the domain of distributed embedde
 
 A protocol is an abstraction over a sequence of rule-based message exchanges between communicating partners. A protocol can provide additional services, such as flow control or error detection. A protocol can be understood by breaking it down to the involved messages without the need to elaborate on the concrete transport mechanisms that are used.
 
-# 2.2.4  Semantic Content of a Variable
+### 2.2.4 Semantic Content of a Variable
 
 The concept of a variable , a fundamental concept in the domain of computing, is of such importance for the rest of the book that it justifies some special elaboration. A variable can be considered as a language construct that assigns an attribute to a concept. If the point in real time, the instant , when this assignment is valid, is of relevance, then we call the variable a state variable . As time progresses, the attri­ bute of a state variable may change, while the concept remains the same. A variable thus consists of two parts, a fixed part , the variable name (or the identifier ), and a variable part called the value of the variable that is assigned to the variable. The variable name designates the concept that determines what we are talking about. In a given context, the variable name—which is analogous to the name of a concept in a natural language community—must be unique and point to the same concept at all communicating partners. The meaning that is conveyed by a variable is called the semantic content of the variable. As we will show in the latter part of this section, the semantic content of a variable is invariant to a change in representation. The requirement of semantic precision demands that the concept that is associated with a variable name and the domain of values of the variable are unambiguously defined in the model of the given application.
 
@@ -1187,7 +1155,7 @@ Data that describes the properties of (object) data is sometimes called meta-­ 
 
 Example : The price of a product is data , while the currency used to denote the price, the time interval, and the location where this price is applicable are meta-data .
 
-# 2.3  The Essence of Model Building
+## 2.3 The Essence of Model Building
 
 Given the rather limited cognitive capabilities of the rational subsystem of the human mind, we can only develop a rational understanding of the world around us if we build simple models of those properties that are of relevance and interest to us and disregard (abstract from) detail that proves to be irrelevant for the given pur­ pose. A model is thus a deliberate simplification of reality with the objective of explaining a chosen property of reality that is relevant for a particular purpose.
 
@@ -1195,7 +1163,7 @@ Example : The purpose of a model in celestial mechanics is the explanation of th
 
 When a new level of abstraction (a new model) is introduced that successfully con­ c ep tu aliz es the properties relevant for the given purpose and disregards the rest, simplicity emerges. Such simplicity, made possible by the formation of proper con­ cepts, gives rise to new insights that are at the roots of the laws of nature . As Popper [Pop68] points out, due to the inherent imperfection of the abstraction and induc­ tion process, laws of nature can only be falsified, but never be proven to be abso­ lutely correct.
 
-# 2.3.1  Purpose and Viewpoint
+### 2.3.1 Purpose and Viewpoint
 
 At the start of any modeling activity, a clear purpose of the model must be estab­ lished. Formulating the precise questions the model must address helps to concret­ ize the purpose of the model. If the purpose of a model is not crystal clear or if there are multiple divergent purposes to satisfy, then it is not possible to develop a sim­ ple model.
 
@@ -1205,26 +1173,22 @@ The recursive application of the principles of abstraction leads to such a hiera
 
 Example : The four-universe model of Avizienis [Avi82] introduces a hierarchy of models in order to simplify the description of the behavior of a computer system. At the lowest level of the hierarchy, the physical level , the analog signals of the circuits are observed, such as the rise time of the voltages as a transistor performs a switching operation. The analysis of a circuit behavior at the physical (analog) level becomes difficult as soon as more and more transistors get involved ( emerging complexity ) . The next higher level, the digital logic level , abstracts from the physical analog quantities and the dense time and introduces binary logic values ( high or low ) of signals at discrete instants, resulting in a much simpler representa­ tion of the behavior of an elementary circuit, e.g., an AND gate ( emerging simplicity ). Complexity creeps in again as we combine more and more logic circuits. The next higher level, the information level , lumps a (possible large) sequence of binary values into a mean­ ingful data structure (e.g., a pointer, a real-valued variable, or a complete picture) and intro­ duces powerful high-level operations on these data structures. Finally, at the external level , only the services of the computer system to the environment, as seen by an outside user, are of relevance.
 
-Figure_2.1 Figure_2.1 Figure_2.1 ­ Figure_2.1 Figure_2.1 2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 Figure_2.1 ­ Figure_2.1 Figure_2.1
-
 Example : The model for predicting the temporal properties of the behavior of a real-time computer system is straightforward if there is a predictable sequence of computational and communication actions between the start of a computation and the termination of a compu­ tation. Conversely, if the actual durations of the computational and communication actions depend on global system activity (e.g., arbitration for access to shared resources such as caches, communication links, etc.), then it will not be possible to construct a simple model for predicting the temporal properties of the behavior.
 
 In a computer system, given rules relate the different levels of abstraction (like the levels discussed in Avizienis’ four-universe model above) to each other. These rules even allow the specification of an abstract model and to synthesize a lower level of abstraction. However, the resource-optimized refinement from one abstraction level to the next lower one can require sophisticated tooling.
 
-Example : In chip design two succeeding levels of abstraction on the abstraction ladder are the register-transfer level (e.g., a VHDL or Verilog model) and the netlist level (the concrete
+Example : In chip design two succeeding levels of abstraction on the abstraction ladder are the register-transfer level (e.g., a VHDL or Verilog model) and the netlist level (the concrete list of electronic components and their connections in a circuit). There are rules that deter­ mine the relation between the register-transfer and the netlist level. Although these rules are given, the chip industry relies on sophisticated logic synthesis tools to produce a resource-­ optimized netlist from the register-transfer level.
 
-![](images/4b53e60ec3deddbde1f8996c73a21ece0ad04229a669d2032ba3bb910c70fa0c.jpg)
-Fig. 2.1  Purpose and abstraction level of a model
+> ![](images/4b53e60ec3deddbde1f8996c73a21ece0ad04229a669d2032ba3bb910c70fa0c.jpg)
+> Fig.2.1 Purpose and abstraction level of a model
 
-list of electronic components and their connections in a circuit). There are rules that deter­ mine the relation between the register-transfer and the netlist level. Although these rules are given, the chip industry relies on sophisticated logic synthesis tools to produce a resource-­ optimized netlist from the register-transfer level.
-
-Simple Verification Procedure   Although the synthesis of lower-level models from higher-level models can become computationally intense, verifying that an existing lower-level model is a correct refinement of an existing higher-level model is some­ times simple.
+Simple Verification Procedure Although the synthesis of lower-level models from higher-level models can become computationally intense, verifying that an existing lower-level model is a correct refinement of an existing higher-level model is some­ times simple.
 
 Example : In a puzzle game, the picture on the box that contains the puzzle pieces serves as a model. Assembling the puzzle is computationally intense and requires frequent trial and error. However, once the puzzle has been completed, it is simple to verify that the puzzle equals the picture on the box.
 
 An abstraction ladder with simple verification procedures on each step (i.e., between every two succeeding models of abstraction) is of exceptionally high value: such an abstraction ladder simplifies verification and validation (see Chap. 12 ). The static scheduling of tasks (see Sect. 10.3 ) and the static scheduling of messages (see Sect. 7.5 ) have simple verification procedures .
 
-# 2.3.2  The Grand Challenge
+### 2.3.2 The Grand Challenge
 
 Whereas the natural scientist must uncover the regularities in a given reality and find appropriate concepts at a suitable level of abstraction in order to formulate models and theories that explain the observed phenomena, the computer scientist is— at least theoretically —in a much better position: The computer scientist has the freedom to design the system— an artifact —which is the subject of his modeling. The requirement to build artifacts, the properties of which can be analyzed by sim­ ple models , should thus be an explicit design driver. In many areas of computer science, this principle of building artifacts that can be modeled by simple models is violated. For example, the temporal behavior of a modern pipelined microprocessor with multiple caches cannot be captured in a simple model .
 
@@ -1232,17 +1196,17 @@ The major challenge of design is the building of a software/hardware artifact (a
 
 As stated before, there are many different purposes that give rise to a hierarchy of models of an artifact. Examples are behavior, reliability, man-machine interac­ tion, energy consumption, physical dimension, cost of manufacturing, or cost of maintenance, to name a few. Out of these, the most important one is the model of behavior . In the context of real-time systems, behavior specifies the output actions of a computer system as a consequence of the inputs, the state and the progression of real time. Output actions and input can be captured in the concepts of input mes­ sages and output messages . In Chap. 4 of this book, we present a cross-domain model for the behavior of a real-time computer system using these concepts.
 
-# 2.4  Emergence
+## 2.4 Emergence
 
 We speak of emergence when the interactions of subsystems give rise to unique global properties at the system level that are not present at the level of the subsys­ tems [Mor07]. Nonlinear behavior of the subsystems, feedback and feed forward mechanisms, and time delays are of relevance for the appearance of emergent prop­ erties. Up to now, the phenomenon of emergence is not fully understood and a topic of intense study.
 
-# 2.4.1  Ir red uci bil it y
+### 2.4.1 Ir red uci bil it y
 
 Emergent properties are irreducible, holistic, and novel—they disappear when the system is partitioned into its subsystem. Emergent properties can appear unexpect­ edly or they are planned. In many situations, the first appearance of the emergent properties is unforeseen and unpredictable. Often a fundamental revision of state-­ of-­the-art models is required to get a better understanding of the conditions that lead to the intended emergence. In some cases, the emergent properties can be captured in a new conceptualization (model) at a higher level of abstraction resulting in an abrupt simplification of the scenario.
 
 Example : The emergent properties of a diamond , such as brilliance and hardness , which are caused by the coherent alignment of the carbon atoms, are substantially different from the properties of graphite (which consists of the same atoms ). We can consider the diamond with its characteristic properties a new concept, a new unit of thought , and forget about its composition and internal structure. Simplicity comes out as a result of the intricate interac­ tions among the elements that help to generate a new whole with its new emergent properties.
 
-# 2.4.2  Prior and Derived Properties
+### 2.4.2 Prior and Derived Properties
 
 When dealing with emergence, it is helpful to distinguish between the prior proper­ ties of the components and the new derived properties that come about by the inter­ actions of the components.
 
@@ -1258,22 +1222,20 @@ Example : In the evolution of the universe, two very significant stages of emerg
 
 Emergent behavior cannot be predicted analytically, but must be detected in an operating system. Thus control elements must incorporate hooks for monitoring system performance in real time [Par97, p. 7]. The multicast message concept, dis­ cussed in Sect. 2.2.3 , provides the basis for the non intrusive observation of system behavior.
 
-# 2.4.3  Complex Systems
+### 2.4.3 Complex Systems
 
 In 2003, Joseph Sussman compiled a working paper on Collected Views on Complexity in Systems [Sus03]. Out of this paper, we have extracted the following eight quotes on the topic of complexity to address different perspectives: what makes systems complex, what are insights about complex systems, what are poten­ tial threats of complex systems, and how can we manage complex systems?
 
-# What Makes Systems Complex?
+#### What Makes Systems Complex?
 
-1.  “Complexity has to do with interconnections between parts of a system, and it has to do with the nature of these interconnections (their intricate ness).” [Mos]
+1. “Complexity has to do with interconnections between parts of a system, and it has to do with the nature of these interconnections (their intricate ness).” [Mos]
 
 In a cyber-physical system, the interconnections among the parts of a system are realized by the exchange of real-time messages. Let us look at the unidirectional transport of a message that contains time-sensitive data elements .
 
-Table 2.2  Simple and complex transmission of real-time data
-![](images/0d3a783f77a1ca597edca28130a2b603900e5b2ab203157adab6091d1245eebb.jpg)
+> Table 2.2 Simple and complex transmission of real-time data
+> ![](images/0d3a783f77a1ca597edca28130a2b603900e5b2ab203157adab6091d1245eebb.jpg)
 
-Table_2.2 2.2 Table_2.2 Table_2.2 Table_2.2 7 Table_2.2 Table_2.2 Table_2.2
-
-2.  “A system is complex when it is composed of a group of related units (subsystems), for which the degree and nature of the relationships is imperfectly known.” [Sus00] 3. “Complex systems are characterized by unfamiliar or unintended feedback loops (often closed by stigmergic communication channels).” [Per99]
+2. “A system is complex when it is composed of a group of related units (subsystems), for which the degree and nature of the relationships is imperfectly known.” [Sus00] 3. “Complex systems are characterized by unfamiliar or unintended feedback loops (often closed by stigmergic communication channels).” [Per99]
 
 Complexity, thus, arises in systems consisting of many parts (components, sub­ systems, etc.) interacting in various ways. Moreover, both the parts and their inter­ actions are likely only partially known and characterized.
 
@@ -1287,9 +1249,9 @@ Example : The human body is a complex system, and so is the behavior of social g
 
 In this book, we classify a system as complex , if we are not in the position to develop a set of models of adequate simplicity —commensurate to the rational capa­ bilities of the human mind—to explain the structure and behavior of the system. Further examples of complex systems are life and consciousness , the earth’s cli­ mate, the global economy, living organisms, and many large computer systems, to name a few.
 
-# What Are Insights About Complex Systems?
+#### What Are Insights About Complex Systems?
 
-4.  “The world abounds with complex systems that have successfully evolved—organisms, economies, our legal system. We should begin to ask, What kinds of complex systems can be assembled by an evolutionary process? I should stress that no general answer is known, but that systems with some kinds of redundancy are almost certainly far more readily evolved than those without redundancy. Unfortunately, we only roughly understand what redundancy actu­ ally means in evolving systems.” [Kau93]
+4. “The world abounds with complex systems that have successfully evolved—organisms, economies, our legal system. We should begin to ask, What kinds of complex systems can be assembled by an evolutionary process? I should stress that no general answer is known, but that systems with some kinds of redundancy are almost certainly far more readily evolved than those without redundancy. Unfortunately, we only roughly understand what redundancy actu­ ally means in evolving systems.” [Kau93]
 
 We do not comprehend complex systems but can observe common patterns in successful ones. For example, redundancy is almost always present in purposeful complex systems.
 
@@ -1297,11 +1259,9 @@ Example : Redundancy is inherent in the human body. For example, we have two eye
 
 Example : Large and complex IT systems typically implement redundancy, for example, in form of backup servers.
 
-# What Are Potential Threats of Complex Systems?
+#### What Are Potential Threats of Complex Systems?
 
-5.  “Its overall emergent behavior is difficult to predict, even when subsystem behavior is
-
-readily predictable” [Sus00]. 6. “Familiar computer programs are precisely the kind of complex systems that do not have the property that small changes in structure yield small changes in behavior. Almost all small changes in structure lead to catastrophic changes in behavior.” [Kau93]
+5. “Its overall emergent behavior is difficult to predict, even when subsystem behavior is readily predictable” [Sus00]. 6. “Familiar computer programs are precisely the kind of complex systems that do not have the property that small changes in structure yield small changes in behavior. Almost all small changes in structure lead to catastrophic changes in behavior.” [Kau93]
 
 Since we do not understand complex systems, we cannot predict their future behavior with adequate certainty. As a consequence, black swan events , i.e., unan­ ticipated events with major effect, often on a global scale, may erupt [Tal08].
 
@@ -1317,11 +1277,11 @@ Example : Software updates, including bug fixes, are common in IT systems. Howev
 
 Example : Medical drugs may have severe side effects on the human body. For example, pregnant women consuming the tranquilizer Contergan gave birth to infants with congeni­ tal disabilities.
 
-# How Can We Manage Complex Systems?
+#### How Can We Manage Complex Systems?
 
-7.  “Scientists have broken down many kinds of systems. They think they know most of the elements and forces. The next task is to reassemble them, at least in mathematical models that capture the key properties of the entire ensembles. Success in this enterprise [i.e., the accurate and complete description of complex systems] will be measured by the power researchers acquire to predict emergent phenomena when passing from general to more specific levels of organization.” [Wil98]
+7. “Scientists have broken down many kinds of systems. They think they know most of the elements and forces. The next task is to reassemble them, at least in mathematical models that capture the key properties of the entire ensembles. Success in this enterprise [i.e., the accurate and complete description of complex systems] will be measured by the power researchers acquire to predict emergent phenomena when passing from general to more specific levels of organization.” [Wil98]
 
-8.  “In evolving systems, bursts of simplicity often cut through growing complexity and establish new bases upon which complexity can then grow.” [Art94]
+8. “In evolving systems, bursts of simplicity often cut through growing complexity and establish new bases upon which complexity can then grow.” [Art94]
 
 Example : The Avizienis four-universe model (see Sect. 2.3.1 ) is an example of a burst of simplicity that forms the basis for modern chip development.
 
@@ -1333,16 +1293,15 @@ Whereas system biology deals with a natural system, a large computer system is a
 
 Example : Let us look at the technical example of designing the on-chip communication infrastructure for the communication among IP cores on a system-on-chip. There are basi­ cally two technical alternatives, the provision of a shared memory that can be accessed by all IP cores or the provision of local memory to each one of the IP cores and the design of a message-passing subsystem that enables the exchange of messages among IP cores [Pol07, Lev08]. The message-passing subsystem isolates and makes explicit the global communication among subsystems and thus supports the introduction of a new level in the hierarchy where a distinction is made between the intra-IP core interactions and the inter $I P$ core interactions. The common memory intermixes global intra-IP core and local inter­IP core interactions and makes it very difficult to separate global and local concerns, leading to a more complex system model.
 
-Example : The electrical/electronic vehicle system of modern cars is complicated. The push toward self-driving cars moves it toward the edge to become a complex system (i.e., per our definition, a system that exceeds the rational capabilities of the human mind). A conceptual architecture that defines an abstraction ladder of simple models is the essential enabler of
+Example : The electrical/electronic vehicle system of modern cars is complicated. The push toward self-driving cars moves it toward the edge to become a complex system (i.e., per our definition, a system that exceeds the rational capabilities of the human mind). A conceptual architecture that defines an abstraction ladder of simple models is the essential enabler of safe self-driving cars. On the top level of this ladder, the simple model should distinguish a critical and a non critical subsystem with minimal information exchange. While the purpose of the critical subsystem is the safe maneuvering of the car, the purpose of the non critical subsystem is passenger comfort (including infotainment). A conceptual architecture to real­ ize the critical subsystem is given by Kopetz [Kop21] (see example in Sect. 6.5.1 ).
 
-safe self-driving cars. On the top level of this ladder, the simple model should distinguish a critical and a non critical subsystem with minimal information exchange. While the purpose of the critical subsystem is the safe maneuvering of the car, the purpose of the non critical subsystem is passenger comfort (including infotainment). A conceptual architecture to real­ ize the critical subsystem is given by Kopetz [Kop21] (see example in Sect. 6.5.1 ).
-
-# 2.5  How Can We Achieve Simplicity?
+## 2.5 How Can We Achieve Simplicity?
 
 Cognitive scientists have studied how students learn and understand different tasks [Fel04]. They have identified a set of task characteristics that require a dispropor­ tional mental effort for understanding the task. Table  2.3 compares the character is­ tics of simple tasks versus difficult tasks. We thus need to design a generic model for expressing the behavior of an embedded system that avoids the characteristics of difficult tasks. It should be possible to apply the model recursively , such that large systems can be modeled at different levels of abstraction using the same modeling mechanisms.
 
-Table 2.3  Characteristics of simple versus difficult tasks
-![](images/8710e815d4a1652a72264e89119504bfdd020d63b652341c2102ff74c1aa24c4.jpg)
+> Table 2.3 Characteristics of simple versus difficult tasks
+> ![](images/8710e815d4a1652a72264e89119504bfdd020d63b652341c2102ff74c1aa24c4.jpg)
+
 Adapted from [Fel04], p. 91
 
 The real-time system model, presented in Chap. 4 , is such a generic model that gives guidance on building understandable systems. Simplicity is achieved by adhering to the following seven design principles:
@@ -1361,11 +1320,11 @@ The real-time system model, presented in Chap. 4 , is such a generic model that 
 
 (vii) Principle of a Consistent Time: The progression of real time is an important independent variable in any behavioral model of the physical subsystem of an embedded system. This principle suggests that a global time base should be introduced in the distributed computer system such that system-wide consis­ tent temporal relations (e.g., si multan e it y) and temporal distances among events can be established on the basis of global time-stamps (Sect. 3.3 ). The availability of a global time simplifies the solution of many problems in dis­ tributed systems (see Sect. 11.7 ).
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The textbook by Reisberg [Rei10] gives a good overview of the state of the art in the field of cognition and introduces many of the terms that have been used in this chap­ ter. Epstein [Eps08] discusses the characteristics of the intuitive-experiential sub­ system and the analytic-rational subsystem of problem-solving. Boulding [Bou61] elaborates extensively on the notion of conceptual landscape (which he calls the image ) and the role of the message metaphor in all types of communication. The hierarchy of concepts, the abstraction ladder , is taken from Hayakawa [Hay90]. The relational complexity theory of Halford [Hal96] establishes limits for the ratio­ nal reasoning capability of humans, while Miller [Mil56] elaborates on the limits of the human short-term memory capacity. Popper [Pop68] and Edmonds [Edm00] discuss the relevance and limitations of model building for understanding physical systems. The book by Bedau [Bed08] is devoted to the topic of emergence. The comparison of simple versus difficult tasks is taken from [Fel04]. The PhD thesis by Rumpler $\left[\mathrm{num08}\right]$ deals with design comprehension of embedded real-time sys­ tems. Roger Session’s book [Ses08] Simple Architectures for Complex Enterprises contains practical guidelines for designing understandable enterprise information architectures.
 
-# Points to Remember
+## Points to Remember
 
 • Humans have two quite different mental subsystems for solving problems: the intuitive-experiential subsystem and the analytic-rational subsystem .
 
@@ -1413,7 +1372,7 @@ The textbook by Reisberg [Rei10] gives a good overview of the state of the art i
 
 • We classify a system as complex if we are not in the position to develop a set of models of adequate simplicity —commensurate to the rational capabilities of the human mind—to explain the structure and behavior of the system.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 2.1. What are the distinguishing characteristics of the intuitive-experiential and the analytic-rational subsystems for human problem-solving?
 
@@ -1445,7 +1404,7 @@ The textbook by Reisberg [Rei10] gives a good overview of the state of the art i
 
 # Chapter 3 Global Time
 
-# Overview
+## Overview
 
 This chapter starts in Sect. 3.1 with a general discussion on time and order. The notions of causal order, temporal order, and delivery order and their interrelation­ ships are elaborated. The parameters that characterize the behavior and the quality of a digital clock are investigated. Section 3.2 proceeds along the positivist tradition by introducing an omniscient external observer with an absolute reference clock that can generate precise time-stamps for all relevant events. These absolute time-­ stamps are used to reason about the precision and accuracy of a global time base and to expose the fundamental limits of time measurement in a distributed real-­ time system.
 
@@ -1455,15 +1414,15 @@ The topic of internal clock synchronization is covered in Sect. 3.4 . First, the
 
 The topic of external synchronization is studied in Sect. 3.5 . The role of a time gateway and the problem of faults in external synchronization are discussed. Finally, the network time protocol (NTP) of the Internet, the time format of the IEEE 1588 clock synchronization protocol, and the time format of the TTA are presented.
 
-# 3.1  Time and Order
+## 3.1 Time and Order
 
 Applying the principles of utility and parsimony (Sect. 2.2.1 ), we base our model of time on Newtonian physics, because the models of Newtonian physics are simpler than the models of relativistic physics and sufficient to deal with most temporal phenomena in embedded systems. In many engineering disciplines (e.g., Newtonian mechanics), time is introduced as an independent variable that determines the sequence of states of a system. The basic constants of physics are defined in relation to the standard of time, the physical second. This is why the global time base in a cyber-physical real-time system should be based on the metric of the physi­ cal second.
 
 In a typical real-time application, the distributed computer system performs a multitude of different functions concurrently, e.g., the monitoring of real-time (RT) entities (both their value and rate of change), the detection of alarm conditions, the display of the observations to the operator, and the execution of control algorithms to find new set points for many distinct control loops. These diverse functions are normally executed at different nodes. In addition, replicated nodes are introduced to provide fault tolerance by active redundancy. To guarantee a consistent behavior of the entire distributed system, it must be ensured that all nodes process all events in the same consistent order, preferably in the same temporal order in which the events occurred (see also the example in Sect. 5.5 ) in the controlled object. A proper global time base helps to establish such a consistent temporal order on the basis of the time-stamps of the events.
 
-# 3.1.1  Different Orders
+### 3.1.1 Different Orders
 
-Temporal Order   The continuum of Newtonian real time can be modeled by a directed timeline consisting of an infinite set $\{\mathrm{T}\}$ of instants (or points in time ) with the following properties [Wit90, p. 208]:
+Temporal Order The continuum of Newtonian real time can be modeled by a directed timeline consisting of an infinite set $\{\mathrm{T}\}$ of instants (or points in time ) with the following properties [Wit90, p. 208]:
 
 (i) $\{\mathrm{T}\}$ is an ordered set, that is, if $p$ and $q$ are any two instants, then either $p$ is simultaneous with $q$ , or $p$ precedes $q$ , or $q$ precedes $p$ , where these relations are mutually exclusive. We call the order of instants on the timeline the tempo­ ral order .
 
@@ -1471,7 +1430,7 @@ Temporal Order   The continuum of Newtonian real time can be modeled by a dire
 
 A section of the timeline between two different instants is called a duration . In our model, an event takes place at an instant of time and does not have a duration. If two events occur at the same instant, then the two events are said to occur simultane­ ously . Instants are totally ordered; however, events are only partially ordered, since simultaneous events are not in the order relation. Events can be totally ordered if another criterion is introduced to order events that occur simultaneously, e.g., in a distributed computer system, the number of the node at which the event occurred can be used to order events that occur simultaneously [Lam78].
 
-Causal Order   In many real-time applications, the causal dependencies among events are of interest. The computer system must assist the operator in identifying the primary event of an alarm shower (see Sect. 1.2.1 ). Knowledge of the exact temporal order of the events is helpful in identifying this primary event. If an event $e I$ occurs after an event $^{e2}$ , then $e I$ cannot be the cause of $^{e2}$ . If, however, $e I$ occurs before $^{e2}$ , then it is possible, but not certain, that $e I$ is the cause of $^{e2}$ . The temporal order of two events is necessary, but not sufficient, for their causal order. Causal order is more than temporal order.
+Causal Order In many real-time applications, the causal dependencies among events are of interest. The computer system must assist the operator in identifying the primary event of an alarm shower (see Sect. 1.2.1 ). Knowledge of the exact temporal order of the events is helpful in identifying this primary event. If an event $e I$ occurs after an event $^{e2}$ , then $e I$ cannot be the cause of $^{e2}$ . If, however, $e I$ occurs before $^{e2}$ , then it is possible, but not certain, that $e I$ is the cause of $^{e2}$ . The temporal order of two events is necessary, but not sufficient, for their causal order. Causal order is more than temporal order.
 
 Reichenbach [Rei57, p. 145] defined causality by a mark method without refer­ ence to time: If event $e I$ is a cause of event $^{e2}$ , then a small variation (a mark) in e 1 is associated with small variation in $^{e2}$ , whereas small variations in $^{e2}$ are not neces­ sarily associated with small variations in $e I$ .
 
@@ -1481,29 +1440,29 @@ e1 Somebody enters a room. $^{e2}$ The microwave beeps. Consider the following t
 
 If the (partial) temporal order between alarm events has been established, it is possible to exclude an event from being the primary event if it definitely occurred later than another alarm event. Subsequently, we will show that a precise global time base helps to determine the event set that is in this definitely-occurred-later-­ than relation (see also the example in 1.2.1 ).
 
-Delivery Order   A weaker order relation that is often provided by distributed com­ munication systems is a consistent delivery order . The communication system guar­ antees that all nodes see a defined set of related events in the same delivery order. This delivery order is not necessarily related to the temporal order of event occur­ rences or the causal relationship between events. Some distributed algorithms, e.g., atomic broadcast algorithms , establish a consistent delivery order.
+Delivery Order A weaker order relation that is often provided by distributed com­ munication systems is a consistent delivery order . The communication system guar­ antees that all nodes see a defined set of related events in the same delivery order. This delivery order is not necessarily related to the temporal order of event occur­ rences or the causal relationship between events. Some distributed algorithms, e.g., atomic broadcast algorithms , establish a consistent delivery order.
 
-# 3.1.2  Clocks
+### 3.1.2 Clocks
 
 In ancient history, the measurement of durations between events was mainly based on subjective judgment. With the advent of modern science, objective methods for measuring the progression of time by using physical clocks have been devised.
 
-Digital Physical Clock   A (digital physical) clock is a device for measuring time. It contains a counter and a physical oscillation mechanism that periodically gener­ ates an event to increase the counter. The periodic event is called the microtick of the clock. (The term tick is introduced in Sect. 3.2.1 to denote the events generated by the global time.)
+Digital Physical Clock A (digital physical) clock is a device for measuring time. It contains a counter and a physical oscillation mechanism that periodically gener­ ates an event to increase the counter. The periodic event is called the microtick of the clock. (The term tick is introduced in Sect. 3.2.1 to denote the events generated by the global time.)
 
-Granularity   The duration between two consecutive microticks of a digital physi­ cal clock is called a granule of the clock. The granularity of a given clock can be measured only if there is a clock with a finer granularity available. The granularity of any digital clock leads to a digital iz ation error in time measurement.
+Granularity The duration between two consecutive microticks of a digital physi­ cal clock is called a granule of the clock. The granularity of a given clock can be measured only if there is a clock with a finer granularity available. The granularity of any digital clock leads to a digital iz ation error in time measurement.
 
 There also exist analog physical clocks, e.g., sundials that do not have granular­ ity. In the following, we only consider digital physical clocks.
 
 In subsequent definitions, we use the following notation: clocks are identified by natural numbers $l,2,...,n.$ . If we express properties of clocks, the property is identi­ fied by the clock number as a superscript with the microtick or tick number as a subscript. For example, microtick $i$ of clock $k$ is denoted by m i c r o t i c k Subscript i Superscript k .
 
-Reference Clock   Assume an omniscient external observer who can observe all events that are of interest in a given context (remember that relativistic effects are disregarded). This observer possesses a unique reference clock z with frequency $\hat{f}$ , which is in perfect agreement with the international standard of time. The counter of the reference clock is always the same as that of the international time standard. We call $l/\!\!\!/^{z}$ the granularity $g^{z}$ of clock z . Let us assume that $\mathit{f}^{z}$ is very large, say $I O^{I5}$  microticks/second, so that the granularity $g^{z}$ is $I$ femtosecond $(l0^{-l5}~\mathrm{{s})}$ . Since the granularity of the reference clock is so small, the digital iz ation error of the refer­ ence clock is considered a second order effect and disregarded in the following analysis.
+Reference Clock Assume an omniscient external observer who can observe all events that are of interest in a given context (remember that relativistic effects are disregarded). This observer possesses a unique reference clock z with frequency $\hat{f}$ , which is in perfect agreement with the international standard of time. The counter of the reference clock is always the same as that of the international time standard. We call $l/\!\!\!/^{z}$ the granularity $g^{z}$ of clock z . Let us assume that $\mathit{f}^{z}$ is very large, say $I O^{I5}$  microticks/second, so that the granularity $g^{z}$ is $I$ femtosecond $(l0^{-l5}~\mathrm{{s})}$ . Since the granularity of the reference clock is so small, the digital iz ation error of the refer­ ence clock is considered a second order effect and disregarded in the following analysis.
 
-Absolute Time-Stamp   Whenever the omniscient observer perceives the occur­ rence of an event $e$ , she/he will instantaneously record the current state of the refer­ ence clock as the time of occurrence of this event $e$ and will generate a time-stamp for $e$ . Clock ( e ) denotes the time-stamp generated by the use of a given clock to time-­stamp an event $e$ . Because $z$ is the single reference clock in the system, $z(e)$ is called the absolute time-stamp of the event $e$ .
+Absolute Time-Stamp Whenever the omniscient observer perceives the occur­ rence of an event $e$ , she/he will instantaneously record the current state of the refer­ ence clock as the time of occurrence of this event $e$ and will generate a time-stamp for $e$ . Clock ( e ) denotes the time-stamp generated by the use of a given clock to time-­stamp an event $e$ . Because $z$ is the single reference clock in the system, $z(e)$ is called the absolute time-stamp of the event $e$ .
 
 The duration between two events is measured by counting the microticks of the reference clock that occur in the interval between these two events. The granularity $g^{k}$ of a given clock $k$ can now be measured and is given by the nominal number $n^{k}$ of microticks of the reference clock $z$ between two microticks of this clock $k$ .
 
 The temporal order of events that occur between any two consecutive microticks of the reference clock, i.e., within the granularity $g^{z}$ , cannot be reestablished from their absolute time-stamps. This is a fundamental limit in time measurement.
 
-Clock Drift   The drift of a physical clock $k$ between microtick $i$ and microtick $i+I$ is the frequency ratio between this clock $k$ and the reference clock, at the instant of microtick i . The drift is determined by measuring the duration of a granule of clock $k$ with the reference clock z and dividing it by the nominal number $n^{k}$ of reference clock microticks in a granule:
+Clock Drift The drift of a physical clock $k$ between microtick $i$ and microtick $i+I$ is the frequency ratio between this clock $k$ and the reference clock, at the instant of microtick i . The drift is determined by measuring the duration of a granule of clock $k$ with the reference clock z and dividing it by the nominal number $n^{k}$ of reference clock microticks in a granule:
 
 $$
 \mathbf{d}\mathbf{r}\mathbf{f}_{i}^{k}={\frac{z{\bigl(}{\mathrm{micro}}\mathbf{k}_{i+1}^{k}{\bigr)}-z{\bigl(}{\mathrm{micro}}\mathbf{k}_{i}^{k}{\bigr)}}{n^{k}}}
@@ -1519,14 +1478,12 @@ A perfect clock will have a drift rate of 0. Real clocks have a varying drift ra
 
 Example : During the Gulf War on February 25, 1991, a Patriot missile defense system failed to intercept an incoming Scud rocket. The clock drift over a $100{\mathrm{-h}}$ period (which resulted in a tracking error of $678~\mathrm{m}$ ) was blamed for the Patriot missing the Scud missile that hit an American military barrack in Dhahran, killing 29 and injuring 97. The original requirement was a 14-h mission. The clock drift during a 14-h mission could be handled [Neu95, p. 34].
 
-Figure*3.1   Figure_3.1 ­ Figure_3.1 Figure_3.1 Figure* 3.1 3.1 Fi gure_3.1 Figure_3.1
+### 3.1.3 Precision and Accuracy
 
-# 3.1.3  Precision and Accuracy
+Offset The offset at microtick $i$ between two clocks $j$ and $k$ with the same granular­ ity is defined as
 
-Offset   The offset at microtick $i$ between two clocks $j$ and $k$ with the same granular­ ity is defined as
-
-![](images/50e2a0509381a8de4694caac210eda6ee060da3bfbef57f1e122502e4a3c1293.jpg)
-Fig. 3.1  Failure modes of a physical clock
+> ![](images/50e2a0509381a8de4694caac210eda6ee060da3bfbef57f1e122502e4a3c1293.jpg)
+> Fig.3.1 Failure modes of a physical clock
 
 $$
 \mathbf{offset}_{i}^{j k}=\left|z\left(\mathbf{mu}_{\mathrm{microtextit}}^{j}\right)\!-\!z\left(\mathbf{mu}_{\mathrm{microtextit}}^{k}\right)\right|
@@ -1534,7 +1491,7 @@ $$
 
 The offset denotes the time difference between the respective microticks of the two clocks, measured in the number of microticks of the reference clock.
 
-Precision   Given an ensemble of $n$ clocks $\{l,2,...,n\}$ , the maximum offset between any two clocks of the ensemble
+Precision Given an ensemble of $n$ clocks $\{l,2,...,n\}$ , the maximum offset between any two clocks of the ensemble
 
 $$
 \Pi_{i}=\operatorname*{max}_{\forall j,k:1\leq j,k\leq n}\left\{\mathrm{offset}_{i}^{j k}\right\}
@@ -1544,19 +1501,19 @@ is called the precision $\Pi_{i}$ of the ensemble at microtick $i$ . The maximum
 
 Because of the drift rate of any physical clock, the clocks of an ensemble will drift apart if they are not re synchronized periodically (i.e., brought closer together). The process of mutual re synchronization of an ensemble of clocks to maintain a bounded precision is called internal synchronization.
 
-Accuracy   The offset of clock $k$ with respect to the reference clock z at microtick $i$ is called the a c c u a c y Subscript i Superscript k . The maximum offset over all microticks i that is of interest r is called the accuracy k of clock $k$ . The accuracy denotes the maximum offset of a given clock from the external time reference during a duration of interest.
+Accuracy The offset of clock $k$ with respect to the reference clock z at microtick $i$ is called the a c c u a c y Subscript i Superscript k . The maximum offset over all microticks i that is of interest r is called the accuracy k of clock $k$ . The accuracy denotes the maximum offset of a given clock from the external time reference during a duration of interest.
 
 To keep a clock within a bounded interval of the reference clock, it must be peri­ odically re synchronized with an external time reference. This process of resynchro­ nization of a clock with an external time reference is called external synchronization .
 
 If all clocks of an ensemble are externally synchronized with an accuracy $A$ , then the ensemble is also internally synchronized with a precision of at most 2A . The converse is not true. An ensemble of internally synchronized clocks will drift from the external time if the clocks are never re synchronized with the external time base.
 
-# 3.1.4  Time Standards
+### 3.1.4 Time Standards
 
 In the last decades, a number of different time standards have been proposed to measure the time difference between any two events and to establish the position of an event relative to some commonly agreed origin of a time base, the epoch . Two of these time bases are relevant for the designer of a distributed real-time computer system, the International Atomic Time (TAI) and the Universal Time Coordinated (UTC).
 
-International Atomic Time (TAI—Temps Atomique Internationale)   The need for a time standard that can be generated in a laboratory gave birth to the International Atomic Time (TAI). TAI defines the second as the duration of 9,192,631,770 peri­ ods of the radiation of a specified transition of the cesium atom 133. The intention was to define the duration of the TAI second so that it agrees with the second derived from astronomical observations. TAI is a chronos co pic timescale, i.e., a timescale without any discontinuities (e.g., leap seconds). The epoch of TAI starts on January 1, 1958, 00:00 hours Greenwich Mean Time (GMT). The time base of the global positioning system (GPS) is based on TAI with the epoch starting on January 6, 1980, at 00:00 hours.
+International Atomic Time (TAI—Temps Atomique Internationale) The need for a time standard that can be generated in a laboratory gave birth to the International Atomic Time (TAI). TAI defines the second as the duration of 9,192,631,770 peri­ ods of the radiation of a specified transition of the cesium atom 133. The intention was to define the duration of the TAI second so that it agrees with the second derived from astronomical observations. TAI is a chronos co pic timescale, i.e., a timescale without any discontinuities (e.g., leap seconds). The epoch of TAI starts on January 1, 1958, 00:00 hours Greenwich Mean Time (GMT). The time base of the global positioning system (GPS) is based on TAI with the epoch starting on January 6, 1980, at 00:00 hours.
 
-Universal Time Coordinated (UTC)   UTC is a time standard that has been derived from astronomical observations of the rotation of the earth relative to the sun. It is the basis for the time on the wall clock . However, there is a known offset between the local wall-clock time and UTC determined by the time zone and by the political decisions about when daylight savings time must be used. The UTC time standard was introduced in 1972, replacing the Greenwich Mean Time (GMT) as an interna­ tional time standard. Because the rotation of the earth is not smooth, but slightly irregular, the duration of the GMT second changes slightly over time. In 1972, it was internationally agreed that the duration of the second should conform to the TAI standard and that the number of seconds in an hour would have to be modified occa­ sionally by inserting a leap second into the UTC to maintain synchrony between the UTC (wall-clock time) and astronomical phenomena, like day and night. Because of this leap second, the UTC is not a chronos co pic timescale, i.e., it is not free of discontinuities. It was agreed that on January 1, 1958, at midnight, both the UTC and the TAI had the same value. Since then the UTC has deviated from TAI by about $30~\mathrm{s}.$ . The point in time when a leap second is inserted into the UTC is determined by the Bureau International de l’Heure and publicly announced, so that the current offset between the UTC and the TAI is always known.
+Universal Time Coordinated (UTC) UTC is a time standard that has been derived from astronomical observations of the rotation of the earth relative to the sun. It is the basis for the time on the wall clock . However, there is a known offset between the local wall-clock time and UTC determined by the time zone and by the political decisions about when daylight savings time must be used. The UTC time standard was introduced in 1972, replacing the Greenwich Mean Time (GMT) as an interna­ tional time standard. Because the rotation of the earth is not smooth, but slightly irregular, the duration of the GMT second changes slightly over time. In 1972, it was internationally agreed that the duration of the second should conform to the TAI standard and that the number of seconds in an hour would have to be modified occa­ sionally by inserting a leap second into the UTC to maintain synchrony between the UTC (wall-clock time) and astronomical phenomena, like day and night. Because of this leap second, the UTC is not a chronos co pic timescale, i.e., it is not free of discontinuities. It was agreed that on January 1, 1958, at midnight, both the UTC and the TAI had the same value. Since then the UTC has deviated from TAI by about $30~\mathrm{s}.$ . The point in time when a leap second is inserted into the UTC is determined by the Bureau International de l’Heure and publicly announced, so that the current offset between the UTC and the TAI is always known.
 
 Example : In Software Engineering Notes of March 1996 [Pet96, p. 16] was the follow­ ing story:
 
@@ -1564,11 +1521,11 @@ Ivan Peterson reported on a problem that occurred when a leap second was added a
 
 Bob Huey responded that making corrections at midnight is obviously risky: (1) The day increments to January 1, 1996, 00:00:00. (2) You reset the clock to 23:59:59, back one second. (3) The clock continues running. (4) The day changes again, and it is suddenly January 2, 1996, 00:00:00. No wonder they had problems.
 
-# 3.2  Time Measurement
+## 3.2 Time Measurement
 
 If the real-time clocks of all nodes of a distributed system were perfectly synchro­ nized with the reference clock $z$ and all events were time-stamped with this refer­ ence time, then it would be easy to measure the interval between any two events or to reconstruct the temporal order of events, even if variable communication delays generated differing delivery orders. In a loosely coupled distributed system where every node has its own local oscillator, such a tight synchronization of clocks is not possible. A weaker notion of a universal time reference, the concept of global time , is therefore introduced into a distributed system.
 
-# 3.2.1  Global Time
+### 3.2.1 Global Time
 
 Suppose a set of nodes exists, each one with its own local physical clock $c^{k}$ that ticks with granularity $g^{k}$ . Assume that all of the clocks are internally synchronized with a precision $\Pi$ , i.e., for any two clocks $j,k.$ , and all microticks $i$ :
 
@@ -1578,7 +1535,7 @@ $$
 
 Figure*3.2 3.4 Figure_3.2 ­ Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 $k$ Figure_3.2 Figure_3.2 Figure_3.2 $i$ Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 $k$ Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 $t*{i}^{k}$ Figure*3.2 3.2 Figure_3.2 Figur $k$ Figure_3.2 $t*{i}$ Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2 Figure_3.2
 
-Reasonableness Condition   The global time $t$ is called reasonable , if all local implementations of the global time satisfy the condition.
+Reasonableness Condition The global time $t$ is called reasonable , if all local implementations of the global time satisfy the condition.
 
 $$
 g>\Pi
@@ -1590,23 +1547,21 @@ $$
 \left|t^{j}\left(e\right)\!-t^{k}\left(e\right)\right|\leq1,
 $$
 
-i.e., the global time-stamps for a single event can differ by at most one tick. This is the best we can achieve. Because of the impossibility of synchronizing the clocks perfectly and the granularity of any digital time, there is always the possibility of the following sequence of events: clock $j$ ticks, event $e$ occurs, and clock $k$ ticks. In such a situation, the single event $e$ is time-stamped by the two clocks $j$ and $k$ with a dif­ ference of one tick (Fig.  3.2 ).
+i.e., the global time-stamps for a single event can differ by at most one tick. This is the best we can achieve. Because of the impossibility of synchronizing the clocks perfectly and the granularity of any digital time, there is always the possibility of the following sequence of events: clock $j$ ticks, event $e$ occurs, and clock $k$ ticks. In such a situation, the single event $e$ is time-stamped by the two clocks $j$ and $k$ with a dif­ ference of one tick (Fig.3.2 ).
 
-One-Tick Difference—What Does It Mean?   What can we learn about the tem­ poral order of two events, observed by different nodes of a distributed system with a reasonable global time, given that the global time-stamps of these two events dif­ fer by one tick?
-
-Figure_3.3 3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 F $^{69}$ Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 $^{69}$ Figure_3.3 Figure_3.3Figure_3.3Figure_3.3­Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3 F $^{69}$ Figure_3.3 Figure_3.3 $^{67,}$ gure_3.3 Figure_3.3 ­ Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3­Figure_3.3 Figure_3.3 Figure_3.3 Figure_3.3
+One-Tick Difference—What Does It Mean? What can we learn about the tem­ poral order of two events, observed by different nodes of a distributed system with a reasonable global time, given that the global time-stamps of these two events dif­ fer by one tick?
 
 This fundamental limitation in time measurement limits the faithfulness of the digital computer model of a controlled physical subsystem. The time base in the
 
-![](images/b50d95ec418952f5be860889311b112c940fa91c99342baa994a35af9ed427d9.jpg)
-Fig. 3.2  Time-stamps of a single event
+> ![](images/b50d95ec418952f5be860889311b112c940fa91c99342baa994a35af9ed427d9.jpg)
+> Fig.3.2 Time-stamps of a single event
 
-![](images/4af6218e9d8e3277cb67cd70076c8bf8649774cd253f33e673a760905f52fb7b.jpg)
-Fig. 3.3  Temporal order of two events with a difference of one tick
+> ![](images/4af6218e9d8e3277cb67cd70076c8bf8649774cd253f33e673a760905f52fb7b.jpg)
+> Fig.3.3 Temporal order of two events with a difference of one tick
 
 physical part of a cyber-physical system is dense, while the time base in the com­ puter system is discrete. Whenever two events in the physical subsystem occur close together, compared to the granularity of the global time, it is not possible to recon­ struct the physical temporal order of the events in the computer system faithfully. The only way out of this dilemma is the provision of a global time base with a smaller granularity, such that temporal errors are reduced [Kop09].
 
-# 3.2.2  Interval Measurement
+### 3.2.2 Interval Measurement
 
 An interval is delimited by two events, the start event of the interval and the termi­ nating event of the interval. The measurement of these two events relative to each other can be affected by the synchronization error and the digital iz ation error. The sum of these two errors is less than $_{2g}$ because of the reasonableness condition, where $g$ is the granularity of the global time. It follows that the true duration $d_{\mathrm{true}}$ of an interval is bounded by
 
@@ -1614,19 +1569,15 @@ $$
 \left(d_{\mathrm{obs}}-2g\right)<d_{\mathrm{true}}<\left(d_{\mathrm{obs}}+2g\right)
 $$
 
-Figure $d_{\mathrm{obs}}$ Figure_3.4 Figure_3.4 3.4 Figure_3.4 Figure_3.4 Figure_3.4 Figure_3.4 3.4 Figure_3.4
+### 3.2.3 π / Δ -Precedence
 
-# 3.2.3   π / Δ -Precedence
+> ![](images/05bf65146734252cf584987a411c19406131210a33e21ba7ec9de677f5e8055d.jpg)
+> Fig.3.4 Errors in interval measurement
 
-Figure_3.5 $j,k.$ $m$ Figure_3.5 Figure_3.5 Figure_3. $l,5$ Figure_3.5 Figure_3.5 Figure_3.5 Figure_3.5 3.5 Figure_3.5
+> ![](images/c34eaa1bd99ac533005e4480cd95353fe6db5bec0d5e4878493b69b081ea9357.jpg)
+> Fig.3.5 $\pi/\Delta$ precedence
 
-![](images/05bf65146734252cf584987a411c19406131210a33e21ba7ec9de677f5e8055d.jpg)
-Fig. 3.4  Errors in interval measurement
-
-![](images/c34eaa1bd99ac533005e4480cd95353fe6db5bec0d5e4878493b69b081ea9357.jpg)
-Fig. 3.5  $\pi/\Delta$ precedence
-
-All events that are generated locally at the same global clock tick will occur within a small interval $\pi$ , where $\pi\!\leq\!\Pi$ , the precision of the ensemble (because of the reasonableness condition). Events that occur at different ticks will be at least $\Delta$ apart (Fig.  3.5 ). The outside observer should not order the events that occur within $\pi$ , because these events are supposed to occur at the same instant. Events that occur at different ticks should be ordered. How many granules of silence must exist between the event subsets such that an outside observer or another cluster will always recover the temporal order intended by the sending cluster? Before we can answer this question (in Sect. 3.3.2 ), we must introduce the notion of $\pi/\Delta$ precedence.
+All events that are generated locally at the same global clock tick will occur within a small interval $\pi$ , where $\pi\!\leq\!\Pi$ , the precision of the ensemble (because of the reasonableness condition). Events that occur at different ticks will be at least $\Delta$ apart (Fig.3.5 ). The outside observer should not order the events that occur within $\pi$ , because these events are supposed to occur at the same instant. Events that occur at different ticks should be ordered. How many granules of silence must exist between the event subsets such that an outside observer or another cluster will always recover the temporal order intended by the sending cluster? Before we can answer this question (in Sect. 3.3.2 ), we must introduce the notion of $\pi/\Delta$ precedence.
 
 Given a set of events {E} and two durations $\pi$ and $\Delta$ where $\pi<\Delta$ , such that for any two elements $e_{i}$ and $e_{j}$ of this set, the following condition holds:
 
@@ -1634,17 +1585,13 @@ $$
 \left[\left|z(e_{i})\!-\!z(e_{j})\right|\!\leq\!\pi\right]\!\vee\!\left[\left|z(e_{i})\!-\!z(e_{j})\right|>\!\Delta\right]
 $$
 
-where $z$ is the reference clock. Such an event set is called $\pi/\Delta$ -precedent. π / Δ -­ Precedence means that a subset of the events that happen at about the same time
-
-(and that are therefore close together within $\pi$ ) is separated by a substantial interval
-
-(at least $\Delta$ ) from the elements in another subset. If $\pi$ is zero, then any two events of the $O/\Delta$ -precedent event set occur either at the same instant or are at least a duration $\Delta$ apart.
+where $z$ is the reference clock. Such an event set is called $\pi/\Delta$ -precedent. π / Δ -­ Precedence means that a subset of the events that happen at about the same time (and that are therefore close together within $\pi$ ) is separated by a substantial interval at least $\Delta$ ) from the elements in another subset. If $\pi$ is zero, then any two events of the $O/\Delta$ -precedent event set occur either at the same instant or are at least a duration $\Delta$ apart.
 
 Assume a distributed system with a reasonable global time base with granularity $g$ and two events, $e I$ and $^{e2}$ , that are produced at the same locally generated global tick of two different nodes. Due to the synchronization error, these events can differ by up to but less than one granule. These events are observed by some of the other nodes.
 
 Because of the synchronization and digital iz ation error, the two (simultaneous by intention) events can be time-stamped by the observers with two-tick difference. In order to be able to establish the intended temporal order of events from their time-stamps, a sufficient duration of silence is needed before the next event may occur in order to ensure that the intended si multan e it y of the events can always be recovered by all observers [Ver94].
 
-# 3.2.4  Fundamental Limits of Time Measurement
+### 3.2.4 Fundamental Limits of Time Measurement
 
 The above analysis leads to the following four fundamental limits of time measure­ ment in distributed real-time systems with a reasonable global time base with granu­ larity $g$ :
 
@@ -1662,36 +1609,29 @@ $$
 
 These fundamental limits of time measurement are also the fundamental limits to the faithfulness of a digital model of a physical system.
 
-# 3.3  Dense Time Versus Sparse Time
+## 3.3 Dense Time Versus Sparse Time
 
 Example : It is known a priori that a particular train will arrive at a train station every hour. If the train is always on time and all clocks are synchronized, it is possible to uniquely identify each train by its time of arrival. Even if the train is slightly off, say, by $5\;\mathrm{min}$ , and the clocks are slightly out of synchronization, say, by 1 min, there will be no problem in uniquely identifying a train by its time of arrival. What are the limits within which a train can still be uniquely identified by its time of arrival?
-
-Figure_3.6 Figure_3.6 ­ Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 $\varepsilon$ Figure_3.6 $\Delta$ Figure_3.6 Figure_3.6 $\varepsilon/\Delta$ Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6 Figure_3.6
 
 It is evident that the occurrences of events can only be restricted if the given system has the authority to control these events, i.e., these events are in the sphere of control of the computer system [Dav79]. The occurrence of events outside the sphere of control of the computer system cannot be restricted. These external events are based on a dense time base and cannot be forced to be sparse events .
 
 Example : Within a distributed computing system, the sending of messages can be restricted to some intervals of the timeline and can be forbidden at some other intervals—they can be designed to be sparse events .
 
-# 3.3.1  Dense Time Base
+### 3.3.1 Dense Time Base
 
 Suppose that we are given two events $e I$ and $^{e2}$ that occur on a dense time base. If these two events are closer together than $_{3g}$ , where $g$ is the granularity of the global time, then it is not always possible to establish the temporal order, or even a consis­ tent order of these two events on the basis of the time-stamps generated by the dif­ ferent nodes if no agreement protocol (see below) is applied.
 
-Figure*3.7 Figure_3.7 3.7 Figure_3.7 $e I$ Figu $^{e2}$ Figure_3.7 Figure_3.7 Figure_3.7­ Figure_3.7 Figure_3.7 Figure_3.7 $j$ Figure_3.7 Figure_3.7 Figure_3.7 $m$ Figure_3 $I$ Figure* $^{e2}$ Figure_3.7
+> ![](images/7259af9a7c58fe5367a429081abd681d52b791ca5390663643acd575619d5d0b.jpg)
+> Fig.3.6 Sparse time base
 
-Fig. 3.6  Sparse time base
+> ![](images/8ae7252321c290b73807126908b6943fdbc416a3e97d9ccf1f1afbcfcb1a11ca.jpg)
+> Fig.3.7 Different observed order of two events $e I$ and $^{e2}$
 
-![](images/7259af9a7c58fe5367a429081abd681d52b791ca5390663643acd575619d5d0b.jpg)
-
-![](images/8ae7252321c290b73807126908b6943fdbc416a3e97d9ccf1f1afbcfcb1a11ca.jpg)
-Fig. 3.7  Different observed order of two events $e I$ and $^{e2}$
-
-Figure*3.7 $k$ Figure_3.7 $:e2$ Figure_3.7 $3^{\circ}$ igure_3. $j$ Figure_3.7 $m$ Figure_3.7 Figu $j$ Figure_3.7 Figure_3.7 Figure_3.7 Figure_3.7 $m$ Figure_3.7 Figure_3.7 Figure_3.7 Figure_3.7 Figure_3.7 Figure* $^{e2}$ Figure_3.7 $j$ Figu $m$ Figure_3.7 Figure_3.7 Figure_3.7 Figure_3.7
-
-Agreement Protocol   To arrive at a consistent view of the order of non-sparse events within a distributed computer system (which does not necessarily reflect the temporal order of event occurrence), the nodes must execute an agreement protocol . The first phase of an agreement protocol requires an information interchange among the nodes of the distributed system with the goal that every node acquires the differ­ ing local views about the state of the world from every other node. In the fault-free case, at the end of this first phase, every correct node possesses exactly the same information as every other node. In the second phase of the agreement protocol, each node applies a deterministic algorithm to this consistent information to reach the same conclusion about the assignment of the event to an active interval of the sparse time base—the commonly agreed value. In case faulty nodes have to be ­tolerated, an agreement algorithm requires additional round(s) of information exchange as well as the resources for executing the agreement algorithm.
+Agreement Protocol To arrive at a consistent view of the order of non-sparse events within a distributed computer system (which does not necessarily reflect the temporal order of event occurrence), the nodes must execute an agreement protocol . The first phase of an agreement protocol requires an information interchange among the nodes of the distributed system with the goal that every node acquires the differ­ ing local views about the state of the world from every other node. In the fault-free case, at the end of this first phase, every correct node possesses exactly the same information as every other node. In the second phase of the agreement protocol, each node applies a deterministic algorithm to this consistent information to reach the same conclusion about the assignment of the event to an active interval of the sparse time base—the commonly agreed value. In case faulty nodes have to be ­tolerated, an agreement algorithm requires additional round(s) of information exchange as well as the resources for executing the agreement algorithm.
 
 Agreement algorithms are costly, both in terms of communication requirements and processing requirements and—worst of all—in terms of the additional delay they introduce into a control loop. It is therefore expedient to look for solutions to the consistent temporal ordering problem in distributed computer systems that do not require these additional overheads. The sparse time model, introduced below, provides for such a solution.
 
-# 3.3.2  Sparse Time Base
+### 3.3.2 Sparse Time Base
 
 Consider a distributed system that consists of two clusters: cluster $A$ generates events, and cluster $B$ observes these generated events. Each one of the clusters has its own cluster-wide synchronized time with a granularity $g$ , but these two cluster-­ wide time bases are not synchronized with each other. Under what circumstances is it possible for the nodes in the observing cluster to reestablish consistently the intended temporal order of the generated events without the need to execute an agreement protocol?
 
@@ -1699,42 +1639,35 @@ If two nodes, nodes $j$ and $k$ of cluster $A$ , generate two events at the same
 
 If cluster $A$ generates a $\mathit{l g/3g}$ precedent event set, then it is possible that two events that are generated at the same cluster-wide granule at cluster $A$ will be time-­ stamped by cluster $B$ with time-stamps that differ by two ticks. The observing clus­ ter $B$ should not order these events (although it could), because they have been generated at the same cluster-wide granule. Events that are generated by cluster $A$ at different cluster-wide granules ( $_{3g}$ apart) and therefore should be ordered by cluster $B$ could also obtain time-stamps that differ by two ticks. Cluster $B$ cannot decide whether or not to order events with a time-stamp difference of two ticks. To resolve this situation, cluster $A$ must generate a $I g/4g$ precedent event set. Cluster $B$ will not order two events if their time-stamps differ by ${\leq}2$ ticks, but will order two events if their time-stamps differ by ${\geq}3$ ticks, thus reestablishing the temporal order that has been intended by the sender.
 
-# 3.3.3  Space-Time Lattice
-
-Figure_3.8 Figure_3.8 3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8 Figure_3.8sFigure_3.8
+### 3.3.3 Space-Time Lattice
 
 Events that occur outside the sphere of control of the computer system cannot be confined to a sparse time base: they happen on a dense time base and are therefore not sparse events. To generate a consistent view of events that occur in the con­ trolled object and that are observed by more than one node of the distributed com­ puter system, the execution of an agreement protocol is unavoidable at the interface between the computer system and the controlled object or other systems that do not participate in the global time. Such an agreement protocol transforms a non-sparse event into a sparse event.
 
-Fig. 3.8  Sparse time base
+> ![](images/7dd575bedead1c162dfeba52b258ec48ae67284dd841a9dc65c8b3a2ea2203b4.jpg)
+> Fig.3.8 Sparse time base
 
-![](images/7dd575bedead1c162dfeba52b258ec48ae67284dd841a9dc65c8b3a2ea2203b4.jpg)
-
-# 3.3.4  Cyclic Representation of Time
+### 3.3.4 Cyclic Representation of Time
 
 Many processes in the technical and biological world are cyclic [Win01]. A cyclic process is characterized by a regular behavior, where a similar set of action patterns is repeated in every cycle.
 
-Figure_3.9 Figure_3.9 Figure_3.9 3.9 Figure_3.9 Figure_3.9 Figure_3.9 ­ Figure_3.9
-
 In the cyclic representation of time, the linear time is partitioned into cycles of equal duration. Every cycle is represented by a circle, where an instant within a cycle is denoted by the phase , i.e., the angular deviation of the instant from the beginning of the cycle. Cycle and phase thus denote an instant in a cyclic represen­ tation. In the cyclic representation of sparse time, the circumference of the circle is not a dense line, but a dotted line, where the size and the distance between dots are determined by the precision of the clock synchronization.
 
-A sequence of consecutive processing and communication actions, such as the actions in Fig.  3.9 , are phase-aligned , if the termination of one action is immedi­ ately followed by the start of the next consecutive action. If the actions within a $R T$ transaction (see Sect. 1.7.3 ) are phase-aligned, then the overall duration of the RT transactions is minimized.
+A sequence of consecutive processing and communication actions, such as the actions in Fig.3.9 , are phase-aligned , if the termination of one action is immedi­ ately followed by the start of the next consecutive action. If the actions within a $R T$ transaction (see Sect. 1.7.3 ) are phase-aligned, then the overall duration of the RT transactions is minimized.
 
-If we look at Fig.  3.9 , we see that communication services in a typical control loop are periodically required only in the intervals $B$ and $D$ of a cycle. The shorter these intervals $B$ and $D$ , the better , since the dead time of the control loop is reduced. This requirement leads to the model of pulsed data streams , where, in a time-­ triggered system, the highest possible bandwidth is allocated periodically in the intervals $B$ and $D$ , while, during the rest of the cycle, the communication bandwidth can be allocated to other requests [Kop06].
+If we look at Fig.3.9 , we see that communication services in a typical control loop are periodically required only in the intervals $B$ and $D$ of a cycle. The shorter these intervals $B$ and $D$ , the better , since the dead time of the control loop is reduced. This requirement leads to the model of pulsed data streams , where, in a time-­ triggered system, the highest possible bandwidth is allocated periodically in the intervals $B$ and $D$ , while, during the rest of the cycle, the communication bandwidth can be allocated to other requests [Kop06].
 
-![](images/e9797175218a03df29222b83c425396d61145f8201d06253de8dc9e2d8aca55e.jpg)
-Fig. 3.9  Linear versus cyclic representation of time in a control system
+> ![](images/e9797175218a03df29222b83c425396d61145f8201d06253de8dc9e2d8aca55e.jpg)
+> Fig.3.9 Linear versus cyclic representation of time in a control system
 
 An extension of the cyclic representation is the spiral representation of time , where a third axis is introduced to depict the linear progression of the cycles.
 
-# 3.4  Internal Clock Synchronization
+## 3.4 Internal Clock Synchronization
 
 The purpose of internal clock synchronization is to ensure that the global ticks of all correct nodes occur within the specified precision Π , despite the varying drift rate of the local real-time clock of each node. Because the availability of a proper global time base is crucial for the operation of a distributed real-time system, the clock synchronization should not depend on the correctness of a single clock, i.e., it should be fault-tolerant.
 
 Every node of a distributed system has a local oscillator that (micro)ticks with a frequency determined by the physical parameters of the oscillator. A subset of the local oscillator’s microticks called the ticks (or macroticks—see Sect. 3.2.1 ) is interpreted as the global time ticks at the node. These global time ticks increment the local node’s global time counter.
 
-# 3.4.1  The Synchronization Condition
-
-Figure*3.10 Figure_3.10 Figure_3.10 Figure_3.10 F $R*{\mathrm{int}}$ Figure*3.10 Figure_3.10 Figure_3.10 Figure_3.10 F $\Phi$ Figure_3.10 Figure_3.10 Figure_3.10 $R*{\mathrm{int}}$ Figure*3.10 3.10 Figure_3.10 Figure_3.10 $\Gamma$ Figure_3.10 Figure_3.10 $R*{\mathrm{int}}$ Figure*3.10 Figure_3.10 $\Gamma$ Figure_3.10 Figure_3.10 $R*{\mathrm{int}}$ Figure_3.10 $\rho$ Figure_3.10
+### 3.4.1 The Synchronization Condition
 
 $$
 \Gamma=2\rho R_{\mathrm{int}}
@@ -1746,17 +1679,14 @@ $$
 \Phi+\Gamma\leq\Pi
 $$
 
-Assume that at the end of the re synchronization interval, the clocks have diverged so that they are at the edge of the precision interval $\Pi$ (Fig.  3.10 ). The synchro niza­ tion condition states that the synchronization algorithm must bring the clocks so
+Assume that at the end of the re synchronization interval, the clocks have diverged so that they are at the edge of the precision interval $\Pi$ (Fig.3.10 ). The synchro niza­ tion condition states that the synchronization algorithm must bring the clocks so close together that the amount of divergence during the next free-running resyn­ chron iz ation interval will not cause a clock to leave the precision interval.
 
-![](images/4d24bb69150361380cbcc4611734a00d50ca10d1b8006be33912ee0f14835d22.jpg)
-
-close together that the amount of divergence during the next free-running resyn­ chron iz ation interval will not cause a clock to leave the precision interval.
-
-Figure_3.11   Figure_3.11 Figure_3.11 Figure_3.11 Figure_3.11 Figure_3.11 $A$ Figu $B$ Figure_3.11 Figure $C$ Figure_3.11 Figure_3.11 Figure_3.11 Figure_3.11 3.11 Figure_3.11 Figure_3.11
+> ![](images/4d24bb69150361380cbcc4611734a00d50ca10d1b8006be33912ee0f14835d22.jpg)
+> Figure_3.11
 
 Such a malicious, two-faced manifestation of behavior is sometimes called a malicious error or a Byzantine error (see also Sect. 6.1.3 ). During the exchange of the synchronization messages, a Byzantine error can lead to inconsistent views of the state of the clocks among the ensemble of nodes. A special class of algorithms, the interactive-consistency algorithms [Pea80], inserts additional rounds of infor­ mation exchanges to agree on a consistent view of the time values at all nodes. These additional rounds of information exchanges increase the quality of the precision at the expense of additional communication overhead. Other algorithms work with inconsistent information and establish bounds for the maximum error introduced by the inconsistency. An example of such an algorithm is the fault-­tolerant average algorithm, described later in this section. It has been shown [Lam85] that clock syn­ chron iz ation can only be guaranteed in the presence of Byzantine errors if the total number of clocks $N\geq(3k+l)$ , where $k$ is the number of Byzantine faulty clocks.
 
-# 3.4.2  Central Master Synchronization
+### 3.4.2 Central Master Synchronization
 
 This is a simple non-fault-tolerant synchronization algorithm. A unique node, the central master, periodically sends the value of its time counter in synchronization messages to all other nodes, the slave nodes. As soon as a slave node receives a new synchronization message from the master, the slave records the time-stamp of mes­ sage arrival. The difference between the master’s time, contained in the synchroni­ zation message, and the recorded slave’s time-stamp of message arrival, corrected by the known latency of the message transport, is a measure of the deviation of the clock of the master from the clock of the slave. The slave then corrects its clock by this deviation to bring it into agreement with the master’s clock.
 
@@ -1770,15 +1700,15 @@ $$
 
 The central master synchronization is often used in the startup phase of a distrib­ uted system. It is simple, but not fault-tolerant, since a failure of the master ends the re synchronization, causing the free-running clocks of the slaves to leave the preci­ sion interval soon thereafter. In a variant of this algorithm, a multi-master strategy is followed: if the active master fails silently and the failure is detected by a local time-out at a shadow master , one of the shadow masters assumes the role of the master and continues the re synchronization.
 
-# 3.4.3  Fault-Tolerant Synchronization Algorithms
+### 3.4.3 Fault-Tolerant Synchronization Algorithms
 
 Typically, distributed fault-tolerant clock re synchronization proceeds in three dis­ tinct phases. In the first phase, every node acquires knowledge about the state of the global time counters in all the other nodes by the exchange of messages among the nodes. In the second phase, every node analyzes the collected information to detect errors and executes the convergence function to calculate a correction value for the local global time counter. A node must deactivate itself if the correction term calcu­ lated by the convergence function is larger than the specified precision of the ensemble. Finally, in the third phase, the local time counter of the node is adjusted by the calculated correction value. Existing algorithms differ in the way in which the time values are collected from the other nodes, in the type of convergence func­ tion used, and in the way in which the correction value is applied to the local time counter.
 
-Table_3.1 e   Table_3.1 ­ Table_3.1 Table_3.1 Table_3.1 Table_3.1 Table_3.1 Table_3.1 ­ Table_3.1 Table_3.1 Table_3.1 Table_3.1 Table_3.1 Table_3.1 3.1 Table_3.1 Table_3.1
+> Table_3.1
 
 Since a small jitter is important to achieve high precision in the global time, a number of special methods for jitter reduction have been proposed. Cristian [Cri89] proposed the reduction of the jitter at the application software level using a proba­ bilistic technique: a node queries the state of the clock at another node by a query-­ reply transaction, the duration of which is measured by the sender. The received time value is corrected by the synchronization message delay that is assumed to be half the round-trip delay of the query-reply transaction (assuming that the delay distribution is the same in both directions). A different approach is taken in the time-­ triggered architecture. A special clock synchronization unit has been implemented to support the segmentation and assembly of synchronization messages at the hard­ ware level, thereby reducing the jitter to a few microseconds. The IEEE 1588 stan­ dard for clock synchronization limits the jitter by hardware-assisted time-stamping [Eid06].
 
-Impossibility Result   The important role of the latency jitter ε for internal synchro­ nization is emphasized by an impossibility result by Lundelius and Lynch [Lun84]. According to this result, it is not possible to internally synchronize the clocks of an ensemble consisting of N nodes to a better precision than
+Impossibility Result The important role of the latency jitter ε for internal synchro­ nization is emphasized by an impossibility result by Lundelius and Lynch [Lun84]. According to this result, it is not possible to internally synchronize the clocks of an ensemble consisting of N nodes to a better precision than
 
 $$
 \Pi=\varepsilon\bigg(1\!-\!\frac{1}{N}\bigg)
@@ -1786,13 +1716,12 @@ $$
 
 (measured in the same units as $\varepsilon$ ) even if it is assumed that all clocks have perfect oscillators, i.e., the drift rates of all the local clocks are zero.
 
-The Convergence Function   The construction of a convergence function is dem­ onstrated by the example of the distributed fault-tolerant average (FTA) algorithm in a system with $N$ nodes where $k$ Byzantine faults should be tolerated. The FTA algorithm is a one-round algorithm that works with inconsistent information and bounds the error introduced by the inconsistency. At every node, the $N$ measured time differences between the node’s clock and the clocks of all other nodes are col­ lected (the node considers itself a member of the ensemble with time difference zero). These time differences are sorted by size. Then the $k$ largest and the $k$ smallest time differences are removed (assuming that an erroneous time value is either larger or smaller than the rest). The remaining $N{-}2k$ time differences are by definition within the precision window definition (since only $k$ values are assumed to be erro­ neous and an erroneous value is larger or smaller than a good value). The average of these remaining $N{-}2k$ time differences is the correction term for the node’s clock.
+The Convergence Function The construction of a convergence function is dem­ onstrated by the example of the distributed fault-tolerant average (FTA) algorithm in a system with $N$ nodes where $k$ Byzantine faults should be tolerated. The FTA algorithm is a one-round algorithm that works with inconsistent information and bounds the error introduced by the inconsistency. At every node, the $N$ measured time differences between the node’s clock and the clocks of all other nodes are col­ lected (the node considers itself a member of the ensemble with time difference zero). These time differences are sorted by size. Then the $k$ largest and the $k$ smallest time differences are removed (assuming that an erroneous time value is either larger or smaller than the rest). The remaining $N{-}2k$ time differences are by definition within the precision window definition (since only $k$ values are assumed to be erro­ neous and an erroneous value is larger or smaller than a good value). The average of these remaining $N{-}2k$ time differences is the correction term for the node’s clock.
 
-Figure_3.12 Figure_3.12 3.12 Figure_3.12 Figure_3.12 Figure_3.12 Figure_3.12
+> Figure_3.12
+> Figure_3.13
 
-Figure_3.13 Figure_3.13 $\Pi$ Figure_3.13 Figure_3.13 3.13 Figure $j$ Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 Figure_3 $k$ Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 Figure_3.13 $\Pi/5$ Figure_3.13
-
-Precision of the FTA   Assume a distributed system with $N$ nodes, each one with its own clock (all time values are measured in seconds). At most $k$ out of the $N$ clocks behave in a Byzantine manner.
+Precision of the FTA Assume a distributed system with $N$ nodes, each one with its own clock (all time values are measured in seconds). At most $k$ out of the $N$ clocks behave in a Byzantine manner.
 
 A single Byzantine clock will cause the following difference in the calculated averages at two different nodes in an ensemble of $N$ clocks:
 
@@ -1802,10 +1731,9 @@ $$
 
 In the worst case, a total of $k$ Byzantine errors will thus cause an error term of
 
-Table 3.1  Approximate jitter of the synchronization message
-![](images/e0216b1c867dd465aa00dc5b09049507e7f04ed7468ee5c9f58346cd400cd6ce.jpg)
-
-![](images/4f2c4a610767212ecd5aec3af0ada56a025db455714d14afafc02f34944c2c64.jpg)
+> Table 3.1 Approximate jitter of the synchronization message
+> ![](images/e0216b1c867dd465aa00dc5b09049507e7f04ed7468ee5c9f58346cd400cd6ce.jpg)
+> ![](images/4f2c4a610767212ecd5aec3af0ada56a025db455714d14afafc02f34944c2c64.jpg)
 
 $$
 E_{\mathrm{k-byz}}=k\Pi\,/\left(N-2k\right)
@@ -1831,27 +1759,23 @@ The drift offset $\Gamma$ of a clock to a perfect clock (i.e., a clock without d
 
 Many other convergence functions for the internal synchronization of the clocks have been proposed and analyzed in the literature [Sch88].
 
-# 3.4.4  State Correction Versus Rate Correction
+### 3.4.4 State Correction Versus Rate Correction
 
 The correction term calculated by the convergence function can be applied to the local-time value immediately ( state correction ), or the rate of the clock can be mod­ ified so that the clock speeds up or slows down during the next re synchronization interval to bring the clock into better agreement with the rest of the ensemble ( rate correction ).
 
 State correction is simple to apply, but it has the disadvantage of generating a discontinuity in the time base. If clocks are set backward and the same nominal-­ time value is reached twice, then pernicious failures can occur within the real-time software (see the example in Sect. 3.1.4 ). It is therefore advisable to implement rate correction with a bound on the maximum value of the clock drift so that the error in interval measurements is limited. The resulting global time base then maintains the chronos copy property despite the re synchronization. Rate correction can be imple­ mented either in the digital domain by changing the number of microticks in some of the (macro)ticks or in the analog domain by adjusting the voltage of the crystal oscillator.
 
-# 3.5  External Clock Synchronization
+## 3.5 External Clock Synchronization
 
 External synchronization links the global time of a cluster to an external standard of time. For this purpose it is necessary to access a timeserver , i.e., an external time source that periodically broadcasts the current reference time in the form of a time message . This time message must raise a synchronization event (such as the beep of a wristwatch) in a designated node of the cluster and must identify this synchro niza­ tion event on the agreed timescale. Such a timescale must be based on a widely accepted measure of time, e.g., the physical second, and must relate the synchroni­ zation event to a defined origin of time, the epoch . The interface node to a timeserver is called a time gateway . In a fault-tolerant system, the time gateway should be a fault-tolerant unit (FTU—see Sect. 6.4.2 ).
 
-# 3.5.1  External Time Sources
+### 3.5.1 External Time Sources
 
-Figure_3.14 Figure_3.14 ­ Figure_3 .14
+> Table 3.2 Byzantine error term $\mu(N,k)$
+> ![](images/4b57437cd17347976b82e52f207b933d6b039228e46a32f7842970df2b184ba7.jpg)
 
-Table 3.2  Byzantine error term $\mu(N,k)$
-![](images/4b57437cd17347976b82e52f207b933d6b039228e46a32f7842970df2b184ba7.jpg)
-
-![](images/af2797cbb94fc5f20e02a79b3afa0626eef02232e35739e83f2b45043dcc4d54.jpg)
-Fig. 3.14  Flow of external synchronization
-
-Figure_3. 14 Figure_3.14 Figure_3.14 $1\,\mathrm{pmm}$ Figure_3.14 Figure_3.14 $1\;\upmu\mathrm{sec}$ ure_3.14 Figure_3.14 $10^{-12}$ Figure_3.14 Figure_3.14 Figure_3.1 $1~\upmu\mathrm{sec}$ ure_3.14 ­ Figure_3.14 ­ Figure_3.14 Figure_3.14 Figure_3.14 Figure_3.14 3.14 Figure_3.14 Figure_3.14
+> ![](images/af2797cbb94fc5f20e02a79b3afa0626eef02232e35739e83f2b45043dcc4d54.jpg)
+> Fig.3.14 Flow of external synchronization
 
 If another cluster is connected to this primary cluster by a secondary time gate­ way, then the unidirectional synchronization functions in the same manner. The secondary time gateway considers the synchronized time of the primary cluster as its time reference and synchronizes the global time of the secondary cluster.
 
@@ -1859,7 +1783,7 @@ While internal synchronization is a cooperative activity among all the members o
 
 The implementation must guarantee that it is impossible for a faulty external synchronization to interfere with the proper operation of the internal synchro niza­ tion, i.e., with the generation of global time within a cluster. The worst possible failure scenario occurs if the external timeserver fails maliciously—a very low probability failure mode if the external timeserver is GPS. This leads to a common-­ mode deviation of the global time from the external time base with the maximum permitted deviation rate . In a properly designed synchronization system, this drift from the external time base will not affect the internal synchronization within a cluster.
 
-# 3.5.2  Time Gateway
+### 3.5.2 Time Gateway
 
 The time gateway must control the timing system of its cluster in the following ways:
 
@@ -1871,14 +1795,10 @@ The time gateway must control the timing system of its cluster in the following 
 
 The time gateway achieves this task by periodically sending a time message with a rate-correction byte. This rate-correction byte is calculated in the time gateway’s software. First, the difference between the occurrence of a significant event, e.g., the exact start of the full second in the timeserver, and the occurrence of the related significant event in the global time of the cluster is measured by using the local time base (microticks) of the gateway node. Then, the necessary rate adjustment is calcu­ lated, bearing in mind the fact that the rate adjustment is bounded by the agreed maximum rate correction. This bound on the rate correction is necessary to keep the maximum deviation of relative time measurements in the cluster below an agreed threshold and to protect the cluster from faults of the server.
 
-# 3.5.3  Time Formats
+### 3.5.3 Time Formats
 
-Figure_3.15 Figure_3.15 Figure_3.15 Figure_3.15 3.15 Figure_3.15
-
-Fig. 3.15  Time format in the network time protocol (NTP)
-![](images/1201890e2d0ed8e3ccc0f26c0afa6c26d2eb51ae0bac2c1d576158d663119cc0.jpg)
-
-Figure*3.15 Figure_3.15 Figure_3.15 Figure_3.15 Figure_3.15 Figure_3.15 $2{,}272{,}O6O{,}8O O{.}O$ Figure_3.15 Figure_3.15 $*{00:00\,\mathrm{h}}$
+> Fig.3.15 Time format in the network time protocol (NTP)
+> ![](images/1201890e2d0ed8e3ccc0f26c0afa6c26d2eb51ae0bac2c1d576158d663119cc0.jpg)
 
 The NTP time is not chronos co pic because it is based on UTC which has to accommodate for the switching second. The occasional insertion of a leap second into UTC can disrupt the continuous operation of a time-triggered real-time system.
 
@@ -1886,7 +1806,7 @@ Another time format is the IEEE 1588 standard time format [Eid06]. In this time 
 
 The time-triggered architecture (TTA) uses a time format that is a combination of IEEE 1588 and NTP. The full seconds are counted as in TAI (such as IEEE 1588), but parts of a second are represented in a binary fraction of the full second (such as NTP). It is thus chronos co pic and conforms fully to the dual system.
 
-# Points to Remember
+## Points to Remember
 
 • An event happens at an instant , i.e., at a point of the timeline. A duration is a section of the timeline delimited by two instants.
 
@@ -1934,11 +1854,11 @@ The time-triggered architecture (TTA) uses a time format that is a combination o
 
 • The time gateway maintains the external synchronization by periodically send­ ing a time message with a rate-correction byte to all the nodes of a cluster.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The problem of generating a global time base in a distributed system has first been analyzed in the context of the SIFT [Wen78] and FTMP [Hop78] projects. A VLSI chip for clock synchronization in distributed systems was developed by Kopetz and Ochs en reiter [Kop87]. The network time protocol of the Internet was published in 1991 by Mills [Mil91]. Kopetz presented the concept of a sparse time model first in [Kop92]. Steiner and Rushby formally verified the fundamental limits of time mea­ surement in [Ste11b] and corrected minor inaccuracies. The excellent book by Eidson [Eid06] covers the IEEE 1588 protocol for clock synchronization in detail. The integration of internal and external clock synchronization is discussed in [Kop04]. For a more philosophical treatment of the problem of time, the reader is advised to study the excellent book by Withrow in [Wit90] entitled The Natural Philosophy of Time.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 3.1. What is the difference between an instant and an event ?
 
@@ -1976,17 +1896,17 @@ The problem of generating a global time base in a distributed system has first b
 
 # Chapter 4 Real-Time (RT) Model
 
-# Overview
+## Overview
 
 The objective of this chapter is to introduce the reader to a cross-domain architec­ ture model of the behavior of a real-time system. This model will be used through­ out the rest of the book. The model is based on three basic concepts, the concept of a computational component , the concept of state , and the concept of a message . Large systems can be built by the recursive composition of components that com­ municate by the exchange of messages. Components can be reused on the basis of their interface specification without having to understand the component internals. Concerns about the understand ability have been of utmost importance in the devel­ opment of this model.
 
 The chapter is structured as follows. In Sect. 4.1 we give a broad outline of the model, describing the essential characteristics of a component and a message . Related components that work toward a joint objective are grouped into clusters . The differences between temporal control and logical control are explained. The following Sect. 4.2 elaborates on the close relationship between real time and the state of a component. The importance of a well-defined ground state for the dynamic reintegration of a component is highlighted. Section 4.3 refines the message concept and introduces the notions of event-triggered messages, time-triggered messages, and data streams. Section 4.4 presents the four interfaces of a component, two oper­ ational interfaces and two control interfaces. Section 4.5 deals with the concept of a gateway component that links two clusters that adhere to different architectural styles . Section 4.6 deals with the specification of the linking interface of a compo­ nent. The linking interface is the most important interface of a component. It is relevant for the integration of a component within a cluster and contains all the information that is needed for the use of a component. The linking interface speci­ fications consist of three parts: (i) the transport specification that contains the infor­ mation for the transport of the messages, (ii) the operational specification that is concerned with interoperability of components and the establishment of the mes­ sage variables, and (iii) the meta-level specification that assigns meaning to the message variables. Points to consider when composing a set of components to build systems of subsystems or system of systems are discussed in Sect. 4.7 . In this section the four principles of com pos ability are introduced and the notion of a multilevel system is explained.
 
-# 4.1  Model Outline
+## 4.1 Model Outline
 
 Viewed from the perspective of an outside observer, a real-time system can be decomposed into three communicating subsystems: a controlled object (the physi­ cal subsystem, the behavior of which is governed by the laws of physics), a “distrib­ uted” computer subsystem (the cyber system , the behavior of which is governed by the programs that are executed on digital computers), and a human user or operator. The distributed computer system consists of computational nodes that interact by the exchange of messages. A computational node can host one or more computa­ tional components .
 
-# 4.1.1  Components and Messages
+### 4.1.1 Components and Messages
 
 We call the process of executing an algorithm by a processing unit a computation . Computations are performed by components. In our model, a component is a self-­ contained hardware/software unit that interacts with its environment exclusively by the exchange of messages. We call the timed sequence of output messages that a component produces at an interface with its environment the behavior of the com­ ponent at that interface. The intended behavior of a component is called its service . An unintended behavior is called a failure . The internal structure of a component, whether complex or simple, is neither visible nor of concern to a user of a component.
 
@@ -2002,24 +1922,24 @@ Multi casting is required for the following reasons:
 
 A message is sent at a send instant and arrives at the receiver(s) at some later instant, the receive instant . The message paradigm combines the temporal control and the value aspect of an interaction into a single concept. The temporal properties of a message include information about the send instants, the temporal order, the inter-arrival time of messages (e.g., periodic, sporadic, aperiodic recurrence), and the latency of the message transport. Messages can be used to synchronize a sender and a receiver. A message contains a data field that holds a data structure that is transported from the sender to the receiver. The communication infrastructure is agnostic about the contents of the data field. The message concept supports data atomicity (i.e., atomic delivery of the complete data structure contained in a mes­ sage). A single well-designed message-passing service provides a simple interface of a component to other components inside and outside a node and to the environ­ ment of a component. It facilitates encapsulation, reconfiguration, and the recovery of component services.
 
-# 4.1.2  Cluster of Components
+### 4.1.2 Cluster of Components
 
 Figure_4.1 Figure_4.1 Figure_4.1 Figure_4.1 Figure_4.1 Figure_4.1 4.1 Figure_4.1 ­ Figure_4.1 ­ Figure_4.1 Figure_4.1 Figure_4.1 F igure \_4.1 ­ Figure_4.1 2.2.4 Figure_4.1
 
 Example: Figure  4.1 depicts an example of a computational cluster within a car. This clus­ ter consists of a computational component, the assistant system , and gateway components to the man-machine interface (the driver), the physical subsystems of the car, and a gateway to other cars via a wireless vehicle-to-vehicle communication link.
 
-![](images/bdd4ee166ab2ba2ffb5a1600e486c06df6153d0a1055f2731e70e6b2237c6112.jpg)
-Fig. 4.1  Example of an in-car cluster
+> ![](images/bdd4ee166ab2ba2ffb5a1600e486c06df6153d0a1055f2731e70e6b2237c6112.jpg)
+> Fig.4.1 Example of an in-car cluster
 
-# 4.1.3  Temporal Control Versus Logical Control
+### 4.1.3 Temporal Control Versus Logical Control
 
-Let us revisit the rolling mill example of Fig. 1.9 of Sect. 1.7.3 and specify a relation between measured variables that must be monitored by an alarm-monitoring task in the MMI component. Assume that the pressures $p_{I},p_{2}$ , and $p_{3}$ , between the roles of the three drives, are measured by the three controller components of Fig. 1.9 . The measurements are sent to the man-machine interface (MMI) component for check­ ing the following alarm condition:
+Let us revisit the rolling mill example of Fig.1.9 of Sect. 1.7.3 and specify a relation between measured variables that must be monitored by an alarm-monitoring task in the MMI component. Assume that the pressures $p_{I},p_{2}$ , and $p_{3}$ , between the roles of the three drives, are measured by the three controller components of Fig.1.9 . The measurements are sent to the man-machine interface (MMI) component for check­ ing the following alarm condition:
 
 when $((p_{1}<p_{2})\land(p_{2}<p_{3}))$ then everything ok else raise pressure alarm ;
 
 This looks like a reasonable specification at the user level. Whenever the pres­ sure between the rolls does not satisfy the specified condition, a pressure alarm must be raised.
 
-During the refinement of this specification by a system architect, four different tasks (three measurement tasks in the three control nodes and one alarm-monitoring task in the MMI node of Fig. 1.9 ) must be designed. The following questions con­ cerning the temporal activation of these tasks arise:
+During the refinement of this specification by a system architect, four different tasks (three measurement tasks in the three control nodes and one alarm-monitoring task in the MMI node of Fig.1.9 ) must be designed. The following questions con­ cerning the temporal activation of these tasks arise:
 
 (i) What is the maximum tolerable time interval between the occurrence of the alarm condition in the controlled object and the raising of the alarm at the MMI? Because the communication among the components takes a finite amount of time, some time intervals are unavoidable!
 
@@ -2027,7 +1947,7 @@ During the refinement of this specification by a system architect, four differen
 
 (iii) When and how often do we have to activate the pressure measurement tasks at the three control nodes?
 
-(iv) When do we have to activate the alarm-monitoring task at the alarm-­monitoring component (the MMI component in Fig. 1.9 )?
+(iv) When do we have to activate the alarm-monitoring task at the alarm-­monitoring component (the MMI component in Fig.1.9 )?
 
 Because these questions are not answered by the given specification, it is evident that this specification lacks precise information concerning the architectural require­ ments in the temporal domain. The temporal dimension is buried in the ill-specified semantics of the when statement. In this example, the when statement is intended to serve two purposes. It is specifying:
 
@@ -2049,7 +1969,7 @@ If the issues of temporal control and logical control are intermingled in a pro�
 
 Example: A semaphore wait statement is a temporal control statement. If a semaphore wait statement is contained in a program segment that also includes logical control (algorithmic) statements, then the temporal behavior of this program segment depends on both the prog­ ress of execution time and the progress of real time (see also Sects. 9.2 and 10.2 ).
 
-# 4.1.4  Event-Triggered Control Versus Time-Triggered Control
+### 4.1.4 Event-Triggered Control Versus Time-Triggered Control
 
 In Sect. 4.1.1 , we introduced the notion of a triggering signal , i.e., a control signal that indicates the instant when an activity should start in the temporal domain. What are the possible origins of such a triggering signal? The triggering signal can be associated either with the occurrence of a significant event —we call this event-­ triggered control —or with the arrival of a specified instant on the timeline — we call this time-triggered control .
 
@@ -2057,11 +1977,11 @@ The significant events that form the basis of event-triggered control can be the
 
 Time-triggered control signals are derived from the progression of the global time that is available in every component. Time-triggered control signals are nor­ mally cyclic. A cycle can be characterized by its period , i.e., the real-time interval between two successive cycle starts , and by its phase , that is, the interval between the start of the period, expressed in the global time, and the cycle start (see also Sect. 3.3.4 ) . We assume that a cycle is associated with every time-triggered activity.
 
-# 4.2  Component State
+## 4.2 Component State
 
 The concept of state of a component is introduced in order to separate past behavior from future behavior of a real-time component. The concept of state requires a clear distinction between past events and future events, i.e., there must be a consistent temporal order among the events of significance (refer to Sect. 3.3.2 ).
 
-# 4.2.1  Definition of State
+### 4.2.1 Definition of State
 
 The notion of state is widely used in the computer science literature, albeit some­ times with meanings that are different from the meaning of state that is useful in a real-time system context. In order to clarify the situation, we follow the precise defi­ nition of Mesarovic [Mes89, p. 45], which is the basis for our elaborations:
 
@@ -2069,21 +1989,17 @@ The state enables the determination of a future output solely on the basis of th
 
 The sparse time model introduced in Sect. 3.3.2 makes it possible to establish the consistent system-wide separation of the past from the future that is necessary to define a consistent system state in a distributed real-time computer system.
 
-# 4.2.2  The Pocket Calculator Example
+### 4.2.2 The Pocket Calculator Example
 
 Let us look at the familiar example of a pocket calculator to investigate the concept of state in more detail. An operand, i.e., a number of keyboard digits, must be entered into the calculator before the selected operator, e.g., a key for the trigono­ metric function sine , can be pressed to initiate the computation of the selected func­ tion. After the computation terminates, the result is displayed at the calculator display. If we consider the computation to be an atomic operation and observe the system immediately before or after the execution of this atomic operation, the inter­ nal state of this simple calculator device is empty at the points of observation.
 
-Figure_4.2;Figure_4.3 4.2 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3t Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3t Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Fi gure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Fig ure_4 .2;Figure_4.3t F igu re_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3 Figure_4.2;Figure_4.3
+Let us now analyze the state of a pocket calculator used to sum up a set of num­ bers. When entering a new number, the sum of the previously entered numbers must be stored in the device. If we interrupt the work after having added a subset of num­ bers and continue the addition with a new calculator, we first have to input the intermediate result of the previously added numbers. At the user level, the state consists of the intermediate result of the previous additions. At the end of the operation, we receive the final result and clear the memory of the calculator. The state is empty again.
 
-Let us now analyze the state of a pocket calculator used to sum up a set of num­ bers. When entering a new number, the sum of the previously entered numbers must be stored in the device. If we interrupt the work after having added a subset of num­ bers and continue the addition with a new calculator, we first have to input the intermediate result of the previously added numbers. At the user level, the state consists of the intermediate result of the previous additions. At the end of the
+> ![](images/50ec52d0253980e404a7c8da0201479d05edd1b742a610138ed53ffb5cd503d7.jpg)
+> Fig.4.2 Model of a pocket calculator
 
-![](images/50ec52d0253980e404a7c8da0201479d05edd1b742a610138ed53ffb5cd503d7.jpg)
-Fig. 4.2  Model of a pocket calculator
-
-![](images/6ef4e5a861420aa6a78244997785bee71e43c636d3ed47f98c3406a31cc78344.jpg)
-Fig. 4.3  Expansion and contraction of the state during a computation
-
-operation, we receive the final result and clear the memory of the calculator. The state is empty again.
+> ![](images/6ef4e5a861420aa6a78244997785bee71e43c636d3ed47f98c3406a31cc78344.jpg)
+> Fig.4.3 Expansion and contraction of the state during a computation
 
 From this simple example, we can conclude that the size of the state of a system depends on the instant of observation of the system. If the granularity of observa­ tions is increased and if the observation points are selected immediately before or after an atomic operation at the chosen level of abstraction, then the size of the state can be reduced.
 
@@ -2091,29 +2007,23 @@ The state at any instant of interruption is contained in the contents of the pro
 
 If our hardware device is a programmable computer, we must first load the soft­ ware, i.e., operating system, the set of application programs, and the initial values for all state variables, into a virgin hardware device before we can start a computa­ tion. We call the totality of software that has to be loaded into a virgin hardware device the core image or the job . Normally, the job is a data structure that is static, i.e., it is not changed during the execution of the software. In some embedded hard­ ware devices, the job is stored in a ROM (read-only memory), and thus the software becomes literally a part of the hardware .
 
-# 4.2.3  Ground State
+### 4.2.3 Ground State
 
 In order to facilitate the dynamic reintegration of a component into a running sys­ tem, it is necessary to design periodic reintegration instants into the behavior, where the component’s state at the reintegration instant contains a small set of well-defined application-specific state variables . We call the state at the reintegration instant the ground state ( $\mathit{\check{g}}$ -state ) of a component and the temporal interval between two reinte­ gration points the ground cycle .
 
 The ground state at the reintegration point is stored in a declared $g$ -state data structure . Designing a minimal ground state data structure is the result of an explicit design effort that involves a semantic analysis of the given application. The designer has to find periodic instants where there is a maximum decoupling of future behav­ ior from past behavior. This is relatively easy in cyclic applications , such as in control applications and multimedia applications. In these applications, a natural reintegration instant is immediately after the termination of one cycle and before the beginning of the next cycle. Design techniques for the minimization of the ground state are discussed in Sect. 6.6 .
 
-Figure_4.4 ­ Figure_4.4 Figur e_4.4 Figure_4.4 Figure_4.4 Figure_4.4 Figure_4.4 Figure_4.4 Figure_4.4 ­ Figure_4.4 Figure_4.4 4.4 Figure_4.4 Figure_4.4
+In the lower part of Fig.4.4 , there is an instant when no task is active and when all channels are empty, i.e., when the system is in the $g$ -state . If a node is in the $g$ -state , then the entire state that is essential for the future operation of the node is contained in the declared ground state data structure.
 
-In the lower part of Fig.  4.4 , there is an instant when no task is active and when all channels are empty, i.e., when the system is in the $g$ -state . If a node is in the $g$ -state , then the entire state that is essential for the future operation of the node is contained in the declared ground state data structure.
+Example: Consider the relation between the size of the $\mathrm{g}$ -state and the duration of the ground (g) cycle in the design of a clock. If the g-cycle is $24{\mathrm{~h~}}$ and the start of a new day is the reintegration instant, then the $\mathrm{g}$ -state is empty. If every complete hour is a reintegration instant, then the $\mathrm{g}.$ -state contains 5 bits (to identify one out of $24{\mathrm{~h~}}$ per day). If every com­ plete minute is a reintegration instant, then the $\mathrm{g}$ -state is 11 bits (to identify one of $1440\,\mathrm{min}$ per day). If every complete second is a reintegration instant, then the $\mathrm{g}$ -state is 17 bits (to identify one out of 86400 sec per day). It depends on the application characteristics to determine which one of the above alternatives is optimal for a given application. If the clock is an alarm clock that can store up to four alarms and the accuracy of an alarm is 5 minutes, then the g-state for every alarm is 10 bits (9 bits for the alarm and 1 bit to denote whether the alarm is on or off ). If we assume that the reintegration cycle is 1 second and four alarms must be supported, then the g-state message in this simple example is 57 bits in lengths. This g-state can be stored in an 8-byte data structure. In the restart message, the time field must be corrected such that it contains the precise time value at the restart instant.
 
-Example: Consider the relation between the size of the $\mathrm{g}$ -state and the duration of the ground (g) cycle in the design of a clock. If the g-cycle is $24{\mathrm{~h~}}$ and the start of a new day is the reintegration instant, then the $\mathrm{g}$ -state is empty. If every complete hour is a reintegration instant, then the $\mathrm{g}.$ -state contains 5 bits (to identify one out of $24{\mathrm{~h~}}$ per day). If every com­ plete minute is a reintegration instant, then the $\mathrm{g}$ -state is 11 bits (to identify one of $1440\,\mathrm{min}$ per day). If every complete second is a reintegration instant, then the $\mathrm{g}$ -state is 17 bits (to
+> ![](images/e09856aad61f67bf7b8d64238d3aba16e13cacece6833a261b2c4a80b9c1056a.jpg)
+> Fig.4.4 Task executions: without (above) and with (below) ground state
 
-![](images/e09856aad61f67bf7b8d64238d3aba16e13cacece6833a261b2c4a80b9c1056a.jpg)
-Fig. 4.4 Task executions: without (above) and with (below) ground state
+> Table 4.1 Comparison of $\mathrm{g}$ -state recovery and checkpoint recovery
+> ![](images/a53698fa0ba87a9f30eaa0ceae282d8de63f58b2b1bedd60ed45e667153caf1d.jpg)
 
-Table 4.1  Comparison of $\mathrm{g}$ -state recovery and checkpoint recovery
-![](images/a53698fa0ba87a9f30eaa0ceae282d8de63f58b2b1bedd60ed45e667153caf1d.jpg)
-
-identify one out of 86400 sec per day). It depends on the application characteristics to determine which one of the above alternatives is optimal for a given application. If the clock is an alarm clock that can store up to four alarms and the accuracy of an alarm is 5 minutes, then the g-state for every alarm is 10 bits (9 bits for the alarm and 1 bit to denote whether the alarm is on or off ). If we assume that the reintegration cycle is 1 second and four alarms must be supported, then the g-state message in this simple example is 57 bits in lengths. This g-state can be stored in an 8-byte data structure. In the restart message, the time field must be corrected such that it contains the precise time value at the restart instant.
-
-Table_4.1 4.1 Table_4.1 Table_4.1 Table_4.1 Table_4.1 Table_4.1 Table_4.1 Table_4.1
-
-# 4.2.4  Database Components
+### 4.2.4 Database Components
 
 We call a component where the number of dynamic data elements , i.e., data ele­ ments that are modified by the computations, is too large for storing them in a single ground state message a database component . The dynamic data elements that are contained in a database component can be either part of the state or archival data .
 
@@ -2121,17 +2031,17 @@ The term archival data refers to data that has been collected for archival pur­
 
 Example: The legendary black box in an airplane contains archival data. One could send these data immediately after collection via a satellite link to a storage site on the ground in order to avoid the problems of having to recover a black box after an accident.
 
-# 4.3  The Message Concept
+## 4.3 The Message Concept
 
 The concept of a message is the third basic concept of our model. A message is an atomic data structure that is formed for the purpose of communication, i.e., data transmission and synchronization among components.
 
-# 4.3.1  Message Structure
+### 4.3.1 Message Structure
 
 The concept of a message is related to the concept of a letter in the postal system. A message consists of a header, a data field, and a trailer. The header, corresponding to the envelope of a letter, contains the port address of the receiver (the mailbox) where the message must be delivered, information about how the message must be handled (e.g., a registered letter), and may contain the address of the sender. The data field contains the application-specific data of the message, corresponding to the content of a letter. The trailer, corresponding to the signature in a letter, contains information that allows the receiver to detect whether the data contained in the mes­ sage is uncorrupted and authentic. There are different types of trailers in use: the most common trailer is a CRC field that allows the receiver to determine whether the data field has been corrupted during transport. A message may also contain an electronic signature in the trailer that makes it possible to determine whether the authenticated contents of the message have not been altered (see Sect. 6.2). The notion of atomicity implies that a message is delivered either in its entirety or not at all. If a message is corrupted or only parts of the message arrive at the receiver’s site, the whole message is discarded. It is the purpose of said trailer to ensure atomi­ city with sufficiently high probability.
 
 The temporal dimension of the message concept relates to the instants when a message is sent by the sender and received by the receiver and consequently how long the message has been in transit. We call the interval between the send instant and the receive instant the transport delay . A second aspect of the temporal dimen­ sion relates to the rate of message production by the sender and message consump­ tion by the receiver. If the sending rate is constrained, then we speak about $a$ rate-constrained message system. In case the sender’s rate is not constrained, the sender may overload the transport capacity of the communication system (we call this congestion ) or the processing capacity of the receiver. In case the receiver can­ not keep up with the message production rate of the sender, the receiver can send a control message to the sender telling the sender to slow down ( back pressure flow control ). Alternatively, the receiver or the communication system may simply dis­ card messages that exceed its processing capacity.
 
-# 4.3.2  Event Information Versus State Information
+### 4.3.2 Event Information Versus State Information
 
 The state of a dynamic system changes as real time progresses. Let us assume that we periodically observe the state variables of a system with a duration $d$ between two successive observation instants. If we observe that the value of all state vari­ ables is the same in two successive observations, then we infer that no event , i.e., change of state , has occurred in the last observation interval $d$ . This conclusion is only valid, if the dynamics of the system is slow compared to our observation inter­ val $d$ (refer to Shannon’s theorem [Jer77]). If two successive observations of the values of some state variables differ, then we conclude that at least one event has occurred in the last observation interval $d$ . We can report about the occurrence of an event, i.e., a change of state, in two different ways: either by sending a single mes­ sage containing event information or by sending a sequence of messages containing state information .
 
@@ -2143,7 +2053,7 @@ Example: The IEEE 1588 standard for clock synchronization suggests the implement
 
 We talk about state information if the information conveys the values of the cur­ rent state variables. If the data field of a message contains state information , it is up to the receiver to compare two successive state observations and determine whether an event has occurred or not. The temporal uncertainty about the event occurrence is the same as above.
 
-# 4.3.3  Event-Triggered (ET) Message
+### 4.3.3 Event-Triggered (ET) Message
 
 A message is called event-triggered (ET) if the triggering signal for sending the message is derived from the occurrence of a significant event, such as the execution of a send message command by the application software.
 
@@ -2153,7 +2063,7 @@ Example: The event message valve must be closed by 5 degrees means that the new 
 
 In an event-triggered system, error detection is in the responsibility of the sender who must receive an explicit acknowledgment message from the receiver telling the sender that the message has arrived correctly. The receiver cannot perform error detection, because the receiver cannot distinguish between no activity by the sender and loss of message. Thus the control flow must be bidirectional control flow, even if the data flow is only unidirectional . The sender must be time-aware , because it must decide within a finite interval of real time that the communication has failed. This is one reason why we cannot build fault-tolerant system that is unaware of the progression of real time .
 
-# 4.3.4  Time-Triggered (TT) Message
+### 4.3.4 Time-Triggered (TT) Message
 
 A message is called time-triggered (TT) if the triggering signal for sending the mes­ sage is derived from the progression of real time. There is a cycle , characterized by its period and phase , assigned to every time-triggered message before the system starts operating. At the instant of cycle start, the transmission of the message is initi­ ated automatically by the operating system. There is no send message command necessary in TT message transmission.
 
@@ -2161,11 +2071,9 @@ TT messages are well suited to transport state information . A TT message that c
 
 Example: A temperature sensor observes the state of a temperature sensor in the environ­ ment every second. A state message is well suited to transport this observation to a user and store it in a program variable named temperature . The user program can read this variable temperature whenever it needs to refer to the current temperature of the environment, knowing that the value stored in this variable is up to date to within about $2\mathrm{~s~}$ . If a single state message is lost, then for one cycle the value stored in this variable is up to date to only within about $3\mathrm{~s~}$ . Since, in a time-triggered system, the communication system knows a priori when a new state message must arrive, it can associate a flag with the variable tem­ perature to inform the user if the variable temperature has been properly updated in the last cycle.
 
-# 4.4  Component Interfaces
+## 4.4 Component Interfaces
 
 Let us assume that the design of a large component-based system is partitioned into two distinct design phases, architecture design and component design (see also Sect. 11.2 on system design ). At the end of the architecture design phase, a platform-­ independent model (PIM) of a system is available. The PIM is an executable model that partitions the system into clusters and components and contains the precise interface specification (in the domains of value and time) of the linking interfaces of the components. The linking interface specification of the PIM is agnostic about the component implementation and can be expressed in a high-level executable system language, e.g., in System C . A PIM component that is transformed to a form that can be executed on the final execution platform is called a platform-specific model (PSM) of the component. The PSM has the same interface characteristics as the PIM. In many cases, an appropriate compiler can transform the PIM to the PSM automatically.
-
-Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 2.5 Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 4.5 Figure_4.5
 
 • The linking interface (LIF) provides the specified service of the component at the considered level of abstraction. This interface is agnostic about the component implementation. It is the same for the PIM and the PSM.
 
@@ -2173,14 +2081,14 @@ Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 Figure_4.5 2.5 Figure_4.5
 
 • The technology-dependent interface (TDI) is used to provide access to the inter­ nals of a component for the purpose of maintenance and debugging. This inter­ face is implementation specific.
 
-![](images/b1a2d9b915016bced59e4ab6100b65a7bdbab123ac780816bcd5d8faf33a1311.jpg)
-Fig. 4.5  The four interfaces of a component
+> ![](images/b1a2d9b915016bced59e4ab6100b65a7bdbab123ac780816bcd5d8faf33a1311.jpg)
+> Fig.4.5 The four interfaces of a component
 
 • The local interface links a component to the external world that is the external environment of a cluster. This interface is syntactically specified at the PSM level only, although the semantic content of this interface is contained in the LIF.
 
 The LIF and the local interface are operational interfaces , while the TII and TDI are control interfaces . The control interfaces are used to control, monitor, or debug a component, while the operational interfaces are in use during the normal operation of a component. Before discussing these four interfaces in detail, we elaborate on some general properties of message interfaces.
 
-# 4.4.1  Interface Characterization
+### 4.4.1 Interface Characterization
 
 Push Versus Pull Interface: There are two options to handle the arrival of a new message at the interface of a receiving component:
 
@@ -2190,36 +2098,30 @@ Push Versus Pull Interface: There are two options to handle the arrival of a new
 
 In real-time systems, the information pull strategy should be followed whenever possible. Only in situations when an immediate action is required and the delay of one cycle that is introduced by the information pull strategy is not acceptable, one should resort to the information push strategy. In the latter case, mechanisms must be put into place to protect the component from erroneous interrupts caused by failures external to the component (see also Sect. 9.5.3 ). The information push strat­ egy violates the principles of independence (see Sect. 2.5 ).
 
-Example: An engine control component for an automotive engine worked fine as long as it was not integrated with the theft-avoidance system. The message interface between the
+Example: An engine control component for an automotive engine worked fine as long as it was not integrated with the theft-avoidance system. The message interface between the engine controller and the theft-avoidance system was designed as a push interface, causing the sporadic interruption of a time-critical engine control task when a message arrived from the theft-avoidance system at an ill-timed instant. As a consequence the engine controller sporadically missed a deadline and failed. Changing the interface to a pull interface solved the problem.
 
-![](images/c3be2d7cbc74dac554dc9db2ac8f25619e0e3854c71c684d8c35984efeaa147e.jpg)
-Fig. 4.6  Elementary vs. composite interface
-
-engine controller and the theft-avoidance system was designed as a push interface, causing the sporadic interruption of a time-critical engine control task when a message arrived from the theft-avoidance system at an ill-timed instant. As a consequence the engine controller sporadically missed a deadline and failed. Changing the interface to a pull interface solved the problem.
-
-Figure_4.6   Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 Figure_4.6 4.6 Figure_4.6
+> ![](images/c3be2d7cbc74dac554dc9db2ac8f25619e0e3854c71c684d8c35984efeaa147e.jpg)
+> Fig.4.6 Elementary vs. composite interface
 
 Elementary interfaces are inherently simpler than composite interfaces, because there is no dependency of the behavior of the sender on the behavior of the receiver. We can reason about the correctness of the sender without having to consider the behavior of the receiver. This is of particular importance in safety-critical systems.
 
-# 4.4.2  Linking Interface (LIF)
+### 4.4.2 Linking Interface (LIF)
 
 The services of a component are accessible at its cluster LIF. The cluster LIF of a component is an operational message-based interface that interconnects a compo­ nent with the other components of the cluster and is thus the interface for the inte­ gration of components into the cluster. The LIF of a component abstracts from the internal structure and the local interfaces of the component. The specification of the LIF must be self-contained and cover not only the functionality and timing of the component itself but also the semantics of its local interfaces. The LIF is technology agnostic in the sense that the LIF does not expose implementation details of the internals of the component or of its local interfaces. A technology agnostic LIF ensures that different implementations of computational components (e.g., general-­ purpose CPU, FPGA, ASIC) and different local input/output subsystems can be connected to a component without any modification to the other components that interact with this component across its message-based LIF.
 
-Example: In an input/output component, the external input and output signals are con­ nected by a local point-to-point wiring interface. The introduction of a bus system, e.g., a
+Example: In an input/output component, the external input and output signals are con­ nected by a local point-to-point wiring interface. The introduction of a bus system, e.g., a CAN bus, will not change the cluster LIF of the input/output component, as long as the temporal properties of the data appearing at the LIF are the same.
 
-CAN bus, will not change the cluster LIF of the input/output component, as long as the temporal properties of the data appearing at the LIF are the same.
-
-# 4.4.3  Technology-Independent Interface (TII)
+### 4.4.3 Technology-Independent Interface (TII)
 
 The technology-independent interface is a control interface that is used to configure a component, e.g., assign the proper names to a component and its input/output ports; to reset , start , and restart a component; and to monitor and control the resource requirements (e.g., power) of a component during runtime, if required. Furthermore, the TII is used to configure and reconfigure a component, i.e., to assign a specific job (i.e., core image) to the programmable component hardware.
 
 The messages that arrive at the TII communicate either directly with the compo­ nent hardware (e.g., reset ), with the component’s operating system (e.g., start $a$ task ), or with the middleware of the component, but not with the application soft­ ware. The TII is thus orthogonal to the LIF. This strict separation of the application-­ specific message interfaces (LIF) from the system control interface of a component (TII) simplifies the application software and reduces the overall complexity of a component (see also the principle of separation of concerns in Sect. 2.5 ).
 
-# 4.4.4  Technology-Dependent Interface (TDI)
+### 4.4.4 Technology-Dependent Interface (TDI)
 
 The TDI is a special control interface that provides a means to look inside a com­ ponent and to observe the internal variables of a component. It is related to the boundary scan interface that is widely used for testing and debugging large VLSI chips and has been standardized in the IEEE standard 1149.1 (also known as the JTAG standard). The TDI is intended for the person who has a deep understanding of the component internals. The TDI is of no relevance for the user of the LIF ser­ vices of the component or the system engineer who configures a component. The precise specification of the TDI depends on the technology of the component imple­ mentation and will be different if the same functionality of a component is realized by software running on a CPU, by an FPGA or by an ASIC.
 
-# 4.4.5  Local Interfaces
+### 4.4.5 Local Interfaces
 
 The local interfaces establish a connection between a component and its outside environment, e.g., the sensors and actuators in the physical plant, the human opera­ tor, or another computer system. A component that contains a local interface is called a gateway component or an open component , in contrast to a component that does not contain a local interface, which is called a closed component . The distinction between open and closed components is important from the point of view of the specification of the semantics of the LIF of the component. Only closed components can be fully specified without knowing the context of use of the component.
 
@@ -2227,14 +2129,12 @@ From the point of view of the cluster LIF , only the timing and the semantic con
 
 Example: A component that calculates a trigonometric function is a closed component . Its functionality can be formally specified. A component that reads a temperature sensor is an open component . The meaning of temperature is application specific, since it depends on the position where the sensor is placed in the physical plant.
 
-# 4.5  Gateway Component
+## 4.5 Gateway Component
 
-Figure_4.7 Figure_4.7­ Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 ­ Figure_4.7 Figure_4.7 4.7 Figure_4.7 Figure_4.7 Figure_4.7 Figure_4.7 ­ Figure_4.7
+> ![](images/f4e122e1105fea454302f86b704d3c2479eaeffae14d0c48cc5e6c34a86a1e0f.jpg)
+> Fig.4.7 Gateway components between the LIF and the local external-world interface
 
-![](images/f4e122e1105fea454302f86b704d3c2479eaeffae14d0c48cc5e6c34a86a1e0f.jpg)
-Fig. 4.7  Gateway components between the LIF and the local external-world interface
-
-# 4.5.1  Property Mismatches
+### 4.5.1 Property Mismatches
 
 Every system is developed according to an architectural style , i.e., a set of adopted rules and conventions for the concept formation, representation of data, naming, programming, interaction of components, semantics of the data, and many more. The architectural style characterizes the properties of the entities that represent the design. The details of the architectural style are sometimes explicitly documented, but more often only implicitly followed by the development team, reflecting the unstated conventions that govern the development community (see also the last paragraphs of Sect. 2.2.4 ).
 
@@ -2244,7 +2144,7 @@ Example: Assume that there is a difference in endianness , i.e., the byte orderi
 
 Property mismatches occur at the borders where systems interact, not inside a well-designed system. Inside a system, where all partners respect the rules and con­ straints of the architectural style, property mismatches are normally no issue. Property mismatches should be resolved in the gateway components that link two systems in order to maintain the integrity of the architectural styles within each of the interacting subsystems.
 
-# 4.5.2  LIF Versus Local Interface of a Gateway Component
+### 4.5.2 LIF Versus Local Interface of a Gateway Component
 
 As noted before, the set of related components that form a cluster share a common architectural style at their cluster LIFs. This means that property mismatches among LIF-cluster messages are rare.
 
@@ -2254,39 +2154,31 @@ There are situations when the architectural styles of the two interfacing worlds
 
 Viewed from a given cluster, the gateway component hides the details of the external world (the local interface) from the standardized message formats within the computational cluster and filters the incoming information: only the information that is relevant for the operation of the cluster under consideration is exposed in the form of cluster-standard messages at the cluster LIF of the gateway component.
 
-Table*4.2 ­ Table* 4.2 Table_4.2 4.2 Table_4.2 Table_4.2
-
 Example: In the external world of a process plant, the value of the process variable tem­ perature may be coded in an analog $_{4-20\:\mathrm{mA}}$ sensor signal, where $4\:\mathrm{mA}$ means $0\%$ and 20 mA means $100\%$ of the selected measurement range, i.e., between $0^{\circ}$ Celsius and $100^{\circ}$ Celsius. This analog representation must be converted to the standard representation of temperature that has been defined in the architectural style of the given cluster, which might be degrees Kelvin .
 
-Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 4.8 Figure_4.8 rigure_4.8 Figure_4.8 ­ Figure_4.8 Figure_4.8 $L I F$ Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8 ­ Figure_4.8 Figure_4.8 Figure_4.8 Figure_4.8
+A gateway component can link two different clusters that have been designed by two different organizations using two different architectural styles. Which one of the two interfaces of such a gateway component is considered the LIF and which one is the local interface depends on the view taken. As already mentioned, if we change the view, the LIF becomes the local interface and the local interface becomes the LIF.
 
-A gateway component can link two different clusters that have been designed by two different organizations using two different architectural styles. Which one of
+> Table 4.2 Characteristics of a LIF versus a local process I/O interface
+> ![](images/5580009ad80dc37ba7c22da2ae2d9ce71d765f59153239542c250d668aa8c55a.jpg)
 
-Table 4.2  Characteristics of a LIF versus a local process I/O interface
-![](images/5580009ad80dc37ba7c22da2ae2d9ce71d765f59153239542c250d668aa8c55a.jpg)
-
-the two interfaces of such a gateway component is considered the LIF and which one is the local interface depends on the view taken. As already mentioned, if we change the view, the LIF becomes the local interface and the local interface becomes the LIF.
-
-# 4.5.3  Standardized Message Interface
+### 4.5.3 Standardized Message Interface
 
 To improve the compatibility between components designed by different manufac­ turers, to enhance the interoperability of devices, and to avoid property mismatches, some international standard organizations have attempted to standardize message interfaces. An example of such a standardization effort is the SAE J 1587 Message Specification. The Society of Automotive Engineers (SAE) has standardized the message formats for heavy-duty vehicle applications in the J 1587 standard. This standard defines message names and parameter names for many data elements that occur in the application domain of heavy vehicles. Besides data formats, the range of the variables and the update frequencies are also covered by the standard.
 
-# 4.6  Linking Interface Specification
+## 4.6 Linking Interface Specification
 
 As noted in Sect. 4.1.1 , the timed sequence of messages that a component exchanges across an interface with its environment defines the behavior of the component at that interface [Kop03]. The interface behavior is thus determined by the properties of all messages that cross an interface. We distinguish three parts of an interface specification: (i) the transport specification of the messages, (ii) the operational specification of the messages, and (iii) the meta-level specification of the messages.
 
-The transport specification describes all properties of a message that are needed to transport the message from the sender to the receiver(s). The transport specifica­ tion covers the addressing and temporal properties of a message. If two components are linked by a communication system, the transport specification suffices to
+The transport specification describes all properties of a message that are needed to transport the message from the sender to the receiver(s). The transport specifica­ tion covers the addressing and temporal properties of a message. If two components are linked by a communication system, the transport specification suffices to describe the requested services from the communication system. The communica­ tion system is agnostic about the contents of the data field of a message. For the communication system, it does not matter whether the data field contains multime­ dia data, such as voice or video, numerical data, or any other data type.
 
-![](images/5b40ca86d1e4479612fa3d9227c18badaf2ba296d812f7aeecb6f2e16e44b6bb.jpg)
-Fig. 4.8  Standardized LIF versus concrete MMI
-
-describe the requested services from the communication system. The communica­ tion system is agnostic about the contents of the data field of a message. For the communication system, it does not matter whether the data field contains multime­ dia data, such as voice or video, numerical data, or any other data type.
+> ![](images/5b40ca86d1e4479612fa3d9227c18badaf2ba296d812f7aeecb6f2e16e44b6bb.jpg)
+> Fig.4.8 Standardized LIF versus concrete MMI
 
 Example: The Internet provides a defined message-transport service between two end sys­ tems, not knowing what types of digital data are transported.
 
 In order to be able to interpret the data field of a message at the endpoints of the communication, we need the operational and the meta-level specification . The operational specification informs about the syntactic structure of the message that is exchanged across the LIF and establishes the message variables . Both the trans­ port and the operational specification must be precise and formal to ensure the syn­ tactic interoperability of components. The meta-level specification of a LIF assigns meaning to the message variable names introduced by the operational specification. It is based on an interface model of the user environment. Since it is impossible to formalize all aspects of a real-world user environment, the meta-level specification will often contain natural language elements, which lack the precision of a formal system. Central concepts of the application domains and applications can be speci­ fied using domain-specific ontologies .
 
-# 4.6.1  Transport Specification
+### 4.6.1 Transport Specification
 
 The transport specification contains the information needed by the communication system to transport a message from a sender to the receiver(s). An interface contains a number of ports where the messages destined for this interface arrive or where messages are placed for sending. The following attributes must be contained in the transport specification:
 
@@ -2304,7 +2196,7 @@ It is a design decision whether these attributes are linked with the message or 
 
 As noted above, the transport specification must contain the information about the temporal properties of a message. For time-triggered messages, the temporal domain is precisely specified by the cycle that is associated with every time-­ triggered message. For event-triggered messages, the temporal specification is more difficult, particularly if event-triggered messages can arrive in bursts. In the long run, the message arrival rate must not be larger than the message consumption rate by the receiver, since an event-triggered message must conform to the exactly once semantics (see Sect. 4.3.3 ). In the short run, an arriving message burst can be buffered in the receiver queue until the queue is full. The specification of the proper queue length for bursty event-triggered messages is very important.
 
-# 4.6.2  Operational Specification
+### 4.6.2 Operational Specification
 
 From the point of view of communication, the data field of an arriving message can be considered as an unstructured bit vector. At the endpoints of the communication, the operational specification determines how this bit vector must be structured into message variables. A message variable is a syntactic unit that consists of a fixed part and a variable part (see Sect. 2.2.4 ). The information about how the data field of a message is structured in syntactic units is contained in a message-structure declaration (MSD) . The MSD contains the message variable names (i.e., the fixed part of the message variable) that point to the relevant concepts on one side and, on the other side, specifies which part of the unstructured bit vector denotes the value (the variable part) of a message variable . In addition to the structure information, the MSD may contain input assertions for checking the validity of incoming data (e.g., to test if the data is within a permitted data domain that the receiving compo­ nent is capable to handle) and output assertions for checking outgoing data. An incoming data element that passes the input assertion is called a permitted data ele­ ment . An outgoing data element that passes the output assertion is called a checked data element. The formalism used for specifying the data structures and the asser­ tions in the MSD depends on the available programming environment.
 
@@ -2322,7 +2214,7 @@ The link between the unstructured bit vector arriving at a port and the associat
 
 • The MSD itself is part of the message. This is the most flexible arrangement, at the cost of having to send the full MSD in every message. This approach is fol­ lowed in service-oriented architectures (SOA) [Ray10].
 
-# 4.6.3  Meta-Level Specification
+### 4.6.3 Meta-Level Specification
 
 The meta-level LIF specification assigns a meaning to the message variables exchanged between two communicating LIFs at the operational level and thus establishes semantic interoperability . It thus bridges the gap between the syntactic units and the user’s mental model of the service provided at the interface. Central to this meta-level specification is the LIF service model. The LIF service model defines the concepts that are associated with the message variable names contained in the operational specification. These concepts will be qualitatively different for closed components and open components (see Sect. 4.4.5 ).
 
@@ -2338,11 +2230,11 @@ The discussion that follows focuses on LIFs of open components, since the sys­ 
 
 • System view : A LIF service user (the system architect) needs to consider the system-wide effects of an interaction of the component with the external physi­ cal environment, i.e., effects that go beyond the component. The LIF service model is different from the model describing the algorithms implemented within a component, since these algorithms are within the component’s boundaries. Temperature $_{I I}$ ) and the position where the dynamic variable value is placed in an arriving bit stream of the message. The meta-level specification explains the meaning of Temperature-11 (see also the examples in Sect. 2.2.4 ) .
 
-# 4.7  Component Integration
+## 4.7 Component Integration
 
 A component is a self-contained validated unit that can be used as a building block in the construction of larger systems. In order to enable a straightforward composi­ tion of a component into a cluster of components, the following four principles of com pos ability should be observed.
 
-# 4.7.1  Principles of Com pos ability
+### 4.7.1 Principles of Com pos ability
 
 (i) Independent Development of Components: The architecture must support the precise specification of the linking interface (LIF) of a component in the domains of value and time. This is a necessary prerequisite for the independent development of components on one side and the reuse of existing components that is based solely on their LIF specification on the other side. While the operational specification of the value domain of interacting messages is state-­ of-­the-art in embedded system design, the temporal properties of these mes­ sages are often ill defined. Many of the existing architectures and specification technologies do not deal with the temporal domain with the appropriate care. Note that the transport specification and the operational LIF specification are independent of the context of use of an open component, while the meta-level LIF specification of an open component depends on the context of use. Interoperability of open components is thus not the same as inter working of open component, since the latter assumes the compatibility of the meta-level specifications.
 
@@ -2356,25 +2248,21 @@ Example: In a communication system where a single communication channel is share
 
 Example: In order to detect a faulty component that acts like a babbling idiot , the com­ munication system must contain information about the permitted temporal behavior of every component. If a component fails in the temporal domain, the communication system cuts off the component that violates its temporal specification, thus maintaining the timely communication service among the correct components.
 
-# 4.7.2  Integration Viewpoints
+### 4.7.2 Integration Viewpoints
 
 In order to bring an understandable structure into a large system, it makes sense to view— as seen from an integration viewpoint—a (original) cluster of components as a single gateway component. The integration viewpoint establishes a new cluster that consists of the respective gateway components of the original clusters. Viewed from an original cluster, the external (local) interface of the gateway becomes the LIFs of the new cluster, while, viewed from the new cluster, the LIF of the gateway to the original cluster is the local interface of the new cluster (see Sect. 4.5.2 ). The gateways to the new cluster make only those information items available to the new cluster that are of relevance for the operation of the new cluster.
 
-Example: Figure  4.1 depicts a cluster of components that form the control system within an automobile. The vehicle-to-vehicle gateway component (the right lower component in Fig.  4.1 ) establishes a wireless link to other vehicles. In this example, we distinguish the following two levels of integration: (i) the integration of components into the cluster depicted in Fig.  4.1 and (ii) the integration of a car into a dynamic system of cars that is achieved via the car-to-car (C2C) gateway component. If we look at the integration of com­ ponents within the cluster of Fig.  4.1 , then the communication network interface (CNI) of the C2C gateway component is the cluster LIF. From the C2C communication viewpoint, the cluster LIF is the (unspecified) local interface of the C2C gateway component (see also the last paragraph of Sect. 4.5.2 ).
+Example: Figure  4.1 depicts a cluster of components that form the control system within an automobile. The vehicle-to-vehicle gateway component (the right lower component in Fig.4.1 ) establishes a wireless link to other vehicles. In this example, we distinguish the following two levels of integration: (i) the integration of components into the cluster depicted in Fig.4.1 and (ii) the integration of a car into a dynamic system of cars that is achieved via the car-to-car (C2C) gateway component. If we look at the integration of com­ ponents within the cluster of Fig.4.1 , then the communication network interface (CNI) of the C2C gateway component is the cluster LIF. From the C2C communication viewpoint, the cluster LIF is the (unspecified) local interface of the C2C gateway component (see also the last paragraph of Sect. 4.5.2 ).
 
 The hierarchical composition of components and clusters that leads to distinct integration levels is an important special case of the integration of components. Multi levelness is an important organizing principle in large systems. At the lowest integration level, primitive components (i.e., components that are considered to be atomic units and are not composed any further) are integrated to form a cluster. One distinct component of this cluster is a gateway component that forms, together with distinct gateway components of other clusters, a higher-level cluster . This process of integration can be continued recursively to construct a hierarchical system with distinct levels of integration (see also Sect. 11.7.2 on the recursive integration of components in the time-triggered architecture).
 
 Example: In the GENESYS [Obe09, p. 44] architecture, three integration levels are intro­ duced. At the lowest level, the chip level, the components are IP cores of an MPSoC that interact by a network on chip. At the next higher level, chips are integrated to form a device. At the third integration level, devices are integrated to form closed or open systems. A closed system is a system in which the subsystems that form the systems are known a priori. In an open system, subsystems (or devices) join and leave the system dynamically, leading to a system of systems.
 
-# 4.7.3  System of Systems
+### 4.7.3 System of Systems
 
 There are two reasons for the rising interest in systems of systems : (i) the realization of new functionality and (ii) the control of the complexity growth of large systems caused by their continuous evolution. The available technology (e.g., the Internet) makes it possible to interconnect independently developed systems ( legacy systems ) to form new system of systems (SoS) . The integration of different legacy systems into an SoS promises more efficient economic processes and improved services.
 
 The continuous adaptations and modifications that are necessary to keep the ser­ vices of a large system relevant in a dynamic business environment bring about a growing complexity that is hard to manage in a monolithic context [Leh85]. One promising technique to attack this complexity problem is to break a single large monolithic system up into a set of nearly autonomous constituent systems that are connected by well-defined message interfaces. As long as the relied-upon properties at these message interfaces meet the user intentions, the internal structure of the constituent systems can be modified without any adverse effect on the global sys­ tem-level services. Any modification of the relied-upon properties at the message interfaces is carefully coordinated by a meta-entity that monitors and coordinates the system evolution. The SoS technology is thus introduced to get a handle on the complexity growth, caused by the necessary evolution of large systems, by intro­ ducing structure and applying the simplification principles of abstraction , separa­ tion of concerns , and ob ser v ability of subsystem interactions (see Sect. 2.5 ).
-
-Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3 Table_4.3
-
-Tab le_4.3 Table_4.3 t T able_4.3 Table_4.3 2.4 Table_4.3
 
 In many distributed real-time applications, it is not possible to bring temporally accurate real-time information to a central point of control within the available time interval between the observation of the local environment and the need to control the local environment . In these applications central control by a monolithic control system is not possible. Instead, the autonomous distributed controllers must cooper­ ate to achieve the desired effects.
 
@@ -2382,8 +2270,8 @@ Example: It is not possible to control the movement of the cars in an open road 
 
 Any ensemble of constituent systems that form an SoS must agree on a shared purpose, a chain of trust, and a shared ontology on the semantic level. These global properties must be established at the meta-level and are subject of a carefully man­ aged continuous evolution. A new entity must be established at the meta-level that monitors and coordinates the activities of the constituent systems in order that the shared purpose can be achieved.
 
-Table 4.3  Comparison of a monolithic system and a system of systems
-![](images/9535d455693d22f2e9f1688c1b7ebb36baa4b888aeec0017a5b5077ef89ac0ba.jpg)
+> Table 4.3 Comparison of a monolithic system and a system of systems
+> ![](images/9535d455693d22f2e9f1688c1b7ebb36baa4b888aeec0017a5b5077ef89ac0ba.jpg)
 
 An important characteristic of an SoS is the independent development and unco­ ordinated evolution of the constituent systems (Table  4.3 ). The focus in SoS design is on the linking interface behavior of the monolithic systems. The monolithic sys­ tem themselves can be heterogeneous. They are developed according to different architectural styles by different organizations. If the monolithic systems are inter­ connected via open communication channels, then the topic of security is of utmost concern, since an outside attacker can interfere with the system operation, e.g., by executing a denial-of-service attack (see Sect. 6.2.2 ).
 
@@ -2391,7 +2279,7 @@ An important characteristic of an SoS is the independent development and unco­ 
 
 The preferred interconnection medium for the construction of systems of systems is the Internet, leading to the Internet of Things (IoT). Chap. 13 is devoted to the topic of the Internet of Things .
 
-# Points to Remember
+## Points to Remember
 
 • A real-time component consists of a design (e.g., the software), an embodiment (e.g., the hardware, including a processing unit, memory, and an I/O interface), and a real-time clock that makes the component aware of the progression of real time.
 
@@ -2437,11 +2325,11 @@ The preferred interconnection medium for the construction of systems of systems 
 
 • The distinction between a system of subsystems and a system of systems is based more on organizational than on technical grounds.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The presented real-time model of computation has been developed over the past 25  years and is documented in a number of publications, starting with The Architecture of Mars [Kop85] and further in the following publications: Real-time Object Model [Kim94], the Time-Triggered Model of Computation in [Kop98], Elementary versus Composite Interfaces in Distributed Real-Time Systems [Kop99], and Periodic Finite State Machines [Kop07].
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 4.1. How is a real-time system component defined? What are elements of a com­ ponent? How is the behavior of a component specified?
 
@@ -2471,11 +2359,9 @@ The presented real-time model of computation has been developed over the past 25
 
 4.14. What is an integration level? How many integration levels are introduced in the GENESYS architecture?
 
-4.15. Assume that the pressures $p_{I}$ and $p_{2}$ between the first two pairs of rolls in Fig.
+4.15. Assume that the pressures $p_{I}$ and $p_{2}$ between the first two pairs of rolls in Fig.1.9 are measured by the two controller nodes and sent to the man-machine interface (MMI) node for verifying the following alarm condition:
 
-1.9 are measured by the two controller nodes and sent to the man-machine interface (MMI) node for verifying the following alarm condition:
-
-when $(p_{1}<p_{2})$     then everything ok     else raise pressure alarm ;
+when $(p_{1}<p_{2})$  then everything ok  else raise pressure alarm ;
 
 The rolling mill is characterized by the following parameters: maximum pres­ sure between the rolls of a stand $=1000\,\mathrm{kg}\,\mathrm{cm}^{-2}$ [kp is kilopond], absolute pressure measurement error in the value domain $=5\;\mathrm{kp}\;\mathrm{cm}^{-2}$ , and maximum rate of change of the pressure $=200\;\mathrm{kp\;cm}^{-2}\;\mathrm{sec}^{-1}$ . It is required that the error due to the impreci­ sion of the points in time when the pressures are measured at the different rolls should be of the same order of magnitude as the measurement error in the value domain, i.e., $0.5\%$ of the full range. The pressures must be continuously monitored, and the first alarm must be raised by the alarm monitor within 200 msec (at the lat­ est) after a process has possibly left the normal operating range. A second alarm must be raised within 200  msec after the process has definitely entered the alarm zone:
 
@@ -2487,7 +2373,7 @@ The rolling mill is characterized by the following parameters: maximum pres­ su
 
 # Chapter 5 Temporal Relations
 
-# Overview
+## Overview
 
 The behavior of a real-time cluster must be based on timely information about the state of its physical environment and the state of other cooperating clusters. Real-­ time data is temporally accurate for a limited real-time interval only. If real-time data is used outside this application-specific time interval, the system will fail. It is the objective of this chapter to investigate the temporal relations among state vari­ ables in the different parts of a cyber-physical system.
 
@@ -2495,32 +2381,27 @@ In this chapter, the notions of a real-time (RT) entity , a real-time (RT) image
 
 The final section of this chapter is devoted to an elaboration of the concept of determinism. Determinism is a desired property of a computation that is needed if fault tolerance is to be achieved by the replication of components. Determinism is also helpful for testing and for understanding the operation of a system. A set of replicated RT objects is replica deterministic if the objects visit the same state at approximately the same future point in time. The main causes for a loss of determin­ ism are failures that the fault-tolerance mechanisms are intended to mask and non­ deterministic design constructs which must be avoided in the design of deterministic systems.
 
-# 5.1  Real-Time Entities
+## 5.1 Real-Time Entities
 
 A real-time (RT) entity is a state variable of relevance for the given purpose. It is located either in the environment of the computer system or in the computer system itself. Examples of RT entities are the flow of a liquid in a pipe, the set point of a control loop that is selected by the operator, or the intended position of a control valve. An RT entity has static attributes that do not change during the lifetime of the RT entity and dynamic attributes that change with the progression of real time. Examples of static attributes are the name, the type, the value domain, and the maxi­ mum rate of change. The value set at a particular instant is the most important dynamic attribute. Another example of a dynamic attribute is the rate of change at a chosen instant.
 
-# 5.1.1  Sphere of Control
+### 5.1.1 Sphere of Control
 
 Every RT entity is in the sphere of control (SOC) of a subsystem that has the author­ ity to set the value of the RT entity [Dav79]. Outside its SOC, the RT entity can only be observed, but the semantic content of the RT entity cannot be modified. At the chosen level of abstraction, syntactic transformations of the representation of the value of an RT entity that do not change its semantic content (see Sect. 2.2.4 ) are disregarded.
 
-Figure_5.1e Figure_5.1 5.1 Figure_5.1 1.8 Figure_5.1 ­ tigure_5.1 ­ tigure_5.1 Figure_5.1 Figure_5.1 Figure_5.1 Figure_5.1t Figure_5.1 Figure_5.1 Figure_5.1
+> ![](images/5c4960ebb4004f2ed3c4674171a1cfd83d3144fce33a9d02d0aaefb038f92cc9.jpg)
+> Fig.5.1 RT entities, RT images, and RT objects
 
-![](images/5c4960ebb4004f2ed3c4674171a1cfd83d3144fce33a9d02d0aaefb038f92cc9.jpg)
-Fig. 5.1  RT entities, RT images, and RT objects
+> ![](images/57569642db437f99153f40dcf7f7498f3c2918686f57fc380926365c1dcda74b.jpg)
+> Fig.5.2 Discrete RT entity
 
-Fig. 5.2  Discrete RT entity
-
-![](images/57569642db437f99153f40dcf7f7498f3c2918686f57fc380926365c1dcda74b.jpg)
-
-# 5.1.2  Discrete and Continuous Real-Time Entities
-
-Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2 Figure_5.2Figure_5.2 Figure_5.2 5.2 Figure_5.2
+### 5.1.2 Discrete and Continuous Real-Time Entities
 
 In the interval between an R_event and the next L_event , the set of values of a discrete RT entity is undefined. In contrast, the set of values of a continuous RT entity is always defined.
 
 Example : Consider a garage door. Between the defined states specified by door closed and door open , there are many intermediate states that can be classified neither as door open nor as door closed.
 
-# 5.2  Observations
+## 5.2 Observations
 
 The information about the state of an RT entity at a particular instant is captured by the notion of an observation . An observation is an atomic data structure
 
@@ -2528,29 +2409,29 @@ $$
 \mathrm{\bfAssets[Na m e}=\left<\mathrm{Name},t_{o b s},\mathrm{Value}\right>
 $$
 
-consisting of the name of the RT entity, the instant when the observation was made $(t_{\mathrm{obs}})$ , and the observed value of the RT entity. A continuous RT entity can be observed at any instant, while the observation of a discrete RT entity gives a mean­ ingful value only in the interval between a $L_{\cdot}$ _event and an $R_{\ast}$ \_event (see Fig.  5.2 ).
+consisting of the name of the RT entity, the instant when the observation was made $(t_{\mathrm{obs}})$ , and the observed value of the RT entity. A continuous RT entity can be observed at any instant, while the observation of a discrete RT entity gives a mean­ ingful value only in the interval between a $L_{\cdot}$ _event and an $R_{\ast}$ \_event (see Fig.5.2 ).
 
 We assume that an intelligent sensor node is associated with a physical sensor to capture the physical signal, to generate the time-stamp, and to transform the physi­ cal signal to meaningful digital technical units. An observation should be trans­ ported in a single message from this sensor node to the rest of the system because the message concept provides for the needed atomicity of an observation message.
 
-# 5.2.1  Untimed Observation
+### 5.2.1 Untimed Observation
 
-In a distributed system without global time, a time-stamp can only be interpreted within the scope of the node that created the time-stamp. The time-stamp of a sender that made an observation is thus meaningless at the receiver of the observation message if no global time is available. Instead, the time of arrival of an untimed observation message at the receiver node is often taken to be the time of observation $t_{\mathrm{obs}}$ . This time-stamp is imprecise because of the delay and the jitter between the instant of observation and the arrival instant of the message at its destination. In a system with a significant jitter of the execution time of the communication protocol (in comparison to the median execution time) and without access to a global time base, it is not possible to determine the instant of observation of an RT entity pre­ cisely. This imprecision of time measurement can reduce the quality of the observa­ tion (see Fig. 1.6 ).
+In a distributed system without global time, a time-stamp can only be interpreted within the scope of the node that created the time-stamp. The time-stamp of a sender that made an observation is thus meaningless at the receiver of the observation message if no global time is available. Instead, the time of arrival of an untimed observation message at the receiver node is often taken to be the time of observation $t_{\mathrm{obs}}$ . This time-stamp is imprecise because of the delay and the jitter between the instant of observation and the arrival instant of the message at its destination. In a system with a significant jitter of the execution time of the communication protocol (in comparison to the median execution time) and without access to a global time base, it is not possible to determine the instant of observation of an RT entity pre­ cisely. This imprecision of time measurement can reduce the quality of the observa­ tion (see Fig.1.6 ).
 
-# 5.2.2  Indirect Observation
+### 5.2.2 Indirect Observation
 
 In some situations, it is not possible to observe the value of an RT entity directly. Consider, for example, the measurement of the internal temperature within a slab of steel. This internal temperature (the value of the RT entity) must be measured indirectly.
 
-Figure*5.3 $T*{l},\,T*{2},$ igure $T*{3}$ Figure_5.3 Figure_5.3 5.3 Figure_5.3 $T$ Figure_5.3 tigure_5.3 ­ Figure_5.3
+> Figure*5.3
 
-# 5.2.3  State Observation
+### 5.2.3 State Observation
 
 An observation is a state observation if the value of the observation contains the state of the RT entity. The time of the state observation refers to the point in real time when the RT entity was sampled (observed). Every reading of a state observa­ tion is self-contained because it carries an absolute value . Many control algorithms require a sequence of equidistant state observations, a service provided by periodic time-triggered readings.
 
 The semantics of state observations matches well with the semantics of the state messages introduced in Sect. 4.3.4 . A new reading of a state observation replaces the previous readings because clients are normally interested in the most recent value of a state variable.
 
-# 5.2.4  Event Observation
+### 5.2.4 Event Observation
 
-Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4Figure_5.4 Figure_5.4 5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4­ Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4 Figure_5.4w Figure_5.4 Figure_5.4 ­ Figure_5.4
+> Figure_5.4
 
 There are a number of problems with event observations:
 
@@ -2560,27 +2441,27 @@ On the other hand, event observations are more data-efficient than state observa
 
 ![](images/f72b0e85abf0d7c067bd84bd08e911805b93363890b6cd36cb946b7f947cf630.jpg)
 
-# 5.3  Real-Time Images and Real-Time Objects
+## 5.3 Real-Time Images and Real-Time Objects
 
-# 5.3.1  Real-Time Images
+### 5.3.1 Real-Time Images
 
 A real-time (RT) image is a current picture of an RT entity. An RT image is valid at a given instant if it is an accurate representation of the corresponding RT entity, both in the value and the time domains. The notion of temporal accuracy of an RT image will be discussed in detail in the next section. While an observation records a fact that remains valid forever (a statement about an RT entity that has been observed at a particular instant), the validity of an RT image is time dependent and thus invali­ dated by the progression of real time. RT images can be constructed from up-to-date state observations or from up-to-date event observations. They can also be estimated by a technique called state estimation that will be discussed in Sect. 5.4.3 . RT images are stored either inside the computer system or in the environment (e.g., in an actuator).
 
-# 5.3.2  Real-Time Objects
+### 5.3.2 Real-Time Objects
 
 A real-time (RT) object is a container within a node of the distributed computer system that holds an RT image or an RT entity [Kop90]. A real-time clock with a specified granularity is associated with every RT object. Whenever this object clock ticks, a temporal control signal is relayed to the object to activate an object proce­ dure [Kim94].
 
-Distributed RT Objects   In a distributed system, an RT object can be replicated in such a manner that every local site has its own version of the RT object to provide the specified service to the local site. The quality of service of a distributed RT object must conform to some specified consistency constraints.
+Distributed RT Objects In a distributed system, an RT object can be replicated in such a manner that every local site has its own version of the RT object to provide the specified service to the local site. The quality of service of a distributed RT object must conform to some specified consistency constraints.
 
 Example : A good example of a distributed RT object is global time ; every node has a local clock object that provides a synchronized time service with a specified precision Π (quality of service attribute of the internal clock synchronization). Whenever a process reads its local clock, it is guaranteed that a process running on another node that reads its local clock at the same instant will get a time value that differs by at most one tick.
 
 Example : Another example of a distributed RT object is a membership service in a distrib­ uted system. A membership service generates consistent information about the state (opera­ tional or failed) of all nodes of the system at agreed instants ( membership points ). The length and the jitter of the interval between a membership point and the instant when the consistent membership information is known at the other nodes are quality of service parameters of the membership service. A responsive membership service has a small maxi­ mum delay between the instant of a relevant state change of a node (failure or join) and the instant at which all other nodes have been informed in a consistent manner of this state change.
 
-# 5.4  Temporal Accuracy
+## 5.4 Temporal Accuracy
 
 Temporal accuracy denotes the temporal relationship between an $R T$ entity and its associated RT image . Because an RT image is stored in an RT object, the temporal accuracy can also be viewed as a relation between an RT entity and an RT object.
 
-# 5.4.1  Definition
+### 5.4.1 Definition
 
 The temporal accuracy of an RT image is defined by referring to the recent history of observations of the related RT entity. A recent history $\mathrm{RH}_{i}$ at time $t_{i}$ is an ordered set of instants $\{t_{i},t_{i\mathrm{~-~}1},t_{i\mathrm{~-~}2},...t_{i\mathrm{~-~}k}\}$ , where the length of the recent history, $d_{\mathrm{acc}}=z(t_{i})-z(t_{i\,-\,k})$ , is called the temporal accuracy interval or the temporal accu­ racy $d_{\mathrm{acc}}$ $\,z(e)$ is the time-stamp of event $e$ generated by the reference clock $z$ ; see Sect. 3.1.2 ). Assume that the RT entity has been observed at every instant of the recent history. An RT image is temporally accurate at the present time $t_{i}$ if
 
@@ -2588,14 +2469,12 @@ $$
 \exists t_{j}\in\mathbf{RH}_{i}:\mathbf{Value}\left(\mathbf{RT}\,\mathrm{image}\,\mathrm{at}\,t_{i}\right)=\mathbf{Value}\left(\mathbf{RT}\,\mathrm{entity}\,\mathrm{at}\,t_{j}\right)
 $$
 
-Figure_5.5 Figure_5.5 ­ Figure_5.5 tigure_5.5 5.5 Figure_5.5
-
 Example : Let us assume that the temporal accuracy interval of a temperature measurement is $1\ \mathrm{min}$ . An RT image is temporally accurate if the value contained in the RT image has been observed at most a minute ago, i.e., it is still in the recent history of the corresponding RT entity.
 
-Temporal Accuracy Interval   The size of the admissible temporal accuracy interval $d_{\mathrm{acc}}$ is determined by the dynamics of the RT entity in the controlled object. The delay between the observation of the RT entity and the use of the RT image causes an error $(t)$ of the RT image that can be approximated by the product of the gradient of the value $\nu$ of the RT entity multiplied by the length of the interval between the instant of observation and the instant of its use (see also Fig. 1.6 ):
+Temporal Accuracy Interval The size of the admissible temporal accuracy interval $d_{\mathrm{acc}}$ is determined by the dynamics of the RT entity in the controlled object. The delay between the observation of the RT entity and the use of the RT image causes an error $(t)$ of the RT image that can be approximated by the product of the gradient of the value $\nu$ of the RT entity multiplied by the length of the interval between the instant of observation and the instant of its use (see also Fig.1.6 ):
 
-![](images/81647b45a2191281e48a73ecb8344a0f4b3caa04aa2f42aea6b78945ee8bf86a.jpg)
-Fig. 5.5  Time lag between RT entity and RT image
+> ![](images/81647b45a2191281e48a73ecb8344a0f4b3caa04aa2f42aea6b78945ee8bf86a.jpg)
+> Fig.5.5 Time lag between RT entity and RT image
 
 $$
 \mathrm{error}\left(t\right)\!=\!\frac{\mathrm{d}\nu\left(t\right)}{\mathrm{d}t}\!\left(z\left(t_{\mathrm{use}}\right)\!-\!z\left(t_{\mathrm{obs}}\right)\right)
@@ -2621,8 +2500,6 @@ $$
 \begin{array}{r}{\Big(z\big(t_{\mathrm{use}}\big)\!-\!z\big(t_{\mathrm{obs}}\big)\big)\leq d_{\mathrm{acc}}.}\end{array}
 $$
 
-Figure*5.6   Figure_5.6 tigu re_5.6 Figure \_5.6 Figure_5.6 Figure_5.6 Fi gure \_5.6 Figure_5.6 $\mathrm{WCET*{s e n d}}$ Figure*5.6 ­ Figure_5.6 Figure_5.6 $\mathrm{WCET*{rec}}$ Figure_5.6 5.6 Figure_5.6 Figure_5.6 Figure_5.6 Figure_5.6
-
 In such a transaction, the worst-case difference between the point of observation and the point of use,
 
 $$
@@ -2631,31 +2508,30 @@ $$
 
 is given by the sum of the worst-case execution time of the sending task, the worst-­ case communication delay, and the worst-case execution time of the receiving task that uses the data in the output of a set point to the actuator in the controlled object. If the temporal accuracy $d_{\mathrm{acc}}$ that is required by the dynamics of the application is smaller than this sum, the application of a new technique, state estimation , is inevi­ table in solving the temporal accuracy problem. The technique of state estimation is discussed in Sect. 5.4.3 .
 
-![](images/e3bf2b61c102c85283ddf403b5bc422ef3bf8f843422419a0de249035af36e09.jpg)
+> ![](images/e3bf2b61c102c85283ddf403b5bc422ef3bf8f843422419a0de249035af36e09.jpg)
+> Fig.5.6 Synchronized actions
 
-# Fig. 5.6  Synchronized actions
+> Table 5.1 Temporal accuracy intervals in engine control
+> ![](images/8ac386c8678e94d951e392aba931be1b4b89a9df91075e2a2c078be846477dd2.jpg)
 
-Table 5.1  Temporal accuracy intervals in engine control
-![](images/8ac386c8678e94d951e392aba931be1b4b89a9df91075e2a2c078be846477dd2.jpg)
+### 5.4.2 Classification of Real-Time Images
 
-Table*5.1e Table_5.1 Table_5.1 5.1 Table_5.1 Table_5.1 ­ Table_5.1 $d*{\mathrm{acc}}$ Table_5.1 Table_5.1 Table_5.1
+$$
+d_{\mathrm{acc}}>(d_{\mathrm{update}}+\mathrm{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCT}_{\mathrm{rec}})
+$$
 
-# 5.4.2  Classification of Real-Time Images
-
-Figure*5.7   Figure_5.7 Figure_5.7 $d*{\mathrm{update}}$ Figure*5.7 Figure_5.7 5.7 Figure_5.7 ­ Figure_5.7 $d*{\mathrm{acc}}$ Figure_5.7
-
-$d_{\mathrm{acc}}>(d_{\mathrm{update}}+\mathrm{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCT}_{\mathrm{rec}})$ ), then we call the RT image parametric or phase-insensitive .
+, then we call the RT image parametric or phase-insensitive .
 
 A parametric RT image can be accessed at the receiver at any time without hav­ ing to consider the phase relationship between the incoming observation message and the point of use of the data.
 
 Example : The RT transaction that handles the position of the accelerator pedal (observation and preprocessing at sender, communication to the receiver, processing at the receiver, and output to the actuator) takes an amount of time $\mathrm{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCT}_{\mathrm{rec}}=4\,\mathrm{msec}$ . Because the accuracy interval of this observation is 10 msec (Table  5.1 ), messages sent with periods less than 6 msec will make this RT image parametric .
 
-![](images/c0add2e23800b9e4aaeb9139cf21bf2bc7204a772720c2d54bc62b0747af9152.jpg)
-Fig. 5.7  Parametric real-time image
+> ![](images/c0add2e23800b9e4aaeb9139cf21bf2bc7204a772720c2d54bc62b0747af9152.jpg)
+> Fig.5.7 Parametric real-time image
 
 If components are replicated, then care must be taken that all replicas access the same version of a parametric RT image; otherwise the replica determinism (see Sect. 5.6 ) will be lost.
 
-Phase-Sensitive RT Image   Assume an RT transaction that is phase-aligned at the sender. The RT image at the receiver is called phase-sensitive if
+Phase-Sensitive RT Image Assume an RT transaction that is phase-aligned at the sender. The RT image at the receiver is called phase-sensitive if
 
 $$
 \begin{array}{r}{d_{\mathrm{acc}}\leq\bigl(d_{\mathrm{update}}+\mathrm{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCT}_{\mathrm{rec}}\bigr)\mathrm{and}}\\ {d_{\mathrm{acc}}>\bigl(\mathrm{WCCET}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCCET}_{\mathrm{rec}}\bigr)}\end{array}
@@ -2665,7 +2541,7 @@ In this case, the phase relationship between the moment at which the RT image is
 
 Every phase-sensitive RT image imposes an additional constraint on the schedul­ ing of the real-time task that uses this RT image. The scheduling of a task that accesses phase-sensitive RT images is thus significantly more complicated than the scheduling of tasks using parametric RT images. It is good practice to minimize the number of RT images that are phase-sensitive. This can be done, within the limits imposed by $d_{\mathrm{update}}$ , by either increasing the update frequency of the RT image or by deploying a state estimation model to extend the temporal accuracy of the RT image. While an increase in the update frequency puts more load on the communication system, the implementation of a state estimation model puts more load on the pro­ cessor. A designer has the choice to find a tradeoff between utilizing communication resources and processing resources.
 
-# 5.4.3  State Estimation
+### 5.4.3 State Estimation
 
 State estimation involves the building of a model of an RT entity inside an RT object to compute the probable state of an RT entity at a selected future instant and to update the corresponding RT image accordingly. The state estimation model is exe­ cuted periodically within the RT object that stores the RT image. The control signal for the execution of the model is derived from the tick of the real-time clock that is associated with the RT object (see Sect. 5.3.2 ). The most important future instant where the RT image must be in close agreement with the RT entity is $t_{\mathrm{use}}$ , the instant where the value of the RT image is used to deliver an output to the environment. State estimation is a powerful technique to extend the temporal accuracy interval of an RT image, i.e., to bring the RT image into better agreement with the RT entity.
 
@@ -2673,7 +2549,7 @@ Example : Assume that the crankshaft in an engine rotates with a rotational spee
 
 An adequate state estimation model of an RT entity can only be built if the behavior of the RT entity is governed by a known and regular process, i.e., a well-­ specified physical or chemical process. Most technical processes, such as the above­ mentioned control of an engine, fall into this category. However, if the behavior of the RT entity is determined by chance events, then the technique of state estimation is not applicable.
 
-Input to the State Estimation Model   The most important dynamic input to the state estimation model is the precise length of the time interval $[t_{\mathrm{obs}},~t_{\mathrm{user}}]$ . Because $t_{\mathrm{obs}}$ and $t_{\mathrm{use}}$ are normally recorded at different nodes of a distributed system, a com­ munication protocol with minimal jitter or a global time base with a good precision is a prerequisite for state estimation. This prerequisite is an important requirement in the design of a field bus.
+Input to the State Estimation Model The most important dynamic input to the state estimation model is the precise length of the time interval $[t_{\mathrm{obs}},~t_{\mathrm{user}}]$ . Because $t_{\mathrm{obs}}$ and $t_{\mathrm{use}}$ are normally recorded at different nodes of a distributed system, a com­ munication protocol with minimal jitter or a global time base with a good precision is a prerequisite for state estimation. This prerequisite is an important requirement in the design of a field bus.
 
 If the behavior of an RT entity can be described by a continuous and differen­ tiable function $\nu(t)$ , the first derivative $\mathrm{d}{\nu}/\mathrm{d}t$ is sometimes sufficient in order to obtain a reasonable estimate of the state of the RT entity at the instant $t_{\mathrm{use}}$ in the neighborhood of the instant of observation:
 
@@ -2683,42 +2559,40 @@ $$
 
 If the precision of such a simple approximation is not adequate, a more elaborate series expansion around $t_{\mathrm{obs}}$ can be carried out. In other cases a more detailed math­ ematical model of the process in the controlled object may be required. The execu­ tion of such a mathematical model can demand considerable processing resources.
 
-![](images/30bf2f44c6c49389bb3848b649be765357425361e144a4fb0b2dce6caa47805f.jpg)
-Fig. 5.8  Latency at sender and receiver
+> ![](images/30bf2f44c6c49389bb3848b649be765357425361e144a4fb0b2dce6caa47805f.jpg)
+> Fig.5.8 Latency at sender and receiver
 
-# 5.4.4  Com pos ability Considerations
+### 5.4.4 Com pos ability Considerations
 
 Figure*5.8 Figure_5.8 Figure_5.8 $[t*{\mathrm{obs}},\,t*{\mathrm{user}}]$ igure_5.8 tigure_5.8 $[t*{\mathrm{obs}},\,t*{\mathrm{sur}}]$ igure_5.8 Figure_5.8 $[t*{\mathrm{err}},\,t\_{\mathrm{use}}]$ igure_5.8 Figure_5.8 Figure_5.8 5.8 Figure_5.8
 
 If the state estimation is performed in the RT object at the receiver, then any modification in the delay at the sender will cause a modification of the time interval that must be compensated by the state estimation of the receiver. The receiver soft­ ware must be changed if a latency change takes place inside the sender node. To decrease this coupling between the sender and the receiver, the state estimation can be performed in two steps: the sender performs a state estimation for the interval $[t_{\mathrm{obs}},\,t_{\mathrm{sur}}]$ and the receiver performs a state estimation for the interval $[t_{\mathrm{err}},\,t_{\mathrm{use}}]$ . This gives the receiver the illusion that the RT entity has been observed at the point of arrival of the observation message at the receiver. The point of arrival is then the implicit time-stamp of the observation, and the receiver is not affected by a schedule change at the sender. Such an approach helps to unify the treatment of sensor data that are collected via a field bus as well as directly by the receiving node.
 
-# 5.5  Permanence and I dem potency
+## 5.5 Permanence and I dem potency
 
-# 5.5.1  Permanence
+### 5.5.1 Permanence
 
 Permanence is a relation between a particular message arriving at a node and the set of all messages that have been sent to this node before this particular message. A particular message becomes permanent at a given node at that point in time when the node knows that all the messages that have been sent to it prior to the send time of this message have arrived (or will never arrive) [Ver94].
 
-![](images/a6fd5d6753b97257779c6c52417d10b0c11a40c296912f199177ab3a2bbbd3fe.jpg)
-Figure*5.9 Figure_5.9 5.9 Figure_5.9 Figure_5.9 $\mathrm{M*{DA}}$ Figure*5.9 Figure_5.9 Figure_5.9 Figure_5.9 $\mathrm{{\bfM}*{B C}}$ Figure*5.9 Figure_5.9 $\mathrm{M*{BA}}$ Figure_5.9 Figure_5.9 Figure_5.9
+> ![](images/a6fd5d6753b97257779c6c52417d10b0c11a40c296912f199177ab3a2bbbd3fe.jpg)
+> Figure_5.9
 
-Figure*5.10 $d*{\mathrm{min}}$ Figure*5.10 $d*{\mathrm{max}}$ Figure*5.10 $d*{\mathrm{jit}}\,{=}\,d*{\mathrm{max}}\,{-}\,d*{\mathrm{min}}$ Figure*5.10 tigure_5.10 5.10 Figure_5.10 $\mathrm{M*{DA}}$ Figure*5.10 tigure_5.10 Figure_5.10 $\mathrm{{\bfM}*{B A}}$ Figure*5.10 tigure_5.10 Figure_5.10 Figure_5.10 tigure_5.10 ­ Figure_5.10 Figure_5.10 tigure_5.10 $\mathrm{M*{DA}}$ Figure_5.10 Figure_5.10 Figure_5.10
+Action Delay The time interval between the start of transmission of a given mes­ sage and the point in time when this message becomes permanent at the receiver is called the action delay . The receiver must delay any action on the message until after the action delay has passed to avoid an incorrect behavior.
 
-Action Delay   The time interval between the start of transmission of a given mes­ sage and the point in time when this message becomes permanent at the receiver is called the action delay . The receiver must delay any action on the message until after the action delay has passed to avoid an incorrect behavior.
+Irrevocable Action An irrevocable action is an action that cannot be undone. An irrevocable action causes a lasting effect in the environment. An example of an irre­ vocable action is the activation of the firing mechanism on a firearm. It is ­particularly important that an irrevocable action is triggered only after the action delay has passed.
 
-Irrevocable Action   An irrevocable action is an action that cannot be undone. An irrevocable action causes a lasting effect in the environment. An example of an irre­ vocable action is the activation of the firing mechanism on a firearm. It is ­particularly important that an irrevocable action is triggered only after the action delay has passed.
+Example : The pilot of a fighter aircraft is instructed to eject from the airplane (irrevocable action) immediately after a critical alarm is raised. Consider the case where the alarm has been raised by a message that has not become permanent yet (e.g., event 4 in Fig.5.10 ). In this example, the hidden channel, which was not considered in the design, is the cause for the loss of the aircraft.
 
-Example : The pilot of a fighter aircraft is instructed to eject from the airplane (irrevocable action) immediately after a critical alarm is raised. Consider the case where the alarm has been raised by a message that has not become permanent yet (e.g., event 4 in Fig.  5.10 ). In this example, the hidden channel, which was not considered in the design, is the cause for the loss of the aircraft.
+> ![](images/375f71f84d7d209677d7830d02e305cb86eda00d28ca2e0fe1553b3a6a93de91.jpg)
+> Fig.5.10 Permanence of messages
 
-![](images/375f71f84d7d209677d7830d02e305cb86eda00d28ca2e0fe1553b3a6a93de91.jpg)
-Fig. 5.10  Permanence of messages
-
-# 5.5.2  Duration of the Action Delay
+### 5.5.2 Duration of the Action Delay
 
 The duration of the action delay depends on the jitter of the communication system and the temporal awareness of the receiver. Let us assume the position of the omni­ scient outside observer who can see all significant events.
 
-Systems with a Global Time   In a system with global time, the send time $t_{\mathrm{end}}$ of the message, measured by the clock of the sender, can be part of the message and can be interpreted by the receiver. If the receiver knows that the maximum delay of the communication system is $d_{\mathrm{max}}$ , then the receiver can infer that the message will become permanent at $t_{\mathrm{permut}}=t_{\mathrm{send}}+d_{\mathrm{max}}+2g$ , where $g$ is the granularity of the global time base (see Sect. 3.2.4 to find out where the $_{2g}$ comes from).
+Systems with a Global Time In a system with global time, the send time $t_{\mathrm{end}}$ of the message, measured by the clock of the sender, can be part of the message and can be interpreted by the receiver. If the receiver knows that the maximum delay of the communication system is $d_{\mathrm{max}}$ , then the receiver can infer that the message will become permanent at $t_{\mathrm{permut}}=t_{\mathrm{send}}+d_{\mathrm{max}}+2g$ , where $g$ is the granularity of the global time base (see Sect. 3.2.4 to find out where the $_{2g}$ comes from).
 
-Systems Without a Global Time   In a system without global time, the receiver does not know when the message has been sent. To be on the safe side, the receiver must wait $d_{\operatorname*{max}}-d_{\operatorname*{min}}$ time units after the arrival of the message, even if the message has already been $d_{\mathrm{max}}$ units in transit. In the worst case, as seen by the outside observer, the receiver thus has to wait for an amount of time
+Systems Without a Global Time In a system without global time, the receiver does not know when the message has been sent. To be on the safe side, the receiver must wait $d_{\operatorname*{max}}-d_{\operatorname*{min}}$ time units after the arrival of the message, even if the message has already been $d_{\mathrm{max}}$ units in transit. In the worst case, as seen by the outside observer, the receiver thus has to wait for an amount of time
 
 $$
 t_{\mathrm{permut}}=t_{\mathrm{send}}+2d_{\mathrm{max}}-d_{\mathrm{min}}+g_{l}
@@ -2726,25 +2600,25 @@ $$
 
 before the message can be used safely (where $g_{l}$ is the granularity of the local time base). Since in an event-triggered communication system $(d_{\operatorname*{max}}-d_{\operatorname*{min}}+g_{l})$ is normally much larger than $_{2g}$ , where $g$ is the granularity of the global time, a system without a global time base is significantly slower than a system with a global time base. (In this case, the implementation of a time-triggered communication system is not possible, since we operate under the assumption that no global time base is available.)
 
-# 5.5.3  Accuracy Interval Versus Action Delay
+### 5.5.3 Accuracy Interval Versus Action Delay
 
 An RT image may only be used if the message that transported the image is perma­ nent and the image is temporally accurate. In a system without state estimation, both conditions can only be satisfied in the time window $(t_{\mathrm{permut}},t_{\mathrm{obs}}+d_{\mathrm{acc}})$ . The tempo­ ral accuracy $d_{\mathrm{acc}}$ depends on the dynamics of the control application, while $(t_{\mathrm{perma}}$ ­ $\mathrm{~\textit~{~ncent~-~}~}t_{\mathrm{obs}})$ is an implementation-specific duration. If an implementation cannot meet the temporal requirements of the application, then state estimation may be the only alternative left in order to design a correct real-time system.
 
-# 5.5.4  I dem potency
+### 5.5.4 I dem potency
 
 I dem potency is the relationship among the members of a set of replicated messages arriving at the same receiver. A set of replicated messages is idempotent if the effect of receiving more than one copy of a message is the same as receiving only a single copy. If messages are idempotent, the implementation of fault tolerance by means of replicating messages is simplified. No matter whether the receiver receives one or more of the replicated messages, the result is always the same.
 
 Example : Let us assume that we have a distributed system without synchronized clocks. In such a system, only untimed observations can be exchanged among nodes, and the time of arrival of an observation message is taken as the time of observation. Assume a node observe an RT entity, e.g., a valve, and report this observation to other nodes in the system. The receivers use this information to construct an updated version of the local RT image of the RT entity in their RT objects. A state message might contain the absolute value position of valve at $45^{\circ}$ and will replace the old version of the image. An event message might con­ tain the relative value valve has moved by $5^{\circ}$ . The contents of this event message are added to the previous contents of the state variable in the RT object to arrive at an updated version of the RT image. While the state message is idempotent, the event message is not. A loss or duplication of the event message results in a permanent error of the RT image.
 
-# 5.6  Determinism
+## 5.6 Determinism
 
 Determinism is a property of a computation that makes it possible to predict the future result of a computation, given that the initial state and all timed inputs are known. A given computation is either deterministic or not deterministic .
 
-Example : Consider the case of a fault-tolerant brake-by-wire system in a car. After agree­ ment on the sensor inputs (e.g., brake pedal position, speed of the car, etc.), three indepen­ dent but synchronized channels process identical inputs. The three outputs are presented to four smart voting actuators (Fig. 9.8 ), one at the brake cylinder of each one of the four wheels of the car. After the arrival of the first output message at a voting actuator, an accep­ tance window is opened. The duration of the acceptance window is determined by the dif­ ferences in the execution speeds and the jitter of the communication system of the three
+Example : Consider the case of a fault-tolerant brake-by-wire system in a car. After agree­ ment on the sensor inputs (e.g., brake pedal position, speed of the car, etc.), three indepen­ dent but synchronized channels process identical inputs. The three outputs are presented to four smart voting actuators (Fig.9.8 ), one at the brake cylinder of each one of the four wheels of the car. After the arrival of the first output message at a voting actuator, an accep­ tance window is opened. The duration of the acceptance window is determined by the dif­ ferences in the execution speeds and the jitter of the communication system of the three
 
 channels, provided they operate correctly. Every correct deterministic channel will deliver the same result before the end of the acceptance window. If one channel fails, one of the three arriving result messages will contain a value that is different from the other two ( value failure ), or only two (identical) result messages will arrive during the acceptance window ( timing failure ). By selecting the majority result at the end of the acceptance window , the voter will mask a failure of any one of the three channels. The endpoint of the acceptance window is the significant event when the voting actions can be performed and the result can be transmitted to the environment . If the computations and the communication system have a large jitter, then this endpoint of the acceptance window is far in the future, and the responsiveness of the computer system is reduced.
 
-# 5.6.1  Definition of Determinism
+### 5.6.1 Definition of Determinism
 
 In Sect. 2.5 under the topic of How can we achieve simplicity? , the principle of causality has been introduced. Causality refers to the unidirectional relationship that connects an effect to a cause [Bun08]. If this relationship is one of logical and temporal entailment , we speak of determinism , which we define as follows: A physi­ cal system behaves deterministic ally if, given an initial state at instant t and a set of future timed inputs, then the future states and the values and times of future outputs are entailed . The words time and instants refer to the progression of dense (physi­ cal) time. Many natural laws of physical systems conform to this definition of deter­ minism. In a digital computer model of a physical system, there is no dense time. In a deterministic distributed computer system, we must assume that all events, e.g., the observation of the initial state at instant $t$ and the timed inputs, are sparse events on a sparse global time base (see Sect. 3.3 ) in order that the temporal properties of and the relations (such as si multan e it y ) among the events that occur in the different nodes of the distributed system can be precisely specified despite the finite precision of the clock synchronization and the discrete time base. This transformation of dense events in the physical world to sparse events in the cyber world (the distrib­ uted computer system), performed by an agreement protocol (see Sect. 3.3.1 ), reduces the faithfulness of the computer model, since events that are closer than the granularity of the time base cannot be ordered consistently.
 
@@ -2792,7 +2666,7 @@ In order to realize replica-deterministic behavior in an implementation of a fau
 
 If any one of the above conditions is not satisfied, then the fault-masking capabil­ ity of a fault-tolerant system may be reduced or lost.
 
-# 5.6.2  Consistent Initial States
+### 5.6.2 Consistent Initial States
 
 Correct replicated channels that are introduced to mask a failure will only produce identical results if they start from the same initial state and receive the same inputs at the same instants.
 
@@ -2806,7 +2680,7 @@ A sensor is a physical device that will eventually fail. In order to mask the fa
 
 It is therefore necessary to execute agreement protocols at the boundary between the physical world and cyberspace in order that all replicated channels receive the consistent (exactly the same) agreed input data (see Sect. 9.6 ). These agreement protocols will present the same set of values at the same sparse time interval to all replicated channels.
 
-# 5.6.3  Non deterministic Design Constructs (NDDCs)
+### 5.6.3 Non deterministic Design Constructs (NDDCs)
 
 A distributed computation that starts from a well-defined initial state can fail to reach the envisioned goal state for the following reasons:
 
@@ -2840,7 +2714,7 @@ Most of the above constructs can also cause a loss of determinism in the tempora
 
 In some designs where NDDCs are present, an attempt is made to reestablish replica determinism by explicitly coordinating the decisions that could lead to a loss of determinism among the replicas, e.g., by distinguishing between a leader process and a follower process [Pow91]. If at all possible, inter-replica coordination should be avoided because it compromises the independence of the replicas and requires additional time and additional communication bandwidth.
 
-# 5.6.4  Recovery of Determinism
+### 5.6.4 Recovery of Determinism
 
 A loss of determinism in an L-deterministic system can be avoided if the accep­ tance window is extended such that the probability of a deadline miss (i.e., that the result is available at the end of the acceptance window) is reduced to an acceptably low value. This technique is often used to reestablish determinism at the macro-­ level, even if the precise temporal behavior at the micro-level cannot be predicted. The main disadvantage of this technique is the increased delay until a result is deliv­ ered, which causes an increase in the dead time of control loops and the reaction time of reactive systems.
 
@@ -2850,7 +2724,7 @@ Example : In a server farm of a cloud, where more than 100,000 L-deterministic v
 
 The recovery of determinism at the external level (see the four-universe model in Sect. 2.3.1 ) of systems that behave non deterministic ally at the level of the imple­ mentation is an important strategy when developing an understandable model of the behavior of a system of systems at the user level.
 
-# Points to Remember
+## Points to Remember
 
 • An observation of an RT entity is an atomic triple < Name, $t_{\mathrm{obs}}$ , Value > consisting of the name of the RT entity, the point in real time when the observation was made $(t_{\mathrm{obs}})$ , and the observed value of the RT entity. A continuous RT entity has always a defined value set and can be observed at any instant, whereas a discrete RT entity can only be observed between the L_event and the R_event .
 
@@ -2888,11 +2762,11 @@ The recovery of determinism at the external level (see the four-universe model i
 
 • If at all possible, inter-replica coordination should be avoided because it compro­ mises the independence of the replicas and requires additional time and addi­ tional communication bandwidth.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The concept of temporal accuracy of a real-time object has been introduced in the real-time object model presented in [Kop90]. Kim has extended this model and analyzed the temporal properties of real-time applications using this model [Kim94]. The problem of replica determinism has been extensively studied in [Pol95]. An interesting philosophical treatment of the topics of causality and determinism can be found in [Bun08] and [Hoe10].
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 5.1. Give examples of RT entities that are needed to control an automotive engine. Specify the static and dynamic attributes of these RT entities, and discuss the temporal accuracy of the RT images associated with these RT entities.
 
@@ -2926,13 +2800,11 @@ The concept of temporal accuracy of a real-time object has been introduced in th
 
 # Chapter 6 Dependability
 
-# Overview
+## Overview
 
 It is said that Nobel Laureate Hannes Alfven once remarked that in Technology Paradise no acts of God can be permitted and everything happens according to the blueprints. The real world is no technology paradise— components can fail and blueprints (software) can contain design errors. This is the subject of this chapter. The chapter introduces the notions of fault , error , and failure and discusses the important concept of a fault-containment unit . It then proceeds to investigate the topic of security and argues that a security breach can compromise the safety of a safety-critical embedded system. The direct connection of many embedded systems to the Internet—the Internet of Things (IoT)—makes it possible for a distant attacker to search for vulnerabilities and, if the intrusion is successful, to exercise remote control over the physical environment. Security is thus becoming a prime concern in the design of embedded systems that are connected to the Internet. The following section deals with the topic of anomaly detection. An anomaly is an out-of-norm behavior that indicates that some exceptional scenario is evolving. Anomaly detec­ tion can help to detect the early effects of a random failure or the activities of an intruder that tries to exploit system vulnerabilities. Whereas an anomaly lies in the gray zone between correct behavior and failure, an error is an incorrect state that requires immediate action to mitigate the consequences of the error. Error detection is based on knowledge about the intended state or behavior of a system. This knowl­ edge can stem either from a priori established regularity constraints and known properties of the correct behavior of a computation or from the comparison of the results that have been computed by two redundant channels. Different techniques for the detection of temporal failures and value errors are discussed. The following two sections deal with the design of fault-tolerant systems that are capable of mask­ ing faults that are contained in the given fault hypothesis. The most important fault-­ tolerance strategy is triple modular redundancy (TMR), which requires a deterministic behavior of replicated components and a deterministic communication infrastructure. We then discuss the robustness and resilience con­ cepts and conclude this chapter with the topic of component reintegration.
 
-# 6.1  Basic Concepts
-
-Figure_6.1 Figure_6.1 Figure_6.1 Figure_6.1 Figure_6.1 Figure_6.1 Figure_6.1 Figure_6.1 6.1 Figure_6.1
+## 6.1 Basic Concepts
 
 Computer systems are provided to offer a dependable service to system users. A user can be a human user or another computer system. Whenever the behavior of a system (see Sect. 4.1.1 ), as seen by the user of the system, deviates from the intended service , the system is said to have failed . A failure can be pinned down to an unin­ tended state within the system, which is called an error . An error is caused by an adverse phenomenon, which is called a fault .
 
@@ -2940,31 +2812,29 @@ We use the term intended to state the correct state or behavior of a system. Ide
 
 If we relate the terms fault , error , and failure to the levels of the four-universe model (Sect. 2.3.1 ), then the term fault refers to an adverse phenomenon at any level of the model, while the terms error and failure are reserved for adverse phenomena at the digital logic level, the informational level, or the external level. If we assume that a sparse global time base is available, then any adverse phenomenon at the digi­ tal logic level and above can be identified by a specific bit pattern in the value domain and by an instant of occurrence on the sparse global time base. This cannot be done for phenomena occurring at the physical level.
 
-![](images/790c6d58531c481f5b3ad1bee39b31049934a5515995c7b4da200110353b61e2.jpg)
-Fig. 6.1  Faults, errors, and failures
+> ![](images/790c6d58531c481f5b3ad1bee39b31049934a5515995c7b4da200110353b61e2.jpg)
+> Fig.6.1 Faults, errors, and failures
 
-# 6.1.1  Faults
+### 6.1.1 Faults
 
 We assume that a system is built out of components. A component is a fault-­ containment unit (FCU) , if the direct effect of a single fault influences only the operation of a single component. Multiple FCUs should fail independently.
 
-Figure_6.2 6.2 Figure_6.2
-
-Fault Space   It is important to distinguish faults that are related to a deficiency internal to the FCU or to some adverse phenomena occurring external to the FCU . An internal fault of a component, i.e., a fault within the FCU, can be a physi­ cal fault , such as the random break of a wire, or a design fault either in the software (a program error ) or in the hardware (an erratum ). An external fault can be a ­physical disturbance, e.g., a lightning stroke causing spikes in the power supply or the impact of a cosmic particle. The provision of incorrect input data is another class of an external fault. Fault containment refers to design and engineering efforts that ensure that the immediate consequences of a fault are limited to a single FCU. Many reliability models make the tacit assumption that FCUs fail independently, i.e., there is no single fault that can affect more than one FCU. This FCU independence assumption must be justified by the design of the system.
+Fault Space It is important to distinguish faults that are related to a deficiency internal to the FCU or to some adverse phenomena occurring external to the FCU . An internal fault of a component, i.e., a fault within the FCU, can be a physi­ cal fault , such as the random break of a wire, or a design fault either in the software (a program error ) or in the hardware (an erratum ). An external fault can be a ­physical disturbance, e.g., a lightning stroke causing spikes in the power supply or the impact of a cosmic particle. The provision of incorrect input data is another class of an external fault. Fault containment refers to design and engineering efforts that ensure that the immediate consequences of a fault are limited to a single FCU. Many reliability models make the tacit assumption that FCUs fail independently, i.e., there is no single fault that can affect more than one FCU. This FCU independence assumption must be justified by the design of the system.
 
 Example: The physical separation of the FCUs of a fault-tolerant system reduces the prob­ ability for spatial proximity faults , such that fault at a single location (e.g., impact in case of an accident) cannot destroy more than a single FCU.
 
-Fault Time   In the temporal domain, a fault can be transient or permanent . Whereas physical faults can be transient or permanent , design faults (e.g., software errors) are always permanent .
+Fault Time In the temporal domain, a fault can be transient or permanent . Whereas physical faults can be transient or permanent , design faults (e.g., software errors) are always permanent .
 
 A transient fault appears for a short interval at the end of which it disappears without requiring any explicit repair action. A transient fault can lead to an error , i.e., the corruption of the state of an FCU, but leaves the physical hardware undam­ aged ( by definition ). We call a transient external physical fault a transitory fault . An example for a transitory fault is the impact of a cosmic particle that corrupts the state of an FCU. We call a transient internal physical fault an intermittent fault .
 
-![](images/9638a42aa31217b149c5f063256a731cc145eebec8c8912804e5a6720203928a.jpg)
-Fig. 6.2  Classification of faults
+> ![](images/9638a42aa31217b149c5f063256a731cc145eebec8c8912804e5a6720203928a.jpg)
+> Fig.6.2 Classification of faults
 
 Examples for intermittent faults are oxide defects, corrosion, or other fault mecha­ nisms that have not yet developed to a stage where the hardware fails permanently. According to [Con02], a substantial number of the transient faults observed in the field are intermittent faults. Whereas the failure rate of transitory faults is constant, the failure rate for intermittent faults increases as a function of time. An increasing intermittent failure rate of an electronic hardware component is an indication for the wear-out of the component. It suggests that preventive maintenance—the replace­ ment of the faulty component—should be performed in order to avoid a permanent fault of the component.
 
 A permanent fault is a fault that remains in the system until an explicit repair action has taken place that removes the fault. An example for a permanent external fault is a lasting breakdown of the power supply. A permanent internal fault can be in the physical embodiment of the hardware (e.g., a break of an internal wire) or in the design of the software or hardware. The mean time it takes to repair a system after the occurrence of a permanent fault is called MTTR ( mean time to repair ).
 
-# 6.1.2  Errors
+### 6.1.2 Errors
 
 The immediate consequence of a fault is an incorrect state in a component. We call such an incorrect state, i.e., a wrong data element in the memory, a register or, in a flip-flop circuit of a CPU, an error . As time progresses, an error is activated by a computation, detected by some error-detection mechanism, or wiped out .
 
@@ -2980,40 +2850,36 @@ An error is wiped out if a computation overwrites the error with a new value bef
 
 Example: Let us assume that a bitflip occurs in a memory cell that is not protected by a parity bit and that this memory cell contains sensory input data about the intended accelera­ tion of an automotive engine. The consequent silent data corruption can result in an unin­ tended acceleration of the car.
 
-# 6.1.3  Failures
+### 6.1.3 Failures
 
-Figure_6.3 Figure_6.3 Figure_6.3 Figure_6.3n Figure_6.3 Figure_6.3 Figure_6.3 Figure_6.3 Figure_6.3 Figure_6.3 Figure_6.3in­ Figure_6.3 Figure_6.3 Figure_6.3 Figure_6.3 6.3 Figure_6.3 Figure_6.3 Figure_6.3
+Domain A failure can occur in the value domain or in the temporal domain . A value failure means that an incorrect value is presented at the component-user inter­ face. (Remember, the user can be another system.) A temporal failure means that a value is presented outside the intended interval of real time . Temporal failures only exist if the system specification contains information about the intended temporal behavior of the system. Temporal failures can be subdivided into early temporal failures and late temporal failures . A component that contains internal error-­ detection mechanisms in order to detect any error and suppresses a result that con­ tains a value error or an early temporal failure will only exhibit a late temporal failure , i.e., an omission , at the interface to its users. We call such a failure an omis­ sion failure . A component that only makes omission failures is called a fail-silent component . If a component stops working after the first omission failure, it is called a fail-stop component . The corresponding failure is sometimes called a clean failure or a crash failure .
 
-Domain   A failure can occur in the value domain or in the temporal domain . A value failure means that an incorrect value is presented at the component-user inter­ face. (Remember, the user can be another system.) A temporal failure means that a value is presented outside the intended interval of real time . Temporal failures only exist if the system specification contains information about the intended temporal behavior of the system. Temporal failures can be subdivided into early temporal failures and late temporal failures . A component that contains internal error-­ detection mechanisms in order to detect any error and suppresses a result that con­ tains a value error or an early temporal failure will only exhibit a late temporal failure , i.e., an omission , at the interface to its users. We call such a failure an omis­ sion failure . A component that only makes omission failures is called a fail-silent component . If a component stops working after the first omission failure, it is called
-
-![](images/8d98552c8d79535391249ca0c6732573ec2ac96009dc2c3d0f6544c476891b92.jpg)
-Fig. 6.3  Classification of failures
-
-a fail-stop component . The corresponding failure is sometimes called a clean failure or a crash failure .
+> ![](images/8d98552c8d79535391249ca0c6732573ec2ac96009dc2c3d0f6544c476891b92.jpg)
+> Fig.6.3 Classification of failures
 
 Example: A self-checking component is a component that contains internal failure-­ detection mechanisms such that it will only exhibit omission failures (or clean failures ) at the component-user interface . A self-checking component can be built out of two determin­ istic FCUs that produce two results at about the same time and where the two results are checked by a self-checking checker.
 
 Example: Fault-injection experiments of the MARS architecture have shown that between $1.9\%$ and $11.6\%$ of the observed failures were temporal failures, meaning that a message was produced at an unintended instant. An independent time-slice controller, a guardian, has detected all of these temporal failures [Kar95, p. 326].
 
-Severity   Depending on the effect a failure has on its environment, we distinguish between two extreme cases, benign and malign failures (see also Sect. 1.5 ). The cost of a benign failure is of the same order of magnitude as the loss of the normal utility of the system, whereas a malign failure can result in failure costs that are orders of magnitude higher than the normal utility of a system, e.g., a malign failure can cause a catastrophe such as an accident. We call applications where malign failures can occur safety-critical applications. The characteristics of the application deter­ mine whether a failure is benign or malign. In between these two extreme cases of benign and malign, we can assign a severity class to a failure, e.g., based on the monetary impact of a failure or the impact of the failures on the user experience .
+Severity Depending on the effect a failure has on its environment, we distinguish between two extreme cases, benign and malign failures (see also Sect. 1.5 ). The cost of a benign failure is of the same order of magnitude as the loss of the normal utility of the system, whereas a malign failure can result in failure costs that are orders of magnitude higher than the normal utility of a system, e.g., a malign failure can cause a catastrophe such as an accident. We call applications where malign failures can occur safety-critical applications. The characteristics of the application deter­ mine whether a failure is benign or malign. In between these two extreme cases of benign and malign, we can assign a severity class to a failure, e.g., based on the monetary impact of a failure or the impact of the failures on the user experience .
 
 Example: In a multimedia system, e.g., a digital television set, the failure of a single pixel that is overwritten in the next cycle is masked by the human perception system. Such a failure is thus of negligible severity.
 
-Frequency   Within a given time interval, a failure can occur only once or repeat­ edly . If it occurs only once, it is called a single failure. If a system continues to operate after the failure, we call the failure a transient failure . A frequently occur­ ring transient failure is called a repeated failure . A special case of a single failure is a permanent one, i.e., a failure after which the system ceases to provide a service until an explicit repair action eliminates the cause of the failure.
+Frequency Within a given time interval, a failure can occur only once or repeat­ edly . If it occurs only once, it is called a single failure. If a system continues to operate after the failure, we call the failure a transient failure . A frequently occur­ ring transient failure is called a repeated failure . A special case of a single failure is a permanent one, i.e., a failure after which the system ceases to provide a service until an explicit repair action eliminates the cause of the failure.
 
-View   If more than one user looks at a failing component, two cases can be distin­ guished: all users see the same failing behavior —we call this a consistent failure — or different users see different behaviors (we call this an inconsistent failure ). In the literature, different names are used for an inconsistent failure : two-faced failure , Byzantine failure , or malicious failure . Inconsistent failures are most difficult to handle, since they have the potential to confuse the correct components (see Sect. 3.4.1 ). In high-integrity systems, the occurrence of Byzantine failures must be con­ sidered [Dri03].
+View If more than one user looks at a failing component, two cases can be distin­ guished: all users see the same failing behavior —we call this a consistent failure — or different users see different behaviors (we call this an inconsistent failure ). In the literature, different names are used for an inconsistent failure : two-faced failure , Byzantine failure , or malicious failure . Inconsistent failures are most difficult to handle, since they have the potential to confuse the correct components (see Sect. 3.4.1 ). In high-integrity systems, the occurrence of Byzantine failures must be con­ sidered [Dri03].
 
 Example: Let us assume that a system contains three components. If one of them fails in an inconsistent failure mode , the other two correct components will have different views of the behavior of the failing component. In an extreme case, one correct component classifies the failing component as correct, while the other correct component classifies the failing com­ ponent as erroneous, leading to an inconsistent view of the failed component among the correct components.
 
 Example: A slightly-out-of-specification (SOS) failure is a special case of a Byzantine. SOS failures can occur at the interface between the analog level and the logical level of the four-universe model (see Sect. 2.3.1 ). If, in a bus system, the voltage of the high-level out­ put of a sender is slightly below the level specified for the high-level state, then some receiv­ ers might still accept the signal, assuming the value of the signal is high , while others might not accept the signal, assuming the value is not high. SOS failures are of serious concern if signals are marginal w.r.t. voltage or timing.
 
-Propagation   If an error inside a component is activated and propagates outside the confines of the component that has been affected by the fault, then we speak of error propagation . Let us make the simplifying assumption that a component communi­ cates with its environment solely by the exchange of messages and there is no other means of interaction of components (such as a common memory). In such a system, an error can propagate outside the affected component solely by the transmission of an incorrect message .
+Propagation If an error inside a component is activated and propagates outside the confines of the component that has been affected by the fault, then we speak of error propagation . Let us make the simplifying assumption that a component communi­ cates with its environment solely by the exchange of messages and there is no other means of interaction of components (such as a common memory). In such a system, an error can propagate outside the affected component solely by the transmission of an incorrect message .
 
 In order to avoid that a propagated error infects other—up to that time healthy— components and thus invalidates the component independence assumption , error propagation boundaries must be erected around each component. A message can be incorrect either in the value domain (the data field of the message contains a cor­ rupted value) or in the time domain , i.e., the message is sent at an unintended instant or not at all (omission failure). Temporal message failures can be detected by the communication system, provided the communication system has a priori knowl­ edge about the correct temporal behavior of a component. Since a communication system is agnostic about the contents of the value field of a message (see Sect. 4.6.2 ), it is the responsibility of the receiver of the message to detect corrupted val­ ues, i.e., errors , in the data field of a message.
 
 In a cyclic system, the corruption of the $g$ -state (see Sect. 4.2.3 ) is of particular concern, since the g-state contains the information of the current cycle that influ­ ences the behavior of the next cycle. Since a latent error in the g-state can become an incorrect input to a computation in the next cycle, a gradual increase in the num­ ber of errors in the g-state can occur (called state erosion ). If the g-state is empty, then there is no possibility of error propagation of an error from the current cycle to the next cycle. In order to avoid error propagation from one cycle to the next cycle, the integrity of the g-state should be monitored by a special error-detection task of an independent diagnostic component.
 
-# 6.2  Information Security
+## 6.2 Information Security
 
 Information security deals with the authenticity , integrity , confidentiality , privacy , and availability of information and services that are provided by a computer system. In the following section, we always mean information security when we use the term security . We call a deficiency in the design or operation of a computer system that can lead to a security incident a vulnerability and the successful exploitation of a vulnerability an intrusion . The following reasons make clear why information security has become a prime concern in the design and operation of embedded sys­ tems [Car08]:
 
@@ -3031,7 +2897,7 @@ might increase beyond the critical level that leads to a blackout (example taken
 
 Standard security techniques are based on a sound security architecture that con­ trols the information flow among subsystems of different critical it y and confidenti­ ality . The architectural decisions are implemented by the deployment of cryptographic methods, such as encryption , random number generation , and hash­ ing . The execution of cryptographic methods requires extra energy and silicon real estate, which are not always available in a small (portable) embedded system.
 
-# 6.2.1  Secure Information Flow
+### 6.2.1 Secure Information Flow
 
 The main security concerns in embedded systems are the authenticity and integrity of the real-time data and of the system configuration and, to a lesser extent, the control of access to data. The security policy must specify which processes are authorized to modify data ( data integrity ) and which processes are allowed to see the data ( confidentiality of data ). A security policy for data integrity can be estab­ lished on the basis of the Biba model, while a security policy for the confidentiality of data can be derived from the Bell-LaPadula model [Lan81]. Both models classify the processes and the data files according to an ordered sequence of levels, from highest to lowest . A process may read and modify data that is at the same level as the process. The respective security models govern the access and modification of data at a level that is different from the level of the reading or writing process.
 
@@ -3043,7 +2909,7 @@ The classification of processes and data from the point of view of integrity wil
 
 The selected security policy must be enforced by mechanisms that establish the authenticity of processes and the integrity of the data that is exchanged. These mechanisms make wide use of the well-understood cryptographic methods dis­ cussed in Sect. 6.2.3 .
 
-# 6.2.2  Security Threats
+### 6.2.2 Security Threats
 
 A systematic security analysis starts with the specification of an attack model. The attack model puts forward an attack hypothesis , i.e., it lists the threats and makes assumptions about the attack strategy of an adversary. It then outlines the conjec­ tured steps taken by an adversary to break into a system. In the next phase, a defense strategy is developed in order to counter the attack. There is always the possibility that the attack hypothesis is incomplete and a clever adversary finds a way to attack the system by a method that is not covered by the attack hypothesis.
 
@@ -3061,15 +2927,13 @@ Example: Beautement et al. [Bea08] state: It is widely acknowledged in security
 
 The following list of security attacks is only an indication of what has been observed. It is by no means complete:
 
-Malicious Code Attack: A malicious code attack is an attack where an adversary inserts malicious code , e.g., a virus , a worm , or a Trojan horse , into the software in order that the attacker gets partial or full control over the system. This mali­ cious code can be inserted statically, e.g., by a malicious maintenance action ( insider attack ), by the process of downloading a new software version, or dynamically during the operation of a system by accessing an infected Internet site or opening an infected data structure. Spoofing Attack: In a spoofing attack, an adversary masquerades as a legitimate user in order to gain unauthorized access to a system. There are many versions of spoofing attacks in the Internet: replacement of a legitimate web page (e.g., of a bank) by a seemingly identical copy that is under the control of the adversary (also called phishing ), the replacement of the correct address in an email by a fake address, and a man-in-the-middle attack where an intruder intercepts a ses­ sion between two communicating partners and gains access to all exchanged messages. Password Attack: In a password attack, an intruder tries to guess the password that protects the access to a system. There are two versions of password attacks, dic­ tionary attacks and brute force attacks . In a dictionary attack, the intruder guesses commonly used password strings. In a brute force attack, the intruder searches systematically through the full code space of the password until he is successful. Ciphertext Attack : In this attack model, the attacker assumes to have access to the ciphertext and tries to deduce the plaintext and possibly the encryption key from the ciphertext. Modern standardized encryption technologies, such as the AES (Advanced Encryption Standard), have been designed to make the success of ciphertext attacks highly improbable. Denial-of-Service Attack: A denial-of-service attack tries to make a computer sys­ tem unavailable to its users. In any wireless communication scenario, such as a sensor network, an adversary can jam the ether with high-power signals of the appropriate frequency in order to interfere with the communication of the tar­ geted devices. In the Internet, an adversary can send a coordinated burst of ser­ vice requests to a site to overload the site such that legitimate service requests cannot be handled any more. Botnet Attack: A botnet (the word bot is an abbreviation of robot ) is a set of infected networked nodes (e.g., thousands of PC or set top boxes) that are under the con­ trol of an attacker and cooperate (unknowingly to the owner of the node) to achieve a malicious mission. In a first phase, an attacker gets control over the botnet nodes and infects them with malicious code. In the second phase, he
-
-launches a distributed denial-of-service attack to a chosen target website to make the target website unavailable to legitimate users. Botnet attacks are among the most serious attack modes in the Internet.
+Malicious Code Attack: A malicious code attack is an attack where an adversary inserts malicious code , e.g., a virus , a worm , or a Trojan horse , into the software in order that the attacker gets partial or full control over the system. This mali­ cious code can be inserted statically, e.g., by a malicious maintenance action ( insider attack ), by the process of downloading a new software version, or dynamically during the operation of a system by accessing an infected Internet site or opening an infected data structure. Spoofing Attack: In a spoofing attack, an adversary masquerades as a legitimate user in order to gain unauthorized access to a system. There are many versions of spoofing attacks in the Internet: replacement of a legitimate web page (e.g., of a bank) by a seemingly identical copy that is under the control of the adversary (also called phishing ), the replacement of the correct address in an email by a fake address, and a man-in-the-middle attack where an intruder intercepts a ses­ sion between two communicating partners and gains access to all exchanged messages. Password Attack: In a password attack, an intruder tries to guess the password that protects the access to a system. There are two versions of password attacks, dic­ tionary attacks and brute force attacks . In a dictionary attack, the intruder guesses commonly used password strings. In a brute force attack, the intruder searches systematically through the full code space of the password until he is successful. Ciphertext Attack : In this attack model, the attacker assumes to have access to the ciphertext and tries to deduce the plaintext and possibly the encryption key from the ciphertext. Modern standardized encryption technologies, such as the AES (Advanced Encryption Standard), have been designed to make the success of ciphertext attacks highly improbable. Denial-of-Service Attack: A denial-of-service attack tries to make a computer sys­ tem unavailable to its users. In any wireless communication scenario, such as a sensor network, an adversary can jam the ether with high-power signals of the appropriate frequency in order to interfere with the communication of the tar­ geted devices. In the Internet, an adversary can send a coordinated burst of ser­ vice requests to a site to overload the site such that legitimate service requests cannot be handled any more. Botnet Attack: A botnet (the word bot is an abbreviation of robot ) is a set of infected networked nodes (e.g., thousands of PC or set top boxes) that are under the con­ trol of an attacker and cooperate (unknowingly to the owner of the node) to achieve a malicious mission. In a first phase, an attacker gets control over the botnet nodes and infects them with malicious code. In the second phase, he launches a distributed denial-of-service attack to a chosen target website to make the target website unavailable to legitimate users. Botnet attacks are among the most serious attack modes in the Internet.
 
 Example: A study in Japan [Tel09, p. 213] showed that it takes about four minutes, on aver­ age, for an unprotected PC to be infected when connected to the Internet and that an esti­ mated 500,000 PCs are infected. A total of around 10 Gbps of traffic from Japanese IP addresses are wasted by botnets (SPAM mail traffic via botnets is not included).
 
 Malicious Training Data Attack : With the advent of machine learning in real-time systems, e.g., for object recognition in self-driving cars, an attacker may take advantage of malicious training data to cause a failure during system operation [Bar10], e.g., a faulty object classification.
 
-# 6.2.3  Cryptographic Methods
+### 6.2.3 Cryptographic Methods
 
 The provision of an adequate level of integrity and confidentiality in embedded systems that are connected to the Internet, the IoT, can only be achieved by the judi­ cious application of cryptographic methods. Compared to general computing sys­ tems, the security architecture of embedded systems must cope with the following two additional constraints:
 
@@ -3077,7 +2941,7 @@ The provision of an adequate level of integrity and confidentiality in embedded 
 
 • Resource constraints : many embedded systems are resource constrained, con­ cerning memory, computational power, and energy.
 
-Basic Cryptographic Concepts   The basic cryptographic primitives that must be supported in any security architecture are symmetric key encryption , public key encryption , hash functions , and random number generation. The proper application of these primitives, supported by a secure key management system , can ensure the authenticity, integrity, and confidentiality of data.
+Basic Cryptographic Concepts The basic cryptographic primitives that must be supported in any security architecture are symmetric key encryption , public key encryption , hash functions , and random number generation. The proper application of these primitives, supported by a secure key management system , can ensure the authenticity, integrity, and confidentiality of data.
 
 In the following paragraphs, we use the term hard to mean: it is beyond the capa­ bilities of the envisioned adversary to break the system within the time period dur­ ing which the security must be provided. The term strong cryptography is used if the system design and the cryptographic algorithm and key selection justify the assumption that a successful attack by an adversary is highly improbable.
 
@@ -3103,24 +2967,23 @@ A cryptographic hash function is an $L$ -deterministic (see Sect. 5.6 ) mathemat
 
 Cryptographic hash functions are required to establish the authenticity and integ­ rity of a plaintext message by an electronic signature.
 
-# Authentication
+#### Authentication
 
 Anyone who knows the sender’s public key can decrypt a message that is encrypted with the sender’s private key. If a trusted relationship between the sender’s public key and the identity of the sender has been ascertained, then the receiver knows that the identified sender has produced the message.
 
-Digital signature   If both the authenticity and integrity of a plaintext message must be established, the plaintext is taken as the input to a cryptographic hash function. The hash value is then encrypted with the author’s private key to generate the digital signature that is added to the plaintext. A receiver who is in the possession of the author’s public key must check whether the decrypted signature is the same bit string as the recalculated hash value of the received text.
+Digital signature If both the authenticity and integrity of a plaintext message must be established, the plaintext is taken as the input to a cryptographic hash function. The hash value is then encrypted with the author’s private key to generate the digital signature that is added to the plaintext. A receiver who is in the possession of the author’s public key must check whether the decrypted signature is the same bit string as the recalculated hash value of the received text.
 
-Privacy   Anyone who uses a receiver’s public key for the encryption of a message can be sure that only the receiver, whose public key has been used, can decipher the message.
-
-Table_6.1   Tabl e_6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1 ­ Table_6.1 Table_6.1 6.1 Table_6.1 Table_6.1 Table_6.1 Table_6.1
+Privacy Anyone who uses a receiver’s public key for the encryption of a message can be sure that only the receiver, whose public key has been used, can decipher the message.
 
 The different implementations of the AES algorithm depicted in Table  6.1 show the tradeoff between silicon area (gate count) and speed (clock cycles) that applies to many algorithms. The resource requirements for public key encryption are higher than listed in Table  6.1 .
 
 Security measures are readily available in today’s silicon solutions for embedded systems. For example, automotive microcontrollers commonly implement hard­ ware security modules (HSM) . [Pot21] gives an overview of the HSM functionality on the Infineon AURIX, discusses its limitations, and compares the HSM with a software-based implementation.
 
 Adapted from [Fel04a]
-![](images/0c33a230cf7ea316679e6c9cc633a12ee0d62bd2f8fafd0545472a7d6df1abc4.jpg)
 
-# 6.2.4  Network Authentication
+> ![](images/0c33a230cf7ea316679e6c9cc633a12ee0d62bd2f8fafd0545472a7d6df1abc4.jpg)
+
+### 6.2.4 Network Authentication
 
 In the following section, we outline a sample of a network authentication protocol that uses public key cryptography to establish the trusted relationship between a new node and its public key . For this purpose we need the trusted security server. Let us assume all nodes know the public cryptographic key of the security server and the security server knows the public cryptographic keys of all nodes a priori.
 
@@ -3136,7 +2999,7 @@ If a node, say node A, wants to send an encrypted message to a yet unknown node,
 
 A network authentication protocol that establishes a secure channel between two nodes by using symmetric cryptography is the aforementioned KERBEROS proto­ col [Neu94].
 
-# 6.2.5  Protection of Real-Time Control Data
+### 6.2.5 Protection of Real-Time Control Data
 
 Let us assume the following attack model for a real-time process-control system in an industrial plant. A number of sensor nodes distributed throughout the plant peri­ odically send real-time sensor values by open wireless channels to a controller node which calculates the set points for the control valves. An adversary wants to sabo­ tage the operation of the plant by sending counterfeit sensor values to the control­ ler node.
 
@@ -3158,16 +3021,12 @@ Example: It is possible to take the signature generation and the signature check
 
 Further research is needed to find effective protection techniques for real-time data under the listed constraints.
 
-# 6.3  Anomaly Detection
+## 6.3 Anomaly Detection
 
-# 6.3.1  What Is an Anomaly?
+### 6.3.1 What Is an Anomaly?
 
-Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 6.4 Figure_6.4 Figure_6.4 Figure_6.4 ­ Figure \_6.4 Figure_6.4 Fi gure_6.4 Figure_6.4 Figure_6.4 Figure_6.4 ­ Figure_6.4 Figure_6.4
-
-![](images/57dbad0030ea5f5f98e4952817d5dcd07f5a16e10db0a280de7fe803a90e4605.jpg)
-Fig. 6.4  Gray zone between intended and erroneous states
-
-Figure_6.4 ­ Figure_6.4 Figure_6.4 Figure_6.4
+> ![](images/57dbad0030ea5f5f98e4952817d5dcd07f5a16e10db0a280de7fe803a90e4605.jpg)
+> Fig.6.4 Gray zone between intended and erroneous states
 
 Application-specific a priori knowledge about the restricted ranges and the known interrelationships of the values of RT entities can be used to detect anomalies that are undetectable by syntactic methods. Sometimes these application-specific mechanisms are called plausibility checks .
 
@@ -3193,7 +3052,7 @@ All detected anomalies should be documented in an anomaly database for fur­ the
 
 In a safety-critical system, every single observed anomaly must be scrutinized in detail until the final cause of the anomaly has been unambiguously identified.
 
-# 6.3.2  Failure Detection
+### 6.3.2 Failure Detection
 
 A failure can only be detected if the observed behavior of a component can be judged in relation to the intended behavior . Failure detection within a system is only possible if the system contains some form of redundant information about the intended behavior. The coverage of the failure detector , i.e., the probability that a failure will be detected if it is present, will increase if the information about the intended behavior becomes more detailed. In the extreme case, where every failure in the behavior of a component must be detected, a second component that provides the basis for the comparison—a golden reference component —is needed, i.e., the redundancy is $100\%$ .
 
@@ -3201,55 +3060,47 @@ Knowledge about the regularity in the activation pattern of a computation can be
 
 In real-time systems, the worst-case execution time (WCET; see Sect. 10.2 ) of all real-time tasks must be known in advance in order to find a viable schedule for the task execution. This WCET can be used by the operating system to monitor the execution time of a task. If a task has not terminated before its WCET expires, a temporal failure of the task has been detected.
 
-# 6.3.3  Error Detection
+### 6.3.3 Error Detection
 
 As mentioned before, an error is an incorrect data structure, e.g., an incorrect state or an incorrect program . We can only detect an error if we have some redundant information about the intended properties of the data structure under investigation. This information can be part of the data structure itself, such as a CRC field, or it can come from some other source, such as a priori knowledge expressed in the form of assertions or a golden channel that provides a result that acts as golden reference data structure .
 
-Syntactic Knowledge About the Code Space   The code space is subdivided into two partitions, one partition encompassing syntactically correct values, with the other containing detectably erroneous codewords. This a priori knowledge about the syn­ tactic structure of valid codewords can be used for error detection. One plus the maximum number of bit errors that can be detected in a codeword is called the Hamming distance of the code. Examples of the use of error-detecting codes are error-detecting codes (e.g., parity bit) in memory, CRC polynomials in data trans­ mission, and check digits at the man-machine interface. Such codes are very effec­ tive in detecting the corruption of a value.
+Syntactic Knowledge About the Code Space The code space is subdivided into two partitions, one partition encompassing syntactically correct values, with the other containing detectably erroneous codewords. This a priori knowledge about the syn­ tactic structure of valid codewords can be used for error detection. One plus the maximum number of bit errors that can be detected in a codeword is called the Hamming distance of the code. Examples of the use of error-detecting codes are error-detecting codes (e.g., parity bit) in memory, CRC polynomials in data trans­ mission, and check digits at the man-machine interface. Such codes are very effec­ tive in detecting the corruption of a value.
 
 Example: Consider the scenario where each symbol of an alphabet of 128 symbols is encoded using a single byte. Because only seven bits $(2^{7}{=}128)$ ) are needed to encode a sym­ bol, the eighth bit can be used as a parity bit to be able to distinguish a valid codeword from an invalid codeword of the 256 codewords in the code space. This code has a Hamming distance of 2.
 
-Duplicate Channels   If two independent deterministic channels calculate two results using the same input data, we can compare the results to detect a failure but cannot decide which one of the two channels is wrong. Fault-injection experiments [Arl03] have shown that the duplicate execution of application tasks at different times is an effective technique for the detection of transient hardware faults. This technique can be applied to increase the failure-detection coverage, even if it cannot be guaranteed that all task instances can be completed twice in the available time interval.
+Duplicate Channels If two independent deterministic channels calculate two results using the same input data, we can compare the results to detect a failure but cannot decide which one of the two channels is wrong. Fault-injection experiments [Arl03] have shown that the duplicate execution of application tasks at different times is an effective technique for the detection of transient hardware faults. This technique can be applied to increase the failure-detection coverage, even if it cannot be guaranteed that all task instances can be completed twice in the available time interval.
 
 There are many different possible combinations of hardware, software, and time redundancy that can be used to detect different types of failures by performing the computations twice. Of course, both computations must be replica determinate ; otherwise, many more discrepancies are detected between the redundant channels than those that are actually caused by faults. The problems in implementing replica-­ deterministic fault-tolerant software have already been discussed in Sect. 5.6 .
 
-Golden Reference   If one of the channels acts as a golden reference that is consid­ ered correct by definition, we can determine if the result produced by the other channel is correct or faulty. Alternatively, we need three channels with majority voting to find out about the single faulty channel, under the assumption that all three channels are synchronized.
+Golden Reference If one of the channels acts as a golden reference that is consid­ ered correct by definition, we can determine if the result produced by the other channel is correct or faulty. Alternatively, we need three channels with majority voting to find out about the single faulty channel, under the assumption that all three channels are synchronized.
 
 Example: David Cummings reports about his experience with error detection in the soft­ ware for NASA’s Mars Pathfinder spacecraft [Cum10]: Because of Pathfinder’s high reli­ ability requirements and the probability of unpredictable hardware errors due to the increased radiation effects in space, we adopted a highly “defensive” programming style. This included performing extensive error checks in the software to detect the possible side effects of radiation-induced hardware glitches and certain software bugs. One member of our team, Steve Stolper, had a simple arithmetic computation in his software that was guar­ anteed to produce an even result (2, 4, 6 and so on) if the computer was working correctly. Many programmers would not bother to check the result of such a simple computation. Stolper, however, put in an explicit test to see if the result was even. We referred to this test as his “two-plus-two-equals-five check.” We never expected to see it fail. Lo and behold, during software testing we saw Stolper’s error message indicating the check had failed. We saw it just once. We were never able to reproduce the failure, despite repeated attempts over many thousands if not millions of iterations. We scratched our heads. How could this hap­ pen, especially in the benign environment of our software test lab, where radiation effects were virtually nonexistent? We looked carefully at Stolper’s code, and it was sound.
 
 What can we learn from this example? We should never build a safety-critical system that relies on the results of a single channel only.
 
-# 6.4  Fault Tolerance
+## 6.4 Fault Tolerance
 
-Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5 ­ Figure_6.5 Figure_6.5 Figure_6.5 Figure_6.5
+Example: Let us assume that the fault hypothesis states that during a specified time inter­ val, a fault of any single component must be tolerated. The case that two components fail simultaneously is thus outside the fault hypothesis, because it is considered to be a rare fault . If the simultaneous failure of two components is detected, then the NGU strategy kicks in. In the NGU strategy, it is assumed that the simultaneous faults are transient and a fast restart of the complete system will bring the system back into a correct state. In order to be able to promptly activate the NGU strategy, we must have a detection mechanism inside the system that detects the violation of the fault hypothesis. A distributed fault-­ tolerant membership service, such as the membership protocol contained in the time-­ triggered protocol (TTP) [Kop93], implements such a detection mechanism.
 
-Example: Let us assume that the fault hypothesis states that during a specified time inter­ val, a fault of any single component must be tolerated. The case that two components fail simultaneously is thus outside the fault hypothesis, because it is considered to be a rare fault . If the simultaneous failure of two components is detected, then the NGU strategy kicks in. In the NGU strategy, it is assumed that the simultaneous faults are transient and a fast restart of the complete system will bring the system back into a correct state. In order
+> ![](images/59492461eb407e947cba433586686d2c7a0056de080d20dbdfdc5563c35d9131.jpg)
+> Fig.6.5 State space of a fault-tolerant system
 
-![](images/59492461eb407e947cba433586686d2c7a0056de080d20dbdfdc5563c35d9131.jpg)
-Fig. 6.5  State space of a fault-tolerant system
+### 6.4.1 Fault Hypotheses
 
-to be able to promptly activate the NGU strategy, we must have a detection mechanism inside the system that detects the violation of the fault hypothesis. A distributed fault-­ tolerant membership service, such as the membership protocol contained in the time-­ triggered protocol (TTP) [Kop93], implements such a detection mechanism.
-
-# 6.4.1  Fault Hypotheses
-
-# Fault-Containment Unit (FCU)
+Fault-Containment Unit (FCU)
 
 The fault hypothesis begins with a specification of the units of failure , i.e., the fault-containment units (FCUs). It is up to quality engineering to ensure that FCUs fail independently. Even a small correlation of the failure rates of FCUs has a tre­ mendous impact on the overall reliability of a system. If a fault can cause more than one FCU to fail, then the probability of such a correlated failure must be carefully analyzed and documented in the fault hypotheses.
 
 Example: In a distributed system, a component, including hardware and software, can be considered to form an FCU. Given proper engineering precautions concerning the power supply and the electrical isolation of process signals have been made, the assumption that components of a distributed system that are physically at a distance will fail independently is realistic. On an MPSoC, an IP core that communicates with other IP cores solely by the exchange of messages can be considered to form an FCU. However, since the IP cores of an MPSoC are physically close together (potential for spatial proximity faults ), having a com­ mon power supply and a common timing source, it is not justified to assume that the failures of IP cores are fully independent. For example, in the aerospace domain, a failure rate of 10 FITs is assumed for a total MPSoC failure, no matter what kind of MPSoC-internal fault-­ containment mechanisms are available.
 
-Table_6.2   Table_6.2 Table_6.2 ­ Table_6.2 Table_6.2 Table_6.2 Table_6.2 Table_6.2
-
-Table 6.2  Order of magnitude of hardware failure rates
-![](images/df447e5605389fd70ef362054ceae04912c94d5a478bcf261c79ddece655cb3f.jpg)
-
-Table_6.2 6.2 Table_6.2 Table_6.2 Table_6.2 Table_6.2 Table_6.2 Table_6.2
+> Table 6.2 Order of magnitude of hardware failure rates
+> ![](images/df447e5605389fd70ef362054ceae04912c94d5a478bcf261c79ddece655cb3f.jpg)
 
 In addition to the failure modes and failure rates, the fault hypothesis must con­ tain a section that discusses the error and failure-detection mechanisms that are designed to detect a failure. This topic is discussed in Sect. 6. 3 .
 
-Recovery Time   The time needed to recover after a transient failure is an important input for a reliability model. In a state-aware design, the recovery time depends on the duration of the ground cycle (see Sect. 6 .6) and the time it takes to restart a component.
+Recovery Time The time needed to recover after a transient failure is an important input for a reliability model. In a state-aware design, the recovery time depends on the duration of the ground cycle (see Sect. 6 .6) and the time it takes to restart a component.
 
-# 6.4.2  Fault-Tolerant Unit
+### 6.4.2 Fault-Tolerant Unit
 
 In order to tolerate the failure of a fault-containment unit (FCU), FCUs are grouped into fault-tolerant units (FTUs). The purpose of an FTU is to mask the failure of a single FCU inside the FTU. If an FCU implements the fail-silent abstraction, then an FTU consists of two FCUs. If no assumptions can be made about the failure behavior of an FCU, i.e., an FCU can exhibit Byzantine failures, then four FCUs linked by two independent communication channels are needed to form an FTU. If we can assume that a fault-tolerant global time is existent at all FCUs and that the communication network contains temporal failures of an FCU, then it is possible to mask the failure of a non-fail-silent FCU by trip li cation, called triple modular redundancy (TMR). TMR is the most important fault-masking method.
 
@@ -3257,17 +3108,11 @@ Although a failure of an FCU is masked by the fault-tolerant mechanism and is th
 
 Example: If the data words in memory are protected by an error-correcting code, then the data words must be accessed periodically in order to correct errors and thus avoid the accu­ mulation of errors.
 
-Figure_6.6   Figure_6.6 Figure_6.6 Figure_6.6 Figure_6.6 Figure_6.6 Figure_6.6 6.6 Figure_6.6 rigure_6.6 Figure_6.6 Figure_6.6 ­ Figure_6.6 ­ Figure_6.6 Figure_6.6 Figure_6.6 Figure_6.6 ­ rigure_6.6 ­ Figure_6.6 Figure_6.6 Figure_6.6 Figure_6.6
+> ![](images/2680127e3b819d33b2444177ed29d15c39ff9642e6ffe0f43376781a888a5915.jpg)
+> Fig.6.6 FTU consisting of two fail-silent FCUs
 
-Figure_6.7   Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 ­ Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7r Figure_6.7 Figure_6.7 Figure_6.7 c­ Figure_6.7 ­ Figure_6.7 6.7 Figure_6.7 Figure_6.7 Figure_6.7 ­ Figure_6.7 Figure_6.7Fig. 6.6
-
-![](images/2680127e3b819d33b2444177ed29d15c39ff9642e6ffe0f43376781a888a5915.jpg)
-Fig. 6.6  FTU consisting of two fail-silent FCUs
-
-![](images/ab90252d3557c63e620f0a6dcd016131316bee0ab758ba2c0f216c8c5bee622c.jpg)
-Fig. 6.7  Two FTUs, each one consisting of three FCUs with voters
-
-Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7 Figure_6.7
+> ![](images/ab90252d3557c63e620f0a6dcd016131316bee0ab758ba2c0f216c8c5bee622c.jpg)
+> Fig.6.7 Two FTUs, each one consisting of three FCUs with voters
 
 A TMR configuration that is set up according to the above specified rules will tolerate an arbitrary failure of any FCU and any communication system, provided that a fault-tolerant global time base is available.
 
@@ -3277,7 +3122,7 @@ In inexact voting , two messages are assumed to contain semantically the same re
 
 Example: Lala [Lal94] reports about the experiences with inexact voting in the Air Force’s F-16 fly-by-wire control system that uses four loosely synchronized redundant computa­ tional channels: The consensus at the outputs of these channels caused considerable head­ aches during the development program in setting appropriate comparison thresholds in order to avoid nuisance false alarms and yet not miss any real faults .
 
-Byzantine-Resilient Fault-Tolerant Unit   If no assumption about the failure mode of an FCU can be made and no fault-tolerant global time base is available, four components are needed to form a fault-tolerant unit (FTU) that can tolerate a single Byzantine (or malicious ) fault. These four components must execute a Byzantine-­ resilient agreement protocol to agree on a malicious failure of a single component. Theoretical studies [Pea80] have shown that these Byzantine agreement protocols have the following requirements to tolerate the Byzantine failures of $k$ components:
+Byzantine-Resilient Fault-Tolerant Unit If no assumption about the failure mode of an FCU can be made and no fault-tolerant global time base is available, four components are needed to form a fault-tolerant unit (FTU) that can tolerate a single Byzantine (or malicious ) fault. These four components must execute a Byzantine-­ resilient agreement protocol to agree on a malicious failure of a single component. Theoretical studies [Pea80] have shown that these Byzantine agreement protocols have the following requirements to tolerate the Byzantine failures of $k$ components:
 
 (i) An FTU must consist of at least $3k{+}I$ components.
 
@@ -3287,27 +3132,25 @@ Byzantine-Resilient Fault-Tolerant Unit   If no assumption about the failure m
 
 An example of an architecture that tolerates Byzantine failures of the compo­ nents is given in [Hop78].
 
-# 6.4.3  The Membership Service
+### 6.4.3 The Membership Service
 
 The failure of an FTU must be reported in a consistent manner to all operating FTUs with a low latency. This is the task of the membership service . A point in real time when the membership of a component can be established is called a membership point of the component. A small temporal delay between the membership point of a component and the instant when all other components of the ensemble are informed in a consistent manner about the current membership is critical for the correct oper­ ation of many safety-relevant applications. The consistent activation of a never-­ give-­up (NGU) strategy in case the fault hypothesis is violated is another important function of the membership service.
 
-Figure_6.8 Figure_6.8 Figure_6.8 Figure_6.8 Figure_6.8 6.8 Figure_6.8 Figure_6.8 ­ Figure_6.8 Figure_6.8 Figure_6.8 rigure_6.8 Figure_6.8 ­ Figure_6.8 Figure_6.8
+> Figure_6.8
 
-ET Architecture   In an ET architecture, messages are sent only when a significant event happens at a component. Silence of a component in an ET architecture means that either no significant event has occurred at the component or a fail-silent failure has occurred (the loss of communication or the fail-silent shutdown of the compo­ nent). Even if the communication system is assumed to be perfectly reliable, it is not possible to distinguish when there is no activity at the component from the situation when a silent component failure occurs in an ET architecture. An additional time-­ triggered service, e.g., a periodic watchdog service (see Sect. 9.7.4 ), must be imple­ mented in an ET architecture to solve the membership problem.
+ET Architecture In an ET architecture, messages are sent only when a significant event happens at a component. Silence of a component in an ET architecture means that either no significant event has occurred at the component or a fail-silent failure has occurred (the loss of communication or the fail-silent shutdown of the compo­ nent). Even if the communication system is assumed to be perfectly reliable, it is not possible to distinguish when there is no activity at the component from the situation when a silent component failure occurs in an ET architecture. An additional time-­ triggered service, e.g., a periodic watchdog service (see Sect. 9.7.4 ), must be imple­ mented in an ET architecture to solve the membership problem.
 
-TT Architecture   In a TT architecture, the periodic message-send times are the membership points of the sender. Let us assume that a failed component remains out of service for an interval with duration greater than the maximum time interval between two membership points. Every receiver knows a priori when a message of a sender is supposed to arrive and interprets the arrival of the message as a life sign at the membership point of the sender [Kop91]. It is then possible to conclude, from the arrival of the expected messages at two consecutive membership points, that the component was alive during the complete interval delimited by these two member­ ship points (there is a tacit assumption that a transient ly failed node does not recover within this interval). The membership of the FTUs in a cluster at any point in time can thus be established with a delay of one round of information exchange. Because the delay of one round of information exchange is known a priori in a TT ­architecture, it is possible to derive an a priori bound for the temporal accuracy of the member­ ship service.
+TT Architecture In a TT architecture, the periodic message-send times are the membership points of the sender. Let us assume that a failed component remains out of service for an interval with duration greater than the maximum time interval between two membership points. Every receiver knows a priori when a message of a sender is supposed to arrive and interprets the arrival of the message as a life sign at the membership point of the sender [Kop91]. It is then possible to conclude, from the arrival of the expected messages at two consecutive membership points, that the component was alive during the complete interval delimited by these two member­ ship points (there is a tacit assumption that a transient ly failed node does not recover within this interval). The membership of the FTUs in a cluster at any point in time can thus be established with a delay of one round of information exchange. Because the delay of one round of information exchange is known a priori in a TT ­architecture, it is possible to derive an a priori bound for the temporal accuracy of the member­ ship service.
 
-# 6.5  Robustness and Resilience
+## 6.5 Robustness and Resilience
 
-# 6.5.1  The Concept of Robustness
+### 6.5.1 The Concept of Robustness
 
 In the domain of embedded systems, we consider a system to be robust if the sever­ ity of the consequences of a fault is inversely proportional to the probability of fault occurrence , i.e., faults that are expected to occur frequently should have only a minor effect on the quality of service of the system. Irrespective of the concrete type and source of a fault, a robust embedded system will try to recover from the effects of a fault as quickly as possible in order to minimize the impact of the fault on the user. As noted above in Sect. 6.1 , the immediate consequence of a fault is an error, i.e., an unintended state. If we detect and correct the error before it has had a serious effect on the quality of service, we have increased the robustness of the system. Design for robustness is not concerned with finding the detailed cause of a failure— this is the task of the diagnostic subsystem —but rather with the fast restoration of the normal system service after a fault has occurred.
 
 The inherent periodicity of many real-time control systems and multimedia sys­ tems helps in the design for robustness. Due to the constrained physical power of most actuators, a single incorrect output in a control cycle will—in most cases—not result in an abrupt change of a physical set point. If we can detect and correct the error within the next control cycle, the effect of the fault on the control application will be small. Similar arguments hold for multimedia system. If a single frame contains some incorrect pixels, or even if a complete frame is lost, but the next frame in sequence is correct again, then the impact of a fault on the quality of the multimedia experience is limited.
 
-Figure_6.9 6.9 Figure_6.9 Figure_6.9 Figure_6.9 t Figure_6.9 ­ Figure_6.9 Figure_6.9 t Figure_6.9 Figure_6.9 Figure_6.9 Figure_6.9 Figure_6.9 Figure_6.9
-
-In a periodic application such as a control application, every control cycle starts with reading the g-state and the input data, then the control algorithm is calculated, and finally the new set points and the new g-state are produced (see Fig. 3.9 ). A transient fault in one control cycle can only propagate to the next control cycle if the g-state has been contaminated by the fault. In a robust system, the operational component must external ize its $\mathrm{g}.$ -state in every control cycle such that the monitor­ ing component can check the plausibility of the g-state and perform a corrective action in case a severe anomaly has been detected in the g-state. The corrective action can consist of resetting the operational component and restarting it with a repaired $\mathrm{g}.$ -state.
+In a periodic application such as a control application, every control cycle starts with reading the g-state and the input data, then the control algorithm is calculated, and finally the new set points and the new g-state are produced (see Fig.3.9 ). A transient fault in one control cycle can only propagate to the next control cycle if the g-state has been contaminated by the fault. In a robust system, the operational component must external ize its $\mathrm{g}.$ -state in every control cycle such that the monitor­ ing component can check the plausibility of the g-state and perform a corrective action in case a severe anomaly has been detected in the g-state. The corrective action can consist of resetting the operational component and restarting it with a repaired $\mathrm{g}.$ -state.
 
 In a safety-critical application, this two-channel approach —one channel pro­ duces a result and the other channel, the safety monitor , monitors whether the result is plausible—is absolutely essential. Even if the software has been proven correct, it cannot be assumed that there will be no transient faults during the execution of the hardware. The IEC 61508 standard on functional safety requires such a two-­channel approach, one channel for the normal function and another independent channel to ensure the functional safety of a control system (see also Sect. 11.4 ).
 
@@ -3317,9 +3160,10 @@ In a fail-operational application, a non-fail-silent failure of the safety monit
 
 Example: [Kop21] presents a fail-operational architecture for self-driving cars. In this architecture, a monitor (the monitoring subsystem—MSS) continually checks the opera­ tional FCU (the computer-controlled driving subsystem—CCDSS). If the MSS or the CCDSS is faulty, a fallback FCU (the critical event handling subsystem—CEHSS) takes over. A fault-tolerant decision subsystem (FTDSS) ensures that all actuators consistently use either the output of the $\mathrm{CCDSS+MSS}$ pair or the CEHSS.
 
-![](images/5b691ebe8f7380b6d4ea20e7241e105b116b31fb7a4083989e62b43d73c93adc.jpg)
+> ![](images/5b691ebe8f7380b6d4ea20e7241e105b116b31fb7a4083989e62b43d73c93adc.jpg)
+> Figure_6.9
 
-# 6.5.2  The Concept of Resilience
+### 6.5.2 The Concept of Resilience
 
 Resilience is defined as the persistence of dependability when facing changes [Lap08]. These changes can be classified in three dimensions: nature (functional, environmental, or technological) , prospect (foreseen or unforeseen) , and timing (seconds to years) . Resilience is, thus, a broad concept. Indeed, several concepts discussed in this book directly contribute to the resilience of a system.
 
@@ -3331,17 +3175,17 @@ Example: Autonomic components (see Sect. 13.3.5 ) learn from their deployment an
 
 Despite this broad definition of resilience, the close concept of cyber-resiliency has emerged in the area of security [NIS21]: c yber resiliency is the ability to antici­ pate, withstand, recover from, and adapt to adverse conditions, stresses, attacks, or compromises on systems that use or are enabled by cyber resources. Cyber-­ resiliency is resilience concerning unforeseen changes in the environment, typically associated with security attacks.
 
-# 6.6  Component Reintegration
+## 6.6 Component Reintegration
 
 Most computer system faults are transient, i.e., they occur sporadically for a very short interval, corrupt the state, but do not permanently damage the hardware. If the service of the system can be reestablished quickly after a transient fault has occurred, then in most cases the user will not be seriously affected by the consequences of the fault. In many embedded applications, the fast reintegration of a failed component is thus of paramount importance and must be supported by proper architectural mechanisms.
 
-# 6.6.1  Finding a Reintegration Point
+### 6.6.1 Finding a Reintegration Point
 
 While a failure can occur at an arbitrary moment outside the control of the system designer, the system designer can plan the proper point of reintegration of a repaired component. The key issue during the reintegration of a component in a real-time system is to find a future point in time when the state of the component is in syn­ chrony with the component’s environment, i.e., the other components of the cluster and the physical plant. Because real-time data are invalidated by the passage of time, rolling back to a past checkpoint can be futile: it is possible and probable that the progression of time has already invalidated the checkpoint information (see also Table 4.1 ).
 
 Reintegration is simplified if the state that must be reloaded into the re integrating component is of small size and fits into a single message. Since the size of the state has a relative minimum immediately after the completion of an atomic operation, this is an ideal instant for the reintegration of a component. In Sect. 4.2.3 we have introduced the notion of the $g$ -state (ground state) to refer to the state at the reinte­ gration instant . In cyclic systems—many embedded control and multimedia sys­ tems are cyclic—an ideal reintegration instant of a component is at the beginning of a new cycle. The temporal distance between two consecutive reintegration instants, the reintegration cycle, is then identical to the duration of the control cycle. If the g-state is empty at the reintegration instant, then the reintegration of a repaired com­ ponent is trivial at this moment. In many situations, however, there is no instant during the lifetime of a component when its $\mathrm{g}.$ -state is completely empty.
 
-# 6.6.2  Minimizing the Ground State
+### 6.6.2 Minimizing the Ground State
 
 After a cyclic reintegration instant has been established, the g-state at this selected instant must be analyzed and minimized to simplify the reintegration procedure.
 
@@ -3359,15 +3203,15 @@ Example: When a traffic control system is restarted, it is possible to enforce a
 
 In a system with replicated components in an FTU, the $\mathrm{g}.$ -state data that cannot be retrieved directly from the environment must be communicated from one compo­ nent of the FTU to the other components of the FTU by means of a g-state message. In a TT system, sending such a $\mathrm{g}.$ -state message should be part of the standard com­ ponent cycle.
 
-# 6.6.3  Component Restart
+### 6.6.3 Component Restart
 
-The restart of a component after a failure has been detected by a monitoring compo­ nent (Fig.  6.10 ) can proceed as follows: (i) The monitoring component sends a trusted reset message to the TII interface of the operational component to enforce a hardware reset. (ii) After the reset, the operational component performs a self-test and verifies the correctness of its core image (the job ) by checking the provided signatures in the core image data structures. If the core image is erroneous, a copy of the static core image must be reloaded from stable storage. (iii) The operational component scans all sensors and waits for a cluster cycle to acquire all available current information about its environment. After an analysis of this information, the Fig. 6.10  Partitioning of the $\mathrm{g}.$ -state
+The restart of a component after a failure has been detected by a monitoring compo­ nent (Fig.6.10 ) can proceed as follows: (i) The monitoring component sends a trusted reset message to the TII interface of the operational component to enforce a hardware reset. (ii) After the reset, the operational component performs a self-test and verifies the correctness of its core image (the job ) by checking the provided signatures in the core image data structures. If the core image is erroneous, a copy of the static core image must be reloaded from stable storage. (iii) The operational component scans all sensors and waits for a cluster cycle to acquire all available current information about its environment. After an analysis of this information, the Fig.6.10 Partitioning of the $\mathrm{g}.$ -state
 
-![](images/17063535bd36e9acaa46ca85e814cf6f064a11824283ec3111c27849cfc42e02.jpg)
+> ![](images/17063535bd36e9acaa46ca85e814cf6f064a11824283ec3111c27849cfc42e02.jpg)
 
 operational component decides the mode of the controlled object and selects the restart vector that must be enforced on the environment. (iv) Finally, after the opera­ tional component has received the g-state information that is relevant at the next reintegration instant from the monitoring component, the operational component starts its tasks in synchrony with the rest of the cluster and its physical environment. Depending on the hardware performance and the characteristics of the real-time operating system, the time interval between the arrival of the reset message and the arrival of the g-state information message can be significantly longer than the dura­ tion of a reintegration cycle. In this case, the monitoring component must perform a far-reaching state estimation to establish a relevant g-state at the proper reintegra­ tion point.
 
-# Points to Remember
+## Points to Remember
 
 • A fault is the adjudged cause of an error or failure.
 
@@ -3411,11 +3255,11 @@ operational component decides the mode of the controlled object and selects the 
 
 • In a safety-critical application, a two-channel approach , in which one channel produces a result and the other channel monitors whether the result is plausible, is absolutely essential.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The seminal paper by Avizienis, Laprie, Randell, and Landwehr [Avi04] introduces the fundamental concepts in the field of dependability and security. Anomaly detec­ tion is covered in the comprehensive survey by Chandola [Cha09], and online fail­ ure prediction is the topic of [Sal10]. Several industries have developed industry-specific cyber security standards, e.g., ISO/SAE 21434 for automotive [ISO21] or IEC 62443 for automation and control systems [IEC21]. The yearly DSN conference (organized by the IEEE and the IFIP WG 10.4) is the most impor­ tant forum for presenting research papers in the field of dependable and secure computing.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 6.1 Give the precise meaning of the terms failure, error, and fault. What are the characteristics of an FCU?
 
@@ -3451,13 +3295,13 @@ The seminal paper by Avizienis, Laprie, Randell, and Landwehr [Avi04] introduces
 
 # Chapter 7 Real-Time Communication
 
-# Overview
+## Overview
 
 Many real-time systems are distributed computer systems. Thus, they require a real-­ time communication subsystem that ensures reliable and timely message exchange to allow the distributed computer system to operate as a coordinated whole. We call the real-time communication subsystem the real-time network. A real-time network is fundamentally different from communication networks found in common IT infrastructures. It must ensure timely message deliveries that are not required in IT networks. In the past many different real-time networks have been designed and deployed. Often, particular real-time networks are highly specialized to specific industries and only address niche markets. However, with standardization, more and more industries moved toward only a few solutions, and this adoption process of standard solutions is still ongoing. While standardized Ethernet-based real-time net­ works have been in use for some time now, only rather recently key real-time func­ tions have been incorporated in the IEEE 802.1 set of standards by the time-sensitive networking (TSN) task group. However, although today’s Ethernet is suitable as a real-time network for many industries, it is still a long way to reach market domi­ nance and interoperability comparable to office equipment.
 
 We start this chapter with the definition of a real-time network and discuss its typical requirements, timeliness being the most important one. Although many dif­ ferent real-time networks exist, they share common design principles. We discuss these based on a simple model that interprets the real-time network as a set of resources used for message exchange. Our simple model distinguishes three types of messages, event-triggered, rate-constrained, and time-triggered, and a real-time net­ work may support one or many of these message types. We also mention general design limitations and pitfalls. The remainder of the chapter uses one section per message type, for which we first discuss general aspects, followed by concrete examples. For event-triggered messages, we discuss basic Ethernet and CAN. Next, Avionics Full-Duplex Switched Ethernet (AFDX) and Audio/Video Bridging (AVB) illustrate rate-constrained messages. Finally, we discuss the time-triggered protocol (TTP), time-triggered Ethernet (TTEthernet), and time-sensitive networking (TSN) as examples for real-time networks supporting time-triggered messages.
 
-# 7.1  Requirements
+## 7.1 Requirements
 
 Modern real-time systems often implement a distributed computer system where a real-time network interconnects spatially distributed nodes. A real-time network is necessary when:
 
@@ -3471,73 +3315,73 @@ Modern real-time systems often implement a distributed computer system where a r
 
 The real-time network performs all real-time communication between distrib­ uted nodes as defined by the real-time system and may use heterogeneous technolo­ gies and paradigms. The real-time network also includes transmit and receive subsystems at the nodes. Real-time networks must maintain the properties of real-­ time data elaborated in the previous chapters. Thus, real-time networks must satisfy architectural requirements that substantially differ from the ones of non-real-time communication services.
 
-# 7.1.1  Timeliness
+### 7.1.1 Timeliness
 
 The most important requirement of a real-time network is guaranteed message-­ transport latency with bounded message-transport jitter .
 
-Guaranteed Message-Transport Latency   A network is a real-time network, if and only if a bound for the worst-case message-transport latency for time-critical mes­ sages can be determined by analysis, and this bound holds during operation with $a$ sufficiently high probability. In hard real-time systems, said probability evolves toward a requirement of a de facto guarantee. For example, a common reliability requirement for ultrahigh dependable systems (e.g., airplanes) requires a failure rate of $10^{-9}$ failures/hour. It is this guarantee that common IT network technologies do not meet. The target values for the latency and its bound, on the other hand, are determined by the needs of the specific real-time application. It is, thus, also the concrete real-time application that determines whether a particular network tech­ nology is suitable as a real-time network or not. In many real-time systems, mini­ mizing the worst-case message-transport latency will directly yield quality improvements on the system level. For example, if the real-time system implements a real-time transaction (see Sect. 1.7.3 ) that starts with the acquisition of sensor values and terminates with providing output to an actuator, minimizing the message-­ transport latency reduces the response time of the real-time system’s control loop and thereby improves control stability and control quality.
+Guaranteed Message-Transport Latency A network is a real-time network, if and only if a bound for the worst-case message-transport latency for time-critical mes­ sages can be determined by analysis, and this bound holds during operation with $a$ sufficiently high probability. In hard real-time systems, said probability evolves toward a requirement of a de facto guarantee. For example, a common reliability requirement for ultrahigh dependable systems (e.g., airplanes) requires a failure rate of $10^{-9}$ failures/hour. It is this guarantee that common IT network technologies do not meet. The target values for the latency and its bound, on the other hand, are determined by the needs of the specific real-time application. It is, thus, also the concrete real-time application that determines whether a particular network tech­ nology is suitable as a real-time network or not. In many real-time systems, mini­ mizing the worst-case message-transport latency will directly yield quality improvements on the system level. For example, if the real-time system implements a real-time transaction (see Sect. 1.7.3 ) that starts with the acquisition of sensor values and terminates with providing output to an actuator, minimizing the message-­ transport latency reduces the response time of the real-time system’s control loop and thereby improves control stability and control quality.
 
-Bounded Message-Transport Jitter   The jitter is the difference between the worst-­ case and the best-case message-transport latencies. A large jitter has a negative effect on the duration of the action delay (see Sect. 5.5.1 ) and the precision of the clock synchronization (see Sect. 3.1.3 ).
+Bounded Message-Transport Jitter The jitter is the difference between the worst-­ case and the best-case message-transport latencies. A large jitter has a negative effect on the duration of the action delay (see Sect. 5.5.1 ) and the precision of the clock synchronization (see Sect. 3.1.3 ).
 
-Time-Measurement Service   A real-time image (see Sect. 5.4 ) must be temporally accurate at the instant of use (see Sect. 5.4 ), and a node using the real-time image must be able to check its temporal accuracy. The real-time network must, thus, sup­ port distributed time measurement because, in a distributed computer system, the observation of a real-time entity and the use of its associated real-time image will often happen at different nodes. A real-time network that implements a clock syn­ chron iz ation protocol, e.g., IEEE 1588, can use time-stamps to realize a time-­ measurement service. The necessary quality of the clock synchronization protocol (precision, tolerance/robustness to failures and attacks) is determined by the needs of the real-time system.
+Time-Measurement Service A real-time image (see Sect. 5.4 ) must be temporally accurate at the instant of use (see Sect. 5.4 ), and a node using the real-time image must be able to check its temporal accuracy. The real-time network must, thus, sup­ port distributed time measurement because, in a distributed computer system, the observation of a real-time entity and the use of its associated real-time image will often happen at different nodes. A real-time network that implements a clock syn­ chron iz ation protocol, e.g., IEEE 1588, can use time-stamps to realize a time-­ measurement service. The necessary quality of the clock synchronization protocol (precision, tolerance/robustness to failures and attacks) is determined by the needs of the real-time system.
 
-# 7.1.2  Dependability and Security
+### 7.1.2 Dependability and Security
 
-Communication Reliability   Messages in transport may be lost or corrupted in the time and value domain. Therefore, real-time networks often implement redundancy mechanisms. Lost messages are compensated by redundancy in space, i.e., trans­ mission along disjoint communication paths, or time, i.e., sequential message retransmission s. In real-time systems that take benefit of low message-transport latencies, redundancy in space is preferable since redundant copies of a message can be communicated in parallel. Corrupted messages are typically addressed by data redundancy within the message itself. Data redundancy techniques to improve message integrity are error-detecting and error-correcting codes, time-stamps, and sequence numbers. We call communication reliability the probability of successful message transport by the real-time network after applying all implemented message-­ transport redundancy mechanisms.
+Communication Reliability Messages in transport may be lost or corrupted in the time and value domain. Therefore, real-time networks often implement redundancy mechanisms. Lost messages are compensated by redundancy in space, i.e., trans­ mission along disjoint communication paths, or time, i.e., sequential message retransmission s. In real-time systems that take benefit of low message-transport latencies, redundancy in space is preferable since redundant copies of a message can be communicated in parallel. Corrupted messages are typically addressed by data redundancy within the message itself. Data redundancy techniques to improve message integrity are error-detecting and error-correcting codes, time-stamps, and sequence numbers. We call communication reliability the probability of successful message transport by the real-time network after applying all implemented message-­ transport redundancy mechanisms.
 
-Fault Containment   The real-time network must implement traffic-policing meth­ ods when multiple nodes use the same network resource (e.g., they are connected through the same physical bus or share the same network switch). Otherwise, faulty nodes may use the resource beyond their specified quota and limit its use to non-­ faulty nodes. Traffic-policing methods can be implemented at the boundary of the real-time network as part of the distributed nodes themselves, called fault contain­ ment at the source . Here, an independent component local to the node monitors the node’s communication behavior and intervenes if this behavior diverges from its specification. For example, it may shut down the complete node. On the other hand, traffic policing will often be implemented inside the real-time network, e.g., in a network switch. A common traffic-policing method, both at the source and in the network , is the leaky bucket algorithm , which only allows a node to transmit a speci­ fied amount of data within a specified interval.
+Fault Containment The real-time network must implement traffic-policing meth­ ods when multiple nodes use the same network resource (e.g., they are connected through the same physical bus or share the same network switch). Otherwise, faulty nodes may use the resource beyond their specified quota and limit its use to non-­ faulty nodes. Traffic-policing methods can be implemented at the boundary of the real-time network as part of the distributed nodes themselves, called fault contain­ ment at the source . Here, an independent component local to the node monitors the node’s communication behavior and intervenes if this behavior diverges from its specification. For example, it may shut down the complete node. On the other hand, traffic policing will often be implemented inside the real-time network, e.g., in a network switch. A common traffic-policing method, both at the source and in the network , is the leaky bucket algorithm , which only allows a node to transmit a speci­ fied amount of data within a specified interval.
 
-Message Integrity and Confidentiality   While message integrity is essential for communication reliability, the confidentiality of real-time messages has been rarely required by real-time systems in the past. However, real-time message confidential­ ity must be reconsidered because new attacks are enabled as real-time systems more and more connect to IT networks and even to the Internet. While the monetary value of information content of single real-time messages may be limited, it scales up with the consolidation of multiple, different messages. For example, an attacker who consolidates real-time messages in an industrial production plant may learn confidential procedures in process automation. Therefore, a security architecture may require network-level cryptography in sensitive parts of the real-time network. Protocols using block ciphers such as MACsec (IEEE 802.1AE) can be a good match for real-time systems as they can cause acceptable additional message-­ transport latency.
+Message Integrity and Confidentiality While message integrity is essential for communication reliability, the confidentiality of real-time messages has been rarely required by real-time systems in the past. However, real-time message confidential­ ity must be reconsidered because new attacks are enabled as real-time systems more and more connect to IT networks and even to the Internet. While the monetary value of information content of single real-time messages may be limited, it scales up with the consolidation of multiple, different messages. For example, an attacker who consolidates real-time messages in an industrial production plant may learn confidential procedures in process automation. Therefore, a security architecture may require network-level cryptography in sensitive parts of the real-time network. Protocols using block ciphers such as MACsec (IEEE 802.1AE) can be a good match for real-time systems as they can cause acceptable additional message-­ transport latency.
 
-Configuration Integrity   As we build more and more complex real-time systems, the complexity of their real-time networks increases as well. This complexity is also reflected in the growing configuration space of real-time networks. The configura­ tion integrity of real-time networks must also be preserved in presence of failures and attacks. In particular, only trusted entities after successful authentication may reconfigure the real-time network.
+Configuration Integrity As we build more and more complex real-time systems, the complexity of their real-time networks increases as well. This complexity is also reflected in the growing configuration space of real-time networks. The configura­ tion integrity of real-time networks must also be preserved in presence of failures and attacks. In particular, only trusted entities after successful authentication may reconfigure the real-time network.
 
-# 7.1.3  Flexibility
+### 7.1.3 Flexibility
 
 A real-time system may inherently require an ability to add and remove nodes or even entire subsystems, e.g., adding and removing machines in a production hall ( plug-and-produce ), a maintenance procedure to replace a node while the system operates, or coupling a spacecraft to a space station. Furthermore, the requirements on a real-time system may change over time, causing hardware/software updates.
 
-Changing Communication Demands   A real-time network can support intentional changes in the communication demands but must maintain the worst-case message-­ transport latencies of real-time messages from distributed applications that are not addressed by this change. Naturally, changes can only be supported as far as they do not exceed physical or technological limitations (e.g., the total communication bandwidth cannot be exceeded). A communication change can also require recon­ figuring the message transport of non-affected applications. It depends on the con­ crete real-time system if such a change is permitted during system operation or a system maintenance phase or not permitted at all.
+Changing Communication Demands A real-time network can support intentional changes in the communication demands but must maintain the worst-case message-­ transport latencies of real-time messages from distributed applications that are not addressed by this change. Naturally, changes can only be supported as far as they do not exceed physical or technological limitations (e.g., the total communication bandwidth cannot be exceeded). A communication change can also require recon­ figuring the message transport of non-affected applications. It depends on the con­ crete real-time system if such a change is permitted during system operation or a system maintenance phase or not permitted at all.
 
-Network Engineering vs. Plug-and-Play   Different real-time networks provide dif­ ferent degrees of automation in their reconfiguration response to changing commu­ nication demands. Network engineering refers to a manual or computer-aided generation of a new communication configuration. On the other hand, ­ plug-and-­play is the ability of a real-time network to accommodate a change in communication demand without human interaction. While real-time networks like AVB (IEEE 802.1 Audio/Video Bridging) provide plug-and-play, its use in safety-critical sys­ tems is a risk.
+Network Engineering vs. Plug-and-Play Different real-time networks provide dif­ ferent degrees of automation in their reconfiguration response to changing commu­ nication demands. Network engineering refers to a manual or computer-aided generation of a new communication configuration. On the other hand, ­ plug-and-­play is the ability of a real-time network to accommodate a change in communication demand without human interaction. While real-time networks like AVB (IEEE 802.1 Audio/Video Bridging) provide plug-and-play, its use in safety-critical sys­ tems is a risk.
 
-# 7.1.4  Communication Bandwidth and Cost Efficiency
+### 7.1.4 Communication Bandwidth and Cost Efficiency
 
-Communication Bandwidth   The required communication bandwidth for a real-­ time image is determined by its size and maximum update frequency. This required bandwidth can vary tremendously with the type of real-time entity and use case, e.g., from a few bit/sec for a room-temperature sensor at $10\:\mathrm{Hz}$ to multiple Gbit/sec for an ultrahigh-definition camera for self-driving cars.
+Communication Bandwidth The required communication bandwidth for a real-­ time image is determined by its size and maximum update frequency. This required bandwidth can vary tremendously with the type of real-time entity and use case, e.g., from a few bit/sec for a room-temperature sensor at $10\:\mathrm{Hz}$ to multiple Gbit/sec for an ultrahigh-definition camera for self-driving cars.
 
 The acronym SWaP $C$ stands for the system aspects: size, weight, power, and cost . While power and cost are important factors in basically every real-time sys­ tem, weight and size are especially crucial in mobile real-time systems like automo­ biles, airplanes, or spacecrafts.
 
-Cost Efficiency   A real-time network must satisfy the requirements discussed in this chapter cost-efficiently. There is a cross-industry trend toward converged net­ works in real-time systems: a single homogeneous network technology serves mul­ tiple, if not all, distributed applications in the real-time system. Converged networks typically increase network utilization and, therefore, also improve cost efficiency. The IEEE 802.1 Time-Sensitive Network (IEEE 802.1 TSN) is a real-time network technology for converged networks (see Sec. 7.5.3 ).
+Cost Efficiency A real-time network must satisfy the requirements discussed in this chapter cost-efficiently. There is a cross-industry trend toward converged net­ works in real-time systems: a single homogeneous network technology serves mul­ tiple, if not all, distributed applications in the real-time system. Converged networks typically increase network utilization and, therefore, also improve cost efficiency. The IEEE 802.1 Time-Sensitive Network (IEEE 802.1 TSN) is a real-time network technology for converged networks (see Sec. 7.5.3 ).
 
-# 7.2  Design Principles and Pitfalls
+## 7.2 Design Principles and Pitfalls
 
 There are many different ways to implement a real-time network, but the number of underlying design principles is quite limited. Following the discussion in Chap. 2 , these design principles serve as a simple model that captures all system-level relevant communication aspects. In this simple model, we consider the real-time network as an abstract set of resources and a basic message-transport service (BMTS) that transports messages from a sending component to one or many receiv­ ing components by more or less coordinated usage of said resources. BMTS differ by the message types they support (see Sect. 7.2.2 ). On top of the BMTS, higherlayer protocols can be implemented (see Sect. 14.4.2 ).
 
-# 7.2.1  Real-Time Network Model
+### 7.2.1 Real-Time Network Model
 
 In the simple model, the real-time network is a set of resources, and only one sender can use a resource at a time.
 
-Individual Resource   There is only one sender in the real-time system for each individual resource. The resource is, for example, a direct communication link between a sender and a receiver.
+Individual Resource There is only one sender in the real-time system for each individual resource. The resource is, for example, a direct communication link between a sender and a receiver.
 
-Shared Resource   Multiple senders share the resource. The resource is, for exam­ ple, a physical bus , a network hub , or message buffers in a network switch.
+Shared Resource Multiple senders share the resource. The resource is, for exam­ ple, a physical bus , a network hub , or message buffers in a network switch.
 
 Example—Resources in Switched Ethernet: Nodes connect with bidirectional communi­ cation links to Ethernet switches. The unidirectional portion of the link from the sender to a switch is an individual resource . All other communication links and the message buffers in the network switches are shared resources .
 
-# 7.2.2  Message Types
+### 7.2.2 Message Types
 
 Nodes use the resources by exchanging messages, and we can distinguish the fol­ lowing message types.
 
-Event-Triggered Messages   The sender produces messages whenever a significant event occurs. These events can be outside the real-time system’s sphere of control, and, thus, no minimum time in between messages can be established. Consequently, the total number of messages from all the senders may reach or exceed the resource capacity of the real-time network, causing long message-transport latencies and even message loss. A real-time network cannot provide temporal guarantees for message-transport latencies for event-triggered messages.
+Event-Triggered Messages The sender produces messages whenever a significant event occurs. These events can be outside the real-time system’s sphere of control, and, thus, no minimum time in between messages can be established. Consequently, the total number of messages from all the senders may reach or exceed the resource capacity of the real-time network, causing long message-transport latencies and even message loss. A real-time network cannot provide temporal guarantees for message-transport latencies for event-triggered messages.
 
-Rate-Constrained Messages   The sender produces messages and guarantees not to exceed a maximum message rate, defined a priori. Based on the total of the message rates, the real-time network can dimension the capacity of its resources accordingly, and bounds for the worst-case message-transport latencies can be calculated off-­ line. However, the message-transport jitter can be high because rate-constrained messages from different senders may come sparsely or in a burst .
+Rate-Constrained Messages The sender produces messages and guarantees not to exceed a maximum message rate, defined a priori. Based on the total of the message rates, the real-time network can dimension the capacity of its resources accordingly, and bounds for the worst-case message-transport latencies can be calculated off-­ line. However, the message-transport jitter can be high because rate-constrained messages from different senders may come sparsely or in a burst .
 
-Time-Triggered Messages   The sender produces messages at a priori defined points in a synchronized global time. These points in time from different senders can be coordinated, allowing the real-time network to dimension its resource capacities. In contrast to rate-constrained messages, the real-time network can minimize its resources by this coordination. The real-time network can also a priori define points in time when to temporarily buffer and forward time-triggered messages as well as the points in time of reception of the final receiving nodes. Consequently, the message-­transport jitter can be reduced to the precision of the synchronized global time.
+Time-Triggered Messages The sender produces messages at a priori defined points in a synchronized global time. These points in time from different senders can be coordinated, allowing the real-time network to dimension its resource capacities. In contrast to rate-constrained messages, the real-time network can minimize its resources by this coordination. The real-time network can also a priori define points in time when to temporarily buffer and forward time-triggered messages as well as the points in time of reception of the final receiving nodes. Consequently, the message-­transport jitter can be reduced to the precision of the synchronized global time.
 
 The act of producing rate-constrained messages or time-triggered messages from any given input is called traffic shaping .
 
-# 7.2.3  Flow Control
+### 7.2.3 Flow Control
 
 While the previous message types are defined based on the sender’s behavior, in any communication scenario, the receiver and the limited resource capacities of the net­ work determine the maximum speed of communication. Flow control is, thus, con­ cerned with the control of the speed of information flow between one or a multitude of senders and a receiver (or the network—in this case, the term congestion control is sometimes used) in such a manner that the receiver (or the network) can keep up with the sender(s). While the a priori information of rate-constrained and time-­ triggered messages allow implicit flow control , flow control for event-triggered messages requires explicit flow-control mechanisms.
 
-Explicit Flow Control   When a sender or multiple senders aim to exceed the resource capacities of the network or the receiver, messages will be lost. Explicit flow-control mechanisms prevent these situations by signaling all or some senders to pause and resume their message transmissions. Explicit flow control is also called back pressure flow control .
+Explicit Flow Control When a sender or multiple senders aim to exceed the resource capacities of the network or the receiver, messages will be lost. Explicit flow-control mechanisms prevent these situations by signaling all or some senders to pause and resume their message transmissions. Explicit flow control is also called back pressure flow control .
 
 Example—Ethernet Pause Command: When the receive buffers in a receiver node (or a switch) in an Ethernet network exceed a given threshold, the receiving node sends an Ethernet pause message to the sender to pause the message transmissions for a defined duration. Furthermore, Ethernet frames with VLAN tag distinguish eight priorities. Data center bridging also uses these priorities in the pause message and can selectively pause only the transmission of Ethernet frames with particular priorities.
 
@@ -3545,19 +3389,19 @@ Explicit flow control not always requires the exchange of dedicated messages but
 
 Example—CAN: In a CAN system, a node cannot access the bus if a transmission by another sender is in progress, i.e., the access protocol at the sender exerts back pressure on the node that intends to send a message.
 
-Implicit Flow Control   The a priori knowledge of the real-time network’s usage patterns inherently excludes overload scenarios at the receivers and the network.
+Implicit Flow Control The a priori knowledge of the real-time network’s usage patterns inherently excludes overload scenarios at the receivers and the network.
 
 Flow control is, thus, also established a priori. The real-time network can implement traffic-policing mechanisms that ensure that even faulty senders will not violate said usage patterns but stick to their worst-case resource usage quota.
 
 From a complexity point of view, explicit flow control introduces control of the receiver over the sender. Thus, a faulty receiver can impact a correct sender. While the interface between a sender and receiver in implicit flow control is unidirectional, this interface is bidirectional—and thus more complex—in explicit flow control.
 
-# 7.2.4  Design Limitations
+### 7.2.4 Design Limitations
 
 Any physical communication channel is characterized by its bandwidth and its propagation delay . The bandwidth denotes the number of bits that can traverse the channel in unit time. The length of the channel and the transmission speed of the wave (electromagnetic, optical) within the channel determine the propagation delay , which is the duration it takes for a single bit to travel from one end of the channel to the other end. Because the transmission speed of a wave in a cable is approximately 2/3 of the transmission speed of light in a vacuum (about 300,000 $\mathrm{km/s})$ ), it takes a signal about $5~\upmu\mathrm{s}$ to travel across a cable of $1\;\mathrm{km}$ length. The term bit length of a channel denotes the number of bits that can reside in the channel within one propagation delay.
 
 Example: If the channel bandwidth is 100 Mbit/s and the channel is $200~\mathrm{m}$ long, the bit length of the channel is 100 bits since the propagation delay of this channel is $1\;\upmu\mathrm{s}$ .
 
-# 7.2.4.1  Bus-Based Real-Time Networks
+### 7.2.4.1 Bus-Based Real-Time Networks
 
 In a bus, only one node may send a message at a time. Otherwise the multiple mes­ sages’ signals collide and cause interference on the bus. This interference will lead to message loss, in some cases even asymmetric message loss: some nodes will receive a message correctly, while others will not. Two types of media-access pro­ tocols exist: collision-detection protocols detect and resolve message collisions as they occur, and collision avoidance protocols prevent collisions from happening. Both protocol types require the nodes to sense the bus and distinguish between bus activity and bus idle phases. The minimum duration of the bus idle phase equals the propagation delay because only then do all nodes reliably sense bus idle . From this lower bound on bus idle follows the data efficiency in a physical bus as a function of its message length $m$ and bit length $b l$ :
 
@@ -3569,7 +3413,7 @@ Example: Consider a $1\;\mathrm{km}$ bus with a bandwidth equal to 100 Mbit/s an
 
 In general, it will be wasteful to send short messages in long busses and busses with high bandwidth. For example, if the message length is less than the bit length of the channel, then the data efficiency will be less than $50\,\%$ .
 
-# 7.2.4.2  Switch-Based Real-Time Networks
+### 7.2.4.2 Switch-Based Real-Time Networks
 
 In a switched network, the nodes connect to switches that serve as intermediate sta­ tions in the communication path between sending and receiving nodes. All connec­ tions are bidirectional and point to point, either between a node and a switch or between two switches. Thus, the connections do not require a media-access proto­ col. However, the bit length parameter in the data efficiency equation is replaced by a technology-dependent inter-frame gap parameter in switched networks. The receiver uses the inter-frame gap to re synchronize to the sender.
 
@@ -3581,31 +3425,31 @@ Example: The TTE-Switch Controller Space is a store-and-forward switch that supp
 
 In store-and-forward mode, a lower bound for the best-case message-transport latency of a message from sending node to a receiving node is given by the sum of the message-transport latencies on the point-to-point links and the technology laten­ cies of the switches in the communication path. An upper bound for the worst-case message-transport latency also considers the specific traffic shaping method used to establish a message type and the queuing delays in the switches that result from concurrent message receptions. Cut-through mode significantly reduces the best-­ case and worst-case message-transport latencies because (i) only a portion of a mes­ sage needs to be received in a switch to start its forwarding transmission and (ii) the transmissions of the message on multiple point-to-point links in the communication path may overlap.
 
-# 7.2.4.3  Wireless Real-Time Networks
+### 7.2.4.3 Wireless Real-Time Networks
 
 Wireless real-time networks are also common in real-time systems. Wireless proto­ cols are similar to the ones used in a physical bus. However, in the absence of a wired transport medium, they are susceptible to noise, signal reflection, fading, and shadowing, and their communication reliability is typically much lower than wired solutions. Still, many low-critical it y use cases for wireless communication and wireless solutions exist that implement one or many of the message types outlined above. In addition, some wireless protocols schedule communication time and fre­ quency, for example, IEEE 802.15.4 time-slotted channel hopping .
 
-# 7.2.5  Design Pitfalls
+### 7.2.5 Design Pitfalls
 
-# 7.2.5.1  Misconception of Subsystem Scope
+### 7.2.5.1 Misconception of Subsystem Scope
 
-Subsystem Scope   The real-time network is only a subsystem of an overall real-­ time system. It is, thus, crucial to understand its subsystem scope . A real-time net­ work technology must implement the previously discussed requirements but may provide services that go well beyond. Examples of higher-level network services are group membership or file-transfer protocols. The subsystem scope may include such services. On the other hand, the real-time system will implement mechanisms clearly outside the subsystem scope . For example, monitoring whether a message reception has a physical effect on the controlled object is out of the scope of a com­ munication subsystem. The research problem of which functions to include in a communication system and which not (also generally applicable to real-time net­ works) has been originally presented by Saltzer et al. [Sal84].
+Subsystem Scope The real-time network is only a subsystem of an overall real-­ time system. It is, thus, crucial to understand its subsystem scope . A real-time net­ work technology must implement the previously discussed requirements but may provide services that go well beyond. Examples of higher-level network services are group membership or file-transfer protocols. The subsystem scope may include such services. On the other hand, the real-time system will implement mechanisms clearly outside the subsystem scope . For example, monitoring whether a message reception has a physical effect on the controlled object is out of the scope of a com­ munication subsystem. The research problem of which functions to include in a communication system and which not (also generally applicable to real-time net­ works) has been originally presented by Saltzer et al. [Sal84].
 
 Example—Three Mile Island: A misconception of a real-time network’s subsystem scope can have serious consequences, as seen in the following quote [Sev81, p. 414] regarding the Three Mile Island nuclear reactor no. 2 accident on March 28, 1979: Perhaps the single most important and damaging failure in the relatively long chain of failures during this accident was that of the Pressure Operated Relief Valve (PORV) on the pressurize r. The PORV did not close; yet its monitoring light was signaling green (meaning closed). The fundamental design principle to never trust an actuator was violated in this system. The designers assumed that the acknowledged arrival of a control output signal that commanded the valve to close implied that the valve was closed. Since there was an electromechanical fault in the valve, this implication was not true. A proper system design that used an inde­ pendent subsystem to mechanically sense the closed position of the valve would have avoided this catastrophic false information.
 
-# 7.2.5.2  Incompatible Network Services
+### 7.2.5.2 Incompatible Network Services
 
 The design of individual network protocols to achieve the desired emergent behav­ ior under protocol composition is generally nontrivial and error-prone.
 
 Example—Redundancy Management and End-to-end Protocols: IEEE 802.1CB (part of the IEEE 802.1 TSN set of protocols) and ARINC 664-p7 define methods for a receiver to eliminate redundant copies of a message sent over disjoint paths in the real-time network. The intent of these protocols is to only forward one of the copies for further processing to off-load the receiving processor. End-to-end protocols such as an application-level CRC are intended to protect against failures in the network—a faulty Ethernet switch can modify a message’s content and generate a correct Ethernet-level CRC (switches implement this functionality). However, it may only generate the application-level CRC with a much lower, negligible probability. Both IEEE 802.1CB and ARINC 664-p7 redundancy management are incompatible with end-to-end protocols. A faulty network switch may corrupt a ­message in the application-level CRC, resulting in it still appearing correct to the redundancy man­ agement (as the switch knows how to generate a correct Ethernet CRC) and selected by redundancy management as the one copy to be forwarded. The application will detect the message corruption and not receive another (correct) copy because redundancy manage­ ment will eliminate them.
 
-# 7.2.5.3  Design for Average Case Instead of Worst Case
+### 7.2.5.3 Design for Average Case Instead of Worst Case
 
 Networks designed for the average case instead of the worst case will fail to deliver the timeliness requirements of a real-time network. An example effect of an average-­ case design is thrashing .
 
-Thrashing   In an ideal system, growing demand for a shared resource is served as long as there are free resource capacities. In reality, an arbitration scheme that man­ ages the resource to demand allocation can cause an arbitration overhead prevent­ ing the resource from being fully utilized. Some arbitration schemes suffer from thrashing : their arbitration overhead grows rapidly when the demand exceeds a certain level, called the thrashing point , causing even lower resource utilization than at lower demands. For example, the carrier-sense multiple access collision-­detection protocol of Ethernet is susceptible to thrashing (see Sect. 7.3.2 ). Arbitration schemes with thrashing can be acceptable for non critical systems if the average use case is below the thrashing point . However, hard real-time systems must be free of thrash­ ing effects.
+Thrashing In an ideal system, growing demand for a shared resource is served as long as there are free resource capacities. In reality, an arbitration scheme that man­ ages the resource to demand allocation can cause an arbitration overhead prevent­ ing the resource from being fully utilized. Some arbitration schemes suffer from thrashing : their arbitration overhead grows rapidly when the demand exceeds a certain level, called the thrashing point , causing even lower resource utilization than at lower demands. For example, the carrier-sense multiple access collision-­detection protocol of Ethernet is susceptible to thrashing (see Sect. 7.3.2 ). Arbitration schemes with thrashing can be acceptable for non critical systems if the average use case is below the thrashing point . However, hard real-time systems must be free of thrash­ ing effects.
 
-# 7.3  Event-Triggered Communication
+## 7.3 Event-Triggered Communication
 
 The different message types (event-triggered, rate-constrained, and time-triggered) differ in which a priori system information is available (and how the real-time net­ work uses it). Event-triggered messages may not have a priori system information at all. This is attractive for non-real-time systems as it minimizes the configuration burden and simplifies plug-and-play . However, such a priori system information is required to calculate bounds on the worst-case message-transport latencies in a real-­ time system. Thus, if a real-time system implements a shared network based on event-triggered messages, the analysis of their worst-case message-transport latencies cannot be addressed as an isolated problem . It is always integrated with a holistic real-time system analysis that couples the analysis of distributed real-time task executions with their communication. It is impossible to provide temporal guarantees for event-triggered messages independently from the complete real-time system analysis.
 
@@ -3615,7 +3459,7 @@ In bus-based networks, the media-access protocol of the network determines the p
 
 In switch-based networks, a sender’s communication subsystem may immedi­ ately transmit the event-triggered message to its directly connected switch unless the switch exerts back pressure flow control . Then, the switch will forward the mes­ sage to further switches and the final receiving nodes’ communication subsystems.
 
-# 7.3.1  CAN
+### 7.3.1 CAN
 
 The CAN (control area network) protocol developed by Bosch [CAN90] is a bus-­ based CSMA/CA (carrier-sense multiple access/collision avoidance) protocol that exercises back pressure flow control on the sender. For this purpose, a CAN message contains an arbitration field of either 12 or 32 bits for standard or extended mes­ sages (messages are called frames in CAN). This arbitration field also serves as message identifier and message priority, where 0s indicate high priority and 1s low priority. The actual data is transported in the message’s data field , which also con­ tains a CRC field and an end-of-frame field.
 
@@ -3623,11 +3467,11 @@ In the bus activity phase, a bit is transmitted by setting the CAN bus in either
 
 The bit-wise arbitration requires the length of a bit (called a bit cell ) on the bus to be at least as long as its propagation delay. Only then all candidate senders can reliably observe case (iii).
 
-CAN Flexible Data rate $(F D)$   Limiting the length of a bit cell to the propagation delay also limits the achievable bandwidth of the bus. CAN FD (Flexible Data rate) addresses this limitation by using different data rates. CAN uses the normal data rate for the bit-wise arbitration and a higher data rate for the transmission of the data in the message’s data field.
+CAN Flexible Data rate $(F D)$ Limiting the length of a bit cell to the propagation delay also limits the achievable bandwidth of the bus. CAN FD (Flexible Data rate) addresses this limitation by using different data rates. CAN uses the normal data rate for the bit-wise arbitration and a higher data rate for the transmission of the data in the message’s data field.
 
 CAN deployment in a real-time system requires the system integrator to specify a unique priority for each CAN message. Also, the analysis of worst-case message-­ transport latencies of CAN messages requires the system integrator to analyze the behavior of the tasks in the real-time system. If the analyzed latencies are too long, the message priorities may be reconfigured, causing a highly complex iterative design loop of analysis and reconfiguration. In a CAN system, a faulty node can inhibit the transmission of messages among healthy nodes.
 
-# 7.3.2  Ethernet
+### 7.3.2 Ethernet
 
 Ethernet (IEEE 802.3) defines a carrier-sense multiple access collision-detection protocol (CSMA/CD) for networks that realize a physical bus. A node senses the bus and may start to transmit its message when it perceives the bus as idle. However, multiple nodes may perceive the bus as being idle at about the same time (bounded by the propagation delay of the bus and node-internal delays). Thus, it will fre­ quently happen that multiple senders transmit their message to the bus concurrently, resulting in the physical overlay of their signals. The nodes will detect this collision on the bus and send a jamming signal to ensure that all nodes consistently classify the ongoing transmission as a collision. When the senders perceive this jamming signal, they will preempt their message transmission and back off for a random timeout. When this timeout expires and the bus is idle, a sender will retry its mes­ sage transmission.
 
@@ -3635,41 +3479,41 @@ Switched Ethernet made this collision-detection protocol obsolete. As nodes dire
 
 While, in principle, a holistic analysis of the total real-time system could also derive bounds for the worst-case message-transport latencies for basic Ethernet net­ works, it is common to equip basic Ethernet with additional functionality as enabler for real-time use. Indeed, tens of real-time Ethernet variants are used for real-time systems. We will continue the discussion of some variants in the following sections.
 
-# 7.4  Rate-Constrained Communication
+## 7.4 Rate-Constrained Communication
 
 We can calculate bounds for worst-case message-transport latencies in a real-time network when each node limits the number and size of these messages it sends per given time interval and makes this information a priori available for analysis. We call these messages rate-constrained messages . Still, these messages may collide, but we can adequately dimension the network’s resources to resolve these colli­ sions. These resources will be the shared message buffers in switched networks into which the messages are enqueued as a temporary buffer. In a physical bus, these resources are individual resources in the nodes’ communication subsystems.
 
 Example: In a 100 Mbit/s Ethernet network of three nodes connected via a single store-­ and-­forward switch, where two nodes send a 10,000-bit message each to the third node, the queuing delay for each message is at maximum the transmission time of the respective other message, which is $100~\upmu\mathrm{s}$ . If there are 100 sending nodes instead of 2, the queuing delay increases to 10 milliseconds.
 
-Network Calculus   Analyzing worst-case queuing delays for rate-constrained mes­ sages in practical real-time systems can become quite complex. Therefore, different mathematical analysis methods have been developed, the most prominent one being network calculus [Cru91a-a, Cru91b-b]. Rate-constrained message transmissions are formalized as arrival curves and service curves from which network calculus derives bounds for worst-case message queue lengths as well as worst-case end-to-­ end message transmission latencies. Network calculus returns provable latency bounds, but these bounds can become quite pessimistic. Thus, improvements to network calculus and new techniques such as trajectory approach [Bau09] have been developed which return results closer to the actual worst-case latencies. However, in safety-critical real-time systems, the pessimism of a mathematical framework can be acceptable when its certification cost is lower.
+Network Calculus Analyzing worst-case queuing delays for rate-constrained mes­ sages in practical real-time systems can become quite complex. Therefore, different mathematical analysis methods have been developed, the most prominent one being network calculus [Cru91a-a, Cru91b-b]. Rate-constrained message transmissions are formalized as arrival curves and service curves from which network calculus derives bounds for worst-case message queue lengths as well as worst-case end-to-­ end message transmission latencies. Network calculus returns provable latency bounds, but these bounds can become quite pessimistic. Thus, improvements to network calculus and new techniques such as trajectory approach [Bau09] have been developed which return results closer to the actual worst-case latencies. However, in safety-critical real-time systems, the pessimism of a mathematical framework can be acceptable when its certification cost is lower.
 
-# 7.4.1  Avionics Full-Duplex Switched Ethernet (AFDX): ARINC 664-p7
+### 7.4.1 Avionics Full-Duplex Switched Ethernet (AFDX): ARINC 664-p7
 
 When the avionics industry developed the Integrated Modular Avionics (IMA) para­ digm, according to which compute nodes integrate multiple functions each, it also created a demand for more powerful real-time networks to interconnect these nodes. The Avionics Full-Duplex Switched Ethernet (AFDX) technology has been devel­ oped for this purpose. AFDX is a 100 Mbit/s real-time Ethernet variant standardized as ARINC 664 part 7.
 
-Virtual Links   AFDX messages are standard Ethernet multicast messages. Each AFDX message has a unique sender and one or many receivers. An AFDX network is a switch-based network with statically configured communication paths for all AFDX messages. AFDX calls the sum of the communication paths for an AFDX message from its sender to all its receivers a virtual link . Indeed, each AFDX mes­ sage is identified by its virtual link identifier (VL ID), which is encoded in the last 16 bits of its destination address field . An AFDX switch, upon reception of an AFDX message, can determine its ports to forward said message simply by a table lookup.
+Virtual Links AFDX messages are standard Ethernet multicast messages. Each AFDX message has a unique sender and one or many receivers. An AFDX network is a switch-based network with statically configured communication paths for all AFDX messages. AFDX calls the sum of the communication paths for an AFDX message from its sender to all its receivers a virtual link . Indeed, each AFDX mes­ sage is identified by its virtual link identifier (VL ID), which is encoded in the last 16 bits of its destination address field . An AFDX switch, upon reception of an AFDX message, can determine its ports to forward said message simply by a table lookup.
 
-Bandwidth Allocation Gap (BAG)   AFDX messages are rate-constrained messages where the rate is determined by 1/BAG. BAG is a configurable parameter from 1 ms to $128~\mathrm{ms}$ (in steps of power of 2).
+Bandwidth Allocation Gap (BAG) AFDX messages are rate-constrained messages where the rate is determined by 1/BAG. BAG is a configurable parameter from 1 ms to $128~\mathrm{ms}$ (in steps of power of 2).
 
-Traffic Shaping and Traffic Policing   The sending node’s communication subsys­ tem shapes the outing traffic to establish a minimum time between transmitting two messages on the same virtual link . AFDX switches monitor these times and discard messages if they do not meet their inter-arrival time ( traffic policing ). Traffic shap­ ing and traffic policing ensure that nodes adhere to their a priori message rates and sizes, and the aforementioned mathematical analysis frameworks return sound results.
+Traffic Shaping and Traffic Policing The sending node’s communication subsys­ tem shapes the outing traffic to establish a minimum time between transmitting two messages on the same virtual link . AFDX switches monitor these times and discard messages if they do not meet their inter-arrival time ( traffic policing ). Traffic shap­ ing and traffic policing ensure that nodes adhere to their a priori message rates and sizes, and the aforementioned mathematical analysis frameworks return sound results.
 
-Ordered Delivery   AFDX messages carry a sequence number , which receiving nodes use to identify and drop messages received out of order (called integrity checking ).
+Ordered Delivery AFDX messages carry a sequence number , which receiving nodes use to identify and drop messages received out of order (called integrity checking ).
 
-Redundancy Management   AFDX can be configured to transport messages on two redundant networks. A receiving node’s communication subsystem implements a redundancy management function that eliminates the redundant copy of the same message. However, as discussed in a previous example, this redundancy manage­ ment is not composable with application-level end-to-end checks. Therefore, safety-­ critical real-time systems may choose to disable redundancy management and forward redundant copies to the application.
+Redundancy Management AFDX can be configured to transport messages on two redundant networks. A receiving node’s communication subsystem implements a redundancy management function that eliminates the redundant copy of the same message. However, as discussed in a previous example, this redundancy manage­ ment is not composable with application-level end-to-end checks. Therefore, safety-­ critical real-time systems may choose to disable redundancy management and forward redundant copies to the application.
 
-# 7.4.2  Audio/Video Bridging: IEEE 802.1 AVB
+### 7.4.2 Audio/Video Bridging: IEEE 802.1 AVB
 
 Many real-time extensions to Ethernet exist, but AVB has been the first one stan­ dardized within the IEEE Standardization Association (IEEE SA), followed by time-sensitive networking (see Sec. 7.5.3 ). It targets distributed audio and video applications, including professional studio equipment, event halls, and in-car info­ tainment networks. AVB can be deployed in switched Ethernet networks with 100 Mbit/s or higher bandwidth.
 
-AVB Streams   AVB messages are VLAN-tagged Ethernet multicast frames where the sending node of a message is called the talker and the receiving nodes are called the listeners . The related messages a talker sends to the listeners are called a stream , and a node may be talker of multiple streams. AVB establishes the communication between talkers and listeners at runtime using the stream reservation protocol (SRP). AVB streams are classified into SR Class A and $S R$ Class $B$ streams by the priority field in the VLAN tag of Ethernet frames. AVB messages are rate-­constrained messages where the rate is defined by the amount of data a talker may transmit per Class Measurement Interval (CMI). The CMI is $125~\upmu\mathrm{s}$ for SR Class A and $250~\upmu\mathrm{s}$ for SR Class B. The amount of data a talker may transmit per CMI is determined at runtime by SRP.
+AVB Streams AVB messages are VLAN-tagged Ethernet multicast frames where the sending node of a message is called the talker and the receiving nodes are called the listeners . The related messages a talker sends to the listeners are called a stream , and a node may be talker of multiple streams. AVB establishes the communication between talkers and listeners at runtime using the stream reservation protocol (SRP). AVB streams are classified into SR Class A and $S R$ Class $B$ streams by the priority field in the VLAN tag of Ethernet frames. AVB messages are rate-­constrained messages where the rate is defined by the amount of data a talker may transmit per Class Measurement Interval (CMI). The CMI is $125~\upmu\mathrm{s}$ for SR Class A and $250~\upmu\mathrm{s}$ for SR Class B. The amount of data a talker may transmit per CMI is determined at runtime by SRP.
 
-Forwarding and Queuing Enhancements   AVB switches generally prioritize AVB messages over non-AVB (SR Class A is prioritized over SR Class B). However, a traffic shaping mechanism called credit-based shaping at the egress of AVB switches occasionally pauses AVB message transport and lets the switch serve non-AVB messages.
+Forwarding and Queuing Enhancements AVB switches generally prioritize AVB messages over non-AVB (SR Class A is prioritized over SR Class B). However, a traffic shaping mechanism called credit-based shaping at the egress of AVB switches occasionally pauses AVB message transport and lets the switch serve non-AVB messages.
 
-Clock Synchronization IEEE 802.1AS   Although not used for message communi­ cation, AVB also standardizes a clock synchronization protocol in IEEE 802.1AS, which resembles IEEE 1588 in an IEEE 802.1 conform manner.
+Clock Synchronization IEEE 802.1AS Although not used for message communi­ cation, AVB also standardizes a clock synchronization protocol in IEEE 802.1AS, which resembles IEEE 1588 in an IEEE 802.1 conform manner.
 
-Message-Transport Latency   IEEE 802.1BA defines AVB profiles and gives a latency target of $2\,\mathrm{ms}$ for SR Class A traffic (50ms for SR Class B) in a 100 Mbit/s Ethernet network with a maximum of seven hops in between the talker and the lis­ teners. While IEEE 802.1BA also gives example calculations that meet the target latencies, a more formal mathematical treatment is necessary. Such a treatment, based on network calculus , is provided in [Rui14].
+Message-Transport Latency IEEE 802.1BA defines AVB profiles and gives a latency target of $2\,\mathrm{ms}$ for SR Class A traffic (50ms for SR Class B) in a 100 Mbit/s Ethernet network with a maximum of seven hops in between the talker and the lis­ teners. While IEEE 802.1BA also gives example calculations that meet the target latencies, a more formal mathematical treatment is necessary. Such a treatment, based on network calculus , is provided in [Rui14].
 
-# 7.5  Time-Triggered Communication
+## 7.5 Time-Triggered Communication
 
 Time-triggered messages are periodic messages that maximize the use of a priori information about the real-time network to achieve optimal temporal predictability of message transports. In its strong form , all relevant communication actions of time-triggered messages happen at pre-planned instants in a synchronized global time. These instants are the transmission instant at the sender’s communication sub­ system, the reception instant at a receiver’s communication subsystem, and all mes­ sage forwarding instants (in case of a switched network). The collective configuration of these pre-planned instants is called the communication schedule , and nodes (and switches) will periodically cycle through this schedule in a coordinated manner based on the global time. The communication schedule specifies for each time-­ triggered message a period and a phase within this period in a way that excludes collisions of time-triggered message transmissions on shared resources per design.
 
@@ -3677,15 +3521,15 @@ Real-time networks can implement strong time-triggered messages, but they may ch
 
 Example: A sender’s communication subsystem may have a configured message transmis­ sion instant for a time-triggered message. However, the action at this instant may cause the time-triggered message to be placed into a transmit queue at the sender’s communication subsystem instead of an immediate transmission. The effect of this time-triggered message being actually transmitted happens only after all preceding messages in the transmit queue are processed. Therefore, the number and size of such preceding messages must be bounded and known a priori.
 
-Communication Schedule Planning   Time-triggered messages give a system designer full control over the message-transport times, but this full control comes at the cost of generating the communication schedules. Schedule planning is a search problem that may become quite resource-intensive, but candidate solutions can eas­ ily be checked for correctness. Formally, in terms of computational complexity, this means that the schedule planning problem is in the NP complexity class. Indeed, schedule planning for time-triggered networks has been expressed as SMT (satisfi­ ability modulo theories) problem in [Ste10]: the phases of all time-triggered mes­ sages are treated as integer variables, and different types of linear inequalities (called constraints ) relate these integer variables to each other.
+Communication Schedule Planning Time-triggered messages give a system designer full control over the message-transport times, but this full control comes at the cost of generating the communication schedules. Schedule planning is a search problem that may become quite resource-intensive, but candidate solutions can eas­ ily be checked for correctness. Formally, in terms of computational complexity, this means that the schedule planning problem is in the NP complexity class. Indeed, schedule planning for time-triggered networks has been expressed as SMT (satisfi­ ability modulo theories) problem in [Ste10]: the phases of all time-triggered mes­ sages are treated as integer variables, and different types of linear inequalities (called constraints ) relate these integer variables to each other.
 
 Example: A basic type of constraint is the collision-free constraint which expresses that the phases of any two time-triggered messages must be selected such that their transmissions on the same communication link will not coincide. In the formalization, communication bandwidth is split up into repeating cycles of sequential communication slots of equal size. Messages are assigned to unique slots and, thus, a message’s phase is also given by a slot number. The collision-free constraint, therefore, simply requires that the slot numbers of different messages on the same link must be different.
 
 Schedule planning is realized by a search for concrete evaluations of all the inte­ ger variables (i.e., assign message phases) such that all the constraints are satisfied. As this search is complex, quite sophisticated tools have been developed or adopted, like SMT solvers. Complex tooling may be seen as an issue for safety-critical sys­ tems. However, since it is easy to analyze whether a given candidate solution is correct, we can take advantage of simple schedule verification tools to analyze the output of the complex planning tool: given a candidate solution (from the complex planning tool), check whether it satisfies all the constraints.
 
-Schedule Planning and Optimization   Schedule planning is a highly active research direction (particularly stimulated by the standardization of time-triggered messages in IEEE 802.1 TSN). Various research works closely relate schedule planning to optimization. On the one hand, optimization tools like ILP (integer linear program­ ming) are used for schedule planning. On the other hand, the schedule planning problem itself is extended to an optimization problem, e.g., optimization for resource usage or optimization in the context of integration of time-triggered messages with rate-constrained messages.
+Schedule Planning and Optimization Schedule planning is a highly active research direction (particularly stimulated by the standardization of time-triggered messages in IEEE 802.1 TSN). Various research works closely relate schedule planning to optimization. On the one hand, optimization tools like ILP (integer linear program­ ming) are used for schedule planning. On the other hand, the schedule planning problem itself is extended to an optimization problem, e.g., optimization for resource usage or optimization in the context of integration of time-triggered messages with rate-constrained messages.
 
-# 7.5.1  TTP
+### 7.5.1 TTP
 
 The time-triggered protocol (TTP) is a bus-based protocol that integrates strong time-triggered messages, temporal error detection, a fault-tolerant clock synchroni­ zation service, and a membership service in a single protocol with small protocol overhead [Kop93]. The system integrator must set up the parameters for the trans­ mission slots of the nodes a priori. Event-triggered communication can be imple­ mented by an overlay protocol on top of TTP.
 
@@ -3699,39 +3543,39 @@ Considering the services TTP provides, it is a very data-efficient protocol well
 
 TTP has been formally certified for use in airborne systems [Rus02]. It is deployed in the A380 and the Boeing 787 aircraft and other aerospace and industrial control applications. TTP is standardized as SAE AS6003.
 
-# 7.5.2  TTEthernet
+### 7.5.2 TTEthernet
 
 TTEthernet implements time-triggered, rate-constrained, and event-triggered mes­ sages (called traffic classes ). It has been designed as a cross-industry real-time net­ work for safety-critical and mixed-critical it y systems. Most use cases of TTEthernet can be found in the space and aerospace markets.
 
-TTEthernet Traffic Classes   TTEthernet typically implements 100 Mbit/s and 1 Gbit/s switched Ethernet. It uses standard Ethernet frames and the AFDX virtual link address scheme for time-triggered and rate-constrained messages (i.e., these message types are identified by pre-configured multicast addresses). Indeed, rate-­ constrained messages are backward compatible to AFDX, while event-triggered messages are basic Ethernet messages (i.e., their transmission may fail, for exam­ ple, due to message queue overflows). A TTEthernet communication schedule plans all message-transport instants (transmission, forwarding, reception). It supports both strong and weak time-triggered messages via configuration. The weak form follows the previously presented example where the sender can be the sending node or a forwarding switch, and TTEthernet ensures that there may be only one preced­ ing message in the queue. TTEthernet achieves the strong form by ensuring that the transmit queue is empty at the planned message transmit instant. Thus, although rate-constrained or event-triggered messages may be ready to transmit, TTEthernet timely blocks their transmission by not adding them to the transmit queue in favor of timely transmission of the planned time-triggered message. However, if this time-­ triggered message is not ready for transmission in time, TTEthernet reallocates its bandwidth to other message types. A time-triggered message may not be ready because of a decision in the sending node or because of message loss/corruption.
+TTEthernet Traffic Classes TTEthernet typically implements 100 Mbit/s and 1 Gbit/s switched Ethernet. It uses standard Ethernet frames and the AFDX virtual link address scheme for time-triggered and rate-constrained messages (i.e., these message types are identified by pre-configured multicast addresses). Indeed, rate-­ constrained messages are backward compatible to AFDX, while event-triggered messages are basic Ethernet messages (i.e., their transmission may fail, for exam­ ple, due to message queue overflows). A TTEthernet communication schedule plans all message-transport instants (transmission, forwarding, reception). It supports both strong and weak time-triggered messages via configuration. The weak form follows the previously presented example where the sender can be the sending node or a forwarding switch, and TTEthernet ensures that there may be only one preced­ ing message in the queue. TTEthernet achieves the strong form by ensuring that the transmit queue is empty at the planned message transmit instant. Thus, although rate-constrained or event-triggered messages may be ready to transmit, TTEthernet timely blocks their transmission by not adding them to the transmit queue in favor of timely transmission of the planned time-triggered message. However, if this time-­ triggered message is not ready for transmission in time, TTEthernet reallocates its bandwidth to other message types. A time-triggered message may not be ready because of a decision in the sending node or because of message loss/corruption.
 
-Fault Tolerance   TTEthernet supports network replication where each node can attach to up to three isolated switched networks. The TTEthernet switches imple­ ment traffic policing for time-triggered and rate-constrained messages. Event-­ triggered messages have the lowest priority and are dropped if necessary. As TTEthernet switches realize different message buffers for the different traffic types, memory violations of lower-priority messages on higher-priority messages are excluded by design. Furthermore, TTEthernet node and switch designs can follow a self-checking pair paradigm, which allows arguing their failure mode to be benign and close to a fail-silent failure mode.
+Fault Tolerance TTEthernet supports network replication where each node can attach to up to three isolated switched networks. The TTEthernet switches imple­ ment traffic policing for time-triggered and rate-constrained messages. Event-­ triggered messages have the lowest priority and are dropped if necessary. As TTEthernet switches realize different message buffers for the different traffic types, memory violations of lower-priority messages on higher-priority messages are excluded by design. Furthermore, TTEthernet node and switch designs can follow a self-checking pair paradigm, which allows arguing their failure mode to be benign and close to a fail-silent failure mode.
 
-Fault-Tolerant Clock Synchronization   TTEthernet implements a distributed fault-­ tolerant clock synchronization algorithm to establish a global time. It distinguishes Synchronization Masters (SMs), Compression Masters (CMs), and Synchronization Clients (SCs). Typically, SMs are realized by nodes and CMs are realized by switches, and at least one switch per network will be configured as CM. Every node and switch that is not an SM nor a CM operates as SC and only passively synchro­ nizes to the fault-tolerant time base. Clock synchronization happens in two steps. In the first one, the SMs provide clock synchronization messages, called Integration Frames (IN), to the CMs, which use the IN timing as an input to a fault-tolerant averaging function. In the second step, the CMs provide a compressed Integration Frame (cIN) back to the SMs (and the SCs) at a point in time determined from the output of the fault-tolerant averaging function in the first step. The SMs and SCs calculate an average from the received cIN frames and use this output to correct their local clocks. This algorithm has been formally verified and tolerates single failures and coinciding SM and CM failures [Ste11a]. TTEthernet also defines pro­ tocols for initial synchronization of the distributed system and clique detection and restart procedures.
+Fault-Tolerant Clock Synchronization TTEthernet implements a distributed fault-­ tolerant clock synchronization algorithm to establish a global time. It distinguishes Synchronization Masters (SMs), Compression Masters (CMs), and Synchronization Clients (SCs). Typically, SMs are realized by nodes and CMs are realized by switches, and at least one switch per network will be configured as CM. Every node and switch that is not an SM nor a CM operates as SC and only passively synchro­ nizes to the fault-tolerant time base. Clock synchronization happens in two steps. In the first one, the SMs provide clock synchronization messages, called Integration Frames (IN), to the CMs, which use the IN timing as an input to a fault-tolerant averaging function. In the second step, the CMs provide a compressed Integration Frame (cIN) back to the SMs (and the SCs) at a point in time determined from the output of the fault-tolerant averaging function in the first step. The SMs and SCs calculate an average from the received cIN frames and use this output to correct their local clocks. This algorithm has been formally verified and tolerates single failures and coinciding SM and CM failures [Ste11a]. TTEthernet also defines pro­ tocols for initial synchronization of the distributed system and clique detection and restart procedures.
 
 TTEthernet has been standardized as SAE AS6802 and is embedded in the ECSS-E-ST-50-16C standard. It has been selected as the communication backbone system of the NASA Orion Program [Bag10] and for several elements of NASA’s Space Gateway. TTEthernet has also been selected for Ariane 6 [Cla14].
 
-# 7.5.3  Time-Sensitive Networking: IEEE 802.1 TSN
+### 7.5.3 Time-Sensitive Networking: IEEE 802.1 TSN
 
 IEEE 802.1 Time-Sensitive Networking (TSN) continues the IEEE AVB standard­ ization activities. It is the first time that time-triggered messages are introduced into the IEEE 802.1 set of standards. The main target areas for TSN are industrial auto­ mation and automotive in-vehicle networking, but use cases go well beyond, for example, into the aerospace market or telecom. TSN, like AVB, is a set of standard amendments (primary amendments to IEEE 802.1Q—indicated by lowercase let­ ters like IEEE 802.1Qbv) and some stand-alone standards (indicated by uppercase letters like IEEE 802.1CB). The standardization activities can be classified into (i) low-latency message transmission; (ii) enhancements of the IEEE 802.1AS clock synchronization protocol; (iii) improvements toward message transmission reliabil­ ity, e.g., through message replication; and (iv) network configuration and resource management. A detailed discussion of the TSN protocols and use cases is given in [LoB19]. This section focuses on two low-latency aspects: time-triggered messages and message preemption. We will also limit the discussion to TSN in switched Ethernet real-time networks with VLAN-tagged Ethernet frames (the typical use case).
 
 In IEEE 802.1 switches (the standard uses the term bridges ), we can distinguish three main phases of operation: (i) ingress operation, (ii) message switching, and (iii) egress operation. A switch handles the frame reception at the ingress port, which may also execute traffic policing . Message switching determines the target egress ports and places the message in egress queues. Ethernet switches may have up to eight message queues per egress port, and the message switching function selects the queue based on the VLAN tag’s 3-bit priority code point field (IEEE 802.1CB also specifies the use of other frame fields for queue selection). The trans­ mission selection function at the egress port selects from the (up to eight) message queues the next message for transmission. The transmission selection may follow different policies, the simplest one being a strict priority policy, in which messages from higher-priority queues are always selected prior to messages from lower-­ priority queues.
 
-IEEE 802.1Qbv—Scheduled Traffic   Traffic shaping to achieve time-triggered message transport is also part of the egress operation. For this, IEEE 802.1Qbv defines a gate for each egress queue. The gates can be either open or closed , but transmission selection may only select messages from queues with their gate in the open state. TSN uses a gate control list (GCL) as a communication schedule that defines instants in a global time base when the state of gates shall change.
+IEEE 802.1Qbv—Scheduled Traffic Traffic shaping to achieve time-triggered message transport is also part of the egress operation. For this, IEEE 802.1Qbv defines a gate for each egress queue. The gates can be either open or closed , but transmission selection may only select messages from queues with their gate in the open state. TSN uses a gate control list (GCL) as a communication schedule that defines instants in a global time base when the state of gates shall change.
 
 Example: Given a switch with two gated queues (Q1 and Q2) at an egress port, we can achieve a time-triggered message transport from Q1 by configuring the GCL to set the gates of both Q1 and Q2 in the closed state at an instant t0 and to set the gate of Q1 into the open state at ( $\mathrm{t0+\Omega}$ max(message length)). This ensures that the communication link is idle at the Q1 gate open instant and the transmission selection function selects a message from Q1 for transmission.
 
 The queue-gating mechanism allows realizing different types of effects through the appropriate configuration of the GCL in the switches and the message transmis­ sion instants in the sending nodes. For example, Craciunas et al. [Cra16] achieve strong time-triggered message transport by appropriately configuring the messages’ phases in the sending nodes such that only one message will be in a respective switch queue at a time. The gate open event for this queue is, thus, also uniquely associated with this particular message. On the other hand, sending nodes can be configured such that their messages do queue up in the switch, for example, to ease schedule planning. Then setting the queue in the open state achieves a weak form of time-triggered messages. Sending nodes may even be un synchronized, and the queue-gating mechanism converts these un synchronized messages (e.g., rate-­ constrained messages) into weak time-triggered messages.
 
-IEEE 802.1Qbu—Frame Preemption   Many real-time networks are converged networks that transport real-time and non-real-time messages, which may become quite long.
+IEEE 802.1Qbu—Frame Preemption Many real-time networks are converged networks that transport real-time and non-real-time messages, which may become quite long.
 
 Example: Some implementations of Ethernet allow jumbo frames that are up to 9,000 bytes long. The message-transport time of such a jumbo frame on one communication link in 100 Mbit/s is $720\,\upmu\mathrm{s}$ ( $72\,\upmu\mathrm{s}$ in 1 Gbit/s).
 
 Methods to limit the delay of real-time messages are necessary, and frame pre­ emption is such a method. Frame preemption distinguishes preempt able from express frames by allocating the frames to different egress queues. Express frames preempt the transmissions of preempt able frames. The preemption mechanism ensures that the preempted frame is a well-formed Ethernet frame of at least 64 bytes with a CRC (called mCRC ) that represents all the message fragments of the preempted frame transmitted so far (i.e., a receiver continues the calculation of the CRC with each fragment of a frame it receives). After preemption, the message transmission of the preempted frame is continued (unless there are more express frames ready), and the receiving node reassembles the original full frame. Frame preemption can also be scheduled with respect to the global time by configuration in the GCL.
 
-TSN Profiles   TSN specifies quite a high number of protocols, mechanisms, and features. Thus, different industries are in the process of defining specific TSN pro­ files. For example, the automotive industry standardizes a TSN Profile for Automotive In-Vehicle Ethernet Communications in P802.1DG and an aerospace profile as TSN for Aerospace Onboard Ethernet Communications in P802.1DP.
+TSN Profiles TSN specifies quite a high number of protocols, mechanisms, and features. Thus, different industries are in the process of defining specific TSN pro­ files. For example, the automotive industry standardizes a TSN Profile for Automotive In-Vehicle Ethernet Communications in P802.1DG and an aerospace profile as TSN for Aerospace Onboard Ethernet Communications in P802.1DP.
 
-# Points to Remember
+## Points to Remember
 
 • A network is a real-time network, if and only if a bound for the worst-case message-­transport latency for time-critical messages can be determined by anal­ ysis, and this bound holds during operation with a sufficiently high probability.
 
@@ -3771,11 +3615,11 @@ TSN Profiles   TSN specifies quite a high number of protocols, mechanisms, and
 
 • TTP, TTEthernet, and TSN are examples of time-triggered networks.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The requirements for distributed safety-critical real-time systems onboard vehicles are analyzed in the SAE report J20056/1 “Class C Application Requirements” [SAE95]. An interesting report about a Comparison of Bus Architectures for Safety Critical Embedded Systems has been published by NASA [Rus03]. A rationale for the design of time-triggered Ethernet is published in [Kop08].
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 7.1 Compare the requirements of real-time communication systems with those of non-real-time communication systems. What are the most significant differences?
 
@@ -3801,7 +3645,7 @@ The requirements for distributed safety-critical real-time systems onboard vehic
 
 # Chapter 8 Power and Energy Awareness
 
-# Overview
+## Overview
 
 The increasing growth of energy-aware and power-aware computing is driven by the following concerns:
 
@@ -3817,11 +3661,11 @@ In the past, the number of instructions executed by a computer system in a unit 
 
 It is the objective of this chapter to establish a framework for developing an understanding for energy-efficient embedded computing. In the first section, we introduce some basic concepts from physics and a simple model to estimate the energy consumption of different computing tasks. This gives the reader an indica­ tion of where energy is dissipated and what are the mechanisms of energy dissipa­ tion. Since energy consumption depends very much on the considered technology, we assume a hypothetical 100 nm CMOS VLSI technology as the reference for the estimation. The next section focuses on hardware techniques for energy saving, fol­ lowed by a discussion about the impact of system architecture decisions on the energy consumption. Software techniques that help save energy are treated in the following section.
 
-# 8.1  Power and Energy
+## 8.1 Power and Energy
 
 Computers require electric energy for the processing and transmission of data. According to a report from the International Energy Agency [IEA21]: “Global data center electricity use in 2020 was 200–250 TWh, or around $1\%$ of global final elec­ tricity demand. This excludes energy used for crypto currency mining, which was $\mathord{\sim}100$  TWh in 2020. Globally, data transmission networks consumed 260–340 TWh in 2020, or $1.1–1.4\%$ of global electricity use.” If we add to this number the energy required for the operation of the end-user equipment, we arrive at a worldwide elec­ tric energy requirement of about 800–1000 TWh for the entire ICT sector in the year 2020. This is about $4\%$ of the electricity production of about 25,000 TWh world­ wide. The climate impact of the ICT industry [Fri20] is about of the same magni­ tude as the climate impact of the airline travel industry [Ric20].
 
-# 8.1.1  Basic Concepts
+### 8.1.1 Basic Concepts
 
 The concept of energy, initially introduced in the field of mechanics, refers to a scalar quantity that describes the capability of work that can be performed by a sys­ tem . The intensity of the work , which is the energy used up per unit of time, is called power . Energy is thus the integral of power over time. There exist different forms of energy such as mechanical energy (potential energy and kinetic energy) and electri­ cal energy on the one hand and thermal energy and chemical energy on the other hand.
 
@@ -3851,7 +3695,7 @@ $$
 
 Example : If a car with a weight of $1800~\mathrm{kg}$ is accelerated from 0 m/second to a speed of 30 m/second (which corresponds to 108 km/hour), the required energy is $810{,}000\mathrm{~J~}$ or $225~\mathrm{Wh}$ , corresponding to about $0.I~l$ of gasoline. This kinetic energy heats up the brakes when the car is stopped.
 
-Batteries   A battery is a storage device for electric energy. The voltage that exists at the terminals of a battery can drive electric current through a resistor. In the resis­ tor, electric energy is converted to heat. If an electric current $I$ flows through a wire with a resistance $R$ , the voltage drop on the wire will be, according to Ohm’s law
+Batteries A battery is a storage device for electric energy. The voltage that exists at the terminals of a battery can drive electric current through a resistor. In the resis­ tor, electric energy is converted to heat. If an electric current $I$ flows through a wire with a resistance $R$ , the voltage drop on the wire will be, according to Ohm’s law
 
 $$
 V=I\times R
@@ -3863,7 +3707,7 @@ $$
 W=V\times I
 $$
 
-Table 8.1  Energy content of batteries
+Table 8.1 Energy content of batteries
 ![](images/26bc7a269eda0022acee77ffc7b2258db4db4e28d3a61f1136bfcd8937377d56.jpg)
 
 where $W$ denotes the dissipated electric power (in watt ), $I$ the current (in ampere ), and $R$ the resistance (in ohm ). If a constant voltage of $V$ is applied to a system with a resistance of $R$ over a time of $t$ seconds, the energy that is dissipated equals.
@@ -3874,11 +3718,9 @@ $$
 
 where $E$ is the dissipated energy in joule or $W s$ , $t$ denotes the time in seconds , and $V,R$ , and $I$ denote the voltage, the resistance, and the current, respectively.
 
-Table_8.1 8.1 Table_8.1 ­ Table_8.1 Table_8.1 Table_8.1 Table_8.1 Table_8.1 Table_8.1
-
 The efficiency of a rechargeable battery, i.e., the relation energy-input-for-­ charging and energy-output-for-use of well-managed batteries, is between $75\%$ and $90\%$ under the assumption that during the charging phase and the use phase , the power that flows into and out of the battery is carefully controlled and matched to the electrochemical parameters of the battery. If an application has highly irregular power characteristics, then an intermediate energy storage device, such as an ultra-­ capacitor , must be provided to smoothen the power flow in and out of the battery. An ultra-capacitor is an electro-chemical capacitor that has a high energy density when compared to conventional capacitors. It can be used as an intermediate energy storage device to buffer large power-spikes over a short time.
 
-# 8.1.2  Energy Estimation
+### 8.1.2 Energy Estimation
 
 The electric energy that is needed by a computing device to execute a program can be expressed as the sum of the following four terms:
 
@@ -3888,9 +3730,7 @@ $$
 
 where $E_{\mathrm{total}}$ is the total energy needed, $E_{\mathrm{comp}}$ denotes the energy needed to perform the computations in a CMOS VLSI circuit, $E_{\mathrm{mem}}$ denotes the energy consumed by the memory subsystem, $E_{\mathrm{{compm}}}$ denotes the energy required for the communication, and $E_{\mathrm{IO}}$ is the energy consumed by $\mathrm{I}/\mathrm{O}$ devices, such as a screen. In the following, we investigate each of these terms in some detail by presenting simplified energy models. The numerical values of the parameters depend strongly on the technology that is used. We give some approximate value ranges for the parameters for a hypo­ thetical 100 nm CMOS technology which is operated with a supply voltage of $1\textrm{V}$ in order to enable the reader to develop an understanding for the relative importance of each one of the terms.
 
-Computation Energy   The energy $E_{\mathrm{comp}}$ required for the computations consists of two parts: (i) the dynamic energy $E_{\mathrm{dynamic}}$ that denotes the energy needed to perform the switching functions in a CMOS VLSI circuit and (ii) the static energy $E_{\mathrm{static}}$ that is dissipated due to a leakage current drawn from the power supply irrespective of any switching activity.
-
-Figure_8.1 Figure_8.1 8.1 Figure_8.1 ­ sigure_8.1 $V$ Figure_8.1 $C$ Figure_8.1 Figure_8.1 $R$ Figure_8.1 $R$ Figure_8.1­ Figure_8.1 $t$ Figure_8.1
+Computation Energy The energy $E_{\mathrm{comp}}$ required for the computations consists of two parts: (i) the dynamic energy $E_{\mathrm{dynamic}}$ that denotes the energy needed to perform the switching functions in a CMOS VLSI circuit and (ii) the static energy $E_{\mathrm{static}}$ that is dissipated due to a leakage current drawn from the power supply irrespective of any switching activity.
 
 $$
 V_{\mathrm{res}}\left(t\right)=V e^{-t/\tau}
@@ -3906,12 +3746,10 @@ $$
 
 The current that flows into the capacitor builds up an electric charge in the capac­ itor and does not directly contribute to the energy dissipation. But indirectly, the current flow produces heat caused by the resistance of the wire.
 
-Let us set up a hypothetical effective capacitance $C_{\mathrm{eff}}$ such that the term $C_{\mathrm{eff}}\ V^{2}$ covers the energy needed to switch all output transitions of an average instruction of
+Let us set up a hypothetical effective capacitance $C_{\mathrm{eff}}$ such that the term $C_{\mathrm{eff}}\ V^{2}$ covers the energy needed to switch all output transitions of an average instruction of a processor and the energy that is dissipated by the brief current flow from the volt­ age source.
 
-![](images/cd10f62d5c68d52429aba5b90f1317c561cb543d2cc0e1583cbf4851ead3d7c6.jpg)  
-Fig. 8.1  First-order RC network
-
-a processor and the energy that is dissipated by the brief current flow from the volt­ age source.
+> ![](images/cd10f62d5c68d52429aba5b90f1317c561cb543d2cc0e1583cbf4851ead3d7c6.jpg) 
+> Fig.8.1 First-order RC network
 
 Then the dynamic energy needed for the execution of a single instruction can be expressed by the simple equation
 
@@ -3937,7 +3775,7 @@ There are different mechanisms that contribute to a steady flow of current (the 
 
 In submicron technologies, the energy dissipation caused by the static leakage current can approach the same order of magnitude as the energy needed for the dynamic switching actions [Ped06]. From a system perspective, it is therefore advantageous to structure a hardware system in such a way that subsystems can be switched off completely if their services are not needed during short intervals. This is the topic of power gating discussed in Sect. 8.3.3 .
 
-Communication   The energy requirement for the transmission of a bit stream from a sender to a receiver is highly asymmetric. While the sender needs to generate signals that are strong enough to reach the intended receiver, the receiver must only sense the (weak) incoming signals. In addition to the energy required for the recep­ tion of a message, a receiver needs energy during the standby period of waiting for a message to arrive. If the receive/wait ratio is small, the standby energy consump­ tion can be substantial.
+Communication The energy requirement for the transmission of a bit stream from a sender to a receiver is highly asymmetric. While the sender needs to generate signals that are strong enough to reach the intended receiver, the receiver must only sense the (weak) incoming signals. In addition to the energy required for the recep­ tion of a message, a receiver needs energy during the standby period of waiting for a message to arrive. If the receive/wait ratio is small, the standby energy consump­ tion can be substantial.
 
 Let us call the energy needed to transmit a single bit $E_{\mathrm{tr}}$ This term is different for wired and wireless communication. For a wired interconnect, this term depends on wire length $d$ , the effective capacitance of the interconnect per unit length $C_{\mathrm{effunit}}$ , and the square of voltage $V$ :
 
@@ -3959,19 +3797,19 @@ The asymmetry of the energy requirements of a sender and a receiver has a deci­
 
 In a wireless sensor network, the low amount of energy required by the sensor can be harvested from the physical environment, e.g., from light, sound, or the incoming electric energy of the sender [Sah20].
 
-Memory   In memory-intensive applications, the energy that is required to access the memory subsystems can be larger than the energy that is needed for the compu­ tations. The energy that is consumed by a memory subsystem consists of two terms. The first term is the product of the power that is consumed by an idle memory sub­ system and the time the memory subsystem is powered up. This term depends on the type and size of the memory and is different for SRAM, DRAM, and non-­ volatile FLASH memory. The second term consists of the product of the number of memory accesses and the energy requirement for a single memory access. In an MPSoC that consists of a number of IP-cores that are connected by a network-on-­ chip (NoC), three types of memory accesses can be distinguished:
+Memory In memory-intensive applications, the energy that is required to access the memory subsystems can be larger than the energy that is needed for the compu­ tations. The energy that is consumed by a memory subsystem consists of two terms. The first term is the product of the power that is consumed by an idle memory sub­ system and the time the memory subsystem is powered up. This term depends on the type and size of the memory and is different for SRAM, DRAM, and non-­ volatile FLASH memory. The second term consists of the product of the number of memory accesses and the energy requirement for a single memory access. In an MPSoC that consists of a number of IP-cores that are connected by a network-on-­ chip (NoC), three types of memory accesses can be distinguished:
 
 • Scratchpad memory that is within an IP-core.
 
-• Shared on-chip memory in a separate IP-core of the SoC.  It is accessed via the NoC.
+• Shared on-chip memory in a separate IP-core of the SoC.It is accessed via the NoC.
 
 • Off-chip memory, e.g., a large DRAM, that is accessed via the NoC and a mem­ ory gateway to the memory chip.
 
 The energy requirements for accessing each of these three types of memory are substantially different. Whereas the access for the instruction and data in the scratch­ pad memory is considered in the effective capacitance $C_{\mathrm{eff}}$ of an instruction, the access to the on-chip and off-chip memory requires the exchange of two messages via the NoC: a request message containing the address to the memory and a response message with the data from the memory. In our model, we make the gross estimate that a memory access for a 32 byte block of on-chip memory requires an energy in the order of $200\,n J$ and access to the off-chip memory requires about hundred times as much, i.e., $20\,\mu J$ .
 
-I/O Devices   The energy consumed by I/O devices such as screens, sensors, and actuators is application specific (e.g., size of a screen). It can be substantial.
+I/O Devices The energy consumed by I/O devices such as screens, sensors, and actuators is application specific (e.g., size of a screen). It can be substantial.
 
-# 8.1.3  Thermal Effects and Reliability
+### 8.1.3 Thermal Effects and Reliability
 
 The dissipation of electric energy in a device causes a heating of the device. The temperature rise of the device depends on the amount of energy dissipated, the heat capacity of the device, and the heat flow between the device and its environment.
 
@@ -3989,13 +3827,9 @@ The Arrhenius equation gives a gross estimate for the acceleration of the failur
 
 Example : If the temperature of the substrate of a device increases from $50~^{\circ}\mathrm{C}$ (i.e., $323\mathrm{~K~}$ ) to $100~^{\circ}\mathrm{C}$ (i.e., $373\,\mathrm{\textrm{K}}$ ), and a failure mechanism with an activation energy of $0.5\ \mathrm{eV}$ is assumed, then the failure rate of the device will increase by a factor of about 11.
 
-# 8.2  Hardware Power Reduction Techniques
+## 8.2 Hardware Power Reduction Techniques
 
-# 8.2.1  Device Scaling
-
-Table_8.2 Table_8. 2 Table_8.2 8.2 Table_8.2 Table_8.2 g Table_8.2 Table_8.2 $\alpha$ Table_8.2 ­ Table_8.2 $1/\sqrt{2}$ , Table_8.2 Table_8.2 Table_8.2 $\sqrt{2}$ Table_8.2 ­ Table_8.2 Table_8.2 Table_8.2 $2\sqrt{2}$ Table_8.2 Table_8.2 8.2 Table_8.2 Table_8.2 Table_8.2 Table_8.2 g Table_8.2
-
-Table_8.2 Table_8.2
+### 8.2.1 Device Scaling
 
 Example : Let us assume that an IP-core scales down ideally by a factor of $1/\sqrt{2}$ every 2 years. At the start, the IP-core has a size of $16\;\mathrm{mm}^{2}$ and executes $I25\,\mathrm{MIPS}$ , consuming a power of $^{I6}$  Watt. Eight years later, after four generations of shrinking, this IP-core has a size of $I\,\mathrm{mm}^{2}$ , executes 500 MIPS, and consumes a power of $I$  Watt. The energy needed for the execution of an instruction has been reduced by a factor of $^{64}$ , while the time perfor­ mance has increased by a factor of 4.
 
@@ -4005,20 +3839,20 @@ Example : According to Intel [Int09], the 1996 design of the first teraflop supe
 
 Over the last 25 years, device scaling has also had a very beneficial effect on device reliability. The failure rates of transistors have been reduced even faster than the increase in the number of transistors on a die, resulting in an increase in chip
 
-Table 8.2  The effect of ideal device scaling on device parameters
-![](images/2a29bd70501ef4699c7ef3392068c0b26244a6ef4af6e034d9ba6daf62627f53.jpg)
+> Table 8.2 The effect of ideal device scaling on device parameters
+> ![](images/2a29bd70501ef4699c7ef3392068c0b26244a6ef4af6e034d9ba6daf62627f53.jpg)
 
 reliability despite the fact that many more transistors are contained in a scaled chip. The MTTF w.r.t. permanent failures of industrial state-of-the-art chips are signifi­ cantly lower than 100 FIT [Pau98].
 
 Scaling cannot continue indefinitely because there are limits due to the discrete structure of matter and quantum mechanical effects, such as electron tunneling . The reduction in the number of dopants in a transistor increases the statistical variations. The thermal energy of noise limits the reduction of the supply voltage. If the supply voltage is higher than stipulated by ideal scaling , then scaling will lead to an increased thermal stress. In submicron technologies, we have reached the point where these effects cannot be neglected any more. The International Technology Roadmap for Semiconductors 2009 [ITR09, p. 15] summarizes these challenges in a single sentence: The ITRS is entering a new era as the industry begins to address the theoretical limits of CMOS scaling .
 
-# 8.2.2  Low-Power Hardware Design
+### 8.2.2 Low-Power Hardware Design
 
 Over the past few years, a number of hardware design techniques have been devel­ oped that help to reduce the power needs of VLSI circuits [Kea07]. In this section, we give a very short overview of some of these techniques.
 
 Clock Gating: In many highly integrated chips, a significant fraction of the total power is consumed in the distribution network of the execution clock. One way to reduce power in the execution clock network is to turn execution clocks off when and where they are not needed. Clock gating can reduce the power con­ sumption of chips by $20\%$ or more. Transistor Sizing and Circuit Design: Energy can be saved if the transistor and cir­ cuit design is optimized with the goal to save power instead with the goal to get the optimal speed. Special sizing of transistors can help to reduce the capacitance that must be switched. Multi-threshold Logic: With present-day micro electronic design tools, it is possible to build transistors with different threshold voltages on the same die. High-­ threshold transistors have a lower leakage current but are slower than low-­ threshold transistors. It is thus possible to save dynamic and static power by properly combining these two types of transistors.
 
-# 8.2.3  Voltage and Frequency Scaling
+### 8.2.3 Voltage and Frequency Scaling
 
 It has been observed that, within limits characteristic for each technology, there is a nearly linear dependency of frequency on voltage. If the frequency for the operation of the device is reduced, the voltage can be reduced as well without disturbing the functionality of the device [Kea07]. Since the power consumption grows linearly with frequency, but with the square of the voltage, combined voltage and frequency scaling causes not only a reduction of power, but also a reduction of energy required to perform a computation.
 
@@ -4030,32 +3864,30 @@ The additional circuitry that is needed to perform software-controlled dynamic v
 
 Given that the hardware supports voltage and frequency scaling, the operating system can integrate power management with real-time scheduling of time-critical tasks to optimize the overall energy consumption. If the Worst-Case Execution Time (the WCET) of a task is known on a processor running at a given frequency and the task has some slack until it must finish, then the frequency and voltage can be reduced to let the task complete just in time and save energy. This integrated real-­ time and power management scheduling has to be supported at the level of the operating system.
 
-# 8.2.4  Sub-threshold Logic
+### 8.2.4 Sub-threshold Logic
 
 There are an increasing number of applications where ultralow power consumption with reduced computational demands is desired. Take the example of the billions of standby circuits in electronic devices (e.g., television sets) that are continuously draining power while waiting for a significant event to occur (e.g., a start command from a remote console or a significant event in a sensor network). The technique of sub-threshold logic uses the (normally unwanted) sub-threshold leakage current of a submicron device to encode logic functionality. This novel technique has the potential to design low time performance devices with a very low power require­ ment [Soe01].
 
-# 8.3  System Architecture
+## 8.3 System Architecture
 
 Next to device scaling, the following system architecture techniques are most effec­ tive in reducing the energy requirement significantly.
 
-# 8.3.1  Technology-Agnostic Design
+### 8.3.1 Technology-Agnostic Design
 
 At a high level of abstraction, an application requirement can be expressed by a platform-independent model (PIM) (see also Sect. 4.4 ). A PIM describes the func­ tional and temporal properties of the requested solution without making any refer­ ence to the concrete hardware implementation. For example, when we specify the functionality and timing of the braking system of a car, we demand that the proper braking action will start within 2 milliseconds after stepping on the brake pedal. We say that such a high-level description of an application is technology agnostic . A PIM can be expressed in a procedural language, e.g., System C, augmented by the required timing information, e.g., by UML-MARTE [OMG08]. The system imple­ menter has then the freedom to select the implementation technology that is most appropriate for his/her purpose.
-
-Figure_8.2 Figure_8.2 Figure_8.2 ­ Figure_8.2 Figure_8.2 sigure_8.2 Figure_8.2 ­ Figure_8.2 8.2 Figure_8.2 Figure_8.2 Figure_8.2 Figure_8.2
 
 More recently, GPUs (graphics processing units) and TPUs (tensor processing units) have also become available for use in real-time systems, e.g., in self-driving cars. Experiments in embedded computer vision applications show that the energy efficiency of GPUs is typically in between the ones of CPUs and FPGAs [Qas19]. TPUs implement a domain-specific architecture for machine learning applications. The first-generation tensor processing unit (TPU) runs deep neural network (DNN) inference 15–30 times faster with 30–80 times better energy efficiency than contem­ porary CPUs and GPUs in similar semiconductor technologies [Jou18]. Today, MPSoCs for real-time systems may include CPUs, GPUs, and TPUs, e.g., the NVIDIA Xavier.
 
 The technology-agnostic design makes it possible to change the target hardware of a single component, e.g., replace a CPU-based component by an ASIC without having to revalidate the complete system. Such an implementation flexibility is of
 
-![](images/2907b4e5970a454a66d02d55ad2c5ed2dc0122c39eff75e304fb515c42b69a9b.jpg)  
-Fig. 8.2  Power requirement of different implementation technologies. (Adapted from [Lau06, slide 7])
+> ![](images/2907b4e5970a454a66d02d55ad2c5ed2dc0122c39eff75e304fb515c42b69a9b.jpg) 
+> Fig.8.2 Power requirement of different implementation technologies. (Adapted from [Lau06, slide 7])
 
 particular importance for battery-operated mass-market devices where the initial test version of the functionality of a component can be realized and tested on a CPU-based implementation and later transferred to an ASIC for the mass-market production.
 
 The technology-agnostic design makes it possible to address the technology-­ obsolescence problem as well: In long-lived applications, such as the control system on an airplane, the services of the control system must be provided for a long timespan, e.g., 50  years. During this time-span, the original hardware technology becomes outdated. Technology-agnostic design makes it possible to change the hardware and the related transformation of the PIM to the PSM, without having to change the interfaces to the other subsystems.
 
-# 8.3.2  Pollack’s Rule
+### 8.3.2 Pollack’s Rule
 
 Over the past 20 years, we have seen a tremendous performance increase of single processor systems. New architectural mechanisms, such as pipelining, out-of-order execution, speculative branching, and many levels of caching, have made it possible to significantly reduce the execution time needed for a sequential program without having to invest in alternative system and software architectures that support a highly parallel execution environment. However, this performance increase of the sequential processor has its (energy) price. Fred Pollack from Intel looked at the integer performance increase of a new micro-architecture against area and power of the previous micro-architecture, implemented in the same process technology [Bor07]. Pollack found that over a number of Intel architectures, starting with the i386 in 1986, the performance of every subsequent micro-architecture increased only with the square root of the power or silicon area. This relationship is normally referred to as Pollack’s rule.
 
@@ -4071,7 +3903,7 @@ Example : In a premium car of today, one can find up to one hundred electronic c
 
 Message passing has many other advantageous properties over shared memory, such as function encapsulation, fault containment, the support of implementation-­ agnostic design methods , and the support of power gating.
 
-# 8.3.3  Power Gating
+### 8.3.3 Power Gating
 
 In a multi-core SoC, consisting of a set of heterogeneous IP-cores interconnected by a real-time network-on-chip, a well-defined application functionality can be imple­ mented in a dedicated IP-core, i.e., a component (see Chap. 4 ). Examples for such an application functionality are resource management, security, MPEG processing, input-output controllers, external memory manager, etc. If the components interact with each other via message passing only and do not access a shared memory, then it is possible to encapsulate a component physically and logically in a small area of silicon that can be powered down when the services of the component are not needed, thus saving the dynamic and static power of the component. Normally, the state (see Sect. 4.2 ) that is contained in the component will be lost on power-down. It is therefore expedient to select a power/down power/up point when the state of the component is empty. Otherwise, the state of the component must be saved. There are two ways of saving the state, either by hardware techniques or by sending a mes­ sage containing the state to another component such that this other component can save and update the state.
 
@@ -4081,7 +3913,7 @@ In an MPSoC architecture that consists of a plurality of components that are con
 
 In many devices, it is useful to distinguish between two major modes of opera­ tion: service mode and sleep mode . In service mode, the full set of device services is provided and the dynamic power dissipation is dominant. In sleep mode, only the minimal functionality for activating the device upon arrival of a wake-up signal is required. In sleep mode, the static (leakage) power is of major concern. Power gat­ ing can be very effective in reducing the power demand in sleep mode. Alternatively, the sleep mode can be implemented in a completely different technology, e.g., in sub-threshold logic, that starts up the service mode as soon as a relevant wake-up signal is recognized. In this case, all components that are involved in the service mode can be shut down completely while in sleep mode, thus not consuming any power at all.
 
-# 8.3.4  Real Time Versus Execution Time
+### 8.3.4 Real Time Versus Execution Time
 
 It is important to stress the fundamental difference between real time and execution time in a distributed real-time system. There is no close relation between these two time bases. In an MPSoC, the granularity of the real time will be one or two orders of magnitude larger (and correspondingly, the frequency lower) than the granularity of the execution time at the chip level. Since the power consumption is proportional to the frequency—see Sect. 8.1.2 —the global real-time clock distribution network will only consume a small fraction of the power that would be needed for a global execution time clock distribution network . Establishing a single global real-time base for the whole MPSoC, but many local asynchronous execution time bases, one in each IP-core of an MPSoC, can itself save a significant amount of energy and furthermore increase the energy savings potentials of a chip, as explained in the fol­ lowing paragraphs.
 
@@ -4089,13 +3921,13 @@ The real-time base makes the nodes of a distributed system aware of the progres�
 
 The execution time base drives the algorithmic computations of the nodes and thus determines the speed of the computation (logical control—see Sect. 4.1.3 ). In a large SoC, the energy dissipation of a global execution time clocking system of a SoC can form a large part of the chip’s energy consumption. In addition, the location-­dependent delay of the central high-frequency timing signals results in a clock skew that is difficult to control. Furthermore, the individual control of the voltage and frequency of an IP-core is not possible if all IP-cores operate with the same clock signal. It makes therefore sense to design each IP-core and the NoC as an island of synchronicity that generates its clocking signal for the execution time locally. If the voltage of an IP-core can also be controlled locally, then the IP-core is an encapsulated subsystem with the capability for local voltage-frequency scaling and power gating. In the architecture model outlined in Chap. 4 , clock-domain crossing occurs in the message-interface between an IP-core and the NoC, which must be carefully designed in order to avoid meta-stability problems.
 
-# 8.4  Software Techniques
+## 8.4 Software Techniques
 
 The equation $E=C_{\mathrm{eff}}\,V^{2}N$ of Sect. 8.1.2 gives the dynamic energy $E$ required for the execution of a program. There are three parameters in this equation, the effective capacitance $C_{\mathrm{eff}}$ , the supply voltage $V.$ , and the number of instructions $N.$ . Reducing the effective capacitance $C_{\mathrm{eff}}$ and reducing the number of instructions per task reduces the time needed to complete a computational task. There is thus no inherent conflict at the software level between designing for energy performance and design­ ing for time performance.
 
 The voltage depends primarily on the hardware technology and can be controlled by software if dynamic voltage and frequency scaling is supported by the hardware. The effective capacitance $C_{\mathrm{eff}}$ can be reduced by spatial and temporal locality , par­ ticularly in the memory system. The number of instructions, the instruction count $N$ , needed to achieve the intended result depends entirely on the software. The instruc­ tion count is the sum of the instructions executed by the system software and the application software.
 
-# 8.4.1  System Software
+### 8.4.1 System Software
 
 System software consists of the operating system and the middleware. The objec­ tives of a flexible system-software infrastructure versus minimal energy consump­ tion drive the design process in different directions. Many operating systems of the past have considered flexibility as the key design driver, ignoring the topic of energy performance. In these systems, a long sequence of system-software instructions must be executed in order to finalize a single application command, such as the sending of a message.
 
@@ -4105,25 +3937,25 @@ Whenever hardware resources (processors, memory, caches) are shared among nearly
 
 The non-availability of a generally accepted architectural style for embedded systems leads to many property mismatches at the interfaces among subsystems (e.g., big-endian vs. little-endian ) that must be reconciled by the system software, leading to necessary but unproductive glue software which consumes valuable energy when executed.
 
-# 8.4.2  Application Software
+### 8.4.2 Application Software
 
-Algorithm Design   An algorithm that has been developed from the point of view of optimal time performance will be different from an algorithm that is developed from the point of view of optimal energy performance. In contrast to best-effort systems, where the average execution time of an algorithm is optimized, in real-time systems, the worst-case execution time of an algorithm is of relevance.
+Algorithm Design An algorithm that has been developed from the point of view of optimal time performance will be different from an algorithm that is developed from the point of view of optimal energy performance. In contrast to best-effort systems, where the average execution time of an algorithm is optimized, in real-time systems, the worst-case execution time of an algorithm is of relevance.
 
 In many real-time applications, such as multimedia or control applications, there is not always a need for precise results—good approximate results will suffice. Finding algorithms that give a good approximate result under energy constraints is a relevant research topic (see also Sect. 10.2.3 on anytime algorithms ).
 
 In cloud computing , where some tasks are processed in the cloud (the servers in the cloud run on power available from the electric utility) and some tasks are com­ puted locally in a battery-operated mobile device, the trade-off between the energy requirement of the algorithms for the local computations and the energy require­ ment for the transmission of data to and from the cloud is an important architectural design issue. Appropriate design tools must support the design exploration of differ­ ent task allocation strategies to the cloud or to the mobile device.
 
-Algorithm Analysis   Many embedded applications contain a computationally inten­ sive algorithmic segment, called a computational kernel. Profiling the execution of a program that implements an algorithm can identify the computational kernel. If a computational kernel is isolated into a self-contained component that puts all ele­ ments of the computational kernel (e.g., processing engine, memory) physically and temporally close together in an IP-core, then the effective capacity $C_{\mathrm{eff}}$ of the execu­ tion environment can be reduced, thus saving energy. If an identified computational kernel is mature, does not change, and is used by many applications, then it can be transformed to an ASIC IP-core of an MPSoC, resulting in orders of magnitude energy savings.
+Algorithm Analysis Many embedded applications contain a computationally inten­ sive algorithmic segment, called a computational kernel. Profiling the execution of a program that implements an algorithm can identify the computational kernel. If a computational kernel is isolated into a self-contained component that puts all ele­ ments of the computational kernel (e.g., processing engine, memory) physically and temporally close together in an IP-core, then the effective capacity $C_{\mathrm{eff}}$ of the execu­ tion environment can be reduced, thus saving energy. If an identified computational kernel is mature, does not change, and is used by many applications, then it can be transformed to an ASIC IP-core of an MPSoC, resulting in orders of magnitude energy savings.
 
-Data Structures   The significant energy cost for memory access can be reduced by the design of data structures that are optimized from the point of view of energy efficiency for the specified use cases. For example, a strictly binary time-format, which can be implemented with a binary counter, requires much less energy to oper­ ate than a time-format that is based on the Gregorian calendar.
+Data Structures The significant energy cost for memory access can be reduced by the design of data structures that are optimized from the point of view of energy efficiency for the specified use cases. For example, a strictly binary time-format, which can be implemented with a binary counter, requires much less energy to oper­ ate than a time-format that is based on the Gregorian calendar.
 
-# 8.4.3  Software Tools
+### 8.4.3 Software Tools
 
 Next to the system software, compilers have an important role to play in the design of low-energy systems. Energy-aware compilers can select the instructions for the target code on the basis of their energy requirements. The energy-aware allocation of registers is another important issue, since the register file of modern processors is quite energy intensive.
 
 System designers need tools to estimate the power consumption at an early stage of the design. These tools must be flexible to support different target architectures in order that design explorations can be carried out. They should be smoothly inte­ grated in the design environment.
 
-# Points to Remember
+## Points to Remember
 
 • Energy is defined as the capability of performing work. Power refers to the inten­ sity of work. Energy is the integral of power over time. Although power and energy savings are closely related, they are not the same.
 
@@ -4159,11 +3991,11 @@ System designers need tools to estimate the power consumption at an early stage 
 
 • The most important contribution of software to energy efficiency is a reduction of the number and types of statements that must be executed to achieve the desired results.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 The tutorial survey by Benini and Micheli [Ben00] gives an excellent overview of system- level design methods that lead to energy-efficient electronic systems. Pedram and Nazarian [Ped06] provide models to investigate the thermal effects in submicron VLSI circuits. The limits of device scaling are the topic of [Fra01]. Pollack’s rule and the future of SoC architectures are the topic of [Bor07] . Issues of energy awareness in systems-on-chip are discussed in [Pol07]. The review paper by Sah and Amgoth [Sah20] contains a good survey of energy harvesting.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 8.1 Explain the difference between power and energy.
 
@@ -4181,7 +4013,7 @@ The tutorial survey by Benini and Micheli [Ben00] gives an excellent overview of
 
 # Chapter 9 Real-Time Operating Systems
 
-# Overview
+## Overview
 
 In a component-based distributed real-time system, we distinguish two levels of system administration, the coordination of the message-based communication and resource allocation among the components and the establishment, coordination, and control of the concurrent tasks within each one of the components. The focus of this chapter is on the operating system and middleware functions within a component.
 
@@ -4189,51 +4021,43 @@ In case the software core image is not permanently residing in a component (e.g.
 
 A real-time operating system (OS) within a component must be temporally pre­ dictable. In contrast to operating systems for personal computers, a real-time OS should be deterministic and support the implementation of fault tolerance by active replication. In safety-critical applications, the OS must be certified. Since the certi­ fication of the behavior of a dynamic control structure is difficult, dynamic mecha­ nisms should be avoided wherever possible.
 
-# 9.1  Inter-Component Communication
+## 9.1 Inter-Component Communication
 
 The information exchange of a component with its environment, i.e., other compo­ nents and the physical plant, is realized exclusively across the four message-based interfaces introduced in Sect. 4.4 . It is up to the generic middleware and the compo­ nent’s operating system to manage the access to these four message interfaces for inter-component communication. The TII, the LIF, and the TDI are discussed in this section, while the local interface is discussed in the section on process input/output.
 
-# 9.1.1  Technology-Independent Interface (TII)
+### 9.1.1 Technology-Independent Interface (TII)
 
 In some sense, the TII is a meta-level interface that brings a new component out of the core image of the software, the job , and the given embodiment, the component hardware into existence . The purpose of the TII is the configuration of the compo­ nent and the control of the execution of the software within a component. The com­ ponent hardware must provide a dedicated TII port for the secure download of a new software image onto a component. Periodically, the $\mathrm{g}$ -state (see Sect. 4.2.3 ) of the component should be published at the TII in order to be able to check the contents of the g-state by a dedicated diagnostic component. A further TII port directly con­ nected to the component hardware must allow the resetting of the component hard­ ware and the restart of the component software at the next reintegration point with a relevant g-state that is contained in the reset message. The TII is also used to control the voltage and frequency of the component hardware, provided the given hardware supports voltage-frequency scaling. Since malicious TII messages have the potential to destroy the correct operation of a component, the authenticity and integrity of all messages that are sent to the TII interface must be assured.
 
-# 9.1.2  Linking Interface (LIF)
+### 9.1.2 Linking Interface (LIF)
 
 The linking interface of a component is the interface where the services of the com­ ponent are provided during normal operation. It is the most important interface from the point of view of operation and of com pos ability of the components. The LIF has been discussed extensively in Sect. 4.6 .
 
-# 9.1.3  Technology-Dependent Interface (TDI)
+### 9.1.3 Technology-Dependent Interface (TDI)
 
 In the domain of VLSI design, it is common practice to provide a dedicated inter­ face port for testing and debugging, known as the JTAG port that has been standard­ ized in IEEE standard 1149.1. Such a debugging port, the TDI, supports a detailed view inside a component that is needed by a component-designer to monitor and change the internal variables of a component that are not visible at any one of the other interfaces. The component-local OS should support such a testing and debug­ ging interface.
 
-# 9.1.4  Generic Middleware (GM)
+### 9.1.4 Generic Middleware (GM)
 
-Figure_9.1 9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1 Figure_9.1Figure_9.1 $\mathrm{g}$ Figure_9.1­Figure_9.1 $g$ Figure_9.1 Figure_9.1 Figure_9.1
-
-![](images/1931db4238a6662f6546f19b781c7b7167509780a45ad8770226dab21fa75636.jpg)  
-Fig. 9.1  Software structure within a component
-
-Figure*9.1 Figure_9.1 Figure_9.1 tigure_9.1 ­ Figure* 9.1 Figure_9.1
+> ![](images/1931db4238a6662f6546f19b781c7b7167509780a45ad8770226dab21fa75636.jpg) 
+> Fig.9.1 Software structure within a component
 
 Example : A high-level time-monitored request-reply protocol that is a unique concept at the level of the API requires two or more independent messages at the basic message trans­ port service (BMTS) level and a set of local timer and operating system calls for its ­implementation. The GM implements this high-level protocol. It keeps track of all relevant messages and coordinates the timeouts and operating system calls.
 
-# 9.2  Task Management
+## 9.2 Task Management
 
 In our model, the component software is assumed to be a unit of design , and a whole component is the smallest unit of fault containment. The concurrent tasks within a component are cooperative and not competitive . Since the whole component is a unit of failure, it is not justified to design and implement resource-intensive mecha­ nisms to protect the component-internal tasks from each other. The component-­ internal operating system is thus a lightweight operating system that manages the task execution and the resource allocation inside a component.
 
 A task is the execution of a sequential program. It starts with reading of input data and of its internal state and terminates with the production of the results and updated internal state. A task that does not have an internal state at its point of invo­ cation is called a stateless task ; otherwise, it is called a statefull task . Task manage­ ment is concerned with the initialization, execution, monitoring, error handling, interaction, and termination of tasks.
 
-# 9.2.1  Simple Tasks
+### 9.2.1 Simple Tasks
 
 If there is no synchronization point within a task, we call it a simple task ( S-task ), i.e., whenever an S-task is started, it can continue until its termination point is reached, provided the CPU is allocated to the task. Because an S-task cannot be blocked within the body of the task by waiting for an event external to the S-task, the execution time of an S-task is not directly dependent on the progress of other tasks in the node and can be determined in isolation . It is possible for the execution time of an S-task to be extended by indirect interactions, such as the preemption of the task execution by a task with higher priority.
 
-Depending on the triggering signal for the activation of a task, we distinguish time-triggered (TT) tasks and (ET) event-triggered tasks . A cycle (see Sect. 3.3.4 ) is
+Depending on the triggering signal for the activation of a task, we distinguish time-triggered (TT) tasks and (ET) event-triggered tasks . A cycle (see Sect. 3.3.4 ) is assigned to every TT-task, and the task execution is started whenever the global time reaches the start of a new cycle. Event-triggered tasks are started whenever a start-­ event for the task occurs. A start event can be the completion of another task or an external event that is relayed to the operating system by an incoming message or by the interrupt mechanism.
 
-Fig. 9.2  Task descriptor list (TADL) in a TT operating system
-![](images/37acf5bfd8ccd31eb267959988c271eb7fcb0f8c3349c8181c650f3b82e13c57.jpg)
-
-assigned to every TT-task, and the task execution is started whenever the global time reaches the start of a new cycle. Event-triggered tasks are started whenever a start-­ event for the task occurs. A start event can be the completion of another task or an external event that is relayed to the operating system by an incoming message or by the interrupt mechanism.
-
-Figure_9.2 ­ Figure_9.2 Figure_9.2 Figure_9.2 Figure_9.2 Figure_9.2 9.2 Figure_9.2 Figure_9.2 tigure \_9.2 Figure_9.2
+> Fig.9.2 Task descriptor list (TADL) in a TT operating system
+> ![](images/37acf5bfd8ccd31eb267959988c271eb7fcb0f8c3349c8181c650f3b82e13c57.jpg)
 
 Whenever the time reaches an entry point of the TADL, the dispatcher is acti­ vated. It performs the action that has been planned for this instant. If a task is started, the operating system informs the task of its activation time, which is synchronized within the cluster. After task termination, the operating system makes the results of the task available to other tasks.
 
@@ -4255,11 +4079,11 @@ In an RT operating system that supports task preemption, each occurrence of a si
 
 The API of an operating system that supports event-triggered S-tasks requires more system calls than an operating system that only supports time-triggered tasks. Along with the data structures and the already introduced system calls of a TT sys­ tem, the operating system must provide system calls to ACTIVATE (make ready) a new task, either immediately or at some future point in time. Another system call is needed to DEACTIVATE an already activated task.
 
-# 9.2.2  Trigger Tasks
+### 9.2.2 Trigger Tasks
 
 In a TT system, control always remains within the computer system. To recognize significant state changes outside the computer, a TT system must regularly monitor the state of the environment. A trigger task is a time-triggered S-task that evaluates a trigger condition on a set of temporally accurate state variables that reflect the current state of the environment. The result of a trigger task can be a control signal that activates another application task. Since the states, either external or internal, are sampled at the frequency of the trigger task, only those states with a duration longer than the sampling period of the trigger task are guaranteed to be observed. Short-lived states, e.g., the push of a button, must be stored in a memory element (e.g., in the interface) for a duration that is longer than the sampling period of the trigger task. The periodic trigger task generates an administrative overhead in a TT system. The period of the trigger task must be smaller than the laxity (i.e., the dif­ ference between deadline and execution time) of an RT transaction that is activated by an event in the environment. If the laxity of the RT transaction is very small ( ${\left<=\begin{array}{l l}{\begin{array}{r l}\end{array}\right.}$  msec), the overhead associated with a trigger task can become intolerable and the implementation of an interrupt is needed.
 
-# 9.2.3  Complex Tasks
+### 9.2.3 Complex Tasks
 
 A task is called a complex task (C-Task) if it contains a blocking synchronization statement (e.g., a semaphore wait operation ) within the task body. Such a wait oper­ ation may be required because the task must wait until a condition outside the task is satisfied, e.g., until another task has finished updating a common data structure or until input from a terminal has arrived. If a common data structure is implemented as a protected shared object, only one task may update the data at any particular moment (mutual exclusion). All other tasks must be delayed by the wait operation until the currently active task finishes its critical section. The worst-case execution time of a complex task in a node is therefore a global issue because it depends directly on the progress of the other tasks within the node or within the environment of the node.
 
@@ -4267,7 +4091,7 @@ The WCET of a C-task cannot be determined independently of the other tasks in th
 
 The application programming interface of a C-task is more complex than that of S-tasks. In addition to the three data structures already introduced, i.e., the input data structure , the output data structure , and the $g$ -state data structure, the global data structures that are accessed at the blocking point must be defined. System calls must be provided that handle a WAIT-FOR-EVENT and a SIGNAL-EVENT. After the execution of the WAIT-FOR-EVENT, the task enters the blocked state and waits in the queue. The event occurrence releases the task from the blocked state. It must be monitored by a time-out task to avoid permanent blocking. The time-out task must be deactivated in case the awaited event occurs within the time-out period, otherwise the blocked task must be killed .
 
-# 9.3  The Dual Role of Time
+## 9.3 The Dual Role of Time
 
 A real-time image must be temporally accurate at the instant of use (see Sect. 5.4 ). In a distributed system, the temporal accuracy can only be checked if the duration between the instant of observation of a RT entity, observed by the sensor node, and the instant of use , determined by the actuator node, can be measured. This requires the availability of a global time base of proper precision among all involved nodes. If fault tolerance is required, two independent self-checking channels must be pro­ vided to link an end system to the fault-tolerant communication infrastructure. The clock synchronization messages must be provided on both channels in order to tol­ erate the loss of any one of the channels.
 
@@ -4285,7 +4109,7 @@ It is important to distinguish these two different roles of time. In the majorit
 
 Example: Consider a computer system that must measure the time interval between start and finish during a downhill skiing competition. In this application, it is sufficient to treat time as data and to record the precise time of occurrence of the start event and finish event. The messages that contain these two instants are transported to another computer that later calculates the difference. The situation of a train-control system that recognizes a red alarm signal, meaning the train should stop immediately, is different. Here, an immediate action is required as a consequence of the event occurrence. The occurrence of the event must initiate a control action without delay.
 
-# 9.3.1  Time as Data
+### 9.3.1 Time as Data
 
 The implementation of time as data is simple if a global time base of known preci­ sion is available in the distributed system. The observing component must include the time-stamp of event occurrence in the observation message. We call a message that contains the time-stamp of an event a timed message. The timed message can be processed at a later time and does not require any dynamic data-dependent modi­ fication of the temporal control structure. Alternatively, if a field bus communica­ tion protocol with a known constant delay is used, the time of message arrival, corrected by this known delay, can be used to establish the send time of the message.
 
@@ -4295,7 +4119,7 @@ In a TT system that exchanges messages at a priori known instants with a fixed p
 
 Example: In a single periodic TTEthernet message with a data field of 1000 bytes and cycle time of $I O$ msec , 1000 alarms can be encoded in a single message with a worst-case reaction time of $I O$ msec and an alarm resolution time of better than 100 μ sec . In a 100 Mbit/sec Ethernet system, these periodic alarm messages will generate a (background) system load of less than $1\%$ of the network capacity. Such an alarm reporting system will not cause any increase in load if all $l000$ alarms occur at the same instant. If, in an event-triggered system, a $I O O$ byte Ethernet message is sent whenever an alarm occurs, then the peak-load of 1000 alarm messages will generate a load of $10\,\%$ of the network capacity and a worst-case reac­ tion time of 100 msec .
 
-# 9.3.2  Time as Control
+### 9.3.2 Time as Control
 
 Time as control is more difficult to handle than time as data , because it may some­ times require a dynamic data-dependent modification of the temporal control struc­ ture. It is prudent to scrutinize the application requirements carefully to identify those cases where such a dynamic rescheduling of the tasks is absolutely necessary.
 
@@ -4303,17 +4127,15 @@ If an event requires immediate action, the worst-case delay of the message trans
 
 Example : The prompt reaction to an emergency shutdown request requires time to act as control. Assume that the emergency message is the highest priority message in a CAN system. In a CAN system, the worst-case delay of the highest priority message is bounded by the transmission duration of the longest message (which is about 100 bits), because a message transmission cannot be preempted.
 
-# 9.4  Inter-Task Interactions
+## 9.4 Inter-Task Interactions
 
 Inter-task interactions are needed to exchange data among concurrently executing tasks inside a component such that progress toward the common goal can be achieved. There are two principal means to exchange data among a set of concur­ rently executing tasks: (i) by the exchange of messages and (ii) by providing a shared region of data that can be accessed by more than one task.
-
-Figure_9.3 Figure_9.3 tigure_9.3 Figure_9.3 Figure_9.3 Figure_9.3 9.3 Figure_9.3 tigure_9.3 tigure_9.3 Figure_9.3 Figure_9.3 Figure_9.3 tigure_9.3 Figure_9.3 tigure_9.3
 
 The following three techniques can be applied to solve the problem:
 
 (i) Coordinated task schedules. (ii) The non-blocking write protocol. (iii) Semaphore operations.
 
-# 9.4.1  Coordinated Static Schedules
+### 9.4.1 Coordinated Static Schedules
 
 In a time-triggered system, the task schedules can be constructed in such a way that critical sections of tasks do not overlap. This is a very effective way to solve the problem, because.
 
@@ -4321,26 +4143,23 @@ In a time-triggered system, the task schedules can be constructed in such a way 
 
 Wherever possible, this solution should be selected.
 
-![](images/d333824f57966c329e27cb0a0d151886269441543edca5c88513975d0c3a89da.jpg)  
-Fig. 9.3  Critical task sections and critical data regions
+> ![](images/d333824f57966c329e27cb0a0d151886269441543edca5c88513975d0c3a89da.jpg) 
+> Fig.9.3 Critical task sections and critical data regions
 
-# 9.4.2  The Non-blocking Write (NBW) Protocol
+### 9.4.2 The Non-blocking Write (NBW) Protocol
 
 If, however, the tasks with the critical sections are event-triggered, we cannot design conflict-free coordinated task schedules a priori. The non-blocking write (NBW) protocol is an example for a lock-free real-time protocol [Kop93a] that ensures data integrity of one or more readers if only a single task is writing into the critical region of data.
 
 Let us analyze the operation of the NBW for the data transfer across the interface from the communication system to the host computer. At this interface, there is one writer, the communication system, and many readers, the tasks of the component. A reader does not destroy the information written by a writer, but a writer can interfere with the operation of the reader. In the NBW protocol, the real-time writer is never blocked. It will thus write a new version of the message into the critical data region whenever a new message arrives. If a reader reads the message while the writer is writing a new version, the retrieved message will contain inconsistent information and must be discarded. If the reader is able to detect the interference, then the reader can retry the read operation until it retrieves a consistent version of the data. It must be shown that the number of retries performed by the reader is bounded.
 
-Figure_9.4 Figure_9.4 ­ Figure_9.4 Figure_9.4 ­ tigure_9.4 Figure_9.4 Figure_9.4 Figure_9.4 tigure_9.4 Figure_9.4 9.4 Figure_9.4
-
 It can be shown that an upper bound for the number of read retries exists if the time between write operations is significantly longer than the duration of a write or read operation. The worst-case extension of the execution time of a typical real-time task caused by the retries of the reader is only a few percent of the original worst-­ case execution time (WCET) of the task [Kop93a].
 
-![](images/c5a46ea29816a2e2187a47b2fd19f1dbcc48e6f020eddf98aadeea711978595e.jpg)
-
-Fig. 9.4  The non-blocking write (NBW) protocol
+> ![](images/c5a46ea29816a2e2187a47b2fd19f1dbcc48e6f020eddf98aadeea711978595e.jpg)
+> Fig.9.4 The non-blocking write (NBW) protocol
 
 Non-locking synchronization has been implemented in other real-time systems, e.g., in a multimedia system [And95]. It has been shown that systems with non-­ locking synchronization achieve better performance than systems that lock the data.
 
-# 9.4.3  Semaphore Operations
+### 9.4.3 Semaphore Operations
 
 The classic mechanism to avoid data inconsistency is to enforce mutual exclusive execution of the critical task sections by a WAIT operation on a semaphore variable that protects the resource. Whenever one task is in its critical section, the other task must wait in a queue until the critical section is freed ( explicit synchronization ).
 
@@ -4348,38 +4167,33 @@ The implementation of a semaphore-initialize operation is expensive, both regard
 
 Both the NBW protocol and semaphore operation can lead to a loss of replica determinism. The simultaneous access to CCF or a semaphore variable leads to a race condition that is resolved in an unpredictable manner in the replicas.
 
-# 9.5  Process Input/Output
+## 9.5 Process Input/Output
 
 A transducer is a device that forms the interface between the plant (the physical world) and the computer (the cyber world). On the input side, a sensor transforms a mechanical or electrical quantity to a digital form, whereby the discrete ness of the digital representation leads to an unavoidable error if the domain of the physical quantity is dense. The last bit of any digital representation of an analog quantity (both in the domain of value and time) is non-predictable , leading to potential inconsistencies in the cyber world representation if the same quantity is observed by two independent sensors. On the output side, a digital value is transformed to an appropriate physical signal by an actuator .
 
-# 9.5.1  Analog Input/Output
+### 9.5.1 Analog Input/Output
 
 In the first step, many sensors of analog physical quantities produce analog signals in the standard $\mathit{4-20\;m A}$ range ( 4 mA meaning $O\%$ of the value range and $2O\ m A$ meaning $I O O\%$ of the value range) that is then transformed to its digital form by an analog-to-digital (AD) converter. If a measured value is encoded in the $\scriptstyle4-2O\;m A$ range, it is possible to distinguish a broken wire, where no current flows $(O\ m A)$ , from a measured value of $O\%\left(4\:m A\right)$ .
 
 Without special care, the electric-noise level limits the accuracy of any analog control signal to about $0.1\%$ . Analog-to-digital (AD) converters with a resolution of more than 10 bits require a carefully controlled physical environment that is not available in typical industrial applications. A 16-bit word length is thus more than sufficient to encode the value of an RT entity measured by an analog sensor.
 
-Figure_9.5 Figure_9.5 ­ Figure_9.5 Figure_9.5 1.4 Figure_9.5 Figure_9.5 Figure_9.5 Figure_9.5 Figure_9.5 ­ Figure_9.5 Figure_9.5 tigure_9.5 9.5 Figure_9.5 Figure_9.5 Figure_9.5 Figure_9.5 Figure_9.5 Figure_9.5
-
 In many control applications, the instant when an analog physical quantity is observed (sampled) is in the sphere of control of the computer system. In order to reduce the dead time of a control loop, the instant of sampling, the transmission of the sampled data to the control node, and the transmission of the set point data to the actuator node should be phase-aligned (see Sect. 3.3.4 ).
 
-# 9.5.2  Digital Input/Output
+### 9.5.2 Digital Input/Output
 
 A digital I/O signal transits between the two states TRUE and FALSE. In many appli­ cations, the length of the time interval between two state changes is of semantic sig­ nificance. In other applications, the moment when the transition occurs is important.
 
-Figure_9.6 Figure_9.6 Figure_9.6 9.6 Figure_9.6 Figure_9.6 Figure_9.6 Figure_9.6 ­ Figur e_9.6 Figure_9.6
+> ![](images/3b23da499de17dd1bda75d1bbec3e8a7a79583ed107d2f02e3607dfa4917261d.jpg) 
+> Fig.9.5 Time delay of a complete I/O transaction
 
-![](images/3b23da499de17dd1bda75d1bbec3e8a7a79583ed107d2f02e3607dfa4917261d.jpg)  
-Fig. 9.5  Time delay of a complete I/O transaction
-
-![](images/a9591d30faf2d20ee754e0d3c4da65aa695032ea37b9cb0eb3bf88fbe6bcdab9.jpg)
-
-Figure_9.6 Figure_9.6
+> ![](images/a9591d30faf2d20ee754e0d3c4da65aa695032ea37b9cb0eb3bf88fbe6bcdab9.jpg)
+> Figure_9.6 Figure_9.6
 
 A number of sensor devices generate a sequence of pulse inputs, where each pulse carries information about the occurrence of an event. For example, distance measurements are often made by a wheel rolling along the object that must be mea­ sured. Every rotation of the wheel generates a defined number of pulses that can be converted to the distance traveled. The frequency of the pulses is an indication of the speed. If the wheel travels past a defined calibration point , an additional digital input is signaled to the computer to set the pulse counter to a defined value. It is good practice to convert the relative event values to absolute state values as soon as possible.
 
-Time Encoded Signals   Many output devices, e.g., power semiconductors such as IGBTs (insulated-gate-bipolar transistors), are controlled by pulse sequences of well-specified shape (pulse width modulation—PWM). A number of microcon­ trollers designed for I/O provide special hardware support for generating these digi­ tal pulse shapes.
+Time Encoded Signals Many output devices, e.g., power semiconductors such as IGBTs (insulated-gate-bipolar transistors), are controlled by pulse sequences of well-specified shape (pulse width modulation—PWM). A number of microcon­ trollers designed for I/O provide special hardware support for generating these digi­ tal pulse shapes.
 
-# 9.5.3  Interrupts
+### 9.5.3 Interrupts
 
 The interrupt mechanism empowers a device outside the sphere of control of the computer to govern the temporal control pattern inside the computer. This is a pow­ erful and potentially dangerous mechanism that must be used with great care. Interrupts are needed when an external event requires a reaction time from the com­ puter ( time as control ) that cannot be implemented efficiently with a trigger task.
 
@@ -4391,51 +4205,36 @@ Example : In the hardware implementation of the IEEE 1588 clock synchronization 
 
 In an interrupt-driven software system, a transient error on the interrupt line may upset the temporal control pattern of the complete node and may cause the violation of important deadlines. Therefore, the time interval between the occurrence of any two interrupts must be continuously monitored and compared to the specified mini­ mum duration between interrupting events.
 
-Figure_9.7   Figure_9.7 Figure_9.7 9.7 Figure_9.7 Figure_9.7 Figure_9.7 Figure_9.7 ­ Figure_9.7 tigure_9.7 Figure_9.7 ­ Figure_9.7 ­ Figure_9.7 Figure_9.7 Figure_9.7
-
 The two time-triggered tasks are needed for error detection. The first task detects a sporadic interrupt that should not have occurred. The second task detects a miss­ ing interrupt that should have occurred. These different errors require different types of error handling. The more we know about the regularity of the controlled object, the smaller we can make the time window in which an interrupt may occur. This leads to better error detection coverage.
 
 Example : An engine controller of an automotive engine has such a stringent requirement regarding the point of fuel injection relative to the position of the piston in the cylinder that the implementation must use an interrupt for measuring the position [Pol95b]. The position of the piston and the rotational speed of the crankshaft are measured by a number of sensors that generate rising edges whenever a defined section of the crankshaft passes the position of the sensor. Since the speed and the maximum angular acceleration (or deceleration) of the engine is known, the next correct interrupt must arrive within a small dynamically defined time window from the previous interrupt. The interrupt logic is only enabled during this short window and disabled at all other times to reduce the impact of sporadic interrupts
 
-![](images/d9de447d87cd5ca3059a9d9934c5511e789f5ee66f39ebeb8cb495df3ed46bc2.jpg)  
-Fig. 9.7  Time window of an interrupt
+> ![](images/d9de447d87cd5ca3059a9d9934c5511e789f5ee66f39ebeb8cb495df3ed46bc2.jpg) 
+> Fig.9.7 Time window of an interrupt
 
 on the temporal control pattern within the host software. Such a sporadic interrupt, if not detected, may cause a mechanical damage to the engine.
 
-# 9.5.4  Fault-Tolerant Actuators
+### 9.5.4 Fault-Tolerant Actuators
 
-Figure_9.8 ­ Figure_9.8 Figure_9.8 Figure_9.8 ­ tigure_9.8 Figure_9.8 Figure_9.8 tigure_9.8 9.8 Figure_9.8 tigure_9.8 tigure_9.8 Figure_9.8
+Fail-Silent Actuator In a fail-silent architecture, all subsystems must support the fail-silence property. A fail-silent actuator will either produce the intended (correct) output action or no result at all. In case a fail-silent actuator fails to produce an out­ put action, it may not hinder the activity of the replicated fail-silent actuator. The fail-silent actuator of Fig.9.8a consists of two motors where each one has enough power to move the point of action. Each motor is connected to one of the two replica-­determinate output channels of the computer system. If one motor fails at any location, the other motor is still capable to move the point of action to the desired position.
 
-Fig ur e*9.8a;Figure_9.8b Figure_9.8a;Figure_9.8b Figure_9.8a;Figure_9.8b 9.8a Figure_9.8a;Figure_9.8b Figure* 9.8a;Figu re_9 .8b Figure_9.8a;Figure_9.8b 9.8b Figure_9.8a;Figure_9.8b
+Triple Modular Redundant Actuator The triple modular redundant (TMR) actua­ tor (Fig.9.8b ) consists of three motors, each one connected to one of the three replica-­determinate output channels of the fault-tolerant computer. The force of any two motors must be strong enough to override the force of the third motor; however, any single motor may not be strong enough to override the other two. The TMR actuator can be viewed as a mechanical voter that will place the point of action into a position that is determined by the majority of the three channels, outvoting the disagreeing channel.
 
-Fail-Silent Actuator   In a fail-silent architecture, all subsystems must support the fail-silence property. A fail-silent actuator will either produce the intended (correct) output action or no result at all. In case a fail-silent actuator fails to produce an out­ put action, it may not hinder the activity of the replicated fail-silent actuator. The fail-silent actuator of Fig.  9.8a consists of two motors where each one has enough power to move the point of action. Each motor is connected to one of the two replica-­determinate output channels of the computer system. If one motor fails at any location, the other motor is still capable to move the point of action to the desired position.
-
-Triple Modular Redundant Actuator   The triple modular redundant (TMR) actua­ tor (Fig.  9.8b ) consists of three motors, each one connected to one of the three replica-­determinate output channels of the fault-tolerant computer. The force of any
-
-![](images/ed85a67894a8ca630b45f649914621078ef5adb4c96e7975c41fea15da081be3.jpg)
-
-Fig. 9.8  Fault-tolerant actuators
-
-two motors must be strong enough to override the force of the third motor; however, any single motor may not be strong enough to override the other two. The TMR actuator can be viewed as a mechanical voter that will place the point of action into a position that is determined by the majority of the three channels, outvoting the disagreeing channel.
-
-Figure_9.9   Figure_9.9 ­ Figure_9.9 ­ Figure_9.9 Figure_9.9 Figure_9.9 Figure_9.9 tigure_9.9 9.9 Figure_9.9
+> ![](images/ed85a67894a8ca630b45f649914621078ef5adb4c96e7975c41fea15da081be3.jpg)
+> Fig.9.8 Fault-tolerant actuators
 
 Example : In a car, a stateless voter can be placed at the brake actuator at each one of the four wheels. The voter will mask the failure in any one of the TMR channels. A stateless voter is an example for an intelligent instrumentation.
 
-# 9.5.5  Intelligent Instrumentation
-
-Figure_9.10 Figure_9.10 ­ Figure_9.10 Figure_9.10 Figure_9.10 Figure_9.10 9.10 Figure_9.10 Figure_9.10 Figure_9.10
+### 9.5.5 Intelligent Instrumentation
 
 The intelligent instrument hides the concrete sensor interface. Its single chip microcontroller provides the required control signals to the sensor/actuator, per­ forms signal conditioning, signals smoothing and local error detection, and pres­ ents/takes a meaningful RT image in standard measuring units to/from the field bus message interface. Intelligent instruments simplify the connection of the plant equipment to the computer.
 
 Example : A MEMS acceleration sensor, micro machined into silicon, mounted with the appropriate microcontroller and network interface into a single package, forms an intelli­ gent sensor.
 
-To make the measured value fault-tolerant, a number of independent sensors can be packed into a single intelligent instrument. Inside the intelligent instrument, an agreement protocol is executed to arrive at an agreed sensor value, even if one of the
+To make the measured value fault-tolerant, a number of independent sensors can be packed into a single intelligent instrument. Inside the intelligent instrument, an agreement protocol is executed to arrive at an agreed sensor value, even if one of the sensors has failed. This approach assumes that independent measurements can be taken in close spatial vicinity.
 
-![](images/c90d1aa616b2bfa8540cf81f5ea385aae76944c82e28338a4af8f870955da917.jpg)  
-Fig. 9.9  Stateless voter associated with an actuator
-
-sensors has failed. This approach assumes that independent measurements can be taken in close spatial vicinity.
+> ![](images/c90d1aa616b2bfa8540cf81f5ea385aae76944c82e28338a4af8f870955da917.jpg) 
+> Fig.9.9 Stateless voter associated with an actuator
 
 The integration of a field bus node with an actuator produces an intelligent actua­ tor device.
 
@@ -4443,20 +4242,20 @@ Example : An actuator of an airbag in an automobile must ignite an explosive cha
 
 Because many different field bus designs are available today, and no generally accepted industry wide field bus standard has emerged, the sensor manufacturer must cope with the dilemma to provide a different intelligent instrument network interface for different field buses.
 
-# 9.5.6  Physical Installation
+### 9.5.6 Physical Installation
 
 It is beyond the scope of this book to cover all the issues that must be considered in the physical installation of a sensor-based real-time control system. These complex topics are covered in books on computer hardware installation. However, a few critical issues are highlighted.
 
-Power Supply   Many computer failures are caused by power failures, i.e., long power outages, short power outages of less than a second also called sags, and power surges (short over voltage). The provision of a reliable and clean power source is thus of crucial importance for the proper operation of any computer system.
+Power Supply Many computer failures are caused by power failures, i.e., long power outages, short power outages of less than a second also called sags, and power surges (short over voltage). The provision of a reliable and clean power source is thus of crucial importance for the proper operation of any computer system.
 
-Grounding   The design of a proper grounding system in an industrial plant is a major task that requires considerable experience. Many transient computer hardware failures are caused by deficient grounding systems. It is important to connect all units in a tree-like manner to a high quality true ground point. Loops in the ground cir­ cuitry must be avoided because they pick up electromagnetic disturbances.
+Grounding The design of a proper grounding system in an industrial plant is a major task that requires considerable experience. Many transient computer hardware failures are caused by deficient grounding systems. It is important to connect all units in a tree-like manner to a high quality true ground point. Loops in the ground cir­ cuitry must be avoided because they pick up electromagnetic disturbances.
 
-![](images/1e97662a62036054834f0d8317136a245161a1c236e34e2d34737c4acbf38edd.jpg)  
-Fig. 9.10  Intelligent instrumentation
+> ![](images/1e97662a62036054834f0d8317136a245161a1c236e34e2d34737c4acbf38edd.jpg) 
+> Fig.9.10 Intelligent instrumentation
 
-Electric Isolation   In many applications, complete electric isolation of the computer terminals from the signals in the plant is needed. Such isolation can be achieved by opto couplers for digital signals or signal transformers for analog signals.
+Electric Isolation In many applications, complete electric isolation of the computer terminals from the signals in the plant is needed. Such isolation can be achieved by opto couplers for digital signals or signal transformers for analog signals.
 
-# 9.6  Agreement Protocols
+## 9.6 Agreement Protocols
 
 Sensors and actuators have failure rates that are considerably higher than those of single-chip microcomputers. No critical output action should rely on the input from a single sensor. It is necessary to observe the controlled object by a number of dif­ ferent sensors and to relate these observations to detect erroneous sensor values, to observe the effects of actuators, and to get an agreed image of the physical state of the controlled object. In a distributed system, agreement (also called consensus in [Bar93]) typically requires an information exchange among the agreeing partners. However, some information exchange can also be avoided by an appropriate system architecture.
 
@@ -4464,15 +4263,15 @@ Example: The fail-operational architecture of [Kop21] discussed in the example o
 
 In general, the number of rounds (or stages) of information exchange needed depends on the type of agreement and the assumptions about the possible failure modes of the partners.
 
-# 9.6.1  Raw Data, Measured Data, and Agreed Data
+### 9.6.1 Raw Data, Measured Data, and Agreed Data
 
 In Sect. 1.2.1 , the concepts of raw data, measured data, and agreed data have been introduced: raw data are produced at the digital hardware interface of the physical sensor. Measured data , presented in standard engineering units, are derived from one or a sequence of raw data samples by the process of signal conditioning . Measured data that are judged to be a correct image of the RT entity, e.g., after the comparison with other measured data elements that have been derived by diverse techniques, are called agreed data . Agreed data form the inputs to control actions. In a safety-critical system where no single point of failure is allowed to exist, an agreed data element may not originate from a single sensor. The challenge in the development of a safety-critical input system is the selection and placement of the redundant sensors and the design of the agreement algorithms. We distinguish two types of agreement, syntactic agreement and semantic agreement .
 
-# 9.6.2  Syntactic Agreement
+### 9.6.2 Syntactic Agreement
 
 Assume that two independent sensors measure a single RT entity. When the two observations are transformed from the domain of analog values to the domain of discrete values, a slight difference between the two raw values caused by a measure­ ment error and digital iz ation error is unavoidable. These different raw data values will cause different measured values. A digital iz ation error also occurs in the time domain when the time of occurrence of an event in the controlled object is mapped into the discrete time of the computer. Even in the fault-free case, these different measured values must be reconciled in some way to present an agreed view of the RT entity to the possibly replicated control tasks. In syntactic agreement, the agree­ ment algorithm computes the agreed value without considering the context of the measured values. For example, the agreement algorithm always takes the average of a set of measured data values. If a Byzantine failure of one of the sensors must be tolerated, three additional sensors are needed (see Sect. 6.4.2 ).
 
-# 9.6.3  Semantic Agreement
+### 9.6.3 Semantic Agreement
 
 If the meanings of the different measured values are related to each other by a pro­ cess model based on a priori knowledge about the relationships and the physical characteristics of the process parameters of the controlled object, we speak of semantic agreement . In semantic agreement, it is not necessary to duplicate or trip­ licate every sensor. Different redundant sensors observe different RT entities. A model of the physical process relates these redundant sensor readings to each other to find a set of plausible agreed values and to identify implausible values that indi­ cate a sensor failure. Such an erroneous sensor value must be replaced by a calcu­ lated estimate of the most probable value at the given point in time, based on the inherent semantic redundancy in the set of measurements.
 
@@ -4482,31 +4281,31 @@ Semantic agreement requires a fundamental understanding of the applied process t
 
 In engineering practice, semantic agreement of measured data values is more important than syntactic agreement. As a result of the agreement phase, an agreed (and consistent) set of digital input values is produced. These agreed values, defined in the value domain and in the time domain, are then used by all (replicated) tasks to achieve a replica-determinate behavior of the control system.
 
-# 9.7  Error Detection
+## 9.7 Error Detection
 
 A real-time operating system must support error detection in the temporal domain and error detection in the value domain by generic methods. Some of these generic methods are described in this section.
 
-# 9.7.1  Monitoring Task Execution Times
+### 9.7.1 Monitoring Task Execution Times
 
 A tight upper bound on the worst-case execution time (WCET) of a real-time task must be established during software development (see Sect. 10.2 ). This WCET must be monitored by the operating system at run time to detect transient or permanent hardware errors. In case a task does not terminate its operation within the WCET, the execution of the task is terminated by the operating system. It is up to the appli­ cation to specify which action should be taken in case of an error.
 
-# 9.7.2  Monitoring Interrupts
+### 9.7.2 Monitoring Interrupts
 
 An erroneous external interrupt has the potential to disrupt the temporal control structure of the real-time software within the node. At design time, the minimum inter-arrival periods of interrupts must be known to be able to estimate the peak load that must be handled by the software system. At run time, this minimum inter-­ arrival period must be enforced by the operating system by disabling the interrupt line to reduce the probability of erroneous sporadic interrupts (see Sect. 9.5.3 ).
 
-# 9.7.3  Double Execution of Tasks
+### 9.7.3 Double Execution of Tasks
 
 Fault-injection experiments have shown that the double execution of tasks and the subsequent comparison of the results is a very effective method for the detection of transient hardware faults that cause undetected errors in the value domain [Arl03].
 
 The operating system can provide the execution environment for the double execu­ tion of application tasks without demanding any changes to the application task per se. It is thus possible to decide at the time of system configuration which tasks should be executed twice and for which tasks it is sufficient to rely on a single execution.
 
-# 9.7.4  Watchdogs
+### 9.7.4 Watchdogs
 
 A fail-silent node will produce correct results or no results at all. The failure of a fail-silent node can only be detected in the temporal domain. A standard technique is the provision of a watchdog signal ( heart-beat ) that must be periodically pro­ duced by the operating system of the node. If the node has access to the global time, the watchdog signal should be produced periodically at known absolute points in time. An outside observer can detect the failure of the node as soon as the watchdog signal disappears.
 
 A more sophisticated error detection mechanism that also covers part of the value domain is the periodic execution of a challenge-response protocol by a node. An outside error detector provides an input pattern to the node and expects a defined response pattern within a specified time interval. The calculation of this response pattern should involve as many functional units of the node as possible. If the calcu­ lated response pattern deviates from the a priori known correct result, an error of the node is detected.
 
-# Points to Remember
+## Points to Remember
 
 • We distinguish two levels of system administration in a component-based dis­ tributed real-time system: (i) the coordination of the message-based communica­ tion and resource allocation among the components and (ii) the establishment, coordination of, and control of the concurrent tasks within each one of the components.
 
@@ -4530,11 +4329,11 @@ A more sophisticated error detection mechanism that also covers part of the valu
 
 • Typically, for every output value, about three to seven input values must be observed, not only to be able to diagnose erroneous measured data elements, but also to check the proper operation of the actuators.
 
-# Bibliographic Notes
+### Bibliographic Notes
 
 Many of the standard textbooks on operating systems contain sections on real-time operating systems, e.g., the textbook by Stallings [Sta18]. The ARINC 653 standard is used for operating systems in safety-critical avionics systems. AUTOSAR is an operating system for automotive applications, including safety-critical ones. Some commercial $\mathrm{POSIC^{TM}}$ certified or mostly $\mathrm{POSIC^{TM}}$ compliant real-time operating systems are used for safety-critical systems. The open-source operating system Linux is also mostly POSIX™ compliant. There are ongoing efforts toward a safety-­ critical Linux [All21]. However, due to its SW complexity, it is unclear if these efforts will be successful in the future. On the other hand, several Linux-based oper­ ating systems are used for non-safety-critical soft real-time systems. The most recent research contributions on real-time operating systems can be found in the annual Proceedings of the IEEE Real-Time System Symposium and the Journal Real-Time Systems from Springer Verlag.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 9.1 Explain the difference between a standard operating system for a personal computer and an RT operating system within the node of a safety-critical real-­ time application!
 
@@ -4562,43 +4361,39 @@ Many of the standard textbooks on operating systems contain sections on real-tim
 
 # Chapter 10 Real-Time Scheduling
 
-# Overview
+## Overview
 
 Many thousands of research papers have been written about how to schedule a set of tasks in a system with a limited amount of resources such that all tasks will meet their deadlines. This chapter tries to summarize some important results of schedul­ ing research that are relevant to the designer of real-time systems. The chapter starts by introducing the notion of a s ched ul ability test to determine whether a given task set is s ched ul able or not. It distinguishes between a sufficient, an exact, and a neces­ sary s ched ul ability test. A scheduling algorithm is optimal if it will find a schedule whenever there is a solution. The adversary argument shows that generally it is not possible to design an optimal online scheduling algorithm. A prerequisite for the application of any scheduling technique is knowledge about the worst-case execu­ tion time (WCET) of all time-critical tasks. Section 10.2 presents techniques to estimate the WCET of simple tasks and complex tasks. Modern processors with pipelines and caches make it difficult to arrive at tight bounds for the WCET. Anytime algorithms that contain a root segment that provides a result of sufficient (but low) quality and an optional periodic segment that improves on the quality of the previ­ ous result point to a way out of this dilemma. They use the interval between the actual execution time of the root segment of a concrete task execution and the dead­ line, i.e., the worst execution time of the root segment, to improve the quality of the result. Section 10.3 covers the topic of static scheduling. The concept of the sched­ ule period is introduced and an example of a simple search tree that covers a sched­ ule period is given. A heuristic algorithm has to examine the search tree to find a feasible schedule. If it finds one, the solution can be considered a constructive s ched ul ability test. Section 10.4 elaborates on dynamic scheduling. It starts by look­ ing at the problem of scheduling a set of independent tasks by the rate-monotonic algorithm. Next, the problem of scheduling a set of dependent tasks is investigated. The priority ceiling protocol is introduced and a s ched ul ability test for the priority ceiling protocol is sketched. Finally, the scheduling problem in distributed systems is touched and some ideas about alternative scheduling strategies such as feedback scheduling are given.
 
-# 10.1  The Scheduling Problem
+## 10.1 The Scheduling Problem
 
 A hard real-time system must execute a set of concurrent real-time tasks in such a way that all time-critical tasks meet their specified deadlines. Every task needs com­ putational, data, and other resources (e.g., input/output devices) to proceed. The scheduling problem is concerned with the allocation of these resources to satisfy all timing requirements.
 
-# 10.1.1  Classification of Scheduling Algorithms
+### 10.1.1 Classification of Scheduling Algorithms
 
-The following diagram (Fig.  10.1 ) presents a taxonomy of real-time scheduling algorithms [Che87].
+The following diagram (Fig.10.1 ) presents a taxonomy of real-time scheduling algorithms [Che87].
 
-Static Scheduling   A scheduler is called static (or pre-run time) if it makes its scheduling decisions prior to run time. It generates a dispatching table for the run time dispatcher off-line. For this purpose, it needs complete prior knowledge about the task set characteristics, e.g., maximum execution times, precedence constraints, mutual exclusion constraints, and deadlines. The dispatching table (see Fig. 9.2 ) contains all information the dispatcher needs at run time to decide at every point of the sparse time base which task is to be scheduled next. The run time overhead of the dispatcher is small. The system behavior is deterministic.
+Static Scheduling A scheduler is called static (or pre-run time) if it makes its scheduling decisions prior to run time. It generates a dispatching table for the run time dispatcher off-line. For this purpose, it needs complete prior knowledge about the task set characteristics, e.g., maximum execution times, precedence constraints, mutual exclusion constraints, and deadlines. The dispatching table (see Fig.9.2 ) contains all information the dispatcher needs at run time to decide at every point of the sparse time base which task is to be scheduled next. The run time overhead of the dispatcher is small. The system behavior is deterministic.
 
 A scheduler is called dynamic (or online ) if it makes its scheduling decisions at run time, selecting one out of the current set of ready tasks. Dynamic schedulers are flexible and adapt to an evolving task scenario. They consider only the current task requests. The run time effort involved in finding a schedule can be substantial. In general, the system behavior is non-deterministic.
 
-Static Versus Dynamic Scheduling   At its core, scheduling is a resource allocation problem in time and space , where tasks have demands for computing and commu­ nication resources. This resource allocation problem often becomes computation­
+Static Versus Dynamic Scheduling At its core, scheduling is a resource allocation problem in time and space , where tasks have demands for computing and commu­ nication resources. This resource allocation problem often becomes computation­ ally complex in industrial real-time systems, even NP-complete. Besides the operational differences discussed above, there is also a fundamental difference in how this computational complexity is handled by static and dynamic scheduling. The static scheduling strategy treats the resource allocation problem as a search problem for valid configurations (see Sect. 10.3.1 ), e.g., finding a valid dispatching table. Thus, the computationally intensive part of problem-solving is handled entirely at design time. The typical strategy of dynamic scheduling, on the other hand, is to put assumptions on the task set’s characteristics, i.e., to reduce the prob­ lem , thereby reducing the necessity for intensive computation or avoiding it entirely. One typical reduction technique is the assumption of task independence (see ­Rate-­Monotonic Scheduling in Sect. 10.4.1 ). Another reduction technique is limit­ ing the resource utilization but allowing certain task dependencies (see the Priority Ceiling Protocol in Sect. 10.4.2 ). Many industrial real-time systems may not allow adequate reduction techniques or impose even stronger forms of dependencies between tasks (e.g., phase-aligned transactions, see Sect. 10.5.1 ) and may only be realized efficiently by static scheduling.
 
-![](images/f093891894172a226270c48de7e0f11c37771d5305a92aba044a65f086d6d0de.jpg)  
-Fig. 10.1  Taxonomy of real-time scheduling algorithms
+> ![](images/f093891894172a226270c48de7e0f11c37771d5305a92aba044a65f086d6d0de.jpg) 
+> Fig.10.1 Taxonomy of real-time scheduling algorithms
 
-ally complex in industrial real-time systems, even NP-complete. Besides the operational differences discussed above, there is also a fundamental difference in how this computational complexity is handled by static and dynamic scheduling. The static scheduling strategy treats the resource allocation problem as a search problem for valid configurations (see Sect. 10.3.1 ), e.g., finding a valid dispatching table. Thus, the computationally intensive part of problem-solving is handled entirely at design time. The typical strategy of dynamic scheduling, on the other hand, is to put assumptions on the task set’s characteristics, i.e., to reduce the prob­ lem , thereby reducing the necessity for intensive computation or avoiding it entirely. One typical reduction technique is the assumption of task independence (see ­Rate-­Monotonic Scheduling in Sect. 10.4.1 ). Another reduction technique is limit­ ing the resource utilization but allowing certain task dependencies (see the Priority Ceiling Protocol in Sect. 10.4.2 ). Many industrial real-time systems may not allow adequate reduction techniques or impose even stronger forms of dependencies between tasks (e.g., phase-aligned transactions, see Sect. 10.5.1 ) and may only be realized efficiently by static scheduling.
+Non-preemptive and Preemptive Scheduling In non-preemptive scheduling, the currently executing task will not be interrupted until it decides on its own to release the allocated resources. Non-preemptive scheduling is reasonable in a task scenario where many short tasks (compared to the time it takes for a context switch) must be executed. In preemptive scheduling, the currently executing task may be preempted, i.e., interrupted, if a more urgent task requests service.
 
-Non-preemptive and Preemptive Scheduling   In non-preemptive scheduling, the currently executing task will not be interrupted until it decides on its own to release the allocated resources. Non-preemptive scheduling is reasonable in a task scenario where many short tasks (compared to the time it takes for a context switch) must be executed. In preemptive scheduling, the currently executing task may be preempted, i.e., interrupted, if a more urgent task requests service.
+Centralized Versus Distributed Scheduling In a dynamic distributed real-time sys­ tem, it is possible to make all scheduling decisions at one central site or to develop cooperative distributed algorithms for the solution of the scheduling problem. The central scheduler in a distributed system is a critical point of failure. Because it requires up-to-date information on the load situations of all nodes, it can also con­ tribute to a communication bottleneck.
 
-Centralized Versus Distributed Scheduling   In a dynamic distributed real-time sys­ tem, it is possible to make all scheduling decisions at one central site or to develop cooperative distributed algorithms for the solution of the scheduling problem. The central scheduler in a distributed system is a critical point of failure. Because it requires up-to-date information on the load situations of all nodes, it can also con­ tribute to a communication bottleneck.
+### 10.1.2 S ched ul ability Test
 
-# 10.1.2  S ched ul ability Test
+A test that determines whether a set of ready tasks can be scheduled such that each task meets its deadline is called a s ched ul ability test . We distinguish between exact , necessary , and sufficient s ched ul ability tests (Fig.10.2 ).
 
-A test that determines whether a set of ready tasks can be scheduled such that each task meets its deadline is called a s ched ul ability test . We distinguish between exact , necessary , and sufficient s ched ul ability tests (Fig.  10.2 ).
+A scheduler is called optimal if it will always find a feasible schedule whenever it exists. Alternatively, a scheduler is called optimal , if it can find a schedule when­ ever a clairvoyant scheduler, i.e., a scheduler with complete knowledge of the future request times, can find a schedule. Garey and Johnson [Gar75] have shown that in nearly all cases of task dependency, even if there is only one common resource, the complexity of an exact s ched ul ability test algorithm belongs to the class of NP-complete problems and is thus computationally intractable. Sufficients ched ul ability test algorithms can be simpler at the expense of giving a negative result for some task sets that are, in fact, s ched ul able. A task set is definitely not s ched ul able if a necessary s ched ul ability test gives a negative result. If a necessary s ched ul ability test gives a positive result, there is still a probability that the task set may not be s ched ul able. The task request time is the instant when a request for a task execution is made. Based on the request times, it is useful to distinguish between two different task types: periodic and sporadic tasks. This distinction is important from the point of view of s ched ul ability.
 
-A scheduler is called optimal if it will always find a feasible schedule whenever it exists. Alternatively, a scheduler is called optimal , if it can find a schedule when­ ever a clairvoyant scheduler, i.e., a scheduler with complete knowledge of the future request times, can find a schedule. Garey and Johnson [Gar75] have shown that in nearly all cases of task dependency, even if there is only one common resource, the complexity of an exact s ched ul ability test algorithm belongs to the class of NP-complete problems and is thus computationally intractable. Sufficient
-
-![](images/31c3383938cde2a821dbb8fd05401781c497134562981e5b2f49a0fcf9ecd8ad.jpg)  
-Fig. 10.2  Necessary and sufficient s ched ul ability test
-
-s ched ul ability test algorithms can be simpler at the expense of giving a negative result for some task sets that are, in fact, s ched ul able. A task set is definitely not s ched ul able if a necessary s ched ul ability test gives a negative result. If a necessary s ched ul ability test gives a positive result, there is still a probability that the task set may not be s ched ul able. The task request time is the instant when a request for a task execution is made. Based on the request times, it is useful to distinguish between two different task types: periodic and sporadic tasks. This distinction is important from the point of view of s ched ul ability.
+> ![](images/31c3383938cde2a821dbb8fd05401781c497134562981e5b2f49a0fcf9ecd8ad.jpg) 
+> Fig.10.2 Necessary and sufficient s ched ul ability test
 
 If we start with an initial request, all future request times of a periodic task are known a priori by adding multiples of the known period to the initial request time. Let us assume that there is a task set $\{T_{i}\}$ of periodic tasks with periods $p_{i},$ deadline interval $d_{i}$ , and execution time $c_{i}.$ The deadline interval is the duration between the deadline of a task and the task request instant, i.e., the instant when a task becomes ready for execution. We call the difference $d_{i}-c_{i}$ the laxity $l_{i}$ of a task. It is sufficient to examine schedules of length of the least common multiples of the periods of these tasks, the schedule period , to determine s ched ul ability. A necessary schedula­ bility test for a set of periodic tasks states that the sum of the utilization factors.
 
@@ -4610,13 +4405,13 @@ must be less or equal to $n$ , where $n$ is the number of available processors. 
 
 The request times of sporadic tasks are not known a priori. To be s ched ul able, there must be a minimum interval between any two request times of sporadic tasks. Otherwise, the necessary s ched ul ability test introduced above will fail. If there is no constraint on the request times of task activation s, the task is called an aperiodic task.
 
-# 10.1.3  The Adversary Argument
+### 10.1.3 The Adversary Argument
 
 Let us assume that a real-time computer system contains a dynamic scheduler with full knowledge of the past but without any knowledge about future request times of tasks. S ched ul ability of the current task set may depend on when a sporadic task will request service in the future.
 
 The adversary argument [Mok83, p.41] states that, in general, it is not possible to construct an optimal totally online dynamic scheduler if there are mutual exclu­ sion constraints between a periodic and a sporadic task. The proof of the adversary argument is relatively simple.
 
-Consider two mutually exclusive tasks, task $T l$ is periodic and the other task $T2$ is sporadic, with the parameters given in Fig.  10.3 . The necessary s ched ul ability test introduced above is satisfied, because
+Consider two mutually exclusive tasks, task $T l$ is periodic and the other task $T2$ is sporadic, with the parameters given in Fig.10.3 . The necessary s ched ul ability test introduced above is satisfied, because
 
 $$
 \mu=2⁄4+1/4=3⁄4\leq1.
@@ -4624,22 +4419,22 @@ $$
 
 Whenever the periodic task is executing, an adversary requests service for the sporadic task. Due to the mutual exclusion constraint, the sporadic task must wait until the periodic task is finished. Since the sporadic task has a laxity of 0, it will miss its deadline.
 
-The clairvoyant scheduler knows all the future request times of the sporadic tasks and at first schedules the sporadic task and thereafter the periodic task in the gap between two sporadic task activation s (Fig.  10.3 ).
+The clairvoyant scheduler knows all the future request times of the sporadic tasks and at first schedules the sporadic task and thereafter the periodic task in the gap between two sporadic task activation s (Fig.10.3 ).
 
 The adversary argument demonstrates the importance of information about the future behavior of tasks for solving the scheduling problem. If the online scheduler does not have any further knowledge about the request times of the sporadic task, the dynamic scheduling problem is not solvable, although the processor capacity is more than sufficient for the given task scenario. The design of predictable hard real-­ time systems is simplified if regularity assumptions about the future scheduling requests can be made. This is the case in cyclic systems that restrain the points in time at which external requests are recognized by the computing system.
 
-# 10.2  Worst-Case Execution Time
+## 10.2 Worst-Case Execution Time
 
 A deadline for completing an RT transaction can only be guaranteed if the worst-­ case execution times (WCET) of all application tasks and communication actions that are part of the RT transaction are known a priori. The WCET of a task is a guaranteed upper bound for the time between task activation and task termination. It must be valid for all possible input data and execution scenarios of the task and should be a tight bound.
 
-![](images/765b0904ff0170c5e3dd7a7ed0b08ace82d84ebe59186b8c6cb6f674a92d3fd4.jpg)  
-Fig. 10.3  The adversary argument
+> ![](images/765b0904ff0170c5e3dd7a7ed0b08ace82d84ebe59186b8c6cb6f674a92d3fd4.jpg) 
+> Fig.10.3 The adversary argument
 
 In addition to the knowledge about the WCET of the application tasks, we must find an upper bound for the delays caused by the administrative services of the oper­ ating system, the worst-case administrative overhead (WCAO). The WCAO includes all administrative delays that affect an application task but are not under the direct control of the application task (e.g., those caused by context switches, scheduling, cache reloading because of task preemption by interrupts or blocking, and direct memory access).
 
 This section starts with an analysis of the WCET of a non-preemptive simple task. We then proceed to investigate the WCET of a preemptive simple task before looking at the WCET of complex tasks, and, finally, we discuss common techniques regarding the timing analysis of real-time programs.
 
-# 10.2.1  WCET of Simple Tasks
+### 10.2.1 WCET of Simple Tasks
 
 The simplest task we can envision is a single sequential S-task that runs on dedi­ cated hardware without preemption and without requiring any operating system services. The WCET of such a task depends on
 
@@ -4651,9 +4446,9 @@ The simplest task we can envision is a single sequential S-task that runs on ded
 
 In this section, we investigate the analytical construction of a tight worst-case execution time bound of such a simple task on hardware, where the execution time of an instruction is context independent.
 
-Source Code Analysis   The first problem concerns the calculation of the WCET of a program written in a higher-level language, under the assumption that the maxi­ mum execution times of the basic language constructs are known and context inde­ pendent. In general, the problem of determining the WCET of an arbitrary sequential program is unsolvable and is equivalent to the halting problem for Turing machines. Consider, for example, the simple statement that controls the entry to a loop:
+Source Code Analysis The first problem concerns the calculation of the WCET of a program written in a higher-level language, under the assumption that the maxi­ mum execution times of the basic language constructs are known and context inde­ pendent. In general, the problem of determining the WCET of an arbitrary sequential program is unsolvable and is equivalent to the halting problem for Turing machines. Consider, for example, the simple statement that controls the entry to a loop:
 
-S: while ( exp )     do loop ;
+S: while ( exp )  do loop ;
 
 It is not possible to determine a priori after how many iterations, if at all, the Boolean expression exp will evaluate to the value FALSE and when statement S will terminate. For the determination of the WCET to be a tractable problem, there are a number of constraints that must be met by the program [Pus89]:
 
@@ -4661,11 +4456,9 @@ It is not possible to determine a priori after how many iterations, if at all, t
 
 (ii) Absence of recursive function calls.
 
-(iii) Absence of dynamic data structures. The WCET analysis concerns only the temporal properties of a program. The
+(iii) Absence of dynamic data structures. The WCET analysis concerns only the temporal properties of a program. The temporal characteristics of a program can be abstracted into a WCET bound for every program statement using the known WCET bound of the basic language con­ structs. For example, the WCET bound of a conditional statement
 
-temporal characteristics of a program can be abstracted into a WCET bound for every program statement using the known WCET bound of the basic language con­ structs. For example, the WCET bound of a conditional statement
-
-S: if ( exp )     then $\mathrm{S_{1}}$     else $S_{2}$ ;
+S: if ( exp )  then $\mathrm{S_{1}}$  else $S_{2}$ ;
 
 can be abstracted as
 
@@ -4677,16 +4470,16 @@ where $T(S)$ is the maximum execution time of statement $S$ , with T(exp) , $T(S
 
 The WCET analysis of a program which is written in a high-level language must determine which program path, i.e., which sequence of instructions, will be exe­ cuted in the worst-case scenario. The longest program path is called the critical path . Because the number of program paths normally grows exponentially with the program size, the search for the critical path can become intractable if the search is not properly guided and the search space is not reduced by excluding infeasi­ ble paths.
 
-Compiler Analysis   The next problem concerns the determination of the maximum execution time of the basic language constructs of the source language under the assumption that the maximum execution times of the machine language commands are known and context independent. For this purpose, the code generation strategy of the compiler must be analyzed, and the timing information that is available at the source code level must be mapped into the object code representation of the pro­ gram such that an object-code timing analysis tool can make use of this information.
+Compiler Analysis The next problem concerns the determination of the maximum execution time of the basic language constructs of the source language under the assumption that the maximum execution times of the machine language commands are known and context independent. For this purpose, the code generation strategy of the compiler must be analyzed, and the timing information that is available at the source code level must be mapped into the object code representation of the pro­ gram such that an object-code timing analysis tool can make use of this information.
 
-Execution Time Analysis   The next problem concerns the determination of the worst-case execution time of the commands on the target hardware. If the processor of the target hardware has fixed instruction execution times, the duration of the hardware instructions can be found in the hardware documentation and can be retrieved by an elementary table look-up. Such a simple approach does not work if the target hardware is a modern RISC processor with pipelined execution units and instruction/data caches. While these architectural features result in significant per­ formance improvements, they also introduce a high level of unpredictability. Dependencies among instructions can cause pipeline hazards, and cache misses will lead to a significant delay of the instruction execution. To make things worse, these two effects are not independent. A significant amount of research deals with the execution time analysis on machines with pipelines and caches. The excellent sur­ vey article by Wilhelm et al. [Wil08] presents WCET analysis in research and indus­ try and describes many of the tools available for the support of WCET analysis.
+Execution Time Analysis The next problem concerns the determination of the worst-case execution time of the commands on the target hardware. If the processor of the target hardware has fixed instruction execution times, the duration of the hardware instructions can be found in the hardware documentation and can be retrieved by an elementary table look-up. Such a simple approach does not work if the target hardware is a modern RISC processor with pipelined execution units and instruction/data caches. While these architectural features result in significant per­ formance improvements, they also introduce a high level of unpredictability. Dependencies among instructions can cause pipeline hazards, and cache misses will lead to a significant delay of the instruction execution. To make things worse, these two effects are not independent. A significant amount of research deals with the execution time analysis on machines with pipelines and caches. The excellent sur­ vey article by Wilhelm et al. [Wil08] presents WCET analysis in research and indus­ try and describes many of the tools available for the support of WCET analysis.
 
-![](images/2c4252e4918ae257d4bea87e87b1753b4220675e4d2299b5bae0f2ff5fe58d95.jpg)  
-Fig. 10.4  Worst-case administrative overhead (WCAO) of a task preemption
+> ![](images/2c4252e4918ae257d4bea87e87b1753b4220675e4d2299b5bae0f2ff5fe58d95.jpg) 
+> Fig.10.4 Worst-case administrative overhead (WCAO) of a task preemption
 
-Preemptive S-Tasks   If a simple task (S task) is preempted by another independent task, e.g., a higher priority task that must service a pending interrupt, the execution time of the S-task under consideration is extended by three terms:
+Preemptive S-Tasks If a simple task (S task) is preempted by another independent task, e.g., a higher priority task that must service a pending interrupt, the execution time of the S-task under consideration is extended by three terms:
 
-(i) The WCET of the interrupting task (task B in Fig.  10.4 )
+(i) The WCET of the interrupting task (task B in Fig.10.4 )
 
 (ii) The WCET of the operating system required for context switching
 
@@ -4694,15 +4487,15 @@ Preemptive S-Tasks   If a simple task (S task) is preempted by another indepen
 
 We call the sum of the worst-case delays caused by the context switch (ii) and the cache reloading (iii) the Worst-Case Administrative Overhead (WCAO) of a task preemption. The WCAO is an unproductive administrative operating system over­ head that is avoided if task preemption is forbidden.
 
-The additional delay caused by the preemption of task A by task B is the WCET of the independent task B and the sum of the two WCAOs for the two context switches (shaded area in Fig.  10.4 ). The times spent in Microarchitecture-1 and Microarchitecture-2 are the delays caused by cache reloading. The Microarchitecture-2 time of the first context switch is part of the WCET of task B, because task B is assumed to start on an empty cache. The second context switch includes the cache reload time of task A, because in a non-preemptive system, this delay would not occur. In many applications with modern processors, the micro-­ architecture delays can be the significant terms that determine the cost of task pre­ emption because the WCET of the interrupting task is normally quite short. The problem of WCAO analysis in operating systems is studied in [Lv09].
+The additional delay caused by the preemption of task A by task B is the WCET of the independent task B and the sum of the two WCAOs for the two context switches (shaded area in Fig.10.4 ). The times spent in Microarchitecture-1 and Microarchitecture-2 are the delays caused by cache reloading. The Microarchitecture-2 time of the first context switch is part of the WCET of task B, because task B is assumed to start on an empty cache. The second context switch includes the cache reload time of task A, because in a non-preemptive system, this delay would not occur. In many applications with modern processors, the micro-­ architecture delays can be the significant terms that determine the cost of task pre­ emption because the WCET of the interrupting task is normally quite short. The problem of WCAO analysis in operating systems is studied in [Lv09].
 
-# 10.2.2  WCET of Complex Tasks
+### 10.2.2 WCET of Complex Tasks
 
 We now turn to the WCET analysis of a preemptive complex task (C-task) that accesses protected shared objects. The WCET of such a task depends not only on behavior of the task itself, but also on the behavior of other tasks and the operating system of the node. WCET analysis of a C-task is therefore not a local problem of a single task, but a global problem involving all the interacting tasks within a node.
 
 In addition to the delays caused by the task preemption (which was analyzed in the previous section), an additional delay that originates from the direct interactions caused by the intended task dependencies (mutual exclusion, precedence) must be considered. There also exist techniques for coping with the direct interactions caused by the intended task dependencies—e.g., access to protected shared objects controlled by the priority ceiling protocol [Sha94]. This topic will be investigated in Sect. 10.4.2 on the scheduling of dependent tasks.
 
-# 10.2.3  Anytime Algorithms
+### 10.2.3 Anytime Algorithms
 
 In practice, the time difference between the best-case execution time (BCET) and a guaranteed upper bound for the worst-case execution time (WCET) of a task can be substantial. Anytime algorithms are algorithms that use this time difference to improve the quality of the result as more execution time is provided [Chu90]. Anytime algorithms consist of a root segment that calculates a first approximation of the result of sufficient quality and a periodic segment that improves the quality of the previously calculated result. The periodic segment is executed repeatedly until the deadline, i.e., the guaranteed worst-case execution time of the root segment, is reached. Whenever the deadline occurs, the last version of the available result is delivered to the client. When scheduling an anytime algorithm, the completion of the root segment of the anytime algorithm must be guaranteed in order that a result of sufficient quality is available at this instant. The remaining time until the deadline is used to improve this result. The WCET problem of an anytime algorithm is thus reduced to finding a guaranteed upper bound for the WCET of the root segment. A loose upper bound of the WCET is of no serious concern, since the slack time between BCET and WCET is used to improve the result.
 
@@ -4718,7 +4511,7 @@ An anytime algorithm should have the following properties [Zil96]:
 
 (iv) Interrupt ability: After the completion of the root segment, the algorithm can be interrupted at any time and deliver a reasonable result.
 
-# 10.2.4  State of Practice
+### 10.2.4 State of Practice
 
 The previous discussion shows that the analytic calculation of a reasonable upper WCET bound of an S-task which does not make use of operating system services is possible under restricting assumptions. There are a number of tools that support such an analysis [Wil08]. It requires an annotated source program that contains programmer-supplied application-specific information to ensure that the program terminates and a detailed model of the behavior of the hardware to achieve a reason­ able upper WCET bound.
 
@@ -4736,33 +4529,31 @@ Bounds for the WCET of all time-critical tasks are needed in almost all hard rea
 
 The state of current practice is not satisfactory, because in many cases the mini­ mal and maximum execution times that are observed during testing are taken for the BCET and WCET. Such an observed upper bound cannot be considered a guaran­ teed upper bound. It is to be hoped that in the future the WCET problem will get easier, provided simple processors with private scratchpad memory will form the components of multi-processor systems-on-chips (MPSoCs).
 
-# 10.3  Static Scheduling
+## 10.3 Static Scheduling
 
-In static or pre-run time scheduling, a feasible schedule of a set of tasks is calculated off-line. The schedule must guarantee all deadlines, considering the resource, pre­ cedence, and synchronization requirements of all tasks. The construction of such a schedule can be considered as a constructive sufficient s ched ul ability test. The pre­ cedence relations between the tasks executing in the different nodes can be depicted in the form of a precedence graph (Fig.  10.5 ).
+In static or pre-run time scheduling, a feasible schedule of a set of tasks is calculated off-line. The schedule must guarantee all deadlines, considering the resource, pre­ cedence, and synchronization requirements of all tasks. The construction of such a schedule can be considered as a constructive sufficient s ched ul ability test. The pre­ cedence relations between the tasks executing in the different nodes can be depicted in the form of a precedence graph (Fig.10.5 ).
 
-![](images/a089a39ced6667768e06135ea454dda13164463e19c898ffbd794c7543bca325.jpg)  
-Fig. 10.5  Example of a precedence graph of a distributed task set [Foh94]
+> ![](images/a089a39ced6667768e06135ea454dda13164463e19c898ffbd794c7543bca325.jpg) 
+> Fig.10.5 Example of a precedence graph of a distributed task set [Foh94]
 
-# 10.3.1  Static Scheduling Viewed as a Search
+### 10.3.1 Static Scheduling Viewed as a Search
 
 Static scheduling is based on strong regularity assumptions about the points in time when future service requests will be honored. Although the occurrence of external events that demand service is not under the control of the computer system, the recurring points in time when these events will be serviced can be established a priori by selecting an appropriate sampling rate for each class of events. During system design, it must be ascertained that the sum of the maximum delay times until a request is recognized by the system plus the maximum transaction response time is smaller than the specified service deadline.
 
-The Role of Time   A static schedule is a periodic time-triggered schedule. The timeline is partitioned into a sequence of basic granules, the basic cycle time . There is only one interrupt in the system: the periodic clock interrupt denoting the start of a new basic granule. In a distributed system, this clock interrupt must be globally synchronized to a precision that is much better than the duration of a basic granule. Every transaction is periodic, its period being a multiple of the basic granule. The least common multiple of all transaction periods is the schedule period . At compile time, the scheduling decision for every point of the schedule period must be deter­ mined and stored in a dispatcher table for the operating system for the full schedule period. At run time, the preplanned decision is executed by the dispatcher after every clock interrupt.
+The Role of Time A static schedule is a periodic time-triggered schedule. The timeline is partitioned into a sequence of basic granules, the basic cycle time . There is only one interrupt in the system: the periodic clock interrupt denoting the start of a new basic granule. In a distributed system, this clock interrupt must be globally synchronized to a precision that is much better than the duration of a basic granule. Every transaction is periodic, its period being a multiple of the basic granule. The least common multiple of all transaction periods is the schedule period . At compile time, the scheduling decision for every point of the schedule period must be deter­ mined and stored in a dispatcher table for the operating system for the full schedule period. At run time, the preplanned decision is executed by the dispatcher after every clock interrupt.
 
 Example : If the periods of all tasks are harmonic, e.g., either a positive or negative power of two of the full second, the schedule period is equal to the period of the task with the longest period.
 
-Static scheduling can be applied to a single processor, to a multiple-processor, or to a distributed system. In addition to pre planning the resource usage in all nodes, the access to the communication medium must also be preplanned in distributed sys­ tems. It is known that finding an optimal schedule in a distributed system is in
+Static scheduling can be applied to a single processor, to a multiple-processor, or to a distributed system. In addition to pre planning the resource usage in all nodes, the access to the communication medium must also be preplanned in distributed sys­ tems. It is known that finding an optimal schedule in a distributed system is in almost all realistic scenarios an NP-complete problem, i.e., computationally intrac­ table. But even a non-optimal solution is sufficient if it meets all deadlines.
 
-![](images/533332d39f1dfb155ef45686fe000063af8ba8f32840aefb0e1f36205121ffd1.jpg)  
-Fig. 10.6  A search tree for the precedence graph of Fig.  10.5
+> ![](images/533332d39f1dfb155ef45686fe000063af8ba8f32840aefb0e1f36205121ffd1.jpg) 
+> Fig.10.6 A search tree for the precedence graph of Fig.10.5
 
-almost all realistic scenarios an NP-complete problem, i.e., computationally intrac­ table. But even a non-optimal solution is sufficient if it meets all deadlines.
+The Search Tree The solution to the scheduling problem can be seen as finding a path, a feasible schedule, in a search tree by applying a search strategy. An example of a simple search tree for the precedence graph of Fig.10.5 is shown in Fig.10.6 . Every level of the search tree corresponds to one unit of time. The depth of the search tree corresponds to the period of the schedule. The search starts with an empty schedule at the root node of this tree. The outward edges of a node point to the possible alternatives that exist at this point of the search. A path from the root node to a particular node at level $n$ records the sequence of scheduling decisions that have been made up to time-point $n$ . Each path to a leaf node describes a complete schedule. It is the goal of the search to find a complete schedule that observes all precedence and mutual exclusion constraints, and which completes before the dead­ line. From Fig.10.6 , it can be seen that the lower branch of the search tree will lead to a shorter overall execution time than the upper branches.
 
-The Search Tree   The solution to the scheduling problem can be seen as finding a path, a feasible schedule, in a search tree by applying a search strategy. An example of a simple search tree for the precedence graph of Fig.  10.5 is shown in Fig.  10.6 . Every level of the search tree corresponds to one unit of time. The depth of the search tree corresponds to the period of the schedule. The search starts with an empty schedule at the root node of this tree. The outward edges of a node point to the possible alternatives that exist at this point of the search. A path from the root node to a particular node at level $n$ records the sequence of scheduling decisions that have been made up to time-point $n$ . Each path to a leaf node describes a complete schedule. It is the goal of the search to find a complete schedule that observes all precedence and mutual exclusion constraints, and which completes before the dead­ line. From Fig.  10.6 , it can be seen that the lower branch of the search tree will lead to a shorter overall execution time than the upper branches.
+A Heuristic Function Guiding the Search To improve the efficiency of the search, it is necessary to guide the search by some heuristic function. Such a heuristic func­ tion can be composed of two terms, the actual cost of the path encountered until the present node in the search tree, i.e., the present point in the schedule, and the esti­ mated cost until a goal node. Fohler [Foh94] proposes a heuristic function that esti­ mates the time needed to complete the precedence graph, called TUR (time until response). A lower bound of the TUR can be derived by summing up the maximum execution times of all tasks and message exchanges between the current task and the last task in the precedence graph, assuming true parallelism constrained by the com­ petition for CPU resources of tasks that reside at the same node. If this necessary TUR is not short enough to complete the precedence graph on time, all the branches from the current node can be pruned and the search must backtrack.
 
-A Heuristic Function Guiding the Search   To improve the efficiency of the search, it is necessary to guide the search by some heuristic function. Such a heuristic func­ tion can be composed of two terms, the actual cost of the path encountered until the present node in the search tree, i.e., the present point in the schedule, and the esti­ mated cost until a goal node. Fohler [Foh94] proposes a heuristic function that esti­ mates the time needed to complete the precedence graph, called TUR (time until response). A lower bound of the TUR can be derived by summing up the maximum execution times of all tasks and message exchanges between the current task and the last task in the precedence graph, assuming true parallelism constrained by the com­ petition for CPU resources of tasks that reside at the same node. If this necessary TUR is not short enough to complete the precedence graph on time, all the branches from the current node can be pruned and the search must backtrack.
-
-# 10.3.2  Increasing the Flexibility in Static Schedules
+### 10.3.2 Increasing the Flexibility in Static Schedules
 
 One of the weaknesses of static scheduling is the assumption of strictly periodic tasks. Although the majority of tasks in hard real-time applications is periodic, there are also sporadic service requests that have hard deadline requirements. An example of such a request is an emergency stop of a machine. Hopefully, it will never be requested—the mean time between emergency stops can be very long. However, if an emergency stop is requested, it must be serviced within a small specified time interval.
 
@@ -4774,29 +4565,29 @@ The following three methods increase the flexibility of static scheduling:
 
 (iii) The execution of mode changes
 
-Transformation of a Sporadic Request to a Periodic Request   While the future request times of a periodic task are known a priori, only the minimum inter-arrival time of a sporadic task is known in advance. The actual points in time when a spo­ radic task must be serviced are not known ahead of the request event. This limited information makes it difficult to schedule a sporadic request before run time. The most demanding sporadic requests are those that have a short response time, i.e., the corresponding service task has a low latency.
+Transformation of a Sporadic Request to a Periodic Request While the future request times of a periodic task are known a priori, only the minimum inter-arrival time of a sporadic task is known in advance. The actual points in time when a spo­ radic task must be serviced are not known ahead of the request event. This limited information makes it difficult to schedule a sporadic request before run time. The most demanding sporadic requests are those that have a short response time, i.e., the corresponding service task has a low latency.
 
 It is possible to find solutions to the scheduling problem if an independent spo­ radic task has a laxity $l$ . One such solution, proposed by Mok [Mok83, p.44], is the replacement of a sporadic task $T$ by a pseudo-periodic task $T^{\prime}$ as seen in Table  10.1 .
 
 This transformation guarantees that the sporadic task will always meet its dead­ line if the pseudo-periodic task can be scheduled. The pseudo-periodic task can be scheduled statically. A sporadic task with a short latency will continuously demand a substantial fraction of the processing resources to guarantee its deadline, although it might request service very infrequently.
 
-Sporadic Server Task   To reduce the large resource requirements of a pseudo-­ periodic task with a long inter-arrival time (period) but a short latency, Sprunt et al. [Spr89] have proposed the introduction of a periodic server task for the service of sporadic requests. Whenever a sporadic request arrives during the period of the server task, it will be serviced with the high priority of the server task. The service of a sporadic request exhausts the execution time of the server. The execution time will be replenished after the period of the server. Thus, the server task preserves its execution time until it is needed by a sporadic request. The sporadic server task is scheduled dynamically in response to the sporadic request event.
+Sporadic Server Task To reduce the large resource requirements of a pseudo-­ periodic task with a long inter-arrival time (period) but a short latency, Sprunt et al. [Spr89] have proposed the introduction of a periodic server task for the service of sporadic requests. Whenever a sporadic request arrives during the period of the server task, it will be serviced with the high priority of the server task. The service of a sporadic request exhausts the execution time of the server. The execution time will be replenished after the period of the server. Thus, the server task preserves its execution time until it is needed by a sporadic request. The sporadic server task is scheduled dynamically in response to the sporadic request event.
 
-Mode Changes   During the operation of most real-time applications, a number of different operating modes can be distinguished. Consider the example of a flight control system in an airplane. When a plane is taxiing on the ground, a different set of services is required than when the plane is flying. Better resource utilization can be realized if only those tasks that are needed in a particular operating mode must be scheduled. If the system leaves one operating mode and enters another, a corre­ sponding change of schedules must take place.
+Mode Changes During the operation of most real-time applications, a number of different operating modes can be distinguished. Consider the example of a flight control system in an airplane. When a plane is taxiing on the ground, a different set of services is required than when the plane is flying. Better resource utilization can be realized if only those tasks that are needed in a particular operating mode must be scheduled. If the system leaves one operating mode and enters another, a corre­ sponding change of schedules must take place.
 
 During system design, one must identify all possible operating and emergency modes. For each mode, a static schedule that will meet all deadlines is calculated off-line. Mode changes are analyzed and the appropriate mode change schedules are developed. Whenever a mode change is requested at run time, the applicable mode change schedule will be activated immediately. We conclude this section with a comment by Xu and Parnas $[\mathrm{Xu91}$ , p.134].
 
 For satisfying timing constraints in hard real-time systems, predictability of the systems behavior is the most important concern; pre-run time scheduling is often the only practical means of providing predictability in a complex system.
 
-# 10.4  Dynamic Scheduling
+## 10.4 Dynamic Scheduling
 
 After the occurrence of a significant event, a dynamic scheduling algorithm deter­ mines online which task out of the ready task set must be serviced next. The algo­ rithms differ in the assumptions about the complexity of the task model and the future task behavior [But04].
 
-# 10.4.1  Scheduling Independent Tasks
+### 10.4.1 Scheduling Independent Tasks
 
 The classic algorithm for scheduling a set of periodic independent hard real-time tasks in a system with a single CPU, the rate monotonic algorithm , was published in 1973 by [Liu73].
 
-Rate Monotonic Algorithm   The rate monotonic algorithm is a dynamic preemp­ tive algorithm based on static task priorities. It makes the following assumptions about the task set:
+Rate Monotonic Algorithm The rate monotonic algorithm is a dynamic preemp­ tive algorithm based on static task priorities. It makes the following assumptions about the task set:
 
 (i) The requests for all tasks of the task set $\left\{T_{i}\right\}$ for which hard deadlines must be satisfied are periodic.
 
@@ -4808,8 +4599,8 @@ Rate Monotonic Algorithm   The rate monotonic algorithm is a dynamic preemp­ 
 
 (v) The time required for context switching can be ignored.
 
-Table 10.1  Parameters of the pseudo-periodic task
-![](images/88e1085bf96c44d1d0b2434747af749bf40adcc041becd4910fac9af43ea05f9.jpg)
+> Table 10.1 Parameters of the pseudo-periodic task
+> ![](images/88e1085bf96c44d1d0b2434747af749bf40adcc041becd4910fac9af43ea05f9.jpg)
 
 (vi) The sum of the utilization factors $\mu$ of the $n$ tasks with period p is given by
 
@@ -4833,9 +4624,9 @@ can approach the theoretical maximum of unity in a single processor system.
 
 In recent years, the rate monotonic theory has been extended to handle a set of tasks where the deadline interval can be different from the period [But04].
 
-Earliest-Deadline-First (EDF) Algorithm   This algorithm is an optimal dynamic preemptive algorithm in single processor systems which are based on dynamic pri­ orities. The assumptions (i) to (v) of the rate monotonic algorithm must hold. The processor utilization $\mu$ can go up to 1, even when the task periods are not multiples of the smallest period. After any significant event, the task with the earliest deadline is assigned the highest dynamic priority. The dispatcher operates in the same way as the dispatcher for the rate monotonic algorithm.
+Earliest-Deadline-First (EDF) Algorithm This algorithm is an optimal dynamic preemptive algorithm in single processor systems which are based on dynamic pri­ orities. The assumptions (i) to (v) of the rate monotonic algorithm must hold. The processor utilization $\mu$ can go up to 1, even when the task periods are not multiples of the smallest period. After any significant event, the task with the earliest deadline is assigned the highest dynamic priority. The dispatcher operates in the same way as the dispatcher for the rate monotonic algorithm.
 
-Least-Laxity $(L L)$ Algorithm   In single processor systems, the least-laxity algo­ rithm is another optimal algorithm. It makes the same assumptions as the EDF algo­ rithm. At any scheduling decision instant, the task with the shortest laxity $l$ , i.e., the difference between the deadline interval $d$ and the computation time $c$
+Least-Laxity $(L L)$ Algorithm In single processor systems, the least-laxity algo­ rithm is another optimal algorithm. It makes the same assumptions as the EDF algo­ rithm. At any scheduling decision instant, the task with the shortest laxity $l$ , i.e., the difference between the deadline interval $d$ and the computation time $c$
 
 $$
 d\!-\!c=\!l
@@ -4845,7 +4636,7 @@ is assigned the highest dynamic priority.
 
 In multiprocessor systems, neither the earliest-deadline-first nor the least-laxity algorithm is optimal, although the least-laxity algorithm can handle task scenarios, which the earliest-deadline-first algorithm cannot handle and vice versa.
 
-# 10.4.2  Scheduling Dependent Tasks
+### 10.4.2 Scheduling Dependent Tasks
 
 From a practical point of view, results on how to schedule tasks with precedence and mutual exclusion constraints are much more important than the analysis of the inde­ pendent task model. Normally, the concurrently executing tasks must exchange information and access common data resources to cooperate in the achievement of the overall system objectives. The observation of given precedence and mutual exclusion constraints is thus rather the norm than the exception in distributed real-­ time systems.
 
@@ -4853,9 +4644,9 @@ To solve this problem, the priority ceiling protocol was developed by [Sha90]. T
 
 The priority ceiling of a semaphore is defined as the priority of the highest prior­ ity task that may lock this semaphore. A task T is allowed to enter a critical section only if its assigned priority is higher than the priority ceilings of all semaphores currently locked by tasks other than T. Task T runs at its assigned priority unless it is in a critical section and blocks higher priority tasks. In this case, it inherits the highest priority of the tasks it blocks. When it exits the critical section, it resumes the priority it had at the point of entry into the critical section.
 
-The example of Fig.  10.7 , taken from [Sha90], illustrates the operation of the priority ceiling protocol. A system of three tasks, T1 (highest priority), T2 (middle priority), and $T3$ (lowest priority), compete for three critical regions protected by the three semaphores S1 , S2 , and S3 .
+The example of Fig.10.7 , taken from [Sha90], illustrates the operation of the priority ceiling protocol. A system of three tasks, T1 (highest priority), T2 (middle priority), and $T3$ (lowest priority), compete for three critical regions protected by the three semaphores S1 , S2 , and S3 .
 
-S ched ul ability Test for the Priority Ceiling Protocol   The following sufficient s ched ul ability test for the priority ceiling protocol has been given by [Sha90, Theorem 16]. Assume a set of periodic tasks, $\{T_{i}\}$ with periods $p_{i}$ and computation times $c_{i}$ . We denote the worst-case blocking time of a task $\mathrm{t_{i}}$ by lower priority tasks by $B_{i}$ . The set of $n$ periodic tasks $\left\{{{T}_{i}}\right\}$ can be scheduled, if the following set of inequalities holds:
+S ched ul ability Test for the Priority Ceiling Protocol The following sufficient s ched ul ability test for the priority ceiling protocol has been given by [Sha90, Theorem 16]. Assume a set of periodic tasks, $\{T_{i}\}$ with periods $p_{i}$ and computation times $c_{i}$ . We denote the worst-case blocking time of a task $\mathrm{t_{i}}$ by lower priority tasks by $B_{i}$ . The set of $n$ periodic tasks $\left\{{{T}_{i}}\right\}$ can be scheduled, if the following set of inequalities holds:
 
 ∀ i ${\mathrm{i},\,1\leq\mathrm{i}\leq\mathrm{n}}$ :
 
@@ -4863,21 +4654,16 @@ $$
 \left(\mathrm{c}_{1}\,/\,\mathrm{p}_{1}+\mathrm{c}_{2}\,/\,\mathrm{p}_{2}+\ldots+\mathrm{c}_{\mathrm{i}}\,/\,\mathrm{p}_{\mathrm{i}}+\mathrm{B}_{\mathrm{i}}\,/\,\mathrm{p}_{\mathrm{i}}\,\right)\leq\mathrm{i}\left(2^{1/\mathrm{i}}-1\right)
 $$
 
-In these inequalities, the effect of preemption s by higher priority tasks is consid­ ered in the first $i$ terms (in analogy to the rate monotonic algorithm), whereas the
+In these inequalities, the effect of preemption s by higher priority tasks is consid­ ered in the first $i$ terms (in analogy to the rate monotonic algorithm), whereas the worst-case blocking time due to all lower priority tasks is represented in the term $B/$ $p_{i\cdot}$ The blocking term $B{\mathrm{⁄}}p_{i},$ which can become very significant if a task with a short period (i.e., small $p_{i,\ell}$ is blocked for a significant fraction of its time, effectively reduces the CPU utilization of the task system. In case this first sufficient schedula­ bility test fails, more complex sufficient tests can be found in [Sha90]. The priority ceiling protocol is a good example of a predictable, but non-deterministic schedul­ ing protocol.
 
-![](images/09e7db3483980ac14f3eb7eb6fbee6d274c6e72cb85dc5d4ac4232f3cb9c7569.jpg)
-
-Fig. 10.7
-
-# Fig. 10.7  The priority ceiling protocol. (Example taken from Ref. [Sha90])
-
-worst-case blocking time due to all lower priority tasks is represented in the term $B/$ $p_{i\cdot}$ The blocking term $B{\mathrm{⁄}}p_{i},$ which can become very significant if a task with a short period (i.e., small $p_{i,\ell}$ is blocked for a significant fraction of its time, effectively reduces the CPU utilization of the task system. In case this first sufficient schedula­ bility test fails, more complex sufficient tests can be found in [Sha90]. The priority ceiling protocol is a good example of a predictable, but non-deterministic schedul­ ing protocol.
+> ![](images/09e7db3483980ac14f3eb7eb6fbee6d274c6e72cb85dc5d4ac4232f3cb9c7569.jpg)
+> Fig.10.7 The priority ceiling protocol. (Example taken from Ref. [Sha90])
 
 Example: The NASA Pathfinder robot on MARS experienced a problem that was diag­ nosed as a classic case of priority inversion, due to a missing priority ceiling protocol . The full and most interesting story is contained in [Jon97]: Very infrequently it was possible for an interrupt to occur that caused the (medium priority) communications task to be sched­ uled during the short interval while the (high priority) information bus thread was blocked waiting for the (low priority) meteorological data thread. In this case, the long-running communications task, having higher priority than the meteorological task, would prevent it from running, consequently preventing the blocked information bus task from running. After some time had passed, a watchdog timer would go off, notice that the data bus task had not been executed for some time, conclude that something had gone drastically wrong, and initiate a total system reset.
 
-# 10.5  Alternative Scheduling Strategies
+### 10.5 Alternative Scheduling Strategies
 
-# 10.5.1  Scheduling in Distributed Systems
+### 10.5.1 Scheduling in Distributed Systems
 
 In a control system, the maximum duration of an RT transaction is the critical parameter for the quality of control, since it contributes to the dead time of a control loop. In a distributed system, the duration of this transaction depends on the sum of the durations of all processing and communication actions that form the transaction. In such a system, it makes sense to develop a holistic schedule that considers all these actions together. In a time-triggered system, the processing actions and the communication actions can be phase aligned (see Sect. 3.3.4 ), such that a send slot in the communication system is available immediately after the WCET of a process­ ing action.
 
@@ -4887,13 +4673,13 @@ Since the worst-case duration of a RT transaction in an event-triggered distribu
 
 In soft real-time systems (such as multimedia systems) where the occasional miss of deadline is tolerable, probabilistic analysis is widely used. An excellent survey on the results of 25 years of research on real-time scheduling is contained in [Sha04].
 
-# 10.5.2  Feedback Scheduling
+### 10.5.2 Feedback Scheduling
 
 The concept of feedback, well established in many fields of engineering, uses infor­ mation about the actual behavior of a scheduling system to dynamically adapt the scheduling algorithms such that the intended behavior is achieved. Feedback scheduling starts with the establishment and observation of relevant performance parameters of the scheduling system. In a multimedia systems, the queue size that develops before a server process is an example of such a relevant performance parameter. These queue sizes are continuously monitored and the producer of infor­ mation is controlled—either slowed down or speeded up—in order to keep the size of the queue between given levels, the low and high watermark .
 
 By looking at the scheduling problem and control problem in an integrated fash­ ion, better overall results can be achieved in many control scenarios. For example, the sample rate of a process can be dynamically adjusted based on the observed performance of the physical process.
 
-# Points to Remember
+## Points to Remember
 
 • A scheduler is called dynamic (or online ) if it makes its scheduling decisions at run time, selecting one out of the current set of ready tasks. A scheduler is called static (or pre-run time) if it makes its scheduling decisions at compile time. It generates a dispatching table for the run time dispatcher off-line.
 
@@ -4925,11 +4711,11 @@ By looking at the scheduling problem and control problem in an integrated fash­
 
 • In feedback scheduling , information about the actual behavior of a scheduling system is used to dynamically adapt the scheduling algorithms such that the intended behavior is achieved.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 Starting with the seminal work of Liu and Layland [Liu73] in 1973 on scheduling of independent tasks, hundreds of papers on scheduling are being published each year. In 2004 the Real-Time System Journal published a comprehensive survey Real-Time Scheduling Theory: A Historical Perspective [Sha04]. The book by Butazzo [But00] Hard Real-Time Computer Systems covers scheduling extensively. An excellent survey article on WCET analysis is contained in [Wil08]. Anytime algorithms are described in [Zil96].
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 10.1 Give taxonomy of scheduling algorithms.
 
@@ -4957,7 +4743,7 @@ Starting with the seminal work of Liu and Layland [Liu73] in 1973 on scheduling 
 
 10.8 Why is it not possible to design, in general, an optimal dynamic scheduler?
 
-10.9 Assume that the task set of Fig.  10.7 is executed without the priority ceiling protocol. At what moment will a deadlock occur? Can this deadlock be resolved by priority inheritance ? Determine the point where the priority ceil­ ing protocol prevents a task from entering a critical section.
+10.9 Assume that the task set of Fig.10.7 is executed without the priority ceiling protocol. At what moment will a deadlock occur? Can this deadlock be resolved by priority inheritance ? Determine the point where the priority ceil­ ing protocol prevents a task from entering a critical section.
 
 10.10 Discuss the s ched ul ability test of the priority ceiling protocol. What is the effect of blocking on the processor utilization?
 
@@ -4973,13 +4759,13 @@ Starting with the seminal work of Liu and Layland [Liu73] in 1973 on scheduling 
 
 # Chapter 11 System Design
 
-# Overview
+## Overview
 
 This chapter on system design starts with a discussion on design in general. The designer must get a deep insight into all different aspects of the problem domain before she/he can design a proper architecture for an application. In computer sys­ tem design, the most important goal is controlling the complexity of the evolving artifact. A thorough analysis of the purpose, the requirements, and constraints con­ fine the design space and avoids the investigation of unrealistic design alternatives. The central step in the design of an architecture is the allocation of the identified system functions to nearly independent subsystems. The result of the architecture design phase is an Interface Control Document that precisely specifies the func­ tional and temporal properties of the interfaces among the subsystems. A subsystem should have a high internal cohesion and simple external interfaces. In the follow­ ing, different design styles such as model-based design and component-based design are discussed. The design of safety-critical systems starts with a safety anal­ ysis such as fault tree analysis and/or failure mode and effect analysis (FMEA) of the envisioned application and the development of a convincing safety case . Different standards that must be observed in the design of a safety-critical system are referred to, such as the IEC 61508 for electric and electronic equipment and the ARINC DO 178C standard for airborne equipment software. The elimination of all design errors, e.g., software errors or hardware errata of a large safety-critical sys­ tem, is a major challenge. Design diversity can help to mitigate the problem of remaining design errors and support software maintainability. Maintainability of software is needed to correct design errors in the software and to adapt the software to the never-ending needs of an evolving application scenario. The final section of this chapter presents the principles that have been followed in the design of the time-triggered architecture.
 
-# 11.1  System Design
+## 11.1 System Design
 
-# 11.1.1  The Design Process
+### 11.1.1 The Design Process
 
 Design is an inherently creative activity, where both the intuitive and the rational problem-solving systems of the human mind are heavily involved. There is a com­ mon core to design activities in many diverse fields: building design, product design, and computer system design are all closely related. The designer must find a solu­ tion that accommodates a variety of seemingly conflicting goals to solve an often ill-specified design problem. In the end, what differentiates a good design from a bad design is often liable to subjective judgment.
 
@@ -5015,7 +4801,7 @@ Some years ago, Peters [Pet79] argued in a paper about design that design belong
 
 (v) There is no definite test for the solution to a wicked problem: whenever a test is successfully passed, it is still possible that the solution will fail in some other way.
 
-# 11.1.2  The Role of Constraints
+### 11.1.2 The Role of Constraints
 
 Every design is embedded in a design space that is bounded by a set of known and unknown constraints . In some sense, constraints are antonyms to requirements. It is good practice to start a design by capturing the constraints and classifying them into soft constraints , hard constraints , and limiting constraints . A soft constraint is a desired but not obligatory constraint. A hard constraint is a given mandatory con­ straint that must not be neglected. A limiting constraint is a constraint that limits the utility of a design.
 
@@ -5023,7 +4809,7 @@ Example: In building a house, the mandatory construction code of the area is a h
 
 Constraints limit the design space and help the designer to avoid the exploration of design alternatives that are unrealistic in the given environment. Constraints are thus our friends, not our adversaries. Special attention must be paid to the limiting constraints, since these constraints are instrumental for determining the value of a design for the client. It is good practice to precisely monitor the limiting constraints as a design proceeds. One important limiting constraint is the cost of the system.
 
-# 11.1.3  System Design Versus Software Design
+### 11.1.3 System Design Versus Software Design
 
 In the early days of computer-application design , the focus of design was on the functional aspects of software, with little regard for the non functional properties of the computations that are generated by the software, such as timing , energy effi­ ciency , or fault tolerance . This focus has led to software design methods— still prev­ alent today — that concentrate on the data transformation aspects of a program with little regard for non-functional requirements, such as timing or energy consumption.
 
@@ -5061,7 +4847,7 @@ Viewed from the outside, the services of a component must be agnostic of the cho
 
 Example: In a product for mass-market consumer appliance, it makes sense to first develop a prototype of a component in software-on-a-CPU and to decide later, after the market acceptance of the product has been established, to shift the implementation to an FPGA or ASIC.
 
-# 11.2  Design Phases
+## 11.2 Design Phases
 
 Design is a creative holistic human activity that cannot be reduced to following a set of rules out of a design rule-book. Design is an art, supplemented by scientific prin­ ciples. It is therefore in vain to try to establish a complete set of design rules and to develop a fully automated design environment. Design tools can assist a designer in handling and representing the design information and can help in the analysis of design problems. As the capabilities of design and automation tools grow, so do the designer’s possibilities. However, tools cannot replace a creative designer. Furthermore, tools themselves can become quite sophisticated and may require tool qualification, i.e., rigorous evidence for their correct operation.
 
@@ -5069,7 +4855,7 @@ In theory, the design process should be structured into a set of distinct phases
 
 The focus of this chapter is on the architecture design phase, while the validation phases are covered in Chap. 12 .
 
-# 11.2.1  Purpose Analysis
+### 11.2.1 Purpose Analysis
 
 Every rational design is driven by a given purpose . The purpose puts the design into the wider context of user expectations and economic justification and thus precedes the requirements. Purpose analysis , i.e., the analysis why a new system is needed and what is the ultimate goal of a design, must precede the requirements analysis, which already limits the scope of analysis and directs the design effort to a specific direction. Critical purpose analysis is needed in order to put the requirements into the proper perspective.
 
@@ -5077,7 +4863,7 @@ Example: The purpose of acquiring a car is to provide a transportation service. 
 
 In every project, there is an ongoing conflict between what is desired and what can be done within the given technical and economic constraints. A good under­ standing and documentation of these technical and economic constraints reduces the design space and helps to avoid exploring unrealistic design alternatives.
 
-# 11.2.2  Requirements Capture
+### 11.2.2 Requirements Capture
 
 The focus of the requirements phase is to get a good understanding and a concise documentation of the requirements and constraints of the essential system functions that provide the economic justification of the project. There is always the temptation to get sidetracked by irrelevant details about representational issues that obscure the picture of the whole. Many people find it easier to work on a well-specified detailed side problem than to keep focus on the critical system issues. It requires an experi­ enced designer to decide between a side problem and a critical system issue .
 
@@ -5085,7 +4871,7 @@ Every requirement must be accompanied by an acceptance criterion that allows to 
 
 In the domain of embedded systems, a number of representation standards and tools have been developed to support the system engineer (see Sect. 11. 3.3 ). Standards for the uniform representation of requirements are of particular impor­ tance, since they simplify the communication among designers and users.
 
-# 11.2.3  Architecture Design
+### 11.2.3 Architecture Design
 
 After the purpose of the system has been established and agreed upon among all involved parties and the main requirements have been captured and documented, the most crucial phase of the life cycle, the design of the system architecture, fol­ lows. In the context of distributed real-time systems, the architecture design estab­ lishes the decomposition of the overall system into nearly independent and stable subsystems , the purpose of each subsystem and the precise specification of the link­ ing interfaces among the subsystems.
 
@@ -5095,7 +4881,7 @@ Architecture design is a highly iterative design phase. Different decomposi­ ti
 
 The results of the architecture design phase are the gross specifications of the functions of the subsystems and the detailed specifications of the linking inter­ faces among the subsystems, recorded in the Interface Control Documents (ICDs). The detailed interface specification must first look at the required infor­ mation flow among the subsystems. If, at the level of the architecture, the infor­ mation flow is unidirectional , then this unidirectional it y must be preserved in the detailed communication protocol design. Time-triggered protocols provide error detection at a receiver of unidirectional information flow without any involvement of the sender. The elimination of backward error propagation of a faulty receiver to a correct sender by design is one of the most important and beneficial characteristics of a time-triggered communication protocol. The information items, the maximum size of the messages among the subsystems, and the periodic instants when the time-­triggered messages will be sent are part of the interface specification that is contained in the ICDs. The development and careful maintenance of the ICDs, probably the most important documents for the system development, should receive highest management attention. It is a good practice to make the organizational interfaces among project groups iso­ morphic to the technical interfaces contained in the ICDs. This isomorphism improves the stability and precision of the ICDs, since technical and organiza­ tional responsibility go hand in hand.
 
-# 11.2.4  Design of Components
+### 11.2.4 Design of Components
 
 At the end of the architectural design phase, the requirements have been allocated to subsystems, and the linking interfaces (LIFs) of the subsystems are precisely speci­ fied in the value domain and in the temporal domain. The design effort can now be broken down into a set of concurrent design activities, each one focusing on the design, implementation, and testing of a single subsystem.
 
@@ -5105,9 +4891,9 @@ The detailed design of the local interface (see Sect. 4.4.5 ) between a componen
 
 The detailed steps that have to be taken in order to implement the design of a component depend on the chosen implementation technology. If the services of a component are implemented by a software-on-a-CPU design, then the necessary design steps will differ radically from a design that targets an ASIC as its final out­ come. Since the focus of this book is on the topic of architecture design of embed­ ded systems, we do not cover the detailed component implementation techniques for the different implementation technologies at any length.
 
-# 11.3  Design Styles
+## 11.3 Design Styles
 
-# 11.3.1  Model-Based Design
+### 11.3.1 Model-Based Design
 
 In Chap. 2 of this book, we emphasize the role of model building for the understand­ ing of any real-world scenario. Model-based design is a design method that estab­ lishes a useful framework for the development and integration of executable models of the controlled object and of the controlling computer system early in the design cycle.
 
@@ -5123,7 +4909,7 @@ Example: It is a standard procedure to train pilots on a simulator in order to g
 
 A key issue in model-based design focuses on the specification of the linking interface (LIF) between the plant model and the controlling computer system model. As already discussed in Sect. 4.4.5 , this interface specification must cover the value dimension and the temporal dimension of the messages that cross the LIF. The semantic interface models must be presented in an executable form, such that the simulation of the complete control system can be performed on a high level of abstraction and the automatic generation of the code for the target control system is supported. A widely used tool environment for model-based design is the MATLAB design environment [Att09].
 
-# 11.3.2  Component-Based Design
+### 11.3.2 Component-Based Design
 
 In many engineering disciplines, large systems are built from prefabricated compo­ nents with known and validated properties. Components are connected via stable, understandable, and standardized interfaces. The system engineer has knowledge about the global properties of the components—as they relate to the system func­ tions—and of the detailed specification of the component interfaces. Knowledge about the internal design and implementation of the components is neither needed nor available in many cases. A prerequisite for such a constructive approach to sys­ tem building is that the validated properties of the components are not affected by the system integration. This com pos ability requirement is an important constraint for the selection of a platform for the component-based design of large distributed real-time systems.
 
@@ -5133,7 +4919,7 @@ A prerequisite of any component-based design is a crystal clear component con­ 
 
 The temporal capabilities of a (hardware-software) component are determined by the frequency of the oscillator that drives the component hardware. According to Sect. 8.2.3 , this frequency can be lowered if the voltage is lowered ( voltage-­ frequency scaling ), resulting in substantial savings of the energy required to per­ form the computation of the component at the expense of extending the real time needed for the execution of the computation. A holistic resource scheduler that is aware of the temporal needs and the energy requirements can match the temporal capabilities of a component to the temporal requirements of the application, thus saving energy. Energy saving is very important in mobile battery-operated devices, an important sector of the embedded systems market.
 
-# 11.3.3  Architecture Design Languages
+### 11.3.3 Architecture Design Languages
 
 The representation of the platform independent model, the PIM (the design at the architectural level—see Sect. 4.4 ), e.g., in the form of components and messages, requires a notation that is apt for this purpose.
 
@@ -5147,11 +4933,11 @@ GIOTTO [Hen03] is a language for representing the design of a time-triggered emb
 
 System C is an extension of $\mathrm{C++}$ that enables the seamless hardware/software co-simulation of a design at the architectural level and provides for a step-by-step refinement of a design down to the register transfer level of a hardware implementa­ tion or to a C program [Bla09]. System C is well suited to represent the functionality of a design at the PIM level.
 
-# 11.3.4  Test of a Decomposition
+### 11.3.4 Test of a Decomposition
 
 We do not know how to measure the quality of the result of the architecture design phase on an absolute scale. The best we can hope to achieve is to establish a set of guidelines and checklists that facilitate the comparison of two design alternatives relative to each other. It is good practice to develop a project-specific checklist for the comparison of design alternatives at the beginning of a project. The guidelines and checklists presented in this section can serve as a starting point for such a project-­specific checklist.
 
-Functional Coherence   A component should implement a self-contained function with high internal coherence and low external interface complexity. If the compo­ nent is a gateway, i.e., it processes input/output signals from its environment, only the abstract message interface, the LIF, to the cluster and not the local interface to the environment (see Sect. 4.3.1 ) is of concern at the level of architecture design. The following list of questions is intended to help determine the functional coher­ ence and the interface complexity of a component:
+Functional Coherence A component should implement a self-contained function with high internal coherence and low external interface complexity. If the compo­ nent is a gateway, i.e., it processes input/output signals from its environment, only the abstract message interface, the LIF, to the cluster and not the local interface to the environment (see Sect. 4.3.1 ) is of concern at the level of architecture design. The following list of questions is intended to help determine the functional coher­ ence and the interface complexity of a component:
 
 (i) Does the component implement a self-contained function?
 
@@ -5165,7 +4951,7 @@ Functional Coherence   A component should implement a self-contained function 
 
 (vi) Are there any phase-sensitive data elements passed across the message interface?
 
-Test ability   Since a component implements a single function, it must be possible to test the component in isolation. The following questions should help to evaluate the test ability of a component:
+Test ability Since a component implements a single function, it must be possible to test the component in isolation. The following questions should help to evaluate the test ability of a component:
 
 (i) Are the temporal as well as the value properties of the message interface pre­ cisely specified such that they can be simulated in a test environment?
 
@@ -5179,7 +4965,7 @@ Test ability   Since a component implements a single function, it must be poss
 
 (vi) Is it possible to implement an effective built-in self-test into the component?
 
-Dependability   The following checklist of questions refers to the dependability aspects of a design:
+Dependability The following checklist of questions refers to the dependability aspects of a design:
 
 (i) What is the effect of the worst malicious failure of the component to the rest of the cluster? How is it detected? How does this failure affect the minimum performance criterion?
 
@@ -5195,7 +4981,7 @@ Dependability   The following checklist of questions refers to the dependabili
 
 (vii) How stable is the message interface with respect to anticipated change require­ ments? What is the probability and impact of changes of a component on the rest of the cluster?
 
-Energy and Power   Energy consumption is a critical non-functional parameter of a mobile device. Power control helps to reduce the silicon die temperature and con­ sequently the failure rate of devices:
+Energy and Power Energy consumption is a critical non-functional parameter of a mobile device. Power control helps to reduce the silicon die temperature and con­ sequently the failure rate of devices:
 
 (i) What is the energy budget of each component?
 
@@ -5203,7 +4989,7 @@ Energy and Power   Energy consumption is a critical non-functional parameter o
 
 (iii) Do different components of an FCU have different power sources to reduce the possibility of common mode failures induced by the power supply? Is there a possibility of a common mode failure via the grounding system (e.g., lightning stroke)? Are the FCUs of an FTU electrically isolated?
 
-Physical Characteristics   There are many possibilities to introduce common-mode failures by a careless physical installation. The following list of questions should help to check for these:
+Physical Characteristics There are many possibilities to introduce common-mode failures by a careless physical installation. The following list of questions should help to check for these:
 
 (i) Are mechanical interfaces of the replaceable units specified, and do these mechanical boundaries of replaceable units coincide with the diagnostic boundaries?
 
@@ -5213,19 +4999,19 @@ Physical Characteristics   There are many possibilities to introduce common-mo
 
 (iv) What are the environmental conditions (temperature, shock, and dust) of the component? Are they in agreement with the component specifications?
 
-# 11.4  Design of Safety-Critical Systems
+## 11.4 Design of Safety-Critical Systems
 
 The economic and technological success of embedded systems in many applica­ tions leads to an increased deployment of computer systems in domains where a computer failure can have severe consequences. A computer system becomes safety-critical (or a hard real-time system ) when a failure of the computer system can have catastrophic consequences, such as the loss of life, extensive property damage, or a disastrous damage to the environment.
 
 Example: Some examples of safety-critical embedded systems are as follows: a flight-­ control system in an airplane, an electronic stability program in an automobile, a train-­ control system, a nuclear reactor control system, medical devices such as heart pacemakers, the control of the electric power grid, or a control system of a robot that interacts with humans.
 
-# 11.4.1  What Is Safety?
+### 11.4.1 What Is Safety?
 
 Safety can be defined as the probability that a system will survive a given time-span without the occurrence of a critical failure mode that can lead to catastrophic con­ sequences . In the literature [Lal94], the magical number $10^{9}$  hours, i.e., 115,000 years, is the MTTF (mean time to failure) that is associated with safety-critical operations. Since the hardware reliability of a VLSI component is less than $10^{9}$  hours, a safety-­ aware design must be based on hardware-fault masking by redundancy. It is impos­ sible to achieve confidence in the correctness of the design to the level of the required MTTF in safety-critical applications by testing only—extensive testing can establish confidence in a MTTF in the order of $10^{4}$ to $10^{5}$  hours [Lit93]. A formal reliability model must be developed in order to establish the required level of safety, considering the experimental failure rates of the subsystems and the redundant structure of the system.
 
-Mixed-Critical it y Architectures   Safety is a system property—the overall system design determines which subsystems are safety-relevant and which subsystems can fail without any serious consequences on the remaining safety margin. In the past, many safety-critical functions have been implemented on dedicated hardware, physically separated from the rest of the system. Under these circumstances, it is relatively easy to convince a certification authority that any unintended interference of safety-critical and non-safety-critical system functions is barred by design. However, as the number of interacting safety-critical functions grows, a sharing of communication and computational resources becomes inevitable. This results in a need of mixed-critical it y architectures , where applications of different critical it y can coexist in a single integrated architecture and the probability of any unintended interference, both in the domains of value and time, among these different-­critical it y applications must be excluded by architectural mechanisms. If mixed-critical it y partitions are established by software on a single CPU, the partitioning system soft­ ware , e.g., a hypervisor, is assigned the highest critical it y level of any application software module that is executed on this system.
+Mixed-Critical it y Architectures Safety is a system property—the overall system design determines which subsystems are safety-relevant and which subsystems can fail without any serious consequences on the remaining safety margin. In the past, many safety-critical functions have been implemented on dedicated hardware, physically separated from the rest of the system. Under these circumstances, it is relatively easy to convince a certification authority that any unintended interference of safety-critical and non-safety-critical system functions is barred by design. However, as the number of interacting safety-critical functions grows, a sharing of communication and computational resources becomes inevitable. This results in a need of mixed-critical it y architectures , where applications of different critical it y can coexist in a single integrated architecture and the probability of any unintended interference, both in the domains of value and time, among these different-­critical it y applications must be excluded by architectural mechanisms. If mixed-critical it y partitions are established by software on a single CPU, the partitioning system soft­ ware , e.g., a hypervisor, is assigned the highest critical it y level of any application software module that is executed on this system.
 
-Fail-Safe Versus Fail-Operational   In Sect. 1.5.2 , a fail-safe system has been defined as a system, where the application can be put into a safe state in case of a failure. At present, the majority of industrial systems that are safety-relevant fall into this category.
+Fail-Safe Versus Fail-Operational In Sect. 1.5.2 , a fail-safe system has been defined as a system, where the application can be put into a safe state in case of a failure. At present, the majority of industrial systems that are safety-relevant fall into this category.
 
 Example: In most scenarios, a robot is in a safe state when it ceases to move. A robot con­ trol system is safe if it either produces correct results (both in the domain of value and time) or no results at all, i.e., the robot comes to a standstill. The safety requirement of a robot control system is thus a high error detection coverage (see Sect. 6.1.2 ).
 
@@ -5251,7 +5037,7 @@ In the future, it is expected that the number of fail-operational systems will i
 
 (v) Autonomous systems, like self-driving cars, cannot rely on a human backup to exercise a mechanic or hydraulic backup.
 
-# 11.4.2  Safety Analysis
+### 11.4.2 Safety Analysis
 
 The architecture of a safety-critical system must be carefully analyzed before it is put into operation in order to reduce the probability that an accident caused by a computer failure will occur.
 
@@ -5261,45 +5047,38 @@ Example: A risk minimization technique is the implementation of an independent s
 
 In the following, we discuss two safety analysis techniques, fault tree analysis and failure mode and effect analysis .
 
-Fault Tree Analysis   A fault tree provides graphical insight into the possible com­ binations of component failures that can lead to a particular system failure, i.e., an accident. Fault tree analysis is an accepted methodology to identify hazards and to increase the safety of complex systems [Xin08]. The fault tree analysis begins at the system level with the identification of the undesirable failure event (the top event of the fault tree). It then investigates the subsystem failure conditions that can lead to this top event and proceeds down the tree until the analysis stops at a basic failure, usually a component failure mode (events in ellipses). The parts of a fault tree that are still undeveloped are identified by the diamond symbol. The failure conditions can be connected by the AND or the OR symbol. AND connectors typically model redundancy or safety mechanisms.
+Fault Tree Analysis A fault tree provides graphical insight into the possible com­ binations of component failures that can lead to a particular system failure, i.e., an accident. Fault tree analysis is an accepted methodology to identify hazards and to increase the safety of complex systems [Xin08]. The fault tree analysis begins at the system level with the identification of the undesirable failure event (the top event of the fault tree). It then investigates the subsystem failure conditions that can lead to this top event and proceeds down the tree until the analysis stops at a basic failure, usually a component failure mode (events in ellipses). The parts of a fault tree that are still undeveloped are identified by the diamond symbol. The failure conditions can be connected by the AND or the OR symbol. AND connectors typically model redundancy or safety mechanisms.
 
-Figure_11.1 Figure_11.1 11.1 Figure_11.1 Figure_11.1 sigure_11.1 Figure_11.1 Figure_11.1 Figure_11.1 Figure_11.1 Figure_11.1 Figure_11.1 sigure_11.1
-
-![](images/f5d9f3ef1d5ca6c918f2b03cdc980dd5807fa29e4640c50345ee60bc95614128.jpg)  
-Fig. 11.1  Fault tree for an electric iron
+> ![](images/f5d9f3ef1d5ca6c918f2b03cdc980dd5807fa29e4640c50345ee60bc95614128.jpg) 
+> Fig.11.1 Fault tree for an electric iron
 
 Fault trees can be formally analyzed with mathematical techniques. Given the probability of basic component failures, the probability of the top event of a static fault tree can be calculated by standard combinatorial approaches.
 
 Warm and cold spares, shared pools of resources, and sequence dependencies in which the order of the failure occurrence determines the state of the system require more elaborate modeling techniques. A fault tree that cannot by analyzed by com­ binatorial approaches is called a dynamic fault tree. A dynamic fault tree is trans­ formed into a Markov chain that can be solved by numerical techniques. There are excellent computer tools available that assist the design engineer in evaluating the reliability and safety of a given design, e.g., Mobius [Dea02].
 
-Figure_1 1.2   Figure_1 1.2 Figure_11.2 ­ sigure \_11.2 Figure_11.2 Figure_11.2 Figure_11.2 sigure_11.2 Figure_11.2 11.2 Figure_11.2
-
 A number of software tools have been developed to support the FMEA. The first efforts attempted to reduce the bookkeeping burden by introducing customized spreadsheet programs. Further efforts have been directed toward assisting the rea­ soning process and to provide a system-wide FMEA [Sta03].
 
 FMEA is complementary to the fault tree analysis. While the fault tree analysis starts from the undesirable top event and proceeds down to the component failures that are the cause of this system failure, the FMEA starts with the components and investigates the effects of the component failure on the system functions.
 
-Fig. 11.2  Worksheet for an FMEA
-![](images/feb7beda16a0b5b8cb173d4a8f6c02dff3635e8ed7545a018877d25e91905d06.jpg)
+> Fig.11.2 Worksheet for an FMEA
+> ![](images/feb7beda16a0b5b8cb173d4a8f6c02dff3635e8ed7545a018877d25e91905d06.jpg)
 
-Dependability Modeling   A dependability model is a model of a distributed system constructed for the purpose of analyzing the reliability of behavior of the envisioned system. A good starting point for a reliability model is a structure block diagram derived from the architectural representation of the design, where the blocks are components and the connection among components are the dependencies among the components. The blocks are annotated with the failure rates and the repair rates of components, where the repair rate after a transient fault, closely related to the g-state cycle, is of particular importance, since most of the faults are transients. If there is any dependency among the failure rates of components, e.g., caused by the co-location of components on the same hardware unit, these dependencies must be carefully evaluated, since the correlated failures of components have a strong impact on the overall reliability. The correlation of failures among replicated components in a fault-tolerant design is of particular concern. There are a number of software tools to evaluate the reliability and availability of a design, such as the Mobius tool [Dea02].
+Dependability Modeling A dependability model is a model of a distributed system constructed for the purpose of analyzing the reliability of behavior of the envisioned system. A good starting point for a reliability model is a structure block diagram derived from the architectural representation of the design, where the blocks are components and the connection among components are the dependencies among the components. The blocks are annotated with the failure rates and the repair rates of components, where the repair rate after a transient fault, closely related to the g-state cycle, is of particular importance, since most of the faults are transients. If there is any dependency among the failure rates of components, e.g., caused by the co-location of components on the same hardware unit, these dependencies must be carefully evaluated, since the correlated failures of components have a strong impact on the overall reliability. The correlation of failures among replicated components in a fault-tolerant design is of particular concern. There are a number of software tools to evaluate the reliability and availability of a design, such as the Mobius tool [Dea02].
 
 The dependability analysis establishes the critical it y of each function for the analyzed mission. The critical it y determines the level of attention that must be given to the component that implements the function in the overall design of the system.
 
-Table_11.1 Table_11.1 11.1 Table_11.1
-
-# 11.4.3  Safety Case
+### 11.4.3 Safety Case
 
 A safety case is a combination of a set of sound and well-documented arguments supported by analytical and experimental evidence concerning the safety of a given design. The safety case must convince an independent certification authority that the system under consideration is safe to deploy. What exactly constitutes a proper safety case of a safety-critical computer system is a subject of intense debate.
 
-Outline of the Safety Case   The safety case must argue why it is extremely unlikely that faults will cause a catastrophic failure. The arguments that are included in the safety case will have a major influence on design decisions at later stages of the project. Hence, the outline of the safety case should be planned during the early stages of a project.
+Outline of the Safety Case The safety case must argue why it is extremely unlikely that faults will cause a catastrophic failure. The arguments that are included in the safety case will have a major influence on design decisions at later stages of the project. Hence, the outline of the safety case should be planned during the early stages of a project.
 
-At the core of the safety case is a rigorous analysis of the envisioned hazards and faults that could arise during the operation of the system and could cause
+At the core of the safety case is a rigorous analysis of the envisioned hazards and faults that could arise during the operation of the system and could cause catastrophic effects, such as harm to humans, economic loss, or severe environmen­ tal damage. The safety case must demonstrate that sufficient provisions (engineer­ ing and procedural) have been taken to reduce the risk to a level that is acceptable to society and why some other possible measures have been excluded (maybe due to economic or procedural reasons). The evidence is accumulated as the project proceeds. It consists of management evidence (ensuring that all prescribed proce­ dures have been followed), design evidence (demonstrating that an established pro­ cess model has been followed), and testing and operational evidence that is collected during the test phases and the operational phases of the target system or similar systems. The safety case is thus a living document.
 
-Table 11.1  Critical it y level
-![](images/bc59b86c190a1d9e804dc1bf82e1f4ad591197fc05e0d7408514630785c668ad.jpg)  
+> Table 11.1 Critical it y level
+> ![](images/bc59b86c190a1d9e804dc1bf82e1f4ad591197fc05e0d7408514630785c668ad.jpg) 
+
 Adapted from [ARI92]
-
-catastrophic effects, such as harm to humans, economic loss, or severe environmen­ tal damage. The safety case must demonstrate that sufficient provisions (engineer­ ing and procedural) have been taken to reduce the risk to a level that is acceptable to society and why some other possible measures have been excluded (maybe due to economic or procedural reasons). The evidence is accumulated as the project proceeds. It consists of management evidence (ensuring that all prescribed proce­ dures have been followed), design evidence (demonstrating that an established pro­ cess model has been followed), and testing and operational evidence that is collected during the test phases and the operational phases of the target system or similar systems. The safety case is thus a living document.
 
 A safety case will combine evidence from independent sources to convince the certification authority that the system is safe to deploy. Concerning the type of evi­ dence presented in a safety case, it is commonly agreed that:
 
@@ -5315,13 +5094,11 @@ Computer systems can fail for external and internal reasons (refer to Sect. 6.1 
 
 (i) The computer hardware fails because of a random physical fault. Section 6.4 presented a number of techniques how to detect and handle random hardware faults by redundancy. The effectiveness of these fault-tolerance mechanisms must be demonstrated as part of the safety case, e.g., by fault injection (Sect. 12.5 ).
 
-(ii) The design, which consists of the software and hardware, contains residual design faults. The elimination of the design faults and the validation that a design (software and hardware) is fit for purpose is one of the great challenges of the scientific and engineering community. No single validation technology can provide the required evidence that a computer system will meet ultrahigh dependability requirements. Whereas standard fault-tolerance techniques, such as the replication of compo­
+(ii) The design, which consists of the software and hardware, contains residual design faults. The elimination of the design faults and the validation that a design (software and hardware) is fit for purpose is one of the great challenges of the scientific and engineering community. No single validation technology can provide the required evidence that a computer system will meet ultrahigh dependability requirements. Whereas standard fault-tolerance techniques, such as the replication of compo­nents for the implementation of triple-modular redundancy, are well established to mask the consequences of random hardware failures, there is no such standard tech­ nique known for the mitigation of errors in the design of software or hardware.
 
-nents for the implementation of triple-modular redundancy, are well established to mask the consequences of random hardware failures, there is no such standard tech­ nique known for the mitigation of errors in the design of software or hardware.
+Properties of the Architecture It is a common requirement of a safety-critical application that no single fault, which is capable of causing a catastrophic failure, may exist in the whole system. This implies that for a fail-safe application , every critical error of the computer must be detected within such a short latency that the application can be forced into the safe state before the consequences of the error affect the system behavior. In a fail-operational application , a safe system service must be provided even after a single fault in any one of the components has occurred.
 
-Properties of the Architecture   It is a common requirement of a safety-critical application that no single fault, which is capable of causing a catastrophic failure, may exist in the whole system. This implies that for a fail-safe application , every critical error of the computer must be detected within such a short latency that the application can be forced into the safe state before the consequences of the error affect the system behavior. In a fail-operational application , a safe system service must be provided even after a single fault in any one of the components has occurred.
-
-Fault-Containment Unit (FCU)   At the architectural level, it must be demonstrated that every single fault can only affect a defined FCU and that it will be detected at the boundaries of this FCU. The partitioning of the system into independent FCUs is thus of utmost concern.
+Fault-Containment Unit (FCU) At the architectural level, it must be demonstrated that every single fault can only affect a defined FCU and that it will be detected at the boundaries of this FCU. The partitioning of the system into independent FCUs is thus of utmost concern.
 
 Experience has shown that there are a number of sensitive points in a design that can lead to a common-mode failure of all components within a distributed system:
 
@@ -5333,34 +5110,30 @@ Experience has shown that there are a number of sensitive points in a design tha
 
 (iv) A single design error that is replicated when the same hardware or system software is used in all components.
 
-Design Faults   A disciplined software development process with inspections and design reviews reduces the number of design faults that are introduced into the soft­ ware during initial development. Experimental evidence from testing, which in itself is infeasible to demonstrate the safety of the software in the ultra-dependable region, must be combined with structural arguments about the partitioning of the system into autonomous fault-containment units. The credibility can be further aug­ mented by presenting results from formal analysis of critical properties and the experienced dependability of previous generations of similar systems. Experimental data about field-failure rates of critical components form the input to reliability models of the architecture to demonstrate that the system will mask random compo­ nent failures with the required high probability. Finally, diverse mechanisms play an important role in reducing the probability of common-mode design failures.
+Design Faults A disciplined software development process with inspections and design reviews reduces the number of design faults that are introduced into the soft­ ware during initial development. Experimental evidence from testing, which in itself is infeasible to demonstrate the safety of the software in the ultra-dependable region, must be combined with structural arguments about the partitioning of the system into autonomous fault-containment units. The credibility can be further aug­ mented by presenting results from formal analysis of critical properties and the experienced dependability of previous generations of similar systems. Experimental data about field-failure rates of critical components form the input to reliability models of the architecture to demonstrate that the system will mask random compo­ nent failures with the required high probability. Finally, diverse mechanisms play an important role in reducing the probability of common-mode design failures.
 
-Composable Safety Argument   Com pos ability is another important architectural property and helps in designing a convincing safety case (see also Sect. 4.7.1 ). Assume that the components of a distributed system can be partitioned into two groups: one group of components that is involved in the implementation of safety-­ critical functions and another group of components that is not involved in safety-­ critical functions. If it can be shown at the architectural level that no error in any one of the not-involved components can affect the proper operation of the components that implement the safety-critical function, it is possible to exclude the not-involved components from further consideration during the safety case analysis.
+Composable Safety Argument Com pos ability is another important architectural property and helps in designing a convincing safety case (see also Sect. 4.7.1 ). Assume that the components of a distributed system can be partitioned into two groups: one group of components that is involved in the implementation of safety-­ critical functions and another group of components that is not involved in safety-­ critical functions. If it can be shown at the architectural level that no error in any one of the not-involved components can affect the proper operation of the components that implement the safety-critical function, it is possible to exclude the not-involved components from further consideration during the safety case analysis.
 
-# 11.4.4  Safety Standards
+### 11.4.4 Safety Standards
 
 The increasing use of embedded computers in diverse safety-critical applications has prompted the appearance of many domain-specific safety standards for the design of embedded systems. This is a topic of concern, since differing safety stan­ dards are roadblocks to the deployment of a cross-domain architecture and tools. A standardized unified approach to the design and certification of safety-critical com­ puter system would alleviate this concern.
 
 In the following, we discuss two safety standards that have achieved wide atten­ tion in the community and have been practically used in the design of safety-­relevant embedded systems.
 
-IEC 61508   In 1998, the International Electrotechnical Commission (IEC) has developed a standard for the design of Electric/Electronic and Programmable Electronic (E/E/PE) safety-related systems, known as IEC 61508 standard on func­ tional safety. The standard is applicable to any safety-related control or protection system that uses computer technology. It covers all aspects in the software/hardware design and operation of safety systems that operate on demand, also called protec­ tion systems , and safety-relevant control systems that operate in continuous mode.
+IEC 61508 In 1998, the International Electrotechnical Commission (IEC) has developed a standard for the design of Electric/Electronic and Programmable Electronic (E/E/PE) safety-related systems, known as IEC 61508 standard on func­ tional safety. The standard is applicable to any safety-related control or protection system that uses computer technology. It covers all aspects in the software/hardware design and operation of safety systems that operate on demand, also called protec­ tion systems , and safety-relevant control systems that operate in continuous mode.
 
 Example: An example for a safety system that operates on demand (a protection system) is an emergency shutdown system in a nuclear power plant.
 
 Example: An example of a safety-relevant control system is a control system in a chemical plant that keeps a continuous chemical process within safe process parameters.
 
-Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 ­ Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 Table_11.2 11.2 Table_11.2
+The IEC 61508 standard addresses random physical faults in the hardware, design faults in hardware and software, and failures of communication in a distrib­ uted system. IEC 61508–2 deals with the contribution of fault tolerance to the dependability of the safety function. In order to reduce the probability of design faults of hardware and software, the standard recommends the adherence to a disci­ plined software development process and the provision of mechanisms that mitigate the consequences of remaining design faults during the operation of a system. It is interesting to note that dynamic reconfiguration mechanisms are not recommended in systems above SIL 1. IEC 61508 is the foundation for a number of domain-­ specific safety standards, such as the ISO 26262 standard for automotive applica­ tions, EN ISO 13849 for the machinery and off-highway industry, and IEC 60601 and IEC 62304 for medical devices.
 
-The IEC 61508 standard addresses random physical faults in the hardware, design faults in hardware and software, and failures of communication in a distrib­ uted system. IEC 61508–2 deals with the contribution of fault tolerance to the dependability of the safety function. In order to reduce the probability of design faults of hardware and software, the standard recommends the adherence to a disci­ plined software development process and the provision of mechanisms that mitigate the consequences of remaining design faults during the operation of a system. It is
-
-Table 11.2  Safety integrity level (SIL) of safety functions
-![](images/86b5fc21520b3b046544bb7f138d7a76a832c9f65d5ad22da6f29a970e16c327.jpg)
-
-interesting to note that dynamic reconfiguration mechanisms are not recommended in systems above SIL 1. IEC 61508 is the foundation for a number of domain-­ specific safety standards, such as the ISO 26262 standard for automotive applica­ tions, EN ISO 13849 for the machinery and off-highway industry, and IEC 60601 and IEC 62304 for medical devices.
+> ![](images/86b5fc21520b3b046544bb7f138d7a76a832c9f65d5ad22da6f29a970e16c327.jpg)
+> Table 11.2 Safety integrity level (SIL) of safety functions
 
 Example: [Lie10] gives an example for the assignment of the automotive safety integrity level (ASIL) according to ISO 26262 to the two tasks, the functional task and the monitor­ ing task , of an electronic actuator pedal (EGAS) implementation. If a certified monitoring task that detects an unsafe state and is guaranteed to bring the system into a safe state is independent of the functional task , then the functional task does not have to be certified.
 
-RTCA/DO-178C and DO-254   Over the past decades, safety-relevant computer systems have been deployed widely in the aircraft industry. This is the reason why the aircraft industry has extended experience in the design and operation of ­safety-­relevant computer systems. The document RTCA/DO-178C: Software Considerations in Airborne Systems and Equipment Certification [ARI11] and the related document RTCA/DO-254: Design Assurance Guidance for airborne elec­ tronic hardware [ARI05] contain standards and recommendations for the design and validation of the software and hardware for airborne safety-relevant computer systems. These documents have been developed by a committee consisting of rep­ resent at ives of the major aerospace companies, airlines, and regulatory bodies and thus represent an international consensus view on a reasonable and practical approach that produces safe systems. Experience with the use of this standard has been gained within a number of major projects, such as the application of RTCA/ DO-178B (preceding RTCA/DO-178C) in the design of the Boeing 777 aircraft and follow-on aircrafts.
+RTCA/DO-178C and DO-254 Over the past decades, safety-relevant computer systems have been deployed widely in the aircraft industry. This is the reason why the aircraft industry has extended experience in the design and operation of ­safety-­relevant computer systems. The document RTCA/DO-178C: Software Considerations in Airborne Systems and Equipment Certification [ARI11] and the related document RTCA/DO-254: Design Assurance Guidance for airborne elec­ tronic hardware [ARI05] contain standards and recommendations for the design and validation of the software and hardware for airborne safety-relevant computer systems. These documents have been developed by a committee consisting of rep­ resent at ives of the major aerospace companies, airlines, and regulatory bodies and thus represent an international consensus view on a reasonable and practical approach that produces safe systems. Experience with the use of this standard has been gained within a number of major projects, such as the application of RTCA/ DO-178B (preceding RTCA/DO-178C) in the design of the Boeing 777 aircraft and follow-on aircrafts.
 
 The basic idea of RTCA/DO-178C is a two-phase approach: in the first phase, the planning phase , the structure of the safety case, the procedures that must be fol­ lowed in the execution of the project, and the produced documentation are defined. In the second phase, the execution phase , it is checked that all procedures that are established in the first phase are precisely adhered to in the execution of the project. The critical it y of the software is derived from the critical it y of the software-related function that has been identified during safety analysis and is classified according to Table  11.1 . The rigor of the software development process increases with an increase in the critical it y level of the software. The standard contains tables and checklists that suggest the design, validation, documentation, and project management meth­ ods that must be followed when developing software for a given critical it y level. At higher critical it y levels, the inspection procedures must be performed by personal that is independent from the development group. For the highest critical it y level, level A , the application of formal methods is recommended, but not demanded.
 
@@ -5368,17 +5141,13 @@ When it comes to the elimination of design faults, both standards, IEC 61508 and
 
 The RTCA/DO-297 Integrated Modular Avionics (IMA) Development Guidance and Certification Considerations standard addresses the role of design methodolo­ gies, architectures, and partitioning methods in the certification of modern inte­ grated avionics systems in commercial aircraft. This standard also considers the contribution of time-triggered partitioning mechanisms in the design of safety-­ relevant distributed systems.
 
-# 11.5  Design Diversity
+## 11.5 Design Diversity
 
-Field data on the observed reliability of many large computer systems indicate that a significant and increasing number of computer system failures are caused by design errors in the software and not by physical faults of the hardware. While the problems of random physical hardware faults can be solved by applying redundancy
-
-(see Sect. 6.4 ), no generally accepted procedure to deal with the problem of design
-
-(software) errors has emerged. The techniques that have been developed for han­ dling hardware faults are not directly applicable to the field of software, because there is no physical process that causes the aging of the software.
+Field data on the observed reliability of many large computer systems indicate that a significant and increasing number of computer system failures are caused by design errors in the software and not by physical faults of the hardware. While the problems of random physical hardware faults can be solved by applying redundancy (see Sect. 6.4 ), no generally accepted procedure to deal with the problem of design software) errors has emerged. The techniques that have been developed for han­ dling hardware faults are not directly applicable to the field of software, because there is no physical process that causes the aging of the software.
 
 Software errors are design errors that have their root in the unmanaged complex­ ity of a design. In [Boe01], the most common software errors are analyzed. Because many hardware functions of a complex VLSI chip are implemented in microcode that is stored in a ROM, the possibility of a design error in the hardware must be considered in a safety-critical system. The issue of a single design error that is rep­ licated in the software of all nodes of a distributed system warrants further consid­ eration. It is conceivable that an FTU built from nodes based on the same hardware and using the same system software exhibits common-mode failures caused by design errors in the software or in the hardware (micro-programs).
 
-# 11.5.1  Diverse Software Versions
+### 11.5.1 Diverse Software Versions
 
 The three major strategies to attack the problem of unreliable software are the following:
 
@@ -5396,7 +5165,7 @@ The detailed analysis of field data of large software systems reveals that a sig
 
 What place does software diversity have in safety-critical real-time systems? The following case study of a fault-tolerant railway signaling system that is installed in a number of European train stations to increase the safety and reliability of the train service is a good example of the practical utility of software diversity.
 
-# 11.5.2  An Example of a Fail-Safe System
+### 11.5.2 An Example of a Fail-Safe System
 
 The VOTRICS train signaling system that has been developed by Alcatel [Kan95] is an industrial example of the application of design diversity in a safety-critical real-­ time environment. The objective of a train signaling system is to collect data about the state of the tracks in train stations, i.e., the current positions and movements of the trains and the positions of the switches, and to set the signals and shift the switches such that the trains can move safely through the station according to the given timetable entered by the operator. The safe operation of the train system is of utmost concern.
 
@@ -5410,22 +5179,18 @@ The system has been operational in different railway stations over a number of y
 
 From this and other experiences, we can derive the general principle that in a safety-critical system, the execution of every safety-critical function must be moni­ tored by a second independent channel based on a diverse design. There should not be any safety-critical function on a single channel system.
 
-# 11.5.3  Multilevel System
+### 11.5.3 Multilevel System
 
-Figure_11.3 Figure_11.3 11.3 Figure_11.3 Figure_11.3­Figure_11.3
-
-![](images/63be3ce4c0a312a3ff23da96460e6d135f2769fe890391de6a24b2ec722ac909.jpg)  
-Fig. 11.3  Multilevel computer system with diverse software
-
-Figure_11.3 Figure_11.3
+> ![](images/63be3ce4c0a312a3ff23da96460e6d135f2769fe890391de6a24b2ec722ac909.jpg) 
+> Fig.11.3 Multilevel computer system with diverse software
 
 Such an architecture has been deployed in the computer system for the space shuttle [Lee90, p. 297]. Along with a TMR system that uses identical software, a fourth computer with diverse software is provided in case of a design error that causes the correlated failure of the complete TMR system. Diversity is deployed in a number of existing safety-critical real-time systems, as in the Airbus fly-by-wire system [Tra88], and in railway signaling [Kan95].
 
-# 11.6  Design for Maintainability
+## 11.6 Design for Maintainability
 
 The total cost of ownership of a product is not only the cost of the initial acquisition of the product, but the sum of the acquisition cost, the cost of operation, the expected maintenance cost over the product life, and finally, at the end of the product lifetime, the cost of product disposal. Design for maintainability tries to reduce the expected maintenance cost over the product lifetime. The cost of maintenance, which can be higher than the cost of the initial acquisition of the product, is strongly influenced by the product design and the maintenance strategy.
 
-# 11.6.1  Cost of Maintenance
+### 11.6.1 Cost of Maintenance
 
 In order to be able to analyze the cost structure of a maintenance action, it is neces­ sary to distinguish between two types of maintenance actions: preventive mainte­ nance and on-call maintenance .
 
@@ -5439,11 +5204,11 @@ Example: In the airline industry, unscheduled maintenance of an airplane means l
 
 Another aspect that influences the cost of maintenance relates to the question whether permanent hardware faults or software errors are considered. The repair of a permanent hardware fault requires the physical replacement of the broken component, i.e., the spare part must be available at the site of failure and must be installed by a physical maintenance action. Given an appropriate infrastructure has been set up, the repair of a software fault can be performed remotely by downloading a new version of the software via the Internet with minimal or without any human intervention.
 
-# 11.6.2  Maintenance Strategy
+### 11.6.2 Maintenance Strategy
 
 The design for maintenance starts with the specification of a maintenance strategy for a product. The maintenance strategy will depend on the classification of compo­ nents , on the maintainability/reliability/cost tradeoff of the product, and the expected use of the product.
 
-Component Classification   Two classes of components must be distinguished from the point of view of maintenance: components that exhibit wear-out failures and components that exhibit spontaneous failures. For components that exhibit wear-­ out failures, physical parameters must be identified that indicate the degree of wear-­ out. These parameters must be continually monitored in order to periodically establish the degree of wear-out and to determine whether a replacement of the component must be considered during the next scheduled maintenance interval.
+Component Classification Two classes of components must be distinguished from the point of view of maintenance: components that exhibit wear-out failures and components that exhibit spontaneous failures. For components that exhibit wear-­ out failures, physical parameters must be identified that indicate the degree of wear-­ out. These parameters must be continually monitored in order to periodically establish the degree of wear-out and to determine whether a replacement of the component must be considered during the next scheduled maintenance interval.
 
 Example: Monitoring the temperature or the vibration of a bearing can produce valuable information about the degree of wear-out of the bearing before it actually breaks down. In some manufacturing plants, more than one hundred thousand sensors are installed to moni­ tor wear-out parameters of diverse physical components.
 
@@ -5451,19 +5216,15 @@ If it is not possible to identify a measurable wear-out parameter of a component
 
 For components with a spontaneous failure characteristic, such as many elec­ tronic components, it is not possible to estimate the interval that contains the instant of failure ahead of time. For these components, the implementation of fault toler­ ance , as discussed in Sect. 6.4 , is the technique of choice to shift on-call mainte­ nance to preventive maintenance.
 
-Maintainability/Reliability Tradeoff   This tradeoff determines the design of the field-replaceable units (FRU) of a product. An FRU is a unit that can be replaced in the field in case of failure. Ideally, an FRU consists of one or more FCUs (see Sect.
+Maintainability/Reliability Tradeoff This tradeoff determines the design of the field-replaceable units (FRU) of a product. An FRU is a unit that can be replaced in the field in case of failure. Ideally, an FRU consists of one or more FCUs (see Sect. 6.1.1 ) in order that effective diagnosis of an FRU failure can be performed. The size (and cost) of an FRU (a spare part ) is determined by a cost analysis of a mainte­ nance action on one side the and the impact of the FCU structure on the reliability of the product on the other side. In order to reduce the time (and cost) of a repair action, the mechanical interfaces around an FRU should be easy to connect and disconnect. Mechanical interfaces that are easy to connect or disconnect (e.g., a plug) have a substantially higher failure rate than interfaces that are firmly con­ nected (e.g., a solder connection). Thus, the introduction of FRU structure will nor­ mally decrease the product reliability. The most reliable product is one that cannot be maintained. Many consumer products fall into this category, since they are designed for optimal reliability—if the product is broken, it must be replaced as whole by a new product.
 
-6.1.1 ) in order that effective diagnosis of an FRU failure can be performed. The size
-
-(and cost) of an FRU (a spare part ) is determined by a cost analysis of a mainte­ nance action on one side the and the impact of the FCU structure on the reliability of the product on the other side. In order to reduce the time (and cost) of a repair action, the mechanical interfaces around an FRU should be easy to connect and disconnect. Mechanical interfaces that are easy to connect or disconnect (e.g., a plug) have a substantially higher failure rate than interfaces that are firmly con­ nected (e.g., a solder connection). Thus, the introduction of FRU structure will nor­ mally decrease the product reliability. The most reliable product is one that cannot be maintained. Many consumer products fall into this category, since they are designed for optimal reliability—if the product is broken, it must be replaced as whole by a new product.
-
-Expected Use   The expected use of a product determines whether a failure of the product will have serious consequences—such as the downtime of a large assembly line. In such a scenario, it makes economic sense to implement a fault-tolerant elec­ tronic system that masks a spontaneous permanent failure of an electronic device. At the next scheduled maintenance interval, the broken device can be replaced, thus restoring the fault-tolerance capability. Hardware fault tolerance thus transforms the expensive on-call maintenance action to a lower-cost scheduled maintenance action. The decreasing cost of electronic devices on the one side and the increasing labor cost and the cost of production loss during on-call maintenance on the other side shift the break-even point for many electronic control systems toward fault-tolerant systems.
+Expected Use The expected use of a product determines whether a failure of the product will have serious consequences—such as the downtime of a large assembly line. In such a scenario, it makes economic sense to implement a fault-tolerant elec­ tronic system that masks a spontaneous permanent failure of an electronic device. At the next scheduled maintenance interval, the broken device can be replaced, thus restoring the fault-tolerance capability. Hardware fault tolerance thus transforms the expensive on-call maintenance action to a lower-cost scheduled maintenance action. The decreasing cost of electronic devices on the one side and the increasing labor cost and the cost of production loss during on-call maintenance on the other side shift the break-even point for many electronic control systems toward fault-tolerant systems.
 
 In an ambient intelligence environment, where smart Internet-enabled devices are placed in many homes, the maintenance strategy must ensure that non-experts can replace broken parts. This requires an elaborate diagnostic subsystem that diag­ noses a fault to an FRU and orders the spare part autonomously via the Internet. If the spare part is delivered to the user, the inexperienced user must be capable to replace the spare part with minimal effort in order to restore the fault tolerance of the system with minimum mental and physical effort.
 
-Example   The maintenance strategy of the Apple iPhone relies on the complete replacement of a broken hardware device, eliminating the need for setting up an elaborate hardware maintenance organization. Software errors are corrected semi-­ automatically by downloading a new version of the software from the Apple iTunes store .
+Example The maintenance strategy of the Apple iPhone relies on the complete replacement of a broken hardware device, eliminating the need for setting up an elaborate hardware maintenance organization. Software errors are corrected semi-­ automatically by downloading a new version of the software from the Apple iTunes store .
 
-# 11.6.3  Software Maintenance
+### 11.6.3 Software Maintenance
 
 The term software maintenance refers to all needed software activities to provide a useful service in a changing and evolving environment. These activities include:
 
@@ -5479,17 +5240,15 @@ The connection of an embedded system to the Internet is a mixed blessing. On the
 
 Any embedded system that is connected to the Internet must support a secure download service [Obe09]. This service is absolutely essential for the continued remote maintenance of the software. The secure download must use strong crypto­ graphic methods to ensure that an adversary cannot get control of the connected hardware device and download a software of its liking.
 
-Example: A producer of modems sold ten thousands of modems all over the world before hackers found out that the modems contained a vulnerability . The producer did not consider
+Example: A producer of modems sold ten thousands of modems all over the world before hackers found out that the modems contained a vulnerability . The producer did not consider to provide the infrastructure for a secure download service for installing a new corrected version of the software remotely.
 
-to provide the infrastructure for a secure download service for installing a new corrected version of the software remotely.
-
-# 11.7  The Time-Triggered Architecture
+## 11.7 The Time-Triggered Architecture
 
 In this final section of the chapter on System Design, we present a short overview of the design principles of the time-triggered architecture that has been developed, first at the Technical University of Berlin and then at the Technical University of Vienna over a period of 20 years. The TTA integrates many of the ideas presented in this book. After building a number of industrial prototypes at the Technical University of Vienna, the company TTTech (time-triggered technology) has been formed to further develop and market the time-triggered technology to the industrial commu­ nity. Today, the TTA is deployed in a number of challenging aerospace, automotive, and industrial projects.
 
 In the following paragraphs, we discuss the key architectural principles of the TTA. A principle is an accepted statement about some fundamental insight in a domain of discourse. Principles establish the basis of the formulation of operational rules, i.e., the services of an architecture.
 
-# 11.7.1  Principle of a Consistent Global Time
+### 11.7.1 Principle of a Consistent Global Time
 
 Of distinct importance for the TTA is the principle of a consistent global time (see Sect. 2.5 ) . Embedded computer systems must interact with the physical environ­ ment that is ruled by the progression of physical time. The progression of physical time is thus a first-order citizen and not an add-on to the cyber-model that is the basis of the computer control of the physical environment. The availability of a fault-tolerant sparse global time base in every node of a large embedded system is at the foundation of the TTA. This global time base helps to simplify a design. In the TTA, this global time base is used
 
@@ -5505,7 +5264,7 @@ Of distinct importance for the TTA is the principle of a consistent global time 
 
 • To monitor and extend (by state estimation) the temporal accuracy of real-time data and to ensure that a control action at the interface to the physical environ­ ment is based on data that is temporally accurate.
 
-# 11.7.2  Principle of Component Orientation
+### 11.7.2 Principle of Component Orientation
 
 The notion of a component introduced in Chap. 4 is the primitive structure element of the time-triggered architecture. A TTA component is a self-contained hardware/ software unit that interacts with its environment solely by the exchange of mes­ sages. A component is a unit of design and a unit of fault containment (FCU). The message-based linking interfaces (LIFs) of a component are precisely specified in the domains of time and value and are agnostic about the concrete implementation technology of a component. A component can be used on the basis of their interface specification , contained in the Interface Control Documents , without knowing the internals of the component’s implementation. The time-triggered integration frame­ work of the TTA ensures that real-time transactions that span over more than one component have defined end-to-end temporal properties. In a time-critical RT trans­ action, the computations of the components and the message transport by the time-­ triggered communication system can be phase-aligned .
 
@@ -5513,7 +5272,7 @@ A component can be expanded to a new cluster without changing the specifica­ ti
 
 Components can be integrated to form hierarchical structures or network struc­ tures. In a hierarchical structure, a designated gateway component links different levels of the hierarchy. We now take the view from the lower level of the hierarchy. The designated gateway component has two LIFs, one to the lower level of the hier­ archy (the cluster LIF ) and another one to the higher level of the hierarchy (the external LIF ). Since the different hierarchical levels can obey different architectural styles, the designated gateway component must resolve the ensuing property mis­ matches. The external LIF of the gateway component, viewed from the lower level, is a local unspecified interface of the cluster. Vice versa, the cluster LIF of the gate­ way component becomes a local unspecified interface when viewed from above.
 
-# 11.7.3  Principle of Coherent Communication
+### 11.7.3 Principle of Coherent Communication
 
 The basic communication mechanism of the TTA is the unidirectional BMTS (basic message transport service) that follows, whenever possible, the fate-sharing model of the Internet. The fate-sharing model was formulated by David Clark, an architect of the DARPA net, as follows : The fate-sharing model suggests that it is acceptable to lose the state information associated with an entity if, at the same time, the entity itself is lost [Cla88, p.3]. The fate- sharing principle demands that all state informa­ tion that is associated with a message transfer must be stored in the end points of the communication. Even in the design of the time-triggered network-on-chip (TTNoC), the fate-sharing principle was considered. The fate-sharing principle can be applied in a safety-critical configuration if the end systems are guaranteed to be fail-silent. Otherwise, information about the intended temporal behavior of the end systems has to be also stored in an independent FCU, a guardian or the network , to contain the faulty behavior of a babbling node (see also Sect. 7.1.2 ).
 
@@ -5521,7 +5280,7 @@ As long as different subsystems of the TTA are connected by time-triggered commu
 
 This single coherent communication mechanism makes it possible to move a component (which can be an IP-core of a system-on-chip) to another physical loca­ tion without changing the basic communication mechanism among the components.
 
-# 11.7.4  Principle of Fault Tolerance
+### 11.7.4 Principle of Fault Tolerance
 
 The principle of fault tolerance deals with the occurrence of faults in safety-critical systems. It states that in any complex safety-critical application, the occasional fail­ ure of a subsystem during the lifetime of the subsystem cannot be avoided and therefore fault-tolerance mechanisms must be put into place to ensure that such a failure will not lead to an accident.
 
@@ -5535,13 +5294,11 @@ Most dependability engineers that are working on the design and validation of sa
 
 • It is impossible to precisely specify all edge cases that can be encountered in real-life situations. Uncovered edge cases, such as a non-thought-of situation in a driving scenario, can be the cause of an accident.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
-Many books have been written about design, most of them emanating from the field of architecture design. Design Methods, Seeds of Human Futures by Jones [Jon78] takes an interdisciplinary look at design and makes an enjoyable reading for a com­ puter scientist, as well as the book A Pattern Language [Ale97] by Christopher Alexander. The excellent books Systems Architect ing, Creating and Building Complex Systems [Rec91] and The Art of Systems Architect ing [Rec02] by Eberhardt Rechtin presents many empirically observed design guidelines that have been an important input for writing this chapter. The problem of software design for embed­ ded systems is discussed in [Lee02]. The book Embedded System Design by Gajski
+Many books have been written about design, most of them emanating from the field of architecture design. Design Methods, Seeds of Human Futures by Jones [Jon78] takes an interdisciplinary look at design and makes an enjoyable reading for a com­ puter scientist, as well as the book A Pattern Language [Ale97] by Christopher Alexander. The excellent books Systems Architect ing, Creating and Building Complex Systems [Rec91] and The Art of Systems Architect ing [Rec02] by Eberhardt Rechtin presents many empirically observed design guidelines that have been an important input for writing this chapter. The problem of software design for embed­ ded systems is discussed in [Lee02]. The book Embedded System Design by Gajski [Gaj09] covers topics of hardware synthesis and verification.
 
-[Gaj09] covers topics of hardware synthesis and verification.
-
-# Points to Remember
+## Points to Remember
 
 • In his recent book [Bro10], Fred Brook states that conceptual integrity of a design is the result of a single mind.
 
@@ -5571,7 +5328,7 @@ Many books have been written about design, most of them emanating from the field
 
 • The connection of an embedded system to the Internet is a mixed blessing. On the one side, it makes it possible to provide Internet-related services and to download a new version of the software remotely, but on the other side, it enables an adversary to exploit vulnerabilities of a system that would be irrelevant if no Internet connection were provided.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 11.1 Discuss the advantages and disadvantages of grand design versus incremen­ tal development .
 
@@ -5607,11 +5364,11 @@ Many books have been written about design, most of them emanating from the field
 
 # Chapter 12 Validation
 
-# Overview
+## Overview
 
 This chapter deals with assessment technologies. These technologies must convince a designer, user, or a certification authority that the developed computer system is safe to deploy and will fulfill its intended function in the planned real-world envi­ ronment. In the first section of this chapter, we elaborate on the differences between validation and verification . Validation deals with the consistency between the infor­ mal model of the user’s intention and the behavior of the system-under-test ( SUT ), while verification deals with the consistency between a given (formal) specification and the SUT . The missing link between validation and verification are errors in the specification. The following section deals with the challenges of testing and the preferred validation technique. At the core of testing are the interference-free ob ser v ability of results and the control l ability of the inputs. The design for testabil­ ity provides a framework that supports these characteristics. In most cases, only a tiny fraction of the input space can be examined by test cases. The proper selection of test cases should justify the assumption that, given the results of the test cases are correct, the system will operate correctly all over the input domain. In digital sys­ tems, the validity of such an induction is doubtful, since digital inputs are not con­ tinuous but discrete—a single bit-flip can make a correct result erroneous. The decision whether the result of a test input is correct is delegated to a test oracle . The automation of test oracles is another challenge in the domain of testing. Model-­ based design, where a model of the plant and a model of the computer controller are interconnected to study the performance of closed-loop control systems is a promis­ ing route toward the automation of the test oracle. Given that a complete formal model of a design is available, formal methods can be deployed to check whether selected properties hold in all possible states of the model. In the last few years, the technique of model checking has matured such that it can handle systems of indus­ trial size. The correct operation of the fault-masking mechanisms of a fault-tolerant system can only be assessed if the input space is extended to include the faults the system is supposed to tolerate. In the last section, the topics of physical fault injection and software-based fault injection are covered. Since any physical sensor or actuator will eventually fail, fault-injection campaigns must establish the safe operation of a system even in the case that any particular sensor or actuator has failed.
 
-# 12.1  Validation Versus Verification
+## 12.1 Validation Versus Verification
 
 An essential fraction—up to $50\%$ —of the development costs of a real-time com­ puter system is devoted to ensure that the system is fit-for-purpose . In safety-critical applications that must be certified, this fraction is even higher.
 
@@ -5635,7 +5392,7 @@ The proposal to use tokens of a formal symbolic language is only a partial solut
 
 Furthermore, only a subset of the properties relevant for the system operation can be captured in formal properties that are examined during the formal analysis.
 
-# 12.2  Testing Challenges
+## 12.2 Testing Challenges
 
 Ob ser v ability of the outputs of the SUT and control l ability of the test inputs are the core of any testing activity.
 
@@ -5645,7 +5402,7 @@ In non-real-time systems, the ob ser v ability and control l ability are provide
 
 (ii) In a distributed system, there are many loci of control. The halting of one con­ trol path introduces a temporal distortion in the coordinated control flow that can lead to new errors.
 
-# 12.2.1  Design for Test ability
+### 12.2.1 Design for Test ability
 
 By design for test ability , we mean the design of a framework and the provision of mechanisms that facilitate the testing of a system. The following techniques improve the test ability:
 
@@ -5661,13 +5418,11 @@ By design for test ability , we mean the design of a framework and the provision
 
 Because of their deterministic properties and their static control structure, time-­ triggered systems are easier to test than event-triggered systems.
 
-# 12.2.2  Test Data Selection
+### 12.2.2 Test Data Selection
 
 During the test phase, only a tiny fraction of the potential input space of a computer system can be exercised. The challenge for the tester is to find an effective and rep­ resent at ive test data set that will give the designer confidence that the system will work correctly for all inputs. In this section, we present some methods for test data selection:
 
-Random Test Data Selection: Test data are selected randomly without any consider­ ation of the program structure or the operational profile of use. Requirements Coverage: In this method, the requirements specification is the start­ ing point for selecting the test data. For each one of the given requirements, a set
-
-of test cases is designed to check whether the requirement is satisfied. The hid­ den assumption in this criterion is that the set of requirements is complete.
+Random Test Data Selection: Test data are selected randomly without any consider­ ation of the program structure or the operational profile of use. Requirements Coverage: In this method, the requirements specification is the start­ ing point for selecting the test data. For each one of the given requirements, a set of test cases is designed to check whether the requirement is satisfied. The hid­ den assumption in this criterion is that the set of requirements is complete.
 
 White Box Testing : The internal structure of a system is examined to derive a set of test data such that some kind of coverage criterion is satisfied, e.g., that all state­ ments have been executed or that all branches of a program have been tested. This test data selection criterion is most effective for unit testing, where the inter­ nals of the component implementation are available.
 
@@ -5675,9 +5430,7 @@ Model-Based Test Data Selection: The test data is derived from a model of the sy
 
 Example : Consider the case where a controller of an automotive engine is tested versus a model of this engine . The model of the engine has been extensively validated with respect to the operation of the real engine and is assumed to be correct. The control algorithms that are implemented in the controller determine the performance parameters of the engine such as energy efficiency, torque, pollution, etc. By observing the performance parameters of the engine, we can detect anomalies that are caused by a misbehavior of the controller software.
 
-Operational profile : The basis of the test data selection is the operational profile of the system under test in the given application context. This test data selection
-
-criterion misses rare events. Peak load: A hard real-time system must provide the specified timely service under all conditions covered by the load and fault hypothesis, i.e., also under peak loads that are caused by rare events . The peak load scenario puts extreme stress on the system and should be tested extensively. The behavior of the system in above peak load situations must also be tested. If peak load activity is handled correctly, the normal load case will take care of itself. In most cases, it is not possible to generate rare events and peak load in the real-world operational envi­ ronment. Therefore peak load testing is best performed in a model-based test environment. Worst-Case Execution Time (WCET): To determine the WCET of a task experimen­ tally, the task source code can be analyzed to generate a test data set that is biased toward the worst-case execution time. Fault-Tolerance Mechanisms: Testing the correctness of the fault-tolerance mecha­ nism is difficult, because faults are not part of the normal input domain. Mechanisms must be provided that can activate the faults during the test phase. For example, software- or hardware-implemented fault injection can be used to test the correctness of the fault-tolerance mechanisms (see the following Sect. 12.5 ). Cyclic systems: If a system has a cyclic behavior (many control systems are cyclic), the crossing of a particular phase of the cycle is a repetitive event in the temporal domain. In many cyclic systems, it is sufficient to test all events that occur in a single cycle.
+Operational profile : The basis of the test data selection is the operational profile of the system under test in the given application context. This test data selection criterion misses rare events. Peak load: A hard real-time system must provide the specified timely service under all conditions covered by the load and fault hypothesis, i.e., also under peak loads that are caused by rare events . The peak load scenario puts extreme stress on the system and should be tested extensively. The behavior of the system in above peak load situations must also be tested. If peak load activity is handled correctly, the normal load case will take care of itself. In most cases, it is not possible to generate rare events and peak load in the real-world operational envi­ ronment. Therefore peak load testing is best performed in a model-based test environment. Worst-Case Execution Time (WCET): To determine the WCET of a task experimen­ tally, the task source code can be analyzed to generate a test data set that is biased toward the worst-case execution time. Fault-Tolerance Mechanisms: Testing the correctness of the fault-tolerance mecha­ nism is difficult, because faults are not part of the normal input domain. Mechanisms must be provided that can activate the faults during the test phase. For example, software- or hardware-implemented fault injection can be used to test the correctness of the fault-tolerance mechanisms (see the following Sect. 12.5 ). Cyclic systems: If a system has a cyclic behavior (many control systems are cyclic), the crossing of a particular phase of the cycle is a repetitive event in the temporal domain. In many cyclic systems, it is sufficient to test all events that occur in a single cycle.
 
 The above list of test data selection criteria is not complete. A survey study on the effectiveness of different test data selection criteria is contained in [Jur04].
 
@@ -5695,7 +5448,7 @@ In order to be able to judge the quality of a test data set, different coverage 
 
 (v) Fault coverage —have the fault-tolerant mechanisms been tested for every fault that is contained in the fault hypothesis?
 
-# 12.2.3  Test Oracle
+### 12.2.3 Test Oracle
 
 Given that a set of test cases has been selected, a method must be provided to deter­ mine whether the result of a test case produced by the SUT is acceptable or not. In the literature, the term test oracle is used to refer to such a method. The design of an algorithmic test oracle is a prerequisite of any test automation, which is needed for reducing the cost of testing.
 
@@ -5707,7 +5460,7 @@ The LIF specification of a component (see Sect. 4.4.2 ) should contain input ass
 
 In a time-triggered system, where the temporal control structure is static, the detection of temporal errors in the execution of a program at the PSM level is straightforward and can be automated.
 
-# 12.2.4  System Evolution and Technology Readiness Levels (TRLs)
+### 12.2.4 System Evolution and Technology Readiness Levels (TRLs)
 
 Most successful systems evolve over time. Existing deficiencies are corrected, and new functions are introduced in new versions of the system. The validation of these new versions must be concerned with two issues:
 
@@ -5727,19 +5480,17 @@ Regression testing can be automated by executing the test data set of the previo
 
 (v) WHERE do we perform the observation? This depends on the structure of the system and the possibility to observe the behavior of subsystems without dis­ turbing the system operation.
 
-(vi) WHEN is it in the product life cycle that we perform the test? In the early phases of the life cycle, testing can only be performed in an artificial laboratory environment. The real test comes when the system is exercised in its target environment. Technology readiness levels (TRLs) systematically define the maturity of a tech­
+(vi) WHEN is it in the product life cycle that we perform the test? In the early phases of the life cycle, testing can only be performed in an artificial laboratory environment. The real test comes when the system is exercised in its target environment. Technology readiness levels (TRLs) systematically define the maturity of a tech­nical solution during its development. Originally introduced by NASA in the 1970s and 1980s, TRLs are now widely adopted, including in EU-funded research pro­ grams starting with the Horizon 2020 framework program. The TRLs differ slightly with different organizations. For example, the European TRLs [EAR14] distinguish nine levels. They range from basic research (TRL 1), where basic principles are observed, to lab validation (TRL 4), to the system proven in the operational environ­ ment (TRL 9).
 
-nical solution during its development. Originally introduced by NASA in the 1970s and 1980s, TRLs are now widely adopted, including in EU-funded research pro­ grams starting with the Horizon 2020 framework program. The TRLs differ slightly with different organizations. For example, the European TRLs [EAR14] distinguish nine levels. They range from basic research (TRL 1), where basic principles are observed, to lab validation (TRL 4), to the system proven in the operational environ­ ment (TRL 9).
-
-# 12.3  Testing of Component-Based Systems
+## 12.3 Testing of Component-Based Systems
 
 The component-based design of embedded applications, which is the focus of this book, requires appropriate strategies for the validation of component-based sys­ tems. A component is a hardware/software unit that encapsulates and hides its design and makes its services available at the message-based LIF (linking interface) of the component. While the component provider has knowledge about the internals of a component and can use this knowledge to arrive at effective test cases, the com­ ponent user sees a component as a black box and must use and test the component on the basis of the given interface specification.
 
-# 12.3.1  Component Provider
+### 12.3.1 Component Provider
 
 A component provider sees a component independent from the context of use. The provider must be concerned with the correct operation of the component in all pos­ sible user scenarios. In our component model, the user scenarios can be parameter­ ized via the TII (Technology-Independent Interface, see Sect. 4.4.3 ). The component provider must test the proper functioning of the component in the full parameter space supported by the TII. The component provider has access to the source code and can monitor the internal execution within the component across the TDI (Technology-Dependent Interface, see Sect. 4.4.4 ), which is normally not utilized by the component user.
 
-# 12.3.2  Component User
+### 12.3.2 Component User
 
 The component user is concerned with the performance of the component in its concrete context of use that is defined by a concrete parameter setting of the compo­ nent for the given application. The component user can assume that the provider has tested the functions of the component as specified by the interface model and will put the focus of testing on the effects of component integration and the emerging behavior of a set of components, which is outside the scope of testing of the compo­ nent provider.
 
@@ -5749,19 +5500,19 @@ In an event-triggered system, queues must be provided at the entry and exit of a
 
 The integration of components can give rise to planned or unanticipated emer­ gent behavior that is caused by the component interactions. Emergent behavior is that which cannot be predicted through analysis at any level simpler than that of the system as a whole [Dys98, p. 9]. This definition of emergent behavior makes it clear that the detection and handling of emergent behavior is in the realm of a component user and not of the component supplier. Mogul [Mog06] lists many examples of emergent behavior in computer systems that are caused by the interaction of com­ ponents. The appearance of emergent behavior is not well-understood and a subject of current research (see also Sect. 2.4 ).
 
-# 12.3.3  Communicating Components
+### 12.3.3 Communicating Components
 
 During system integration, commercial-off-the-shelf (COTS) components or application-­specific components are connected by their corresponding linking inter­ faces (LIFs). The message exchange across these linking interfaces must be care­ fully tested. In Sect. 4.6 , we have introduced three levels of a LIF specification: the transport level , the operational level , and the semantic level . The LIF tests can fol­ low along these three levels. The test at the transport level and the operational level, which must be precisely specified, can be performed mechanically, while the test of the meta-level (the semantics) will normally need human intervention. The multi­ cast capability of the BMTS (basic message transport service—see Sect. 4.1.1 ) enables the probe effect-free observation of the information exchanged among com­ municating components.
 
 In model-based design (Sect. 11.3.1 ), executable models of the behavior of the physical plant and of the control algorithms for the computer system are developed in parallel. At the PIM level, these models, embodied in components, can be linked in a simulation environment such that the interaction of these components can be observed and studied. In a control system, the performance (quality of control) of the closed loop system can be monitored and used to find the optimal control param­ eter setting. The simulation will normally operate on a different timescale than the target system. In order to improve the faithfulness of the simulation with respect to the target system, the phase relationships of the messages exchanged between the PIM components of the plant and of the controller should be the same as the phase relationships in the final implementation, the PSM. This constant phase relationship will avoid many subtle design errors caused by an uncontrolled and unintended phase relationship among messages [Per10].
 
-# 12.4  Formal Methods
+## 12.4 Formal Methods
 
 By the term formal methods , we mean the use of mathematical and logical tech­ niques to express, investigate, and analyze the specification, design, documentation, and behavior of computer hardware and software. In highly ambitious projects, for­ mal methods are applied to prove formally that a piece of software implements the specification correctly. John Rushby [Rus93, p.87] summarizes the benefits of for­ mal methods as follows:
 
 Formal methods can provide important evidence for consideration in certifica­ tion, but they can no more “prove” that an artifact of significant logical complexity is fit for its purpose than a finite-element calculation can “prove” that a wing span will do its job. Certification must consider multiple sources of evidence, and ulti­ mately rests on informed engineering judgment and experience.
 
-# 12.4.1  Formal Methods in the Real World
+### 12.4.1 Formal Methods in the Real World
 
 Any formal investigation of a real-world phenomenon requires the following steps to be taken:
 
@@ -5777,7 +5528,7 @@ Any formal investigation of a real-world phenomenon requires the following steps
 
 An ideal and complete verification environment takes the specification , expressed in a formally defined specification language, the implementation , written in a for­ mally defined implementation language, and the parameters of the execution envi­ ronment as inputs and establishes mechanically the consistency between specification and implementation. In the second step, it must be ensured that all assumptions and architectural mechanisms of the target machine (e.g., the properties and timing of the instruction set of the hardware) are consistent with the model of computation that is defined by the implementation language. Finally, the correctness of the veri­ fication environment itself must be established.
 
-# 12.4.2  Classification of Formal Methods
+### 12.4.2 Classification of Formal Methods
 
 Rushby [Rus93] classifies the use of formal methods in computer science according to the increasing rigor into the following three levels:
 
@@ -5787,11 +5538,9 @@ Rushby [Rus93] classifies the use of formal methods in computer science accordin
 
 (iii) Use of fully formalized specification languages with comprehensive support environments, including mechanized theorem proving or proof/model check­ ing. At this level, a precisely defined specification language with a direct inter­ pretation in logic is supplied, and a set of support tools is provided to allow the mechanical or automated analysis of specifications expressed in the formal specification language.
 
-# 12.4.3  Benefits of Formal Methods
+### 12.4.3 Benefits of Formal Methods
 
-Level (i) methods: The compact mathematical notation introduced at this level forces the designer to clearly state the requirements and assumptions without the ambiguity of natural language. Since familiarity with the basic notions of set
-
-theory and logic is part of an engineering education, the disciplined use of level (i) methods will improve the communication within a project team and within an engineering organization and enrich the quality of documentation. Since most of the serious faults are introduced early in the life cycle, the benefits of the level (i) methods are most pronounced at the early phases of requirements capture and architecture design. Rushby [Rus93, p.39] sees the following benefits in using level (i) methods early in the life cycle:
+Level (i) methods: The compact mathematical notation introduced at this level forces the designer to clearly state the requirements and assumptions without the ambiguity of natural language. Since familiarity with the basic notions of set theory and logic is part of an engineering education, the disciplined use of level (i) methods will improve the communication within a project team and within an engineering organization and enrich the quality of documentation. Since most of the serious faults are introduced early in the life cycle, the benefits of the level (i) methods are most pronounced at the early phases of requirements capture and architecture design. Rushby [Rus93, p.39] sees the following benefits in using level (i) methods early in the life cycle:
 
 • The need for effective and precise communication between the software engi­ neer and the engineers from other disciplines is greatest at an early stage, when the interdependencies between the mechanical control system and the computer system are specified. • The familiar concepts of discrete mathematics (e.g., set, relation) provide a repertoire of mental building blocks that are precise, yet abstract. The use of a precise notation at the early stages of the project helps to avoid ambiguities and misunderstandings. • Some simple mechanical analysis of the specification can lead to the detection of inconsistencies and omission faults, e.g., that symbols have not been defined or variables have not been initialized. • The reviews at the early stages of the life cycle are more effective if the requirements are expressed in a precise notation than if ambiguous natural language is used. • The difficulty to express vague ideas and immature concepts in a semiformal notation helps to reveal problem domains that need further investigation.
 
@@ -5799,11 +5548,11 @@ Level (ii) methods: Level (ii) methods are a mixed blessing. They introduce a ri
 
 Level (iii) methods: The full benefits of formal methods are only realized at this level. However, the available systems for verification are not complete in the sense that they cover the entire system from the high level specification to the hardware architecture. They introduce an intermediate level of abstraction that is above the functionality of the hardware. Nevertheless, the use of such a system for the rigorous analysis of some critical functions of a distributed real-time sys­ tem, e.g., the correctness of the clock synchronization, can uncover subtle design faults and lead to valuable insights. The NASA technical memorandum [Sim11] defines a Modeling and Verification Evaluation Score (MVES), a metric that is intended to estimate the amount of trust that can be placed on the evidence that is obtained (by formal verification activities). It studies the formal verification process and artifacts of the TTEthernet protocol (see Sect. 7.5.2 ) as a use case.
 
-# 12.4.4  Model Checking
+### 12.4.4 Model Checking
 
 In the last few years, the verification technique of model checking , a level (iii) method, has matured to the point that it can be used for the analysis and the support of the certification of safety-critical designs [Cla03]. Given a formal behavioral model of the specification and a formal property that must be satisfied, the model checker checks automatically whether the property holds in all states of the system model. In case the model checker finds a violation, it generates a concrete counter example. The main problem in model checking is the state explosion. In the last few years, clever formal analysis techniques have been developed to get a handle on the state explosion problem such that systems of industrial size can be verified by model checking.
 
-# 12.5  Fault Injection
+## 12.5 Fault Injection
 
 Fault injection is the intentional introduction of faults by software or hardware in order to validate the system behavior under fault conditions. During a fault-injection experiment, the target system is exposed to two types of inputs: the injected faults and the input data . The faults can be seen as another type of input that activates the fault-management mechanisms. Careful testing and debugging of the fault-­ management mechanisms are necessary because a notable number of system fail­ ures are caused by errors in the fault-management mechanisms.
 
@@ -5813,14 +5562,12 @@ Fault injection serves two purposes during the evaluation of a dependable system
 
 (ii) Dependability Forecasting: This is used to get experimental data about the likely dependability of a fault-tolerant system. For this second purpose, the types and distribution of the expected faults in the envisioned operational envi­ ronment must be known.
 
-Table_12.1 12.1 Table_12.1
-
 It is possible to inject faults into the state of the computation ( software-­ implemented fault injection ) or at the physical level of the hardware ( physical fault injection ).
 
-Table 12.1  Fault injection for testing and debugging versus dependability forecasting [Avr92]
+Table 12.1 Fault injection for testing and debugging versus dependability forecasting [Avr92]
 ![](images/ec951216b50dfbb01a38429b48bb56ba956e4ec556799fd45235fc95fdf3f2d3.jpg)
 
-# 12.5.1  Software-Implemented Fault Injection
+### 12.5.1 Software-Implemented Fault Injection
 
 In software-implemented fault injection , errors are seeded into the memory of the computer by a fault-injection software tool. These seeded errors mimic the effects of hardware faults or design faults in the software. The errors can be seeded either randomly or according to some preset strategy to activate specific fault-­handling tasks.
 
@@ -5832,16 +5579,14 @@ Software-implemented fault injection has a number of potential advantages over p
 
 (iii) Less effort than physical fault injection: The experiments can be carried out with software tools without any need to modify the hardware.
 
-# 12.5.2  Physical Fault Injection
+### 12.5.2 Physical Fault Injection
 
 During physical fault injection, the target hardware is subjected to adverse physical phenomena that interfere with the correct operation of the computer hardware. In the following section, we describe a set of hardware fault-injection experiments that have been carried out on the MARS (maintainable real-time system) architecture in the context of the ESPRIT Research Project Predictably Dependable Computing Systems (PDCS) [Kar95, Arl03].
 
 The objective of the MARS fault-injection experiments was to determine the error detection coverage of the MARS nodes experimentally. Two replica-­ determinate nodes receive identical inputs and should produce the same result. One of the nodes is subjected to fault injections (the FI-node ); the other node serves as a reference node (a golden node ). As long as the consequences of the faults are detected within the FI-node, and the FI-node turns itself off, or the FI-node pro­ duces a detectably incorrect result message, the error has been classified as detected. If the FI-node produces a result message different from the result message of the golden node without any error indication, a fail-silence violation has been observed.
 
-Table 12.2  Characteristics of different physical fault-injection techniques
-![](images/51c33155e7a9fb2ef7a972515e83f000d4e8721eaeaadbbd0d749e59d20564ab.jpg)
-
-Table_12.2 Table_12.2 12.2 Table_12.2 Table $\upalpha$ Table_12.2 ­ Table_12.2 Table_12.2 Table_12.2 ­ Table_12.2
+> Table 12.2 Characteristics of different physical fault-injection techniques
+> ![](images/51c33155e7a9fb2ef7a972515e83f000d4e8721eaeaadbbd0d749e59d20564ab.jpg)
 
 Many different test runs, each one consisting of 2000–10,000 experiments, were carried out with differing combinations of error detection techniques enabled. The results of the experiments can be summarized as follows:
 
@@ -5855,7 +5600,7 @@ Many different test runs, each one consisting of 2000–10,000 experiments, were
 
 A detailed description of the MARS fault-injection experiments and a compari­ son with software-fault injection carried out on the same system is contained in [Arl03].
 
-# 12.5.3  Sensor and Actuator Failures
+### 12.5.3 Sensor and Actuator Failures
 
 The sensors and actuators, placed at the interface between the physical world and cyberspace , are physical devices that will eventually fail, just like any other physical device. The failures of sensors and actuators are normally not spontaneous crash failures but manifest themselves either as transient malfunctions or a gradual drift away from the correct operation, often correlated with extreme physical conditions (e.g., temperature, vibration). An undetected sensor failure produces erroneous inputs to the computational tasks that, as a consequence, will lead to erroneous out­ puts that can be safety-relevant. Therefore it is state-of-the-art that any industrial-­ strength embedded system must have the capability to detect or mask the failure of any one of its sensors and actuators. This capability must be tested by fault-injection experiments, either software-based or physical.
 
@@ -5863,7 +5608,7 @@ An actuator is intended to transform a digital signal, generated in cyberspace, 
 
 In safety-critical applications, these fault-injection tests must be carefully docu­ mented, since they form a part of the safety case.
 
-# Points to Remember
+## Points to Remember
 
 • An essential fraction—up to $50\%$ —of the development costs of a real-time com­ puter system is devoted to ensure that the system is fit-for-purpose . In safety-­ critical applications that must be certified, this fraction is even higher.
 
@@ -5883,11 +5628,11 @@ In safety-critical applications, these fault-injection tests must be carefully d
 
 • The sensors and actuators, placed at the interface between the physical world and cyberspace , are physical devices that will eventually fail, just like any other physical device. Therefore it is state-of-the-art that any industrial-strength embedded system must have the capability to detect or mask the failure of any one of its sensors and actuators.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 In the survey article Software Testing Research: Achievements, Challenges, Dreams , Bertoloni [Ber07] gives an excellent overview of the state of the art in software test­ ing and some of the open research challenges. The research report “Formal Methods and the Certification of Critical Systems” [Rus93] by John Rushby is a seminal work on the role of formal methods in the certification of safety-critical systems.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 12.1. What is the difference between validation and verification?
 
@@ -5915,13 +5660,13 @@ In the survey article Software Testing Research: Achievements, Challenges, Dream
 
 # Chapter 13 Internet of Things
 
-# Overview
+## Overview
 
 The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of cap­ tured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object , which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet. There is another technology that points in the same direction—the RFID technology . The RFID technology, an extension of the ubiquitous optical bar codes that are found on many everyday products, requires the attachment of a smart low-cost electronic ID-tag to a product such that the identity of a product can be decoded from a dis­ tance. By putting more intelligence into the ID tag, the tagged thing becomes a smart object. The novelty of the Internet of Things (IoT) is not in any new disruptive technology, but in the pervasive deployment of smart objects .
 
 At the beginning of this chapter, the vision of the IoT is introduced. The next section elaborates on the forces that drive the development of the IoT. We distin­ guish between technology push and technology pull forces . The technology push forces see in the IoT the possibility of vast new markets for novel ICT products and services, while the technology pull forces see the potential of the IoT to increase the productivity in many sectors of the economy, to provide new services, e.g., for an aging society, and to promote a new lifestyle. Section 13.3 focuses on the technol­ ogy issues that have to be addressed in order to bring the IoT to a mass market. Section 13.4 discusses the RFID technology, which can be seen as a forerunner of the IoT. The topic of wireless sensor networks, where self-organizing smart objects build ad hoc networks and collect data from the environment, is covered in Sect. 13.5 . The pervasive deployment of smart objects that collect data and control the physical environment from a distance poses a severe challenge to the security and safety of the world and the privacy of our lives.
 
-# 13.1  The Vision of the Internet of Things (IoT)
+## 13.1 The Vision of the Internet of Things (IoT)
 
 Over the past 50 years, the Internet has exponentially grown form a small research network, comprising only a few nodes, to a worldwide pervasive network that ser­ vices more than a billion users. The further miniaturization and cost reduction of electronic devices make it possible to expand the Internet into a new dimension: to smart objects , i.e., everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the Internet. The small electronic device, a computational component that is attached to a physical thing , bridges the gap between the physical world and the information world. A smart object is thus a cyber-physical system or an embedded system , con­ sisting of a thing (the physical entity) and a component (the computer) that processes the sensor data and supports a wireless communication link to the Internet.
 
@@ -5937,25 +5682,25 @@ Example : A pay - per-use smart tool is an activity-aware smart object that coll
 
 According to the IoT vision, a smart planet will evolve, where many of the everyday things around us have an identity in cyberspace, acquire intelligence, and mash-up information from diverse sources. On the smart planet , the world economy and support systems will operate more smoothly and efficiently. But the life of the average citizen will also be affected by changing the relation of power between those that have access to the acquired information and can control the information and those that do not.
 
-# 13.2  Drivers for an IoT
+## 13.2 Drivers for an IoT
 
 Which are the forces that drive the development of the Internet of Things? They are on both sides of the technology landscape: technology push forces and technology pull forces . The technology push forces see in the IoT a vast new market for the deployment of current and future information and communication technologies (ICT). The IoT will help to utilize existing and new factories, provide new employ­ ment opportunities in the ICT sector, and contribute to the further development of the ICT technologies in general.
 
 In this section, the focus is mainly on technology pull forces . Which areas of our economy, society, and life in general will benefit from the wide deployment of the IoT? The following analysis is not exhaustive—we are only highlighting some sec­ tors where, according to our present understanding, the wide deployment of the IoT technology will have a major impact.
 
-# 13.2.1  Uniformity of Access
+### 13.2.1 Uniformity of Access
 
 The Internet has achieved the worldwide interoperability of heterogeneous end sys­ tems over a wide variety of communication channels. The IoT should extend this interoperability to the universe of heterogeneous smart objects . From the point of view of reduction of the cognitive complexity (see Chap. 2 ), the IoT can make a very significant contribution: the establishment of a uniform access pattern to things in the physical world.
 
-# 13.2.2  Logistics
+### 13.2.2 Logistics
 
 The first commercial application of a forerunner of the IoT, the RFID (radio fre­ quency identification—see Sect. 13.4 ) technology, is in the area of logistics. With the decision of some major corporations to base their supply chain management on RFID technology, the development of low-cost RFID tags and RFID readers has moved forward significantly. There are many quantitative advantages in using RFID technology in supply chain management: the movement of goods can be tracked in real time, shelf space can be managed more effectively, inventory control is improved, and above all, the amount of human involvement in the supply chain management is reduced considerably.
 
-# 13.2.3  Energy Savings
+### 13.2.3 Energy Savings
 
 Already today, embedded systems contribute to energy savings in many different sectors of our economy and our life. The increased fuel efficiency of automotive engines, the improved energy-efficiency of household appliances, and the reduced loss in energy conversion are just some examples of the impact of this technology on energy savings. The low cost and wide distribution of IoT devices opens many new opportunities for energy savings: individual climate and lighting control in resi­ dential buildings, reduced energy loss in transmission by the installation of smart grids , and better coordination of energy supply and energy demand by the installa­ tion of smart meters. The de materialization of parts of our life such as the replace­ ment of physical meetings by virtual meetings and the delivery of information goods such as the daily paper, music, and videos by the Internet lead to substantial energy savings.
 
-# 13.2.4  Physical Security and Safety
+### 13.2.4 Physical Security and Safety
 
 A significant technology pull for the IoT technology comes from the domains of physical security and safety. Automated IoT-based access control systems to build­ ings and homes and IoT-based surveillance of public places will enhance the overall physical security. Smart passports and IoT-based identification s (e.g., a smart key to access a hotel room or a smart ski lift ticket) simplify admission controls checks and increase the physical security, while reducing human involvement in these checks. Car-to-car and car-to-infrastructure communication will alert the driver of danger­ ous traffic scenarios, such as an icy road or an accident, and reduce the number of accidents.
 
@@ -5963,25 +5708,25 @@ IoT technology can help to detect counterfeit goods and suspected unapproved spa
 
 On the other side, safety and security applications intrude into the privacy of our lives. It is up to policy makers to draw the fine line between the rights of a person to individual privacy and the desire of the public to live in a safe environment. It is up to the scientists and engineers to provide the technology so that the political deci­ sions can be flawlessly implemented.
 
-# 13.2.5  Industrial
+### 13.2.5 Industrial
 
 In addition to streamlining the supply chain and the administration of goods by the application of RFID technology, the IoT can play a significant role in reducing maintenance and diagnostic cost. The computerized observation and monitoring of industrial equipment does not only reduce maintenance cost because an abnormality can be detected before it leads to a failure, but also improves the safety in the plant (see also Sect. 11.6 ).
 
 A smart object can also monitor its own operation and call for preventive or spontaneous maintenance in case a part wears out or a physical fault is diagnosed. Automated fault diagnosis and simple maintenance are absolutely essential prereq­ uisites for the wide deployment of the IoT technology in the domain of ambient intelligence.
 
-# 13.2.6  Medical
+### 13.2.6 Medical
 
 The wide deployment of IoT technology in the medical domain is anticipated. Health monitoring (heart rate, blood pressure, etc.) or precise control of drug deliv­ ery by a smart implant is just two potential applications. Body area networks that are part of the clothing can monitor the behavior of impaired persons and send out alarm messages if an emergency is developing. Smart labels on drugs can help a patient to take the right medication at the right time and enforce drug compliance.
 
 Example : A heart pacemaker can transmit important data via a Bluetooth link to a mobile phone that is carried in the shirt pocket. The mobile phone can analyze the data and call a doctor in case an emergency develops.
 
-# 13.2.7  Lifestyle
+### 13.2.7 Lifestyle
 
 The IoT can lead to a change in lifestyle. A smart phone can function as a browser for smart objects and augment the reality we see with background information retrieved from a diversity of context-dependent databases.
 
-# 13.3  Technical Issues of the IoT
+## 13.3 Technical Issues of the IoT
 
-# 13.3.1  Internet Integration
+### 13.3.1 Internet Integration
 
 Depending on the computational capabilities and the available energy, a smart object can be integrated into the Internet either directly or indirectly via a base sta­ tion that is connected to the Internet. The indirect integration will be chosen when the smart object has a very limited power budget. Application-specific power-­ optimized protocols are used to connect the smart object to a nearby base station . The base station that is not power constrained can act as a standard Web server that provides gateway access to the reachable smart objects.
 
@@ -5991,13 +5736,13 @@ A number of major companies have formed an alliance to develop technical solu­ 
 
 Guaranteeing the safety and information security of IoT-based systems is consid­ ered to be a difficult task. Many smart objects will be protected from general Internet access by a tight firewall to avoid that an adversary can acquire control of a smart object. The important topic of privacy and security in the IoT is further addressed in Sect. 13.4.5 .
 
-# 13.3.2  Naming and Identification
+### 13.3.2 Naming and Identification
 
 The vision of the IoT (that all of the billions of smart objects can communicate via the Internet) requires a well-thought-out naming architecture in order to be able to identify a smart object and to establish an access path to the object.
 
 Every name requires a named context where the name can be resolved. The recursive specification of naming context leads to a hierarchical name structure — the naming convention adhered to in the Internet. If we want a name to be univer­ sally interpret able without reference to a specific naming context, we need a single context with a universally accepted name space. This is the approach taken by the RFID community, which intends to assign an Electronic Product Code (EPC) to every physical smart object (see also Sect. 13.4.2 ). This is more ambitious than the forerunner, the optical bar code, which assigns a unique identifier only to a class of objects.
 
-Isolated Objects   The following three different object names have to be distin­ guished when we refer to the simple case of an isolated object:
+Isolated Objects The following three different object names have to be distin­ guished when we refer to the simple case of an isolated object:
 
 • Unique object identifier (UID) : refers to the physical identity of a specific object. The Electronic Product Code (EPC) of the RFID community is such a UID.
 
@@ -6009,7 +5754,7 @@ Example : The assumption that all objects that have the same object type name ar
 
 Example : An office key is an object role name for a physical object type that unlocks the door of an office. Any instance of the object type is an office key . When the lock in the office door is changed, a different object type assumes the role of the office key . A particular office key can also unlock the laboratory. It then plays two roles, the role of an office key and the role of a laboratory key . A master key can open any office—there are thus two different keys that play the same role.
 
-Composite Objects   Whenever a number of objects are integrated to form a com­ posite object, a new whole , i.e., new object, is created that has an emerging identity that goes beyond the identities of the constituent objects. The composite object resembles a new concept (see Sect. 2.2.1 ) that requires a new name .
+Composite Objects Whenever a number of objects are integrated to form a com­ posite object, a new whole , i.e., new object, is created that has an emerging identity that goes beyond the identities of the constituent objects. The composite object resembles a new concept (see Sect. 2.2.1 ) that requires a new name .
 
 Example : George Washington’s axe is the subject of a story of unknown origin in which the famous artifact is still George Washington’s axe (a composite object) despite having had both its head replaced twice and its handle replaced three times [Wik10].
 
@@ -6019,40 +5764,34 @@ Which one of the object names, introduced in the above paragraphs, should be the
 
 It is evident that the introduction of a flat name space for all smart objects of the universe, as stipulated by the EPC, is only a starting point. More research on the proper design of name space architectures in the IoT is needed.
 
-# 13.3.3  Near-Field Communication
+### 13.3.3 Near-Field Communication
 
 The IoT requires, in addition to the established WLANs (wireless local area net­ works), short-range energy-efficient WPANs (wireless personal area networks) in order to enable the energy-efficient wireless access to smart objects over a small distance. The IEEE 802.15 standard working group develops standards for WPAN networks. Among the networks that are conforming to the 802.15 standards are the Bluetooth network and the ZigBee network.
 
 Originally, Bluetooth has been introduced as a wireless alternative to the RS232 wire-bound communication channel [Bar07]. Bluetooth, standardized in IEEE 802.15.1, defines a complete WPAN architecture, including a security layer. At the physical level, it achieves a data rate of up to 3 Mbit/second over a distance of $1\textrm{m}$ (Class 3—maximum transmission power of $1\;\mathrm{mW}$ ) to $100\;\mathrm{m}$ (Class 1—maximum transmission power $100\:\mathrm{mW}$ ) using the transmission technology of frequency hop­ ping . Bluetooth allows multiple devices to communicate over a single adapter.
 
-The ZigBee alliance is a group of companies that develops a secure WPAN that is intended to be simpler, more energy efficient, and less expensive than Bluetooth
-
-[Bar07]. ZigBee uses high-level communication protocols based on the IEEE
-
-802.15.4 standard for low-power digital radios. ZigBee devices are requested to have a battery life of more than a year.
+The ZigBee alliance is a group of companies that develops a secure WPAN that is intended to be simpler, more energy efficient, and less expensive than Bluetooth [Bar07]. ZigBee uses high-level communication protocols based on the IEEE 802.15.4 standard for low-power digital radios. ZigBee devices are requested to have a battery life of more than a year.
 
 The NFC (near-field communication) standard [Fin03], an extension of the ISO/ IEC 14443 proximity card standard, is a short-range high-­frequency wireless com­ munication technology which enables the exchange of data between devices over a distance of less than $20\,\mathrm{cm}$ . The technology is compatible with both existing smart­ cards and readers, as well as with other NFC devices, and is thereby compatible with the existing contactless infrastructure already in use for public transportation and payment. NFC is primarily aimed for use in mobile phones .
 
-# 13.3.4  IoT Device Capabilities Versus Cloud Computing
+### 13.3.4 IoT Device Capabilities Versus Cloud Computing
 
 Smart objects that have access to the Internet can take advantage of services that are offered by the cloud (large data centers that provide their services through the Internet). The division of work between a smart object and the cloud will be deter­ mined, to a considerable degree, by privacy and energy considerations $[\mathrm{Kum}10]$ . If the energy required to execute a task locally is larger than the energy required to send the task parameters to a server in the cloud, then the task is a candidate for remote processing. However, there are other aspects that influence the decision about work distribution: autonomy of the smart object, response time, reliability, and security.
 
-# 13.3.5  Autonomic Components
+### 13.3.5 Autonomic Components
 
 The large number of smart objects that are expected to populate our environment requires an autonomic system management without the need of frequent human interactions. This autonomic management must cover network service discovery , system configuration and optimization , diagnosis of failures and recovery after fail­ ures , and system adaptation and evolution. There is a need for a multilevel auto­ nomic management , starting with the fine-grained management of components up to the coarse-grained management of massive assemblies of components or large systems.
 
-![](images/90b984e09f7af84ca0d1ee16ef9f6da9686046b33a0f72555390df7dcc2181b7.jpg)  
-Fig. 13.1  Model of an autonomic component. (Adapted from [Hue08])
-
-Figure*13.1 13.1 F igure* 13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13. 1 F igure_13. 1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_1 3.1 Figure_13.1 Figur e_13.1 Figure_13. 1 F igure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_13.1 Figure_1 3.1 Figure_13.1 Figure_13.1
+> ![](images/90b984e09f7af84ca0d1ee16ef9f6da9686046b33a0f72555390df7dcc2181b7.jpg) 
+> Fig.13.1 Model of an autonomic component. (Adapted from [Hue08])
 
 In its simplest form, the autonomy manager recognizes objects and object changes (events) and assigns them to known concepts (see Sect. 2.2.1 ). It then selects an action based on event-condition-action rules. If more than one action is applicable, it uses utility functions to select the action with the highest utility value for achieving the desired goals. In a more advanced form, the autonomy manager is based on a cognitive architecture that supports some form of advanced reasoning and can improve its decision by evaluating past decisions and by the incorporation of learning [Lan09].
 
-# 13.4  RFID Technology
+## 13.4 RFID Technology
 
 The easy and fast identification of things is required in many situations, e.g., in stores, warehouses, supermarkets, etc. For this purpose, an optical barcode is attached to an object. Reading an optical barcode requires the careful positioning of the object by a human such that a direct line-of-sight between the barcode and the barcode reader is established.
 
-# 13.4.1  Overview
+### 13.4.1 Overview
 
 In order to be able to automate the process of object identification and eliminate the human link, electronic tags (called RFID tags) that can be read from a small dis­ tance by an RFID reader have been developed. An RFID reader does not require a direct line-of-sight to the RFID tag. The RFID tag stores the unique Electronic Product Code (EPC) of the attached object. Since an RFID tag has to be attached to every object, the cost of an RFID tag is a major issue. Due to the standardization of the RFID technology by the International Standard Organization (ISO) and the mas­ sive deployment of RFID technology, the cost of an RFID tag has been reduced significantly over the last few years.
 
@@ -6060,7 +5799,7 @@ The RFID reader can act as a gateway to the Internet and transmit the object ide
 
 Example : An electronic ski pass is an RFID tag that is queried by the reader that is built into the admission gate to a ski lift. Based on the object identifier, a picture of the person that owns the ski pass is displayed to the operator and the gate is opened automatically if the operator does not intervene.
 
-# 13.4.2  The Electronic Product Code (EPC)
+### 13.4.2 The Electronic Product Code (EPC)
 
 Whereas an optical barcode denotes a product class (all boxes of the same product have the same barcode), the EPC of an RFID tag denotes an object instance (every box has a unique identifier). It is the intent of the EPC to assign a unique identifier (UID) to every identifiable thing on the globe, i.e., a unique name to each smart object of the IoT.
 
@@ -6076,31 +5815,28 @@ The EPC is managed by the international organization EPC global . In order to co
 
 The EPC is unique product identification but does not reveal anything about the properties of the product. Two things that have the same properties, but are designed by two different manufacturers, will have completely different EPCs. Normally, the unique EPC is used as a key to find the product record in a product database . The product record contains all required information about the attributes of the product.
 
-# 13.4.3  RFID Tags
+### 13.4.3 RFID Tags
 
 A RFID tag contains as its most important data element the EPC of the associated physical thing . A number of different RFID tags have been developed and standard­ ized. Basically, they fall into two main categories: passive RFID tags and active RFID tags .
 
-Table_13.1   Table_13.1 Table_13.1 Table_13.1 Table_13.1 $30~\upmu\mathrm{W}$ able_13.1 $5~\mathrm{\textperthousand}$ Table_13.1 Table_13.1 ­ Table_13.1 ­ Table_13.1 Table_13.1 ­ Table_13.1 Table_13.1 Table_13.1 Table_13.1 13.1 Table_13.1
+Active RFID Tags Active tags have their own on-board power supply, e.g., a bat­ tery that gives them the capability to support many more services than passive tags. The lifetime of an active tag is limited by the lifetime of the battery, typically in the order of a year. Active tags can transmit and receive over a longer distance than pas­ sive tags, typically in the order of hundreds of meters, can have sensors to monitor their environment (e.g., temperature, pressure), and sometimes support standard Internet communication protocols. In some sense, an active RFID tag resembles a small embedded system. The ISO standard 18000-7 specifies the protocol and the parameters for the communication with an active tag in the $433\ \mathrm{MHz}$ range. The reduction of the power consumption of an active RFID tag in sleep mode is a topic of current research.
 
-Active RFID Tags   Active tags have their own on-board power supply, e.g., a bat­ tery that gives them the capability to support many more services than passive tags. The lifetime of an active tag is limited by the lifetime of the battery, typically in the order of a year. Active tags can transmit and receive over a longer distance than pas­ sive tags, typically in the order of hundreds of meters, can have sensors to monitor their environment (e.g., temperature, pressure), and sometimes support standard
+> Table 13.1 Parameters of a typical low-cost passive RFID tag
+> ![](images/d51e2541d52de265b6c5144b0cc5c37da786a505603b58d4978098d4eb276016.jpg) 
 
-Table 13.1  Parameters of a typical low-cost passive RFID tag
-![](images/d51e2541d52de265b6c5144b0cc5c37da786a505603b58d4978098d4eb276016.jpg)  
 Adapted from [Jue05]
 
-Internet communication protocols. In some sense, an active RFID tag resembles a small embedded system. The ISO standard 18000-7 specifies the protocol and the parameters for the communication with an active tag in the $433\ \mathrm{MHz}$ range. The reduction of the power consumption of an active RFID tag in sleep mode is a topic of current research.
-
-# 13.4.4  RFID Readers
+### 13.4.4 RFID Readers
 
 The RFID reader is a gateway component between the world of RFID tags and the Internet. These two worlds are characterized by different architectural styles, nam­ ing conventions, and communication protocols. On the Internet side, an RFID reader looks like a standard Web server that adheres to all Internet standards. On the RFID side, the RFID reader respects the RFID communication protocol standards. The RFID reader has to resolve all property mismatches.
 
-# 13.4.5  RFID Security
+### 13.4.5 RFID Security
 
 Whenever we connect a computer to the Internet, sensitive security issues arise [Lan97] that must be addressed. Standard security techniques are based on the deployment of cryptographic methods, like encryption , random number generation , and hashing as outlined in Sect. 6.2 . The execution of cryptographic methods requires energy and silicon real estate, which are not sufficiently available in all smart objects, such as low-cost RFID tags. The often-heard argument that computa­ tionally constrained RFID tagged objects will disappear in the near future as the micro electronic devices become cheaper overlooks the price pressure on simple RFID tags. If low-cost RFID tags are placed on billions of retail products, even a one-cent increase in the cost of a tag for the provision of cryptographic capabilities will be shunned.
 
 The information security threats in the IoT can be classified into three groups: (I) the threats that compromise the authenticity of information, (ii) the threats to pri­ vacy caused by a pervasive deployment of IoT products, and (iii) denial of service threats. We assume that the vast majority of IoT devices are connected to the cyber­ space by a wireless connection. A wireless connection always presents a serious vulnerability since it opens the door to an unnoticed observation of the traffic by an adversary.
 
-Authentication   It is a basic assumption in the IoT that the electronic device , e.g., a RFID tag, represents a unique physical thing in cyberspace and that this link between the electronic device and the physical thing which has been established by a trusted authority can be relied upon. This belief in tag authenticity can be shaken easily.
+Authentication It is a basic assumption in the IoT that the electronic device , e.g., a RFID tag, represents a unique physical thing in cyberspace and that this link between the electronic device and the physical thing which has been established by a trusted authority can be relied upon. This belief in tag authenticity can be shaken easily.
 
 Scanning and replicating an unprotected tag is relatively easy, since a tag is nothing else than a string of bits that can be copied without difficulty.
 
@@ -6112,7 +5848,7 @@ Example : Accessing the product database can identify a counterfeit piece of art
 
 Tamper-proof tags that physically break when they are detached from the thing they have been attached to by the trusted authority are one solution to the problem of physical tag stealing. In order to be able to ascertain the authenticity of valuable things, physical one-way functions (Poufs) have been proposed [Pap02]. An exam­ ple for a POWF is a transparent optical device with a random three-dimensional micro structure that is attached to the thing in a tamper-proof manner. Since the randomness of the structure cannot be controlled during the manufacturing process, it is impossible to produce two POWF that are alike. When read by a laser under a specific angle, a POWF response is a bit stream that is characteristic for this unique POWF. Depending on the reading angle, different characteristic bit streams can be retrieved. These bit streams can be stored in the product database. It is difficult for an adversary to clone a POWF, because it is a thing with random characteristic physical properties that cannot be represented by a mathematical function. A POWF is not a construct of cyberspace that can be copied or reconstructed.
 
-Privacy   The main privacy concern in the RFID world is the clandestine reading of a tag by an unauthorized reader. Since low-cost RFID tags are unprotected and can be read by commodity readers, clandestine tag tracking by unauthorized readers discloses valuable information to an adversary. If the adversary uses a sensitive reader with a high-power antenna output ( rogue reading ), he can significantly extend the nominal read range. The information about EPC codes and other attri­ butes that are contained in the tag can be linked with the identity of the person car­ rying the tag in order to construct a personal profile. Since a low-cost tag does not have the cryptographic capability to authenticate the reader, it will disclose its infor­ mation whenever it is queried. Clandestine tag reading can be prevented by perma­ nently killing the tag as soon as the tag enters the consumer domain, i.e., at the point-of-sale. Tag killing enforces consumer privacy effectively. However, if tags support the functionality of tag killing, a vulnerability with respect to availability is established.
+Privacy The main privacy concern in the RFID world is the clandestine reading of a tag by an unauthorized reader. Since low-cost RFID tags are unprotected and can be read by commodity readers, clandestine tag tracking by unauthorized readers discloses valuable information to an adversary. If the adversary uses a sensitive reader with a high-power antenna output ( rogue reading ), he can significantly extend the nominal read range. The information about EPC codes and other attri­ butes that are contained in the tag can be linked with the identity of the person car­ rying the tag in order to construct a personal profile. Since a low-cost tag does not have the cryptographic capability to authenticate the reader, it will disclose its infor­ mation whenever it is queried. Clandestine tag reading can be prevented by perma­ nently killing the tag as soon as the tag enters the consumer domain, i.e., at the point-of-sale. Tag killing enforces consumer privacy effectively. However, if tags support the functionality of tag killing, a vulnerability with respect to availability is established.
 
 Example : By analyzing the tagged medication a person is carrying, an adversary could infer information about the health condition of the person.
 
@@ -6122,13 +5858,13 @@ Example : In a commercial setting, an adversary with a hidden reader could perio
 
 Another privacy enforcement technique does not prevent but detects clandestine reading. A consumer can carry a special monitoring tag that alerts the carrier when­ ever a clandestine reading attack is detected. The monitoring tag transforms a clan­ destine reading action to an open reading action and thus exposes the hidden adversary.
 
-Denial of Service   A denial of service attack tries to make a computer system unavailable to its users. In any wireless communication scenario, such as an RFID system or a sensor network, an adversary can jam the ether with high-power signals of the appropriate frequency in order to interfere with the communication of the targeted devices. In the Internet, an adversary can send a coordinated burst of ser­ vice requests to a site to overload the site such that legitimate service requests can­ not be handled any more (see also Sect. 6.2.2 on botnets).
+Denial of Service A denial of service attack tries to make a computer system unavailable to its users. In any wireless communication scenario, such as an RFID system or a sensor network, an adversary can jam the ether with high-power signals of the appropriate frequency in order to interfere with the communication of the targeted devices. In the Internet, an adversary can send a coordinated burst of ser­ vice requests to a site to overload the site such that legitimate service requests can­ not be handled any more (see also Sect. 6.2.2 on botnets).
 
 Some RFID tags support—as a privacy enhancement mechanism—the function­ ality to put a tag into a sleep mode or to permanently kill a tag. An adversary can use this functionality to interfere with the proper operation of the service.
 
 Example : At an automated supermarket checkout, an RFID reader determines the pur­ chased goods by reading the RFID tags of the items in the shopping cart. If an adversary disables some tags, the respective items will not be recognized and don’t appear on the bill.
 
-# 13.5  Wireless Sensor Networks (WSN)
+## 13.5 Wireless Sensor Networks (WSN)
 
 Recent progress in the field of Micro-Electro-Mechanical Systems (MEMS), low-­ power microelectronics, and low-power communication has made it possible to build small integrated smart objects , called sensor nodes , that contain a sensor, a microcontroller, and a wireless communication controller. A sensor node can acquire a variety of physical, chemical, or biological signals to measure properties of its environment. Sensor nodes are resource constrained. They are powered either by a small battery or by energy harvested from its environment and have limited compu­ tational power, a small memory, and constrained communication capabilities.
 
@@ -6144,7 +5880,7 @@ A sensor network is operational as long as a minimum number of nodes is active a
 
 Attempts were made to use the RFID infrastructure for the interconnection of autonomous low-cost RFID-based sensor nodes [Bha10]. These sensor nodes oper­ ate without a battery and harvest the energy either from the environment or the electromagnetic radiation emitted by the RFID reader. This technology has the potential to produce long-lasting, low-cost ubiquitous sensor nodes that may revo­ lutionize many embedded applications.
 
-# Points to Remember
+## Points to Remember
 
 • According to the IoT vision, a smart planet will evolve, where many of the everyday things around us have an identity in cyberspace, acquire intelligence, and mash-up information from diverse sources.
 
@@ -6166,11 +5902,11 @@ Attempts were made to use the RFID infrastructure for the interconnection of aut
 
 • After a sensor node is deployed in a sensor field , it is left on its own and relies on its self-organizing capabilities. At first, it must detect its neighbors and establish communication. In the second phase, it must learn about the arrangement in which the nodes are connected to each other, the topology of nodes , and build up ad hoc multi-hop communication channels to a base station. In case of the failure of an active node, it must reconfigure the network.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 In 2009, the European Union has published a Strategic Research Roadmap for the Internet of Things [Ver09] that discusses the vision of the IoT and relevant research issues up to the year 2020 and beyond. The excellent RFID handbook [Fin03] is a valuable reference for the RFID technology. The September 2010 special issue of the Proceedings of the IEEE [Gad10] is devoted to RFID technology. The January 2022 special issue of the Proceedings of the IEEE addresses Future Networks with Wireless Power Transfer and Energy Harvesting technologies [Cle22] which we expect to accelerate the IoT widespread adoption further.
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 13.1. What is the vision of the Internet of Things and which are the most pressing technical issues that must be resolved?
 
@@ -6202,13 +5938,13 @@ In 2009, the European Union has published a Strategic Research Roadmap for the I
 
 # Chapter 14 Cloud and Fog Computing
 
-# Overview
+## Overview
 
 Cloud computing has evolved from commercializing excess capacity in data centers in the early 2000s. Operators of large data centers then realized that their resource utilization was, on average, so low that it became profitable to rent out resources like computation time and storage to paying customers. As a result, the cloud computing paradigm has been quickly adopted worldwide with soaring success. By the end of 2020, about six hundred hyper-scale data centers offering cloud computing have been in operation. Cloud computing is frequently used to realize soft real-time systems, like video-streaming, E-commerce, or office and collaboration applications. However, this chapter is rather interested in exploring how cloud computing fits in as a design prin­ ciple for distributed embedded applications that form hard real-time systems.
 
 We start this chapter by outlining significant differences between the world of cloud and the world of RT systems . We argue that the world of cloud on its own is unfit for hard real-time systems because of its inability to provide timeliness guar­ antees and introduce fog computing (also called edge computing ) as a means to leverage cloud benefits. Fog computing is an architectural style that differentiates between the embedded , the fog , and the cloud layers . In contrast to the cloud, the fog layer is close to the controlled object and consists of fog nodes characterized by their ability to provide resource pooling , northbound and southbound connectivity , and configuration of the fog and embedded layer . We detail the main benefits and risks of fog computing and continue with key fog and cloud technologies along said characteristics. We discuss virtualization as a method for resource pooling, intro­ duce time-triggered virtual machines (TTVM), and give a prospect of containers and serverless computing . Northbound connectivity connects the fog layer to the cloud, while southbound connectivity connects the fog layer to the embedded layer. We discuss the main differences between northbound and southbound connectivity. We also give examples for the configuration characteristic . We conclude this chap­ ter with a discussion of use cases of cloud computing and fog computing for hard real-time systems and explain how the Nerve software platform for industrial fog computing satisfies the fog node characteristics.
 
-# 14.1  Introduction
+## 14.1 Introduction
 
 In Chap. 1 , we define the main functional requirements of an RT system as data col­ lection, direct digital control, and man-machine interaction. In the past, the col­ lected data has been transported to an enterprise computer for archival and further analysis. However, with the movement of many enterprise computing functions into the cloud and the requirement to remotely monitor, diagnose, and update RT sys­ tems via the Internet, the need for interfacing a real-time control system with the cloud arose. In addition, once cloud connectivity is established, novel types of RT systems emerge.
 
@@ -6226,18 +5962,14 @@ Hard real-time services require calculable bounds on the worst-case communica­ 
 
 As the response time of a cloud service to the consumer is also an essential prop­ erty for soft real-time services, cloud providers have quickly realized that the geo­ graphic co-location of their data centers with the users significantly reduces communication latency. As we continue to distribute the resources and co-locate them even further toward the consumers, a new architectural style emerges, fog computing .
 
-# 14.2  Characteristics of the Cloud
-
-Table_14.1 ­ Table_14.1 ­ Table_14.1 Table_14.1 14.1 Table_14.1
+## 14.2 Characteristics of the Cloud
 
 Let us look in some detail on the following essential characteristics of cloud computing:
 
-Resource Pooling. In simplified terms, a cloud is a data center that pools resources and provides them to many consumers. Such resources are, for example, storage, processing, memory, and network bandwidth, and the cloud will ensure that each
+Resource Pooling. In simplified terms, a cloud is a data center that pools resources and provides them to many consumers. Such resources are, for example, storage, processing, memory, and network bandwidth, and the cloud will ensure that each consumer gets access to its share of the resources. However, a consumer will typically be unaware of the precise location of the provided resources and will not be able to request the resource location precisely. This characteristic, multi­ ple consumers sharing a pool of resources, is called resource pooling .
 
-Table 14.1  Comparison world of cloud to world of RT systems
-![](images/6346b53ff29b2c5c34a04994eb7ad37f7a51028b63b95ac06b3485a1633e79c0.jpg)
-
-consumer gets access to its share of the resources. However, a consumer will typically be unaware of the precise location of the provided resources and will not be able to request the resource location precisely. This characteristic, multi­ ple consumers sharing a pool of resources, is called resource pooling .
+> Table 14.1 Comparison world of cloud to world of RT systems
+> ![](images/6346b53ff29b2c5c34a04994eb7ad37f7a51028b63b95ac06b3485a1633e79c0.jpg)
 
 Broad Network Access. The resources in the cloud must be easily accessible through standardized communication means. Furthermore, as users may operate various devices with different communication capabilities (e.g., from smart phones to workstations), the cloud also needs to support multiple communication standards. Elastic Compute. Cloud computing inherently supports even massive and rapid changes in consumer resource demands. On the one hand, the on-demand self-­ service characteristic says that cloud computing enables the consumer to increase its share of the resources in an automated manner without the human interven­ tion of the cloud service provider. On the other hand, the rapid elasticity charac­ teristic further says that the cloud will quickly handle such changes in consumer resource demands. As the resource usage per consumer may vary vastly over time, cloud computing must also have a measured service characteristic that essentially implements metering methods for bookkeeping of how much resources have been allocated to or consumed by the consumer.
 
@@ -6259,13 +5991,13 @@ The service model most commonly used by the general public is Software as a Serv
 
 Example: In the previous digital maps example, the end customer may use the map service as a SaaS, while the digital map provider may not operate an infrastructure of its own but be a consumer of IaaS of a cloud provider.
 
-Service-Level Agreement   The cloud computing provider and the consumer enter a legal contract, called the service-level agreement (SLA), that defines the cloud ser­ vice delivered by the provider and the costs thereby incurred by the consumer. Some cloud computing providers indicate average response times (of the service executed in the cloud) in their SLAs. However, as to the authors’ knowledge, SLAs do not guarantee worst-case response times.
+Service-Level Agreement The cloud computing provider and the consumer enter a legal contract, called the service-level agreement (SLA), that defines the cloud ser­ vice delivered by the provider and the costs thereby incurred by the consumer. Some cloud computing providers indicate average response times (of the service executed in the cloud) in their SLAs. However, as to the authors’ knowledge, SLAs do not guarantee worst-case response times.
 
-# 14.3  The Advent of Fog Computing
+## 14.3 The Advent of Fog Computing
 
 In contrast to cloud computing, fog computing does not have a broadly accepted definition. Although NIST defines a Fog Computing Conceptual Model [Ior18], its uptake is far behind the NIST cloud computing definition. Thus, in this chapter, we define fog computing in light of its usage as a design principle for distributed embedded systems and give our interpretation of how it relates to similar concepts like edge computing.
 
-# 14.3.1  Fog Computing for Distributed Embedded Systems
+### 14.3.1 Fog Computing for Distributed Embedded Systems
 
 Fog computing links the cloud and embedded architectural styles (see Sect. 2.2.4 ) and introduces new design principles, rules, and conventions. Fog computing for distributed embedded systems is, thus, an architectural style by itself in which the distributed computer that controls the physical process consists of embedded nodes, at least one fog node , and cloud services. We call the one or multiple fog nodes the fog layer , which has the following three characteristics:
 
@@ -6279,14 +6011,10 @@ Fog computing links the cloud and embedded architectural styles (see Sect. 2.2.4
 
 (a) The fog layer can configure at least some communication and computation resources accessible via its southbound interface. (b) The fog layer itself is configurable via its northbound interface.
 
-Figure_14.1 Figure_14.1 Figure_14.1 Figure_14.1 Figure_14.1 Figure_14.1 14.1 Figure_14.1
+Example: Automated Drilling Machine —a fog computing architecture implementing an automated drilling machine may be realized as follows. The controlled object is an auto­ mated drilling machine consisting of a camera, a positioning system for the drill, and the drill itself. The machine is automatically supplied with workpieces, and it is the task of the distributed computer to determine the target location, size, and depth for the drill holes and perform the actual drilling. The camera captures the visual appearance of the workpiece (before, during, and after the drilling). The camera then sends this image via the real-time network to the fog node, which produces the concrete set points for the location of the drill, drill speed, and drill force. The fog node sends these set points to the embedded nodes, Fig.14.1 which apply them to the positioning system and the drill. Additionally, the fog node sends pictures of the workpiece before and after the drilling to the cloud for quality control.
 
-Example: Automated Drilling Machine —a fog computing architecture implementing an automated drilling machine may be realized as follows. The controlled object is an auto­ mated drilling machine consisting of a camera, a positioning system for the drill, and the drill itself. The machine is automatically supplied with workpieces, and it is the task of the distributed computer to determine the target location, size, and depth for the drill holes and perform the actual drilling. The camera captures the visual appearance of the workpiece (before, during, and after the drilling). The camera then sends this image via the real-time network to the fog node, which produces the concrete set points for the location of the drill, drill speed, and drill force. The fog node sends these set points to the embedded nodes, Fig. 14.1
-
-![](images/8c20a4e6d7f65feb036cb5716d35384fa1f79a988c5bd7454692c25ad64f0304.jpg)  
-Fig. 14.1  Example of fog computing architecture
-
-which apply them to the positioning system and the drill. Additionally, the fog node sends pictures of the workpiece before and after the drilling to the cloud for quality control.
+> ![](images/8c20a4e6d7f65feb036cb5716d35384fa1f79a988c5bd7454692c25ad64f0304.jpg) 
+> Fig.14.1 Example of fog computing architecture
 
 If multiple fog nodes form the fog layer, they may operate as an ensemble by showing a resource pooling characteristic, similar to cloud computing.
 
@@ -6294,7 +6022,7 @@ Example: Automated Drilling Factory Floor —a factory floor may implement a hun
 
 Fog nodes can be stationary or mobile. For example, fog nodes can be located in an industrial automation setting at the factory floor to control individual production cells or industrial robots. Fog nodes can also be mobile, for example, integrated inside an automobile.
 
-# 14.3.2  Fog Computing Benefits and Risks
+### 14.3.2 Fog Computing Benefits and Risks
 
 It is well known since many years that the management of large and complex real-­ time systems can be simplified by architectures that embrace abstraction and divide-­ and-­conquer principles [Kah79]. In particular, a fog architecture has the following benefits compared with a traditional embedded-only architecture.
 
@@ -6320,17 +6048,17 @@ meet application-specific dependability goals. These can be achieved by a suffic
 
 In a fog computing architecture, the fog layer is the only interface toward the cloud. While this has security benefits as discussed above, it will also be the major target for security attacks. Thus, the fog layer itself needs to be designed toward high-security requirements. Depending on the specific use case, it will also be advisable to implement end-to-end security measures down to the embedded layer, for example, by using signatures and secure boot.
 
-# 14.3.3  General Fog Computing and Comparison to Edge Computing
+### 14.3.3 General Fog Computing and Comparison to Edge Computing
 
 Shi et al. [Shi16] define “edge as any computing and network resources along the path between data sources and cloud data centers” and argue that “edge computing is interchangeable with fog computing.” Although NIST calls out differences between fog and edge, we agree with Shi et al. It seems that the technical realization of edge computing and fog computing are identical. However, the technical realiza­ tion can be viewed from different perspectives. On the one hand, cloud and Internet service providers differentiate the core and the edge of their infrastructure as the location of computations. Therefore, they tend to use the term edge computing , and nowadays, cloud providers also offer edge computing as a service. On the other hand, from the perspective of an architectural style, we prefer fog computing with its defining layers of cloud, fog, and embedded. It also seems a better metaphor in the context of cloud computing, not the least because clouds do not have edges.
 
-# 14.4  Selected Cloud and Fog Technologies
+## 14.4 Selected Cloud and Fog Technologies
 
 While the fog computing paradigm as an architectural style has directly emerged from cloud computing, the technologies that enable fog computing, particularly technologies necessary to build complex real-time systems, have evolved in parallel to cloud computing technologies. In this section, we discuss enabling technologies for fog computing. The discussion is structured by our previously introduced three fog computing characteristics: resource pooling, connectivity, and configuration.
 
 We also address system design automation in fog computing in this section and emphasize the importance of appropriate configuration tooling.
 
-# 14.4.1  Resource Pooling
+### 14.4.1 Resource Pooling
 
 A fog node for real-time systems must limit the interference between the different applications it hosts and provide predictable bounds to its southbound user. Only then will the fog node’s real-time services adhere to their specifications. Standard software techniques in cloud computing for resource pooling are virtualization , container iz ation , and serverless computing . Although these techniques limit inter­ ference, their actual implementations (i) lack the scrutiny typically required for safety-related and safety-critical systems and (ii) typically only consider the limita­ tion of interference in the value domain but are not concerned with the interference in the time domain that is absolutely necessary for hard real-time systems.
 
@@ -6344,7 +6072,7 @@ Besides the limitation of interference, other issues requiring multi-chip fog no
 
 Software solutions can also limit interference. For example, in traditional embed­ ded systems, it is the task of the real-time operating system to schedule the real-time tasks. Thus, as long as the operating system meets the tasks’ deadlines, temporal interference of tasks on each other is acceptable. Likewise, other operating system services will ensure interference limitation in the value domain (e.g., memory man­ agement, I/O).
 
-Virtualization   With the growing semiconductor performance, particularly multi-­ core SoCs, virtualization becomes technically feasible for hard real-time systems, enabling the fog computing benefits discussed in the previous section. Virtualization is a well-established hardware abstraction technology introduced by Goldberg [Gol73], and formal requirements for virtual iz able computer architectures are for­ mulated by Popek and Goldberg [Pop74]. Virtualization makes use of a virtual machine monitor (VMM) that manages and controls virtual machines (VMs). Today, VMMs are commonly referred to as hypervisor s , and they come in two types. A type 1 hypervisor is a software layer that operates directly on top of the hardware compute resource (i.e., the processor); it is also said to operate on bare metal . In contrast, a type 2 hypervisor operates on top of an operating system. Thus, in the case of type 2 hypervisor s, an operating system sits between the hypervisor and the bare metal, called the host operating system . Typically, operating systems are also installed inside the VMs—these operating systems are called guest operat­ ing system s.
+Virtualization With the growing semiconductor performance, particularly multi-­ core SoCs, virtualization becomes technically feasible for hard real-time systems, enabling the fog computing benefits discussed in the previous section. Virtualization is a well-established hardware abstraction technology introduced by Goldberg [Gol73], and formal requirements for virtual iz able computer architectures are for­ mulated by Popek and Goldberg [Pop74]. Virtualization makes use of a virtual machine monitor (VMM) that manages and controls virtual machines (VMs). Today, VMMs are commonly referred to as hypervisor s , and they come in two types. A type 1 hypervisor is a software layer that operates directly on top of the hardware compute resource (i.e., the processor); it is also said to operate on bare metal . In contrast, a type 2 hypervisor operates on top of an operating system. Thus, in the case of type 2 hypervisor s, an operating system sits between the hypervisor and the bare metal, called the host operating system . Typically, operating systems are also installed inside the VMs—these operating systems are called guest operat­ ing system s.
 
 Today, modern processors support virtualization not only for computation but also for I/O and graphics. With the growing number of computing cores per proces­ sor, virtualization has become a major technology that enables fine-grained resource pooling. For example, VMs may be configured to execute on a fixed set of processor cores called pinning . Cores can also be configured to be shared between VMs, including VMs from different consumers.
 
@@ -6356,38 +6084,30 @@ Example: Nerve Platform —Nerve is a fog computing platform for industrial auto
 
 A fundamental problem they must address is the problem of multilevel scheduling .
 
-Multilevel Scheduling in Virtual i zed Systems   Suppose a system that consists of a multi-core SoC virtual i zed by a type 1 hypervisor that instantiate s multiple virtual machines and lets at least one virtual machine implement a real-time operating sys­ tem. Multilevel scheduling in virtual i zed systems is the problem of coordinating the hypervisor’s scheduling decisions with the guest operating systems’ scheduling decisions such that real-time tasks executing in the virtual machines do meet their deadlines.
+Multilevel Scheduling in Virtual i zed Systems Suppose a system that consists of a multi-core SoC virtual i zed by a type 1 hypervisor that instantiate s multiple virtual machines and lets at least one virtual machine implement a real-time operating sys­ tem. Multilevel scheduling in virtual i zed systems is the problem of coordinating the hypervisor’s scheduling decisions with the guest operating systems’ scheduling decisions such that real-time tasks executing in the virtual machines do meet their deadlines.
 
 In the simplest solution, multilevel scheduling reduces to classical real-time scheduling and an appropriate hypervisor configuration: VM-pinning assigns com­ putation cores exclusively to VMs. Thus, whenever the guest operating system schedules a real-time task for execution, it will not be delayed by the hypervisor scheduling another VM on said core. However, VM-pinning may be costly.
 
 Alternatively, a cost-efficient solution is time-triggered virtual machines (TTVMs) in which the schedules for the VM activation and real-task execution are jointly generated at design time.
 
-Figure_14.2 Figure_14.2 14.2 Figure_14.2 Figure_14.2 Figure_14.2 Figure_14.2 $t I{-}t4$ Figure_14.2 Figure_14.2 Figure_14.2 Figure_14.2 Figure_14.2
-
 Time-triggered virtual machines also require synchronized global time. Ruh et al. [Ruh21] study clock synchronization in virtual i zed distributed systems using ACRN as hypervisor and IEEE 802.1AS as clock synchronization protocol. They show that clock synchronization quality in virtual environments can come close to non-virtual i zed systems. Experiments achieve a precision of the clock synchro niza­ tion well below a microsecond.
 
-Containers   Virtualization through a hypervisor provides strong isolation between different VMs, but it comes at a certain cost: each VM needs to implement a guest operating system. Thus, more lightweight forms of virtualization have been devel­ oped over the last years. One of these techniques is called container-based virtual­ ization [Sol07], with its most prominent implementations LXC ( https:// linux containers.org/ ) and Docker [Ber14]. In contrast to VMs, containers are not separated using a hypervisor but directly use an operating system’s kernel mecha­ nisms (e.g., in Linux: namespaces , cgroups , and capabilities ). For this, containers are managed and controlled by a container engine , which sets up the execution of the containers by the appropriate calls to the kernel functions. Containers are, there­ fore, a form of OS-level virtualization .
+Containers Virtualization through a hypervisor provides strong isolation between different VMs, but it comes at a certain cost: each VM needs to implement a guest operating system. Thus, more lightweight forms of virtualization have been devel­ oped over the last years. One of these techniques is called container-based virtual­ ization [Sol07], with its most prominent implementations LXC ( https:// linux containers.org/ ) and Docker [Ber14]. In contrast to VMs, containers are not separated using a hypervisor but directly use an operating system’s kernel mecha­ nisms (e.g., in Linux: namespaces , cgroups , and capabilities ). For this, containers are managed and controlled by a container engine , which sets up the execution of the containers by the appropriate calls to the kernel functions. Containers are, there­ fore, a form of OS-level virtualization .
 
-Containers solve very practical problems in software development: the software image to be executed within the container consists not only of the application code itself but also includes all dependencies (e.g., libraries, stacks, and portions of Fig. 14.2
+Containers solve very practical problems in software development: the software image to be executed within the container consists not only of the application code itself but also includes all dependencies (e.g., libraries, stacks, and portions of Fig.14.2 operating systems user spaces in general). Thus, the image to be executed within a container is self-contained . Since images are self-contained, they are also easy to scale. Each physical server that implements a container engine for compatible con­ tainers knows how to set up said container’s execution.
 
-![](images/74d5bd57579f55b72911f6d3b69b790adc4ff495b6341343a320d41a1e89b19f.jpg)  
-Fig. 14.2  Time-triggered virtual machines (TTVMs)
-
-operating systems user spaces in general). Thus, the image to be executed within a container is self-contained . Since images are self-contained, they are also easy to scale. Each physical server that implements a container engine for compatible con­ tainers knows how to set up said container’s execution.
+> ![](images/74d5bd57579f55b72911f6d3b69b790adc4ff495b6341343a320d41a1e89b19f.jpg) 
+> Fig.14.2 Time-triggered virtual machines (TTVMs)
 
 Container orchestration (e.g., Kubernetes) manages and controls container deployment, communication, and scaling. However, this container orchestration is only concerned with the containers themselves and not with the services executed within. Container orchestration will, e.g., allocate the containers to the appropriate compute resources and set up a virtual networking infrastructure to enable commu­ nication between the containers. It can also monitor container execution and restart containers in case of failures. After the successful setup of the containers, the ser­ vices executing within the containers will coordinate themselves and not depend on container orchestration.
 
-Containers for real-time systems currently receive growing research attention
+Containers for real-time systems currently receive growing research attention [Cin18]. Analogous to TTVMs, we can also design time-triggered containers (TTCs) that execute at pre-configured points in a synchronized global time, where container orchestration can include the calculation of these instants. The RTOS ker­ nel and the container engine need to ensure the TTCs’ timely execution. However, as the isolation between containers is established by the container engine and the underlying operating system kernel, any failure of these can have a severe impact on the system operation. For example, a software failure in the kernel could cause all containers to fail.
 
-[Cin18]. Analogous to TTVMs, we can also design time-triggered containers
-
-(TTCs) that execute at pre-configured points in a synchronized global time, where container orchestration can include the calculation of these instants. The RTOS ker­ nel and the container engine need to ensure the TTCs’ timely execution. However, as the isolation between containers is established by the container engine and the underlying operating system kernel, any failure of these can have a severe impact on the system operation. For example, a software failure in the kernel could cause all containers to fail.
-
-Serverless Computation   The most recent abstraction technique for compute resources is serverless computation introduced by Amazon with AWS Lambda functions [Ama21]. The term serverless needs to be interpreted from the consumer perspective: consumers can directly deploy code in the cloud without the need to manage and control a server (i.e., a VM or a container) to execute the said code as a service. Baldini et al. [Bal17] give an overview of the key characteristics of server­ less platforms. Among other use cases, serverless platforms typically execute code consisting of a single main function written in one of many supported programming languages (such as Java or Python). Furthermore, the cloud will start serverless functions on-demand and will scale the number of its instances with the actual con­ sumer needs. Therefore, “bursty, compute-intensive workloads” highly benefit from serverless computation [Bal17].
+Serverless Computation The most recent abstraction technique for compute resources is serverless computation introduced by Amazon with AWS Lambda functions [Ama21]. The term serverless needs to be interpreted from the consumer perspective: consumers can directly deploy code in the cloud without the need to manage and control a server (i.e., a VM or a container) to execute the said code as a service. Baldini et al. [Bal17] give an overview of the key characteristics of server­ less platforms. Among other use cases, serverless platforms typically execute code consisting of a single main function written in one of many supported programming languages (such as Java or Python). Furthermore, the cloud will start serverless functions on-demand and will scale the number of its instances with the actual con­ sumer needs. Therefore, “bursty, compute-intensive workloads” highly benefit from serverless computation [Bal17].
 
 Serverless computation is not yet used for hard real-time systems to the author’s best knowledge. However, although speculative at the time of this writing, it is plau­ sible that serverless real-time computation will also become a reality in the future as it relieves the application developer from platform concerns entirely. The appli­ cation designer can focus on solving her domain-specific problem while the plat­ form is responsible for integrating the application in the form of (micro-)services in the system. This integration in the world of real-time systems will go way beyond the world of cloud , as it must consider characterizing the application in the temporal domain (e.g., by calculating the application’s WCET) and their dependability and security attributes.
 
-# 14.4.2  Connectivity
+### 14.4.2 Connectivity
 
 We distinguish between the northbound communication system that connects the fog layer to the cloud layer and the southbound communication system connecting the fog layer to the embedded layer. These two communication systems are signifi­ cantly different, particularly regarding their real-time properties. Northbound com­ munication must tie in with the broad network access characteristic of cloud computing, while southbound communication follows the requirements of a real-­ time network.
 
@@ -6411,7 +6131,7 @@ Example: Service discovery for fault tolerance —a safety-critical system can b
 
 As shown by the example, the use of service-oriented communication in hard real-time systems, in particular safety-critical ones, must be carefully examined on a case-by-case basis. For example, one non-critical way to use service-oriented communication is during the development phase of a system when software updates are frequent. However, once the system enters the production phase, the dynamic portions of service-oriented communication are replaced by static configurations.
 
-# 14.4.3  Configuration
+### 14.4.3 Configuration
 
 The location of a fog node in a fog computing architecture allows it to execute con­ figuration authority on the embedded layer and be re-configurable by the cloud layer.
 
@@ -6423,7 +6143,7 @@ The fog node itself can be subject to updates through its northbound interface.
 
 Example: OTA Update II —a new software version of a sensor-fusion algorithm becomes available. This new software version is loaded through the northbound interface to the fog node, which exchanges the old version with the new one and executes it locally.
 
-# 14.4.4  System Design Automation
+### 14.4.4 System Design Automation
 
 Fog computing allows realizing quite sophisticated RT systems as, for example, self-driving cars or autonomous factories (Industry 4.0). However, these RT systems incorporate many different technologies, like the ones we discussed in this section, and most of these technologies must be appropriately configured. There will also be many dependencies between the configurations of the different technologies, for example, multilevel scheduling discussed above. Other dependencies result from the need to construct computation chains , a set of tasks that must execute in a given temporal order within a given deadline, possibly in different compute resources and potentially even in different layers of a fog computing architecture.
 
@@ -6435,15 +6155,15 @@ Example: In the current MotionWise version, a human allocates functions to compu
 
 System design automation in fog computing has enormous growth potential. For example, in the future, it may target (i) to automatically allocate functions to the different fog computing architecture layers (embedded, fog, cloud), (ii) to automate and support the selection of matching technologies for given use cases, and (iii) to guide the selection and placement of fog nodes.
 
-# 14.5  Example Use Cases
+## 14.5 Example Use Cases
 
 Cloud and fog computing enable many use cases for distributed embedded applica­ tions. We discuss some in this final section of this chapter.
 
-# 14.5.1  Cloud Computing-Enabled Use Cases
+### 14.5.1 Cloud Computing-Enabled Use Cases
 
 This section discusses use cases for architectures in which the embedded layer com­ municates with the cloud layer, either directly or indirectly via the fog layer. The fog layer is optional.
 
-# Distributed Data Collection and Big Data Processing
+#### Distributed Data Collection and Big Data Processing
 
 The data center characteristic of cloud computing allows it to operate as centralized data storage and data processing. This is particularly attractive when not only a single system feeds data into the cloud, but larger collectives of systems as, for example, fleets of cars or a factory floor (or multiple factory floors) of industrial robots do so to achieve a higher common goal.
 
@@ -6455,7 +6175,7 @@ Example: Predictive Maintenance —a factory floor of industrial robots delivers
 
 As the previous examples show, the use cases for data collection and processing in the cloud are quite diverse. Indeed, the analysis of Big Data (e.g., see Sagrigoglu et  al. [Sag13]) has already caused disruptions in established industries like the advertising industry, and it has a similar potential for disruption in traditional real-­ time control industries, e.g., Industry 4.0.
 
-# Digital Twin
+#### Digital Twin
 
 The NASA taxonomy defines the digital twin as a means for model-based system engineering (MBSE). Indeed, NASA originally introduced the concept of a digital twin in Shafto et al. [Sha10] to describe the NASA digital twin: “A digital twin is an integrated multi-physics, multi-scale, probabilistic simulation of a vehicle or a sys­ tem [...]” and “the digital twin integrates sensor data from the vehicle’s on-board integrated vehicle health management (IVHM) system [...].”
 
@@ -6463,15 +6183,13 @@ In a more general interpretation, the digital twin concept has two core characte
 
 (i) The digital twin is a useful simulation model of the physical system.
 
-(ii) There exists some online synchronization between the physical object and the model realizing the digital twin. Cloud computing is an ideal use case for the digital twin as the simulation model
-
-can become quite computationally intensive, and the synchronization with the phys­ ical system can be implemented by the cloud’s broad network access characteristic.
+(ii) There exists some online synchronization between the physical object and the model realizing the digital twin. Cloud computing is an ideal use case for the digital twin as the simulation model can become quite computationally intensive, and the synchronization with the phys­ ical system can be implemented by the cloud’s broad network access characteristic.
 
 Example: Industrial Robot Monitoring —the motion of an industrial robot in response to control commands is simulated in the cloud. This simulation is compared with the actual motion of the physical twin exposed to the same control commands. This continuous moni­ toring of the physical twin and comparison to the digital twin can detect failures and deterioration s.
 
 The digital twin concept has been adopted in different fields, for example, in the mechatronics domain [Bos16], and it is generally considered a significant element in Industry 4.0.
 
-# Cloud Support for Embedded Software Engineering
+#### Cloud Support for Embedded Software Engineering
 
 The traditional way to develop software for embedded systems is to design and code the software on a development computer (a laptop or a workstation), cross-compile, and test directly on a target hardware system close to the production system. Such target hardware typically sits right on the software developer’s desk. This setup gives maximum flexibility to the software developer but has severe drawbacks. First, the number of available target hardware systems may be a bottleneck. Especially when working with cutting-edge chipsets, it is rather typical that devel­ opment boards are scarce. On the other hand, such hardware may be quite expen­ sive, making it difficult to justify the acquisition of large quantities. A second major shortcoming is the lack of inherent collaborative development processes.
 
@@ -6479,11 +6197,11 @@ Cloud computing techniques can mitigate these issues to a large degree. The clou
 
 Although large portions of embedded software developments can be addressed by cloud-computing techniques, at least for critical embedded systems, there will always be a necessity for final verification and validation on the production hard­ ware to meet requirements for a system to be granted regulatory approval.
 
-# 14.5.2  Fog Computing-Enabled Use Cases
+### 14.5.2 Fog Computing-Enabled Use Cases
 
 This section discusses use cases in architectures with a mandatory fog layer.
 
-# Automotive Domain-Based Architecture and In-Car Compute Platform (ICCP)
+#### Automotive Domain-Based Architecture and In-Car Compute Platform (ICCP)
 
 Modern cars are sophisticated distributed computers: multitudes of electronic con­ trol units (ECUs) connect with in-vehicle (real-time) networks. Altogether the ECUs and networks are often called the E/E architecture (for Electrical/Electronic architecture). This E/E architecture continually evolves and is a major source of innovation. The applications a car executes are quite diverse, and car manufacturers typically group them into domains like infotainment and digital cockpit, body, energy, advanced driver assistance system (ADAS) and autonomous driving (AD), chassis, powertrain, and gateway/connectivity. In the past, new applications have been introduced into an automobile as hardware/software bundle, i.e., via a new ECU, and typically with the introduction of a new car model or a major model over­ haul. This has led to quite a high number of ECUs and complex in-vehicle networks: top-of-the-line cars easily exceed a hundred ECUs. Thus, current E/E architectures are evolving more and more toward fog computing architectures (with benefits and risks discussed in Sect. 14. 3.2 ).
 
@@ -6495,34 +6213,28 @@ The E/E architecture continues to evolve toward even more centralization as mult
 
 In the E/E architecture, innovation also changes the embedded layer. One such innovation is structuring the embedded layer into zones, e.g., into four zones: front-­ right, front-left, and back-right, back-left. Each zone implements a zone controller that connects on the one hand to the sensors and actuators and on the other hand to the central multi-domain ECU(s).
 
-Figure_14.3 Figure_14.3 Figure_14.3 Figure_14.3 Figure_14.3 Figure_14.3 Figure_14.3 Figure_14.3 14.3 Figure_14.3 Figure_14.3
-
-# Soft Programmable Logic Controller (Soft PLC)
+#### Soft Programmable Logic Controller (Soft PLC)
 
 Complex distributed computer systems highly automate the modern production of goods. Traditionally, these distributed computer systems are organized in the so-­ called automation pyramid that distinguishes different levels (see [Kah79] and the
 
-![](images/c4d19eeac834083fa10bca61e33729e3692ffb61ff8530e152c062c2b2ec28d6.jpg)  
-Fig. 14.3  In-car compute platform (ICCP) with four zone controllers (ZC)
+> ![](images/c4d19eeac834083fa10bca61e33729e3692ffb61ff8530e152c062c2b2ec28d6.jpg) 
+> Fig.14.3 In-car compute platform (ICCP) with four zone controllers (ZC)
 
 Purdue Reference Model [Wil90]). On the lower levels, the pyramid places the physical processes, the sensors and actuators, and the process control. The produc­ tion planning and supply chain management tasks are allocated on the higher levels in the pyramid. In the context of Industry 4.0, the strict levels of the automation pyramid are relaxed. Fog computing is a means to do so.
 
-Figure_14.4 Figure_14.4 14.4 Figure_14.4 Figure_14.4
+Traditional industrial automation systems implement the process control in dedi­ cated hardware, called Programmable Logic Controllers (PLCs). As indicated in Fig.14.3 , when fog nodes are equipped with appropriate real-time hardware, the PLC functionality can also move to the fog node. Indeed, PLC functionality is already migrated to industrial PCs and run in software. We then speak of Soft PLCs when the PLC software is executed on a more generic hardware platform. A fog node is ideally positioned to take over the execution of multiple soft PLCs.
 
-Traditional industrial automation systems implement the process control in dedi­ cated hardware, called Programmable Logic Controllers (PLCs). As indicated in Fig.  14.3 , when fog nodes are equipped with appropriate real-time hardware, the PLC functionality can also move to the fog node. Indeed, PLC functionality is already migrated to industrial PCs and run in software. We then speak of Soft PLCs when the PLC software is executed on a more generic hardware platform. A fog node is ideally positioned to take over the execution of multiple soft PLCs.
-
-# 14.5.3  Nerve
-
-Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 ­ Table_14.2 Table_14.2 Table_14.2 Table_14.2 Table_14.2 14.2 Table_14.2
+### 14.5.3 Nerve
 
 Nerve use cases are, for example, condition monitoring, remote access to machines, data collection for remote machine learning, or the implementation of a digital twin.
 
-![](images/1c37e8760cb60b5f368c1764d9f8f0c589f1233eeb95940513061fb8b16eb26c.jpg)  
-Fig. 14.4  Fog computing architecture in industrial automation and comparison to the automation pyramid with levels according to the Purdue Reference Model [Wil90]: sensor/actuator, process control, manufacturing execution system (MES), and enterprise resource planning (ERP)
+> ![](images/1c37e8760cb60b5f368c1764d9f8f0c589f1233eeb95940513061fb8b16eb26c.jpg) 
+> Fig.14.4 Fog computing architecture in industrial automation and comparison to the automation pyramid with levels according to the Purdue Reference Model [Wil90]: sensor/actuator, process control, manufacturing execution system (MES), and enterprise resource planning (ERP)
 
-Table 14.2  The fog node characteristics provided by Nerve Node
-![](images/9e61c07038818a3621ab01233fb97126f0842e15011dbc1cc48d11dc17f2caf2.jpg)
+> Table 14.2 The fog node characteristics provided by Nerve Node
+> ![](images/9e61c07038818a3621ab01233fb97126f0842e15011dbc1cc48d11dc17f2caf2.jpg)
 
-# Points to Remember
+## Points to Remember
 
 • The world of cloud is fundamentally different from the world of RT systems .
 
@@ -6552,7 +6264,7 @@ Table 14.2  The fog node characteristics provided by Nerve Node
 
 • Nerve is a software platform for industrial use cases. It consists of the Nerve Management System for the cloud layer and the Nerve Node that enables hard­ ware devices to operate as fog nodes.
 
-# Bibliographic Notes
+## Bibliographic Notes
 
 Barroso et al. [Bar18] call data centers for cloud computing warehouse-scale com­ puters (WSCs). These WSCs commonly consist of tens to hundreds of thousands of servers, typically clustered into racks, wherein each rack interconnects its servers with a local Ethernet switch with 40 Gbps or 100 Gbps links and further networks interconnect the racks to each other. Servers are typically standard CPUs, but recently more and more specialized computing accelerators are introduced to WSCs as well [Bar18, p. 56]. These accelerators are, for example, GPUs or neural network accelerators. Further detailed discussions of WSCs, including energy, cooling, and cost aspects can be found in [Bar18] and Hennessy and Patterson [Hen19, Chap. 6 ].
 
@@ -6564,7 +6276,7 @@ Fog computing for industrial automation has been researched by the European Proj
 
 [Pop18, Pop21].
 
-# Review Questions and Problems
+## Review Questions and Problems
 
 14.1 What are the main differentiating characteristics between the world of cloud and the world of RT systems?
 
@@ -6588,17 +6300,15 @@ Fog computing for industrial automation has been researched by the European Proj
 
 # Annexes
 
-# Annex 1: Abbreviations 1
+## Annex 1: Abbreviations 1
 
 AD Automated driving ADAS Advanced driver assistance systems AES Advanced Encryption Standard ALARP As low as reasonably practical API Application programming interface ASIC Application-specific integrated circuit AVB Audio-Video Bridging BMTS Basic message transport service CAN Control area network CCF Concurrency control field EDF Earliest-deadline-first EMI Electro-magnetic interference EPC Electronic Product Code ET Event-triggered FRU Field-replaceable unit FTU Fault-tolerant unit GPS Global positioning system IaaS Infrastructure as a service ICCP In-car compute platform IoT Internet of Things LIF Linking interface LL Least-laxity MARS Maintainable real-time system MPSoC Multiprocessor system-on-chip
 
 MSD Message structure declaration NBW Non-blocking write NDDC Non-deterministic design construct NoC Network-on-chip NTP Network time protocol OTA Over the air (update) PaaS Platform as a service PAR Positive-acknowledgment-or-retransmission PFSM Periodic finite state machine PIM Platform independent model PSM Platform specific model RFID Radio frequency identification RT Real time SaaS Software as a service SLA Service-level agreement SOC Sphere of control SoC System-on-chip SRU Smallest replaceable unit TADL Task descriptor list TAI International Atomic Time TDMA Time-division multiple access TMR Triple-modular redundancy TSN Time-sensitive networking TT Time-triggered TTA Time-triggered architecture TTEthernet Time-triggered Ethernet TTP Time-triggered protocol TTVM Time-triggered virtual machine UID Unique identifier UTC Universal Time Coordinated WCAO Worst-case administrative overhead WCCOM Worst-case communication delay WCET Worst-case execution time WSN Wireless sensor network
 
-# Annex 2: Glossary 2
+## Annex 2: Glossary 2
 
-Absolute Time-stamp: An absolute time-stamp of an event $e$ is the time-stamp of this event that is generated by the reference clock (Sect. 3.1.2 ). Accuracy Interval: The maximum permitted time interval between the point of observation of a real-time entity and the point of use of the corresponding real-­ time image (Sect. 1.2.1 ). Accuracy of a Clock: The accuracy of a clock denotes the maximum offset of a given clock from the external time reference during the time interval of interest (Sect. 3.1.3 ). Action: An action is the execution of a (part of a) program or a (part of a) commu­ nication protocol (Sect. 1.3.1 ). Action Delay: The action delay is the maximum time interval between the start of sending a message and the instant when this message becomes permanent at the receiver (Sect. 5.5.1 ). Actuator: A transducer that accepts data and trigger information from a gateway component and realizes the intended physical effect in the controlled object (Sect. 9.5.4 ). Advanced Encryption Standard (AES): An international standard for the encryption of data (Sect. 6.2.2 ). Audio Video Bridging (AVB): The IEEE 802.1 audio/video bridging (AVB) task force has developed a set of protocols based on the Ethernet standard that meets the requirements of multimedia systems (Sect. 7.4.2 ). Agreed Data: An agreed data element is a measured data element that has been checked for plausibility and related to other measured data elements, e.g., by the use of model of the controlled object . An agreed data element has been judged to be a correct image of the corresponding real-time entity ( $\rightarrow$ raw data, measured data) (Sect. 9.6.1 ). Agreement Protocol: An agreement protocol is a protocol that is executed among a set of components of a distributed system to come to a common (agreed) view about the state of the world, both in the discrete value domain and in the sparse time domain (Sect. 9.6 ). Alarm Monitoring: Alarm monitoring refers to the continuous observation of the RT entities to detect an abnormal behavior of the controlled object (Sect. 1.2.1 ). Alarm Shower: An alarm shower is a correlated set of alarms that is caused by a single primary event (Sect. 1.2.1 ). Analytic Rational Subsystem: A conscious human problem-solving subsystem that operates according to the laws of causality and logic (Sect. 2.1.1 ). Anytime Algorithm: An anytime algorithms consist of a root segment that calculates a first approximation of the result of sufficient quality and a periodic segment
-
-that improves the quality of the previously calculated result. The periodic seg­ ment is executed repeatedly until the deadline is reached (Sect. 10.2.3 ). Aperiodic Task: An aperiodic task is a task where neither the task request times nor the minimum time interval between successive requests for activation are known ( $\rightarrow$ periodic task, $\rightarrow$ sporadic task) (Sect. 10.1.2 ). Application Programming Interface (API): The interface between an application program and the operating system within a component (Sect. 9.1.4 ). A Priori Knowledge: Knowledge about the future behavior of a system that is avail­ able ahead of time (Sect. 1.5.5 ). Assumption Coverage: Assumption coverage is the probability that assumptions that are made in the model building process hold in reality. The assumption cov­ erage limits the probability that conclusions derived from a perfect model will be valid in the real world (Sect. 1.5.3 ). Atomic Action: An atomic action is an action that has the all-or-nothing property. It either completes and delivers the intended result or does not have any effect on its environment (Sect. 4.2.3 ). Atomic Data Structure: An atomic data structure is a data structure that has to be interpreted as a whole (Sect. 5.2 .). Availability: Availability is a measure of the correct service delivery regarding the alternation of correct and incorrect service, measured by the fraction of time that the system is ready to provide the service (Sect. 1.4.4 ). Babbling Idiot: A component of a distributed computer system that sends messages outside the specified time interval is called a babbling idiot (Sect. 4.7.1 ). Back-Pressure Flow Control: In back-pressure flow control the receiver of a sequence of messages exerts back pressure on the sender so that the sender will not outpace the receiver (Sect. 7.2.3 ). Basic Message Transport Service (BMTS): The basic message transport service transports a message from a sending component to one or more receiving com­ ponents (Sect. 7.2 ). Benign Failure: A failure is benign if the worst-case failure costs are of the same order of magnitude as the loss of the normal utility of the system (Sect. 6.1.3 ). Best Effort: A real-time system is a best-effort system if it is not possible to establish the temporal properties by analytical methods, even if the load- and fault hypoth­ esis holds ( $\rightarrow$ guaranteed timeliness) (Sect. 1.5.3 ). Bit-length of a Channel: The bit length of a channel denotes the number of bits that can traverse the channel within one propagation delay (Sect. 7.2.4 ). Bus Guardian: The independent hardware unit of a TTP controller that ensures fail silence in the temporal domain (Sect. 7.5.1 ). Byzantine Error: A Byzantine error occurs if a set of receivers observes different (conflicting) values of a RT entity . Some or all of these values are incorrect (syn­ onym: malicious error, two-faced error, inconsistent error) (Sect. 3.4.1 ). Causal Order: A causal order among a set of events is an order that reflects the cause-effect relationships between the events (Sect. 3.1.1 ). Causality: The causality relationship between a cause C and an event E is defined as follows: If C happens, then E is always produced by it (Sect. 2.1.1 ).
+Absolute Time-stamp: An absolute time-stamp of an event $e$ is the time-stamp of this event that is generated by the reference clock (Sect. 3.1.2 ). Accuracy Interval: The maximum permitted time interval between the point of observation of a real-time entity and the point of use of the corresponding real-­ time image (Sect. 1.2.1 ). Accuracy of a Clock: The accuracy of a clock denotes the maximum offset of a given clock from the external time reference during the time interval of interest (Sect. 3.1.3 ). Action: An action is the execution of a (part of a) program or a (part of a) commu­ nication protocol (Sect. 1.3.1 ). Action Delay: The action delay is the maximum time interval between the start of sending a message and the instant when this message becomes permanent at the receiver (Sect. 5.5.1 ). Actuator: A transducer that accepts data and trigger information from a gateway component and realizes the intended physical effect in the controlled object (Sect. 9.5.4 ). Advanced Encryption Standard (AES): An international standard for the encryption of data (Sect. 6.2.2 ). Audio Video Bridging (AVB): The IEEE 802.1 audio/video bridging (AVB) task force has developed a set of protocols based on the Ethernet standard that meets the requirements of multimedia systems (Sect. 7.4.2 ). Agreed Data: An agreed data element is a measured data element that has been checked for plausibility and related to other measured data elements, e.g., by the use of model of the controlled object . An agreed data element has been judged to be a correct image of the corresponding real-time entity ( $\rightarrow$ raw data, measured data) (Sect. 9.6.1 ). Agreement Protocol: An agreement protocol is a protocol that is executed among a set of components of a distributed system to come to a common (agreed) view about the state of the world, both in the discrete value domain and in the sparse time domain (Sect. 9.6 ). Alarm Monitoring: Alarm monitoring refers to the continuous observation of the RT entities to detect an abnormal behavior of the controlled object (Sect. 1.2.1 ). Alarm Shower: An alarm shower is a correlated set of alarms that is caused by a single primary event (Sect. 1.2.1 ). Analytic Rational Subsystem: A conscious human problem-solving subsystem that operates according to the laws of causality and logic (Sect. 2.1.1 ). Anytime Algorithm: An anytime algorithms consist of a root segment that calculates a first approximation of the result of sufficient quality and a periodic segment that improves the quality of the previously calculated result. The periodic seg­ ment is executed repeatedly until the deadline is reached (Sect. 10.2.3 ). Aperiodic Task: An aperiodic task is a task where neither the task request times nor the minimum time interval between successive requests for activation are known ( $\rightarrow$ periodic task, $\rightarrow$ sporadic task) (Sect. 10.1.2 ). Application Programming Interface (API): The interface between an application program and the operating system within a component (Sect. 9.1.4 ). A Priori Knowledge: Knowledge about the future behavior of a system that is avail­ able ahead of time (Sect. 1.5.5 ). Assumption Coverage: Assumption coverage is the probability that assumptions that are made in the model building process hold in reality. The assumption cov­ erage limits the probability that conclusions derived from a perfect model will be valid in the real world (Sect. 1.5.3 ). Atomic Action: An atomic action is an action that has the all-or-nothing property. It either completes and delivers the intended result or does not have any effect on its environment (Sect. 4.2.3 ). Atomic Data Structure: An atomic data structure is a data structure that has to be interpreted as a whole (Sect. 5.2 .). Availability: Availability is a measure of the correct service delivery regarding the alternation of correct and incorrect service, measured by the fraction of time that the system is ready to provide the service (Sect. 1.4.4 ). Babbling Idiot: A component of a distributed computer system that sends messages outside the specified time interval is called a babbling idiot (Sect. 4.7.1 ). Back-Pressure Flow Control: In back-pressure flow control the receiver of a sequence of messages exerts back pressure on the sender so that the sender will not outpace the receiver (Sect. 7.2.3 ). Basic Message Transport Service (BMTS): The basic message transport service transports a message from a sending component to one or more receiving com­ ponents (Sect. 7.2 ). Benign Failure: A failure is benign if the worst-case failure costs are of the same order of magnitude as the loss of the normal utility of the system (Sect. 6.1.3 ). Best Effort: A real-time system is a best-effort system if it is not possible to establish the temporal properties by analytical methods, even if the load- and fault hypoth­ esis holds ( $\rightarrow$ guaranteed timeliness) (Sect. 1.5.3 ). Bit-length of a Channel: The bit length of a channel denotes the number of bits that can traverse the channel within one propagation delay (Sect. 7.2.4 ). Bus Guardian: The independent hardware unit of a TTP controller that ensures fail silence in the temporal domain (Sect. 7.5.1 ). Byzantine Error: A Byzantine error occurs if a set of receivers observes different (conflicting) values of a RT entity . Some or all of these values are incorrect (syn­ onym: malicious error, two-faced error, inconsistent error) (Sect. 3.4.1 ). Causal Order: A causal order among a set of events is an order that reflects the cause-effect relationships between the events (Sect. 3.1.1 ). Causality: The causality relationship between a cause C and an event E is defined as follows: If C happens, then E is always produced by it (Sect. 2.1.1 ).
 
 Clock: A clock is a device for time measurement that contains a counter and a physi­ cal oscillation mechanism that periodically generates an event, the $\rightarrow t i c k$ or $\rightarrow$ microtick of the clock, to increase the counter (Sect. 3.1.2 ). Cluster: A cluster is a subsystem of a real-time system. Examples of clusters are the real-time computer system , the operator, or the controlled object (Sect. 1.1 ). Cognitive Complexity: The elapsed time needed to $\rightarrow$ understand a model by a given observer is a measure for the cognitive effort and thus for the cognitive complexity of a model relative to the observer. We assume that the given observer is representative for the intended user group of the model. (Sect. 2.1.3 ) Complex Task (C-task): A complex task (C-task) is a task that contains a blocking synchronization statement (e.g., a semaphore operation wait ) within the task body (Sect. 9.2.3 ). Component: A component is a hardware-software unit, i.e., a self-contained com­ puter including system and application software that performs a well-defined function within a distributed computer system (Sect. 4.1.1 ). Com pos ability: An architecture is composable regarding a specified property if the system integration will not invalidate this property, provided it has been estab­ lished at the subsystem level (Sect. 4.7.1 ). Computational Cluster: A subsystem of a real-time system that consists of a set of components interconnected by a real-time communication network (Sect. 1.1 ). Concept: A concept is a category that is augmented by a set of beliefs about its rela­ tions to other categories . The set of beliefs relates a new concept to already exist­ ing concepts and provides for an implicit theory (Sect. 2.1.2 ). Conceptual Landscape: The conceptual landscape refers to the personal knowledge base that has been built up and maintained by an individual in the experiential and rational subsystem of the mind (Sect. 2.2 ). Concrete World Interface: The concrete world interface is the physical I/O interface between an interface component and an external device or another external com­ ponent (Sect. 4.5 ). Concurrency Control Field (CCF): The concurrency control field (CCF) is a single-­ word data field that is used in the NBW protocol (Sect. 9.4.2 ). Consistent Failure: A consistent failure occurs if all users see the same erroneous result in a multi-user system (Sect. 6.1.3 ). Contact Bounce: The random oscillation of a mechanical contact immediately after closing (Sect. 9.5.2 ). Control Area Network (CAN): The control area network (CAN) is a low-cost event -­ triggered communication network that is based on the carrier-sense multiple-­ access collision-avoidance technology (Sect. 7.3.1 ). Controlled Object: The controlled object is the industrial plant, the process, or the device that is to be controlled by the real-time computer system (Sect. 1.1 ) . Convergence Function: The convergence function denotes the maximum offset of the local representations of the global time within an ensemble of clocks (Sect. 3.4.1 ). Deadline: A deadline is the instant when a result should/must be produced ( $\rightarrow$ soft deadline, firm deadline, and hard deadline ) (Sect. 1.1 ).
 
@@ -6625,639 +6335,368 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 # References
 
 [Ahu90] Ahuja, M., K she mk aly ani, A. D., & Carlson, T. (1990). A basic unit of computation in a distributed system. In Proceedings of the 10th IEEE distributed computer systems conference (pp. 12–19). IEEE Press.
-
 [Ale77] Alexander, C. S., et al. (1977). A pattern language . Oxford University Press.
-
 [All21] Allende, I., et al. (2021). Towards Linux based safety systems – A statistical approach for software execution path coverage. Elsevier Journal of Systems Architecture .
-
 [Alu15] Alur, R. (2015). Principles of cyber-physical systems . MIT Press.
-
 [Ama21] Amazon. (2021). AWS Lambda . https://aws.amazon.com/lambda/ . Accessed 3 Aug 2021.
-
 [Ami01] Amidzic, O., Riehle, H. J., Fehr, T., Wienbruch, C., & Elbert, T. (2001). Pattern of focal y-bursts in chess players. Nature, 412 , 603.
-
 [And01] Anderson, D. L. (2001). Occam’s razor; simplicity, complexity, and global geodynam­ ics. Proceedings of the American Philosophical Society, 14 (1), 56–76.
-
 [And95] Anderson, J., Ramamurthy, S., & Jeffay, K. (1995). Real-time computing with lock-free shared objects. In Proceedings RTSS 1995 (pp. 28–37). IEEE Press.
-
 [ANS20] ANSI/UL. (2020). Standard for evaluation of autonomous products (ANSI/UL 4600). UL.
-
 [ARI05] ARINC. (2005). Design assurance guidance for airborne electronic hardware (RTCA/ DO-254). ARINC.
-
 [ARI11] ARINC. (2011). Software considerations in airborne systems and equipment certifica­ tion (ARINC DO-178C). ARINC.
-
 [ARI91] ARINC. (1991). Multi-transmitter data bus ARINC 629 – Part 1: Technical descrip­ tion . ARINC.
-
 [Arl03] Arlat, J., et al. (2003). Comparison of physical and software-implemented fault injec­ tion techniques. IEEE Transactions on Computers, 52 (9), 1115–1133.
-
 [Arm10] Armbrust, M., et al. (2010). A view of cloud computing. Communications of the ACM, 53 (4), 50–58.
-
 [Art06] ARTEMIS. (2006). Strategic research agenda. Reference designs and architectures . https://www.artemisia-­association.org/downloads/RAPPORT RD A.pdf
-
-[Art94] Arthur, W.  B. (1994). On the evolution of complexity. In G.  Cowan, D.  Pines, & D. Meltzer (Eds.), Complexity: Metaphors, models, and reality . Westview Press.
-
+[Art94] Arthur, W.B. (1994). On the evolution of complexity. In G.Cowan, D.Pines, & D. Meltzer (Eds.), Complexity: Metaphors, models, and reality . Westview Press.
 [Att09] Attaway, S. (2009). Matlab, a practical introduction to programming and problem solv­ ing . Elsevier.
-
 [AUD17] Audi. (2017). Audi A8  – Zentrales Fa hrer assist enz ste ue rger t (zFAS) . https://www. audi-­technology-­portal.de/de/elektrik-­elektronik/fa hrer assist enz system e/audi-­a8-­ zentrales-­fa hrer assist enz st eu er gera et-­zfas . Accessed 27 Jan 2022.
-
 [Avi04] Avizienis, A., et al. (2004). Basic concepts and taxonomy of dependable and secure computing. IEEE Transactions on Dependable and Secure Computing, 1 (1), 11–33.
-
 [Avi82] Avizienis, A. (1982). The four-universe information system model for the study of fault tolerance. In Proceedings of the 12th FTCS symposium (pp. 6–13). IEEE Press.
-
 [Avi85] Avizienis, A. (1985). The N-version approach to fault-tolerant systems. IEEE Transactions on Software Engineering, 11 (12), 1491–1501.
-
 [Avr92] Aversky, D., Arlat, J., Crouzet, Y., & Laprie, J. C. (1992). Fault injection for the formal testing of fault tolerance. In Proceedings of FTCS 22 (pp. 345–354). IEEE Press.
-
 [Bag10] Baggerman, C. (2010). Avionics system architecture for NASA Orion vehicle (Presentation, 2010). NASA JSC.
-
 [Bal17] Baldini, I., et al. (2017). Serverless computing: Current trends and open problems. In Research advances in cloud computing (pp. 1–20). Springer.
-
 [Bar01] Baresi, L., & Young, M. (2001). Test Oracles . University of Oregon, Department of Computer Science.
-
 [Bar07] Baronti, P., et al. (2007). Wireless sensor networks: A survey on the State of the Art and the 802.15.4 and Zigbee Standards. Computer Communication, 30 , 1655–1695. Elsevier.
-
 [Bar10] Barreno, M., et al. (2010). The security of machine learning. Machine Learning, 81 , 121–148. Springer.
-
 [Bar18] Barroso, L. A., Hölzle, U., & Rang a nathan, P. (2018). The datacenter as a computer: Designing warehouse scale machines. Synthesis Lectures on Computer Architecture, 13 (3), i–189. Morgan&Claypool Publishers.
-
 [Bar93] Barborak, M., & Malek, M. (1993). The consensus problem in fault-tolerant computing. ACM Computing Surveys, 25 (2), 171–218.
-
 [Bau09] Bauer, H., Scharbarg, J.-L., & Fraboul, C. (2009). Applying and optimizing trajectory approach for performance evaluation of AFDX avionics network. In 2009 IEEE confer­ ence on emerging technologies & factory automation (pp. 1–8). IEEE.
-
-[Bea08] Beautement, A., Sasse, M.  A., & Wonham, M. (2009). The compliance budget: Managing security behavior in organizations. In Proceedings of NSPW 08 (pp. 47–58). ACM Press.
-
+[Bea08] Beautement, A., Sasse, M.A., & Wonham, M. (2009). The compliance budget: Managing security behavior in organizations. In Proceedings of NSPW 08 (pp. 47–58). ACM Press.
 [Bed08] Bedau, M. A., & Humphrey, P. (2008). Emergence . MIT Press.
-
 [Ben00] Benini, L., & DeMicheli, G. (2000). System level power estimation: Techniques and tools. ACM Transactions on Design Automation of Electronic Systems, 5 (2), 115–192.
-
 [Ber01] Berwanger, J., et al. (2001). FlexRay – The communication system for advanced automo­ tive control systems. In Proceedings of the SAE world congress 2001 (pp. 2001–0676). SAE Press.
-
 [Ber07] Bertolino, A. (2007). Software testing research: Achievements, challenges, dreams. In Proceedings of FOSE 07 (pp. 85–103). IEEE Press.
-
 [Ber14] Bernstein, D. (2014). Containers and cloud: From LXC to Docker to Kubernetes. IEEE Cloud Computing, 1 (3), 81–84.
-
 [Ber85] Berry, G., & Cosserat, L. (1985). The synchronous programming language ESTEREL and its mathematical semantics. In Proceedings of the seminar on concurrency (LNCS 197). Springer.
-
 [Bha10] Bhatt a char ayya, R. et al. (2010). Low-cost, ubiquitous RFID-tag-antenna-based sens­ ing. Proceedings of the IEEE. 98 (10). 1593-1600.
-
-[Bla09] Black, D.  C., Donovan, J., & Bunton, B. (2009). System C: From the ground up . Springer.
-
+[Bla09] Black, D.C., Donovan, J., & Bunton, B. (2009). System C: From the ground up . Springer.
 [Boe01] Boehm, B., & Basili, V. (2001). Software defect reduction top 10 list (pp. 135–137). IEEE Computer.
-
 [Bor07] Borkar, S. (2007). Thousand core chips – A technology perspective. In Proceedings of DAC 2007 (pp. 746–749). ACM Press.
-
 [Bou61] Boulding, K. E. (1961). The image . Ann Arbor Paperbacks.
-
 [Bou96] Boussinot, F., & Simone, R. (1996). The SL synchronous language. IEEE Transactions on Software Engineering, 22 (4), 256–266.
-
 [Bos16] Boschert, S., & Rosen, R. (2016). Digital twin - the simulation aspect. In Mecha tronic Futures. Springer. (pp. 59–74).
-
 [Bro00] Brown, S. (2000). Overview of IEC 61508 – Design of electrical/electronic/program­ mable electronic safety-related systems. Computing and Control Engineering Journal, 11 (1), 6–12.
-
-[Bro10] Brooks, F.  P. (2010). The design of design: Essays from a computer scientist . Addison Wesley.
-
+[Bro10] Brooks, F.P. (2010). The design of design: Essays from a computer scientist . Addison Wesley.
 [Bun08] Bunge, M. (2008). Causality and modern science . Transaction Publishers.
-
 [Bur09] Burns, A., & Wellings, A. (2009). Real-time systems and programming languages: Ada, real-time Java and C/real-time POSIX . Addison-Wesley.
-
 [But04] Buttazzo, G. (2004). Hard real-time computing systems: Predictable scheduling algo­ rithms and applications . Springer.
-
 [Cad22] Cadavid, H., et al. (2022). System and software architect ing harmonization practices in ultra-­large-­scale Systems of Systems . Preprint at: https://arxiv.org/pdf/2201.03275.pdf . Accessed 22 Feb 2022.
-
 [CAN90] CAN. (1992). Controller area network CAN, an in-vehicle serial communication proto­ col (SAE Handbook 1992) (pp. 20.341–20.355). SAE Press.
-
 [Car08] Cardenas, A., Amin, S., & Shastry, S. (2008). Research challenges for the security of control systems. In Proceedings of the workshop on Hot topics in security . Usenix Association. http://portal.acm.org/citation.cfm?id=1496671.1496677
-
 [Cha09] Chandola, V., Banerjee, A., & Kumar, V. (2009). Anomaly detection: A survey. ACM Computing Surveys, 41 (3), 15.1–15.58.
-
 [Che87] Cheng, S. C. (1987). Scheduling algorithms for hard real-time systems – A brief survey. In Hard real-time systems . IEEE Press.
-
 [Cin18] Cinque, M., & Cotroneo, D. (2018). Towards lightweight temporal and fault isolation in mixed-­critical it y systems with real-time containers. In 48th annual IEEE/IFIP interna­ tional conference on dependable systems and networks workshops (pp. 59–60).
-
 [Cla03] Clark, E., et al. (2003). Counterexample-guided abstraction refinement for symbolic model checking. Journal of the ACM, 50 (5), 752–794.
-
 [Cla14] Clavier, R., Sautereau, P., & Dufour, J.-F. (2014). TTEthernet, a promising candidate for Ariane 6. In Proceedings of DASIA 2014 DAta systems in aerospace (Vol. 725, p. 34 f). ESA SP.
-
 [Cla88] Clark, D. (1988). The design philosophy of the DARPA internet protocols. Computer Communication Review, 18 (4), 106–114.
-
 [Cle22] Clerckx, B., Popovic, Z., & Murch, R. (2022). Future networks with wireless power transfer and energy harvesting. Proceedings of the IEEE, 110 (1), 3–7.
-
 [Con02] Constantin escu, C. (2002). Impact of deep submicron technology on dependability of VLSI circuits. In Proceedings of DSN 2002 (pp. 205–209). IEEE Press.
-
 [Cra16] Craciunas, S., et al. (2016). Scheduling real-time communication in IEEE 802.1 Qbv time sensitive networks. In 24th international conference on real-time networks and systems (pp. 183–192). ACM.
-
 [Cri89] Cristian, F. (1989). Probabilistic clock synchronization. Distributed Computing, 3 , 146–185. Springer.
-
 [Cru91a] Cruz, R. L. (1991). A calculus for network delay. I. Network elements in isolation. IEEE Transactions on Information Theory, 37 (1), 114–131.
-
-[Cru91b] Cruz, R.  L. (1991). A calculus for network delay. II.  Network analysis. IEEE Transactions on Information Theory, 37 (1), 132–141.
-
+[Cru91b] Cruz, R.L. (1991). A calculus for network delay. II.Network analysis. IEEE Transactions on Information Theory, 37 (1), 132–141.
 [Cum10] Cumming, D. M. (2010, March 11). Haven’t found that software glitch, Toyota? Keep trying. Los Angeles Times .
-
-[Dav79] Davies, C.  T. (1979). Data processing integrity. In Computing systems reliability (pp. 288–354). Cambridge University Press.
-
+[Dav79] Davies, C.T. (1979). Data processing integrity. In Computing systems reliability (pp. 288–354). Cambridge University Press.
 [Dea02] Deavours, D., et  al. (2002). The Mobius framework and its implementation. IEEE Transactions on Software Engineering, 28 (10), 1–15.
-
 [Deg95] Degani, A., Shafto, M., & Kirlik, A. (1995). Mode usage in automated cockpits: Some initial observations. In Proceedings of IFAC 1995 (pp. 1–13). IFAC Press.
-
 [Diz19] Dizdarevic, J., et  al. (2019). A survey of communication protocols for internet of things and related challenges of fog and cloud computing integration. ACM Computing Surveys, 51 (6), 1–29.
-
 [Dra17] Dragoni, N., et al. (2017). Micro services: Yesterday, today, and tomorrow. In Present and ulterior software engineering . Springer.
-
 [Dri03] Driscoll, K., et  al. (2003). Byzantine fault-tolerance: From theory to reality. In Proceedings of SAFECOMP 2003 (LNCS 2788) (pp. 235–248). Springer.
-
 [Dys98] Dyson, G. B. (1998). Darwin among the machines – The evolution of global intelli­ gence . Basic Books.
-
 [EAR14] European Association of Research & Technology Organisations. (2014). The TRL scale as a research & innovation policy tool, EARTO recommendations .
-
 [Edm00] Edmonds, B. (2000). Complexity and scientific modeling. In Foundations of science (pp. 379–390). Springer.
-
 [Eid06] Eidson, J. (2006). Measurement, control and communication using IEEE 1588 . Springer.
-
 [Eps08] Epstein, S. (2008). Intuition from the perspective of cognitive experiential self-theory. In Intuition in judgment and decision making (pp. 23–38). Lawrence Erlbaum.
-
 [ETS19] ETSI. (2019). Analysis of the collective perception service (CPS) (ETSI TR 103 562). ETSI.
-
 [Eug03] Eugster, P. T., et al. (2003). The many faces of publish/subscribe. ACM Computing Surveys, 35 (2), 114–131.
-
 [Eve10] Evensen, K., & Weiss, K. (2010). A comparison and evaluation of real-time software systems modeling languages (p. 3504). AIAA Infotech $@$ Aerospace.
-
 [Fei06] Feiler, P., Gluch, D., & Hudak, J. (2006). The architecture analysis and design language (AADL): An introduction (Report CMU-SEI 2006-TN-011). Software Engineering Institute.
-
 [Fel04] Feltovich, P. J., et al. (2004). Keeping it too simple: How the reductive tendency effects cognitive engineering. In IEEE intelligent systems (pp. 90–94). IEEE Press.
-
 [Fel04a] Feldhofer, M., Dominikus, S., & Woke rst or fer, J. (2004). Strong authentication for RFID systems using the AES algorithms (LCNS 3156) (pp. 357–370). Springer.
-
 [Fin03] Fin kenz eller, K. (2003). RFID handbook . Wiley.
-
 [Fis06] Fisher, D. A. (2006). An emergent perspective on the operation of system-of-systems (CMU/SEI-2006-TR-003). Carnegie Mellon Software Engineering Institute. http://www. dtic.mil/cgi-­bin/GetTRDoc?Location=U2&doc=GetTRDoc.pdf&AD $\leftrightharpoons$ ADA449020
-
 [Foh94] Fohler, G. (1994). Flexibility in statically scheduled hard real-time systems . PhD thesis, Institut für Technische Informatik. Technical University of Vienna.
-
 [Fra01] Frank, D., et al. (2001). Device scaling limits of Si MOSFETs and their application dependencies. Proceedings of the IEEE, 89 (3), 259–288.
-
 [Fri20] Freitag, C., et  al. (2020). The climate impact of ICT: A review of estimates, trends and regulations . Lancester University. https://arxiv.org/abs/2102.02622 . Accessed 11 Mar 2022
-
 [Gad10] Gadh, R., et  al. (2010). RFID: A unique radio innovation for the 21st century. Proceedings of the IEEE, 98 (2), 1541–1680.
-
 [Gaj09] Gajski, D. D., et al. (2009). Embedded system design . Springer.
-
 [Gar75] Garey, M. R., & Johnson, D. S. (1975). Complexity results for multiprocessor schedul­ ing under resource constraints. SIAM Journal of Computing, 4 (4), 397–411.
-
-[Gau05] Gaudel, M.  C. (2005). Formal methods and testing: Hypotheses, and correctness approximations. In Proceedings of formal methods 2005 (LNCS 3582). Springer.
-
+[Gau05] Gaudel, M.C. (2005). Formal methods and testing: Hypotheses, and correctness approximations. In Proceedings of formal methods 2005 (LNCS 3582). Springer.
 [Gol73] Goldberg, R. P. (1973). Architectural principles for virtual computer systems (Technical Report). Harvard University.
-
 [Gra86] Gray, J. (1985). Why do computers stop and what can be done about it? Tandem Technical Report TR85.7.
-
 [Hal05] Halford, G. S., et al. (2005). How many variables can humans process? Psychological Science, 16 (1), 70–76.
-
 [Hal92] Halbwachs, N. (1992). Synchronous programming of reactive systems . Springer.
-
 [Hal96] Halford, G. S., Wilson, W. H., & Phillips, S. (1996). Abstraction, nature, costs, and benefits . Department of Psychology, University of Queensland.
-
 [Hau06] Hause, M. (2006). The SysML modelling language. In Fifteenth European systems engineering conference (Vol. 9, pp. 1–12).
-
 [Hay90] Hayakawa, S. I. (1990). Language in thought and action . Harvest Original.
-
 [Hei00] Heinzelman, W. R., Chandra k as an, A., & Bala kris han, H. (2000). Energy-efficient com­ munication protocol for wireless micro sensor networks. In Proceedings of the 33rd Hawaii international conference on system science (pp. 3722–3725). IEEE Press.
-
 [Hen03] Henzinger, T., Horowitz, B., & Kirsch, C. M. (2003). Giotto: A time-triggered language for embedded programming. Proceedings of the IEEE, 91 (1), 84–99.
-
-[Hen19] Hennessy, J.  L., & Patterson, D.  A. (2019). Computer architecture: A quantitative approach (6th ed.). Elsevier.
-
+[Hen19] Hennessy, J.L., & Patterson, D.A. (2019). Computer architecture: A quantitative approach (6th ed.). Elsevier.
 [Her09] Herault, L. (2009). Holistic approach for future energy-efficient cellular networks. In Proceedings of the second Japan-EU symposium on the future internet (pp. 212–220). European Communities Brussels.
-
 [HER15] HERE. (2015). Sensor ingestion interface specification . https://360.here. com/2015/06/23/here-­sensor-­data-­ingestion/ . https://developer.here.com/documenta­ tion/sdii-­data-­spec/ . Accessed 27 Jan 2022.
-
 [Hme04] Hmelo-Silver, C. E., & Pfeffer, M. G. (2004). Comparing expert and novice understand­ ing of a complex system from the perspective of structures, behaviors, and functions. Cognitive Science, 28 , 127–138. Elsevier.
-
 [Hoe10] Hoefer, C. (2010). Causal determinism. In Stanford encyclopedia of philosophy (pp. 1–24) http://plato.stanford.edu/entries/determinism-­causal/
-
 [Hop78] Hopkins, A. L., Smith, T. B., & Lala, J. H. (1978). FTMP: A highly reliable fault-toler­ ant multiprocessor for aircraft control. Proceedings IEEE, 66 (10), 1221–1239.
-
 [Hue08] Huebscher, M. C., & McCann, J. A. (2008). A survey of autonomic computing–degrees, models and applications. ACM Computing Surveys, 40 (3), 7.1–7.28.
-
-[IEA21]  Data Centres and Data Transmission Networks . (2022). IEA. https://www.iea.org/ reports/data-­centres-­and-­data-­transmission-­networks . Accessed 11 Mar 2022.
-
+[IEA21] Data Centres and Data Transmission Networks . (2022). IEA. https://www.iea.org/ reports/data-­centres-­and-­data-­transmission-­networks . Accessed 11 Mar 2022.
 [IEC21] IEC. (2021). Industrial communication networks – Network and system security (IEC 62443). IEC.
-
 [Int09] Intel. (2009). Teraflop research chip . http://tech research.intel.com/articles/Tera-­ Scale/1449.htm
-
 [Ior18] Iorga, M., et al. (2018). Fog computing conceptual model (NIST SP) (pp. 500–325). NIST.
-
 [ISO21] ISO. (2021). Road vehicles – Cyber security engineering (ISO/SAE 21434:2021). ISO.
-
 [ITR09] ITRS Roadmap. (2009). International technology roadmap for semiconductors, 2009 ed. Executive summary . Semiconductor Industry Association.
-
 [Jac07] Jackson, D., Thomas, M., & Millet, L. I. (2007). Software for dependable systems: Sufficient evidence? National Academic Press.
-
 [Jer77] Jerri, A. J. (1977). The Shannon sampling theorem – Its various extensions and applica­ tions: A tutorial review. Proceedings of the IEEE, 65 (11), 1565–1596.
-
 [Joh92] Johnson, S. C., & Butler, R. W. (1992). Design for validation. IEEE Aerospace and Electronic Systems Magazine, 7 (1), 38–43.
-
 [Jon78] Jones, J. C. (1978). Design methods, seeds of human futures . Wiley.
-
 [Jon97] Jones, M. (1997). What really happened on Mars Rover Pathfinder . http://catless.ncl. ac.uk/Risks/19.49.html#subj1
-
 [Jou18] Jouppi, N., et al. (2018). Motivation for and evaluation of the first tensor processing unit. IEEE Micro, 38 (3), 10–19.
-
 [Jue05] Juels, A., & Weis, S. A. (2005). Authenticating pervasive devices with human protocols. In Proceedings of CRYPTO 2005 (pp. 293–308). Springer.
-
 [Jur04] Juristo, N., Moreno, A. M., & Vegas, S. (2004). Reviewing 25 years of testing technique experiments. Empirical Software Engineering, 9 , 7–44. Springer.
-
 [Kah79] Kahne, S., Lefkowitz, I., & Rose, C. (1979). Automatic control by distributed intel­ ligence. Scientific American, 240 (6), 78–92.
-
 [Kan95] Kantz, H., & Koza, C. (1995). The ELECTRA railway signaling-system: field experi­ ence with an actively replicated system with diversity. Proceedings FTCS, 25 , 453–458.
-
 [Kar95] Karlson, J., et al. (1995). Integration and comparison of three physical fault-injection experiments. In Predictably dependable computing systems . Springer.
-
 [Kau93] Kauffman, S. (1993). The origins of order: Self-organization and selection in evolution . Oxford University Press.
-
 [Kea07] Keating, M., et al. (2007). Low power methodology manual for chip design . Springer.
-
 [Kim94] Kim, K. H., & Kopetz, H. (1994). A real-time object model RTO.k and an experimental investigation of its potential. In Proceedings COMPSAC 94 . IEEE Press.
-
 [Kni86] Knight, J. C., & Leveson, N. G. (1986). An experimental evaluation of the assump­ tion of independence in multi version programming. IEEE Transactions on Software Engineering, SE-12 (1), 96–109.
-
 [Koo04] Koopman, P. (2004). Embedded system security. IEEE Computer , 95–97.
-
 [Koo20] Koopman, P., & Wagner, M. (2020). Positive trust balance for self-driving car deploy­ ment. In Proceedings of international conference on computer safety, reliability, and security (pp. 351–357). Springer.
-
 [Kop03] Kopetz, H., & Suri, N. (2003). Compositional design of RT systems: A conceptual basis for the specification of linking interfaces. In Proceedings of 6th ISORC (pp. 51–59). IEEE Press.
-
 [Kop03a] Kopetz, H., & Bauer, G. (2003). The time-triggered architecture. Proceedings of the IEEE, 91 (1), 112–126.
-
 [Kop04] Kopetz, H., Ademai, A., & Hanzlik, A. (2004). Integration of internal and external clock synchronization by the combination of clock state and clock rate correction in fault tol­ erant distributed systems. In Proceedings of the RTSS 2004 (pp. 415–425). IEEE Press.
-
 [Kop06] Kopetz, H. (2006). Pulsed data streams. In From model-driven design to resource management for distributed embedded systems (IFIP Series 225/2006) (pp. 105–114). Springer.
-
 [Kop07] Kopetz, H., et al. (2007). Periodic finite-state machines. In Proceedings of ISORC 2007 (pp. 10–20). IEEE Press.
-
 [Kop08] Kopetz, H. (2008). The rationale for time-triggered ethernet (RTSS 2008) (pp. 3–11). IEEE Press.
-
 [Kop08a] Kopetz, H. (2008). The complexity challenge in embedded system design. In Proceedings of ISORC 2008 (pp. 3–12). IEEE Press.
-
 [Kop09] Kopetz, H. (2009). Temporal uncertainties in cyber-physical systems (Report 1/2009). Institute für Technische Informatik, TU Vienna.
-
 [Kop10] Kopetz, H. (2010). Energy-savings mechanism in the time-triggered architecture. In Proceedings of the 13th ISORC (pp. 28–33). IEEE Press.
-
 [Kop21] Kopetz, H. (2021). An architecture for driving automation . https://www.the-­autonomous. com/news/an-­architecture-­for-­driving-­automation . Accessed 13 Dec 2021.
-
 [Kop22] Kopetz, H. (2022). Data, information and time: The DIT model (Springer Briefs in Computer Science). Springer.
-
-[Kop85] Kopetz, H., & Merker, W. (1985). The architecture of MARS.  In Proceedings of FTCS-15 (pp. 274–279). IEEE Press.
-
+[Kop85] Kopetz, H., & Merker, W. (1985). The architecture of MARS.In Proceedings of FTCS-15 (pp. 274–279). IEEE Press.
 [Kop87] Kopetz, H., & Ochs en reiter, W. (1987). Clock synchronization in distributed real-time systems. IEEE Transactions on Computers, 36 (8), 933–940.
-
 [Kop90] Kopetz, H., & Kim, K. (1990). Temporal uncertainties in interactions among realtime objects. In Proceedings 9th IEEE symposium on reliable distributed systems (pp. 165–174). IEEE Press.
-
 [Kop91] Kopetz, H., Grünsteidl, G., & Reisinger, J. (1991). Fault-tolerant membership service in a synchronous distributed real-time system. In Dependable computing for critical applications (pp. 411–429). Springer.
-
 [Kop92] Kopetz, H. (1992). Sparse time versus dense time in distributed real-time systems. In Proceedings 14th international conference on distributed computing systems (pp. 460–467). IEEE Press.
-
 [Kop93] Kopetz, H., & Gruen ste idl, G. (1993). TTP – A time-triggered protocol for fault-tolerant real-time systems. In Proceedings FTCS-23 (pp. 524–532). IEEE Press.
-
 [Kop93a] Kopetz, H., & Reisinger, J. (1993). The non-blocking write protocol NBW: A solution to a real-­time synchronisation problem. In Proceedings of RTSS 1993 (pp. 131–137). IEEE Press.
-
 [Kop98] Kopetz, H. (1998). The time-triggered model of computation. In Proceedings of RTSS 1998 (pp. 168–176). IEEE Press.
-
 [Kop99] Kopetz, H. (1999). Elementary versus composite interfaces in distributed real-time sys­ tems. In Proceedings of ISADS 99 (pp. 26–34). IEEE Press.
-
 [Kor10] Kortuem, G., et al. (2010). Smart objects as the building block for the internet of things. IEEE Internet Computing, 2010 , 44–50.
-
 [Kum10] Kumar, K., & Lu, Y. H. (2020). Cloud computing for mobile users: Can offloading com­ putation save energy? IEEE Computer, 2010 , 51–56.
-
 [Lal94] Lala, J. H., & Harper, R. E. (1994). Architectural principles for safety-critical real-time applications. Proceedings of the IEEE, 82 (1), 25–40.
-
 [Lam74] Lamport, L. (1994). A new solution of Dijkstra’s concurrent programming problem. Communications of the ACM, 8 (7), 453–455.
-
 [Lam78] Lamport, L. (1978). Time, clocks, and the ordering of events. Communications of the ACM, 21 (7), 558–565.
-
 [Lam82] Lamport, L., Shostak, R., & Pease, M. (1982). The byzantine generals problem. Communications of the ACM TOPLAS, 4 (3), 382–401.
-
 [Lam85] Lamport, L., & Melliar Smith, P. M. (1985). Synchronizing clocks in the presence of faults. Journal of the ACM, 32 (1), 52–58.
-
 [Lan09] Langley, P., Laird, J. E., & Rogers, S. (2009). Cognitive architectures: Research issues and challenges. Cognitive System Research, 10 (2), 141–160.
-
-[Lan81] Landwehr, C.  E. (1981). Formal models for computer security. ACM Computing Suverys, 13 (3), 248–278.
-
+[Lan81] Landwehr, C.E. (1981). Formal models for computer security. ACM Computing Suverys, 13 (3), 248–278.
 [Lan97] Landwehr, C. E., & Goldschlag, D. M. (1997). Security issues in networks with internet access. Proceedings of the IEEE, 85 (12), 2034–2051.
-
 [Lap08] Laprie, J.-C. (2008). From dependability to resilience. In Proceedings of 38th IEEE/ IFIP international conference on dependable systems and networks (pp. G8–G9). IEEE Press.
-
 [Lau06] Lauwereins, R. (2006). Multi-core platforms are a reality…but where is the software support? (Visual Presentation). IMEC. http://www.mpsoc-­forum.org/2006/slides/ Lauwereins.pdf
-
 [Lee02] Lee, E. A. (2002). Embedded software. In Advances in computers (Vol. 56). Academic.
-
 [Lee10] Lee, E. A., & Seshia, S. A. (2010). Introduction to embedded systems  – A cyber-physi­ cal systems approach . http://LeeSeshia.org
-
 [Lee90] Lee, P. A., & Anderson, T. (1990). Fault tolerance: Principles and practice . Springer.
-
-[Leh85) Lehmann, M.  M., & Belady, L. (1985). Program evolution: Processes of software change . Academic.
-
+[Leh85) Lehmann, M.M., & Belady, L. (1985). Program evolution: Processes of software change . Academic.
 [Lev08] Leverich, J., et al. (2008). Comparative evaluation of memory models of chip multipro­ cessors. ACM Transactions on Architecture and Code Optimization, 5 (3), 12.1–12.30.
-
-[Lev95] Leveson, N.  G. (1995). Safeware: System safety and computers . Addison Wesley Company.
-
+[Lev95] Leveson, N.G. (1995). Safeware: System safety and computers . Addison Wesley Company.
 [Li19] Li, H., et  al. (2019). ACRN: A big little hypervisor for IoT development. In 15th ACM SIGPLAN/SIGOPS international conference on virtual execution environments (pp. 31–44).
-
 [Lie10] Lienert, D., & Kriso, S. (2010). Assessing critical it y in automotive systems. IEEE Computer, 43 (5), 30.
-
 [Lit93] Littlewood, B., & Strigini, L. (1993). Validation of ultra-high dependability for soft­ ware-based systems. Communications of the ACM, 36 (11), 69–80.
-
 [Liu00] Liu, J. W. S. (2000). Real-time systems . Prentice Hall.
-
 [Liu73] Liu, C. L., & Layland, J. W. (1973). Scheduling algorithms for multi programming in a hard-real-­time environment. Journal of the ACM, 20 (1), 46–61.
-
 [LoB19] Lo Bello, L., & Steiner, W. (2019). A perspective on IEEE time-sensitive networking for industrial communication and automation systems. Proceedings of the IEEE, 107 (6), 1094–1120.
-
 [Lun84] Lundelius, L., & Lynch, N. (1984). An upper and lower bound for clock synchro niza­ tion. Information and Control, 62 , 199–204.
-
 [Lv09] Lv, M., et al. (2009). A survey of WCET analysis of real-time operating systems . http:// www.neu-­rtes.org/publications/lv_ICESS09.pdf
-
-[Mai98] Maier, M.  W. (1998). Architect ing principles for system of systems. Systems Engineering, 1 (4), 267–284.
-
+[Mai98] Maier, M.W. (1998). Architect ing principles for system of systems. Systems Engineering, 1 (4), 267–284.
 [Mar91] MARS. (1991). The Mars video . TU Vienna. http://pan.vmars.tuwien.ac.at/mars/video
-
 [Mar99] Martin, T. L., & Siewiorek, D. P. (1999). The impact of battery capacity and mem­ ory bandwidth on CPU speed setting: A case study. In Proceedings of ISLPED99 (pp. 200–205). IEEE Press.
-
 [McC09] McCabe, M., et al. (2009). Avionics architecture interface considerations between con­ stellation vehicles. In Proceedings DASC’09 (pp. 1.E.2.1–1.E.2.10). IEEE Press.
-
 [Mel11] Mell, P., & Grance, T. (2011). The NIST definition of cloud computing (NIST SP 800-145). NIST.
-
 [Mes04] Mesarovic, M. D., Screenath, S. N., & Keene, J. D. (2004). Search for organizing prin­ ciples: Understanding in systems biology. Systems Biology On Line, 1 (1), 19–27.
-
-[Mes89] Mesarovic, M.  D. (1989). Abstract system theory (Lecture Notes in Control and Information Science) (Vol. 116). Springer.
-
+[Mes89] Mesarovic, M.D. (1989). Abstract system theory (Lecture Notes in Control and Information Science) (Vol. 116). Springer.
 [Met76] Metclafe, R. M., & Ethernet. (1976). Distributed packet switching for local computer networks. Communications of the ACM , 395–404.
-
 [Mil04] Miller, D. (2004, October 27). AFDX determinism . Visual Presentation at ARINC gen­ eral session, Rockwell Collins.
-
 [Mil56] Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. The Psychological Review, 63 , 81–97.
-
 [Mil91] Mills, D. L. (1991). Internet time synchronization: The network time protocol. IEEE Transactions on Communications, 39 (10), 1482–1493.
-
 [Min02] Miner, P. S., Malekpour, M., & Torres, W. (2002). A conceptual design for a reliable optical bus (ROBUS). In Proceedings of the 21st digital avionics systems conference (p. 13D3). IEEE Press.
-
 [Mog06] Mogul, C. (2006). Emergent (mis)behavior vs. complex software systems. In Proceedings of EuroSys 2006. ACM Press.
-
 [Mok83] Mok, A. (1983). Fundamental design problems of distributed systems for the hard realtime environment . PhD thesis, Massachusetts Institute of Technology.
-
 [Mor07] Morin, E. (2007). Restricted complexity, general complexity . World Scientific Publishing Corporation.
-
 [Mos] Moses, J. Complexity and flexibility (Working Paper).
-
 [NAS99] NASA. (1999). Mars climate orbiter Mishap investigation report . Washington, DC. ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/M CO MIB Report.pdf
-
-[Neu56] Neumann, J. (1956). Probabilistic logic and the synthesis of reliable organisms from unreliable components. In C.  E. Shannon & J.  McCarthy (Eds.), Automata studies (Annals of Mathematics Studies, No 34) (pp. 43–98). Princeton University Press.
-
+[Neu56] Neumann, J. (1956). Probabilistic logic and the synthesis of reliable organisms from unreliable components. In C.E. Shannon & J.McCarthy (Eds.), Automata studies (Annals of Mathematics Studies, No 34) (pp. 43–98). Princeton University Press.
 [Neu94] Neuman, B. C., & Ts’o, T. (1994). Kerberos – An authentication service for computer networks. IEEE Communication Magazine, 32 (9), 33–38.
-
 [Neu95] Neumann, P. G. (1995). Computer related risks . Addison Wesley/ACM Press.
-
 [Neu96] Neumann, P. G. (1996). Risks to the public in computers and related systems. Software Engineering Notes, 21 (5), 18. ACM Press.
-
 [NIS21] Ross, R., et al. (2021). Developing cyber-resilient systems: A systems security engineer­ ing approach (NIST SP 800-160) (Vol. 2, Revision 1). NIST.
-
 [Obe09] Obermaisser, R., & Kopetz, H. (2009). GENSYS  – An ARTEMIS cross-domain reference architecture for embedded systems . S d westdeutscher Verlag für Hoch s chul schr if ten (SVH).
-
 [OMG08] OMG, MARTE. (2008). Modeling and analysis of real-time and embedded systems . Object Management Group.
-
 [OMG15] OMG. (2015). OMG data distribution service (DDS). Version 1.4 . Object Management Group.
-
 [Pap02] Pappu, R., et al. (2002). Physical one-way functions. Science, 297 , 2026–2030.
-
 [Par97] Parunak, H. V. D., et al. (1997). Managing emergent behavior in distributed control systems. Proceedings of ISA Tech, 97 , 1–8.
-
 [Pau08] Paukovits, C., & Kopetz, H. (2008). Concepts of switching in the time-triggered net­ work-on-chip. In 14th IEEE conference on embedded and real-time computing systems and applications (pp. 120–129). IEEE Press.
-
-[Pau98] Pauli, B., A.  Meyna, & P.  Heitmann. (1998). Reliability of electronic components and control units in motor vehicle applications. Verein Deutscher Ingenieure (VDI). 1009-1024.
-
+[Pau98] Pauli, B., A.Meyna, & P.Heitmann. (1998). Reliability of electronic components and control units in motor vehicle applications. Verein Deutscher Ingenieure (VDI). 1009-1024.
 [Pea80] Pease, M., Shostak, R., & Lamport, L. (1980). Reaching agreement in the presence of faults. Journal of the ACM, 27 (2), 228–234.
-
 [Ped06] Pedram, M., & Nazarian, S. (2006). Thermal modeling, analysis and management in VLSI circuits: Principles and methods. Proceedings of the IEEE, 94 (8), 1487–1501.
-
-[Per10] Perez, J.  M. (2010). Executable time-triggered model (E-TTM) for the development of safety-­critical embedded systems (pp. 1–168). PhD. thesis, Institut für Technische Informatik, TU Wien, Austria.
-
+[Per10] Perez, J.M. (2010). Executable time-triggered model (E-TTM) for the development of safety-­critical embedded systems (pp. 1–168). PhD. thesis, Institut für Technische Informatik, TU Wien, Austria.
 [Per99] Perrow, C. (1999). Normal accidents: Living with high risk technologies . Princeton University Press.
-
 [Pet79] Peters, L. (1979). Software design: Current methods and techniques. In Infotech state of the art report on structured software development . Infotech International.
-
 [Pet96] Peterson, I. (1996). Comment on time on Jan 1, 1996. Software Engineering Notes, 19 (3), 16.
-
 [Pol07] Polleti, F., et al. (2007). Energy-efficient multiprocessor systems-on-chip for embedded computing: Exploring programming models and their architectural support. Proceedings of the IEEE, 56 (5), 606–620.
-
 [Pol95] Poledna, S. (1995). Fault-tolerant real-time systems, the problem of replica determin­ ism . Springer.
-
 [Pol95b] Poledna, S. (1995). Tolerating sensor timing faults in highly responsive hard real-time systems. IEEE Transactions on Computers, 44 (2), 181–191.
-
 [Pop18] Pop, P., et al. (2018). Enabling fog computing for industrial automation through timesensitive networking (TSN). IEEE Communications Standards Magazine, 2 (2), 55–61.
-
 [Pop21] Pop, P., et al. (2021). The FORA fog computing platform for industrial IoT. Elsevier Information Systems, 98 , 101727.
-
 [Pop68] Popper, K. R. (1968). The logic of scientific discovery . Hutchinson.
-
 [Pop74] Popek, G. J., & Goldberg, R. P. (1974). Formal requirements for virtual iz able third generation architectures. Communications of the ACM, 17 (7), 412–421.
-
 [Pot21] Pott, C. (2021). Firmware security module. Springer Journal of Hardware and Systems Security, 2021 (5), 103–113.
-
 [Pow91] Powell, D. (1991). Delta-4, A generic architecture for dependable distributed comput­ ing (pp. 1–484). Springer.
-
 [Pow95] Powell, D. (1995). Failure mode assumptions and assumption coverage. In B. Randell, J. C. Laprie, H. Kopetz, & B. Littlewood (Eds.), Predictably dependable computing systems (pp. 123–140). Springer.
-
 [Pus89] Puschner, P., & Koza, C. (1989). Calculating the maximum execution time of real-time programs. Real-Time Systems, 1 (2), 159–176. Springer.
-
 [Qas19] Qasaimeh, M., et al. (2019). Comparing energy efficiency of CPU, GPU and FPGA implementations for vision kernels. In Proceedings of IEEE international conference on embedded software and systems (pp. 1–8). IEEE Press.
-
 [Ran75] Randell, B. (1975). System structure for software fault tolerance. IEEE Transactions on Software Engineering, SE-1 (2), 220–232.
-
 [Ray10] Ray, K. (2010). Introduction to service-oriented architectures . http://an engineers per­ spective.com/wp-­content/uploads/2010/03/Introduction-­to-­SOA.pdf
-
 [Rec02] Rechtin, E., & Maier, M. W. (2002). The art of systems architect ing . CRC Press.
-
 [Rec91] Rechtin, E. (1991). Systems architect ing, creating and building complex systems . Prentice Hall.
-
 [Rei10] Reisberg, D. (2010). Cognition . W.W. Norton.
-
 [Rei57] Reichenbach, H. (1957). The philosophy of space and time . Dover.
-
 [Ric20] Ritchie, H. (2020). Climate change and flying: What share of global $C O_{2}$ emissions come from aviation? Our World in Data. https://our world in data.org/co2-­emissions-­ from-­aviation . Accessed 11 Mar 2022
-
 [Riv78] Rivest, R. L., Shamir, A., & Adleman, L. (1978). A method for obtaining signatures and public-key cryptosystems. Communications of the ACM, 21 (2), 120–126.
-
 [Rob16] Robati, T., Gherbi, A., & Mullins, J. (2016). A modeling and verification approach to the design of distributed IMA architectures using TTEthernet. Elsevier Procedia Computer Science, 83 , 229–236.
-
 [Rom07] Roman, R., Alcarez, C., & Lopez, J. (2007). A survey of cryptographic primitives and implementations for hardware-constrained sensor network nodes. Mobile Network Applications, 12 , 231–244. Springer.
-
 [Ruh21] Ruh, J., Steiner, W., & Fohler, G. (2021). Clock synchronization in virtual i zed distributed real-time systems using IEEE 802.1AS and ACRN. IEEE Access, 9 , 126075–126094.
-
 [Rui14] Ruiz De Azua, J. A., & Boyer, M. (2014). Complete modelling of AVB in network cal­ culus framework. In 22nd international conference on real-time networks and systems (pp. 55–64). ACM.
-
 [Rum08] Rumpler, B. (2008). Design comprehension of embedded rea-time systems . PhD thesis, Institut für Technische Informatik, TU Wien.
-
 [Rus02] Rushby, J. (1999). Systematic formal verification for fault-tolerant time-triggered algo­ rithms. IEEE Transactions on Software Engineering, 25 (5), 651–660.
-
 [Rus03] Rushby, J. (2003). A comparison of bus architectures for safety critical embedded sys­ tems . Report NASA/CR–2003–212161.
-
 [Rus93] Rushby, J. (1993). Formal methods and the certification of critical systems (Research Report No. SRI-CSL-93-07). Computer Science Lab, SRI.
-
 [SAE95] SAE. (1995). Class C application requirements, survey of known protocols, J20056. In SAE handbook (pp. 23.437–23.461). SAE Press.
-
 [Sag13] Sagiroglu, S., & Sinanc, D. (2013). Big Data: A review. In International conference on collaboration technologies and systems (pp. 42–47). IEEE Press.
-
 [Sah20] Sah, K. D., & Amgoth, T. (2020). Reliable energy harvesting schemes in wireless sensor networks: A survey. Elsevier Information Fusion, 63 , 223–247.
-
 [Sal10] Salfner, F., Lenk, M., & Malek, M. (2010). A survey of online failure prediction meth­ ods. ACM Computing Surveys, 42 (3), 10.10–10.42.
-
 [Sal84] Saltzer, J., Reed, D. P., & Clark, D. D. (1984). End-to-end arguments in system design. ACM Transactions on Computer Systems, 2 (4), 277–288.
-
 [Sch88] Schwabl, W. (1988). The effect of random and systematic errors on clock synchroni­ zation in distributed systems . PhD thesis, Technical University of Vienna, Institut für Technische Informatik.
-
 [Sel08] Selberg, S. A., & Austin, M. A. (2008). Towards an evolutionary system of systems architecture . Institute for Systems Research. http://ajcisr.eng.umd.edu/\~austin/ reports.d/INCOSE2008-­Paper378.pdf
-
 [Ses08] Sessions, R. (2008). Simple architectures for complex enterprises . Microsoft Press.
-
 [Sha04] Sha, L., et al. (2004). Real-time scheduling theory: A historical perspective. Real-Time Systems Journal, 28 (3/4), 101–155. Springer.
-
 [Sha10] Shafto, M., et  al. (2010). Draft: NASA technology roadmap: Modeling, simulation, information technology & processing roadmap – Technology area 11 . NASA.
-
-[Sha89] Shaw, A.  C. (1989). Reasoning about time in higher-level language software. IEEE Transactions on Software Engineering, SE-15 , 875–889.
-
+[Sha89] Shaw, A.C. (1989). Reasoning about time in higher-level language software. IEEE Transactions on Software Engineering, SE-15 , 875–889.
 [Sha90] Sha, L., Rajkumar, R., & Lehoczky, J. P. (1990). Priority inherit en ce protocols: An approach to real-time synchronization. IEEE Transactions on Computers, 39 (9), 1175–1185.
-
 [Sha94] Sha, L., Rajkumar, R., & Sathaye, S. S. (1994). Generalized rate-monotonic schedul­ ing theory: A framework for developing real-time systems. Proceedings of the IEEE, 82 (1), 68–82.
-
 [Shi16] Shi, W., et al. (2016). Edge computing: Vision and challenges. IEEE Internet of Things Journal, 3 (5), 637–646.
-
 [Sie00] Siegel, J. (2000). CORBA 3 – Fundamentals and programming . OMG Press/Wiley.
-
-[Sim11] Siminiceanu, R., Miner, P.  S., & Person, S. (2011). A methodology for evaluat­ ing artifacts produced by a formal verification process (Technical Memorandum 20110022654). NASA.
-
+[Sim11] Siminiceanu, R., Miner, P.S., & Person, S. (2011). A methodology for evaluat­ ing artifacts produced by a formal verification process (Technical Memorandum 20110022654). NASA.
 [Sim81] Simon, H. A. (1981). Science of the artificial . MIT Press.
-
 [Smi97] Smith, J. S. S. (1997). Application specific integrated circuits . Addision Wesley.
-
 [Soe01] Soeleman, H., Roy, K., & Paul, B. C. (2001). Robust sub tres hold logic for ultra-low power operation. IEEE Transactions on VLSI Systems, 9 (1), 90–99.
-
 [Sol07] Soltesz, S., et al. (2007). Container-based operating system virtualization: A scalable, high-­performance alternative to hypervisor s. In 2nd ACM SIGOPS/EuroSys European conference on computer systems (pp. 275–287).
-
 [Spr89] Sprunt, B., Sha, L., & Lehoczky, J. (1989). Aperiodic task scheduling for hard real-time systems. Real-Time Systems, 1 (1), 27–60.
-
 [Sta03] Stamatis, D. H. (2003). Failure mode and effect analysis: FMEA from theory to execu­ tion . ASQ Quality Press.
-
 [Sta18] Stallings, W. (2018). Operating systems: Internals and design principles . Pearson.
-
 [Ste10] Steiner, W. (2010). An evaluation of SMT-based schedule synthesis for time-triggered multi-hop networks. In 31st IEEE real-time systems symposium (pp. 375–384). IEEE.
-
 [Ste11a] Steiner, W., & Dutertre, B. (2011). Automated formal verification of the TTEthernet synchronization quality. In NASA formal methods symposium (LNCS) (Vol. 6617, pp. 375–390). Springer.
-
 [Ste11b] Steiner, W., & Rushby, J. (2011). TTA and PALS: Formally verified design patterns for distributed cyber-physical systems. In 2011 IEEE/AIAA 30th digital avionics systems conference (pp. 7B5-1–7B5-15). IEEE.
-
 [Sus00] Sussman, J. (2000). Introduction to Transportation Systems . Artech House Publishers.
-
 [Sus03] Sussman, J. (2003). Collected views on complexity in systems (Working Paper Series. ESD-­WP-­2003-01.06-ESD). MIT Engineering Systems Division.
-
 [Szy99] Szyperski, C. (1999). Component software  – Beyond object-oriented programming . Addision Wesley.
-
-[Tai03] Taiani, F., Fabre, J.  C., & Killijian, M.  O. (2003). Towards implementing multilayer reflection for fault-tolerance. In Proceedings of the DSN 2003 (pp. 435–444). IEEE Press.
-
+[Tai03] Taiani, F., Fabre, J.C., & Killijian, M.O. (2003). Towards implementing multilayer reflection for fault-tolerance. In Proceedings of the DSN 2003 (pp. 435–444). IEEE Press.
 [Tal08] Taleb, N. N. (2008). The black swan: The impact of the highly improbable . Penguin.
-
 [Tas03] Force, T. (2004). Final report on the August 14, 2003 Blackout in the United States and Canada . US Department of Energy.
-
 [Tel09] Japan, T. (2009). Cyber-Clean Center (CCC) project for anti-bot countermeasures in Japan. In Proceedings of the second Japan-EU symposium on the future internet (pp. 212–220). European Communities Brussels.
-
 [Tin95] Tindell, K. (1995). Analysis of hard real-time communications. Real-Time Systems, 9 (2), 147–171.
-
 [Tra88] Traverse, P. (1988). AIRBUS and ATR system architecture and specification. In Software diversity in computerized control systems . Springer.
-
 [TTT21] TTTech. (2021). Nerve . https://www.tttech-­industrial.com/products/nerve . Accessed 28 Dec 2021.
-
 [Ver09] Vermesan, O., et al. (2009). Internet of things – Strategic research roadmap . European Commission-­Information Society and Media DG.
-
 [Ver94] Verissimo, P. (1994). Ordering and timeliness requirements of dependable real-time programs. Real-Time Systems, 7 (3), 105–128.
-
 [Vig10] Vigras, W. J. (2010). Calculation of semiconductor failure data . http://rel.intersil.com/ docs/rel/calculation of semiconductor failure rates.pdf
-
 [Vig62] Vigotsky, L. S. (1962). Thought and language . MIT Press.
-
 [Wen78] Wensley, J. H., et al. (1978). SIFT: The design and analysis of a fault-tolerant computer for aircraft control. Proceedings IEEE, 66 (10), 1240–1255.
-
 [Wik10] Washington’s Axe. (2010). Wikipedia . http://en.wikipedia.org/wiki/ George Washington%27s_axe#George Washington.27s_axe
-
 [Wil08] Wilhelm, R., et  al. (2008). The worst-case execution time problem  – Overview of methods and survey of tools. ACM Transactions on Embedded Computing Systems, 7 (3), 1–53.
-
 [Wil21] Williams son, D., & Sellgren, U. (2022). Integrated modular iz ation methodol­ ogy and process of heavy-duty trucks . https://www.diva-­portal.org/smash/record. jsf?pid=diva2%3A1532165&dswid=-­5065 . Accessed 22 Feb 2022.
-
 [Wil90] Williams, T. J. (1990). A reference model for computer integrated manufacturing from the viewpoint of industrial automation. Elsevier IFAC Proceedings Volumes, 23 (8), 281–291.
-
 [Wil98] Wilson, E. O. (1998). Cons i lien ce – The unity of knowledge . Vintage Books.
-
 [Win01] Winfree, A. T. (2001). The geometry of biological time . Springer.
-
 [Wit90] Withrow, G. J. (1990). The natural philosophy of time . Oxford Science Publications/ Clarendon Press.
-
 [Woj17] Wojciak, J., & Bray, T. (2017). Decouple and scale applications using Amazon SQS and Amazon SNS . https://aws.amazon.com/pub-­sub-­messaging/ . Accessed 3 Aug 2021.
-
 [Xi11] Xi, S., et  al. (2011). RT-Xen: Towards real-time hypervisor scheduling in Xen. In International conference on embedded software (EMSOFT) (pp. 39–48). IEEE Press.
-
 [Xin08] Xing, L., & Amari, S. V. (2008). Handbook of perform ability engineering . Springer.
-
 [Xu91] Xu, J., & Parnas, D. (1990). Scheduling processes with release times, deadlines, pre­ cedence, and exclusion relations. IEEE Transactions on Software Engineering, 16 (3), 360–369.
-
 [Zil96] Zi lber stein, S. (1996). Using anytime algorithms in intelligent systems. AI Magazine, 16 (3), 73–83.
 
 # Index
 
-A Absolute timestamp, 60 Abstraction, 31, 34–38, 40, 41, 43–47, 51, 52, 54, 55, 94, 95, 100, 104, 112, 113, 117, 120, 138, 164, 213, 277–281, 318, 349, 352, 355, 374 Abstraction ladder, 43–45, 47, 50, 53 Accuracy, 4, 15, 24, 26, 57, 61–63, 79, 82,
+## A
+
+Absolute timestamp, 60 Abstraction, 31, 34–38, 40, 41, 43–47, 51, 52, 54, 55, 94, 95, 100, 104, 112, 113, 117, 120, 138, 164, 213, 277–281, 318, 349, 352, 355, 374 Abstraction ladder, 43–45, 47, 50, 53 Accuracy, 4, 15, 24, 26, 57, 61–63, 79, 82,
 84, 96, 124–130, 133, 136, 140, 141, 158, 168, 179, 229, 235, 301, 344, 369, 379 Accuracy interval, 4, 125–127, 129, 133, 139, 235, 369 Accuracy of any analog control signal, 235 Acknowledgment, 99 ACRN, 353, 354, 363 Action delay, 119, 131–133, 140, 141, 179, 193, 344, 369 Activation energy, 209 Advanced encryption standard (AES), 153, 156, 367, 369 Adversary argument, 247, 250–251, 265 Avionics Full-Duplex Switched Ethernet (AFDX), 177, 191, 195, 199 Agreed data, 5, 241, 246, 369, 375, 377 Agreement protocols, 57, 69–71, 83, 84, 134–136, 166, 223, 239, 241–243, 369 Alarm analysis, 5 Alarm monitoring, 5, 90, 91, 131, 231, 246, 369 Alarm shower, 5 Alternative scheduling strategies, 248, 264–267 Analog input/output, 234–235
 
 Analysis, 1, 4, 16, 33, 34, 36, 38, 40, 44, 51, 52, 60, 68, 95, 152, 159, 160, 172, 175, 178, 187–191, 198, 199, 215, 219, 229, 230, 245, 252–256, 261, 262, 264, 266, 269–271, 274, 275, 277, 278, 280, 281, 286–288, 290, 291, 294, 297, 298, 304, 305, 308, 309, 313, 315–319, 327, 344, 356, 359, 380 Analytic rational, 31–33, 53, 55, 369 Anomaly detection, 143, 152, 158–162, 174, 175, 297, 313, 350 Anytime algorithm, 219, 247, 255, 256, 266, 267, 369 Aperiodic task, 250, 267, 369, 376, 378 Application program interface (API), 226–229, 279, 367, 369 Architectural styles, 42, 54, 87, 89, 105, 106, 114–117, 218, 301, 336, 343, 345, 348, 351 Architecture, 11, 41, 50, 51, 53, 76, 82, 87, 100, 106, 109, 111–113, 115, 117, 118, 130, 148, 151, 152, 154, 165, 167–169, 173, 175, 180, 200, 201, 213–217, 220, 221, 238, 241, 256, 269–272, 274, 276, 277, 280, 281, 284, 285, 290, 291, 293, 295, 296, 300–305, 310, 318, 320, 322, 330–333, 348–352, 357–365, 368, 371, 380 Architecture Analysis and Design Language (AADL), 280, 281, 305 Architecture design languages, 280–281 ARINC 629 protocol, 138 As low as reasonably practical (ALARP), 286, 291, 367
 
 Assertion, 109, 159, 161, 312 Assumption coverage, 16, 370 Atomic, 40, 59, 63, 80, 89, 93–95, 97, 98, 112, 116, 121, 139, 171, 233, 331, 340, 370, 373, 376 Atomicity requirement, 25 Attack strategy, 152 Attribute, 10, 41, 42, 54, 106, 108, 120, 124, 140, 280, 281, 335, 337, 355, 363 Audio/Video Bridging (AVB), 177, 181, 192, 197, 199, 367, 369 Automotive electronics, 20 Autonomic components, 170, 332–333, 341 Availability, 12, 13, 15–17, 21, 27, 28, 40, 53, 73, 115, 150, 169, 173, 229, 288, 297, 300, 326, 338, 345, 363, 370
 
-# B
+## B
 
 Babbling idiot, 112, 195, 321, 370 Back-pressure flow control, 97, 370 Bandwidth, 22, 72, 138, 140, 181, 184, 185, 189, 191–193, 196, 199, 200, 345 Basic level concept, 38, 44, 55 Basic message transport service (BMTS), 40, 41, 182, 226, 302, 310, 315, 367, 370 Batteries, 19, 203, 204, 212, 222, 272, 273, 332, 335, 338, 339 Behavior, 2, 3, 5, 17, 18, 26, 32, 36, 37, 43–52, 55, 57, 58, 72, 74, 78, 87, 88, 91, 92, 95, 96, 101, 102, 107, 110–112, 115–117, 119, 129, 131, 134, 135, 138–140, 143, 144, 147–149, 152, 159, 160, 164, 165, 174, 180, 183, 189, 224, 238, 243, 248, 251, 253, 254, 256, 260, 261, 264–266, 272, 273, 280, 288, 290, 301, 302, 304, 307–313, 315, 316, 319, 322, 326, 329, 333, 369, 374, 377, 379 Benefits from the Application of Formal Methods, 318 Benign failure, 12, 27, 148, 370 Best-effort, 13, 16, 219, 264, 266, 267, 370, 374 Best-effort paradigm, 16 Best-effort system, 16 Bit length of a channel, 184, 370 Blocking synchronization statement, 229, 371 Bohrbug, 146, 175 Botnet attack, 153, 154 Bus guardian, 195, 321, 370 Byzantine, 74, 75, 77, 78, 80, 83, 84, 149, 164, 166, 167, 175, 241, 242, 282, 370, 373 Byzantine error, 74 Byzantine error term, 78 Byzantine resilient fault-tolerant unit, 166
 
-C Cache reload time, 254 Calibration point, 236 CAN protocol, 200 Causal order, 57, 59, 82, 84, 370 Causality, 33, 52, 53, 59, 134, 140, 280, 369, 370 Celestial mechanics, 43 Central master synchronization, 75 Certification, 1, 11, 190, 224, 284, 288, 289, 291–293, 304, 307, 316, 319, 323 Checkpoint, 15, 170 Checkpoint data, 15 Checkpoint recovery, 14, 96 Chronos copy property, 79 Cipher, 154, 180 Classification of real-time systems, 13–18 Classification of scheduling algorithms, 248–249 Clean failures, 148 Clock, 2, 4, 17, 26, 57, 59–65, 67–69, 71–85, 88, 91, 95, 96, 98, 115, 118, 119, 124, 129, 132–134, 139, 156, 160, 179, 192, 194, 196, 197, 206, 211, 217, 228, 229, 237, 257, 280, 290, 318, 335, 354, 369–377, 379 Clock drift, 60, 61, 79, 84, 85 Clock synchronization unit, 76 Closed-loop control, 21, 307 Cloud computing, 20, 22, 96, 219, 332, 341, 343–347, 349, 351, 352, 356, 359, 360, 363–365 Clusters, 2–4, 52, 67, 70, 71, 79–81, 83, 87, 89, 90, 100–106, 110–113, 116, 119, 168, 170, 172, 173, 194, 227, 246, 277, 281–283, 301, 302, 333, 370, 372, 373 Cognitive complexity, 31, 35–36, 54, 55, 89, 327, 370 Communication network interface (CNI), 112 Communication system, 25, 52, 57, 59, 89, 92, 97, 100, 101, 107, 108, 111, 112, 118, 128, 131–134, 137, 149, 165–167, 186, 200, 233, 264, 282, 290, 301, 302, 315, 352, 356, 357, 365, 373 Compiler analysis, 253 Complex systems, 47–51, 260, 286, 303 Complex task (C-task), 229, 245, 246, 254, 371, 379 Component, 22, 45–49, 51, 52, 87–97, 100–117, 119, 128, 135–137, 143–150, 159, 160, 162–164, 166–175, 180, 182, 213, 214, 216, 219, 223–226, 228, 230, 232, 233, 244, 245, 256, 270, 272–274, 277, 279–288, 290, 291, 297, 298,
+## C
+
+Cache reload time, 254 Calibration point, 236 CAN protocol, 200 Causal order, 57, 59, 82, 84, 370 Causality, 33, 52, 53, 59, 134, 140, 280, 369, 370 Celestial mechanics, 43 Central master synchronization, 75 Certification, 1, 11, 190, 224, 284, 288, 289, 291–293, 304, 307, 316, 319, 323 Checkpoint, 15, 170 Checkpoint data, 15 Checkpoint recovery, 14, 96 Chronos copy property, 79 Cipher, 154, 180 Classification of real-time systems, 13–18 Classification of scheduling algorithms, 248–249 Clean failures, 148 Clock, 2, 4, 17, 26, 57, 59–65, 67–69, 71–85, 88, 91, 95, 96, 98, 115, 118, 119, 124, 129, 132–134, 139, 156, 160, 179, 192, 194, 196, 197, 206, 211, 217, 228, 229, 237, 257, 280, 290, 318, 335, 354, 369–377, 379 Clock drift, 60, 61, 79, 84, 85 Clock synchronization unit, 76 Closed-loop control, 21, 307 Cloud computing, 20, 22, 96, 219, 332, 341, 343–347, 349, 351, 352, 356, 359, 360, 363–365 Clusters, 2–4, 52, 67, 70, 71, 79–81, 83, 87, 89, 90, 100–106, 110–113, 116, 119, 168, 170, 172, 173, 194, 227, 246, 277, 281–283, 301, 302, 333, 370, 372, 373 Cognitive complexity, 31, 35–36, 54, 55, 89, 327, 370 Communication network interface (CNI), 112 Communication system, 25, 52, 57, 59, 89, 92, 97, 100, 101, 107, 108, 111, 112, 118, 128, 131–134, 137, 149, 165–167, 186, 200, 233, 264, 282, 290, 301, 302, 315, 352, 356, 357, 365, 373 Compiler analysis, 253 Complex systems, 47–51, 260, 286, 303 Complex task (C-task), 229, 245, 246, 254, 371, 379 Component, 22, 45–49, 51, 52, 87–97, 100–117, 119, 128, 135–137, 143–150, 159, 160, 162–164, 166–175, 180, 182, 213, 214, 216, 219, 223–226, 228, 230, 232, 233, 244, 245, 256, 270, 272–274, 277, 279–288, 290, 291, 297, 298,
 
 300–302, 304, 305, 310–312, 314–316, 323, 326, 332, 333, 359, 369–371, 373–376, 379, 380 Component-based, 100, 223, 244, 269, 279–280, 300, 304, 305, 314–316, 323 Component cycle, 172 Component restart, 172–174 Composability, 111, 130, 141, 225, 279, 290, 371 Composite interfaces, 102, 116, 117 Computational cluster, 2, 89, 106, 371, 372, 374, 377 Computer delay, 8 Computer safety in cars, 20 Computer system, 1–10, 13–21, 26–28, 31, 41, 43–46, 48, 50, 53, 55, 58, 59, 63, 66, 69–72, 88, 93, 103, 104, 120, 124, 134–136, 139, 144, 150, 152, 153, 167, 170, 172, 173, 177–179, 200, 201, 223, 224, 228, 230, 235, 238, 240, 250, 257, 266, 269, 270, 277, 278, 283, 285, 288, 289, 291–293, 295, 296, 300, 304, 307, 308, 310, 315, 316, 318, 322, 334, 338, 340, 361, 370–375, 377, 378, 380 Concept, 23, 31, 33–47, 50, 53–55, 64, 84, 87, 89, 91–93, 97–100, 106, 108–110, 117, 119, 121, 134, 140, 141, 143–150, 154, 168–170, 174, 201–204, 226, 241, 247, 264, 279, 280, 301, 305, 317, 318, 331, 333, 347, 359, 360, 371, 376, 380 Concept formation, 31, 38–40, 55, 105 Conceptualization, 38, 40, 46, 50, 105, 116 Conceptual landscape, 31, 33, 35–43, 53–55, 110, 326, 371, 380 Concurrency control field (CCF), 233, 234, 367, 371 Configuration, 27, 151, 165, 166, 174, 180, 181, 187, 193, 195, 197, 198, 224, 244, 249, 302, 332, 340, 343, 348, 350–354, 357–358, 363, 364, 380 Consistent failure, 148, 371 Contact bounce, 235, 236, 246, 371 Container, 124, 139, 240, 343, 354, 355, 363, 364, 377 Container orchestration, 355 Context switches, 254 Control algorithm, 8 Control application, 6 Control engineering, 6 Control interface, 87, 101, 103 Control l ability of the test inputs, 309 Controlled object, 2–4, 6–9, 14–17, 23, 26, 28, 58, 71, 72, 88, 90, 119, 120, 123, 125, 126, 129, 131, 173, 186, 200, 227, 237,
 
 238, 241, 242, 277, 278, 286, 304, 343, 344, 348, 369–371, 374, 376, 378, 381 Control loop, 1, 7–10, 21, 25, 26, 58, 70, 72, 120, 138, 158, 167, 179, 235, 245, 264, 281, 300 Control of pace, 14 Control structure, 23, 146, 224, 227, 230, 231, 236, 243–245, 256, 310, 313 Control valve, 8 Control variable, 7 Convergence function, 57, 73–79, 83, 84, 371, 379 Crash failure, 148, 246, 321–322 Critical failure mode, 11 Critical instant, 111, 112, 261 Criticality levels, 152, 284, 288, 289, 292, 293 Critical task sections, 232 Cryptographic methods, 151, 152, 154–156, 299, 336 Cyber-physical, 1, 2, 27, 47, 58, 66, 119, 326 Cyberspace, 136, 150, 223, 321–323, 326, 336, 337, 339, 340
 
-D Damage, 286, 304 Data collection, 3–5, 344, 359, 362, 364 Data Distribution Service (DDS), 356, 357 Data efficiency, 184, 185, 231 Data logging, 6 Database components, 96, 117 Data-Distribution Service (DDS), 356 Deadline, 3, 14, 15, 22, 26, 102, 138, 228, 237, 245, 247–251, 255–261, 264–267, 352, 353, 358, 369, 371, 373–375, 378 Dead time, 8, 9, 25, 26, 72, 138, 235, 245, 264, 300 Definitely occurred later , 59 Delay jitter, 9, 10, 26, 28, 76 Delivery order, 57, 59, 64, 82, 84 Denial of service, 115, 150, 153, 154, 336, 338, 340 Dense time, 44, 68–73, 134 Dependability, 10–13, 20, 28, 31, 44, 144–174, 179–180, 199, 270, 276, 282, 288–291, 294, 302, 303, 305, 319, 320, 345, 350, 351, 355, 363 Dependability analysis, 285–288 Derived properties, 46–47 Design diversity, 269, 293–296, 305 Design for test ability, 307, 310, 322 Design tradeoffs, 12 Designed for validation , 11 Determinism, 33, 119, 133–141, 223, 310, 371 Development cost, 18, 21, 27–29, 274, 308, 322 Device scaling, 209–211, 213, 221 Difficult task, 36, 51, 53, 330 Digital input/output, 235–236 Digitalization error, 60, 65, 66, 68, 242 Digital signature, 156, 337 Digital twin, 359, 360, 362, 364, 365 Direct digital control (DDC), 3, 6, 344 Directed timeline, 58 Dispatcher, 227 Distributed RT object, 124 Distributed synchronization algorithms, 75–79 Diverse software, 293–296 Diverse software versions, 293–294 DO-254, 292 Domain controllers, 352, 361 Domain expert, 34, 55 Double execution of tasks, 243–244 Drift offset, 57, 73, 78, 80, 83, 372, 379 Drift rates, 61, 62, 73, 77, 78, 80, 82, 84, 85 Dual role of time, 229–231 Duration of the action delay, 132 Duration, 2, 4, 7, 8, 24, 25, 44, 58–60, 62, 63, 65–69, 72, 76, 82, 91, 95, 98, 118, 119, 132, 133, 138, 158, 164, 168, 171, 173, 179, 183, 184, 228, 229, 231, 233, 237, 250, 253, 257, 264, 280, 309, 322, 372, 375, 381 Dynamic fault tree, 287 Dynamic schedulers, 248 Dynamic scheduling, 17, 228, 247–249, 251, 260–264, 267 in distributed systems, 264
+## D
 
-# E
+Damage, 286, 304 Data collection, 3–5, 344, 359, 362, 364 Data Distribution Service (DDS), 356, 357 Data efficiency, 184, 185, 231 Data logging, 6 Database components, 96, 117 Data-Distribution Service (DDS), 356 Deadline, 3, 14, 15, 22, 26, 102, 138, 228, 237, 245, 247–251, 255–261, 264–267, 352, 353, 358, 369, 371, 373–375, 378 Dead time, 8, 9, 25, 26, 72, 138, 235, 245, 264, 300 Definitely occurred later , 59 Delay jitter, 9, 10, 26, 28, 76 Delivery order, 57, 59, 64, 82, 84 Denial of service, 115, 150, 153, 154, 336, 338, 340 Dense time, 44, 68–73, 134 Dependability, 10–13, 20, 28, 31, 44, 144–174, 179–180, 199, 270, 276, 282, 288–291, 294, 302, 303, 305, 319, 320, 345, 350, 351, 355, 363 Dependability analysis, 285–288 Derived properties, 46–47 Design diversity, 269, 293–296, 305 Design for test ability, 307, 310, 322 Design tradeoffs, 12 Designed for validation , 11 Determinism, 33, 119, 133–141, 223, 310, 371 Development cost, 18, 21, 27–29, 274, 308, 322 Device scaling, 209–211, 213, 221 Difficult task, 36, 51, 53, 330 Digital input/output, 235–236 Digitalization error, 60, 65, 66, 68, 242 Digital signature, 156, 337 Digital twin, 359, 360, 362, 364, 365 Direct digital control (DDC), 3, 6, 344 Directed timeline, 58 Dispatcher, 227 Distributed RT object, 124 Distributed synchronization algorithms, 75–79 Diverse software, 293–296 Diverse software versions, 293–294 DO-254, 292 Domain controllers, 352, 361 Domain expert, 34, 55 Double execution of tasks, 243–244 Drift offset, 57, 73, 78, 80, 83, 372, 379 Drift rates, 61, 62, 73, 77, 78, 80, 82, 84, 85 Dual role of time, 229–231 Duration of the action delay, 132 Duration, 2, 4, 7, 8, 24, 25, 44, 58–60, 62, 63, 65–69, 72, 76, 82, 91, 95, 98, 118, 119, 132, 133, 138, 158, 164, 168, 171, 173, 179, 183, 184, 228, 229, 231, 233, 237, 250, 253, 257, 264, 280, 309, 322, 372, 375, 381 Dynamic fault tree, 287 Dynamic schedulers, 248 Dynamic scheduling, 17, 228, 247–249, 251, 260–264, 267 in distributed systems, 264
+
+## E
 
 Earliest-deadline-first (EDF), 261, 262, 266, 267, 367, 372 algorithm, 261 Edge computing, 343, 347, 351 Efficiency of the search, 258 Elastic compute, 346 Electronic product code (EPC), 330, 331, 334–335, 337, 339, 341, 367, 372 Elementary interfaces, 102, 116, 117 Elevator example, 17 Embedded real-time systems, 1, 18–20, 53, 273, 280 Embedded systems characteristics, 18 Embedded systems market, 19 Emergence, 32, 46–51, 53, 55, 372 Emergent behavior, 47, 49, 114, 186, 315 Encapsulation, 89, 215
 
 Encryption, 151, 153–156, 173, 336, 369 End-to-end error detection, 321 End-to-end protocol, 23, 28, 372 Endianness, 105 Energy estimation, 204–208, 218 Energy harvesting, 221, 340 Engine control, 20, 24, 28, 29, 101, 102, 127 Entity, 35, 58, 105, 114, 119–121, 179–181, 302, 326, 334, 344, 345, 350, 369, 376, 377 Error-containment regions, 290 Error detection, 10, 14, 15, 41, 48, 99, 100, 112, 143, 146, 147, 150, 161–162, 175, 194, 237, 239, 243–246, 276, 301, 321, 322 Error detection coverage, 15, 28, 147, 237, 284, 320, 321 Error detection latency, 10, 28, 147, 282 Error term, 8 ESTEREL, 91 Event, 2, 4, 5, 17, 18, 26, 32, 33, 37, 49, 53, 57–60, 63–71, 75, 79–84, 92, 98, 99, 110, 116, 117, 121, 123–125, 129, 131–137, 139, 141, 147, 167, 169, 171, 173, 182, 188, 192, 198, 205, 212, 226–231, 236, 237, 242, 245, 257, 259–261, 265, 280, 286, 300, 303, 311, 333, 357, 368, 370–373, 376–380 Event information, 2 Event observation, 123 Event-triggered (ET), 4, 13, 17, 18, 25, 26, 29, 48, 87, 92, 99, 108, 109, 118, 123, 132, 146, 167, 168, 175, 177, 182, 183, 187–190, 194–196, 199, 200, 226–228, 231, 233, 246, 264, 302, 310, 315, 367, 371, 372 Exact voting, 166, 372, 380 Execution time, 91, 92, 115, 122, 131, 138, 161, 214, 217, 219, 221, 226, 228, 233, 247, 248, 250–256, 258, 259, 266, 344, 345, 372, 373, 375 Expansion and contraction of the state, 94 Explicit flow control, 183, 184, 200, 373, 374 Explicit synchronization, 234, 256 External clock synchronization, 79–85, 217, 373 External synchronization, 62
 
-F Fail-operational, 13, 15, 16, 169, 241, 284, 285, 290, 295, 373 Fail-safe, 13, 15, 28, 169, 284, 290, 294–295, 373
+## F
+
+Fail-operational, 13, 15, 16, 169, 241, 284, 285, 290, 295, 373 Fail-safe, 13, 15, 28, 169, 284, 290, 294–295, 373
 
 Fail-safeness, 15 Fail-silent, 147, 164, 165, 167, 169, 196, 238, 244, 302, 373 Fail-silent architecture, 238 Fail-stop, 148 Failure, 1, 10–12, 15, 16, 22, 25–27, 52, 61, 62, 75, 79, 81, 88, 94, 96, 101, 112, 115, 117, 119, 123, 124, 134–137, 143, 144, 147–150, 152–154, 158–170, 172–175, 178–180, 186, 187, 196, 199, 209, 220, 226, 239–242, 244, 246, 249, 269, 274, 281–298, 301–305, 309, 319, 321–323, 329, 332, 339, 340, 346, 351, 353, 355, 357, 360, 370, 373, 375, 378–380 Failure detection, 148, 160–161, 164, 174 Failure in time (FIT), 10, 164, 211, 373 Failure mode and effect analysis (FMEA), 287 Failure mode of a clock, 61 Failure rate, 10–12, 26, 28, 146, 163, 164, 173–175, 178, 199, 209, 210, 241, 246, 283, 284, 288, 297, 298, 373 Fate-sharing model, 302 Fault containment unit (FCU), 145, 163–166, 169, 174, 175, 274, 283, 290, 298, 301, 302, 333, 373 Fault hypothesis, 11, 16, 143, 162–164, 167, 170, 174, 175, 194, 311, 312, 320, 370, 373, 374, 377, 381 Fault injection, 148, 161, 243, 289, 308, 311, 319–323 Fault nature, 145 Fault perception, 145 Fault tolerance, 58, 80, 89, 119, 133, 135, 143, 162–168, 174, 175, 178, 196, 224, 229, 272, 282, 289–291, 298, 299, 302–305, 311, 319, 320, 357 Fault-tolerant actuators, 238–239 Fault-tolerant average algorithm(FTA), 75, 77, 78, 83–85, 194, 373 Fault-tolerant unit (FTU), 79, 164–167, 172, 174, 241, 283, 293, 367, 373, 380 Fault tree analysis, 269, 286, 287, 305 Feasibility analysis, 270 Feedback scheduling, 248, 264–267 Firewall, 152, 330, 350 Firm deadline, 3, 26, 371, 373 Flexibility in static schedules, 258–260, 265 Flow control, 23, 41, 52, 183–184, 188, 200, 315, 373, 374 Flow in a pipe, 23 Fog computing, 343–365 Formalization, 193, 316
 
 Formal methods, 293, 294, 307, 309, 316–319, 323, 346 Free-running clock, 61 Frequency scaling, 211–212, 218 Functional coherence, 281 Functional requirements, 3–6 Fundamental limits of time measurement, 68 Fundamental limit in time measurement, 60
 
-G Gateway component, 42, 52, 54, 87, 89, 103–107, 112, 113, 116, 118, 301, 302, 336, 348, 349, 369, 373 Generic middleware (GM), 224–226 GENESYS, 113, 118 Global positioning system (GPS), 63, 79, 81, 115, 326, 367 Global time, 17, 53, 60, 64–66, 69, 71, 73, 75, 76, 79–81, 83, 84, 92, 115, 118, 121, 122, 124, 132, 136, 141, 160, 164, 183, 193, 196, 198, 227, 244, 300–302, 354, 355, 371, 373–375, 377, 379, 380 Global time base, 53, 57–59, 65, 66, 68, 71, 73, 79, 80, 83, 122, 129, 132, 134, 135, 141, 144, 165, 166, 197, 229, 230, 300, 371 Good clock, 61 Granularity, 17, 60, 61, 64–66, 68–70, 84, 94, 119, 124, 132, 134, 139, 141, 217, 231, 310, 374, 377 Granularity of the clock, 60 Granularity of the global time, 17 Granules of the clock, 2 Ground state, 87, 95–96, 116, 117, 171, 281, 310, 374 G-state recovery, 96 Guaranteed response, 16, 17, 27, 246, 377
+## G
 
-H Hamming distance, 161, 374 Hard deadlines, 3, 22, 258, 260, 371, 374 Hard real-time, 1, 3, 10, 13–15, 17, 22, 26–28, 178, 187, 199, 248, 251, 256, 258, 260, 264, 266, 273, 283, 311, 343–345, 348, 352, 353, 355, 357, 363, 365, 374, 378 Hard real-time computer system, 3 Hard real-time system, 14 Hazards, 150, 253, 286, 288, 304, 374, 378 Heisenbugs, 146, 147, 175 Hidden channel, 131, 141, 374 High-level protocol, 226
+Gateway component, 42, 52, 54, 87, 89, 103–107, 112, 113, 116, 118, 301, 302, 336, 348, 349, 369, 373 Generic middleware (GM), 224–226 GENESYS, 113, 118 Global positioning system (GPS), 63, 79, 81, 115, 326, 367 Global time, 17, 53, 60, 64–66, 69, 71, 73, 75, 76, 79–81, 83, 84, 92, 115, 118, 121, 122, 124, 132, 136, 141, 160, 164, 183, 193, 196, 198, 227, 244, 300–302, 354, 355, 371, 373–375, 377, 379, 380 Global time base, 53, 57–59, 65, 66, 68, 71, 73, 79, 80, 83, 122, 129, 132, 134, 135, 141, 144, 165, 166, 197, 229, 230, 300, 371 Good clock, 61 Granularity, 17, 60, 61, 64–66, 68–70, 84, 94, 119, 124, 132, 134, 139, 141, 217, 231, 310, 374, 377 Granularity of the clock, 60 Granularity of the global time, 17 Granules of the clock, 2 Ground state, 87, 95–96, 116, 117, 171, 281, 310, 374 G-state recovery, 96 Guaranteed response, 16, 17, 27, 246, 377
+
+## H
+
+Hamming distance, 161, 374 Hard deadlines, 3, 22, 258, 260, 371, 374 Hard real-time, 1, 3, 10, 13–15, 17, 22, 26–28, 178, 187, 199, 248, 251, 256, 258, 260, 264, 266, 273, 283, 311, 343–345, 348, 352, 353, 355, 357, 363, 365, 374, 378 Hard real-time computer system, 3 Hard real-time system, 14 Hazards, 150, 253, 286, 288, 304, 374, 378 Heisenbugs, 146, 147, 175 Hidden channel, 131, 141, 374 High-level protocol, 226
 
 Human perception delay, 7 Hypervisor, 273, 284, 353, 354, 363, 365
 
-I Ideal and complete verification environment, 317 Idempotency, 130–133, 374 Implicit flow control, 183, 184, 373, 374 Impossibility result, 76 In-car compute platform (ICCP), 361, 362, 364, 367 Inconsistent failures, 148, 149 Increase the robustness, 19 Indirect observation, 122 Industrial plant automation, 21 Inexact voting, 166, 374, 380 Information pull, 101, 116, 117, 282 Information push, 101, 117, 282 Information security, 150–158, 173, 330, 336, 340 Input/output, 23, 102, 103, 210, 223, 224, 234–241, 248, 281, 282 Instance, 58 Instant, 2, 3, 5, 7, 10, 14, 15, 24, 37, 41, 44, 54, 58, 60, 66, 67, 69, 72, 82, 84, 88, 89, 91–99, 102, 109, 111, 115, 116, 119–126, 129, 134, 136, 139, 140, 144, 146–149, 165, 167, 171, 173, 179, 193–198, 227–231, 235, 236, 242, 245, 250, 255, 261, 276, 298, 320, 355, 369, 371, 374–380 Instrumentation interface, 2, 178, 374 Integrated Modular Avionics (IMA), 191, 281, 293 Integration viewpoints, 112–113 Intelligent instrumentation, 239–240 Intelligent product, 18 Intentional fault, 145 Interactive-consistency, 74 Intermediate forms, 52, 276 Intermittent faults, 145, 146 Internal clock synchronization, 57, 73–79, 84, 85, 124, 375 Internal synchronization, 62 International Atomic Time (TAI), 63, 80, 82, 84, 368, 375, 380 Internet of Things (IoT), 13, 20, 22, 115, 143, 150, 325–341, 367, 375 Interoperability, 87, 107, 108, 110, 111, 177, 327 Inter process communication, 232–234 Interrupts, 17, 76, 92, 93, 98, 101, 123, 137, 227, 228, 236–238, 243, 245, 246, 252, 254, 257, 263
+## I
+
+Ideal and complete verification environment, 317 Idempotency, 130–133, 374 Implicit flow control, 183, 184, 373, 374 Impossibility result, 76 In-car compute platform (ICCP), 361, 362, 364, 367 Inconsistent failures, 148, 149 Increase the robustness, 19 Indirect observation, 122 Industrial plant automation, 21 Inexact voting, 166, 374, 380 Information pull, 101, 116, 117, 282 Information push, 101, 117, 282 Information security, 150–158, 173, 330, 336, 340 Input/output, 23, 102, 103, 210, 223, 224, 234–241, 248, 281, 282 Instance, 58 Instant, 2, 3, 5, 7, 10, 14, 15, 24, 37, 41, 44, 54, 58, 60, 66, 67, 69, 72, 82, 84, 88, 89, 91–99, 102, 109, 111, 115, 116, 119–126, 129, 134, 136, 139, 140, 144, 146–149, 165, 167, 171, 173, 179, 193–198, 227–231, 235, 236, 242, 245, 250, 255, 261, 276, 298, 320, 355, 369, 371, 374–380 Instrumentation interface, 2, 178, 374 Integrated Modular Avionics (IMA), 191, 281, 293 Integration viewpoints, 112–113 Intelligent instrumentation, 239–240 Intelligent product, 18 Intentional fault, 145 Interactive-consistency, 74 Intermediate forms, 52, 276 Intermittent faults, 145, 146 Internal clock synchronization, 57, 73–79, 84, 85, 124, 375 Internal synchronization, 62 International Atomic Time (TAI), 63, 80, 82, 84, 368, 375, 380 Internet of Things (IoT), 13, 20, 22, 115, 143, 150, 325–341, 367, 375 Interoperability, 87, 107, 108, 110, 111, 177, 327 Inter process communication, 232–234 Interrupts, 17, 76, 92, 93, 98, 101, 123, 137, 227, 228, 236–238, 243, 245, 246, 252, 254, 257, 263
 
 Interval measurements, 67, 79 Interval on the time line, 2 Intrusion, 143, 150, 152, 158, 159, 173, 175, 326, 350, 375, 380 Intuitive-experiential, 31–33, 53, 55, 375 Invalid codeword, 161 Invisible information flows, 36, 54 Ir red uci bil it y, 46 Irrevocable action, 131, 375
 
-J Jitter, 1, 8–10, 25, 28, 57, 76–78, 118, 122, 124, 129, 131–134, 160, 178, 179, 182, 183, 193, 230, 264, 302, 344, 375 Jitterless system, 10 Jitter reduction, 76
+## J
 
-K KERBEROS, 155, 157Key management, 154, 155
+Jitter, 1, 8–10, 25, 28, 57, 76–78, 118, 122, 124, 129, 131–134, 160, 178, 179, 182, 183, 193, 230, 264, 302, 344, 375 Jitterless system, 10 Jitter reduction, 76
 
-L Latency jitter, 9, 24, 25, 75, 76, 83–85 Layering, 185, 226, 273, 303, 332, 343, 348–351, 353, 356–364 L-determinism, 134, 137, 141 Least-laxity (LL), 261, 262, 266, 267, 367, 375 Least-laxity (LL) algorithm, 261 Legacy systems, 113 Life-cycle cost, 18, 19 Linking interface (LIF), 52, 87, 100–112, 115, 116, 118, 165, 224–226, 278, 281, 301, 302, 312, 314, 315, 367 Load hypothesis, 16, 27 Local interfaces, 101–107, 110, 112, 116, 117, 224, 225, 277, 281 Logical control, 87, 90–92, 115, 117, 217, 375, 379 Low-level protocols, 39, 335 Long-term integrity of large data files, 15 Low-power hardware design, 211 LUSTRE, 91
+## K
 
-# M
+KERBEROS, 155, 157Key management, 154, 155
+
+## L
+
+Latency jitter, 9, 24, 25, 75, 76, 83–85 Layering, 185, 226, 273, 303, 332, 343, 348–351, 353, 356–364 L-determinism, 134, 137, 141 Least-laxity (LL), 261, 262, 266, 267, 367, 375 Least-laxity (LL) algorithm, 261 Legacy systems, 113 Life-cycle cost, 18, 19 Linking interface (LIF), 52, 87, 100–112, 115, 116, 118, 165, 224–226, 278, 281, 301, 302, 312, 314, 315, 367 Load hypothesis, 16, 27 Local interfaces, 101–107, 110, 112, 116, 117, 224, 225, 277, 281 Logical control, 87, 90–92, 115, 117, 217, 375, 379 Low-level protocols, 39, 335 Long-term integrity of large data files, 15 Low-power hardware design, 211 LUSTRE, 91
+
+## M
 
 Macro granule, 65 Maintainability, 12, 27, 28, 269, 276, 296–300, 305, 375 Maintenance cost, 18, 19, 21 Maintenance strategy, 19, 296–299 Malicious failure, 149, 166, 282
 
@@ -7265,25 +6704,25 @@ Malign failure, 11, 26, 148 Malign failure mode, 11 Man-machine interface (MMI),
 
 312, 314–317, 319, 322, 323, 333, 341, 347, 359–363, 368–370, 376, 378–380 Monitoring interrupts, 243 Monitoring task execution times, 243 Monitoring the occurrence of an interrupt, 237 Monolithic systems, 113–115, 303 MotionWise, 358 MPSOCs, 213, 215, 256 MQTT, 356, 363 MTBF, 13 MTTF, 11 MTTR, 12 Multicast, 25 Multi casting, 89, 310 Multilevel system, 295–296 Multimedia, 22, 57, 95, 108, 148, 168, 169, 171, 219, 234, 264–266, 369 Multimedia market, 22 Multi-processor systems-on-chips (MPSoCs), 113, 163, 208, 213, 215–217, 219, 256, 273
 
-# N
+## N
 
 Naming, 42, 104, 105, 116, 330–331, 336, 339, 341 Near-field communication, 330–332, 341 Necessary s ched ul ability, 250 Nerve, 344, 353, 362–365 Network authentication, 155, 157 Network time protocol (NTP), 57, 81–84, 368 Newtonian mechanics, 58 Node as a unit of failure, 159 Node restart, 172–175 Nominal drift rate, 78 Non-blocking write (NBW) protocol, 233–234 Non-deterministic design constructs (NDDC), 137, 368, 376 Non-preemptive, 228, 249, 252, 254, 264 NP-complete problems, 249
 
-# O
+## O
 
 Object delay, 7, 8 Ob ser v ability, 309 Observation, 2, 4, 8, 9, 17, 23, 26, 34, 47, 48, 58, 63, 70, 83, 89, 93, 94, 98–100, 114, 116, 119, 121–127, 129, 130, 133, 134, 136, 139–141, 152, 179, 229–231, 241, 242, 262, 264–266, 313, 315, 329, 336, 369, 371, 372, 376, 380 Occam’s razor, 38, 54 Offset, 61 Omniscient observer, 60
 
 One tick difference, 65 One-way functions, 337, 340 OPC UA, 356 Open-loop control, 21 Operating system, 47, 49, 76, 77, 94, 99, 103, 150, 160, 171, 173, 212, 215, 218, 223–246, 252, 254–257, 273, 279, 347, 352–355, 369, 379, 381 Operational specification, 87, 107–111, 116 Operator cluster, 2
 
-# P
+## P
 
-Parametric RT image, 127, 128, 141 Partitioning, 12, 19, 37, 52, 54, 172, 215, 284, 290, 293, 310, 349 Password attacks, 153 Pathfinder, 162, 263 Peak-load, 1, 5, 14, 16, 26, 27, 29, 200, 231, 243, 311, 377 Peak-load performance, 14 Peak-load scenario, 311 Perfect clock, 61, 78 Periodic and sporadic tasks, 250 Periodic clock interrupt, 17 Periodic tasks, 250, 251, 258, 259, 262, 265–267, 369, 376–378Permanence, 119, 130–133, 141, 376 Permanent failure, 164, 173, 174, 209, 211, 220, 298 Phase-aligned transaction, 126, 376 Phase-sensitive RT image, 128 Physical clock, 60 Physical fault injection, 320–321 Physical installation, 240–241 Physical one-way function (POWF), 337, 340, 341 Physical second, 58 Pin-level fault-injection, 321 Plant automation systems, 18, 21, 22, 25, 27–29 Platform-independent model (PIM), 100, 213, 214, 272, 273, 279–281, 312, 315, 316, 368 Platform-specific model (PSM), 100, 101, 213, 214, 273, 279, 312, 313, 316, 368 Pocket calculator, 93–94 Pollack’s rule, 214–215, 221, 273 Power blackout, 5 Power supply, 240 Precedence, 66–68 Precedence graph, 256–258 Precision, 23, 24, 40, 41, 57, 61–64, 67, 71–78, 82–85, 98, 108, 118, 124, 129,
+Parametric RT image, 127, 128, 141 Partitioning, 12, 19, 37, 52, 54, 172, 215, 284, 290, 293, 310, 349 Password attacks, 153 Pathfinder, 162, 263 Peak-load, 1, 5, 14, 16, 26, 27, 29, 200, 231, 243, 311, 377 Peak-load performance, 14 Peak-load scenario, 311 Perfect clock, 61, 78 Periodic and sporadic tasks, 250 Periodic clock interrupt, 17 Periodic tasks, 250, 251, 258, 259, 262, 265–267, 369, 376–378Permanence, 119, 130–133, 141, 376 Permanent failure, 164, 173, 174, 209, 211, 220, 298 Phase-aligned transaction, 126, 376 Phase-sensitive RT image, 128 Physical clock, 60 Physical fault injection, 320–321 Physical installation, 240–241 Physical one-way function (POWF), 337, 340, 341 Physical second, 58 Pin-level fault-injection, 321 Plant automation systems, 18, 21, 22, 25, 27–29 Platform-independent model (PIM), 100, 213, 214, 272, 273, 279–281, 312, 315, 316, 368 Platform-specific model (PSM), 100, 101, 213, 214, 273, 279, 312, 313, 316, 368 Pocket calculator, 93–94 Pollack’s rule, 214–215, 221, 273 Power blackout, 5 Power supply, 240 Precedence, 66–68 Precedence graph, 256–258 Precision, 23, 24, 40, 41, 57, 61–64, 67, 71–78, 82–85, 98, 108, 118, 124, 129, 134, 160, 179, 183, 217, 229, 230, 242, 257, 276, 354, 375–377, 379 Precision of the FTA, 77 Predictive maintenance, 359 Preemptive scheduling, 137, 249, 266, 372, 375, 377 Pre-run time, 248 Primary event, 5, 59, 84, 369, 376 Principles of com pos ability, 88, 111–112, 117, 118 Priority ceiling protocol, 247, 249, 255, 262, 263, 266, 267, 376 Privacy, 13, 150, 156, 173, 325, 326, 328, 330, 332, 336–338, 340 Private keys, 155–157 Probe effect, 52, 159, 273, 282, 309, 310, 312–313, 322, 323, 333 Problem solving, 31–34, 36, 37, 50, 52–55, 249, 270, 369, 375 Process lag, 7, 26, 376 Production cost, 18 Propagation delay, 184, 189, 370, 376 Property mismatches, 105, 107, 114, 116, 117, 218, 301, 336 Protocol, 23, 41, 42, 48, 55, 57, 76, 84, 105, 106, 122, 129, 131, 137, 138, 155, 157, 158, 163, 179, 180, 182–184, 186–190, 192, 194–198, 200, 207, 220, 223, 226, 230–234, 237, 244, 263, 276, 302, 318, 330, 332, 335, 336, 339, 346, 354, 356, 357, 363, 364, 369, 371, 372, 376, 380 Provision of sufficient resources, 17 Public key, 154–157, 173 Purpose and viewpoint, 43–45
 
-134, 160, 179, 183, 217, 229, 230, 242, 257, 276, 354, 375–377, 379 Precision of the FTA, 77 Predictive maintenance, 359 Preemptive scheduling, 137, 249, 266, 372, 375, 377 Pre-run time, 248 Primary event, 5, 59, 84, 369, 376 Principles of com pos ability, 88, 111–112, 117, 118 Priority ceiling protocol, 247, 249, 255, 262, 263, 266, 267, 376 Privacy, 13, 150, 156, 173, 325, 326, 328, 330, 332, 336–338, 340 Private keys, 155–157 Probe effect, 52, 159, 273, 282, 309, 310, 312–313, 322, 323, 333 Problem solving, 31–34, 36, 37, 50, 52–55, 249, 270, 369, 375 Process lag, 7, 26, 376 Production cost, 18 Propagation delay, 184, 189, 370, 376 Property mismatches, 105, 107, 114, 116, 117, 218, 301, 336 Protocol, 23, 41, 42, 48, 55, 57, 76, 84, 105, 106, 122, 129, 131, 137, 138, 155, 157, 158, 163, 179, 180, 182–184, 186–190, 192, 194–198, 200, 207, 220, 223, 226, 230–234, 237, 244, 263, 276, 302, 318, 330, 332, 335, 336, 339, 346, 354, 356, 357, 363, 364, 369, 371, 372, 376, 380 Provision of sufficient resources, 17 Public key, 154–157, 173 Purpose and viewpoint, 43–45
+## Q
 
-Q Quality of service, 18
+Quality of service, 18
 
-# R
+## R
 
 Race conditions, 138 Radio frequency identification (RFID), 325, 327, 329, 330, 333–341, 368, 372, 377 Rain signaling system, 294 Rapid prototyping, 270 Rare event, 5, 14, 16, 28, 162, 174, 264, 266, 278, 311, 319, 377 Rare-event situation, 5 Rate constrained, 97, 177, 182, 183, 187, 190–192, 194–196, 198–200 Rate correction, 79, 81, 83 Rate monotonic, 247, 249, 260–262, 266, 267, 377
 
@@ -7291,22 +6730,30 @@ Rate monotonic algorithm, 260 Raw data, 5, 241, 242, 246, 369, 375, 377, 378 Raw
 
 Robot Operating System (ROS), 356 Robustness of the embedded computer system, 19 Roll-back/recovery, 15 Rolling mill, 25, 90, 118 RT entity, 3–6, 8–10, 15, 26, 28, 119–127, 129, 130, 133, 139, 140, 159, 171, 223, 229, 230, 235, 238, 241, 242, 369, 370, 377–379 RT image, 4, 5, 15, 26, 119, 120, 124–129, 133, 139–141, 239, 344, 377, 379 RT objects, 119, 120, 124, 125, 129, 130, 133, 139, 377, 379 RT transaction, 25 RTCA/DO-178B, 292
 
-S Safe state, 10, 15 Safety, 1, 11–12, 14–16, 20, 26, 28, 31, 143, 150, 160, 169, 200, 256, 282, 284–288, 290–292, 294–296, 304, 325, 328–330, 345, 352, 361, 378 Safety analysis, 151, 269, 286, 292, 304, 305 Safety bag, 295 Safety case, 269, 288–292, 304, 305, 322, 378 Safety-critical real-time computer system., 3 Safety-critical subsystem, 11 Safety-critical systems, 102, 160, 162, 174, 181, 194, 241, 245, 269, 283–293, 295, 302, 309, 323, 352, 357 Safety integrity level (SIL), 278, 291, 292, 305 Safety standards, 291–293, 305, 352 Sample point, 8 Sampling frequency, 8 Sampling period, 8–10, 28, 228 Sampling point, 9 Schedulability test, 247, 249–251, 262, 265, 267, 378 S ched ul ability test for the priority ceiling protocol, 262 Schedule period, 247, 250, 257 Scheduler, 248 Scheduler is called static (or pre-run time), 248, 265 Scheduling dependent tasks, 262–263 Scheduling independent tasks, 260–262 Scientific concepts, 39–40, 55 Search tree, 247, 258 Security, 13, 19, 27, 31, 115, 143, 150–158, 170, 173–175, 179–180, 199, 216, 325, 328, 330, 332, 336, 337, 346, 350, 351, 355, 378, 380 Security threats, 152–154, 175, 336, 340, 341, 346, 350
+## S
+
+Safe state, 10, 15 Safety, 1, 11–12, 14–16, 20, 26, 28, 31, 143, 150, 160, 169, 200, 256, 282, 284–288, 290–292, 294–296, 304, 325, 328–330, 345, 352, 361, 378 Safety analysis, 151, 269, 286, 292, 304, 305 Safety bag, 295 Safety case, 269, 288–292, 304, 305, 322, 378 Safety-critical real-time computer system., 3 Safety-critical subsystem, 11 Safety-critical systems, 102, 160, 162, 174, 181, 194, 241, 245, 269, 283–293, 295, 302, 309, 323, 352, 357 Safety integrity level (SIL), 278, 291, 292, 305 Safety standards, 291–293, 305, 352 Sample point, 8 Sampling frequency, 8 Sampling period, 8–10, 28, 228 Sampling point, 9 Schedulability test, 247, 249–251, 262, 265, 267, 378 S ched ul ability test for the priority ceiling protocol, 262 Schedule period, 247, 250, 257 Scheduler, 248 Scheduler is called static (or pre-run time), 248, 265 Scheduling dependent tasks, 262–263 Scheduling independent tasks, 260–262 Scientific concepts, 39–40, 55 Search tree, 247, 258 Security, 13, 19, 27, 31, 115, 143, 150–158, 170, 173–175, 179–180, 199, 216, 325, 328, 330, 332, 336, 337, 346, 350, 351, 355, 378, 380 Security threats, 152–154, 175, 336, 340, 341, 346, 350
 
 Segmentation, 37, 52, 54, 76 Self checking component, 148 Semantic agreement, 241–243, 246, 378 Semantic content, 4, 31, 39, 41–43, 54, 55, 101, 104–106, 120, 378 Semaphore operations, 234 Sensor data, 5 Server task, 259 Serverless computing, 343, 352, 364 Service, 10, 12, 13, 16, 17, 26, 27, 40, 41, 44, 45, 47, 55, 72, 88, 89, 100, 102, 103, 108, 110–113, 115–117, 122, 124, 144, 147, 148, 150, 153, 163, 167, 168, 170, 173–175, 178, 179, 182, 186–187, 190, 194, 195, 200, 207, 214, 216, 225–227, 237, 249–252, 254–259, 270, 274, 275, 277, 279, 285, 287, 290, 294, 297, 299, 300, 304, 305, 311, 314, 325, 326, 331, 332, 335, 338, 340, 344–352, 355, 357, 359, 363–365, 367, 368, 370, 373, 375–377, 381 Serviceable interface, 12 Service-level agreement (SLA), 347, 365, 368 Shadow master, 75 Short-term temporal accuracy, 15 Signal conditioning, 5, 26, 28, 239, 241, 378 Significant state variable, 3 Simple control loop, 7 Simple task (S-task), 51, 226–228, 246, 252, 254, 255 Simple verification procedures, 45 Simplicity, 31–55, 134 Simplification strategies, 36, 37, 55, 349 Simultaneous events, 58, 135, 231 Size of data files, 15 SL, 91 Smallest replaceable unit (SRU), 12, 28, 29, 368Soft programmable logic control (soft PLC), 361, 362, 364 Soft real-time, 1, 3, 13–15, 28, 245, 264, 266, 343–345, 359, 363, 378 Soft real-time computer system, 3 Software component, 305 Software-implemented fault injection, 320 Software maintenance, 299–300 Source code analysis, 252 Space-time lattice, 71 Sparse time, 57, 68–73, 83, 84, 92, 93, 110, 136, 248, 310, 369, 378 Sparse time-base, 70–71 Sphere of control (SOC), 4, 8, 9, 69, 71, 113, 114, 120, 182, 235, 236, 368, 378 Spoofing attack, 153, 378 Sporadic request, 259
 
 Sporadic server task, 259 Stability of the control loop, 9 Standardized message interfaces, 107 Start event, 2 State, 2–4, 6, 8, 12, 14–16, 18, 26, 37, 38, 41, 46, 53, 58, 60, 70, 72–76, 79, 83, 87, 88, 92–96, 98–100, 111, 116, 117, 119–124, 127, 129, 133–141, 143–147, 149, 151, 153, 158, 159, 161–163, 167–174, 188, 194, 197, 198, 202, 216, 221, 226–229, 235, 236, 239, 241, 250, 251, 255–256, 265, 271, 272, 282, 284–287, 290, 292, 294, 295, 300, 302–304, 307, 317, 319, 321–323, 347, 368, 369, 371–379, 381 State correction, 79 State estimation, 119, 124, 126–130, 133, 139–141, 173, 301, 379 Stateless voter, 239 State observation, 122 State variables, 3 Static configuration, 19 Static scheduling, 256–260 Step function, 7 Step-response function, 8 Stochastic drift rate, 78 Sufficient s ched ul ability tests, 249, 250, 256, 262, 263, 265 Synchronization condition, 57, 73–75, 78, 83, 84, 379 Synchronized actions, 127 Syntactic agreement, 241–243, 246 SysML, 280, 281 Systematic error compensation, 78 System C, 100, 213, 281 System design, 16, 28, 32, 48, 100, 111, 154, 186, 257, 259, 269–305, 350, 351, 354 System design automation, 352, 358, 364, 365 System evolution, 113, 313–314 System of system, 42, 52, 88, 113–117, 139, 170, 349, 379 System-under-test (SUT), 307–309, 312, 322
 
-T Task, 5, 17, 22, 24, 26, 29, 32–34, 36, 45, 50, 51, 55, 81, 90, 91, 95, 98, 102, 103, 105, 115, 118, 126, 128, 138, 139, 147, 150, 154, 159–161, 166–168, 171, 173, 174, 177, 188, 189, 201, 212, 218, 219, 223, 225–229, 231–237, 240, 242–252, 254–267, 292, 311, 320–322, 330, 332, 340, 344, 348, 352–354, 358, 362–364, 368, 369, 371, 372, 374–376, 378–380 Task-Descriptor List (TADL), 227, 244, 368, 379 Technology-agnostic, 102, 213–214, 221 Technology catalysts, 20 Technology dependent interface (TDI), 100, 101, 103, 224, 225, 314 Technology independent interface (TII), 100, 101, 103, 172, 224–226, 314 Temporal accuracy, 125 Temporal accuracy interval, 125 Temporal order, 58 Temporal requirements, 7–10 Temporally accurate, 4 Terminating event, 2 Testability, 135, 273, 282, 305, 310, 323 Test coverage, 310 Test data selection, 310, 311, 323 Testing, 308 Testing challenges, 309–314 Test of a decomposition, 281–283 Test oracles, 307, 312, 322, 323 Theft-avoidance system, 13 Thermal effects, 206, 208–209, 221 Thrashing, 187, 200, 379 Three Mile Island, 186 Tick, 60 Ticks of the clock, 2 Time as control, 230, 231 Time as data, 230 Timed message, 230 Time-Division Multiple Access (TDMA), 118, 368, 379 Time encoded signals, 236 Time formats, 81–82 Time gateway, 79, 81 Time measurement, 64–68 Time message, 79 Time-sensitive networking (TSN), 22, 177, 178, 181, 187, 192, 194, 197–200, 350, 356, 357, 363, 368, 380 Time server, 79 Timestamp, 60, 121–123, 125, 130, 179 Time standards, 63–64 Time-triggered (TT), 4, 9, 13, 17, 18, 26, 29, 48, 72, 76, 82, 83, 87, 92, 99–100, 108, 109, 113, 116–118, 122, 123, 130, 132, 146, 165, 168, 177, 178, 183, 187, 192–200, 226–228, 232, 237, 244–246, 257, 264, 269, 276, 281, 293, 300–305, 310, 313, 355, 368, 379, 380 Time-triggered (TT) observation, 4 Time-triggered ethernet (TTEthernet), 178, 195–196, 199, 200, 231, 281, 302, 318, 352, 368, 380 Time-triggered network-on-chip (TTNoC), 302 Time-triggered protocol (TTP), 48, 109, 163, 177–178, 194–195, 199, 200, 302, 368, 370, 380
+## T
+
+Task, 5, 17, 22, 24, 26, 29, 32–34, 36, 45, 50, 51, 55, 81, 90, 91, 95, 98, 102, 103, 105, 115, 118, 126, 128, 138, 139, 147, 150, 154, 159–161, 166–168, 171, 173, 174, 177, 188, 189, 201, 212, 218, 219, 223, 225–229, 231–237, 240, 242–252, 254–267, 292, 311, 320–322, 330, 332, 340, 344, 348, 352–354, 358, 362–364, 368, 369, 371, 372, 374–376, 378–380 Task-Descriptor List (TADL), 227, 244, 368, 379 Technology-agnostic, 102, 213–214, 221 Technology catalysts, 20 Technology dependent interface (TDI), 100, 101, 103, 224, 225, 314 Technology independent interface (TII), 100, 101, 103, 172, 224–226, 314 Temporal accuracy, 125 Temporal accuracy interval, 125 Temporal order, 58 Temporal requirements, 7–10 Temporally accurate, 4 Terminating event, 2 Testability, 135, 273, 282, 305, 310, 323 Test coverage, 310 Test data selection, 310, 311, 323 Testing, 308 Testing challenges, 309–314 Test of a decomposition, 281–283 Test oracles, 307, 312, 322, 323 Theft-avoidance system, 13 Thermal effects, 206, 208–209, 221 Thrashing, 187, 200, 379 Three Mile Island, 186 Tick, 60 Ticks of the clock, 2 Time as control, 230, 231 Time as data, 230 Timed message, 230 Time-Division Multiple Access (TDMA), 118, 368, 379 Time encoded signals, 236 Time formats, 81–82 Time gateway, 79, 81 Time measurement, 64–68 Time message, 79 Time-sensitive networking (TSN), 22, 177, 178, 181, 187, 192, 194, 197–200, 350, 356, 357, 363, 368, 380 Time server, 79 Timestamp, 60, 121–123, 125, 130, 179 Time standards, 63–64 Time-triggered (TT), 4, 9, 13, 17, 18, 26, 29, 48, 72, 76, 82, 83, 87, 92, 99–100, 108, 109, 113, 116–118, 122, 123, 130, 132, 146, 165, 168, 177, 178, 183, 187, 192–200, 226–228, 232, 237, 244–246, 257, 264, 269, 276, 281, 293, 300–305, 310, 313, 355, 368, 379, 380 Time-triggered (TT) observation, 4 Time-triggered ethernet (TTEthernet), 178, 195–196, 199, 200, 231, 281, 302, 318, 352, 368, 380 Time-triggered network-on-chip (TTNoC), 302 Time-triggered protocol (TTP), 48, 109, 163, 177–178, 194–195, 199, 200, 302, 368, 370, 380
 
 Time-triggered virtual machines (TTVM), 343, 354, 364, 368 Timing schema , 253 Top event, 286, 287 Top event of the fault tree, 286 Traffic light, 4 Transaction processing system, 14 Transient failure, 148 Transient fault, 145, 146, 169, 170, 175, 216, 239, 283, 288, 380 Transitory fault, 145, 146 Transport specification, 87, 107–109, 111, 116 Trigger, 17, 26, 228, 230, 280, 369, 380 Trigger task, 228, 231, 236, 246, 380 Triggering mechanisms, 17 Triple-modular redundancy (TMR), 143, 164–166, 174, 175, 238, 239, 245, 290, 295, 296, 368, 380 Triple-modular redundant (TMR) actuator, 238 Trusted network authority (TNA) Trusted security server, 155, 157 Two-faced failures, 149
 
-U Ultra-high dependability, 303 Ultrahigh reliability, 11 UML MARTE, 213, 280, 305 Understanding, 1, 33–36, 39, 40, 43, 44, 46, 49–55, 89, 103, 110, 119, 135, 201, 205, 242, 270, 271, 273, 275, 277, 304, 327, 380 Unified Modeling Language (UML),
+## U
+
+Ultra-high dependability, 303 Ultrahigh reliability, 11 UML MARTE, 213, 280, 305 Understanding, 1, 33–36, 39, 40, 43, 44, 46, 49–55, 89, 103, 110, 119, 135, 201, 205, 242, 270, 271, 273, 275, 277, 304, 327, 380 Unified Modeling Language (UML),
 280, 281 Universal time coordinated (UTC), 63, 82–84, 368, 380
 
-V Validation, 5, 45, 274, 289, 292, 293, 302, 303, 307–323, 359, 360 Value failure, 134, 147, 165, 380 Virtualization, 343, 352–354, 364 VOTRICS, 294, 295 Vulnerability, 143, 150, 152, 158, 173, 175, 299, 304, 336, 338, 375, 380
+## V
 
-# W
+Validation, 5, 45, 274, 289, 292, 293, 302, 303, 307–323, 359, 360 Value failure, 134, 147, 165, 380 Virtualization, 343, 352–354, 364 VOTRICS, 294, 295 Vulnerability, 143, 150, 152, 158, 173, 175, 299, 304, 336, 338, 375, 380
+
+## W
 
 Watchdogs, 16, 168, 244–246, 263, 380, 381 WCET of complex tasks, 254–255 WCET of S-tasks, 252 Wireless sensor network (WSN), 207, 325, 338–341, 368 Worst-case administrative overhead (WCAO), 227, 252, 254, 267, 368, 381
 
