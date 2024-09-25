@@ -15,7 +15,7 @@ ISBN 978-3-031-11991-0
 ISBN 978-3-031-11992-7
 [eBook](https://doi.org/10.1007/978-3-031-11992-7)
 
-The Editor(s) (if applicable) and The Author(s), under exclusive license to Springer Nature Switzerland AG 2022
+The Editor(s) (if applicable) and The Author(s), under exclusive license to Springer Nature Switzerland AG 2022 May
 
 ## Preface
 
@@ -25,15 +25,15 @@ The primary objective of this book is to serve as a textbook for students who ta
 
 The book’s focus is on the design of distributed real-time systems at the architec­ ture level. While a significant part of the established computer science literature abstracts from the progression of real time, real-time system designers cannot get away with such an abstraction. In this book, the progression of physical time is considered a first-order citizen that shapes many of the relevant concepts. The book explains the fundamental concepts related to the progression of time on a number of practical, insightful examples from industry. The conceptual model of a distributed real-time system has been extended, and precise definitions of important time-­ related concepts, such as sparse time , state , temporal accuracy of real-time data , and determinism , are given. This book emphasizes design principles that result in understandable systems, ir respectively of a system’s size . Following these principles ensures that simple models faithfully represent an implemented system from differ­ ent viewpoints and at different levels of abstraction.
 
-> 本书的重点是在**架构级别设计分布式实时系统**。虽然已有的计算机科学文献中有很大一部分是从实时发展中抽象出来的，但实时系统设计人员无法摆脱这种抽象。在这本书中，**物理时间的进程被认为是一个一等公民，它塑造了许多相关概念**。这本书通过行业中一些实用、有见地的例子解释了与时间进程相关的基本概念。扩展了分布式实时系统的概念模型，并给出了重要时间相关概念的精确定义，如稀疏时间、状态、实时数据的时间精度和确定性。这本书强调了设计原则，这些原则分别导致了系统大小的可理解系统。遵循这些原则可以确保简单模型从不同的角度和不同的抽象级别忠实地表示一个已实现的系统。
+> 本书的重点是在**架构级别设计分布式实时系统**。虽然已有的计算机科学文献中有很大一部分是从实时发展中抽象出来的，但实时系统设计人员无法摆脱这种抽象。在这本书中，**物理时间的进程被认为是一个一等公民，它塑造了许多相关概念**。这本书通过行业中一些实用、有见地的例子**解释了与时间进程相关的基本概念**。扩展了**分布式实时系统的概念模型**，并给出了重要**时间相关概念的精确定义，如稀疏时间、状态、实时数据的时间精度和确定性**。这本书强调了设计原则，这些原则分别导致了系统大小的**可理解系统**。遵循这些原则可以确保简单模型从不同的角度和不同的抽象级别忠实地表示一个已实现的系统。
 
 Since the second edition of this book, about 11 years ago, cloud computing has revolutionized classical IT systems. Inspired by this development, strong market forces seek to replicate this success in the real-time embedded systems market by reusing native cloud technologies and principles. However, naively doing so will lead to disaster. Thus, this third edition includes a new chapter on cloud and fog computing that argues for the fog architectural style to decouple the world of cloud from the world of real-time embedded systems . The second major change is the rewritten chapter on real-time networks that now also covers IEEE 802.1 Time-­ Sensitive Networking (TSN), the incorporation of the time-triggered paradigm in the mainstream IT networking set of standards. All other chapters have been revised and updated. This third edition includes approximately 80 new references in total.
 
-> 自大约 11 年前本书第二版问世以来，云计算已经彻底改变了传统的 IT 系统。受到这一发展的启发，强大的市场力量试图通过重用本地云技术和原理，在实时嵌入式系统市场复制这一成功。然而，天真地这样做会导致灾难。因此，第三版包括一个关于云和雾计算的新章节，该章节主张雾架构风格将云世界与实时嵌入式系统世界解耦。第二个主要变化是重写了关于实时网络的章节，现在也涵盖了 IEEE 802.1 时间敏感网络(TSN)，将时间触发范式纳入了主流 IT 网络标准集。所有其他章节均已修订和更新。第三版共包括约 80 篇新参考文献。
+> 自大约 11 年前本书第二版问世以来，**云计算**已经彻底改变了传统的 IT 系统。受到这一发展的启发，强大的市场力量试图通过重用本地云技术和原理，在实时嵌入式系统市场复制这一成功。然而，天真地这样做会导致灾难。因此，第三版包括一个关于**云计算的新章节**，该章节主张云架构风格将**云世界与实时嵌入式系统世界解耦**。第二个主要变化是**重写了关于实时网络的章节**，现在也涵盖了 IEEE 802.1 时间敏感网络(TSN)，将时间触发范式纳入了主流 IT 网络标准集。所有其他章节均已修订和更新。第三版共包括约 80 篇新参考文献。
 
 Since the publication of the first edition, a visible paradigm shift from the event-­ triggered to the time-triggered design methodology for dependable distributed real-­ time systems has taken place in a number of applications.
 
-> 自第一版发布以来，在许多应用中，可靠分布式实时系统的设计方法从事件触发到时间触发发生了明显的范式转变。
+> 自第一版发布以来，在许多应用中，**可靠分布式实时系统的设计方法从事件触发到时间触发发生了明显的范式转变**。
 
 It is assumed that the reader of this book has a background in basic computer science or computer engineering or has some practical experience in the design or implementation of embedded systems.
 
@@ -42,16 +42,6 @@ It is assumed that the reader of this book has a background in basic computer sc
 The glossary, provided at the end, is an integral part of this book, providing defi­ nitions for many of the technical terms used throughout. If the reader is not sure about the meaning of a term, they are advised to refer to the glossary.
 
 > 最后提供的术语表是本书不可分割的一部分，为本书中使用的许多技术术语提供了定义。如果读者不确定一个术语的含义，建议他们参考术语表。
-
-## Acknowledgments
-
-It is impossible to name all students, colleagues from industry, and fellow scientists who have contributed to this third edition of the book by asking intelligent questions or making constructive comments over the last decade—thanks to all of you.
-
-> 在过去的十年里，通过提出聪明的问题或提出建设性的意见，为这本书的第三版做出贡献的所有学生、行业同事和科学家都是不可能的——这要归功于你们所有人。
-
-Vienna, Austria Hermann Kopetz Wilfried Steiner
-
-May 2022
 
 # Contents
 
@@ -96,6 +86,42 @@ May 2022
 Bibliographic Notes 27
 Review Questions and Problems 28
 
+> 1.1 计算机系统何时是实时的？2
+>
+> 1.2 功能要求 3
+> 1.2.1 数据采集 3
+> 1.2.2 直接数字控制 6
+> 1.2.3 人机交互 6
+>
+> 1.3 时间要求 7
+> 1.3.1 时间要求从何而来？7
+> 1.3.2 最小延迟抖动 9
+> 1.3.3 最小错误检测延迟 10
+>
+> 1.4 依赖性要求 10
+> 1.4.1 可靠性 10
+> 1.4.2 安全性 11
+> 1.4.3 可维护性 12
+> 1.4.4 可用性 12
+> 1.4.5 安全性 13
+>
+> 1.5 实时系统的分类 13
+> 1.5.1 硬实时系统与软实时系统 14
+> 1.5.2 故障安全与故障运行 16
+> 1.5.3 保证响应与尽力而为 16
+> 1.5.4 资源充足与资源不足 17
+> 1.5.5 事件触发与时间触发 17
+>
+> 1.6 实时系统市场 18
+> 1.6.1 嵌入式实时系统 18
+> 1.6.2 工厂自动化系统 21
+> 1.6.3 多媒体系统 22
+>
+> 1.7 实时系统实例 23
+> 1.7.1 管道流量控制 23
+> 1.7.2 发动机控制 24
+> 1.7.3 轧机 25
+
 ## 2 Simplicity 31
 
 2.1 Cognition 32
@@ -125,6 +151,33 @@ Bibliographic Notes 53
 Points to Remember 53
 Review Questions and Problems 55
 
+> 2.1 认知 32
+> 2.1.1 解决问题 32
+> 2.1.2 概念的定义 34
+> 2.1.3 认知复杂性 35
+> 2.1.4 简化策略 37
+> 
+> 2.2 概念景观 38
+> 2.2.1 概念的形成 38
+> 2.2.2 科学概念 40
+> 2.2.3 信息的概念 41
+> 2.2.4 变量的语义内容 42
+> 
+> 2.3 模型构建的本质 43
+> 2.3.1 目的和观点 44
+> 2.3.2 重大挑战 46
+> 
+> 2.4 新出现的问题 46
+> 2.4.1 不可还原性 47
+> 2.4.2 先验属性和衍生属性 47
+> 2.4.3 复杂系统 48
+> 
+> 2.5 如何实现简单性？51
+> 
+> 书目注释 53
+> 记忆要点 53
+> 复习题和问题 55
+
 ## 3 Global Time 57
 
 3.1 Time and Order 58
@@ -149,8 +202,8 @@ Review Questions and Problems 55
 3.4.1 The Synchronization Condition 73
 3.4.2 Central Master Synchronization 75
 3.4.3 Fault-Tolerant Synchronization Algorithms 75
-
 3.4.4 State Correction Versus Rate Correction 79
+
 3.5 External Clock Synchronization 79
 3.5.1 External Time Sources 79
 3.5.2 Time Gateway 81
@@ -159,6 +212,39 @@ Review Questions and Problems 55
 Points to Remember 82
 Bibliographic Notes 83
 Review Questions and Problems 83
+
+> 3.1 时间与秩序 58
+> 3.1.1 不同的秩序 58
+> 3.1.2 时钟 59
+> 3.1.3 精确度与准确度 61
+> 3.1.4 时间标准 63
+> 
+> 3.2 时间测量 64
+> 3.2.1 全球时间 64
+> 3.2.2 时间间隔测量 66
+> 3.2.3 π / Δ - 优先级 66
+> 3.2.4 时间测量的基本限制 68
+> 
+> 3.3 密集时间与稀疏时间 68
+> 3.3.1 密集时间基础 69
+> 3.3.2 稀疏时基 70
+> 3.3.3 时空网格 71
+> 3.3.4 时间的循环表示法 72
+> 
+> 3.4 内部时钟同步 73
+> 3.4.1 同步条件 73
+> 3.4.2 中央主站同步 75
+> 3.4.3 容错同步算法 75
+> 3.4.4 状态校正与速率校正 79
+>
+> 3.5 外部时钟同步 79
+> 3.5.1 外部时间源 79
+> 3.5.2 时间网关 81
+> 3.5.3 时间格式 81
+> 
+> 注意事项 82
+> 书目说明 83
+> 复习提问和问题 83
 
 ## 4 Real-Time (RT) Model 87
 
@@ -205,6 +291,49 @@ Review Questions and Problems 83
 Bibliographic Notes 117
 Review Questions and Problems 117
 
+> 4.1 模型概要 88
+> 4.1.1 组件和信息 88
+> 4.1.2 组件集群 89
+> 4.1.3 时间控制与逻辑控制 90
+> 4.1.4 事件触发控制与时间触发控制 92
+> 
+> 4.2 部件状态 92
+> 4.2.1 状态的定义 93
+> 4.2.2 袖珍计算器示例 93
+> 4.2.3 地面状态 95
+> 4.2.4 数据库组件 96
+> 
+> 4.3 消息概念 97
+> 4.3.1 消息结构 97
+> 4.3.2 事件信息与状态信息 99
+> 4.3.3 事件触发 (ET) 报文 99
+> 4.3.4 时间触发 (TT) 报文 99
+> 
+> 4.4 组件接口 100
+> 4.4.1 接口特征 101
+> 4.4.2 链接接口 (LIF) 102
+> 4.4.3 技术独立接口 (TII) 103
+> 4.4.4 技术独立接口 (TDI) 103
+> 4.4.5 本地接口 103
+> 
+> 4.5 网关组件 104
+> 4.5.1 属性不匹配 105
+> 4.5.2 网关组件的 LIF 接口与本地接口 105
+> 4.5.3 标准化报文接口 107
+> 
+> 4.6 链接接口规范 107
+> 4.6.1 传输规范 108
+> 4.6.2 运行规范 109
+> 4.6.3 元层面规范 110
+> 
+> 4.7 组件集成 111
+> 4.7.1 可组合性原则 111
+> 4.7.2 集成观点 112
+> 4.7.3 系统的系统 113
+> 
+> 书目注释 117
+> 复习提问与问题 117
+
 ## 5 Temporal Relations 119
 
 5.1 Real-Time Entities 120
@@ -243,6 +372,42 @@ Points to Remember 139
 Bibliographic Notes 140
 Review Questions and Problems 140
 
+> 5.1 实时实体 120
+> 5.1.1 控制范围 120
+> 5.1.2 离散和连续实时实体 121
+> 
+> 5.2 观察 121
+> 5.2.1 非定时观测 121
+> 5.2.2 间接观测 122
+> 5.2.3 状态观测 122
+> 5.2.4 事件观测 123
+> 
+> 5.3 实时图像和实时对象 124
+> 5.3.1 实时图像 124
+> 5.3.2 实时对象 124
+> 
+> 5.4 时间精度 125
+> 5.4.1 定义 125
+> 5.4.2 实时图像分类 125
+> 5.4.3 状态估计 125
+> 5.4.4 可组合性考虑因素 130
+> 
+> 5.5 持久性和闲置性 130
+> 5.5.1 持久性 130
+> 5.5.2 动作延迟时间 132
+> 5.5.3 精度间隔与动作延迟 133
+> 5.5.4 失效 133
+> 
+> 5.6 确定性 133
+> 5.6.1 确定性的定义 134
+> 5.6.2 一致的初始状态 136
+> 5.6.3 非确定性设计结构 (NDDC) 137
+> 5.6.4 确定性的恢复 138
+> 
+> 需要记住的要点 139
+> 书目注释 140
+> 复习问题与难题 140
+
 ## 6 Dependability 143
 
 6.1 Basic Concepts 144
@@ -280,6 +445,41 @@ Points to Remember 173
 Bibliographic Notes 174
 Review Questions and Problems 174
 
+> 6.1 基本概念 144
+> 6.1.1 故障 145
+> 6.1.2 错误 146
+> 6.1.3 故障 147
+> 
+> 6.2 信息安全 150
+> 6.2.1 安全信息流 151
+> 6.2.2 安全威胁 152
+> 6.2.3 密码方法 154
+> 6.2.4 网络验证 157
+> 6.2.5 保护实时控制数据 157
+> 
+> 6.3 异常检测 158
+> 6.3.1 什么是异常？158
+> 6.3.2 故障检测 160
+> 6.3.3 错误检测 161
+> 
+> 6.4 容错 162
+> 6.4.1 故障假设 163
+> 6.4.2 容错单元 164
+> 6.4.3 成员服务 167
+> 
+> 6.5 健壮性和恢复能力 168
+> 6.5.1 稳健性概念 168
+> 6.5.2 恢复能力的概念 170
+> 
+> 6.6 组件重新整合 170
+> 6.6.1 寻找重新整合点 170
+> 6.6.2 最小化地面状态 171
+> 6.6.3 组件重启 172
+> 
+> 注意事项 173
+> 书目注释 174
+> 复习问题解答 174
+
 ## 7 Real-Time Communication 177
 
 7.1 Requirements 178
@@ -312,6 +512,36 @@ Points to Remember 198
 Bibliographic Notes 200
 Review Questions and Problems 200
 
+> 7.1 要求 178
+> 7.1.1 及时性 178
+> 7.1.2 可靠性和安全性 179
+> 7.1.3 灵活性 180
+> 7.1.4 通信带宽和成本效益 181
+> 
+> 7.2 设计原则和陷阱 181
+> 7.2.1 实时网络模型 182
+> 7.2.2 报文类型 182
+> 7.2.3 流量控制 183
+> 7.2.4 设计限制 184
+> 7.2.5 设计陷阱 186
+> 
+> 7.3 事件触发式通信 187
+> 7.3.1 CAN 188
+> 7.3.2 以太网 189
+> 
+> 7.4 速率受限通信 190
+> 7.4.1 航空电子全双工交换式以太网 (AFDX)：ARINC 664-p7 191
+> 7.4.2 音频/视频桥接：IEEE 802.1 AVB 192
+> 
+> 7.5 时间触发通信 192
+> 7.5.1 TTP 194
+> 7.5.2 TTEthernet 195
+> 7.5.3 时间敏感网络：IEEE 802.1 TSN 197
+> 
+> 注意事项 198
+> 书目注释 200
+> 复习提问和问题 200
+
 ## 8 Power and Energy Awareness 201
 
 8.1 Power and Energy 202
@@ -339,6 +569,32 @@ Review Questions and Problems 200
 Points to Remember 198
 Bibliographic Notes 200
 Review Questions and Problems 200
+
+> 8.1 电力与能源 202
+> 8.1.1 基本概念 202
+> 8.1.2 能量估算 204
+> 8.1.3 热效应和可靠性 208
+> 
+> 8.2 硬件功耗降低技术 209
+> 8.2.1 器件缩放 209
+> 8.2.2 低功耗硬件设计 211
+> 8.2.3 电压和频率扩展 211
+> 8.2.4 亚阈值逻辑 212
+> 
+> 8.3 系统架构 213
+> 8.3.1 技术无关设计 213
+> 8.3.2 波拉克法则 214
+> 8.3.3 功率门控 216
+> 8.3.4 实时时间与执行时间 217
+> 
+> 8.4 软件技术 218
+> 8.4.1 系统软件 218
+> 8.4.2 应用软件 219
+> 8.4.3 软件工具 219
+> 
+> 记忆要点 198
+> 书目说明 200
+> 复习提问和问题 200
 
 ## 9 Real-Time Operating Systems 223
 
@@ -385,6 +641,49 @@ Points to Remember 245
 Bibliographic Notes 245
 Review Questions and Problems 246
 
+> 9.1 组件间通信 224
+> 9.1.1 技术独立接口 (TII) 224
+> 9.1.2 链接接口 (LIF) 225
+> 9.1.3 技术独立接口（TDI） 225
+> 9.1.4 通用中间件（GM） 225
+> 
+> 9.2 任务管理 226
+> 9.2.1 简单任务 226
+> 9.2.2 触发任务 228
+> 9.2.3 复杂任务 229
+> 
+> 9.3 时间的双重作用 229
+> 9.3.1 作为数据的时间 230
+> 9.3.2 时间作为控制 231
+> 
+> 9.4 任务间的相互作用 232
+> 9.4.1 协调静态时间表 232
+> 9.4.2 非阻塞写（NBW）协议 233
+> 9.4.3 Semaphore操作 234
+> 
+> 9.5 进程输入/输出 234
+> 9.5.1 模拟输入/输出 234
+> 9.5.2 数字输入/输出 235
+> 9.5.3 中断 236
+> 9.5.4 容错执行器 238
+> 9.5.5 智能仪表 239
+> 9.5.6 物理安装 240
+> 
+> 9.6 协议 241
+> 9.6.1 原始数据、测量数据和协议数据 241
+> 9.6.2 句法协议 242
+> 9.6.3 语义协议 242
+> 
+> 9.7 错误检测 243
+> 9.7.1 监控任务执行时间 243
+> 9.7.2 监控中断 243
+> 9.7.3 重复执行任务 243
+> 9.7.4 看门狗 244
+> 
+> 注意事项 245
+> 书目注释 245
+> 复习提问和问题 246
+
 ## 10 Real-Time Scheduling 247
 
 10.1 The Scheduling Problem 248
@@ -413,6 +712,33 @@ Review Questions and Problems 246
 Points to Remember 265
 Bibliographic Notes 266
 Review Questions and Problems 267
+
+> 10.1 调度问题 248
+> 10.1.1 调度算法的分类 248
+> 10.1.2 可调度性测试 249
+> 10.1.3 对手论证 250
+> 
+> 10.2 最坏情况执行时间 251
+> 10.2.1 简单任务的WCET 252
+> 10.2.2 复杂任务的 WCET 254
+> 10.2.3 随时算法 255
+> 10.2.4 实践现状 255
+> 
+> 10.3 静态调度 256
+> 10.3.1 从搜索角度看静态调度 257
+> 10.3.2 提高静态调度的灵活性 258
+> 
+> 10.4 动态调度 260
+> 10.4.1 调度独立任务 260
+> 10.4.2 调度依赖任务 262
+> 
+> 10.5 其他调度策略 263
+> 10.5.1 分布式系统中的调度 263
+> 10.5.2 反馈调度 264
+> 
+> 注意事项 265
+> 书目注释 266
+> 复习问题解答 267
 
 ## 11 System Design 269
 
@@ -459,6 +785,49 @@ Bibliographic Notes 303
 Points to Remember 303
 Review Questions and Problems 305
 
+> 11.1 系统设计 270
+> 11.1.1 设计过程 270
+> 11.1.2 约束的作用 272
+> 11.1.3 系统设计与软件设计 272
+> 
+> 11.2 设计阶段 274
+> 11.2.1 目的分析 275
+> 11.2.2 需求捕捉 275
+> 11.2.3 架构设计 276
+> 11.2.4 组件设计 277
+> 
+> 11.3 设计风格 277
+> 11.3.1 基于模型的设计 277
+> 11.3.2 基于组件的设计 279
+> 11.3.3 架构设计语言 280
+> 11.3.4 分解测试 281
+> 
+> 11.4 安全关键型系统的设计 283
+> 11.4.1 什么是安全？284
+> 11.4.2 安全分析 285
+> 11.4.3 安全案例 288
+> 11.4.4 安全标准 291
+> 
+> 11.5 设计多样性 293
+> 11.5.1 多种软件版本 294
+> 11.5.2 故障安全系统示例 295
+> 11.5.3 多层次系统 296
+> 
+> 11.6 可维护性设计 296
+> 11.6.1 维护成本 297
+> 11.6.2 维护策略 298
+> 11.6.3 软件维护 299
+> 
+> 11.7 时间触发架构 300
+> 11.7.1 全局时间一致原则 300
+> 11.7.2 组件定向原则 301
+> 11.7.3 一致性通信原则 302
+> 11.7.4 容错原则 303
+> 
+> 书目注释 303
+> 记忆要点 303
+> 复习提问和问题 305
+
 ## 12 Validation 307
 
 12.1 Validation Versus Verification 308
@@ -488,6 +857,34 @@ Review Questions and Problems 305
 Points to Remember 322
 Bibliographic Notes 323
 Review Questions and Problems 323
+
+> 12.1 验证与核查 308
+> 
+> 12.2 测试挑战 309
+> 12.2.1 可测试性设计 310
+> 12.2.2 测试数据的选择 310
+> 12.2.3 测试 Oracle 312
+> 12.2.4 系统演进与技术就绪水平（TRLs） 313
+> 
+> 12.3 基于组件的系统测试 314
+> 12.3.1 组件提供者 314
+> 12.3.2 组件用户 314
+> 12.3.3 通信组件 315
+> 
+> 12.4 形式化方法 316
+> 12.4.1 现实世界中的形式化方法 316
+> 12.4.2 形式化方法的分类 317
+> 12.4.3 形式化方法的优势 317
+> 12.4.4 模型检查 319
+> 
+> 12.5 故障注入 319
+> 12.5.1 软件实现的故障注入 320
+> 12.5.2 物理故障注入 320
+> 12.5.3 传感器和执行器故障 321
+> 
+> 注意事项 322
+> 参考书目注释 323
+> 复习问题解答 323
 
 ## 13 Internet of Things 325
 
@@ -522,6 +919,37 @@ Points to Remember 339
 Bibliographic Notes 340
 Review Questions and Problems 341
 
+> 13.1 物联网（IoT）的愿景 326
+> 
+> 13.2 物联网的驱动力 327
+> 13.2.1 统一接入 327
+> 13.2.2 物流 327
+> 13.2.3 节约能源 328
+> 13.2.4 实体安保与安全 328
+> 13.2.5 工业 329
+> 13.2.6 医疗 329
+> 13.2.7 生活方式 329
+> 
+> 13.3 物联网的技术问题 329
+> 13.3.1 互联网集成 329
+> 13.3.2 命名和识别 330
+> 13.3.3 近场通信 331
+> 13.3.4 物联网设备能力与云计算 332
+> 13.3.5 自主组件 332
+> 
+> 13.4 RFID 技术 333
+> 13.4.1 概述 334
+> 13.4.2 产品电子代码（EPC） 334
+> 13.4.3 RFID 标签 335
+> 13.4.4 RFID 阅读器 336
+> 13.4.5 RFID 安全性 336
+> 
+> 13.5 无线传感器网络（WSN） 338
+> 
+> 注意事项 339
+> 书目注释 340
+> 复习题和问题 341
+
 ## 14 Cloud and Fog Computing 343
 
 14.1 Introduction 344
@@ -551,6 +979,34 @@ Review Questions and Problems 365
 Annexes 367
 References 383
 Index 395
+
+> 14.1 导言 344
+> 
+> 14.2 云的特点 345
+> 
+> 14.3 雾计算的到来 347
+> 14.3.1 面向分布式嵌入式系统的雾计算 348
+> 14.3.2 雾计算的优势和风险 349
+> 14.3.3 一般雾计算及与边缘计算的比较 351
+> 
+> 14.4 部分云和雾技术 351
+> 14.4.1 资源池 352
+> 14.4.2 连接 356
+> 14.4.3 配置 357
+> 14.4.4 系统设计自动化 358
+> 
+> 14.5 示例用例 358
+> 14.5.1 支持云计算的使用案例 359
+> 14.5.2 支持雾计算的使用案例 360
+> 14.5.3 神经 362
+> 
+> 注意事项 363
+> 书目注释 364
+> 复习问题解答 365
+> 
+> 附件 367
+> 参考文献 383
+> 索引 395
 
 # Chapter 1 The Real-Time Environment
 
