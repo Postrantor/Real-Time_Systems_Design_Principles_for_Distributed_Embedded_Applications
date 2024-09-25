@@ -468,7 +468,6 @@ tip: translate by baidu@2024-09-24 23:27:16
   - [W](#w)
   - [X/Z](#xz)
 
-
 # Hermann Kopetz Wilfried Steiner
 
 ## Real-Time Systems
@@ -486,15 +485,15 @@ The Editor(s) (if applicable) and The Author(s), under exclusive license to Spri
 
 ## Preface
 
-The primary objective of this book is to serve as a textbook for students who take a senior undergraduate or a first-year graduate course on real-time embedded sys­ tems, also called cyber-physical systems . The book’s structure—the material is organized into 14 chapters—maps to the 14 weeks of a semester. The book is also intended for practitioners in industry who want to learn about the state of the art in real-time embedded system design and need a reference book that explains the fun­ damental concepts of the field. More than a 1000 students used the first edition of this book, published about 25 years ago, as a text for the real-time systems course at the Vienna University of Technology. The feedback from these students and many new developments in this dynamic field of embedded real-time systems have been incorporated in the second edition. This third edition of the book includes learnings from industrial applications of its elaborated design principles and addresses the ongoing convergence of real-time embedded systems with IT (information technol­ ogy) systems. It also covers emerging autonomous system developments.
+The primary objective of this book is to serve as a textbook for students who take a senior undergraduate or a first-year graduate course on real-time embedded sys­ tems, also called cyber-physical systems. The book’s structure—the material is organized into 14 chapters—maps to the 14 weeks of a semester. The book is also intended for practitioners in industry who want to learn about the state of the art in real-time embedded system design and need a reference book that explains the fun­ damental concepts of the field. More than a 1000 students used the first edition of this book, published about 25 years ago, as a text for the real-time systems course at the Vienna University of Technology. The feedback from these students and many new developments in this dynamic field of embedded real-time systems have been incorporated in the second edition. This third edition of the book includes learnings from industrial applications of its elaborated design principles and addresses the ongoing convergence of real-time embedded systems with IT (information technol­ ogy) systems. It also covers emerging autonomous system developments.
 
 > 本书的主要目的是为修读实时嵌入式系统(也称为网络物理系统)高年级本科生或一年级研究生课程的学生提供教科书。这本书的结构——材料分为 14 章——对应一学期的 14 周。这本书也适用于希望了解实时嵌入式系统设计最新技术并需要一本解释该领域有趣基本概念的参考书的行业从业者。超过 1000 名学生将这本大约 25 年前出版的第一版作为维也纳理工大学实时系统课程的教材。这些学生的反馈以及嵌入式实时系统这一动态领域的许多新发展已被纳入第二版。这本书的**第三版**包括从工业应用中学习其精心设计的原则，并解决了实时嵌入式系统与 IT(信息技术)系统的持续融合问题。它还涵盖了新兴的自主系统开发。
 
-The book’s focus is on the design of distributed real-time systems at the architec­ ture level. While a significant part of the established computer science literature abstracts from the progression of real time, real-time system designers cannot get away with such an abstraction. In this book, the progression of physical time is considered a first-order citizen that shapes many of the relevant concepts. The book explains the fundamental concepts related to the progression of time on a number of practical, insightful examples from industry. The conceptual model of a distributed real-time system has been extended, and precise definitions of important time-­ related concepts, such as sparse time , state , temporal accuracy of real-time data , and determinism , are given. This book emphasizes design principles that result in understandable systems, ir respectively of a system’s size . Following these principles ensures that simple models faithfully represent an implemented system from differ­ ent viewpoints and at different levels of abstraction.
+The book’s focus is on the design of distributed real-time systems at the architec­ ture level. While a significant part of the established computer science literature abstracts from the progression of real time, real-time system designers cannot get away with such an abstraction. In this book, the progression of physical time is considered a first-order citizen that shapes many of the relevant concepts. The book explains the fundamental concepts related to the progression of time on a number of practical, insightful examples from industry. The conceptual model of a distributed real-time system has been extended, and precise definitions of important time-­ related concepts, such as sparse time , state , temporal accuracy of real-time data , and determinism , are given. This book emphasizes design principles that result in understandable systems, ir respectively of a system’s size. Following these principles ensures that simple models faithfully represent an implemented system from differ­ ent viewpoints and at different levels of abstraction.
 
 > 本书的重点是在**架构级别设计分布式实时系统**。虽然已有的计算机科学文献中有很大一部分是从实时发展中抽象出来的，但实时系统设计人员无法摆脱这种抽象。在这本书中，**物理时间的进程被认为是一个一等公民，它塑造了许多相关概念**。这本书通过行业中一些实用、有见地的例子**解释了与时间进程相关的基本概念**。扩展了**分布式实时系统的概念模型**，并给出了重要**时间相关概念的精确定义，如稀疏时间、状态、实时数据的时间精度和确定性**。这本书强调了设计原则，这些原则分别导致了系统大小的**可理解系统**。遵循这些原则可以确保简单模型从不同的角度和不同的抽象级别忠实地表示一个已实现的系统。
 
-Since the second edition of this book, about 11 years ago, cloud computing has revolutionized classical IT systems. Inspired by this development, strong market forces seek to replicate this success in the real-time embedded systems market by reusing native cloud technologies and principles. However, naively doing so will lead to disaster. Thus, this third edition includes a new chapter on cloud and fog computing that argues for the fog architectural style to decouple the world of cloud from the world of real-time embedded systems . The second major change is the rewritten chapter on real-time networks that now also covers IEEE 802.1 Time-­ Sensitive Networking (TSN), the incorporation of the time-triggered paradigm in the mainstream IT networking set of standards. All other chapters have been revised and updated. This third edition includes approximately 80 new references in total.
+Since the second edition of this book, about 11 years ago, cloud computing has revolutionized classical IT systems. Inspired by this development, strong market forces seek to replicate this success in the real-time embedded systems market by reusing native cloud technologies and principles. However, naively doing so will lead to disaster. Thus, this third edition includes a new chapter on cloud and fog computing that argues for the fog architectural style to decouple the world of cloud from the world of real-time embedded systems. The second major change is the rewritten chapter on real-time networks that now also covers IEEE 802.1 Time-­ Sensitive Networking (TSN), the incorporation of the time-triggered paradigm in the mainstream IT networking set of standards. All other chapters have been revised and updated. This third edition includes approximately 80 new references in total.
 
 > 自大约 11 年前本书第二版问世以来，**云计算**已经彻底改变了传统的 IT 系统。受到这一发展的启发，强大的市场力量试图通过重用本地云技术和原理，在实时嵌入式系统市场复制这一成功。然而，天真地这样做会导致灾难。因此，第三版包括一个关于**云计算的新章节**，该章节主张云架构风格将**云世界与实时嵌入式系统世界解耦**。第二个主要变化是**重写了关于实时网络的章节**，现在也涵盖了 IEEE 802.1 时间敏感网络(TSN)，将时间触发范式纳入了主流 IT 网络标准集。所有其他章节均已修订和更新。第三版共包括约 80 篇新参考文献。
 
@@ -623,24 +622,24 @@ Review Questions and Problems 55
 > 2.1.2 概念的定义 34
 > 2.1.3 认知复杂性 35
 > 2.1.4 简化策略 37
-> 
+>
 > 2.2 概念景观 38
 > 2.2.1 概念的形成 38
 > 2.2.2 科学概念 40
 > 2.2.3 信息的概念 41
 > 2.2.4 变量的语义内容 42
-> 
+>
 > 2.3 模型构建的本质 43
 > 2.3.1 目的和观点 44
 > 2.3.2 重大挑战 46
-> 
+>
 > 2.4 新出现的问题 46
 > 2.4.1 不可还原性 47
 > 2.4.2 先验属性和衍生属性 47
 > 2.4.3 复杂系统 48
-> 
+>
 > 2.5 如何实现简单性？51
-> 
+>
 > 书目注释 53
 > 记忆要点 53
 > 复习题和问题 55
@@ -685,19 +684,19 @@ Review Questions and Problems 83
 > 3.1.2 时钟 59
 > 3.1.3 精确度与准确度 61
 > 3.1.4 时间标准 63
-> 
+>
 > 3.2 时间测量 64
-> 3.2.1 全球时间 64
+> 3.2.1 全局时间 64
 > 3.2.2 时间间隔测量 66
 > 3.2.3 π / Δ - 优先级 66
 > 3.2.4 时间测量的基本限制 68
-> 
+>
 > 3.3 密集时间与稀疏时间 68
 > 3.3.1 密集时间基础 69
 > 3.3.2 稀疏时基 70
 > 3.3.3 时空网格 71
 > 3.3.4 时间的循环表示法 72
-> 
+>
 > 3.4 内部时钟同步 73
 > 3.4.1 同步条件 73
 > 3.4.2 中央主站同步 75
@@ -708,7 +707,7 @@ Review Questions and Problems 83
 > 3.5.1 外部时间源 79
 > 3.5.2 时间网关 81
 > 3.5.3 时间格式 81
-> 
+>
 > 注意事项 82
 > 书目说明 83
 > 复习提问和问题 83
@@ -763,41 +762,41 @@ Review Questions and Problems 117
 > 4.1.2 组件集群 89
 > 4.1.3 时间控制与逻辑控制 90
 > 4.1.4 事件触发控制与时间触发控制 92
-> 
+>
 > 4.2 部件状态 92
 > 4.2.1 状态的定义 93
 > 4.2.2 袖珍计算器示例 93
 > 4.2.3 地面状态 95
 > 4.2.4 数据库组件 96
-> 
+>
 > 4.3 消息概念 97
 > 4.3.1 消息结构 97
 > 4.3.2 事件信息与状态信息 99
 > 4.3.3 事件触发 (ET) 报文 99
 > 4.3.4 时间触发 (TT) 报文 99
-> 
+>
 > 4.4 组件接口 100
 > 4.4.1 接口特征 101
 > 4.4.2 链接接口 (LIF) 102
 > 4.4.3 技术独立接口 (TII) 103
 > 4.4.4 技术独立接口 (TDI) 103
 > 4.4.5 本地接口 103
-> 
+>
 > 4.5 网关组件 104
 > 4.5.1 属性不匹配 105
 > 4.5.2 网关组件的 LIF 接口与本地接口 105
 > 4.5.3 标准化报文接口 107
-> 
+>
 > 4.6 链接接口规范 107
 > 4.6.1 传输规范 108
 > 4.6.2 运行规范 109
 > 4.6.3 元层面规范 110
-> 
+>
 > 4.7 组件集成 111
 > 4.7.1 可组合性原则 111
 > 4.7.2 集成观点 112
 > 4.7.3 系统的系统 113
-> 
+>
 > 书目注释 117
 > 复习提问与问题 117
 
@@ -842,35 +841,35 @@ Review Questions and Problems 140
 > 5.1 实时实体 120
 > 5.1.1 控制范围 120
 > 5.1.2 离散和连续实时实体 121
-> 
+>
 > 5.2 观察 121
 > 5.2.1 非定时观测 121
 > 5.2.2 间接观测 122
 > 5.2.3 状态观测 122
 > 5.2.4 事件观测 123
-> 
+>
 > 5.3 实时图像和实时对象 124
 > 5.3.1 实时图像 124
 > 5.3.2 实时对象 124
-> 
+>
 > 5.4 时间精度 125
 > 5.4.1 定义 125
 > 5.4.2 实时图像分类 125
 > 5.4.3 状态估计 125
 > 5.4.4 可组合性考虑因素 130
-> 
+>
 > 5.5 持久性和闲置性 130
 > 5.5.1 持久性 130
 > 5.5.2 动作延迟时间 132
 > 5.5.3 精度间隔与动作延迟 133
 > 5.5.4 失效 133
-> 
+>
 > 5.6 确定性 133
 > 5.6.1 确定性的定义 134
 > 5.6.2 一致的初始状态 136
 > 5.6.3 非确定性设计结构 (NDDC) 137
 > 5.6.4 确定性的恢复 138
-> 
+>
 > 需要记住的要点 139
 > 书目注释 140
 > 复习问题与难题 140
@@ -916,33 +915,33 @@ Review Questions and Problems 174
 > 6.1.1 故障 145
 > 6.1.2 错误 146
 > 6.1.3 故障 147
-> 
+>
 > 6.2 信息安全 150
 > 6.2.1 安全信息流 151
 > 6.2.2 安全威胁 152
 > 6.2.3 密码方法 154
 > 6.2.4 网络验证 157
 > 6.2.5 保护实时控制数据 157
-> 
+>
 > 6.3 异常检测 158
 > 6.3.1 什么是异常？158
 > 6.3.2 故障检测 160
 > 6.3.3 错误检测 161
-> 
+>
 > 6.4 容错 162
 > 6.4.1 故障假设 163
 > 6.4.2 容错单元 164
 > 6.4.3 成员服务 167
-> 
+>
 > 6.5 健壮性和恢复能力 168
 > 6.5.1 稳健性概念 168
 > 6.5.2 恢复能力的概念 170
-> 
+>
 > 6.6 组件重新整合 170
 > 6.6.1 寻找重新整合点 170
 > 6.6.2 最小化地面状态 171
 > 6.6.3 组件重启 172
-> 
+>
 > 注意事项 173
 > 书目注释 174
 > 复习问题解答 174
@@ -984,27 +983,27 @@ Review Questions and Problems 200
 > 7.1.2 可靠性和安全性 179
 > 7.1.3 灵活性 180
 > 7.1.4 通信带宽和成本效益 181
-> 
+>
 > 7.2 设计原则和陷阱 181
 > 7.2.1 实时网络模型 182
 > 7.2.2 报文类型 182
 > 7.2.3 流量控制 183
 > 7.2.4 设计限制 184
 > 7.2.5 设计陷阱 186
-> 
+>
 > 7.3 事件触发式通信 187
 > 7.3.1 CAN 188
 > 7.3.2 以太网 189
-> 
+>
 > 7.4 速率受限通信 190
 > 7.4.1 航空电子全双工交换式以太网 (AFDX)：ARINC 664-p7 191
 > 7.4.2 音频/视频桥接：IEEE 802.1 AVB 192
-> 
+>
 > 7.5 时间触发通信 192
 > 7.5.1 TTP 194
 > 7.5.2 TTEthernet 195
 > 7.5.3 时间敏感网络：IEEE 802.1 TSN 197
-> 
+>
 > 注意事项 198
 > 书目注释 200
 > 复习提问和问题 200
@@ -1041,24 +1040,24 @@ Review Questions and Problems 200
 > 8.1.1 基本概念 202
 > 8.1.2 能量估算 204
 > 8.1.3 热效应和可靠性 208
-> 
+>
 > 8.2 硬件功耗降低技术 209
 > 8.2.1 器件缩放 209
 > 8.2.2 低功耗硬件设计 211
 > 8.2.3 电压和频率扩展 211
 > 8.2.4 亚阈值逻辑 212
-> 
+>
 > 8.3 系统架构 213
 > 8.3.1 技术无关设计 213
 > 8.3.2 波拉克法则 214
 > 8.3.3 功率门控 216
 > 8.3.4 实时时间与执行时间 217
-> 
+>
 > 8.4 软件技术 218
 > 8.4.1 系统软件 218
 > 8.4.2 应用软件 219
 > 8.4.3 软件工具 219
-> 
+>
 > 记忆要点 198
 > 书目说明 200
 > 复习提问和问题 200
@@ -1113,21 +1112,21 @@ Review Questions and Problems 246
 > 9.1.2 链接接口 (LIF) 225
 > 9.1.3 技术独立接口（TDI） 225
 > 9.1.4 通用中间件（GM） 225
-> 
+>
 > 9.2 任务管理 226
 > 9.2.1 简单任务 226
 > 9.2.2 触发任务 228
 > 9.2.3 复杂任务 229
-> 
+>
 > 9.3 时间的双重作用 229
 > 9.3.1 作为数据的时间 230
 > 9.3.2 时间作为控制 231
-> 
+>
 > 9.4 任务间的相互作用 232
 > 9.4.1 协调静态时间表 232
 > 9.4.2 非阻塞写（NBW）协议 233
-> 9.4.3 Semaphore操作 234
-> 
+> 9.4.3 Semaphore 操作 234
+>
 > 9.5 进程输入/输出 234
 > 9.5.1 模拟输入/输出 234
 > 9.5.2 数字输入/输出 235
@@ -1135,18 +1134,18 @@ Review Questions and Problems 246
 > 9.5.4 容错执行器 238
 > 9.5.5 智能仪表 239
 > 9.5.6 物理安装 240
-> 
+>
 > 9.6 协议 241
 > 9.6.1 原始数据、测量数据和协议数据 241
 > 9.6.2 句法协议 242
 > 9.6.3 语义协议 242
-> 
+>
 > 9.7 错误检测 243
 > 9.7.1 监控任务执行时间 243
 > 9.7.2 监控中断 243
 > 9.7.3 重复执行任务 243
 > 9.7.4 看门狗 244
-> 
+>
 > 注意事项 245
 > 书目注释 245
 > 复习提问和问题 246
@@ -1184,25 +1183,25 @@ Review Questions and Problems 267
 > 10.1.1 调度算法的分类 248
 > 10.1.2 可调度性测试 249
 > 10.1.3 对手论证 250
-> 
+>
 > 10.2 最坏情况执行时间 251
-> 10.2.1 简单任务的WCET 252
+> 10.2.1 简单任务的 WCET 252
 > 10.2.2 复杂任务的 WCET 254
 > 10.2.3 随时算法 255
 > 10.2.4 实践现状 255
-> 
+>
 > 10.3 静态调度 256
 > 10.3.1 从搜索角度看静态调度 257
 > 10.3.2 提高静态调度的灵活性 258
-> 
+>
 > 10.4 动态调度 260
 > 10.4.1 调度独立任务 260
 > 10.4.2 调度依赖任务 262
-> 
+>
 > 10.5 其他调度策略 263
 > 10.5.1 分布式系统中的调度 263
 > 10.5.2 反馈调度 264
-> 
+>
 > 注意事项 265
 > 书目注释 266
 > 复习问题解答 267
@@ -1256,41 +1255,41 @@ Review Questions and Problems 305
 > 11.1.1 设计过程 270
 > 11.1.2 约束的作用 272
 > 11.1.3 系统设计与软件设计 272
-> 
+>
 > 11.2 设计阶段 274
 > 11.2.1 目的分析 275
 > 11.2.2 需求捕捉 275
 > 11.2.3 架构设计 276
 > 11.2.4 组件设计 277
-> 
+>
 > 11.3 设计风格 277
 > 11.3.1 基于模型的设计 277
 > 11.3.2 基于组件的设计 279
 > 11.3.3 架构设计语言 280
 > 11.3.4 分解测试 281
-> 
+>
 > 11.4 安全关键型系统的设计 283
 > 11.4.1 什么是安全？284
 > 11.4.2 安全分析 285
 > 11.4.3 安全案例 288
 > 11.4.4 安全标准 291
-> 
+>
 > 11.5 设计多样性 293
 > 11.5.1 多种软件版本 294
 > 11.5.2 故障安全系统示例 295
 > 11.5.3 多层次系统 296
-> 
+>
 > 11.6 可维护性设计 296
 > 11.6.1 维护成本 297
 > 11.6.2 维护策略 298
 > 11.6.3 软件维护 299
-> 
+>
 > 11.7 时间触发架构 300
 > 11.7.1 全局时间一致原则 300
 > 11.7.2 组件定向原则 301
 > 11.7.3 一致性通信原则 302
 > 11.7.4 容错原则 303
-> 
+>
 > 书目注释 303
 > 记忆要点 303
 > 复习提问和问题 305
@@ -1326,29 +1325,29 @@ Bibliographic Notes 323
 Review Questions and Problems 323
 
 > 12.1 验证与核查 308
-> 
+>
 > 12.2 测试挑战 309
 > 12.2.1 可测试性设计 310
 > 12.2.2 测试数据的选择 310
 > 12.2.3 测试 Oracle 312
 > 12.2.4 系统演进与技术就绪水平（TRLs） 313
-> 
+>
 > 12.3 基于组件的系统测试 314
 > 12.3.1 组件提供者 314
 > 12.3.2 组件用户 314
 > 12.3.3 通信组件 315
-> 
+>
 > 12.4 形式化方法 316
 > 12.4.1 现实世界中的形式化方法 316
 > 12.4.2 形式化方法的分类 317
 > 12.4.3 形式化方法的优势 317
 > 12.4.4 模型检查 319
-> 
+>
 > 12.5 故障注入 319
 > 12.5.1 软件实现的故障注入 320
 > 12.5.2 物理故障注入 320
 > 12.5.3 传感器和执行器故障 321
-> 
+>
 > 注意事项 322
 > 参考书目注释 323
 > 复习问题解答 323
@@ -1387,7 +1386,7 @@ Bibliographic Notes 340
 Review Questions and Problems 341
 
 > 13.1 物联网（IoT）的愿景 326
-> 
+>
 > 13.2 物联网的驱动力 327
 > 13.2.1 统一接入 327
 > 13.2.2 物流 327
@@ -1396,23 +1395,23 @@ Review Questions and Problems 341
 > 13.2.5 工业 329
 > 13.2.6 医疗 329
 > 13.2.7 生活方式 329
-> 
+>
 > 13.3 物联网的技术问题 329
 > 13.3.1 互联网集成 329
 > 13.3.2 命名和识别 330
 > 13.3.3 近场通信 331
 > 13.3.4 物联网设备能力与云计算 332
 > 13.3.5 自主组件 332
-> 
+>
 > 13.4 RFID 技术 333
 > 13.4.1 概述 334
 > 13.4.2 产品电子代码（EPC） 334
 > 13.4.3 RFID 标签 335
 > 13.4.4 RFID 阅读器 336
 > 13.4.5 RFID 安全性 336
-> 
+>
 > 13.5 无线传感器网络（WSN） 338
-> 
+>
 > 注意事项 339
 > 书目注释 340
 > 复习题和问题 341
@@ -1448,29 +1447,29 @@ References 383
 Index 395
 
 > 14.1 导言 344
-> 
+>
 > 14.2 云的特点 345
-> 
+>
 > 14.3 雾计算的到来 347
 > 14.3.1 面向分布式嵌入式系统的雾计算 348
 > 14.3.2 雾计算的优势和风险 349
 > 14.3.3 一般雾计算及与边缘计算的比较 351
-> 
+>
 > 14.4 部分云和雾技术 351
 > 14.4.1 资源池 352
 > 14.4.2 连接 356
 > 14.4.3 配置 357
 > 14.4.4 系统设计自动化 358
-> 
+>
 > 14.5 示例用例 358
 > 14.5.1 支持云计算的使用案例 359
 > 14.5.2 支持雾计算的使用案例 360
 > 14.5.3 神经 362
-> 
+>
 > 注意事项 363
 > 书目注释 364
 > 复习问题解答 365
-> 
+>
 > 附件 367
 > 参考文献 383
 > 索引 395
@@ -1481,83 +1480,105 @@ Index 395
 
 The purpose of this introductory chapter is to describe the environment of real-time computer systems from a number of different perspectives. A solid understanding of the technical and economic factors that characterize a real-time application helps to interpret the demands that the system designer must cope with. The chapter starts with the definition of a real-time system and with a discussion of its functional and non functional requirements. Particular emphasis is placed on the temporal require­ ments that are derived from the well-understood properties of control applications. The objective of a control algorithm is to drive a process such that a performance criterion is satisfied. Random disturbances occurring in the environment degrade system performance and must be taken into account by the control algorithm. Any additional uncertainty that is introduced into the control loop by the control system itself, e.g., a non-predictable jitter of the control loop, results in a degradation of the quality of control.
 
-> 本介绍性章节的目的是从多个不同的角度描述实时计算机系统的环境。对表征实时应用程序的技术和经济因素的深入理解有助于解释系统设计者必须应对的需求。本章从实时系统的定义开始，讨论了其功能和非功能要求。特别强调的是从控制应用程序的良好理解属性中得出的时间要求。控制算法的目标是驱动一个过程，以满足性能标准。环境中发生的随机干扰会降低系统性能，控制算法必须考虑到这一点。控制系统本身引入控制回路的任何额外的不确定性，例如控制回路的不可预测的抖动，都会导致控制质量的下降。
+>> 本介绍性章节的目的是**从多个不同的角度描述实时计算机系统的环境**。对表征实时应用程序的技术和经济因素的深入理解有助于解释系统设计者必须应对的需求。本章从实时系统的定义开始，讨论了其功能和非功能要求。特别强调的是**从控制应用程序的良好理解属性中得出的时间要求**。**控制算法的目标是驱动一个过程，以满足性能标准**。环境中发生的**随机干扰会降低系统性能**，控制算法必须考虑到这一点。控制系统**本身引入控制回路(control loops)的任何额外的不确定性**，例如控制回路(control loops)的不可预测的抖动，都会导致控制质量的下降。
 
 In Sects. 1.2 , 1.3 , 1.4 and 1.5 , real-time applications are classified from a number of viewpoints. Special emphasis is placed on the fundamental differences between hard and soft real-time systems. Because soft real-time systems do not have severe failure modes, a less rigorous approach to their design is often followed. Sometimes resource-inadequate solutions that will not handle the rarely occurring peak-load scenarios are accepted on economic arguments. In a hard real-time application, such an approach is unacceptable because the safety of a design in all specified situa­ tions, even if they occur only very rarely, must be demonstrated vis-a-vis a certifica­ tion agency. In Sect. 1.6 , a brief analysis of the real-time system market is carried out with emphasis on the field of embedded real-time systems. An embedded real-­ time system is a part of a self-contained product, e.g., a television set or an automo­ bile. Embedded real-time systems, also called cyber-physical systems (CPS), form the most important market segment for real-time technology and the computer industry in general.
 
-> 在教派中。1.2、1.3、1.4 和 1.5，实时应用程序从多个角度进行分类。特别强调了硬实时系统和软实时系统之间的根本区别。由于软实时系统没有严重的故障模式，因此通常采用不那么严格的设计方法。有时，资源不足的解决方案无法处理很少发生的峰值负载情况，这在经济上是可以接受的。在硬实时应用中，这种方法是不可接受的，因为必须向认证机构证明设计在所有指定情况下的安全性，即使这种情况很少发生。在门派。1.6，对实时系统市场进行了简要分析，重点分析了嵌入式实时系统领域。嵌入式实时系统是独立产品的一部分，例如电视机或汽车。嵌入式实时系统，也称为网络物理系统(CPS)，是实时技术和计算机行业最重要的细分市场。
+> 在章节 1.2、1.3、1.4 和 1.5 中，实时应用程序从多个角度进行分类。特别强调了**硬实时系统和软实时系统之间的根本区别**。
+> 由于软实时系统没有严重的故障模式，因此通常采用不那么严格的设计方法。**有时，资源不足的解决方案无法处理很少发生的峰值负载情况，这在经济上是可以接受的**。
+> 在硬实时应用中，这种方法是不可接受的，因为必须向认证机构证明设计在所有指定情况下的安全性，即使这种情况很少发生。
+> 在章节 1.6 中，对实时系统市场进行了简要分析，重点分析了嵌入式实时系统领域。嵌入式实时系统是独立产品的一部分，例如电视机或汽车。嵌入式实时系统，也称为网络物理系统(CPS)，是实时技术和计算机行业最重要的细分市场。
 
 ## 1.1 When Is a Computer System Real-Time?
 
 A real-time computer system is a computer system where the correctness of the system behavior depends not only on the logical results of the computations but also on the physical time when these results are produced. By system behavior we mean the sequence of outputs in time of a system.
 
-> 实时计算机系统是一种计算机系统，其中系统行为的正确性不仅取决于计算的逻辑结果，还取决于产生这些结果的物理时间。系统行为是指系统在时间上的输出序列。
+>> 实时计算机系统是一种计算机系统，其中系统行为的正确性不仅取决于计算的**逻辑结果**，还取决于产生这些**结果的物理时间**。系统行为是指系统在**时间上的输出序列**。
 
-We model the flow of time by a directed timeline that extends from the past into the future. A cut of the timeline is called an instant . Any ideal occurrence that hap­ pens at an instant is called an event . Information that describes an event (see also Sect. 5.2.4 on event observation) is called event information. The present point in time, now , is a very special event that separates the past from the future (the pre­ sented model of time is based on Newtonian physics and disregards relativistic effects). An interval on the timeline, called a duration , is defined by two events, the start event and the terminating event of the interval . A digital clock partitions the timeline into a sequence of equally spaced durations, called the granules of the clock, which are delimited by special periodic events, the ticks of the clock.
+We model the flow of time by a directed timeline that extends from the past into the future. A cut of the timeline is called an instant. Any ideal occurrence that hap­ pens at an instant is called an event. Information that describes an event (see also Sect. 5.2.4 on event observation) is called event information. The present point in time, now , is a very special event that separates the past from the future (the pre­ sented model of time is based on Newtonian physics and disregards relativistic effects). An interval on the timeline, called a duration , is defined by two events, the start event and the terminating event of the interval. A digital clock partitions the timeline into a sequence of equally spaced durations, called the granules of the clock, which are delimited by special periodic events, the ticks of the clock.
 
-> 我们通过从过去延伸到未来的有向时间线来模拟时间流。时间线的切割称为瞬间。任何在瞬间发生的理想事件都被称为事件。描述事件的信息(另见关于事件观察的第 5.2.4 节)称为事件信息。现在的时间点，现在，是一个非常特殊的事件，将过去与未来分开(所提出的时间模型基于牛顿物理学，忽略了相对论效应)。时间线上的间隔称为持续时间，由两个事件定义，即间隔的开始事件和终止事件。数字时钟将时间线划分为一系列等距的持续时间，称为时钟的颗粒，由特殊的周期性事件(时钟的滴答声)分隔。
+>> 我们**通过从过去延伸到未来的有向时间线来模拟时间流**。
+>> **时间线的切割称为瞬间**。
+>> **任何在瞬间发生的理想事件都被称为事件**。
+>> **描述事件的信息(另见关于事件观察的第 5.2.4 节)称为事件信息**。
+>> 现在的时间点，**现在，是一个非常特殊的事件，将过去与未来分开**(所提出的时间模型基于牛顿物理学，忽略了相对论效应)。
+>> **时间线上的间隔称为持续时间，由两个事件定义，即间隔的开始事件和终止事件**。
+>> **数字时钟将时间线划分为一系列等距的持续时间，称为时钟的颗粒，由特殊的周期性事件(时钟的滴答声)分隔**。
 
 If the real-time computer system is distributed (and most of them are), it consists of a set of (computer) nodes interconnected by a real-time communication network.
 
-> 如果实时计算机系统是分布式的(大多数都是分布式的)，它由一组通过实时通信网络互连的(计算机)节点组成。
+>> 如果实时计算机系统是分布式的(大多数都是分布式的)，它由一组通过实时通信网络互连的(计算机)节点组成。
 
-The interface between the human operator and the real-time computer system is called the man-machine interface , and the interface between the controlled object and the real-time computer system is called the instrumentation interface . The man-­ machine interface consists of input devices (e.g., keyboard) and output devices (e.g., display) that interface to the human operator. The instrumentation interface consists of the sensors and actuators that transform the physical signals (e.g., voltages, cur­ rents) in the controlled cluster into a digital form and vice versa.
+The interface between the human operator and the real-time computer system is called the man-machine interface , and the interface between the controlled object and the real-time computer system is called the instrumentation interface. The man-­ machine interface consists of input devices (e.g., keyboard) and output devices (e.g., display) that interface to the human operator. The instrumentation interface consists of the sensors and actuators that transform the physical signals (e.g., voltages, cur­ rents) in the controlled cluster into a digital form and vice versa.
 
-> 操作人员与实时计算机系统之间的接口称为人机接口，被控对象与实时计算机之间的接口也称为仪表接口。人机界面由输入设备(如键盘)和输出设备(如显示器)组成，与人类操作员进行交互。仪表接口由传感器和执行器组成，它们将受控集群中的物理信号(如电压、电流)转换为数字形式，反之亦然。
+>> 操作人员与实时计算机系统之间的接口称为**人机接口**，
+>> 被控对象与实时计算机之间的接口也称为**仪表接口**。
+>> 人机界面由输入设备(如键盘)和输出设备(如显示器)组成，与人类操作员进行交互。
+>> 仪表接口由传感器和执行器组成，它们将受控集群中的物理信号(如电压、电流)转换为数字形式，反之亦然。
 
 > ![](images/d8903c26ea2685eced632dea6d53cb5820d77fa291635fb8f477e8380140683a.jpg)
 > Fig.1.1 Real-time system
 
-A real-time computer system must react to stimuli from its environment (the controlled cluster or the operator cluster) within time intervals dictated by its envi­ ronment. The instant when a result must be produced is called a deadline . If a result has utility even after the deadline has passed, the deadline is classified as soft ; oth­ erwise it is firm . If severe consequences could result if a firm deadline is missed, the deadline is called hard.
+A real-time computer system must react to stimuli from its environment (the controlled cluster or the operator cluster) within time intervals dictated by its envi­ ronment. The instant when a result must be produced is called a deadline. If a result has utility even after the deadline has passed, the deadline is classified as soft; oth­ erwise it is firm. If severe consequences could result if a firm deadline is missed, the deadline is called hard.
 
-> 实时计算机系统必须在其环境规定的时间间隔内对来自其环境(受控集群或操作员集群)的刺激做出反应。必须产生结果的时刻称为截止日期。如果一个结果在截止日期过后仍然有用，则该截止日期被归类为软截止日期；否则，它是坚定的。如果错过一个确定的截止日期可能会导致严重后果，那么这个截止日期就很难了。
+>> **实时计算机系统必须在其环境规定的时间间隔内对来自其环境(受控集群或操作员集群)的刺激做出反应**。
+>> **必须产生结果的时刻称为截止日期**。
+>> 如果一个结果在截止日期过后仍然有用，则该截止日期被归类为软截止日期；否则，它是应截止日期。
+>> 如果错过一个确定的截止日期可能会导致严重后果，那么这个截止日期就是硬截止日期了。
 
 Example : Consider a traffic signal at a road before a railway crossing. If the traffic signal does not change to red before the train arrives, an accident could result.
 
 > 示例：考虑铁路道口前道路上的交通信号。如果列车到达前交通信号灯没有变为红色，可能会导致事故。
 
-A real-time computer system that must meet at least one hard deadline is called a hard real-time computer system or a safety-critical real-time computer system . If no hard deadline exists, then the system is called a soft real-time computer system .
+A real-time computer system that must meet at least one hard deadline is called a hard real-time computer system or a safety-critical real-time computer system. If no hard deadline exists, then the system is called a soft real-time computer system .
 
-> 必须满足至少一个硬截止日期的实时计算机系统称为硬实时计算机系统或安全关键实时计算机系统。如果不存在硬截止日期，则该系统称为软实时计算机系统。
+>> 必须满足至少一个硬截止日期的实时计算机系统称为硬实时计算机系统或安全关键实时计算机系统。**如果不存在硬截止日期，则该系统称为软实时计算机系统**。
 
 The design of a hard real-time system is fundamentally different from the design of a soft real-time system. While a hard real-time computer system must sustain a guaranteed temporal behavior under all specified load and fault conditions, it is permissible for a soft real-time computer system to miss a deadline occasionally. The differences between soft and hard real-time systems will be discussed in detail in the following sections. The focus of this book is on the design of hard real-time systems.
 
-> 硬实时系统的设计与软实时系统的设计有着根本的不同。虽然硬实时计算机系统必须在所有指定的负载和故障条件下维持有保证的时间行为，但软实时计算机系统偶尔会错过截止日期是允许的。以下章节将详细讨论软实时系统和硬实时系统之间的差异。本书的重点是硬实时系统的设计。
+> 硬实时系统的设计与软实时系统的设计有着根本的不同。
+> **虽然硬实时计算机系统必须在所有指定的负载和故障条件下维持有保证的时间行为，但软实时计算机系统偶尔会错过截止日期是允许的。**
+> 以下章节将详细讨论软实时系统和硬实时系统之间的差异。本书的重点是硬实时系统的设计。
 
 ## 1.2 Functional Requirements
 
 The functional requirements of real-time systems are concerned with the functions that a real-time computer system must perform. They are grouped into data collec­ tion requirements, direct digital control requirements, and man-machine interaction requirements.
 
-> 实时系统的功能要求与实时计算机系统必须执行的功能有关。它们分为数据收集要求、直接数字控制要求和人机交互要求。
+>> 实时系统的功能要求与实时计算机系统必须执行的功能有关。它们分为
+> >
+>> - **数据收集要求**、
+>> - **直接数字控制要求**和
+>> - **人机交互要求**。
 
 ### 1.2.1 Data Collection
 
 A controlled object, e.g., a car or an industrial plant, changes its state as a function of time (whenever we use the word time without a qualifier, we mean physical time as described in Sect. 3.1 ). If we freeze the time, we can describe the current state of the controlled object by recording the values of its state variables at that moment. Possible state variables of a controlled object car are the position of the car, the speed of the car, the position of switches on the dashboard, and the position of a piston in a cylinder. We are normally not interested in all state variables, but only in the subset of state variables that is significant for our purpose. A significant state variable is called a real-time (RT) entity .
 
-> 受控对象，如汽车或工业厂房，其状态会随时间而变化(当我们使用没有限定符的时间一词时，我们指的是第 3.1 节中描述的物理时间)。如果我们冻结时间，我们可以通过记录受控对象在该时刻的状态变量值来描述其当前状态。受控对象汽车的可能状态变量是汽车的位置、汽车的速度、仪表板上开关的位置以及气缸中活塞的位置。我们通常对所有状态变量都不感兴趣，而只对对我们的目的有意义的状态变量子集感兴趣。一个重要的状态变量称为实时(RT)实体。
+>> **受控对象**，如汽车或工业厂房，其状态会随时间而变化(当我们使用没有限定符的时间一词时，我们指的是第 3.1 节中描述的物理时间)。如果我们冻结时间，我们可以通过记录受控对象在该时刻的状态变量值来描述其当前状态。受控对象汽车的可能状态变量是汽车的位置、汽车的速度、仪表板上开关的位置以及气缸中活塞的位置。我们通常对所有状态变量都不感兴趣，而只对对我们的目的有意义的状态变量子集感兴趣。**一个重要的状态变量称为实时(RT)实体**。
 
 Every RT entity is in the sphere of control (SOC) of a subsystem, i.e., it belongs to a subsystem that has the authority to change the value of this RT entity (see also Sect. 5.1.1 ). Outside its sphere of control, the value of an RT entity can be observed, but its semantic content (see Sect. 2.2.4 ) cannot be modified. For example, the cur­ rent position of a piston in a cylinder of the engine is in the sphere of control of the engine. Outside the car engine, the current position of the piston can only be observed, but we are not allowed to modify the semantic content of this observation (the representation of the semantic content can be changed!).
 
-> 每个 RT 实体都在子系统的控制范围(SOC)内，即它属于有权更改此 RT 实体值的子系统(另见第 5.1.1 节)。在其控制范围之外，可以观察到 RT 实体的值，但不能修改其语义内容(见第 2.2.4 节)。例如，发动机气缸中活塞的当前位置在发动机的控制范围内。在汽车发动机外部，只能观察活塞的当前位置，但我们不允许修改此观察的语义内容(语义内容的表示可以更改！)。
+>> 每个 RT 实体都在子系统的控制范围(SOC)内，即它属于有权更改此 RT 实体值的子系统(另见第 5.1.1 节)。在其控制范围之外，可以观察到 RT 实体的值，但**不能修改其语义内容**(见第 2.2.4 节)。例如，发动机气缸中活塞的当前位置在发动机的控制范围内。在汽车发动机外部，只能观察活塞的当前位置，但我们不允许修改此观察的语义内容(语义内容的表示可以更改！)。
 
 The first functional requirement of a real-time computer system is the observa­ tion of the RT entities in a controlled cluster and the collection of these observa­ tions. An observation of an RT entity is represented by a real-time (RT) image in the computer system. Since the state of a controlled object in the controlled cluster is a function of real time, a given RT image is only temporally accurate for a limited time interval. The length of this time interval depends on the dynamics of the con­ trolled object. If the state of the controlled object changes very quickly, the corre­ sponding RT image has a very short accuracy interval .
 
-> 实时计算机系统的第一个功能要求是观察受控集群中的 RT 实体并收集这些观察结果。RT 实体的观察由计算机系统中的实时(RT)图像表示。由于受控簇中受控对象的状态是实时的函数，因此给定的 RT 图像仅在有限的时间间隔内具有时间精度。这个时间间隔的长度取决于受控对象的动力学。如果受控对象的状态变化非常快，则相应的 RT 图像的精度间隔非常短。
+>> **实时计算机系统的第一个功能要求是观察受控集群中的 RT 实体并收集这些观察结果**。RT 实体的观察由计算机系统中的实时(RT)图像表示。由于受控簇中受控对象的状态是实时的函数，因此给定的 RT 图像仅在有限的时间间隔内具有时间精度。**这个时间间隔的长度取决于受控对象的动力学**。如果受控对象的状态变化非常快，则相应的 RT 图像的精度间隔非常短。
 
-The set of all temporally accurate real-time images of the controlled cluster is called the real-time database . The real-time database must be updated whenever an RT entity changes its value. These updates can be performed periodically, triggered by the progression of the real-time clock by a fixed period ( time-triggered (TT) observation ), or immediately after a change of state, which constitutes an event, occurs in the RT entity ( event-triggered (ET) observation ). A more detailed analysis of time-triggered and event-triggered observations will be presented in Chaps. 4 and 5 .
+The set of all temporally accurate real-time images of the controlled cluster is called the real-time database. The real-time database must be updated whenever an RT entity changes its value. These updates can be performed periodically, triggered by the progression of the real-time clock by a fixed period ( time-triggered (TT) observation ), or immediately after a change of state, which constitutes an event, occurs in the RT entity ( event-triggered (ET) observation ). A more detailed analysis of time-triggered and event-triggered observations will be presented in Chaps. 4 and 5 .
 
-> 受控集群的所有时间上精确的实时图像集称为实时数据库。每当 RT 实体更改其值时，都必须更新实时数据库。这些更新可以定期执行，由实时时钟按固定周期的进程触发(时间触发(TT)观测)，或者在 RT 实体中发生构成事件的状态变化后立即执行(事件触发(ET)观测)。第章将对时间触发和事件触发的观测进行更详细的分析。如图 4 和 5 所示。
+>> **受控集群的所有时间上精确的实时图像集称为实时数据库**。每当 RT 实体更改其值时，都必须更新实时数据库。这些更新可以定期执行，由实时时钟按固定周期的进程触发(时间触发(TT)观测)，或者在 RT 实体中发生构成事件的状态变化后立即执行(事件触发(ET)观测)。第章将对时间触发和事件触发的观测进行更详细的分析。如图 4 和 5 所示。
 
 > ![](images/e2bb8304f34cf8532434c092d8a0cd251d3fc677da709e91bbc8562054217ce0.jpg)
 > Fig.1.2 Temporal accuracy of the traffic light information
 
 Signal Conditioning A physical sensor, e.g., a thermocouple, produces a raw data element (e.g., a voltage). Often, a sequence of raw data elements is collected and an averaging algorithm is applied to reduce the measurement error. In the next step, the raw data must be calibrated and transformed to standard measurement units. The term signal conditioning is used to refer to all the processing steps that are neces­ sary to obtain meaningful measured data of an RT entity from the raw sensor data. After signal conditioning, the measured data must be checked for plausibility and related to other measured data to detect a possible fault of the sensor. A data element that is judged to be a correct RT image of the corresponding RT entity is called an agreed data element .
 
-> 信号调节物理传感器(如热电偶)产生原始数据元素(如电压)。通常，会收集一系列原始数据元素，并应用平均算法来减少测量误差。下一步，必须校准原始数据并将其转换为标准测量单位。术语信号调节用于指从原始传感器数据中获得 RT 实体的有意义测量数据所需的所有处理步骤。信号调节后，必须检查测量数据的合理性以及与其他测量数据的相关性，以检测传感器可能的故障。被判断为对应 RT 实体的正确 RT 图像的数据元素称为商定数据元素。
+>> 信号调节物理传感器(如热电偶)产生原始数据元素(如电压)。通常，**会收集一系列原始数据元素，并应用平均算法来减少测量误差**。下一步，必须校准原始数据并将其转换为标准测量单位。术语信号调节用于指从原始传感器数据中获得 RT 实体的有意义测量数据所需的所有处理步骤。
+>> 信号调节后，必须检查测量数据的合理性以及与其他测量数据的相关性，以**检测传感器可能的故障**。被判断为对应 RT 实体的正确 RT 图像的数据元素称为商定数据元素。
 
 Alarm Monitoring An important function of a real-time computer system is the continuous monitoring of the RT entities to detect abnormal process behaviors.
 
-> 报警监控实时计算机系统的一个重要功能是持续监控 RT 实体，以检测异常过程行为。
+>> 报警监控实时计算机系统的一个重要功能是**持续监控 RT 实体，以检测异常过程行为**。
 
 Example : The rupture of a pipe, a primary event , in a chemical plant will cause many RT entities (diverse pressures, temperatures, liquid levels) to deviate from their normal operat­ ing ranges and to cross some preset alarm limits, thereby generating a set of correlated alarms, which is called an alarm shower .
 
@@ -1565,7 +1586,7 @@ Example : The rupture of a pipe, a primary event , in a chemical plant will caus
 
 The real-time computer system must detect and display these alarms and must assist the operator in identifying a primary event that was the initial cause of these alarms. For this purpose, alarms that are observed must be logged in a special alarm log with the exact instant when the alarm occurred. The exact temporal order of the alarms is helpful in identifying the secondary alarms , i.e., all alarms that can be a causal consequence of the primary event. In complex industrial plants, sophisticated knowledge-based systems are used to assist the operator in the alarm analysis.
 
-> 实时计算机系统必须检测并显示这些警报，并且必须协助操作员识别导致这些警报的主要事件。为此，必须将观察到的警报记录在特殊的警报日志中，并注明警报发生的确切时刻。警报的确切时间顺序有助于识别次要警报，即所有可能是主要事件因果结果的警报。在复杂的工业工厂中，使用复杂的基于知识的系统来协助操作员进行报警分析。
+>> **实时计算机系统必须检测并显示这些警报，并且必须协助操作员识别导致这些警报的主要事件**。为此，必须将观察到的警报记录在特殊的警报日志中，并注明警报发生的确切时刻。警报的确切时间顺序有助于识别次要警报，即所有可能是主要事件因果结果的警报。在复杂的工业工厂中，使用复杂的基于知识的系统来协助操作员进行报警分析。
 
 Example : In the final report on the August 14, 2003 power blackout in the USA and Canada, we find on [Tas03, p. 162] the following statement: A valuable lesson from the August 14 blackout is the importance of having time-synchronized system data recorders. The Task Force’s investigators labored over thousands of data items to determine the sequence of events much like putting together small pieces of a very large puzzle. That process would have been significantly faster and easier if there had been wider use of syn­ chronized data recording devices.
 
@@ -1573,7 +1594,7 @@ Example : In the final report on the August 14, 2003 power blackout in the USA a
 
 A situation that occurs infrequently but is of utmost concern when it does occur is called a rare-event situation. The validation of the performance of a real-time computer system in a rare-event situation is a challenging task and requires models of the physical environment (see Sect. 12.2.2 ).
 
-> 不经常发生但确实发生时最令人担忧的情况称为罕见事件情况。在罕见事件情况下验证实时计算机系统的性能是一项具有挑战性的任务，需要物理环境模型(见第 12.2.2 节)。
+> **不经常发生但确实发生时最令人担忧的情况称为罕见事件情况**。在罕见事件情况下验证实时计算机系统的性能是一项具有挑战性的任务，需要物理环境模型(见第 12.2.2 节)。
 
 Example : The sole purpose of a nuclear power plant monitoring and shutdown system is reliable performance in a peak-load alarm situation (a rare event ). Hopefully, this rare event will never occur during the operational life of the plant.
 
@@ -1583,17 +1604,21 @@ Example : The sole purpose of a nuclear power plant monitoring and shutdown syst
 
 Many real-time computer systems must calculate the actuating variables for the actuators in order to control the controlled object directly ( direct digital control— DDC ), i.e., without any underlying conventional control system.
 
-> 许多实时计算机系统必须计算致动器的致动变量，以便直接控制受控对象(直接数字控制-DDC)，即不需要任何底层的传统控制系统。
+> 许多实时计算机系统必须计算致动器的致动变量，以便**直接控制受控对象(直接数字控制-DDC)，即不需要任何底层的传统控制系统**。
 
 Control applications are highly regular, consisting of an (infinite) sequence of control cycles, each one starting with sampling (observing) of the RT entities, fol­ lowed by the execution of the control algorithm to calculate a new actuating variable and subsequently by the output of the actuating variable to the actuator. The design of a proper control algorithm that achieves the desired control objective, and com­ pensates for the random disturbances that perturb the controlled object, is the topic of the field of control engineering. In the next section on temporal requirements, some basic notions of control engineering will be introduced.
 
-> 控制应用程序是高度规则的，由一系列(无限)控制循环组成，每个循环都从 RT 实体的采样(观察)开始，然后执行控制算法以计算新的驱动变量，然后将驱动变量输出到执行器。设计一种适当的控制算法来实现所需的控制目标，并补偿扰动受控对象的随机干扰，是控制工程领域的主题。在下一节关于时间要求的部分，将介绍控制工程的一些基本概念。
+> 控制应用程序是高度规则的，由一系列(无限)控制循环组成：
+> - 每个循环都从 RT 实体的采样(观察)开始，
+> - 然后执行控制算法以计算新的驱动变量，
+> - 然后将驱动变量输出到执行器。
+> **设计一种适当的控制算法来实现所需的控制目标，并补偿扰动受控对象的随机干扰，是控制工程领域的主题**。在下一节关于时间要求的部分，将介绍控制工程的一些基本概念。
 
 ### 1.2.3 Man-Machine Interaction
 
 A real-time computer system must inform the operator of the current state of the controlled object and must assist the operator in controlling the machine or plant object. This is accomplished via the man-machine interface, a critical subsystem of major importance. Many severe computer-related accidents in safety-critical real-­ time systems have been traced to mistakes made at the man-machine interface [Lev95].
 
-> 实时计算机系统必须通知操作员受控对象的当前状态，并且必须协助操作员控制机器或工厂对象。这是通过人机界面实现的，人机界面是一个非常重要的关键子系统。安全关键实时系统中许多严重的计算机相关事故都可以追溯到人机界面的错误[Lev95]。
+>> **实时计算机系统必须通知操作员受控对象的当前状态，并且必须协助操作员控制机器或工厂对象**。这是通过人机界面实现的，人机界面是一个非常重要的关键子系统。安全关键实时系统中许多严重的计算机相关事故都可以追溯到人机界面的错误[Lev95]。
 
 Example : Mode confusion at the man-machine interface of an aircraft has been identified to be the cause of major aircraft accidents [Deg95].
 
@@ -1609,7 +1634,7 @@ Example : In some countries, the pharmaceutical industry is required by law to r
 
 Man-machine interfacing has become such an important issue in the design of computer-based systems that a number of courses dealing with this topic have been developed. In the context of this book, we will introduce an abstract man-machine interface in Sect. 4.5.2 , but we will not cover its design in detail. The interested reader is referred to standard textbooks on user interface design.
 
-> 人机接口已成为计算机系统设计中的一个重要问题，因此开发了许多涉及这一主题的课程。在本书的背景下，我们将在 Sect.中介绍一个抽象的人机界面。4.5.2，但我们不会详细介绍它的设计。感兴趣的读者可以参考用户界面设计的标准教科书。
+> 人机接口已成为计算机系统设计中的一个重要问题，因此开发了许多涉及这一主题的课程。在本书的背景下，我们将在 Sect.4.5.2 中介绍一个抽象的人机界面。但我们不会详细介绍它的设计。感兴趣的读者可以参考用户界面设计的标准教科书。
 
 ## 1.3 Temporal Requirements
 
@@ -1617,15 +1642,15 @@ Man-machine interfacing has become such an important issue in the design of comp
 
 The most stringent temporal demands for real-time systems have their origin in the requirements of control loops, e.g., in the control of a fast process such as an auto­ motive engine. The temporal requirements at the man-machine interface are, in comparison, less stringent because the human perception delay, in the range of $50{-}100\,\mathrm{ms}$ , is orders of magnitude larger than the latency requirements of fast con­ trol loops.
 
-> 对实时系统最严格的时间要求源于控制回路的要求，例如，对汽车发动机等快速过程的控制。相比之下，人机界面的时间要求不那么严格，因为人类的感知延迟在 50 美元左右{-}100\mathrm{ms}$ 的延迟比快速控制回路的延迟要求大几个数量级。
+> **对实时系统最严格的时间要求源于控制回路(control loops)的要求**，例如，对汽车发动机等快速过程的控制。相比之下，人机界面的时间要求不那么严格，因为人类的感知延迟在 $50{-}100\,\mathrm{ms}$ 的延迟比控制回路(control loops)的延迟要求大几个数量级。
 
 The focus of the following discussion is on the temporal properties of this simple control loop consisting of a controlled object and a controlling computer system .
 
-> 以下讨论的重点是由受控对象和控制计算机系统组成的简单控制回路的时间特性。
+> 以下讨论的重点是由受控对象和控制计算机系统组成的简单控制回路(control loops)的时间特性。
 
 There are two important temporal parameters characterizing this elementary step-response function, the object delay $d^{\mathrm{object}}$ (sometimes called the lag time or lag ) after which the measured variable temperature begins to rise (caused by the initial inertia of the process and the instrumentation, called the process lag ) and the rise time $d^{\mathrm{rise}}$ of the temperature until the new equilibrium state has been reached. To determine the object delay $d^{\mathrm{object}}$ and the rise time $d^{\mathrm{rise}}$ from a given experimentally recorded shape of the step-response function, one finds the two points in time where the response function has reached $I O\%$ and $90\%$ of the difference between the two stationary equilibrium values. These two points are connected by a straight line (Fig.1.4 ). The significant points in time that characterize the object delay $d^{\mathrm{object}}$ and the rise time $d^{\mathrm{rise}}$ of the step-response function are constructed by finding the inter­ section of this straight line with the two horizontal lines that denote the two liquid temperatures that correspond to the stable equilibrium states before and after the application of the step function.
 
-> 有两个重要的时间参数表征了这个基本的阶跃响应函数，即对象延迟$d^{\mathrm{object}}$(有时称为滞后时间或滞后)，在此之后，测量的可变温度开始上升(由过程和仪器的初始惯性引起，称为过程滞后)，以及温度的上升时间$d^{\mathrm{rise}$，直到达到新的平衡状态。为了从给定的实验记录的阶跃响应函数形状中确定对象延迟$d^{\mathrm{object}}$和上升时间$d^{\mathrm{rise}$，可以找到响应函数达到两个稳态平衡值之差的$IO\%$和 $90\%$的两个时间点。这两点由一条直线连接(图 1.4)。表征阶跃响应函数的对象延迟$d^{\mathrm{object}}$和上升时间$d^{\mathrm{1rise}}$ 的重要时间点是通过找到这条直线与两条水平线的交点来构建的，这两条水平线上表示在应用阶跃函数之前和之后与稳定平衡状态相对应的两个液体温度。
+>> 有两个重要的时间参数表征了这个基本的阶跃响应函数，即对象延迟 $d^{\mathrm{object}}$ (有时称为滞后时间或滞后)，在此之后，测量的可变温度开始上升(由过程和仪器的初始惯性引起，称为过程滞后)，以及温度的上升时间$d^{\mathrm{rise}$，直到达到新的平衡状态。为了从给定的实验记录的阶跃响应函数形状中确定**对象延迟**$d^{\mathrm{object}}$和**上升时间**$d^{\mathrm{rise}$，可以找到响应函数达到两个稳态平衡值之差的$IO\%$和 $90\%$的两个时间点。这两点由一条直线连接(图 1.4)。表征阶跃响应函数的对象延迟$d^{\mathrm{object}}$和上升时间$d^{\mathrm{1rise}}$ 的重要时间点是通过找到这条直线与两条水平线的交点来构建的，这两条水平线上表示在应用阶跃函数之前和之后与稳定平衡状态相对应的两个液体温度。
 
 > ![](images/f336c161f787c7c3ca0fe01171042bf8c716e6ffce7e61faff0d6d3e040f646e.jpg)
 > Fig.1.3 A simple control loop
@@ -1633,13 +1658,13 @@ There are two important temporal parameters characterizing this elementary step-
 > ![](images/494153be51c4dc8177b24971b0c95b986f500bf8cf91800dd1e4703793439568.jpg)
 > Fig.1.4 Delay and rise time of the step response
 
-Controlling Computer System The controlling computer system must sample the temperature of the vessel periodically to detect any deviation between the intended value and the actual value of the controlled variable temperature . The constant dura­ tion between two sampling points is called the sampling period $d^{\mathrm{sample}}$ , and the ­reciprocal $\boldsymbol{I}/d^{\mathrm{sample}}$ is the sampling frequency, $\boldsymbol f^{\mathrm{sample}}$ . A rule of thumb says that, in a digital system which is expected to behave like a quasi-continuous system, the sam­ pling period should be less than one-tenth of the rise time $d^{\mathrm{rise}}$ of the step-response function of the controlled object, i.e., $\begin{array}{r}{d^{\mathrm{sample}}<(d^{\mathrm{rise}}/I O).}\end{array}$ . The computer compares the measured temperature to the temperature set point selected by the operator and calculates the error term . This error term forms the basis for the calculation of a new value of the control variable by a control algorithm . Given a time interval after each sampling point, called the computer delay $d^{\mathrm{{counter}}}$ , the controlling computer will output this new value of the actuating variable to the control valve, thus closing the control loop. The delay $d^{\mathrm{{counter}}}$ should be smaller than the sampling period $d^{\mathrm{sample}}$ .
+Controlling Computer System The controlling computer system must sample the temperature of the vessel periodically to detect any deviation between the intended value and the actual value of the controlled variable temperature. The constant dura­ tion between two sampling points is called the sampling period $d^{\mathrm{sample}}$ , and the ­reciprocal $\boldsymbol{I}/d^{\mathrm{sample}}$ is the sampling frequency, $\boldsymbol f^{\mathrm{sample}}$. A rule of thumb says that, in a digital system which is expected to behave like a quasi-continuous system, the sam­ pling period should be less than one-tenth of the rise time $d^{\mathrm{rise}}$ of the step-response function of the controlled object, i.e., $\begin{array}{r}{d^{\mathrm{sample}}<(d^{\mathrm{rise}}/I O).}\end{array}$. The computer compares the measured temperature to the temperature set point selected by the operator and calculates the error term. This error term forms the basis for the calculation of a new value of the control variable by a control algorithm. Given a time interval after each sampling point, called the computer delay $d^{\mathrm{{counter}}}$ , the controlling computer will output this new value of the actuating variable to the control valve, thus closing the control loop. The delay $d^{\mathrm{{counter}}}$ should be smaller than the sampling period $d^{\mathrm{sample}}$ .
 
-> 控制计算机系统控制计算机系统必须定期对容器的温度进行采样，以检测受控变量温度的预期值和实际值之间的任何偏差。两个采样点之间的恒定持续时间称为采样周期$d^{\mathrm{sample}}$，倒数$\boldsymbol{I}/d^{\math{sample}$是采样频率，$\boldsymbol f^{\mothrm{sample}}$。根据经验法则，在一个预期表现得像准连续系统的数字系统中，采样周期应小于受控对象阶跃响应函数上升时间$d^{\mathrm{rise}$的十分之一，即$\begin{array}{r}{d^{\mathrm{sample}}<(d^{\mathm{rise}/IO)\end{array}$。计算机将测量的温度与操作员选择的温度设定点进行比较，并计算误差项。该误差项构成了控制算法计算控制变量新值的基础。给定每个采样点后的时间间隔，称为计算机延迟$d^{\mathrm{{counter}}$，控制计算机将向控制阀输出这个新的致动变量值，从而关闭控制回路。延迟$d^{\mathrm{{counter}}$应小于采样周期$d^{\mathrm{sample}$。
+>> 控制计算机系统控制计算机系统**必须定期对容器的温度进行采样**，以检测受控变量温度的预期值和实际值之间的任何偏差。两个采样点之间的恒定持续时间称为采样周期$d^{\mathrm{sample}}$，倒数$\boldsymbol{I}/d^{\math{sample}$是采样频率，$\boldsymbol f^{\mothrm{sample}}$。根据经验法则，在一个预期表现得像**准连续系统的数字系统中，采样周期应小于受控对象阶跃响应函数上升时间$d^{\mathrm{rise}$的十分之一**，即$\begin{array}{r}{d^{\mathrm{sample}}<(d^{\mathm{rise}/IO)\end{array}$。计算机将测量的温度与操作员选择的温度设定点进行比较，并计算误差项。该误差项构成了控制算法计算控制变量新值的基础。给定每个采样点后的时间间隔，称为计算机延迟$d^{\mathrm{{counter}}$，控制计算机将向控制阀输出这个新的致动变量值，从而关闭控制回路(control loops)。**延迟$d^{\mathrm{{counter}}$应小于采样周期$d^{\mathrm{sample}$**。
 
-The difference between the maximum and the minimum values of the delay of the computer is called the jitter of the computer delay, $\Delta d^{\mathrm{{counter}}}$ . This jitter is a sensi­ tive parameter for the quality of control.
+The difference between the maximum and the minimum values of the delay of the computer is called the jitter of the computer delay, $\Delta d^{\mathrm{{counter}}}$. This jitter is a sensi­ tive parameter for the quality of control.
 
-> 计算机延迟的最大值和最小值之间的差值称为计算机延迟抖动，$\Delta d^{\mathrm{{counter}}$。这种抖动是控制质量的敏感参数。
+> 计算机延迟的最大值和最小值之间的差值称为**计算机延迟抖动**，$\Delta d^{\mathrm{{counter}}$。这种**抖动是控制质量的敏感参数**。
 
 > Table 1.1 Parameters of an elementary control loop
 > ![](images/2fa5d2c0d20e9c13971b83936cb6481767ef5b43bd15cdfa757b6168a4868884.jpg)
@@ -1649,16 +1674,14 @@ The difference between the maximum and the minimum values of the delay of the co
 
 ### 1.3.2 Minimal Latency Jitter
 
-> Figure_1.6
-
-### 1.3.3 Minimal Error-Detection Latency
-
 > ![](images/6a05a89c686000e877cd9c313ea09d0fe33b9b3e769cc69797efb503132b195a.jpg)
 > Fig.1.6 The effect of jitter on the measured variable $T$
 
+### 1.3.3 Minimal Error-Detection Latency
+
 Hard real-time applications are, by definition, safety-critical. It is therefore impor­ tant that any error within the control system, e.g., the loss or corruption of a message or the failure of a node, is detected within a short time with a very high probability. The required error-detection latency must be in the same order of magnitude as the sampling period of the fastest critical control loop. It is then possible to perform some corrective action, or to bring the system into a safe state, before the conse­ quences of an error can cause any severe system failure. Almost-no-jitter systems will have shorter guaranteed error-detection latencies than systems that allow for jitter.
 
-> 根据定义，硬实时应用程序对安全至关重要。因此，重要的是，控制系统内的任何错误，例如消息丢失或损坏或节点故障，都应在短时间内以很高的概率被检测到。所需的错误检测延迟必须与最快关键控制回路的采样周期处于相同的数量级。然后，在错误的后果导致任何严重的系统故障之前，可以执行一些纠正措施，或使系统进入安全状态。几乎没有抖动系统会比允许抖动的系统具有更短的保证错误检测延迟。
+>> 根据定义，硬实时应用程序对安全至关重要。因此，重要的是，**控制系统内的任何错误，例如消息丢失或损坏或节点故障，都应在短时间内以很高的概率被检测到**。所需的**错误检测延迟必须与最快关键控制回路(control loops)的采样周期处于相同的数量级**。然后，在错误的后果导致任何严重的系统故障之前，可以执行一些纠正措施，或使系统进入安全状态。几乎没有抖动系统会比允许抖动的系统具有更短的保证错误检测延迟。
 
 ## 1.4 Dependability Requirements
 
@@ -1668,7 +1691,7 @@ The notion of dependability covers the non functional attributes of a computer s
 
 ### 1.4.1 Reliability
 
-The reliability $R(t)$ of a system is the probability that a system will provide the specified service until time $t$ , given that the system was operational at the beginning, i.e., $t\,=\,t_{0}$ . The probability that a system will fail in a given interval of time is expressed by the failure rate , measured in FITs (failure in time). A failure rate of $I$ $F I T$ means that the mean time to a failure (MTTF) of a device is $I O^{9}$ hours, i.e., one failure occurs in about 115,000 years . If a system has a constant failure rate of $\lambda$ failures/hour , then the reliability at time $t$ is given by where $t{-}t_{0}$ is given in hours. The inverse of the failure rate ${\cal{I}}/\lambda={\cal{M T T F}}$ is called the mean time to failure (MTTF) (in hours) . If the failure rate of a system is required to be in the order of $I O^{-9}$ failures/h or lower, then we speak of a system with an ultra­ high reliability requirement.
+The reliability $R(t)$ of a system is the probability that a system will provide the specified service until time $t$ , given that the system was operational at the beginning, i.e., $t\,=\,t_{0}$. The probability that a system will fail in a given interval of time is expressed by the failure rate , measured in FITs (failure in time). A failure rate of $I$ $F I T$ means that the mean time to a failure (MTTF) of a device is $I O^{9}$ hours, i.e., one failure occurs in about 115,000 years. If a system has a constant failure rate of $\lambda$ failures/hour , then the reliability at time $t$ is given by where $t{-}t_{0}$ is given in hours. The inverse of the failure rate ${\cal{I}}/\lambda={\cal{M T T F}}$ is called the mean time to failure (MTTF) (in hours). If the failure rate of a system is required to be in the order of $I O^{-9}$ failures/h or lower, then we speak of a system with an ultra­ high reliability requirement.
 
 > 系统的可靠性$R(t)$是系统在时间$t$之前提供指定服务的概率，假设系统在开始时是可操作的，即$t\，=\，t_{0}$。系统在给定时间间隔内发生故障的概率由故障率表示，以 FITs(时间故障)为单位进行测量。$I$F I T$的故障率意味着设备的平均故障时间(MTTF)为$I O^{9}$小时，即大约115000年发生一次故障。如果一个系统的故障率恒定为$\lambda$故障/小时，则时间$t$的可靠性由下式给出：{-}t_｛0｝$以小时为单位。故障率${cal{I}/\lambda={cal{M T F}}$的倒数称为平均故障时间(MTTF)(以小时为单位)。如果要求系统的故障率在$I O^{-9}$故障/h 或更低的数量级，那么我们谈论的是具有超高可靠性要求的系统。
 
@@ -1678,7 +1701,7 @@ $$
 
 ### 1.4.2 Safety
 
-Safety is reliability regarding critical failure modes . A critical failure mode is said to be malign , in contrast with a non critical failure, which is benign . In a malign failure mode, the cost of a failure can be orders of magnitude higher than the utility of the system during normal operation. Examples of malign failures are an airplane crash due to a failure in the flight-control system and an automobile accident due to a failure of a computer-controlled intelligent brake in the automobile. Safety-critical (hard) real-time systems must have a failure rate with regard to critical failure modes that conforms to the ultrahigh reliability requirement.
+Safety is reliability regarding critical failure modes. A critical failure mode is said to be malign , in contrast with a non critical failure, which is benign. In a malign failure mode, the cost of a failure can be orders of magnitude higher than the utility of the system during normal operation. Examples of malign failures are an airplane crash due to a failure in the flight-control system and an automobile accident due to a failure of a computer-controlled intelligent brake in the automobile. Safety-critical (hard) real-time systems must have a failure rate with regard to critical failure modes that conforms to the ultrahigh reliability requirement.
 
 > 安全是关键故障模式的可靠性。与良性的非关键故障相比，关键故障模式被认为是恶性的。在恶性故障模式下，故障的成本可能比正常运行期间系统的效用高出几个数量级。恶性故障的例子是由于飞行控制系统故障导致的飞机失事和由于汽车中计算机控制的智能制动器故障导致的车祸。安全关键(硬)实时系统必须具有符合超高可靠性要求的关键故障模式的故障率。
 
@@ -1757,7 +1780,7 @@ $$
 > ![](images/0cd4e22199a484cf5718c9dcfa037d416f83b7789c1d2ff25c4a87865cbd6848.jpg)
 > Fig.1.7 Relationship between MTTF , MTBF , and MTTR
 
-A high availability can be achieved either by a long MTTF or by a short MTTR . The designer has thus some freedom in the selection of her/his approach to the construction of a high-availability system.
+A high availability can be achieved either by a long MTTF or by a short MTTR. The designer has thus some freedom in the selection of her/his approach to the construction of a high-availability system.
 
 > 高可用性可以通过长 MTTF 或短 MTTR 来实现。因此，设计者在选择构建高可用性系统的方法时有一定的自由。
 
@@ -1846,7 +1869,7 @@ There are, however, applications where a safe state that can be reached quickly 
 
 ### 1.5.3 Guaranteed Response Versus Best Effort
 
-If we start out with a specified fault and load hypothesis and deliver a design that makes it possible to reason about the adequacy of the design without reference to probabilistic arguments (even in the case of a peak-load and fault scenario), then we can speak of a system with a guaranteed response . The probability of failure of a perfect system with guaranteed response is reduced to the probability that the assumptions about the peak load and the number and types of faults do not hold in reality. This probability is called assumption coverage [Pow95]. Guaranteed response systems require careful planning and extensive analysis during the design phase.
+If we start out with a specified fault and load hypothesis and deliver a design that makes it possible to reason about the adequacy of the design without reference to probabilistic arguments (even in the case of a peak-load and fault scenario), then we can speak of a system with a guaranteed response. The probability of failure of a perfect system with guaranteed response is reduced to the probability that the assumptions about the peak load and the number and types of faults do not hold in reality. This probability is called assumption coverage [Pow95]. Guaranteed response systems require careful planning and extensive analysis during the design phase.
 
 > 如果我们从一个指定的故障和负载假设开始，并交付一个设计，该设计可以在不参考概率参数的情况下对设计的充分性进行推理(即使在峰值负载和故障场景的情况下)，那么我们就可以说是一个有保证响应的系统。具有保证响应的完美系统的故障概率降低到关于峰值负载、故障数量和类型的假设在现实中不成立的概率。这种概率被称为假设覆盖率[Pow95]。有保证的响应系统需要在设计阶段进行仔细的规划和广泛的分析。
 
@@ -1876,7 +1899,7 @@ In event-triggered (ET) control, all communication and processing activities are
 
 In a time-triggered (TT) system , all activities are initiated by the progression of real time. There is only one interrupt in each node of a distributed TT system, the periodic real-time clock interrupt. Every communication or processing activity is initiated at a periodically occurring predetermined tick of a clock. In a distributed TT real-time system, it is assumed that the clocks of all nodes are synchronized to form a global time that is available at every node. Every observation of the con­ trolled object is time-stamped with this global time. The granularity of the global time must be chosen such that the time order of any two observations made any­ where in a distributed TT system can be established from their time-stamps with adequate faithfulness [Kop09]. The topics of global time and clock synchronization will be discussed at length in Chap. 3 .
 
-> 在时间触发(TT)系统中，所有活动都是由实时进程启动的。分布式 TT 系统的每个节点中只有一个中断，即周期性实时时钟中断。每一个通信或处理活动都是在时钟的一个周期性预定时刻启动的。在分布式 TT 实时系统中，假设所有节点的时钟同步，形成每个节点可用的全球时间。对受控对象的每次观察都会用这个全球时间标记时间戳。必须选择全球时间的粒度，以便在分布式 TT 系统中的任何位置进行的任何两次观测的时间顺序都可以从它们的时间戳中以足够的可信度建立起来[Kop09]。全球时间和时钟同步的主题将在第 3 章中详细讨论。
+> 在时间触发(TT)系统中，所有活动都是由实时进程启动的。分布式 TT 系统的每个节点中只有一个中断，即周期性实时时钟中断。每一个通信或处理活动都是在时钟的一个周期性预定时刻启动的。在分布式 TT 实时系统中，假设所有节点的时钟同步，形成每个节点可用的全局时间。对受控对象的每次观察都会用这个全局时间标记时间戳。必须选择全局时间的粒度，以便在分布式 TT 系统中的任何位置进行的任何两次观测的时间顺序都可以从它们的时间戳中以足够的可信度建立起来[Kop09]。全局时间和时钟同步的主题将在第 3 章中详细讨论。
 
 Example : The distinction between event-triggered and time-triggered can be explained by an example of an elevator control system. When you push a call button in the event-­ triggered implementation, the event is immediately relayed to the interrupt system of the computer in order to start the action of calling the elevator. In a time-triggered system, the
 
@@ -1898,7 +1921,7 @@ The ever-decreasing price/performance ratio of microcontrollers makes it economi
 
 > 微控制器的性价比不断下降，使得用嵌入式实时计算机系统取代许多产品中的传统机械或电子控制系统在经济上具有吸引力。有许多带有嵌入式计算机系统的产品示例：手机、汽车发动机控制器、心脏起搏器、计算机打印机、电视机、洗衣机，甚至一些电动剃须刀都包含一个带有数千条软件代码指令的微控制器。由于产品的外部接口(尤其是人机界面)相对于上一代产品通常保持不变，因此从外部通常看不到实时计算机系统正在控制产品行为。
 
-Characteristics An embedded real-time computer system is always part of a well-­ specified larger system, which we call an intelligent product . An intelligent product consists of a physical (mechanical) subsystem: the controlling embedded computer and, most often, a man-machine interface. The ultimate success of any intelligent product depends on the relevance and quality of service it can provide to its users. A focus on the genuine user needs is thus of utmost importance.
+Characteristics An embedded real-time computer system is always part of a well-­ specified larger system, which we call an intelligent product. An intelligent product consists of a physical (mechanical) subsystem: the controlling embedded computer and, most often, a man-machine interface. The ultimate success of any intelligent product depends on the relevance and quality of service it can provide to its users. A focus on the genuine user needs is thus of utmost importance.
 
 > 特征嵌入式实时计算机系统始终是一个指定良好的大型系统的一部分，我们称之为智能产品。智能产品由物理(机械)子系统组成：控制嵌入式计算机，最常见的是人机界面。任何智能产品的最终成功都取决于它能为用户提供的服务的相关性和质量。因此，关注真正的用户需求至关重要。
 
@@ -1978,7 +2001,7 @@ The embedded system market is expected to continue steep growth during the next 
 
 Characteristics Historically, industrial plant automation was the first field for the application of real-time digital computer control. This is understandable since the benefits that can be gained by the computerization of a sizable plant are much larger than the cost of even an expensive process-control computer of the late 1960s. In the early days, human operators controlled the industrial plants locally. With the ­refinement of industrial plant instrumentation and the availability of remote auto­ matic controllers, plant monitoring and command facilities were concentrated into a central control room, thus reducing the number of operators required to run the plant. In the 1970s, the next logical step was the introduction of central processcontrol computers to monitor the plant and assist the operator in her/his routine functions, e.g., data logging and operator guidance. In the beginning, the computer was considered an add-on facility that was not fully trusted. It was the duty of the operator to judge whether a set point calculated by a computer made sense and could be applied to the process ( open-loop control ). In the next phase, Supervisory Control and Data Acquisition (SCADA) systems calculated the set points for the programmable logic controllers (PLCs) in the plant. With the improvement of the process models and the growth of the reliability of the computer, control functions have been increasingly allocated to the computer, and gradually the operator has been taken out of the control loop ( closed-loop control ). Sophisticated nonlinear control techniques, which have response time requirements beyond human capabili­ ties, have been implemented.
 
-> 从历史上看，工业工厂自动化是实时数字计算机控制应用的第一个领域。这是可以理解的，因为大型工厂的计算机化所带来的好处远远大于 20 世纪 60 年代末昂贵的过程控制计算机的成本。在早期，人类操作员在当地控制着工业工厂。随着工业厂房仪表的完善和远程自动控制器的可用性，厂房监控和指挥设施集中在一个中央控制室，从而减少了运行厂房所需的操作员数量。在 20 世纪 70 年代，下一个合乎逻辑的步骤是引入中央过程控制计算机来监控工厂并协助操作员执行日常功能，例如数据记录和操作员指导。起初，计算机被认为是一种不完全可信的附加设施。操作员有责任判断计算机计算的设定点是否有意义，是否可以应用于过程(开环控制)。在下一阶段，监控和数据采集(SCADA)系统计算了工厂中可编程逻辑控制器(PLC)的设定点。随着过程模型的改进和计算机可靠性的提高，控制功能越来越多地分配给计算机，操作员逐渐被移出控制回路(闭环控制)。已经实现了复杂的非线性控制技术，其响应时间要求超出了人类的能力。
+> 从历史上看，工业工厂自动化是实时数字计算机控制应用的第一个领域。这是可以理解的，因为大型工厂的计算机化所带来的好处远远大于 20 世纪 60 年代末昂贵的过程控制计算机的成本。在早期，人类操作员在当地控制着工业工厂。随着工业厂房仪表的完善和远程自动控制器的可用性，厂房监控和指挥设施集中在一个中央控制室，从而减少了运行厂房所需的操作员数量。在 20 世纪 70 年代，下一个合乎逻辑的步骤是引入中央过程控制计算机来监控工厂并协助操作员执行日常功能，例如数据记录和操作员指导。起初，计算机被认为是一种不完全可信的附加设施。操作员有责任判断计算机计算的设定点是否有意义，是否可以应用于过程(开环控制)。在下一阶段，监控和数据采集(SCADA)系统计算了工厂中可编程逻辑控制器(PLC)的设定点。随着过程模型的改进和计算机可靠性的提高，控制功能越来越多地分配给计算机，操作员逐渐被移出控制回路(control loops)(闭环控制)。已经实现了复杂的非线性控制技术，其响应时间要求超出了人类的能力。
 
 Usually, every plant automation system is unique. There is an extensive amount of engineering and software effort required to adapt the computer system to the physical layout, the operating strategy, the rules and regulations, and the reporting system of a particular plant. To reduce these engineering and software efforts, many process-control companies have developed a set of modular building blocks, which can be configured individually to meet the requirements of a customer. Compared to the development cost, the production cost (hardware cost) is of minor importance. Maintenance cost can be an issue if a maintenance technician must be on-site for $24{\mathrm{~h~}}$ in order to minimize the downtime of a plant.
 
@@ -2018,7 +2041,7 @@ In this section, three typical examples of real-time systems are introduced. The
 
 ### 1.7.1 Controlling the Flow in a Pipe
 
-The dynamics of the system in Fig.1.8 is essentially determined by the speed of the control valve. Assume that the control valve takes $I O$  s to open or close from $O\%$ to $I O O\%$ and that the flow sensor $F$ has a precision of $I\%$ . If a sampling interval of ${\mathit{l00}}\;\mathrm{ms}$ is chosen, the maximum change of the valve position within one sampling interval is $I\%$ , the same as the precision of the flow sensor. Because of this finite speed of the control valve, an output action taken by the computer at a given time will lead to an effect in the environment at some later time. The observation of this effect by the computer will be further delayed by the given latency of the sensor. All these latencies must either be derived analytically or measured experimentally, before the temporal control structure for a stable control system can be designed.
+The dynamics of the system in Fig.1.8 is essentially determined by the speed of the control valve. Assume that the control valve takes $I O$  s to open or close from $O\%$ to $I O O\%$ and that the flow sensor $F$ has a precision of $I\%$. If a sampling interval of ${\mathit{l00}}\;\mathrm{ms}$ is chosen, the maximum change of the valve position within one sampling interval is $I\%$ , the same as the precision of the flow sensor. Because of this finite speed of the control valve, an output action taken by the computer at a given time will lead to an effect in the environment at some later time. The observation of this effect by the computer will be further delayed by the given latency of the sensor. All these latencies must either be derived analytically or measured experimentally, before the temporal control structure for a stable control system can be designed.
 
 > 图 1.8 中系统的动力学基本上由控制阀的速度决定。假设控制阀需要$I O$s 才能从$O\%$打开或关闭到$I O \%$，并且流量传感器$F$的精度为$I\%$。如果采样间隔为${\mathit{l00}}\；\选择mathrm{ms}$，一个采样间隔内阀门位置的最大变化为$I\%$，与流量传感器的精度相同。由于控制阀的速度有限，计算机在给定时间采取的输出动作将在稍后的某个时间对环境产生影响。计算机对这种效应的观察将因传感器的给定延迟而进一步延迟。在设计稳定控制系统的时间控制结构之前，所有这些延迟都必须通过分析或实验测量得出。
 
@@ -2031,7 +2054,7 @@ The task of an engine controller in an automobile engine is the calculation of t
 
 > 汽车发动机中的发动机控制器的任务是计算适当的燃料量以及燃料必须喷射到每个气缸的燃烧室中的确切时刻。燃油量和正时取决于许多参数：驾驶员的意图，通过加速踏板的位置、发动机上的当前负载、发动机的温度、气缸的状况等等来表达。现代发动机控制器是一种复杂的设备。多达 100 个同时执行的软件任务必须紧密同步，以实现预期目标，即一个平稳运行、高效的发动机，污染物排放量最小。
 
-The up- and downward moving piston in each cylinder of a combustion engine is connected to a rotating axle, the crankshaft . The intended start point of fuel injec­ tion is relative to the position of the piston in the cylinder and must be precise within an accuracy of about 0.1 degree of the measured angular position of the crankshaft. The precise angular position of the crankshaft is measured by a number of digital sensors that generate a rising edge of a signal at the instant when the crankshaft passes these defined positions. Consider an engine that turns with $6000\,\mathrm{rpm}$ (revolu­ tions per minute), i.e., the crankshaft takes $l0\;\mathrm{ms}$ for a $360$  degree rotation. If the required precision of $0.1$  degree is transformed into the time domain, then a tempo­ ral accuracy of $3\,\upmu\mathrm{s}$ is required. The fuel injection is realized by opening a solenoid valve or a piezoelectric actuator that controls the fuel flow from a high-pressure reservoir into the cylinder. The latency between giving an open command to the valve and the actual point in time when the valve opens can be in the order of hun­ dreds of $\upmu\mathrm{{sec}}$ and changes considerably depending on environmental conditions (e.g., temperature). To be able to compensate for this latency jitter, a sensor signal indicates the point in time when the valve has actually opened. The duration between the execution of the output command by the computer and the start of opening of the valve is measured during every engine cycle. The measured latency is used to deter­ mine when the output command must be executed during the next cycle so that the intended effect, the start of fuel injection, happens at the proper point in time.
+The up- and downward moving piston in each cylinder of a combustion engine is connected to a rotating axle, the crankshaft. The intended start point of fuel injec­ tion is relative to the position of the piston in the cylinder and must be precise within an accuracy of about 0.1 degree of the measured angular position of the crankshaft. The precise angular position of the crankshaft is measured by a number of digital sensors that generate a rising edge of a signal at the instant when the crankshaft passes these defined positions. Consider an engine that turns with $6000\,\mathrm{rpm}$ (revolu­ tions per minute), i.e., the crankshaft takes $l0\;\mathrm{ms}$ for a $360$  degree rotation. If the required precision of $0.1$  degree is transformed into the time domain, then a tempo­ ral accuracy of $3\,\upmu\mathrm{s}$ is required. The fuel injection is realized by opening a solenoid valve or a piezoelectric actuator that controls the fuel flow from a high-pressure reservoir into the cylinder. The latency between giving an open command to the valve and the actual point in time when the valve opens can be in the order of hun­ dreds of $\upmu\mathrm{{sec}}$ and changes considerably depending on environmental conditions (e.g., temperature). To be able to compensate for this latency jitter, a sensor signal indicates the point in time when the valve has actually opened. The duration between the execution of the output command by the computer and the start of opening of the valve is measured during every engine cycle. The measured latency is used to deter­ mine when the output command must be executed during the next cycle so that the intended effect, the start of fuel injection, happens at the proper point in time.
 
 > 内燃机每个气缸中上下移动的活塞都连接到一个旋转轴，即曲轴。燃油喷射的预期起点与气缸中活塞的位置有关，必须精确到曲轴测量角位置的 0.1 度以内。曲轴的精确角位置由多个数字传感器测量，这些传感器在曲轴经过这些限定位置的瞬间产生信号的上升沿。考虑一台转速为 6000 美元的发动机，即曲轴转速为 10 美元；\mathrm{ms}$用于360度旋转。如果将所需的精度$0.1$度转换为时域，则需要 $3\，\upmu\mathrm{s}$ 的速度精度。燃料喷射是通过打开电磁阀或压电致动器来实现的，该致动器控制从高压储液罐到气缸的燃料流量。从向阀门发出打开命令到阀门打开的实际时间点之间的延迟可能在数百美元左右，并且会根据环境条件(如温度)而发生很大变化。为了能够补偿这种延迟抖动，传感器信号指示阀门实际打开的时间点。在每个发动机循环期间，测量计算机执行输出命令和阀门开始打开之间的持续时间。测量的延迟用于确定在下一个循环中何时必须执行输出命令，以便在适当的时间点实现预期的效果，即开始燃油喷射。
 
@@ -2043,9 +2066,9 @@ This example of an engine controller has been chosen because it demonstrates con
 
 The total duration of the RT transaction (bold line in Fig.1.9 ) is an important parameter for the quality of control. The shorter the duration of this transaction, the better the control quality and the stability of the control loop, since this transaction contributes to the dead time of the critical control loop. The other important term of the dead time is the time it takes for the strip to travel from the drive to the sensor. A jitter in the dead time that is not compensated for will reduce the quality of con­ trol significantly. It is evident from Fig.1.9 that the latency jitter in an event-­ triggered system is the sum of the jitter of all processing and communication actions that form the critical RT transaction.
 
-> RT 事务的总持续时间(图 1.9 中的粗线)是控制质量的重要参数。此事务的持续时间越短，控制质量和控制回路的稳定性就越好，因为此事务会导致关键控制回路的死区时间。死区时间的另一个重要术语是带材从驱动器到传感器所需的时间。死区时间中未得到补偿的抖动将显著降低控制质量。从图 1.9 中可以明显看出，事件触发系统中的延迟抖动是构成关键 RT 事务的所有处理和通信动作的抖动之和。
+> RT 事务的总持续时间(图 1.9 中的粗线)是控制质量的重要参数。此事务的持续时间越短，控制质量和控制回路(control loops)的稳定性就越好，因为此事务会导致关键控制回路(control loops)的死区时间。死区时间的另一个重要术语是带材从驱动器到传感器所需的时间。死区时间中未得到补偿的抖动将显著降低控制质量。从图 1.9 中可以明显看出，事件触发系统中的延迟抖动是构成关键 RT 事务的所有处理和通信动作的抖动之和。
 
-Note that the communication pattern among the nodes of this control system is multicast , not point-to-point . This is typical for most distributed real-time control systems. Furthermore, the communication between the model node and the drive nodes has an atomicity requirement . Either all of the drives are changed according to the output of the model or none of them is changed. The loss of a message, which may result in the failure of a drive to readjust to a new position, may cause mechani­ cal damage to the drive.
+Note that the communication pattern among the nodes of this control system is multicast , not point-to-point. This is typical for most distributed real-time control systems. Furthermore, the communication between the model node and the drive nodes has an atomicity requirement. Either all of the drives are changed according to the output of the model or none of them is changed. The loss of a message, which may result in the failure of a drive to readjust to a new position, may cause mechani­ cal damage to the drive.
 
 > 请注意，此控制系统的节点之间的通信模式是多播，而不是点对点。这对于大多数分布式实时控制系统来说是典型的。此外，模型节点和驱动节点之间的通信具有原子性要求。根据模型的输出更改所有驱动器，或者不更改任何驱动器。信息丢失可能导致驱动器无法重新调整到新位置，这可能会对驱动器造成机械损坏。
 
@@ -2084,7 +2107,7 @@ Note that the communication pattern among the nodes of this control system is mu
 
 • The most stringent temporal demands for real-time systems have their origin in the requirements of the control loops.
 
-> •对实时系统最严格的时间要求源于控制回路的要求。
+> •对实时系统最严格的时间要求源于控制回路(control loops)的要求。
 
 • The temporal behavior of a simple controlled object can be characterized by process lag and rise time of the step-response function .
 
@@ -2092,11 +2115,11 @@ Note that the communication pattern among the nodes of this control system is mu
 
 • The dead time of a control loop is the time interval between the observation of the RT entity and the start of a reaction of the controlled object as a consequence of a computer action based on this observation.
 
-> •控制回路的死区时间是指 RT 实体的观测与受控对象因基于该观测的计算机动作而开始反应之间的时间间隔。
+> •控制回路(control loops)的死区时间是指 RT 实体的观测与受控对象因基于该观测的计算机动作而开始反应之间的时间间隔。
 
 • Many control algorithms are based on the assumption that the delay jitter is a very small fraction of the delay since control algorithms are designed to compen­ sate a known constant delay. Delay jitter brings an additional uncertainty into the control loop that has an adverse effect on the quality of control.
 
-> •许多控制算法都基于这样的假设，即延迟抖动是延迟的一小部分，因为控制算法的设计是为了补偿已知的恒定延迟。延迟抖动给控制回路带来了额外的不确定性，对控制质量产生了不利影响。
+> •许多控制算法都基于这样的假设，即延迟抖动是延迟的一小部分，因为控制算法的设计是为了补偿已知的恒定延迟。延迟抖动给控制回路(control loops)带来了额外的不确定性，对控制质量产生了不利影响。
 
 • The term signal conditioning is used to refer to all processing steps that are needed to get a meaningful RT image of an RT entity from the raw sensor data.
 
@@ -2110,7 +2133,7 @@ Note that the communication pattern among the nodes of this control system is mu
 
 > •如果要求系统的故障率约为$I O^{-9}$故障/h 或更低，那么我们正在处理具有超高可靠性要求的系统。
 
-• Safety is reliability regarding malign ( critical) failure modes . In a malign failure mode, the cost of a failure can be orders of magnitude higher than the utility of the system during normal operation.
+• Safety is reliability regarding malign ( critical) failure modes. In a malign failure mode, the cost of a failure can be orders of magnitude higher than the utility of the system during normal operation.
 
 > •安全是指恶性(关键)故障模式的可靠性。在恶性故障模式下，故障的成本可能比正常运行期间系统的效用高出几个数量级。
 
@@ -2134,7 +2157,7 @@ Note that the communication pattern among the nodes of this control system is mu
 
 > •如果我们从指定的故障和负载假设开始，并交付一个设计，该设计可以在不参考概率参数的情况下对设计的充分性进行推理(即使在极端负载和故障场景的情况下)，我们就可以说是一个有保证响应的系统。
 
-• An embedded real-time computer system is part of a well-specified larger sys­ tem, an intelligent product . An intelligent product normally consists of a mechan­ ical subsystem, the controlling embedded computer, and a man-machine interface.
+• An embedded real-time computer system is part of a well-specified larger sys­ tem, an intelligent product. An intelligent product normally consists of a mechan­ ical subsystem, the controlling embedded computer, and a man-machine interface.
 
 > •嵌入式实时计算机系统是精心设计的大型系统的一部分，是一种智能产品。智能产品通常由机械子系统、控制嵌入式计算机和人机界面组成。
 
@@ -2178,11 +2201,11 @@ There exist a number of textbooks on real-time and embedded systems, such as Int
 
 1.6 What does signal conditioning mean?
 
-1.7 Consider an RT entity that changes its value periodically according to $\nu(t)=A_{0}$  sin  $(2\pi t/T)$ where $T_{c}$ , the period of the oscillation, is $I00\,\mathrm{ms}$ . What is the maximum change of value of this RT entity within a time interval of $l\mathrm{\ms^{\circ}}$ (Express the result in percentage of the amplitude $\mathrm{A}_{0}$ .)
+1.7 Consider an RT entity that changes its value periodically according to $\nu(t)=A_{0}$  sin  $(2\pi t/T)$ where $T_{c}$ , the period of the oscillation, is $I00\,\mathrm{ms}$. What is the maximum change of value of this RT entity within a time interval of $l\mathrm{\ms^{\circ}}$ (Express the result in percentage of the amplitude $\mathrm{A}_{0}$ .)
 
 > 1.7 考虑一个 RT 实体，它根据$\nu(t)=A_{0}$sin$(2\pi t/t)$定期更改其值，其中$t_{c}$是振荡周期$I00\，\mathrm{ms}$。在$l\mathrm{\ms^{\circ}}$的时间间隔内，此 RT 实体的最大值变化是多少(以振幅$\mathrm的百分比表示结果{A}_{0}$ .)
 
-1.8 Consider an engine that rotates with $3000\,\mathrm{rpm}$ . By how many degrees will the crankshaft turn within $l\mathrm{\ms?}$ 1.9 Give some examples where the predictable rare-event performance deter­ mines the utility of a hard real-time system.
+1.8 Consider an engine that rotates with $3000\,\mathrm{rpm}$. By how many degrees will the crankshaft turn within $l\mathrm{\ms?}$ 1.9 Give some examples where the predictable rare-event performance deter­ mines the utility of a hard real-time system.
 
 > 1.8 考虑一台转速为 3000 美元的发动机。曲轴将在 1.9 美元内转动多少度？举一些例子，在这些例子中，可预测的罕见事件性能决定了硬实时系统的实用性。
 
@@ -2218,15 +2241,15 @@ There exist a number of textbooks on real-time and embedded systems, such as Int
 
 > 1.17 假设一家汽车公司生产 2000000 个特殊类型的电子发动机控制器。讨论了以下设计备选方案：
 
-(i) Construct the engine control unit as a single SRU with the application software in read-only memory (ROM).The production cost of such a unit is $250\,\S$ . In case of an error, the complete unit has to be replaced.
+(i) Construct the engine control unit as a single SRU with the application software in read-only memory (ROM).The production cost of such a unit is $250\,\S$. In case of an error, the complete unit has to be replaced.
 
 > (i) 使用只读存储器(ROM)中的应用软件将发动机控制单元构造为单个 SRU。这种装置的生产成本为 250 美元。如果出现错误，必须更换整个装置。
 
-(ii) Construct the engine control unit such that the software is contained in a ROM that is placed on a socket and can be replaced in case of a software error. The production cost of the unit without the ROM is $248\,\S$ . The cost of the ROM is $5\;\S$ .
+(ii) Construct the engine control unit such that the software is contained in a ROM that is placed on a socket and can be replaced in case of a software error. The production cost of the unit without the ROM is $248\,\S$. The cost of the ROM is $5\;\S$ .
 
 > (ii)构造发动机控制单元，使软件包含在放置在插座上的 ROM 中，并在软件错误时可以更换。不带 ROM 的装置的生产成本为 248 美元。ROM 的成本为 5 美元；S
 
-(iii) Construct the engine control unit as a single SRU where the software is loaded in a flash EPROM that can be reloaded. The production cost of such a unit is $255\;\S$ . The labor cost of repair is assumed to be $50\;\S$ for each vehicle. (It is assumed to be the same for each one of the three alternatives.) Calculate the cost of a software error for each one of the three alternative designs if 300,000 cars have to be recalled because of the software error (example in Sect. 1.6.1 ). Which one is the lowest-cost alternative if only 1000 cars are affected by a recall?
+(iii) Construct the engine control unit as a single SRU where the software is loaded in a flash EPROM that can be reloaded. The production cost of such a unit is $255\;\S$. The labor cost of repair is assumed to be $50\;\S$ for each vehicle. (It is assumed to be the same for each one of the three alternatives.) Calculate the cost of a software error for each one of the three alternative designs if 300,000 cars have to be recalled because of the software error (example in Sect. 1.6.1 ). Which one is the lowest-cost alternative if only 1000 cars are affected by a recall?
 
 > (iii)将发动机控制单元构造为单个 SRU，其中软件加载在可重新加载的闪存 EPROM 中。这种装置的生产成本为 255 美元；S 维修的人工成本假设为 50 美元；\每辆车 S$。(假设三种替代方案中的每一种都是相同的。)如果由于软件错误而必须召回 300000 辆汽车，则计算三种替代设计中每一种的软件错误成本(第 1.6.1 节中的示例)。如果只有 1000 辆汽车受到召回的影响，哪一种成本最低？
 
@@ -2279,7 +2302,7 @@ The experiential subsystem is a pre conscious emotionally based subsystem that o
 
 > 体验子系统是一个基于情感的前意识子系统，它以整体、自动和快速的方式运行，并为其执行需要最少的认知资源。由于它几乎毫不费力，因此大部分时间都在使用。假设经验子系统可以访问一个庞大的连贯知识库，该知识库代表了世界的隐式模型。这种主观知识库是我们所说的个人概念景观的一部分，主要是由个人一生中积累的经验和情感事件建立和维护的。尽管这个知识库不断地被调整和扩展，但它的核心结构相当僵化，不容易改变。经验推理是全面的，倾向于使用有限的信息对场景和主题进行一般和广泛的分类(例如，这是一个好人或坏人)。经验系统确实在一个连贯稳定的概念框架中吸收了关于现实的数据。这个框架中的概念大多是通过无意识的联想联系联系在一起的，而联想的来源往往是未知的。
 
-The rational subsystem is a conscious analytic subsystem that operates according to the laws of causality and logic. Bunge [Bun08, p. 48] defines a causality relation­ ship between a cause $C$ and an event $E$ as follows: If C happens, then (and only then) $E$ is always produced by it . We try to get an understanding of a dynamic scenario by isolating a primary cause , suppressing seemingly irrelevant detail, and establishing a unidirectional causal chain between this primary cause and an observed effect. If cause and effect cannot be cleanly isolated, such as is the case in a feedback sce­ nario, or if the relationship between cause and effect is non deterministic (see also Sect. 5.6.1 on the definition of determinism ), then it is more difficult to understand a scenario.
+The rational subsystem is a conscious analytic subsystem that operates according to the laws of causality and logic. Bunge [Bun08, p. 48] defines a causality relation­ ship between a cause $C$ and an event $E$ as follows: If C happens, then (and only then) $E$ is always produced by it. We try to get an understanding of a dynamic scenario by isolating a primary cause , suppressing seemingly irrelevant detail, and establishing a unidirectional causal chain between this primary cause and an observed effect. If cause and effect cannot be cleanly isolated, such as is the case in a feedback sce­ nario, or if the relationship between cause and effect is non deterministic (see also Sect. 5.6.1 on the definition of determinism ), then it is more difficult to understand a scenario.
 
 > 理性子系统是一个有意识的分析子系统，它根据因果关系和逻辑规律运作。Bunge[Bun08，第 48 页]将原因$C$和事件$E$之间的因果关系定义如下：如果 C 发生，那么(并且只有在那时)$E$总是由它产生的。我们试图通过分离主要原因、抑制看似无关的细节，并在主要原因和观察到的效果之间建立单向因果链，来理解动态场景。如果因果关系不能完全隔离，例如在反馈场景中，或者因果关系是非确定性的(另见第 5.6.1 节关于确定性的定义)，那么就更难理解一个场景。
 
@@ -2309,15 +2332,15 @@ In a changing world, knowledge about permanent and characteristic properties of 
 
 > 在不断变化的世界中，必须识别和维护关于物体和情况的永久和特征属性的知识，因为这些知识对生存至关重要。这种知识是通过抽象过程获得的，通过抽象过程，特定从属于一般，因此关于一般的知识适用于许多细节。抽象是人类认知系统的一项基本任务。
 
-Example : Face recognition is an example for the powerful process of abstraction . Out of many particular images of the face of a person—varying angles of observation, varying distance, and changing lighting conditions—characteristic permanent features of the face are identified and stored in order that they can be used in the future to recognize the face again. This demanding abstraction process is executed unconsciously, seemingly without effort, in the experiential subsystem. Only its results are delivered to the rational subsystem.
+Example : Face recognition is an example for the powerful process of abstraction. Out of many particular images of the face of a person—varying angles of observation, varying distance, and changing lighting conditions—characteristic permanent features of the face are identified and stored in order that they can be used in the future to recognize the face again. This demanding abstraction process is executed unconsciously, seemingly without effort, in the experiential subsystem. Only its results are delivered to the rational subsystem.
 
 > 示例：人脸识别是强大的抽象过程的一个例子。从人脸的许多特定图像中——不同的观察角度、不同的距离和不断变化的照明条件——识别并存储人脸的特征性永久特征，以便将来再次识别人脸。这种要求苛刻的抽象过程是在体验子系统中无意识地、似乎毫不费力地执行的。只有它的结果被传递给 rational 子系统。
 
-Abstraction forms categories, where a category is a set of elements that share com­ mon characteristic features . The notion of category is recursive : the elements of a category can themselves be categories. We thus arrive at a hierarchy of categories, going from the concrete to the abstract. At the lowest level, we find immediate sen­ sory experiences.
+Abstraction forms categories, where a category is a set of elements that share com­ mon characteristic features. The notion of category is recursive : the elements of a category can themselves be categories. We thus arrive at a hierarchy of categories, going from the concrete to the abstract. At the lowest level, we find immediate sen­ sory experiences.
 
 > 抽象形成类别，其中类别是一组共享共同特征的元素。范畴的概念是递归的：范畴的元素本身也可以是范畴。因此，我们得出了一个从具体到抽象的类别层次结构。在最底层，我们发现了直接的感官体验。
 
-A concept is a category that is augmented by a set of beliefs about its relations to other categories [Rei01, pp. 261–300] . The set of beliefs relates a new concept to already existing concepts and provides for an implicit theory (a subjective mental model). As a new domain is penetrated, new concepts are formed and linked to the concepts that are already present in the conceptual landscape. A concept is a mental construct of the general iz able aspects of a known entity. It has an intension ( What is the essence? ) and an extension, answering the question as to which things and mental constructs are exemplars of the concept. A concept can also be considered as a unit of thought [Vig62].
+A concept is a category that is augmented by a set of beliefs about its relations to other categories [Rei01, pp. 261–300]. The set of beliefs relates a new concept to already existing concepts and provides for an implicit theory (a subjective mental model). As a new domain is penetrated, new concepts are formed and linked to the concepts that are already present in the conceptual landscape. A concept is a mental construct of the general iz able aspects of a known entity. It has an intension ( What is the essence? ) and an extension, answering the question as to which things and mental constructs are exemplars of the concept. A concept can also be considered as a unit of thought [Vig62].
 
 > 概念是一个范畴，它被一组关于它与其他范畴关系的信念所增强[Rei01，第 261-300 页]。这套信念将一个新概念与现有概念联系起来，并提供了一个隐含理论(一个主观心理模型)。当一个新的领域被渗透时，新的概念就会形成，并与概念景观中已经存在的概念联系起来。概念是对已知实体的一般可理解方面的心理构造。它有一个内涵(本质是什么？)和一个外延，回答了哪些事物和心理结构是概念的例子的问题。一个概念也可以被视为一个思维单位[Vig62]。
 
@@ -2339,7 +2362,7 @@ According to the scientific tradition , it would be desirable to introduce an ob
 
 > 根据科学传统，最好引入一个客观的认知复杂性概念，而不涉及主观的人类经验。然而，这似乎是不可能的，因为认知复杂性是指客观外部场景与观察者主观内部概念景观之间的关系。
 
-The perceived complexity of a model depends on the relationship between the existing subjective conceptual landscape and the problem-solving capability of the observer and the concepts deployed in the representation of the model, the interrela­ tions among these concepts, and the notation used to represent these concepts. If the observer is an expert, such as the chess grandmaster in the previous example, the experiential subsystem provides an understanding of the scenario within a short time and without any real effort. According to our metric, the scenario will be judged as simple . An amateur has to go through a tedious cause-and-effect analysis of every move employing the rational subsystem that takes time and explicit cogni­ tive effort. According to the above metric, the same chess scenario will be judged as complex .
+The perceived complexity of a model depends on the relationship between the existing subjective conceptual landscape and the problem-solving capability of the observer and the concepts deployed in the representation of the model, the interrela­ tions among these concepts, and the notation used to represent these concepts. If the observer is an expert, such as the chess grandmaster in the previous example, the experiential subsystem provides an understanding of the scenario within a short time and without any real effort. According to our metric, the scenario will be judged as simple. An amateur has to go through a tedious cause-and-effect analysis of every move employing the rational subsystem that takes time and explicit cogni­ tive effort. According to the above metric, the same chess scenario will be judged as complex .
 
 > 模型的感知复杂性取决于现有的主观概念景观与观察者的问题解决能力之间的关系，以及模型表示中部署的概念、这些概念之间的相互关系以及用于表示这些概念的符号。如果观察者是专家，如前一个例子中的国际象棋大师，体验子系统可以在短时间内无需任何实际努力即可理解场景。根据我们的指标，该场景将被判断为简单。业余爱好者必须使用理性子系统对每一个动作进行繁琐的因果分析，这需要时间和明确的认知努力。根据上述指标，相同的国际象棋场景将被判断为复杂。
 
@@ -2377,7 +2400,7 @@ If a scenario requires cognitive resources that are beyond the given limits, the
 
 > •划分(也称为关注点分离)是指将问题场景划分为几乎独立的部分，这些部分可以单独成功地进行研究。划分是 reduction 的核心，m 是过去 300 年来自然科学中首选的简化策略。分区并不总是可能的。当紧急财产受到威胁时，它有其局限性。
 
-• Isolation refers to the suppression of seemingly irrelevant detail when trying to find a primary cause . The primary cause forms the starting point of the causal chain that links a sequence of events between this primary cause and the observed effect. There is a danger that the simplification strategy of isolation leads to a too simplistic model of reality (see the example on skidding of a car in Sect. 2.1.1 ).
+• Isolation refers to the suppression of seemingly irrelevant detail when trying to find a primary cause. The primary cause forms the starting point of the causal chain that links a sequence of events between this primary cause and the observed effect. There is a danger that the simplification strategy of isolation leads to a too simplistic model of reality (see the example on skidding of a car in Sect. 2.1.1 ).
 
 > •隔离是指在试图找到主要原因时，抑制看似无关的细节。主要原因构成了因果链的起点，该因果链将一系列事件连接在主要原因和观察到的效果之间。隔离的简化策略有可能导致现实模型过于简单化(见第 2.1.1 节中汽车打滑的例子)。
 
@@ -2387,7 +2410,7 @@ If a scenario requires cognitive resources that are beyond the given limits, the
 
 ## 2.2 The Conceptual Landscape
 
-The notion of conceptual landscape , or the image [Bou61], refers to the personal knowledge base that is built up and maintained by an individual in the experiential and rational subsystem of the mind. The knowledge base in the experiential subsystem is implicit , while the knowledge base in the rational subsystem is explicit . The conceptual landscape can be thought of as a structured network of interrelated concepts that defines the world model , the personality , and the intentions of an indi­ vidual. It is built up over the lifetime of an individual, starting from pre-wired struc­ tures that are established during the development of the genotype to the phenotype , and continually augmented as the individual interacts with its environment by exchanging messages via the sensory systems.
+The notion of conceptual landscape , or the image [Bou61], refers to the personal knowledge base that is built up and maintained by an individual in the experiential and rational subsystem of the mind. The knowledge base in the experiential subsystem is implicit , while the knowledge base in the rational subsystem is explicit. The conceptual landscape can be thought of as a structured network of interrelated concepts that defines the world model , the personality , and the intentions of an indi­ vidual. It is built up over the lifetime of an individual, starting from pre-wired struc­ tures that are established during the development of the genotype to the phenotype , and continually augmented as the individual interacts with its environment by exchanging messages via the sensory systems.
 
 > 概念景观或图像的概念[Bou61]是指个人在心灵的经验和理性子系统中建立和维护的个人知识库。经验子系统中的知识库是隐式的，而理性子系统中知识库是显式的。概念景观可以被认为是一个相互关联的概念的结构化网络，它定义了世界模型、个性和个人的意图。它是在个体的一生中建立起来的，从基因型发展到表型过程中建立的预连线结构开始，随着个体通过感觉系统交换信息与环境相互作用而不断增强。
 
@@ -2413,7 +2436,7 @@ Example : The basic-level concept temperature is more fundamental than the sub-c
 
 > 示例：基本概念温度比子概念油温或包含的概念传感器数据更基本。
 
-Studies with children have shown that basic-level concepts are acquired earlier than sub-concepts or encompassing concepts. As a child grows up, it continually builds and adds to its conceptual landscape by observing regularities in the perceptions and utility in grouping properties of perceptions into new categories [Vig62]. These new categories must be interlinked with the already existing concepts in the child’s mind to form a consistent conceptual landscape . By abstracting not only over per­ ceptions but also over already existing concepts, new concepts are formed.
+Studies with children have shown that basic-level concepts are acquired earlier than sub-concepts or encompassing concepts. As a child grows up, it continually builds and adds to its conceptual landscape by observing regularities in the perceptions and utility in grouping properties of perceptions into new categories [Vig62]. These new categories must be interlinked with the already existing concepts in the child’s mind to form a consistent conceptual landscape. By abstracting not only over per­ ceptions but also over already existing concepts, new concepts are formed.
 
 > 对儿童的研究表明，基本概念比子概念或包含概念更早获得。随着孩子的成长，它通过观察感知的规律和将感知的属性分组到新类别中的效用，不断构建和增加其概念景观[Vig62]。这些新类别必须与儿童头脑中已有的概念相互联系，形成一致的概念景观。通过不仅抽象概念，而且抽象已有的概念，形成了新的概念。
 
@@ -2433,7 +2456,7 @@ Understanding a new concept is a matter of establishing connections between the 
 
 > 理解一个新概念是在新概念和已经很好地嵌入概念景观中的熟悉概念之间建立联系的问题。
 
-Example : In order to understand the new concept of counterfeit money , one must relate this new concept to the following already familiar concepts: (i) the concept of money , (ii) the concept of a legal system , (iii) the concept of a national bank that is legalized to print money, and (iv) the concept of cheating. A counterfeit money bill looks like an authentic money bill . In this situation, examples and prototypes are of limited utility.
+Example : In order to understand the new concept of counterfeit money , one must relate this new concept to the following already familiar concepts: (i) the concept of money , (ii) the concept of a legal system , (iii) the concept of a national bank that is legalized to print money, and (iv) the concept of cheating. A counterfeit money bill looks like an authentic money bill. In this situation, examples and prototypes are of limited utility.
 
 > 示例：为了理解假币的新概念，必须将这一新概念与以下已经熟悉的概念联系起来：(i)货币的概念，(ii)法律制度的概念。假钞看起来像真钞。在这种情况下，示例和原型的实用性有限。
 
@@ -2455,7 +2478,7 @@ Example : The semantic content of the concept speed is precisely defined in the 
 
 ### 2.2.2 Scientific Concepts
 
-In the world of science, new concepts are introduced in many publications in order to be able to express new units of thought . Often these concepts are named by a mnemonic , leading to, what is often called, scientific jargon. In order to make an exposition understandable , new concepts should be introduced sparingly and with utmost care. A new scientific concept should have the following properties [Kop08]:
+In the world of science, new concepts are introduced in many publications in order to be able to express new units of thought. Often these concepts are named by a mnemonic , leading to, what is often called, scientific jargon. In order to make an exposition understandable , new concepts should be introduced sparingly and with utmost care. A new scientific concept should have the following properties [Kop08]:
 
 > 在科学领域，许多出版物都引入了新概念，以便能够表达新的思维单位。通常，这些概念是用助记符命名的，这导致了所谓的科学术语。为了使论述易于理解，应谨慎引入新概念。一个新的科学概念应该具有以下属性[Kop08]：
 
@@ -2517,7 +2540,7 @@ A protocol is an abstraction over a sequence of rule-based message exchanges bet
 
 ### 2.2.4 Semantic Content of a Variable
 
-The concept of a variable , a fundamental concept in the domain of computing, is of such importance for the rest of the book that it justifies some special elaboration. A variable can be considered as a language construct that assigns an attribute to a concept. If the point in real time, the instant , when this assignment is valid, is of relevance, then we call the variable a state variable . As time progresses, the attri­ bute of a state variable may change, while the concept remains the same. A variable thus consists of two parts, a fixed part , the variable name (or the identifier ), and a variable part called the value of the variable that is assigned to the variable. The variable name designates the concept that determines what we are talking about. In a given context, the variable name—which is analogous to the name of a concept in a natural language community—must be unique and point to the same concept at all communicating partners. The meaning that is conveyed by a variable is called the semantic content of the variable. As we will show in the latter part of this section, the semantic content of a variable is invariant to a change in representation. The requirement of semantic precision demands that the concept that is associated with a variable name and the domain of values of the variable are unambiguously defined in the model of the given application.
+The concept of a variable , a fundamental concept in the domain of computing, is of such importance for the rest of the book that it justifies some special elaboration. A variable can be considered as a language construct that assigns an attribute to a concept. If the point in real time, the instant , when this assignment is valid, is of relevance, then we call the variable a state variable. As time progresses, the attri­ bute of a state variable may change, while the concept remains the same. A variable thus consists of two parts, a fixed part , the variable name (or the identifier ), and a variable part called the value of the variable that is assigned to the variable. The variable name designates the concept that determines what we are talking about. In a given context, the variable name—which is analogous to the name of a concept in a natural language community—must be unique and point to the same concept at all communicating partners. The meaning that is conveyed by a variable is called the semantic content of the variable. As we will show in the latter part of this section, the semantic content of a variable is invariant to a change in representation. The requirement of semantic precision demands that the concept that is associated with a variable name and the domain of values of the variable are unambiguously defined in the model of the given application.
 
 > 变量的概念是计算领域的一个基本概念，对于本书的其余部分来说非常重要，因此需要进行一些特殊的阐述。变量可以被视为一种为概念分配属性的语言构造。如果实时点，即赋值有效的时刻是相关的，那么我们称该变量为状态变量。随着时间的推移，状态变量的属性可能会发生变化，但概念保持不变。因此，变量由两部分组成，一部分是固定部分，即变量名(或标识符)，另一部分是分配给变量的变量值。变量名指定了决定我们谈论什么的概念。在给定的上下文中，变量名(类似于自然语言社区中的概念名称)必须是唯一的，并且指向所有通信伙伴的相同概念。变量所传达的含义称为变量的语义内容。正如我们将在本节后半部分展示的那样，变量的语义内容对表示的变化是不变的。语义精度的要求要求在给定应用程序的模型中明确定义与变量名和变量值域相关的概念。
 
@@ -2537,7 +2560,7 @@ Example : The Mars Climate Orbiter crash occurred because the ground-based softw
 
 > 示例：火星气候轨道飞行器坠毁是因为地面软件使用了与飞行软件不同的系统单元。事故调查委员会报告中的第一项建议是，MPL(火星极地着陆器)项目应验证 MPL 航天器设计和运行过程中各单元的一致使用[NAS99]。
 
-In different language communities, different variable names may be used to point to the same concept. For example, in an English-speaking language community, the temperature of the air may be abbreviated by $t$ -air , while a German-speaking com­ munity may call it $t.$ -luft . If we change the representation of the value domain of a variable, e.g., if we replace the units for measuring the temperature from Celsius to Fahrenheit and adapt the value of the variable accordingly, the semantic content expressed by the variable remains the same.
+In different language communities, different variable names may be used to point to the same concept. For example, in an English-speaking language community, the temperature of the air may be abbreviated by $t$ -air , while a German-speaking com­ munity may call it $t.$ -luft. If we change the representation of the value domain of a variable, e.g., if we replace the units for measuring the temperature from Celsius to Fahrenheit and adapt the value of the variable accordingly, the semantic content expressed by the variable remains the same.
 
 > 在不同的语言社区中，可以使用不同的变量名来指向同一个概念。例如，在讲英语的社区中，空气温度可以缩写为$t$-air，而讲德语的社区可以称之为$t$-luft。如果我们改变变量值域的表示，例如，如果我们将测量温度的单位从摄氏度替换为华氏度，并相应地调整变量的值，则变量表示的语义内容保持不变。
 
@@ -2545,11 +2568,11 @@ Example : On the surface the two variables $t–a i r=86$ and $\mathit{t-l u f t
 
 > 示例：从表面上看，两个变量$t–a i r=86$和$\mathit{t-l u f t}=30$完全不同，因为它们有不同的名称和不同的值。然而，如果 t-air 和$t$-luft 指的是相同的概念，即空气的温度，并且$t$-al 的值以华氏度表示，而$t$-lufft 的值以摄氏度表示，那么很明显这两个变量的语义内容是相同的。
 
-These differences in the representations of the semantic content of a variable become important when we look at gateway components which link two subsystems of a system of systems that have been developed by two different organizations accord­ ing to two different architectural styles . The term architectural style refers to all explicit and implicit principles, rules, and conventions that are followed by an orga­ nization in the design of a system, e.g., the representation of data, protocols, syntax, naming, semantics, etc. The gateway component must translate the variable names and representations from one architectural style to the other architectural style, while keeping the semantic content invariant .
+These differences in the representations of the semantic content of a variable become important when we look at gateway components which link two subsystems of a system of systems that have been developed by two different organizations accord­ ing to two different architectural styles. The term architectural style refers to all explicit and implicit principles, rules, and conventions that are followed by an orga­ nization in the design of a system, e.g., the representation of data, protocols, syntax, naming, semantics, etc. The gateway component must translate the variable names and representations from one architectural style to the other architectural style, while keeping the semantic content invariant .
 
 > 当我们查看连接由两个不同组织根据两种不同架构风格开发的系统体系的两个子系统的网关组件时，变量语义内容表示的这些差异变得很重要。架构风格一词是指组织在系统设计中遵循的所有显式和隐式原则、规则和约定，例如数据、协议、语法、命名、语义等的表示。网关组件必须将变量名称和表示从一种架构风格转换为另一种架构风格，同时保持语义内容不变。
 
-Data that describes the properties of (object) data is sometimes called meta-­ data. In our model of a variable, data that describes the properties of the fixed parts of a variable is meta-data , while the variable part of a variable, the value set , is ( object ) data . Meta-data thus describes the properties of the concept that is referred to by the variable name. Since meta-data can become object data of another level, the distinction between data and meta-data is relative to the viewpoint of the observer.
+Data that describes the properties of (object) data is sometimes called meta-­ data. In our model of a variable, data that describes the properties of the fixed parts of a variable is meta-data , while the variable part of a variable, the value set , is ( object ) data. Meta-data thus describes the properties of the concept that is referred to by the variable name. Since meta-data can become object data of another level, the distinction between data and meta-data is relative to the viewpoint of the observer.
 
 > 描述(对象)数据属性的数据有时被称为元数据。在我们的变量模型中，描述变量固定部分属性的数据是元数据，而变量的变量部分，即值集，是(对象)数据。因此，元数据描述了变量名所引用的概念的属性。由于元数据可以成为另一个层次的对象数据，因此数据和元数据之间的区别与观察者的观点有关。
 
@@ -2567,7 +2590,7 @@ Example : The purpose of a model in celestial mechanics is the explanation of th
 
 > 示例：天体力学模型的目的是解释宇宙中天体的运动。为此，引入质点的抽象概念并将世界的整体多样性简化为空间中的一个质点是有意义的，这样就可以研究与其他质点(天体)的相互作用，而不会受到不必要细节的干扰。
 
-When a new level of abstraction (a new model) is introduced that successfully con­ c ep tu aliz es the properties relevant for the given purpose and disregards the rest, simplicity emerges. Such simplicity, made possible by the formation of proper con­ cepts, gives rise to new insights that are at the roots of the laws of nature . As Popper [Pop68] points out, due to the inherent imperfection of the abstraction and induc­ tion process, laws of nature can only be falsified, but never be proven to be abso­ lutely correct.
+When a new level of abstraction (a new model) is introduced that successfully con­ c ep tu aliz es the properties relevant for the given purpose and disregards the rest, simplicity emerges. Such simplicity, made possible by the formation of proper con­ cepts, gives rise to new insights that are at the roots of the laws of nature. As Popper [Pop68] points out, due to the inherent imperfection of the abstraction and induc­ tion process, laws of nature can only be falsified, but never be proven to be abso­ lutely correct.
 
 > 当引入了一个新的抽象层次(一个新模型)，成功地实现了与给定目的相关的属性，而忽略了其他属性时，简单性就出现了。通过形成适当的概念，这种简单性成为可能，从而产生了作为自然法则根源的新见解。正如波普尔[Pop68]所指出的那样，由于抽象和归纳过程的固有缺陷，自然法则只能被证伪，但永远无法被证明是绝对正确的。
 
@@ -2577,15 +2600,15 @@ At the start of any modeling activity, a clear purpose of the model must be esta
 
 > 在任何建模活动开始时，必须确定模型的明确目的。制定模型必须解决的精确问题有助于具体化模型的目的。如果模型的目的不明确，或者有多个不同的目的需要满足，那么就不可能开发出一个简单的模型。
 
-Example : The purpose of a model of behavior of a real-time computer system is to provide answers to the question at what points in real time will the computer system produce what kind of outputs . If our computer system is a system-on-chip (SoC) with a billion transistors, then we must find a hierarchy of behavioral models to meet our purpose.
+Example : The purpose of a model of behavior of a real-time computer system is to provide answers to the question at what points in real time will the computer system produce what kind of outputs. If our computer system is a system-on-chip (SoC) with a billion transistors, then we must find a hierarchy of behavioral models to meet our purpose.
 
 > 示例：实时计算机系统行为模型的目的是为计算机系统在实时的什么点产生什么样的输出提供答案。如果我们的计算机系统是一个拥有十亿个晶体管的片上系统(SoC)，那么我们必须找到一个行为模型的层次结构来满足我们的目的。
 
-The recursive application of the principles of abstraction leads to such a hierarchy of models that Hayakawa [Hay90] calls the abstraction ladder. Starting with basic-­level concepts that are essential for understanding a domain, more general concepts can be formed by abstraction , and more concrete concepts can be formed by refinement . At the lowest level of the abstraction ladder are the direct sensory experiences.
+The recursive application of the principles of abstraction leads to such a hierarchy of models that Hayakawa [Hay90] calls the abstraction ladder. Starting with basic-­level concepts that are essential for understanding a domain, more general concepts can be formed by abstraction , and more concrete concepts can be formed by refinement. At the lowest level of the abstraction ladder are the direct sensory experiences.
 
 > 抽象原则的递归应用导致了 Hayakawa[Hay90]称之为抽象阶梯的模型层次结构。从理解一个领域所必需的基本概念开始，抽象可以形成更一般的概念，细化可以形成更具体的概念。在抽象阶梯的最低层次是直接的感官体验。
 
-Example : The four-universe model of Avizienis [Avi82] introduces a hierarchy of models in order to simplify the description of the behavior of a computer system. At the lowest level of the hierarchy, the physical level , the analog signals of the circuits are observed, such as the rise time of the voltages as a transistor performs a switching operation. The analysis of a circuit behavior at the physical (analog) level becomes difficult as soon as more and more transistors get involved ( emerging complexity ) . The next higher level, the digital logic level , abstracts from the physical analog quantities and the dense time and introduces binary logic values ( high or low ) of signals at discrete instants, resulting in a much simpler representa­ tion of the behavior of an elementary circuit, e.g., an AND gate ( emerging simplicity ). Complexity creeps in again as we combine more and more logic circuits. The next higher level, the information level , lumps a (possible large) sequence of binary values into a mean­ ingful data structure (e.g., a pointer, a real-valued variable, or a complete picture) and intro­ duces powerful high-level operations on these data structures. Finally, at the external level , only the services of the computer system to the environment, as seen by an outside user, are of relevance.
+Example : The four-universe model of Avizienis [Avi82] introduces a hierarchy of models in order to simplify the description of the behavior of a computer system. At the lowest level of the hierarchy, the physical level , the analog signals of the circuits are observed, such as the rise time of the voltages as a transistor performs a switching operation. The analysis of a circuit behavior at the physical (analog) level becomes difficult as soon as more and more transistors get involved ( emerging complexity ). The next higher level, the digital logic level , abstracts from the physical analog quantities and the dense time and introduces binary logic values ( high or low ) of signals at discrete instants, resulting in a much simpler representa­ tion of the behavior of an elementary circuit, e.g., an AND gate ( emerging simplicity ). Complexity creeps in again as we combine more and more logic circuits. The next higher level, the information level , lumps a (possible large) sequence of binary values into a mean­ ingful data structure (e.g., a pointer, a real-valued variable, or a complete picture) and intro­ duces powerful high-level operations on these data structures. Finally, at the external level , only the services of the computer system to the environment, as seen by an outside user, are of relevance.
 
 > 示例：Avizienis 的四宇宙模型[Avi82]引入了一个模型层次结构，以简化对计算机系统行为的描述。在层次结构的最低级别，即物理级别，观察电路的模拟信号，例如晶体管执行开关操作时的电压上升时间。随着越来越多的晶体管参与进来(新兴的复杂性)，在物理(模拟)层面分析电路行为变得困难。下一个更高的级别，数字逻辑级别，从物理模拟量和密集时间中抽象出来，并在离散时刻引入信号的二进制逻辑值(高或低)，从而更简单地表示基本电路的行为，例如 and 门(新兴的简单性)。随着我们组合越来越多的逻辑电路，复杂性再次蔓延。下一个更高的层次，信息层，将一个(可能很大的)二进制值序列组合成一个有意义的数据结构(例如指针、实值变量或完整图片)，并对这些数据结构引入强大的高级操作。最后，在外部层面，只有外部用户看到的计算机系统对环境的服务是相关的。
 
@@ -2626,7 +2649,7 @@ The major challenge of design is the building of a software/hardware artifact (a
 
 > 设计的主要挑战是构建一个软件/硬件工件(嵌入式计算机系统)，该工件在给定的约束下提供预期的行为(即服务)，并且该工件的相关属性(例如行为)可以通过足够简单的模型在不同的抽象级别进行建模。
 
-As stated before, there are many different purposes that give rise to a hierarchy of models of an artifact. Examples are behavior, reliability, man-machine interac­ tion, energy consumption, physical dimension, cost of manufacturing, or cost of maintenance, to name a few. Out of these, the most important one is the model of behavior . In the context of real-time systems, behavior specifies the output actions of a computer system as a consequence of the inputs, the state and the progression of real time. Output actions and input can be captured in the concepts of input mes­ sages and output messages . In Chap. 4 of this book, we present a cross-domain model for the behavior of a real-time computer system using these concepts.
+As stated before, there are many different purposes that give rise to a hierarchy of models of an artifact. Examples are behavior, reliability, man-machine interac­ tion, energy consumption, physical dimension, cost of manufacturing, or cost of maintenance, to name a few. Out of these, the most important one is the model of behavior. In the context of real-time systems, behavior specifies the output actions of a computer system as a consequence of the inputs, the state and the progression of real time. Output actions and input can be captured in the concepts of input mes­ sages and output messages. In Chap. 4 of this book, we present a cross-domain model for the behavior of a real-time computer system using these concepts.
 
 > 如前所述，有许多不同的目的会产生工件模型的层次结构。例如行为、可靠性、人机交互、能耗、物理尺寸、制造成本或维护成本等。其中，最重要的是行为模式。在实时系统的背景下，行为指定了计算机系统的输出动作，这是实时输入、状态和进程的结果。输出动作和输入可以用输入消息和输出消息的概念来捕捉。在本书的第 4 章中，我们使用这些概念为实时计算机系统的行为提供了一个跨域模型。
 
@@ -2721,7 +2744,7 @@ Example : The human body is a complex system, and so is the behavior of social g
 
 In this book, we classify a system as complex , if we are not in the position to develop a set of models of adequate simplicity —commensurate to the rational capa­ bilities of the human mind—to explain the structure and behavior of the system. Further examples of complex systems are life and consciousness , the earth’s cli­ mate, the global economy, living organisms, and many large computer systems, to name a few.
 
-> 在这本书中，如果我们不能开发一套足够简单的模型——与人类思维的理性能力相称——来解释系统的结构和行为，我们就将系统归类为复杂系统。复杂系统的其他例子包括生命和意识、地球气候、全球经济、生物体和许多大型计算机系统等。
+> 在这本书中，如果我们不能开发一套足够简单的模型——与人类思维的理性能力相称——来解释系统的结构和行为，我们就将系统归类为复杂系统。复杂系统的其他例子包括生命和意识、地球气候、全局经济、生物体和许多大型计算机系统等。
 
 #### What Are Insights About Complex Systems?
 
@@ -2749,7 +2772,7 @@ Example : Large and complex IT systems typically implement redundancy, for examp
 
 Since we do not understand complex systems, we cannot predict their future behavior with adequate certainty. As a consequence, black swan events , i.e., unan­ ticipated events with major effect, often on a global scale, may erupt [Tal08].
 
-> 由于我们不了解复杂的系统，我们无法足够确定地预测它们未来的行为。因此，黑天鹅事件，即通常在全球范围内产生重大影响的意外事件，可能会爆发[Tal08]。
+> 由于我们不了解复杂的系统，我们无法足够确定地预测它们未来的行为。因此，黑天鹅事件，即通常在全局范围内产生重大影响的意外事件，可能会爆发[Tal08]。
 
 Example : Power outages ( blackouts ) occur commonly. In 2020–2021 alone, several hun­ dred thousand households in the USA have been subject to power outages.
 
@@ -2761,7 +2784,7 @@ Example : Cyber security is a growing concern in IT enterprises, but all kinds o
 
 Example : Globalization and free travel significantly increased the spread of infectious dis­ eases. As a result, in 2020, Covid-19 evolved into a global pandemic.
 
-> 例如：全球化和自由旅行大大增加了传染病的传播。因此，在 2020 年，新冠肺炎演变成了一场全球大流行。
+> 例如：全局化和自由旅行大大增加了传染病的传播。因此，在 2020 年，新冠肺炎演变成了一场全局大流行。
 
 Although we lack complex system understanding, we still aim to achieve a particu­ lar future system behavior by a modification of its components. Often, this modifi­ cation does not have the desired outcome.
 
@@ -2840,7 +2863,7 @@ The real-time system model, presented in Chap. 4 , is such a generic model that 
 
 > (iv)分段原则：该原则建议，应尽可能将难以理解的行为分解为一个连续的行为结构，以便对行为进行逐步分析。每一步只需要调查与此步骤相关的有限背景(第 5.4 节)。
 
-(v) Principle of Independence: This principle suggests that the interdependence of architectural units ( components or clusters ; see Sect. 1.1 ) should be reduced to the necessary minimum that is required by the application. An example is the provision of a single unidirectional primitive for the communication among components such that any low-level dependency of the sender of a message on the correct operation of the receiver is eliminated by design. This principle is of paramount importance in the design of fault-tolerant systems to ensure that back propagation of failures is avoided and the independence of failures of fault-containment units can be assumed (see fault-containment unit in Sect. 6.1.1 and flow control in Sect. 7.2.3 ).
+(v) Principle of Independence: This principle suggests that the interdependence of architectural units ( components or clusters; see Sect. 1.1 ) should be reduced to the necessary minimum that is required by the application. An example is the provision of a single unidirectional primitive for the communication among components such that any low-level dependency of the sender of a message on the correct operation of the receiver is eliminated by design. This principle is of paramount importance in the design of fault-tolerant systems to ensure that back propagation of failures is avoided and the independence of failures of fault-containment units can be assumed (see fault-containment unit in Sect. 6.1.1 and flow control in Sect. 7.2.3 ).
 
 > (v) 独立性原则：该原则建议将架构单元(组件或集群；见第 1.1 节)的相互依赖性降低到应用程序所需的最低限度。一个例子是为组件之间的通信提供单个单向原语，从而通过设计消除了消息发送者对接收者正确操作的任何低级依赖。这一原则在容错系统的设计中至关重要，以确保避免故障的反向传播，并假设故障控制单元的故障独立性(见第 6.1.1 节中的故障控制单元和第 7.2.3 节中的流量控制)。
 
@@ -2850,7 +2873,7 @@ The real-time system model, presented in Chap. 4 , is such a generic model that 
 
 (vii) Principle of a Consistent Time: The progression of real time is an important independent variable in any behavioral model of the physical subsystem of an embedded system. This principle suggests that a global time base should be introduced in the distributed computer system such that system-wide consis­ tent temporal relations (e.g., si multan e it y) and temporal distances among events can be established on the basis of global time-stamps (Sect. 3.3 ). The availability of a global time simplifies the solution of many problems in dis­ tributed systems (see Sect. 11.7 ).
 
-> (vii)一致时间原则：在嵌入式系统物理子系统的任何行为模型中，实时性的进展都是一个重要的自变量。这一原则建议在分布式计算机系统中引入全局时基，以便在全局时间戳的基础上建立全系统一致的时间关系(例如，时间戳)和事件之间的时间距离(第 3.3 节)。全球时间的可用性简化了分布式系统中许多问题的解决方案(见第 11.7 节)。
+> (vii)一致时间原则：在嵌入式系统物理子系统的任何行为模型中，实时性的进展都是一个重要的自变量。这一原则建议在分布式计算机系统中引入全局时基，以便在全局时间戳的基础上建立全系统一致的时间关系(例如，时间戳)和事件之间的时间距离(第 3.3 节)。全局时间的可用性简化了分布式系统中许多问题的解决方案(见第 11.7 节)。
 
 ## Bibliographic Notes
 
@@ -2880,7 +2903,7 @@ The textbook by Reisberg [Rei10] gives a good overview of the state of the art i
 
 > •知识是通过抽象过程获得的，通过抽象过程，特定从属于一般，因此关于一般的知识适用于许多细节。
 
-• A concept is a category that is augmented by a set of beliefs about its relations to other categories . The set of beliefs relates a new concept to already existing con­ cepts and provides for an implicit theory (a subjective mental model).
+• A concept is a category that is augmented by a set of beliefs about its relations to other categories. The set of beliefs relates a new concept to already existing con­ cepts and provides for an implicit theory (a subjective mental model).
 
 > •一个概念是一个类别，它被一组关于它与其他类别关系的信念所增强。这套信念将一个新概念与现有的概念联系起来，并提供了一个隐含的理论(一个主观的心理模型)。
 
@@ -2920,7 +2943,7 @@ The textbook by Reisberg [Rei10] gives a good overview of the state of the art i
 
 > •概念的本质，即与名称相关的概念的语义内容，可以假设在自然语言社区内是相同的(外延)，但不同的人可能会将不同层次的意义与概念(内涵)联系起来。
 
-• A variable is a language construct that assigns an attribute to a concept at the given instant . A variable thus consists of two parts, a fixed part , the variable name , and a variable part called the value of the variable that is assigned to the variable at a particular instant.
+• A variable is a language construct that assigns an attribute to a concept at the given instant. A variable thus consists of two parts, a fixed part , the variable name , and a variable part called the value of the variable that is assigned to the variable at a particular instant.
 
 > •变量是一种在给定时刻为概念分配属性的语言构造。因此，变量由两部分组成，一部分是固定部分，即变量名，另一部分是在特定时刻分配给变量的变量值。
 
@@ -3002,29 +3025,35 @@ The textbook by Reisberg [Rei10] gives a good overview of the state of the art i
 
 This chapter starts in Sect. 3.1 with a general discussion on time and order. The notions of causal order, temporal order, and delivery order and their interrelation­ ships are elaborated. The parameters that characterize the behavior and the quality of a digital clock are investigated. Section 3.2 proceeds along the positivist tradition by introducing an omniscient external observer with an absolute reference clock that can generate precise time-stamps for all relevant events. These absolute time-­ stamps are used to reason about the precision and accuracy of a global time base and to expose the fundamental limits of time measurement in a distributed real-­ time system.
 
-> 本章从宗开始。3.1 对时间和顺序进行一般性讨论。阐述了因果顺序、时间顺序和交付顺序的概念及其相互关系。研究了表征数字时钟行为和质量的参数。第 3.2 节遵循实证主义传统，引入了一个无所不知的外部观察者，他有一个绝对参考时钟，可以为所有相关事件生成精确的时间戳。这些绝对时间戳用于推断全球时基的精度和准确度，并揭示分布式实时系统中时间测量的基本限制。
+> 本章从第 3.1 节开始。
+> 第 3.1 节对时间和顺序进行一般性讨论。阐述了**因果顺序、时间顺序和交付顺序**的概念及其相互关系。研究了表征数字时钟行为和质量的参数。
+> 第 3.2 节遵循实证主义传统，引入了一个无所不知的**外部观察者**，他有一个绝对参考时钟，可以为所有相关事件生成精确的时间戳。这些绝对时间戳用于**推断全局时基的精度和准确度**，并揭示分布式实时系统中时间测量的基本限制。
 
 In Sect. 3.3 , the model of a sparse time base is introduced to establish a consis­ tent view of the order of computer-generated events in a distributed real-time sys­ tem without having to execute an agreement protocol. The cyclic model of time presented in this section is well suited to deal with the progression of time in cyclic systems, such as in many control and multimedia systems.
 
-> 在门派。3.3，引入稀疏时基模型，在分布式实时系统中建立计算机生成事件顺序的一致视图，而无需执行协议。本节中提出的循环时间模型非常适合处理循环系统中的时间进程，例如许多控制和多媒体系统。
+> 在第 3.3 节中，引入稀疏时基模型，在**分布式实时系统中建立计算机生成事件顺序的一致视图**，而无需执行协议。本节中提出的循环时间模型非常适合处理循环系统中的时间进程，例如许多控制和多媒体系统。
 
-The topic of internal clock synchronization is covered in Sect. 3.4 . First, the notions of convergence function and drift offset are introduced to express the syn­ chron iz ation condition that must be satisfied by any synchronization algorithm. Then, the simple central master algorithm for clock synchronization is presented, and the precision of this algorithm is analyzed. Section 3.4.3 deals with the more complex issue of fault-tolerant distributed clock synchronization. The jitter of the communication system is a major limiting factor that determines the precision of the global time base.
+The topic of internal clock synchronization is covered in Sect. 3.4. First, the notions of convergence function and drift offset are introduced to express the syn­ chron iz ation condition that must be satisfied by any synchronization algorithm. Then, the simple central master algorithm for clock synchronization is presented, and the precision of this algorithm is analyzed. Section 3.4.3 deals with the more complex issue of fault-tolerant distributed clock synchronization. The jitter of the communication system is a major limiting factor that determines the precision of the global time base.
 
-> 内部时钟同步的主题在第节中有所介绍。3.4 . 首先，引入收敛函数和漂移偏移的概念来表示任何同步算法必须满足的同步条件。然后，提出了用于时钟同步的简单中央主算法，并分析了该算法的精度。第 3.4.3 节探讨了容错分布式时钟同步这一更为复杂的问题。通信系统的抖动是决定全球时基精度的主要限制因素。
+> 内部时钟同步的主题在第 3.4 节中有所介绍。
+> 首先，引入收敛函数和漂移偏移的概念来表示任何同步算法必须满足的同步条件。
+> 然后，提出了用于时钟同步的简单中央主算法，并分析了该算法的精度。
+> 第 3.4.3 节探讨了容错分布式时钟同步这一更为复杂的问题。**通信系统的抖动是决定全局时基精度的主要限制因素**。
 
-The topic of external synchronization is studied in Sect. 3.5 . The role of a time gateway and the problem of faults in external synchronization are discussed. Finally, the network time protocol (NTP) of the Internet, the time format of the IEEE 1588 clock synchronization protocol, and the time format of the TTA are presented.
+The topic of external synchronization is studied in Sect. 3.5. The role of a time gateway and the problem of faults in external synchronization are discussed. Finally, the network time protocol (NTP) of the Internet, the time format of the IEEE 1588 clock synchronization protocol, and the time format of the TTA are presented.
 
-> 第二节研究了外部同步的主题。3.5 . 讨论了时间网关的作用和外部同步中的故障问题。最后，介绍了互联网的网络时间协议(NTP)、IEEE 1588 时钟同步协议的时间格式和 TTA 的时间格式。
+> 第 3.5 节研究了外部同步的主题。讨论了**时间网关的作用和外部同步中的故障问题**。
+> 最后，介绍了互联网的网络时间协议(NTP)、IEEE 1588 时钟同步协议的时间格式和 TTA 的时间格式。
 
 ## 3.1 Time and Order
 
 Applying the principles of utility and parsimony (Sect. 2.2.1 ), we base our model of time on Newtonian physics, because the models of Newtonian physics are simpler than the models of relativistic physics and sufficient to deal with most temporal phenomena in embedded systems. In many engineering disciplines (e.g., Newtonian mechanics), time is introduced as an independent variable that determines the sequence of states of a system. The basic constants of physics are defined in relation to the standard of time, the physical second. This is why the global time base in a cyber-physical real-time system should be based on the metric of the physi­ cal second.
 
-> 应用效用和简约原理(第 2.2.1 节)，我们将时间模型建立在牛顿物理学的基础上，因为牛顿物理学的模型比相对论物理学的模型更简单，足以处理嵌入式系统中的大多数时间现象。在许多工程学科(如牛顿力学)中，时间被引入作为决定系统状态序列的自变量。物理学的基本常数是根据时间标准，即物理秒来定义的。这就是为什么网络物理实时系统中的全球时基应该基于物理秒的度量。
+> 应用效用和简约原理(第 2.2.1 节)，我们将时间模型建立在牛顿物理学的基础上，因为牛顿物理学的模型比相对论物理学的模型更简单，足以处理嵌入式系统中的大多数时间现象。在许多工程学科(如牛顿力学)中，时间被引入作为决定系统状态序列的自变量。物理学的基本常数是根据时间标准，即物理秒来定义的。这就是为什么网络物理实时系统中的全局时基应该基于物理秒的度量。
 
 In a typical real-time application, the distributed computer system performs a multitude of different functions concurrently, e.g., the monitoring of real-time (RT) entities (both their value and rate of change), the detection of alarm conditions, the display of the observations to the operator, and the execution of control algorithms to find new set points for many distinct control loops. These diverse functions are normally executed at different nodes. In addition, replicated nodes are introduced to provide fault tolerance by active redundancy. To guarantee a consistent behavior of the entire distributed system, it must be ensured that all nodes process all events in the same consistent order, preferably in the same temporal order in which the events occurred (see also the example in Sect. 5.5 ) in the controlled object. A proper global time base helps to establish such a consistent temporal order on the basis of the time-stamps of the events.
 
-> 在典型的实时应用中，分布式计算机系统同时执行多种不同的功能，例如监测实时(RT)实体(包括其值和变化率)、检测报警条件、向操作员显示观察结果，以及执行控制算法为许多不同的控制回路找到新的设定点。这些不同的功能通常在不同的节点上执行。此外，引入了复制节点，通过主动冗余提供容错。为了保证整个分布式系统的一致行为，必须确保所有节点以相同的一致顺序处理所有事件，最好是以受控对象中事件发生的相同时间顺序(另见第 5.5 节中的示例)。一个适当的全球时基有助于根据事件的时间戳建立这种一致的时间顺序。
+> 在典型的实时应用中，分布式计算机系统同时执行多种不同的功能，例如监测实时(RT)实体(包括其值和变化率)、检测报警条件、向操作员显示观察结果，以及执行控制算法为许多不同的控制回路(control loops)找到新的设定点。这些不同的功能通常在不同的节点上执行。此外，引入了复制节点，通过主动冗余提供容错。为了保证整个分布式系统的一致行为，必须确保所有节点以相同的一致顺序处理所有事件，最好是以受控对象中事件发生的相同时间顺序(另见第 5.5 节中的示例)。一个适当的全局时基有助于根据事件的时间戳建立这种一致的时间顺序。
 
 ### 3.1.1 Different Orders
 
@@ -3040,11 +3069,11 @@ Temporal Order The continuum of Newtonian real time can be modeled by a directed
 
 > (ii)$\{\mathrm{T}\}$是一个稠密集。这意味着在$p$和$r$之间至少有一个$q$，因为$p$与$r$不是同一时刻，其中$p、q$和$r$是时刻。
 
-A section of the timeline between two different instants is called a duration . In our model, an event takes place at an instant of time and does not have a duration. If two events occur at the same instant, then the two events are said to occur simultane­ ously . Instants are totally ordered; however, events are only partially ordered, since simultaneous events are not in the order relation. Events can be totally ordered if another criterion is introduced to order events that occur simultaneously, e.g., in a distributed computer system, the number of the node at which the event occurred can be used to order events that occur simultaneously [Lam78].
+A section of the timeline between two different instants is called a duration. In our model, an event takes place at an instant of time and does not have a duration. If two events occur at the same instant, then the two events are said to occur simultane­ ously. Instants are totally ordered; however, events are only partially ordered, since simultaneous events are not in the order relation. Events can be totally ordered if another criterion is introduced to order events that occur simultaneously, e.g., in a distributed computer system, the number of the node at which the event occurred can be used to order events that occur simultaneously [Lam78].
 
 > 两个不同时刻之间的时间线部分称为持续时间。在我们的模型中，事件发生在瞬间，没有持续时间。如果两个事件同时发生，那么这两个事件就被称为同时发生。瞬间是完全有序的；然而，事件只是部分有序的，因为同时发生的事件没有顺序关系。如果引入另一个标准来对同时发生的事件进行排序，则可以对事件进行完全排序，例如，在分布式计算机系统中，事件发生的节点号可用于对同时发生事件进行排序[Lam78]。
 
-Causal Order In many real-time applications, the causal dependencies among events are of interest. The computer system must assist the operator in identifying the primary event of an alarm shower (see Sect. 1.2.1 ). Knowledge of the exact temporal order of the events is helpful in identifying this primary event. If an event $e I$ occurs after an event $^{e2}$ , then $e I$ cannot be the cause of $^{e2}$ . If, however, $e I$ occurs before $^{e2}$ , then it is possible, but not certain, that $e I$ is the cause of $^{e2}$ . The temporal order of two events is necessary, but not sufficient, for their causal order. Causal order is more than temporal order.
+Causal Order In many real-time applications, the causal dependencies among events are of interest. The computer system must assist the operator in identifying the primary event of an alarm shower (see Sect. 1.2.1 ). Knowledge of the exact temporal order of the events is helpful in identifying this primary event. If an event $e I$ occurs after an event $^{e2}$ , then $e I$ cannot be the cause of $^{e2}$. If, however, $e I$ occurs before $^{e2}$ , then it is possible, but not certain, that $e I$ is the cause of $^{e2}$. The temporal order of two events is necessary, but not sufficient, for their causal order. Causal order is more than temporal order.
 
 > 因果顺序在许多实时应用程序中，事件之间的因果关系是人们感兴趣的。计算机系统必须协助操作员识别报警淋浴的主要事件(见第 1.2.1 节)。了解事件的确切时间顺序有助于识别这一主要事件。如果事件$e I$发生在事件$^{e2}$之后，则$e I$$不能是$^{e2}$的原因。然而，如果$e I$出现在$^{e2}$之前，那么$e I$$可能是$^{e2}$ 的原因，但不确定。两个事件的时间顺序对于它们的因果顺序是必要的，但还不够。因果顺序不仅仅是时间顺序。
 
@@ -3054,7 +3083,7 @@ Reichenbach [Rei57, p. 145] defined causality by a mark method without refer­ 
 
 Example : Suppose there are two events $e I$ and $^{e2}$ :
 
-e1 Somebody enters a room. $^{e2}$ The microwave beeps. Consider the following two cases: (i) $^{e2}$ occurs after $e I$ . (ii) e1 occurs after $^{e2}$ . In both cases the two events are temporally ordered. However, while it is unlikely that there is a causal order between the two events of case (i), it is likely that such a causal order exists between the two events of case (ii), since the person might enter the room to enjoy her lunch.
+e1 Somebody enters a room. $^{e2}$ The microwave beeps. Consider the following two cases: (i) $^{e2}$ occurs after $e I$. (ii) e1 occurs after $^{e2}$. In both cases the two events are temporally ordered. However, while it is unlikely that there is a causal order between the two events of case (i), it is likely that such a causal order exists between the two events of case (ii), since the person might enter the room to enjoy her lunch.
 
 > e1 有人走进一个房间$^{e2}$微波炉发出嘟嘟声。考虑以下两种情况：(i)$^{e2}$发生在$e i$之后。(ii)e1 出现在$^{e2}$之后。在这两种情况下，这两个事件都是按时间顺序排列的。然而，虽然情况(i)的两个事件之间不太可能存在因果关系，但情况(ii)的两次事件之间很可能存在因果联系，因为该人可能会进入房间享用午餐。
 
@@ -3062,7 +3091,7 @@ If the (partial) temporal order between alarm events has been established, it is
 
 > 如果已经建立了报警事件之间的(部分)时间顺序，则如果某个事件肯定晚于另一个报警事件发生，则可以将其排除在主要事件之外。随后，我们将展示一个精确的全局时基有助于确定其中肯定发生在比关系晚的事件集(另见 1.2.1 中的示例)。
 
-Delivery Order A weaker order relation that is often provided by distributed com­ munication systems is a consistent delivery order . The communication system guar­ antees that all nodes see a defined set of related events in the same delivery order. This delivery order is not necessarily related to the temporal order of event occur­ rences or the causal relationship between events. Some distributed algorithms, e.g., atomic broadcast algorithms , establish a consistent delivery order.
+Delivery Order A weaker order relation that is often provided by distributed com­ munication systems is a consistent delivery order. The communication system guar­ antees that all nodes see a defined set of related events in the same delivery order. This delivery order is not necessarily related to the temporal order of event occur­ rences or the causal relationship between events. Some distributed algorithms, e.g., atomic broadcast algorithms , establish a consistent delivery order.
 
 > 交货单分布式通信系统通常提供的较弱的订单关系是一致的交货单。通信系统保证所有节点在相同的交付顺序中看到一组定义的相关事件。这种交付顺序不一定与事件发生的时间顺序或事件之间的因果关系有关。一些分布式算法，例如原子广播算法，建立了一致的交付顺序。
 
@@ -3074,7 +3103,7 @@ In ancient history, the measurement of durations between events was mainly based
 
 Digital Physical Clock A (digital physical) clock is a device for measuring time. It contains a counter and a physical oscillation mechanism that periodically gener­ ates an event to increase the counter. The periodic event is called the microtick of the clock. (The term tick is introduced in Sect. 3.2.1 to denote the events generated by the global time.)
 
-> 数字物理时钟 A(数字物理)时钟是一种用于测量时间的设备。它包含一个计数器和一个物理振荡机制，该机制会定期产生一个事件来增加计数器。周期性事件被称为时钟的微滴答。(第 3.2.1 节中引入了术语“滴答”，表示全球时间生成的事件。)
+> 数字物理时钟 A(数字物理)时钟是一种用于测量时间的设备。它包含一个计数器和一个物理振荡机制，该机制会定期产生一个事件来增加计数器。周期性事件被称为时钟的微滴答。(第 3.2.1 节中引入了术语“滴答”，表示全局时间生成的事件。)
 
 Granularity The duration between two consecutive microticks of a digital physi­ cal clock is called a granule of the clock. The granularity of a given clock can be measured only if there is a clock with a finer granularity available. The granularity of any digital clock leads to a digital iz ation error in time measurement.
 
@@ -3084,15 +3113,15 @@ There also exist analog physical clocks, e.g., sundials that do not have granula
 
 > 也存在模拟物理时钟，例如没有粒度的日晷。在下文中，我们只考虑数字物理时钟。
 
-In subsequent definitions, we use the following notation: clocks are identified by natural numbers $l,2,...,n.$ . If we express properties of clocks, the property is identi­ fied by the clock number as a superscript with the microtick or tick number as a subscript. For example, microtick $i$ of clock $k$ is denoted by m i c r o t i c k Subscript i Superscript k .
+In subsequent definitions, we use the following notation: clocks are identified by natural numbers $l,2,...,n.$. If we express properties of clocks, the property is identi­ fied by the clock number as a superscript with the microtick or tick number as a subscript. For example, microtick $i$ of clock $k$ is denoted by m i c r o t i c k Subscript i Superscript k .
 
 > 在后续的定义中，我们使用以下符号：时钟由自然数$l，2，…标识，。。。，n如果我们表示时钟的属性，则该属性由时钟编号作为上标，微刻度或刻度编号作为下标标识。例如，时钟$k$ 的 microtick[i]由 m i c r o t i c k 下标 i 上标 k 表示。
 
-Reference Clock Assume an omniscient external observer who can observe all events that are of interest in a given context (remember that relativistic effects are disregarded). This observer possesses a unique reference clock z with frequency $\hat{f}$ , which is in perfect agreement with the international standard of time. The counter of the reference clock is always the same as that of the international time standard. We call $l/\!\!\!/^{z}$ the granularity $g^{z}$ of clock z . Let us assume that $\mathit{f}^{z}$ is very large, say $I O^{I5}$  microticks/second, so that the granularity $g^{z}$ is $I$ femtosecond $(l0^{-l5}~\mathrm{{s})}$ . Since the granularity of the reference clock is so small, the digital iz ation error of the refer­ ence clock is considered a second order effect and disregarded in the following analysis.
+Reference Clock Assume an omniscient external observer who can observe all events that are of interest in a given context (remember that relativistic effects are disregarded). This observer possesses a unique reference clock z with frequency $\hat{f}$ , which is in perfect agreement with the international standard of time. The counter of the reference clock is always the same as that of the international time standard. We call $l/\!\!\!/^{z}$ the granularity $g^{z}$ of clock z. Let us assume that $\mathit{f}^{z}$ is very large, say $I O^{I5}$  microticks/second, so that the granularity $g^{z}$ is $I$ femtosecond $(l0^{-l5}~\mathrm{{s})}$. Since the granularity of the reference clock is so small, the digital iz ation error of the refer­ ence clock is considered a second order effect and disregarded in the following analysis.
 
 > 参考时钟假设一个无所不知的外部观察者可以观察到给定上下文中所有感兴趣的事件(记住，相对论效应被忽略了)。该观测器具有一个独特的参考时钟 z，其频率为$\hat{f}$，与国际时间标准完全一致。参考时钟的计数器始终与国际时间标准的计数器相同。我们称之为$l/\！\！\/^{z} $时钟 z 的粒度$g^{z}$。让我们假设$\mathit{f}^{z}$非常大，比如$I O^{I5}$microticks/秒，所以粒度$g^{z]$是$I 飞秒$(l0^{-l5}~\mathrm{{s})}$。由于参考时钟的粒度很小，因此参考时钟的数字定位误差被视为二阶效应，在以下分析中不予考虑。
 
-Absolute Time-Stamp Whenever the omniscient observer perceives the occur­ rence of an event $e$ , she/he will instantaneously record the current state of the refer­ ence clock as the time of occurrence of this event $e$ and will generate a time-stamp for $e$ . Clock ( e ) denotes the time-stamp generated by the use of a given clock to time-­stamp an event $e$ . Because $z$ is the single reference clock in the system, $z(e)$ is called the absolute time-stamp of the event $e$ .
+Absolute Time-Stamp Whenever the omniscient observer perceives the occur­ rence of an event $e$ , she/he will instantaneously record the current state of the refer­ ence clock as the time of occurrence of this event $e$ and will generate a time-stamp for $e$. Clock ( e ) denotes the time-stamp generated by the use of a given clock to time-­stamp an event $e$. Because $z$ is the single reference clock in the system, $z(e)$ is called the absolute time-stamp of the event $e$ .
 
 > 绝对时间戳当无所不知的观察者感知到事件$e$的发生时，她/他将立即记录参考时钟的当前状态作为该事件$e$$的发生时间，并为$e$生成时间戳。Clock(e)表示使用给定时钟对事件$e$加时间戳而生成的时间戳。因为$z$是系统中的单个参考时钟，所以$z(e)$被称为事件$e$ 的绝对时间戳。
 
@@ -3104,7 +3133,7 @@ The temporal order of events that occur between any two consecutive microticks o
 
 > 在参考时钟的任意两个连续微点之间发生的事件的时间顺序，即在粒度$g^{z}$内，无法从它们的绝对时间戳中重建。这是时间测量的基本限制。
 
-Clock Drift The drift of a physical clock $k$ between microtick $i$ and microtick $i+I$ is the frequency ratio between this clock $k$ and the reference clock, at the instant of microtick i . The drift is determined by measuring the duration of a granule of clock $k$ with the reference clock z and dividing it by the nominal number $n^{k}$ of reference clock microticks in a granule:
+Clock Drift The drift of a physical clock $k$ between microtick $i$ and microtick $i+I$ is the frequency ratio between this clock $k$ and the reference clock, at the instant of microtick i. The drift is determined by measuring the duration of a granule of clock $k$ with the reference clock z and dividing it by the nominal number $n^{k}$ of reference clock microticks in a granule:
 
 > 时钟漂移物理时钟$k$在 microtick$和microtick$i+i$之间的漂移是在microtick i时刻，该时钟$k$$和参考时钟之间的频率比。漂移是通过用参考时钟z测量时钟$k$颗粒的持续时间，并将其除以颗粒中参考时钟微滴答的标称数量$n^{k}$ 来确定的：
 
@@ -3153,7 +3182,7 @@ $$
 \Pi_{i}=\operatorname*{max}_{\forall j,k:1\leq j,k\leq n}\left\{\mathrm{offset}_{i}^{j k}\right\}
 $$
 
-is called the precision $\Pi_{i}$ of the ensemble at microtick $i$ . The maximum of $\Pi_{i}$ over an interval of interest is called the precision $\Pi$ of the ensemble. The precision denotes the maximum offset of respective microticks of any two clocks of the ensemble during a duration of interest. The precision is expressed in the number of microticks of the reference clock.
+is called the precision $\Pi_{i}$ of the ensemble at microtick $i$. The maximum of $\Pi_{i}$ over an interval of interest is called the precision $\Pi$ of the ensemble. The precision denotes the maximum offset of respective microticks of any two clocks of the ensemble during a duration of interest. The precision is expressed in the number of microticks of the reference clock.
 
 > 称为 microtick$i$处集合的精度$\Pi_{i}$。在感兴趣的区间内$\Pi_{i}$的最大值称为集合的精度$\Pi$。精度表示在感兴趣的持续时间内，合奏中任何两个时钟的相应微滴答的最大偏移。精度以参考时钟的微点数量表示。
 
@@ -3161,7 +3190,7 @@ Because of the drift rate of any physical clock, the clocks of an ensemble will 
 
 > 由于任何物理时钟的漂移率，如果一个集合的时钟没有定期重新同步(即靠得更近)，它们就会漂移。一组时钟相互重新同步以保持有界精度的过程称为内部同步。
 
-Accuracy The offset of clock $k$ with respect to the reference clock z at microtick $i$ is called the a c c u a c y Subscript i Superscript k . The maximum offset over all microticks i that is of interest r is called the accuracy k of clock $k$ . The accuracy denotes the maximum offset of a given clock from the external time reference during a duration of interest.
+Accuracy The offset of clock $k$ with respect to the reference clock z at microtick $i$ is called the a c c u a c y Subscript i Superscript k. The maximum offset over all microticks i that is of interest r is called the accuracy k of clock $k$. The accuracy denotes the maximum offset of a given clock from the external time reference during a duration of interest.
 
 > 精度时钟$k$相对于参考时钟 z 在 microtick$ 处的偏移称为 a c u a c y 下标 i 上标 k。所有感兴趣的 microticks i 的最大偏移量 r 称为时钟精度 k。精度表示在感兴趣的持续时间内，给定时钟与外部时间参考的最大偏移。
 
@@ -3169,21 +3198,21 @@ To keep a clock within a bounded interval of the reference clock, it must be per
 
 > 为了将时钟保持在参考时钟的有界间隔内，它必须定期与外部时间参考重新同步。将时钟与外部时间基准重新同步的过程称为外部同步。
 
-If all clocks of an ensemble are externally synchronized with an accuracy $A$ , then the ensemble is also internally synchronized with a precision of at most 2A . The converse is not true. An ensemble of internally synchronized clocks will drift from the external time if the clocks are never re synchronized with the external time base.
+If all clocks of an ensemble are externally synchronized with an accuracy $A$ , then the ensemble is also internally synchronized with a precision of at most 2A. The converse is not true. An ensemble of internally synchronized clocks will drift from the external time if the clocks are never re synchronized with the external time base.
 
 > 如果一个系综的所有时钟都以$A$的精度进行外部同步，那么该系综也以最高 2A 的精度进行内部同步。反之则不然。如果时钟从未与外部时基重新同步，则内部同步时钟的集合将偏离外部时间。
 
 ### 3.1.4 Time Standards
 
-In the last decades, a number of different time standards have been proposed to measure the time difference between any two events and to establish the position of an event relative to some commonly agreed origin of a time base, the epoch . Two of these time bases are relevant for the designer of a distributed real-time computer system, the International Atomic Time (TAI) and the Universal Time Coordinated (UTC).
+In the last decades, a number of different time standards have been proposed to measure the time difference between any two events and to establish the position of an event relative to some commonly agreed origin of a time base, the epoch. Two of these time bases are relevant for the designer of a distributed real-time computer system, the International Atomic Time (TAI) and the Universal Time Coordinated (UTC).
 
 > 在过去的几十年里，人们提出了许多不同的时间标准来测量任何两个事件之间的时间差，并确定事件相对于某个共同商定的时基起源(纪元)的位置。其中两个时基与分布式实时计算机系统的设计者有关，即国际原子时(TAI)和协调世界时(UTC)。
 
 International Atomic Time (TAI—Temps Atomique Internationale) The need for a time standard that can be generated in a laboratory gave birth to the International Atomic Time (TAI). TAI defines the second as the duration of 9,192,631,770 peri­ ods of the radiation of a specified transition of the cesium atom 133. The intention was to define the duration of the TAI second so that it agrees with the second derived from astronomical observations. TAI is a chronos co pic timescale, i.e., a timescale without any discontinuities (e.g., leap seconds). The epoch of TAI starts on January 1, 1958, 00:00 hours Greenwich Mean Time (GMT). The time base of the global positioning system (GPS) is based on TAI with the epoch starting on January 6, 1980, at 00:00 hours.
 
-> 国际原子时(TAI-Temps Atomique Internationale)对可以在实验室中生成的时间标准的需求催生了国际原子时。TAI 将秒定义为铯原子 133 特定跃迁辐射的 9192631770 周的持续时间。其目的是定义 TAI 秒的持续时间，使其与天文观测得出的秒一致。TAI 是一种计时共视时间尺度，即没有任何不连续性(例如闰秒)的时间尺度。TAI 的纪元始于 1958 年 1 月 1 日格林尼治标准时间(GMT)00:00。全球定位系统(GPS)的时基基于 TAI，历元从 1980 年 1 月 6 日 00:00 开始。
+> 国际原子时(TAI-Temps Atomique Internationale)对可以在实验室中生成的时间标准的需求催生了国际原子时。TAI 将秒定义为铯原子 133 特定跃迁辐射的 9192631770 周的持续时间。其目的是定义 TAI 秒的持续时间，使其与天文观测得出的秒一致。TAI 是一种计时共视时间尺度，即没有任何不连续性(例如闰秒)的时间尺度。TAI 的纪元始于 1958 年 1 月 1 日格林尼治标准时间(GMT)00:00。全局定位系统(GPS)的时基基于 TAI，历元从 1980 年 1 月 6 日 00:00 开始。
 
-Universal Time Coordinated (UTC) UTC is a time standard that has been derived from astronomical observations of the rotation of the earth relative to the sun. It is the basis for the time on the wall clock . However, there is a known offset between the local wall-clock time and UTC determined by the time zone and by the political decisions about when daylight savings time must be used. The UTC time standard was introduced in 1972, replacing the Greenwich Mean Time (GMT) as an interna­ tional time standard. Because the rotation of the earth is not smooth, but slightly irregular, the duration of the GMT second changes slightly over time. In 1972, it was internationally agreed that the duration of the second should conform to the TAI standard and that the number of seconds in an hour would have to be modified occa­ sionally by inserting a leap second into the UTC to maintain synchrony between the UTC (wall-clock time) and astronomical phenomena, like day and night. Because of this leap second, the UTC is not a chronos co pic timescale, i.e., it is not free of discontinuities. It was agreed that on January 1, 1958, at midnight, both the UTC and the TAI had the same value. Since then the UTC has deviated from TAI by about $30~\mathrm{s}.$ . The point in time when a leap second is inserted into the UTC is determined by the Bureau International de l’Heure and publicly announced, so that the current offset between the UTC and the TAI is always known.
+Universal Time Coordinated (UTC) UTC is a time standard that has been derived from astronomical observations of the rotation of the earth relative to the sun. It is the basis for the time on the wall clock. However, there is a known offset between the local wall-clock time and UTC determined by the time zone and by the political decisions about when daylight savings time must be used. The UTC time standard was introduced in 1972, replacing the Greenwich Mean Time (GMT) as an interna­ tional time standard. Because the rotation of the earth is not smooth, but slightly irregular, the duration of the GMT second changes slightly over time. In 1972, it was internationally agreed that the duration of the second should conform to the TAI standard and that the number of seconds in an hour would have to be modified occa­ sionally by inserting a leap second into the UTC to maintain synchrony between the UTC (wall-clock time) and astronomical phenomena, like day and night. Because of this leap second, the UTC is not a chronos co pic timescale, i.e., it is not free of discontinuities. It was agreed that on January 1, 1958, at midnight, both the UTC and the TAI had the same value. Since then the UTC has deviated from TAI by about $30~\mathrm{s}.$. The point in time when a leap second is inserted into the UTC is determined by the Bureau International de l’Heure and publicly announced, so that the current offset between the UTC and the TAI is always known.
 
 > 协调世界时(UTC)UTC 是一种时间标准，它是从地球相对于太阳自转的天文观测中得出的。它是挂钟上时间的基准。然而，当地挂钟时间和 UTC 之间存在已知的偏移，这是由时区和关于何时必须使用夏令时的政治决定决定决定的。UTC 时间标准于 1972 年推出，取代格林尼治标准时间(GMT)成为国际时间标准。由于地球的自转并不平稳，而是略有不规则，因此 GMT 秒的持续时间随时间略有变化。1972 年，国际上一致认为秒的持续时间应符合 TAI 标准，一小时中的秒数必须通过在 UTC 中插入闰秒来偶尔修改，以保持 UTC(挂钟时间)与天文现象(如昼夜)之间的同步。由于这一闰秒，UTC 不是一个同步时间尺度，也就是说，它并非没有不连续性。大家一致认为，1958 年 1 月 1 日午夜，UTC 和 TAI 具有相同的值。从那时起，UTC 与 TAI 的偏差约为 30 美元。UTC 中插入闰秒的时间点由国际启发式局确定并公开宣布，因此 UTC 和 TAI 之间的当前偏移量始终是已知的。
 
@@ -3203,11 +3232,11 @@ Bob Huey responded that making corrections at midnight is obviously risky: (1) T
 
 If the real-time clocks of all nodes of a distributed system were perfectly synchro­ nized with the reference clock $z$ and all events were time-stamped with this refer­ ence time, then it would be easy to measure the interval between any two events or to reconstruct the temporal order of events, even if variable communication delays generated differing delivery orders. In a loosely coupled distributed system where every node has its own local oscillator, such a tight synchronization of clocks is not possible. A weaker notion of a universal time reference, the concept of global time , is therefore introduced into a distributed system.
 
-> 如果分布式系统所有节点的实时时钟与参考时钟$z$完全同步，并且所有事件都用这个参考时间打上时间戳，那么即使可变通信延迟产生了不同的交付顺序，也很容易测量任何两个事件之间的间隔或重建事件的时间顺序。在一个松散耦合的分布式系统中，每个节点都有自己的本地振荡器，因此不可能实现如此紧密的时钟同步。因此，在分布式系统中引入了一个较弱的通用时间参考概念，即全球时间的概念。
+> 如果分布式系统所有节点的实时时钟与参考时钟$z$完全同步，并且所有事件都用这个参考时间打上时间戳，那么即使可变通信延迟产生了不同的交付顺序，也很容易测量任何两个事件之间的间隔或重建事件的时间顺序。在一个松散耦合的分布式系统中，每个节点都有自己的本地振荡器，因此不可能实现如此紧密的时钟同步。因此，在分布式系统中引入了一个较弱的通用时间参考概念，即全局时间的概念。
 
 ### 3.2.1 Global Time
 
-Suppose a set of nodes exists, each one with its own local physical clock $c^{k}$ that ticks with granularity $g^{k}$ . Assume that all of the clocks are internally synchronized with a precision $\Pi$ , i.e., for any two clocks $j,k.$ , and all microticks $i$ :
+Suppose a set of nodes exists, each one with its own local physical clock $c^{k}$ that ticks with granularity $g^{k}$. Assume that all of the clocks are internally synchronized with a precision $\Pi$ , i.e., for any two clocks $j,k.$ , and all microticks $i$ :
 
 > 假设存在一组节点，每个节点都有自己的本地物理时钟$c^{k}$，其运行粒度为$g^{k]$。假设所有时钟都以精度$\Pi$在内部同步，即对于任何两个时钟$j，k.$和所有 microticks$i$：
 
@@ -3227,7 +3256,7 @@ $$
 g>\Pi
 $$
 
-the reasonableness condition for the global granularity $g$ . This reasonableness condition ensures that the synchronization error is bounded to less than one macro­ granule , i.e., the duration between two (macro)ticks. If this reasonableness condi­ tion is satisfied, then for a single event $e$ , that is observed by any two different clocks of the ensemble,
+the reasonableness condition for the global granularity $g$. This reasonableness condition ensures that the synchronization error is bounded to less than one macro­ granule , i.e., the duration between two (macro)ticks. If this reasonableness condi­ tion is satisfied, then for a single event $e$ , that is observed by any two different clocks of the ensemble,
 
 > 全局粒度$g$的合理性条件。这种合理性条件确保同步误差限制在一个宏粒度以内，即两个(宏)滴答之间的持续时间。如果满足这个合理性条件，那么对于单个事件$e$，即由集合中的任何两个不同时钟观察到的事件，
 
@@ -3241,7 +3270,7 @@ i.e., the global time-stamps for a single event can differ by at most one tick. 
 
 One-Tick Difference—What Does It Mean? What can we learn about the tem­ poral order of two events, observed by different nodes of a distributed system with a reasonable global time, given that the global time-stamps of these two events dif­ fer by one tick?
 
-> 一个滴答声的差异——这意味着什么？考虑到这两个事件的全球时间戳相差一个刻度，我们可以从分布式系统的不同节点在合理的全球时间内观察到的两个事件在时间上的顺序中学到什么？
+> 一个滴答声的差异——这意味着什么？考虑到这两个事件的全局时间戳相差一个刻度，我们可以从分布式系统的不同节点在合理的全局时间内观察到的两个事件在时间上的顺序中学到什么？
 
 This fundamental limitation in time measurement limits the faithfulness of the digital computer model of a controlled physical subsystem. The time base in the
 
@@ -3355,13 +3384,13 @@ Suppose that we are given two events $e I$ and $^{e2}$ that occur on a dense tim
 > ![](images/8ae7252321c290b73807126908b6943fdbc416a3e97d9ccf1f1afbcfcb1a11ca.jpg)
 > Fig.3.7 Different observed order of two events $e I$ and $^{e2}$
 
-Agreement Protocol To arrive at a consistent view of the order of non-sparse events within a distributed computer system (which does not necessarily reflect the temporal order of event occurrence), the nodes must execute an agreement protocol . The first phase of an agreement protocol requires an information interchange among the nodes of the distributed system with the goal that every node acquires the differ­ ing local views about the state of the world from every other node. In the fault-free case, at the end of this first phase, every correct node possesses exactly the same information as every other node. In the second phase of the agreement protocol, each node applies a deterministic algorithm to this consistent information to reach the same conclusion about the assignment of the event to an active interval of the sparse time base—the commonly agreed value. In case faulty nodes have to be ­tolerated, an agreement algorithm requires additional round(s) of information exchange as well as the resources for executing the agreement algorithm.
+Agreement Protocol To arrive at a consistent view of the order of non-sparse events within a distributed computer system (which does not necessarily reflect the temporal order of event occurrence), the nodes must execute an agreement protocol. The first phase of an agreement protocol requires an information interchange among the nodes of the distributed system with the goal that every node acquires the differ­ ing local views about the state of the world from every other node. In the fault-free case, at the end of this first phase, every correct node possesses exactly the same information as every other node. In the second phase of the agreement protocol, each node applies a deterministic algorithm to this consistent information to reach the same conclusion about the assignment of the event to an active interval of the sparse time base—the commonly agreed value. In case faulty nodes have to be ­tolerated, an agreement algorithm requires additional round(s) of information exchange as well as the resources for executing the agreement algorithm.
 
 > 协议协议为了在分布式计算机系统中对非稀疏事件的顺序达成一致的看法(这不一定反映事件发生的时间顺序)，节点必须执行协议。协议的第一阶段要求分布式系统的节点之间进行信息交换，目标是每个节点从其他节点获取有关世界状态的不同本地视图。在无故障的情况下，在第一阶段结束时，每个正确的节点都拥有与其他节点完全相同的信息。在协议的第二阶段，每个节点对这种一致的信息应用确定性算法，以得出关于将事件分配给稀疏时基的活动间隔的相同结论——即共同商定的值。如果必须容忍故障节点，协议算法需要额外的信息交换回合以及执行协议算法的资源。
 
 Agreement algorithms are costly, both in terms of communication requirements and processing requirements and—worst of all—in terms of the additional delay they introduce into a control loop. It is therefore expedient to look for solutions to the consistent temporal ordering problem in distributed computer systems that do not require these additional overheads. The sparse time model, introduced below, provides for such a solution.
 
-> 协议算法的成本很高，无论是在通信要求和处理要求方面，还是最糟糕的是，在它们引入控制回路的额外延迟方面。因此，在不需要这些额外开销的分布式计算机系统中寻找一致时间排序问题的解决方案是有利的。下面介绍的稀疏时间模型提供了这样的解决方案。
+> 协议算法的成本很高，无论是在通信要求和处理要求方面，还是最糟糕的是，在它们引入控制回路(control loops)的额外延迟方面。因此，在不需要这些额外开销的分布式计算机系统中寻找一致时间排序问题的解决方案是有利的。下面介绍的稀疏时间模型提供了这样的解决方案。
 
 ### 3.3.2 Sparse Time Base
 
@@ -3381,7 +3410,7 @@ If cluster $A$ generates a $\mathit{l g/3g}$ precedent event set, then it is pos
 
 Events that occur outside the sphere of control of the computer system cannot be confined to a sparse time base: they happen on a dense time base and are therefore not sparse events. To generate a consistent view of events that occur in the con­ trolled object and that are observed by more than one node of the distributed com­ puter system, the execution of an agreement protocol is unavoidable at the interface between the computer system and the controlled object or other systems that do not participate in the global time. Such an agreement protocol transforms a non-sparse event into a sparse event.
 
-> 发生在计算机系统控制范围之外的事件不能局限于稀疏的时基：它们发生在密集的时基上，因此不是稀疏事件。为了生成受控对象中发生的事件以及分布式计算机系统的多个节点观察到的事件的一致视图，在计算机系统和受控对象或不参与全球时间的其他系统之间的接口上执行协议协议是不可避免的。这样的协议协议将非稀疏事件转换为稀疏事件。
+> 发生在计算机系统控制范围之外的事件不能局限于稀疏的时基：它们发生在密集的时基上，因此不是稀疏事件。为了生成受控对象中发生的事件以及分布式计算机系统的多个节点观察到的事件的一致视图，在计算机系统和受控对象或不参与全局时间的其他系统之间的接口上执行协议协议是不可避免的。这样的协议协议将非稀疏事件转换为稀疏事件。
 
 > ![](images/7dd575bedead1c162dfeba52b258ec48ae67284dd841a9dc65c8b3a2ea2203b4.jpg)
 > Fig.3.8 Sparse time base
@@ -3402,7 +3431,7 @@ A sequence of consecutive processing and communication actions, such as the acti
 
 If we look at Fig.3.9 , we see that communication services in a typical control loop are periodically required only in the intervals $B$ and $D$ of a cycle. The shorter these intervals $B$ and $D$ , the better , since the dead time of the control loop is reduced. This requirement leads to the model of pulsed data streams , where, in a time-­ triggered system, the highest possible bandwidth is allocated periodically in the intervals $B$ and $D$ , while, during the rest of the cycle, the communication bandwidth can be allocated to other requests [Kop06].
 
-> 如果我们看一下图 3.9，我们可以看到，典型控制回路中的通信服务仅在周期的$B$和$D$间隔内定期需要。这些间隔$B$和$D$越短越好，因为控制回路的死区时间减少了。这一要求导致了脉冲数据流模型，在该模型中，在时间触发系统中，最高可能的带宽在$B$和$D$的间隔内定期分配，而在周期的其余时间里，通信带宽可以分配给其他请求[Kop06]。
+> 如果我们看一下图 3.9，我们可以看到，典型控制回路(control loops)中的通信服务仅在周期的$B$和$D$间隔内定期需要。这些间隔$B$和$D$越短越好，因为控制回路(control loops)的死区时间减少了。这一要求导致了脉冲数据流模型，在该模型中，在时间触发系统中，最高可能的带宽在$B$和$D$的间隔内定期分配，而在周期的其余时间里，通信带宽可以分配给其他请求[Kop06]。
 
 > ![](images/e9797175218a03df29222b83c425396d61145f8201d06253de8dc9e2d8aca55e.jpg)
 > Fig.3.9 Linear versus cyclic representation of time in a control system
@@ -3415,7 +3444,7 @@ An extension of the cyclic representation is the spiral representation of time ,
 
 The purpose of internal clock synchronization is to ensure that the global ticks of all correct nodes occur within the specified precision Π , despite the varying drift rate of the local real-time clock of each node. Because the availability of a proper global time base is crucial for the operation of a distributed real-time system, the clock synchronization should not depend on the correctness of a single clock, i.e., it should be fault-tolerant.
 
-> 内部时钟同步的目的是确保所有正确节点的全局滴答声都出现在指定的精度 ∏ 内，尽管每个节点的本地实时时钟的漂移率各不相同。由于适当的全球时基的可用性对于分布式实时系统的运行至关重要，因此时钟同步不应依赖于单个时钟的正确性，即它应该是容错的。
+> 内部时钟同步的目的是确保所有正确节点的全局滴答声都出现在指定的精度 ∏ 内，尽管每个节点的本地实时时钟的漂移率各不相同。由于适当的全局时基的可用性对于分布式实时系统的运行至关重要，因此时钟同步不应依赖于单个时钟的正确性，即它应该是容错的。
 
 Every node of a distributed system has a local oscillator that (micro)ticks with a frequency determined by the physical parameters of the oscillator. A subset of the local oscillator’s microticks called the ticks (or macroticks—see Sect. 3.2.1 ) is interpreted as the global time ticks at the node. These global time ticks increment the local node’s global time counter.
 
@@ -3566,7 +3595,7 @@ State correction is simple to apply, but it has the disadvantage of generating a
 
 ## 3.5 External Clock Synchronization
 
-External synchronization links the global time of a cluster to an external standard of time. For this purpose it is necessary to access a timeserver , i.e., an external time source that periodically broadcasts the current reference time in the form of a time message . This time message must raise a synchronization event (such as the beep of a wristwatch) in a designated node of the cluster and must identify this synchro niza­ tion event on the agreed timescale. Such a timescale must be based on a widely accepted measure of time, e.g., the physical second, and must relate the synchroni­ zation event to a defined origin of time, the epoch . The interface node to a timeserver is called a time gateway . In a fault-tolerant system, the time gateway should be a fault-tolerant unit (FTU—see Sect. 6.4.2 ).
+External synchronization links the global time of a cluster to an external standard of time. For this purpose it is necessary to access a timeserver , i.e., an external time source that periodically broadcasts the current reference time in the form of a time message. This time message must raise a synchronization event (such as the beep of a wristwatch) in a designated node of the cluster and must identify this synchro niza­ tion event on the agreed timescale. Such a timescale must be based on a widely accepted measure of time, e.g., the physical second, and must relate the synchroni­ zation event to a defined origin of time, the epoch. The interface node to a timeserver is called a time gateway. In a fault-tolerant system, the time gateway should be a fault-tolerant unit (FTU—see Sect. 6.4.2 ).
 
 > 外部同步将集群的全局时间链接到外部时间标准。为此，有必要访问时间服务器，即以时间消息的形式定期广播当前参考时间的外部时间源。此时间消息必须在集群的指定节点中引发同步事件(如手表的嘟嘟声)，并且必须在商定的时间尺度上标识此同步事件。这样的时间尺度必须基于广泛接受的时间度量，例如物理秒，并且必须将同步事件与定义的时间起源(纪元)联系起来。时间服务器的接口节点称为时间网关。在容错系统中，时间网关应该是一个容错单元(FTU——见第 6.4.2 节)。
 
@@ -3585,9 +3614,9 @@ While internal synchronization is a cooperative activity among all the members o
 
 > 虽然内部同步是集群所有成员之间的合作活动，但外部同步是一个威权过程：时间网关将其对外部时间的看法强加给所有下属。从容错的角度来看，这样的威权政权引入了一个问题：如果当局发出错误的信息，那么所有顺从的下属都会做出不正确的行为。然而，对于外部时钟同步，由于时间的惯性，情况得到了控制。一旦集群同步，集群内的容错全局时基就充当时间网关的监视器。只有当外部同步消息的内容与集群的外部时间视图足够接近时，才会接受该消息。时间网关只有有限的权限来纠正集群的漂移率。需要强制执行最大共模校正率，以保持相对时间测量的误差较小。集群中每个节点的软件都会检查最大校正率。
 
-The implementation must guarantee that it is impossible for a faulty external synchronization to interfere with the proper operation of the internal synchro niza­ tion, i.e., with the generation of global time within a cluster. The worst possible failure scenario occurs if the external timeserver fails maliciously—a very low probability failure mode if the external timeserver is GPS. This leads to a common-­ mode deviation of the global time from the external time base with the maximum permitted deviation rate . In a properly designed synchronization system, this drift from the external time base will not affect the internal synchronization within a cluster.
+The implementation must guarantee that it is impossible for a faulty external synchronization to interfere with the proper operation of the internal synchro niza­ tion, i.e., with the generation of global time within a cluster. The worst possible failure scenario occurs if the external timeserver fails maliciously—a very low probability failure mode if the external timeserver is GPS. This leads to a common-­ mode deviation of the global time from the external time base with the maximum permitted deviation rate. In a properly designed synchronization system, this drift from the external time base will not affect the internal synchronization within a cluster.
 
-> 实施必须保证错误的外部同步不可能干扰内部同步的正常运行，即集群内全局时间的生成。如果外部时间服务器恶意发生故障，则可能出现最糟糕的故障情况——如果外部时间服务器是 GPS，则这是一种概率非常低的故障模式。这导致全球时间与外部时基的共模偏差，最大允许偏差率。在设计合理的同步系统中，这种与外部时基的漂移不会影响集群内的内部同步。
+> 实施必须保证错误的外部同步不可能干扰内部同步的正常运行，即集群内全局时间的生成。如果外部时间服务器恶意发生故障，则可能出现最糟糕的故障情况——如果外部时间服务器是 GPS，则这是一种概率非常低的故障模式。这导致全局时间与外部时基的共模偏差，最大允许偏差率。在设计合理的同步系统中，这种与外部时基的漂移不会影响集群内的内部同步。
 
 ### 3.5.2 Time Gateway
 
@@ -3599,7 +3628,7 @@ The time gateway must control the timing system of its cluster in the following 
 
 (ii) It must periodically adjust the rate of the global time in the cluster to bring it into agreement with the external time and the standard of time measurement, the second.
 
-> (ii)它必须定期调整集群中的全球时间比率，使其与外部时间和时间测量标准相一致。
+> (ii)它必须定期调整集群中的全局时间比率，使其与外部时间和时间测量标准相一致。
 
 (iii) It must periodically send the current external time in a time message to the nodes in the cluster so that a re integrating node can reinitialize its external time value.
 
@@ -3662,7 +3691,7 @@ The time-triggered architecture (TTA) uses a time format that is a combination o
 
 • A global time is an abstract notion that is approximated by properly selected microticks from the synchronized local physical clocks of an ensemble.
 
-> •全球时间是一个抽象概念，通过从集合的同步本地物理时钟中正确选择的微时钟来近似。
+> •全局时间是一个抽象概念，通过从集合的同步本地物理时钟中正确选择的微时钟来近似。
 
 • The reasonableness condition ensures that the synchronization error is always less than one granule of the global time.
 
@@ -3768,7 +3797,7 @@ The problem of generating a global time base in a distributed system has first b
 
 3.12. Given a clock synchronization system that achieves a precision of 90 micro­ seconds, what is a reasonable granularity for the global time? What are the limits for the observed values for a time interval of 1.1  msec?
 
-> 3.12. 给定一个达到 90 微秒精度的时钟同步系统，全球时间的合理粒度是多少？在 1.1 毫秒的时间间隔内，观测值的极限是什么？
+> 3.12. 给定一个达到 90 微秒精度的时钟同步系统，全局时间的合理粒度是多少？在 1.1 毫秒的时间间隔内，观测值的极限是什么？
 
 3.13. What is the role of the convergence function in internal clock synchronization?
 
@@ -3794,13 +3823,13 @@ The problem of generating a global time base in a distributed system has first b
 
 ## Overview
 
-The objective of this chapter is to introduce the reader to a cross-domain architec­ ture model of the behavior of a real-time system. This model will be used through­ out the rest of the book. The model is based on three basic concepts, the concept of a computational component , the concept of state , and the concept of a message . Large systems can be built by the recursive composition of components that com­ municate by the exchange of messages. Components can be reused on the basis of their interface specification without having to understand the component internals. Concerns about the understand ability have been of utmost importance in the devel­ opment of this model.
+The objective of this chapter is to introduce the reader to a cross-domain architec­ ture model of the behavior of a real-time system. This model will be used through­ out the rest of the book. The model is based on three basic concepts, the concept of a computational component , the concept of state , and the concept of a message. Large systems can be built by the recursive composition of components that com­ municate by the exchange of messages. Components can be reused on the basis of their interface specification without having to understand the component internals. Concerns about the understand ability have been of utmost importance in the devel­ opment of this model.
 
 > 本章的目的是向读者介绍实时系统行为的跨域架构模型。这个模型将贯穿本书的其余部分。该模型基于三个基本概念，即计算组件的概念、状态的概念和消息的概念。大型系统可以通过递归组合通过消息交换进行通信的组件来构建。组件可以根据其接口规范重用，而无需了解组件内部。在开发该模型时，对理解能力的关注至关重要。
 
-The chapter is structured as follows. In Sect. 4.1 we give a broad outline of the model, describing the essential characteristics of a component and a message . Related components that work toward a joint objective are grouped into clusters . The differences between temporal control and logical control are explained. The following Sect. 4.2 elaborates on the close relationship between real time and the state of a component. The importance of a well-defined ground state for the dynamic reintegration of a component is highlighted. Section 4.3 refines the message concept and introduces the notions of event-triggered messages, time-triggered messages, and data streams. Section 4.4 presents the four interfaces of a component, two oper­ ational interfaces and two control interfaces. Section 4.5 deals with the concept of a gateway component that links two clusters that adhere to different architectural styles . Section 4.6 deals with the specification of the linking interface of a compo­ nent. The linking interface is the most important interface of a component. It is relevant for the integration of a component within a cluster and contains all the information that is needed for the use of a component. The linking interface speci­ fications consist of three parts: (i) the transport specification that contains the infor­ mation for the transport of the messages, (ii) the operational specification that is concerned with interoperability of components and the establishment of the mes­ sage variables, and (iii) the meta-level specification that assigns meaning to the message variables. Points to consider when composing a set of components to build systems of subsystems or system of systems are discussed in Sect. 4.7 . In this section the four principles of com pos ability are introduced and the notion of a multilevel system is explained.
+The chapter is structured as follows. In Sect. 4.1 we give a broad outline of the model, describing the essential characteristics of a component and a message. Related components that work toward a joint objective are grouped into clusters. The differences between temporal control and logical control are explained. The following Sect. 4.2 elaborates on the close relationship between real time and the state of a component. The importance of a well-defined ground state for the dynamic reintegration of a component is highlighted. Section 4.3 refines the message concept and introduces the notions of event-triggered messages, time-triggered messages, and data streams. Section 4.4 presents the four interfaces of a component, two oper­ ational interfaces and two control interfaces. Section 4.5 deals with the concept of a gateway component that links two clusters that adhere to different architectural styles. Section 4.6 deals with the specification of the linking interface of a compo­ nent. The linking interface is the most important interface of a component. It is relevant for the integration of a component within a cluster and contains all the information that is needed for the use of a component. The linking interface speci­ fications consist of three parts: (i) the transport specification that contains the infor­ mation for the transport of the messages, (ii) the operational specification that is concerned with interoperability of components and the establishment of the mes­ sage variables, and (iii) the meta-level specification that assigns meaning to the message variables. Points to consider when composing a set of components to build systems of subsystems or system of systems are discussed in Sect. 4.7. In this section the four principles of com pos ability are introduced and the notion of a multilevel system is explained.
 
-> 本章结构如下。在门派。4.1 我们给出了模型的大致轮廓，描述了组件和消息的基本特征。为实现共同目标而工作的相关组件被分为多个集群。解释了时间控制和逻辑控制之间的区别。以下教派。4.2 详细阐述了实时与组件状态之间的密切关系。强调了明确界定的地面状态对组件动态重新整合的重要性。第 4.3 节细化了消息概念，并介绍了事件触发消息、时间触发消息和数据流的概念。第 4.4 节介绍了组件的四个接口、两个操作接口和两个控制接口。第 4.5 节探讨了网关组件的概念，该组件连接两个遵循不同架构风格的集群。第 4.6 节涉及组件链接接口的规范。链接接口是组件最重要的接口。它与集群内组件的集成有关，包含使用组件所需的所有信息。链接接口规范由三部分组成：(i)包含消息传输信息的传输规范，(ii)涉及组件互操作性和消息变量建立的操作规范，以及(iii)为消息变量赋予意义的元级规范。第节讨论了在构建一组组件以构建子系统或系统体系时需要考虑的要点。4.7 . 本节介绍了可组合性的四个原则，并解释了多级系统的概念。
+> 本章结构如下。在门派。4.1 我们给出了模型的大致轮廓，描述了组件和消息的基本特征。为实现共同目标而工作的相关组件被分为多个集群。解释了时间控制和逻辑控制之间的区别。以下教派。4.2 详细阐述了实时与组件状态之间的密切关系。强调了明确界定的地面状态对组件动态重新整合的重要性。第 4.3 节细化了消息概念，并介绍了事件触发消息、时间触发消息和数据流的概念。第 4.4 节介绍了组件的四个接口、两个操作接口和两个控制接口。第 4.5 节探讨了网关组件的概念，该组件连接两个遵循不同架构风格的集群。第 4.6 节涉及组件链接接口的规范。链接接口是组件最重要的接口。它与集群内组件的集成有关，包含使用组件所需的所有信息。链接接口规范由三部分组成：(i)包含消息传输信息的传输规范，(ii)涉及组件互操作性和消息变量建立的操作规范，以及(iii)为消息变量赋予意义的元级规范。第节讨论了在构建一组组件以构建子系统或系统体系时需要考虑的要点。4.7. 本节介绍了可组合性的四个原则，并解释了多级系统的概念。
 
 ## 4.1 Model Outline
 
@@ -3810,11 +3839,11 @@ Viewed from the perspective of an outside observer, a real-time system can be de
 
 ### 4.1.1 Components and Messages
 
-We call the process of executing an algorithm by a processing unit a computation . Computations are performed by components. In our model, a component is a self-­ contained hardware/software unit that interacts with its environment exclusively by the exchange of messages. We call the timed sequence of output messages that a component produces at an interface with its environment the behavior of the com­ ponent at that interface. The intended behavior of a component is called its service . An unintended behavior is called a failure . The internal structure of a component, whether complex or simple, is neither visible nor of concern to a user of a component.
+We call the process of executing an algorithm by a processing unit a computation. Computations are performed by components. In our model, a component is a self-­ contained hardware/software unit that interacts with its environment exclusively by the exchange of messages. We call the timed sequence of output messages that a component produces at an interface with its environment the behavior of the com­ ponent at that interface. The intended behavior of a component is called its service. An unintended behavior is called a failure. The internal structure of a component, whether complex or simple, is neither visible nor of concern to a user of a component.
 
 > 我们称处理单元执行算法的过程为计算。计算由组件执行。在我们的模型中，组件是一个自包含的硬件/软件单元，仅通过消息交换与其环境进行交互。我们将组件在与其环境的接口处产生的输出消息的定时序列称为组件在该接口处的行为。组件的预期行为称为其服务。意外行为称为失败。组件的内部结构，无论是复杂的还是简单的，对于组件的用户来说既不可见也不关心。
 
-A component consists of a design (e.g., the software) and an embodiment (e.g., the hardware, including a processing unit, memory, and an I/O interface). A real-­ time component contains a real-time clock and is thus aware of the progression of real time. After power-up , a component enters a ready-for-start state to wait for a triggering signal that indicates the start of execution of the component’s computa­ tions. Whenever the triggering signal occurs, the component starts its predefined computations at the start instant . It then reads input messages and its internal state, produces output messages and an updated internal state, and so on until it terminates its computation—if ever—at a termination instant . It then enters the ready-for-start state again to wait for the next triggering signal. In a cyclic system, the real-time clock produces a triggering signal at the start of the next cycle.
+A component consists of a design (e.g., the software) and an embodiment (e.g., the hardware, including a processing unit, memory, and an I/O interface). A real-­ time component contains a real-time clock and is thus aware of the progression of real time. After power-up , a component enters a ready-for-start state to wait for a triggering signal that indicates the start of execution of the component’s computa­ tions. Whenever the triggering signal occurs, the component starts its predefined computations at the start instant. It then reads input messages and its internal state, produces output messages and an updated internal state, and so on until it terminates its computation—if ever—at a termination instant. It then enters the ready-for-start state again to wait for the next triggering signal. In a cyclic system, the real-time clock produces a triggering signal at the start of the next cycle.
 
 > 组件由设计(例如软件)和实施例(例如硬件，包括处理单元、存储器和 I/O 接口)组成。实时组件包含一个实时时钟，因此可以感知实时的进程。通电后，组件进入准备启动状态，等待指示组件计算开始执行的触发信号。每当触发信号出现时，组件都会在开始时刻开始其预定义的计算。然后，它读取输入消息及其内部状态，产生输出消息和更新的内部状态，以此类推，直到它在终止时刻终止计算(如果有的话)。然后，它再次进入准备启动状态，等待下一个触发信号。在循环系统中，实时时钟在下一个循环开始时产生触发信号。
 
@@ -3832,7 +3861,7 @@ Multi casting is required for the following reasons:
 
 > (ii)通过主动冗余实现容错需要多播，其中每条消息都必须发送到一组复制的组件。
 
-A message is sent at a send instant and arrives at the receiver(s) at some later instant, the receive instant . The message paradigm combines the temporal control and the value aspect of an interaction into a single concept. The temporal properties of a message include information about the send instants, the temporal order, the inter-arrival time of messages (e.g., periodic, sporadic, aperiodic recurrence), and the latency of the message transport. Messages can be used to synchronize a sender and a receiver. A message contains a data field that holds a data structure that is transported from the sender to the receiver. The communication infrastructure is agnostic about the contents of the data field. The message concept supports data atomicity (i.e., atomic delivery of the complete data structure contained in a mes­ sage). A single well-designed message-passing service provides a simple interface of a component to other components inside and outside a node and to the environ­ ment of a component. It facilitates encapsulation, reconfiguration, and the recovery of component services.
+A message is sent at a send instant and arrives at the receiver(s) at some later instant, the receive instant. The message paradigm combines the temporal control and the value aspect of an interaction into a single concept. The temporal properties of a message include information about the send instants, the temporal order, the inter-arrival time of messages (e.g., periodic, sporadic, aperiodic recurrence), and the latency of the message transport. Messages can be used to synchronize a sender and a receiver. A message contains a data field that holds a data structure that is transported from the sender to the receiver. The communication infrastructure is agnostic about the contents of the data field. The message concept supports data atomicity (i.e., atomic delivery of the complete data structure contained in a mes­ sage). A single well-designed message-passing service provides a simple interface of a component to other components inside and outside a node and to the environ­ ment of a component. It facilitates encapsulation, reconfiguration, and the recovery of component services.
 
 > 消息在发送时刻发送，并在稍后的某个时刻(接收时刻)到达接收者。消息范式将交互的时间控制和价值方面结合到一个概念中。消息的时间属性包括关于发送时刻、时间顺序、消息的到达间隔时间(例如，周期性、偶发性、非周期性重复)和消息传输延迟的信息。消息可用于同步发送方和接收方。消息包含一个数据字段，该字段保存从发送方传输到接收方的数据结构。通信基础设施与数据字段的内容无关。消息概念支持数据原子性(即消息中包含的完整数据结构的原子传递)。一个设计良好的消息传递服务为组件与节点内外的其他组件以及组件环境提供了一个简单的接口。它有助于封装、重新配置和恢复组件服务。
 
@@ -3851,7 +3880,7 @@ Example: Figure  4.1 depicts an example of a computational cluster within a car
 
 ### 4.1.3 Temporal Control Versus Logical Control
 
-Let us revisit the rolling mill example of Fig.1.9 of Sect. 1.7.3 and specify a relation between measured variables that must be monitored by an alarm-monitoring task in the MMI component. Assume that the pressures $p_{I},p_{2}$ , and $p_{3}$ , between the roles of the three drives, are measured by the three controller components of Fig.1.9 . The measurements are sent to the man-machine interface (MMI) component for check­ ing the following alarm condition:
+Let us revisit the rolling mill example of Fig.1.9 of Sect. 1.7.3 and specify a relation between measured variables that must be monitored by an alarm-monitoring task in the MMI component. Assume that the pressures $p_{I},p_{2}$ , and $p_{3}$ , between the roles of the three drives, are measured by the three controller components of Fig.1.9. The measurements are sent to the man-machine interface (MMI) component for check­ ing the following alarm condition:
 
 > 让我们重新审视第 1 节图 1.9 中的轧机示例。1.7.3 并指定必须由 MMI 组件中的报警监测任务监测的测量变量之间的关系。假设三个驱动器角色之间的压力$p_{I}、p_{2}$和$p_{1}$由图 1.9 的三个控制器组件测量。测量值被发送到人机界面(MMI)组件，以检查以下报警情况：
 
@@ -3899,11 +3928,11 @@ Temporal control is concerned with determining the instants in the domain of rea
 
 > 时间控制涉及确定实时域中必须执行计算的时刻，即必须激活任务的时刻。这些时刻是从应用程序的动态中得出的。在上述检查中，关于压力测量任务和报警监测任务必须激活的时刻的决定是一个时间控制问题。时间控制与实时性的进展有关。
 
-Logical control is concerned with the control flow within a task that is deter­ mined by the given task structure and the particular input data, in order to realize the desired computation. In the above example, the evaluation of the branch condition and the selection of one of the two alternatives is an example of logical control . The time interval needed for the execution of a task that performs the logical control is determined by the frequency of the oscillator that drives the processing unit—we call this time interval the execution time . The execution time is determined by the given implementation and will change if we replace the given processor by a faster one.
+Logical control is concerned with the control flow within a task that is deter­ mined by the given task structure and the particular input data, in order to realize the desired computation. In the above example, the evaluation of the branch condition and the selection of one of the two alternatives is an example of logical control. The time interval needed for the execution of a task that performs the logical control is determined by the frequency of the oscillator that drives the processing unit—we call this time interval the execution time. The execution time is determined by the given implementation and will change if we replace the given processor by a faster one.
 
 > 逻辑控制涉及由给定任务结构和特定输入数据确定的任务内的控制流，以实现所需的计算。在上述示例中，分支条件的评估和两个备选方案之一的选择是逻辑控制的示例。执行执行逻辑控制的任务所需的时间间隔由驱动处理单元的振荡器的频率决定——我们称这个时间间隔为执行时间。执行时间由给定的实现决定，如果我们用更快的处理器替换给定的处理器，执行时间将会改变。
 
-Since temporal control is related to real time , while logical control is related to execution time , a careful distinction must be made between these two types of con­ trol. A good design will separate these two control issues in order to decouple the reasoning about temporal constraints dictated by the application, from the reasoning about logical issues inside the algorithmic part of a program. Synchronous real-time languages, such as LUSTRE [Hal92], ESTEREL [Ber85], and SL [Bou96], distin­ guish cleanly between logical control and temporal control. In these languages, the progression of real time is partitioned into an (infinite) sequence of intervals of specified real-time duration, which we call steps. Each step begins with a tick of a real-time clock that starts a computational task (logical control). The computational model assumes that a task, once activated by the tick of a real-time clock (temporal control), finishes its computation quasi-immediately . Practically this means that a task must terminate its executions before the next triggering signal (the next tick of the real-time clock) initiates the next execution of the task.
+Since temporal control is related to real time , while logical control is related to execution time , a careful distinction must be made between these two types of con­ trol. A good design will separate these two control issues in order to decouple the reasoning about temporal constraints dictated by the application, from the reasoning about logical issues inside the algorithmic part of a program. Synchronous real-time languages, such as LUSTRE [Hal92], ESTEREL [Ber85], and SL [Bou96], distin­ guish cleanly between logical control and temporal control. In these languages, the progression of real time is partitioned into an (infinite) sequence of intervals of specified real-time duration, which we call steps. Each step begins with a tick of a real-time clock that starts a computational task (logical control). The computational model assumes that a task, once activated by the tick of a real-time clock (temporal control), finishes its computation quasi-immediately. Practically this means that a task must terminate its executions before the next triggering signal (the next tick of the real-time clock) initiates the next execution of the task.
 
 > 由于时间控制与实时有关，而逻辑控制与执行时间有关，因此必须仔细区分这两种类型的控制。一个好的设计会将这两个控制问题分开，以便将应用程序规定的时间约束推理与程序算法部分内的逻辑问题推理解耦。同步实时语言，如 LUSTRE[Hal92]、ESTEREL[Ber85]和 SL[Bou96]，清晰地区分了逻辑控制和时间控制。在这些语言中，实时的进程被划分为指定实时持续时间的(无限)间隔序列，我们称之为步骤。每一步都从启动计算任务(逻辑控制)的实时时钟的滴答声开始。计算模型假设任务一旦被实时时钟(时间控制)的滴答声激活，就会近乎立即完成计算。实际上，这意味着任务必须在下一个触发信号(实时时钟的下一个滴答声)启动任务的下一次执行之前终止其执行。
 
@@ -3929,7 +3958,7 @@ The significant events that form the basis of event-triggered control can be the
 
 > 构成事件触发控制基础的重要事件可以是特定消息的到达、组件内部活动的完成、外部中断的发生或应用软件执行发送消息语句。尽管重大事件的发生并非偶然，但两个连续事件之间应保持最小的实时间隔，以避免通信系统和事件接收器过载。我们称这种事件流为速率控制的事件流，因为它保持了事件之间的最小到达时间间隔。
 
-Time-triggered control signals are derived from the progression of the global time that is available in every component. Time-triggered control signals are nor­ mally cyclic. A cycle can be characterized by its period , i.e., the real-time interval between two successive cycle starts , and by its phase , that is, the interval between the start of the period, expressed in the global time, and the cycle start (see also Sect. 3.3.4 ) . We assume that a cycle is associated with every time-triggered activity.
+Time-triggered control signals are derived from the progression of the global time that is available in every component. Time-triggered control signals are nor­ mally cyclic. A cycle can be characterized by its period , i.e., the real-time interval between two successive cycle starts , and by its phase , that is, the interval between the start of the period, expressed in the global time, and the cycle start (see also Sect. 3.3.4 ). We assume that a cycle is associated with every time-triggered activity.
 
 > 时间触发的控制信号来自每个组件中可用的全局时间的进程。时间触发的控制信号通常不是循环的。一个周期可以通过其周期来表征，即两个连续周期开始之间的实时间隔，也可以通过其相位来表征，也就是以全局时间表示的周期开始与周期开始之间(另见第 3.3.4 节)。我们假设一个周期与每次触发的活动相关联。
 
@@ -3945,7 +3974,7 @@ The notion of state is widely used in the computer science literature, albeit so
 
 > 状态的概念在计算机科学文献中被广泛使用，尽管有时其含义与实时系统环境中有用的状态含义不同。为了澄清情况，我们遵循 Mesarovic 的精确定义[Mes89，第 45 页]，这是我们阐述的基础：
 
-The state enables the determination of a future output solely on the basis of the future input and the state the system is in. In other words, the state enables a “decoupling” of the past from the present and future. The state embodies all past history of a system. Knowing the state “supplants” knowledge of the past. . . . Apparently, for this role to be meaningful, the notion of past and future must be relevant for the system considered .
+The state enables the determination of a future output solely on the basis of the future input and the state the system is in. In other words, the state enables a “decoupling” of the past from the present and future. The state embodies all past history of a system. Knowing the state “supplants” knowledge of the past.. .. Apparently, for this role to be meaningful, the notion of past and future must be relevant for the system considered .
 
 > 状态使我们能够仅根据未来的输入和系统所处的状态来确定未来的输出。换句话说，状态使过去与现在和未来“脱钩”。国家体现了一个系统的所有历史。了解国家“取代”了对过去的了解。显然，为了使这一角色有意义，过去和未来的概念必须与所考虑的系统相关。
 
@@ -3977,21 +4006,21 @@ The state at any instant of interruption is contained in the contents of the pro
 
 > 任何中断时刻的状态都包含在程序计数器的内容中，所有状态变量都必须加载到原始硬件设备中，才能从中断时刻开始恢复操作。如果中断是由组件故障引起的，并且我们必须将组件重新集成到正在运行的系统中，那么必须重新加载到修复的组件中的状态大小是值得关注的。
 
-If our hardware device is a programmable computer, we must first load the soft­ ware, i.e., operating system, the set of application programs, and the initial values for all state variables, into a virgin hardware device before we can start a computa­ tion. We call the totality of software that has to be loaded into a virgin hardware device the core image or the job . Normally, the job is a data structure that is static, i.e., it is not changed during the execution of the software. In some embedded hard­ ware devices, the job is stored in a ROM (read-only memory), and thus the software becomes literally a part of the hardware .
+If our hardware device is a programmable computer, we must first load the soft­ ware, i.e., operating system, the set of application programs, and the initial values for all state variables, into a virgin hardware device before we can start a computa­ tion. We call the totality of software that has to be loaded into a virgin hardware device the core image or the job. Normally, the job is a data structure that is static, i.e., it is not changed during the execution of the software. In some embedded hard­ ware devices, the job is stored in a ROM (read-only memory), and thus the software becomes literally a part of the hardware .
 
 > 如果我们的硬件设备是可编程计算机，我们必须首先将软件(即操作系统、应用程序集和所有状态变量的初始值)加载到原始硬件设备中，然后才能开始计算。我们称必须加载到原始硬件设备中的所有软件为核心映像或作业。通常，作业是静态的数据结构，即在软件执行过程中不会更改。在一些嵌入式硬件设备中，作业存储在 ROM(只读存储器)中，因此软件实际上是硬件的一部分。
 
 ### 4.2.3 Ground State
 
-In order to facilitate the dynamic reintegration of a component into a running sys­ tem, it is necessary to design periodic reintegration instants into the behavior, where the component’s state at the reintegration instant contains a small set of well-defined application-specific state variables . We call the state at the reintegration instant the ground state ( $\mathit{\check{g}}$ -state ) of a component and the temporal interval between two reinte­ gration points the ground cycle .
+In order to facilitate the dynamic reintegration of a component into a running sys­ tem, it is necessary to design periodic reintegration instants into the behavior, where the component’s state at the reintegration instant contains a small set of well-defined application-specific state variables. We call the state at the reintegration instant the ground state ( $\mathit{\check{g}}$ -state ) of a component and the temporal interval between two reinte­ gration points the ground cycle .
 
 > 为了促进组件动态地重新集成到正在运行的系统中，有必要设计周期性的重新集成时刻到行为中，其中组件在重新集成时刻的状态包含一组定义良好的特定于应用程序的状态变量。我们将重新整合时刻的状态称为组件的基态($\mathit{\check{g}$-state)，将两个重新整合点之间的时间间隔称为基态循环。
 
-The ground state at the reintegration point is stored in a declared $g$ -state data structure . Designing a minimal ground state data structure is the result of an explicit design effort that involves a semantic analysis of the given application. The designer has to find periodic instants where there is a maximum decoupling of future behav­ ior from past behavior. This is relatively easy in cyclic applications , such as in control applications and multimedia applications. In these applications, a natural reintegration instant is immediately after the termination of one cycle and before the beginning of the next cycle. Design techniques for the minimization of the ground state are discussed in Sect. 6.6 .
+The ground state at the reintegration point is stored in a declared $g$ -state data structure. Designing a minimal ground state data structure is the result of an explicit design effort that involves a semantic analysis of the given application. The designer has to find periodic instants where there is a maximum decoupling of future behav­ ior from past behavior. This is relatively easy in cyclic applications , such as in control applications and multimedia applications. In these applications, a natural reintegration instant is immediately after the termination of one cycle and before the beginning of the next cycle. Design techniques for the minimization of the ground state are discussed in Sect. 6.6 .
 
 > 重新整合点的基态存储在已声明的$g$-state 数据结构中。设计最小的基态数据结构是显式设计工作的结果，该工作涉及对给定应用程序的语义分析。设计者必须找到未来行为与过去行为最大解耦的周期性时刻。这在循环应用中相对容易，例如在控制应用和多媒体应用中。在这些应用中，自然的重新整合时刻是在一个周期结束后和下一个周期开始前。第 2 节讨论了最小化基态的设计技术。6.6 .
 
-In the lower part of Fig.4.4 , there is an instant when no task is active and when all channels are empty, i.e., when the system is in the $g$ -state . If a node is in the $g$ -state , then the entire state that is essential for the future operation of the node is contained in the declared ground state data structure.
+In the lower part of Fig.4.4 , there is an instant when no task is active and when all channels are empty, i.e., when the system is in the $g$ -state. If a node is in the $g$ -state , then the entire state that is essential for the future operation of the node is contained in the declared ground state data structure.
 
 > 在图 4.4 的下部，有一个瞬间，没有任务处于活动状态，所有通道都为空，即系统处于$g$-状态。如果一个节点处于$g$状态，那么对节点未来操作至关重要的整个状态都包含在声明的基态数据结构中。
 
@@ -4007,7 +4036,7 @@ Example: Consider the relation between the size of the $\mathrm{g}$ -state and t
 
 ### 4.2.4 Database Components
 
-We call a component where the number of dynamic data elements , i.e., data ele­ ments that are modified by the computations, is too large for storing them in a single ground state message a database component . The dynamic data elements that are contained in a database component can be either part of the state or archival data .
+We call a component where the number of dynamic data elements , i.e., data ele­ ments that are modified by the computations, is too large for storing them in a single ground state message a database component. The dynamic data elements that are contained in a database component can be either part of the state or archival data .
 
 > 我们将动态数据元素(即通过计算修改的数据元素)的数量太大而无法将其存储在单个地面状态消息中的组件称为数据库组件。数据库组件中包含的动态数据元素可以是状态数据或档案数据的一部分。
 
@@ -4031,17 +4060,17 @@ The concept of a message is related to the concept of a letter in the postal sys
 
 > 信息的概念与邮政系统中的信件概念有关。消息由标头、数据字段和尾部组成。标题对应于信件的信封，包含必须传递邮件的收件人(邮箱)的端口地址、有关如何处理邮件的信息(例如挂号信)，并可能包含发件人的地址。数据字段包含消息的应用程序特定数据，对应于信件的内容。预告片与信件中的签名相对应，其中包含的信息使接收者能够检测邮件中包含的数据是否未损坏和真实。有不同类型的拖车在使用：最常见的拖车是 CRC 字段，它允许接收器确定数据字段在传输过程中是否已损坏。消息还可能在尾部包含电子签名，从而可以确定消息的认证内容是否未被更改(见第 6.2 节)。原子性的概念意味着消息要么完整地传递，要么根本不传递。如果消息损坏或只有部分消息到达接收者的站点，则整个消息将被丢弃。所述拖车的目的是以足够高的概率确保原子性。
 
-The temporal dimension of the message concept relates to the instants when a message is sent by the sender and received by the receiver and consequently how long the message has been in transit. We call the interval between the send instant and the receive instant the transport delay . A second aspect of the temporal dimen­ sion relates to the rate of message production by the sender and message consump­ tion by the receiver. If the sending rate is constrained, then we speak about $a$ rate-constrained message system. In case the sender’s rate is not constrained, the sender may overload the transport capacity of the communication system (we call this congestion ) or the processing capacity of the receiver. In case the receiver can­ not keep up with the message production rate of the sender, the receiver can send a control message to the sender telling the sender to slow down ( back pressure flow control ). Alternatively, the receiver or the communication system may simply dis­ card messages that exceed its processing capacity.
+The temporal dimension of the message concept relates to the instants when a message is sent by the sender and received by the receiver and consequently how long the message has been in transit. We call the interval between the send instant and the receive instant the transport delay. A second aspect of the temporal dimen­ sion relates to the rate of message production by the sender and message consump­ tion by the receiver. If the sending rate is constrained, then we speak about $a$ rate-constrained message system. In case the sender’s rate is not constrained, the sender may overload the transport capacity of the communication system (we call this congestion ) or the processing capacity of the receiver. In case the receiver can­ not keep up with the message production rate of the sender, the receiver can send a control message to the sender telling the sender to slow down ( back pressure flow control ). Alternatively, the receiver or the communication system may simply dis­ card messages that exceed its processing capacity.
 
 > 消息概念的时间维度与发送方发送消息和接收方接收消息的时刻有关，因此与消息传输的时间有关。我们将发送时刻和接收时刻之间的间隔称为传输延迟。时间维度的第二个方面与发送方的消息生成速率和接收方的消息消耗速率有关。如果发送速率受到限制，那么我们谈论的是速率受限的消息系统。如果发送方的速率不受限制，发送方可能会使通信系统的传输容量过载(我们称之为拥塞)或接收方的处理能力过载。如果接收者无法跟上发送者的消息生成速度，接收者可以向发送者发送控制消息，告诉发送者减速(背压流量控制)。或者，接收器或通信系统可以简单地丢弃超过其处理能力的消息。
 
 ### 4.3.2 Event Information Versus State Information
 
-The state of a dynamic system changes as real time progresses. Let us assume that we periodically observe the state variables of a system with a duration $d$ between two successive observation instants. If we observe that the value of all state vari­ ables is the same in two successive observations, then we infer that no event , i.e., change of state , has occurred in the last observation interval $d$ . This conclusion is only valid, if the dynamics of the system is slow compared to our observation inter­ val $d$ (refer to Shannon’s theorem [Jer77]). If two successive observations of the values of some state variables differ, then we conclude that at least one event has occurred in the last observation interval $d$ . We can report about the occurrence of an event, i.e., a change of state, in two different ways: either by sending a single mes­ sage containing event information or by sending a sequence of messages containing state information .
+The state of a dynamic system changes as real time progresses. Let us assume that we periodically observe the state variables of a system with a duration $d$ between two successive observation instants. If we observe that the value of all state vari­ ables is the same in two successive observations, then we infer that no event , i.e., change of state , has occurred in the last observation interval $d$. This conclusion is only valid, if the dynamics of the system is slow compared to our observation inter­ val $d$ (refer to Shannon’s theorem [Jer77]). If two successive observations of the values of some state variables differ, then we conclude that at least one event has occurred in the last observation interval $d$. We can report about the occurrence of an event, i.e., a change of state, in two different ways: either by sending a single mes­ sage containing event information or by sending a sequence of messages containing state information .
 
 > 动态系统的状态会随着实时进程而变化。让我们假设我们在两个连续的观察时刻之间定期观察一个持续时间为$d$的系统的状态变量。如果我们观察到所有状态变量的值在两个连续的观察中都是相同的，那么我们推断在最后一个观察间隔$d$中没有发生任何事件，即状态变化。只有当系统的动力学与我们的观测区间$d$相比很慢时，这一结论才有效(参见香农定理[Jer77])。如果某些状态变量的值的两个连续观测值不同，那么我们得出结论，在最后一个观测区间$d$中至少发生了一个事件。我们可以通过两种不同的方式报告事件的发生，即状态的变化：要么发送包含事件信息的单个消息，要么发送包含状态信息的一系列消息。
 
-We talk about event information if the information conveys the difference in val­ ues of the previous state observation and the current state observation. The instant of the current (later) observation is postulated to be the instant of event occurrence. This assumption is not fully accurate, since the event may have occurred at any instant during the last interval of duration $d$ . We can reduce this temporal observa­ tion error of an event by making the interval $d$ smaller, but we cannot fully eliminate the temporal uncertainty about the observation of events. This holds true even if we use the interrupt system of a processor to report about an event. The input signal that relays the occurrence of an interrupt is not sensed continuously by the processor, but only after the termination of the execution of an instruction. This delay is introduced in order to reduce the amount of processor state that has to be saved and restored in the processor in order to be able to continue the interrupted task after the interrupt has been served. As outlined in Sect. 4.2.3 , the state is minimal immediately before or after the execution of an atomic operation—in this case, the execution of a com­ plete instruction by a processor.
+We talk about event information if the information conveys the difference in val­ ues of the previous state observation and the current state observation. The instant of the current (later) observation is postulated to be the instant of event occurrence. This assumption is not fully accurate, since the event may have occurred at any instant during the last interval of duration $d$. We can reduce this temporal observa­ tion error of an event by making the interval $d$ smaller, but we cannot fully eliminate the temporal uncertainty about the observation of events. This holds true even if we use the interrupt system of a processor to report about an event. The input signal that relays the occurrence of an interrupt is not sensed continuously by the processor, but only after the termination of the execution of an instruction. This delay is introduced in order to reduce the amount of processor state that has to be saved and restored in the processor in order to be able to continue the interrupted task after the interrupt has been served. As outlined in Sect. 4.2.3 , the state is minimal immediately before or after the execution of an atomic operation—in this case, the execution of a com­ plete instruction by a processor.
 
 > 如果信息传达了先前状态观测和当前状态观测的值差异，我们就讨论事件信息。当前(后续)观测的时刻被假定为事件发生的时刻。这一假设并不完全准确，因为事件可能发生在持续时间$d$的最后一个间隔内的任何时刻。我们可以通过减小间隔$d$来减少事件的时间观测误差，但我们不能完全消除事件观测的时间不确定性。即使我们使用处理器的中断系统来报告事件，这也是正确的。处理器不会连续感测到中继中断发生的输入信号，而只有在指令执行终止后才会感测到。引入此延迟是为了减少必须在处理器中保存和恢复的处理器状态量，以便能够在中断被服务后继续中断的任务。如第 1 节所述。4.2.3，在执行原子操作之前或之后，状态是最小的——在这种情况下，处理器执行完整的指令。
 
@@ -4071,7 +4100,7 @@ Example: The event message valve must be closed by 5 degrees means that the new 
 
 > 示例：事件消息阀必须关闭 5 度，这意味着阀的新预期位置等于当前位置加 5 度。如果此事件消息丢失或重复，则计算机中阀门位置状态的图像将与环境中阀门位置的实际状态相差 5 度。该错误可以通过状态对齐来纠正，即将预期阀门位置的(完全)状态发送到阀门。
 
-In an event-triggered system, error detection is in the responsibility of the sender who must receive an explicit acknowledgment message from the receiver telling the sender that the message has arrived correctly. The receiver cannot perform error detection, because the receiver cannot distinguish between no activity by the sender and loss of message. Thus the control flow must be bidirectional control flow, even if the data flow is only unidirectional . The sender must be time-aware , because it must decide within a finite interval of real time that the communication has failed. This is one reason why we cannot build fault-tolerant system that is unaware of the progression of real time .
+In an event-triggered system, error detection is in the responsibility of the sender who must receive an explicit acknowledgment message from the receiver telling the sender that the message has arrived correctly. The receiver cannot perform error detection, because the receiver cannot distinguish between no activity by the sender and loss of message. Thus the control flow must be bidirectional control flow, even if the data flow is only unidirectional. The sender must be time-aware , because it must decide within a finite interval of real time that the communication has failed. This is one reason why we cannot build fault-tolerant system that is unaware of the progression of real time .
 
 > 在事件触发系统中，错误检测由发送方负责，发送方必须从接收方收到明确的确认消息，告诉发送方消息已正确到达。接收方无法执行错误检测，因为接收方无法区分发送方没有活动和消息丢失。因此，即使数据流只是单向的，控制流也必须是双向控制流。发送方必须具有时间意识，因为它必须在有限的实时间隔内确定通信失败。这就是为什么我们不能构建不知道实时进程的容错系统的原因之一。
 
@@ -4081,17 +4110,17 @@ A message is called time-triggered (TT) if the triggering signal for sending the
 
 > 如果发送消息的触发信号来自实时进程，则该消息称为时间触发(TT)。在系统开始运行之前，为每次触发的消息分配了一个以周期和阶段为特征的循环。在循环开始的瞬间，操作系统会自动启动消息的传输。TT 消息传输中不需要发送消息命令。
 
-TT messages are well suited to transport state information . A TT message that contains state information is called a state message . Since a new version of a state observation normally replaces the existing older version, it is reasonable that a new state message updates-in-place the older message. On reading, a state message is not consumed ; it remains in the memory until it is updated by a new version. The semantics of state messages is similar to the semantics of a program variable that can be read many times without consuming it. Since queues are not necessary in state message transmissions, queue overflow is no issue. Based on the a priori known cycle of state messages, the receiver can perform error detection autono­ mously to detect the loss of a state message. State messages support the principle of independence (refer to Sect. 2.5 ) since sender and receiver can operate at different (independent) rates and there is no means for a receiver to influence the sender.
+TT messages are well suited to transport state information. A TT message that contains state information is called a state message. Since a new version of a state observation normally replaces the existing older version, it is reasonable that a new state message updates-in-place the older message. On reading, a state message is not consumed; it remains in the memory until it is updated by a new version. The semantics of state messages is similar to the semantics of a program variable that can be read many times without consuming it. Since queues are not necessary in state message transmissions, queue overflow is no issue. Based on the a priori known cycle of state messages, the receiver can perform error detection autono­ mously to detect the loss of a state message. State messages support the principle of independence (refer to Sect. 2.5 ) since sender and receiver can operate at different (independent) rates and there is no means for a receiver to influence the sender.
 
 > TT 消息非常适合传输状态信息。包含状态信息的 TT 消息称为状态消息。由于状态观测的新版本通常会替换现有的旧版本，因此新的状态消息更新旧消息是合理的。在读取时，不消耗状态消息；它将保留在内存中，直到被新版本更新。状态消息的语义类似于程序变量的语义，可以多次读取而无需消耗它。由于在状态消息传输中不需要队列，因此队列溢出不是问题。基于状态消息的先验已知循环，接收器可以自动执行错误检测，以检测状态消息的丢失。状态信息支持独立性原则(参见第 2.5 节)，因为发送方和接收方可以以不同的(独立的)速率运行，接收方无法影响发送方。
 
-Example: A temperature sensor observes the state of a temperature sensor in the environ­ ment every second. A state message is well suited to transport this observation to a user and store it in a program variable named temperature . The user program can read this variable temperature whenever it needs to refer to the current temperature of the environment, knowing that the value stored in this variable is up to date to within about $2\mathrm{~s~}$ . If a single state message is lost, then for one cycle the value stored in this variable is up to date to only within about $3\mathrm{~s~}$ . Since, in a time-triggered system, the communication system knows a priori when a new state message must arrive, it can associate a flag with the variable tem­ perature to inform the user if the variable temperature has been properly updated in the last cycle.
+Example: A temperature sensor observes the state of a temperature sensor in the environ­ ment every second. A state message is well suited to transport this observation to a user and store it in a program variable named temperature. The user program can read this variable temperature whenever it needs to refer to the current temperature of the environment, knowing that the value stored in this variable is up to date to within about $2\mathrm{~s~}$. If a single state message is lost, then for one cycle the value stored in this variable is up to date to only within about $3\mathrm{~s~}$. Since, in a time-triggered system, the communication system knows a priori when a new state message must arrive, it can associate a flag with the variable tem­ perature to inform the user if the variable temperature has been properly updated in the last cycle.
 
 > 示例：温度传感器每秒观察一次环境中温度传感器的状态。状态消息非常适合将此观察结果传输给用户，并将其存储在名为 temperature 的程序变量中。用户程序可以在需要参考当前环境温度时读取此变量温度，知道此变量中存储的值是最新的，大约在 $2\mathrm{~s~}$以内。如果单个状态消息丢失，则在一个周期内，存储在该变量中的值仅在约$3\mathrm{~s~}$范围内是最新的。由于在时间触发系统中，通信系统预先知道新的状态消息何时必须到达，因此它可以将一个标志与可变温度相关联，以通知用户可变温度是否在上一个周期中得到了正确更新。
 
 ## 4.4 Component Interfaces
 
-Let us assume that the design of a large component-based system is partitioned into two distinct design phases, architecture design and component design (see also Sect. 11.2 on system design ). At the end of the architecture design phase, a platform-­ independent model (PIM) of a system is available. The PIM is an executable model that partitions the system into clusters and components and contains the precise interface specification (in the domains of value and time) of the linking interfaces of the components. The linking interface specification of the PIM is agnostic about the component implementation and can be expressed in a high-level executable system language, e.g., in System C . A PIM component that is transformed to a form that can be executed on the final execution platform is called a platform-specific model (PSM) of the component. The PSM has the same interface characteristics as the PIM. In many cases, an appropriate compiler can transform the PIM to the PSM automatically.
+Let us assume that the design of a large component-based system is partitioned into two distinct design phases, architecture design and component design (see also Sect. 11.2 on system design ). At the end of the architecture design phase, a platform-­ independent model (PIM) of a system is available. The PIM is an executable model that partitions the system into clusters and components and contains the precise interface specification (in the domains of value and time) of the linking interfaces of the components. The linking interface specification of the PIM is agnostic about the component implementation and can be expressed in a high-level executable system language, e.g., in System C. A PIM component that is transformed to a form that can be executed on the final execution platform is called a platform-specific model (PSM) of the component. The PSM has the same interface characteristics as the PIM. In many cases, an appropriate compiler can transform the PIM to the PSM automatically.
 
 > 让我们假设一个基于组件的大型系统的设计分为两个不同的设计阶段，架构设计和组件设计(另见第 11.2 节关于系统设计)。在架构设计阶段结束时，系统的平台无关模型(PIM)可用。PIM 是一个可执行模型，它将系统划分为集群和组件，并包含组件链接接口的精确接口规范(在价值和时间域中)。PIM 的链接接口规范与组件实现无关，可以用高级可执行系统语言表示，例如 system C。转换为可在最终执行平台上执行的形式的 PIM 组件称为组件的平台特定模型(PSM)。PSM 具有与 PIM 相同的接口特性。在许多情况下，适当的编译器可以自动将 PIM 转换为 PSM。
 
@@ -4114,7 +4143,7 @@ Let us assume that the design of a large component-based system is partitioned i
 
 > •本地接口将组件链接到外部世界，即集群的外部环境。此接口仅在 PSM 级别进行语法指定，尽管此接口的语义内容包含在 LIF 中。
 
-The LIF and the local interface are operational interfaces , while the TII and TDI are control interfaces . The control interfaces are used to control, monitor, or debug a component, while the operational interfaces are in use during the normal operation of a component. Before discussing these four interfaces in detail, we elaborate on some general properties of message interfaces.
+The LIF and the local interface are operational interfaces , while the TII and TDI are control interfaces. The control interfaces are used to control, monitor, or debug a component, while the operational interfaces are in use during the normal operation of a component. Before discussing these four interfaces in detail, we elaborate on some general properties of message interfaces.
 
 > LIF 和本地接口是操作接口，而 TII 和 TDI 是控制接口。控制接口用于控制、监视或调试组件，而操作接口在组件的正常操作期间使用。在详细讨论这四个接口之前，我们将阐述消息接口的一些一般属性。
 
@@ -4175,7 +4204,7 @@ The TDI is a special control interface that provides a means to look inside a co
 
 ### 4.4.5 Local Interfaces
 
-The local interfaces establish a connection between a component and its outside environment, e.g., the sensors and actuators in the physical plant, the human opera­ tor, or another computer system. A component that contains a local interface is called a gateway component or an open component , in contrast to a component that does not contain a local interface, which is called a closed component . The distinction between open and closed components is important from the point of view of the specification of the semantics of the LIF of the component. Only closed components can be fully specified without knowing the context of use of the component.
+The local interfaces establish a connection between a component and its outside environment, e.g., the sensors and actuators in the physical plant, the human opera­ tor, or another computer system. A component that contains a local interface is called a gateway component or an open component , in contrast to a component that does not contain a local interface, which is called a closed component. The distinction between open and closed components is important from the point of view of the specification of the semantics of the LIF of the component. Only closed components can be fully specified without knowing the context of use of the component.
 
 > 本地接口在组件与其外部环境之间建立连接，例如物理工厂中的传感器和执行器、人类操作员或其他计算机系统。包含本地接口的组件称为网关组件或开放组件，与不包含本地接口(称为封闭组件)的组件不同。从组件 LIF 语义规范的角度来看，开放和封闭组件之间的区别很重要。在不了解组件使用上下文的情况下，只能完全指定封闭组件。
 
@@ -4183,7 +4212,7 @@ From the point of view of the cluster LIF , only the timing and the semantic con
 
 > 从集群 LIF 的角度来看，只有时间和语义内容(即通过本地接口交换的信息的含义)是相关的，而本地接口的详细结构、命名和访问机制在集群级别故意未指定。只要相关数据项的语义内容和时序相同(另见第 2.5 节中的抽象原则)，对本地访问机制的修改，例如通过以太网交换 CAN 总线，不会对 LIF 规范产生任何影响，也不会因此对 LIF 规格的用户产生任何影响。
 
-Example: A component that calculates a trigonometric function is a closed component . Its functionality can be formally specified. A component that reads a temperature sensor is an open component . The meaning of temperature is application specific, since it depends on the position where the sensor is placed in the physical plant.
+Example: A component that calculates a trigonometric function is a closed component. Its functionality can be formally specified. A component that reads a temperature sensor is an open component. The meaning of temperature is application specific, since it depends on the position where the sensor is placed in the physical plant.
 
 > 示例：计算三角函数的组件是闭合组件。其功能可以正式指定。读取温度传感器的组件是开放组件。温度的含义因应用而异，因为它取决于传感器在物理设备中的放置位置。
 
@@ -4262,7 +4291,7 @@ Example: The Internet provides a defined message-transport service between two e
 
 > 示例：互联网在两个终端系统之间提供定义的消息传输服务，不知道传输的是哪种类型的数字数据。
 
-In order to be able to interpret the data field of a message at the endpoints of the communication, we need the operational and the meta-level specification . The operational specification informs about the syntactic structure of the message that is exchanged across the LIF and establishes the message variables . Both the trans­ port and the operational specification must be precise and formal to ensure the syn­ tactic interoperability of components. The meta-level specification of a LIF assigns meaning to the message variable names introduced by the operational specification. It is based on an interface model of the user environment. Since it is impossible to formalize all aspects of a real-world user environment, the meta-level specification will often contain natural language elements, which lack the precision of a formal system. Central concepts of the application domains and applications can be speci­ fied using domain-specific ontologies .
+In order to be able to interpret the data field of a message at the endpoints of the communication, we need the operational and the meta-level specification. The operational specification informs about the syntactic structure of the message that is exchanged across the LIF and establishes the message variables. Both the trans­ port and the operational specification must be precise and formal to ensure the syn­ tactic interoperability of components. The meta-level specification of a LIF assigns meaning to the message variable names introduced by the operational specification. It is based on an interface model of the user environment. Since it is impossible to formalize all aspects of a real-world user environment, the meta-level specification will often contain natural language elements, which lack the precision of a formal system. Central concepts of the application domains and applications can be speci­ fied using domain-specific ontologies .
 
 > 为了能够在通信端点解释消息的数据字段，我们需要操作和元级别的规范。操作规范告知在 LIF 上交换的消息的语法结构，并建立消息变量。传输和操作规范都必须精确和正式，以确保组件的协同互操作性。LIF 的元级规范为操作规范引入的消息变量名称赋予了意义。它基于用户环境的界面模型。由于不可能将现实世界用户环境的所有方面形式化，元级规范通常会包含自然语言元素，这缺乏形式化系统的精度。应用程序域和应用程序的核心概念可以使用特定于域的本体来指定。
 
@@ -4294,7 +4323,7 @@ As noted above, the transport specification must contain the information about t
 
 ### 4.6.2 Operational Specification
 
-From the point of view of communication, the data field of an arriving message can be considered as an unstructured bit vector. At the endpoints of the communication, the operational specification determines how this bit vector must be structured into message variables. A message variable is a syntactic unit that consists of a fixed part and a variable part (see Sect. 2.2.4 ). The information about how the data field of a message is structured in syntactic units is contained in a message-structure declaration (MSD) . The MSD contains the message variable names (i.e., the fixed part of the message variable) that point to the relevant concepts on one side and, on the other side, specifies which part of the unstructured bit vector denotes the value (the variable part) of a message variable . In addition to the structure information, the MSD may contain input assertions for checking the validity of incoming data (e.g., to test if the data is within a permitted data domain that the receiving compo­ nent is capable to handle) and output assertions for checking outgoing data. An incoming data element that passes the input assertion is called a permitted data ele­ ment . An outgoing data element that passes the output assertion is called a checked data element. The formalism used for specifying the data structures and the asser­ tions in the MSD depends on the available programming environment.
+From the point of view of communication, the data field of an arriving message can be considered as an unstructured bit vector. At the endpoints of the communication, the operational specification determines how this bit vector must be structured into message variables. A message variable is a syntactic unit that consists of a fixed part and a variable part (see Sect. 2.2.4 ). The information about how the data field of a message is structured in syntactic units is contained in a message-structure declaration (MSD). The MSD contains the message variable names (i.e., the fixed part of the message variable) that point to the relevant concepts on one side and, on the other side, specifies which part of the unstructured bit vector denotes the value (the variable part) of a message variable. In addition to the structure information, the MSD may contain input assertions for checking the validity of incoming data (e.g., to test if the data is within a permitted data domain that the receiving compo­ nent is capable to handle) and output assertions for checking outgoing data. An incoming data element that passes the input assertion is called a permitted data ele­ ment. An outgoing data element that passes the output assertion is called a checked data element. The formalism used for specifying the data structures and the asser­ tions in the MSD depends on the available programming environment.
 
 > 从通信的角度来看，到达消息的数据字段可以被视为非结构化比特向量。在通信的端点，操作规范决定了如何将此位向量结构化为消息变量。消息变量是一个语法单位，由固定部分和可变部分组成(见第 2.2.4 节)。消息结构声明(MSD)中包含了关于消息的数据字段如何以句法单位进行结构化的信息。MSD 包含消息变量名称(即消息变量的固定部分)，一端指向相关概念，另一端指定非结构化位向量的哪个部分表示消息变量的值(变量部分)。除了结构信息外，MSD 还可以包含用于检查传入数据有效性的输入断言(例如，测试数据是否在接收组件能够处理的允许数据域内)和用于检查传出数据的输出断言。传递输入断言的传入数据元素称为允许的数据元素。传递输出断言的传出数据元素称为已检查数据元素。用于指定 MSD 中的数据结构和组件的形式取决于可用的编程环境。
 
@@ -4328,7 +4357,7 @@ The link between the unstructured bit vector arriving at a port and the associat
 
 ### 4.6.3 Meta-Level Specification
 
-The meta-level LIF specification assigns a meaning to the message variables exchanged between two communicating LIFs at the operational level and thus establishes semantic interoperability . It thus bridges the gap between the syntactic units and the user’s mental model of the service provided at the interface. Central to this meta-level specification is the LIF service model. The LIF service model defines the concepts that are associated with the message variable names contained in the operational specification. These concepts will be qualitatively different for closed components and open components (see Sect. 4.4.5 ).
+The meta-level LIF specification assigns a meaning to the message variables exchanged between two communicating LIFs at the operational level and thus establishes semantic interoperability. It thus bridges the gap between the syntactic units and the user’s mental model of the service provided at the interface. Central to this meta-level specification is the LIF service model. The LIF service model defines the concepts that are associated with the message variable names contained in the operational specification. These concepts will be qualitatively different for closed components and open components (see Sect. 4.4.5 ).
 
 > 元级 LIF 规范在操作级别为两个通信 LIF 之间交换的消息变量赋予了意义，从而建立了语义互操作性。因此，它弥合了句法单元与界面上提供的服务的用户心理模型之间的差距。此元级规范的核心是 LIF 服务模型。LIF 服务模型定义了与操作规范中包含的消息变量名相关的概念。对于封闭组件和开放组件，这些概念在性质上是不同的(见第 4.4.5 节)。
 
@@ -4398,7 +4427,7 @@ Example: Figure  4.1 depicts a cluster of components that form the control syst
 
 > 示例：图 4.1 展示了构成汽车控制系统的一组组件。车对车网关组件(图 4.1 中的右下组件)与其他车辆建立无线连接。在这个例子中，我们区分了以下两个层次的集成：(i)将组件集成到图 4.1 所示的集群中，以及(ii)通过车对车(C2C)网关组件将汽车集成到汽车动态系统中。如果我们看看图 4.1 集群内组件的集成，那么 C2C 网关组件的通信网络接口(CNI)就是集群 LIF。从 C2C 通信的角度来看，集群 LIF 是 C2C 网关组件的(未指定的)本地接口(另见第 4.5.2 节的最后一段)。
 
-The hierarchical composition of components and clusters that leads to distinct integration levels is an important special case of the integration of components. Multi levelness is an important organizing principle in large systems. At the lowest integration level, primitive components (i.e., components that are considered to be atomic units and are not composed any further) are integrated to form a cluster. One distinct component of this cluster is a gateway component that forms, together with distinct gateway components of other clusters, a higher-level cluster . This process of integration can be continued recursively to construct a hierarchical system with distinct levels of integration (see also Sect. 11.7.2 on the recursive integration of components in the time-triggered architecture).
+The hierarchical composition of components and clusters that leads to distinct integration levels is an important special case of the integration of components. Multi levelness is an important organizing principle in large systems. At the lowest integration level, primitive components (i.e., components that are considered to be atomic units and are not composed any further) are integrated to form a cluster. One distinct component of this cluster is a gateway component that forms, together with distinct gateway components of other clusters, a higher-level cluster. This process of integration can be continued recursively to construct a hierarchical system with distinct levels of integration (see also Sect. 11.7.2 on the recursive integration of components in the time-triggered architecture).
 
 > 导致不同集成级别的组件和集群的分层组合是组件集成的一个重要特例。多层次性是大型系统中一个重要的组织原则。在最低集成级别，原始组件(即被视为原子单元且不再组合的组件)被集成以形成集群。这个集群的一个不同组件是网关组件，它与其他集群的不同网关组件一起形成一个更高级别的集群。这种集成过程可以递归地继续，以构建一个具有不同集成级别的分层系统(另见第 11.7.2 节关于时间触发架构中组件的递归集成)。
 
@@ -4408,7 +4437,7 @@ Example: In the GENESYS [Obe09, p. 44] architecture, three integration levels a
 
 ### 4.7.3 System of Systems
 
-There are two reasons for the rising interest in systems of systems : (i) the realization of new functionality and (ii) the control of the complexity growth of large systems caused by their continuous evolution. The available technology (e.g., the Internet) makes it possible to interconnect independently developed systems ( legacy systems ) to form new system of systems (SoS) . The integration of different legacy systems into an SoS promises more efficient economic processes and improved services.
+There are two reasons for the rising interest in systems of systems : (i) the realization of new functionality and (ii) the control of the complexity growth of large systems caused by their continuous evolution. The available technology (e.g., the Internet) makes it possible to interconnect independently developed systems ( legacy systems ) to form new system of systems (SoS). The integration of different legacy systems into an SoS promises more efficient economic processes and improved services.
 
 > 人们对系统之体系的兴趣日益浓厚有两个原因：(i)新功能的实现；(ii)对大型系统不断进化所导致的复杂性增长的控制。现有技术(如互联网)使独立开发的系统(遗留系统)相互连接，形成新的系统体系(SoS)成为可能。将不同的遗留系统集成到 SoS 中，有望实现更高效的经济流程和改进的服务。
 
@@ -4416,7 +4445,7 @@ The continuous adaptations and modifications that are necessary to keep the ser�
 
 > 为了使大型系统的服务在动态业务环境中保持相关性，需要不断进行调整和修改，这带来了越来越大的复杂性，在单一环境中难以管理[Leh85]。解决这一复杂性问题的一种有前景的技术是将单个大型单片系统分解为一组由定义良好的消息接口连接的几乎自治的组成系统。只要这些消息接口所依赖的属性满足用户意图，就可以修改组成系统的内部结构，而不会对全局系统级服务产生任何不利影响。消息接口上依赖属性的任何修改都由一个监视和协调系统演化的元实体仔细协调。因此，引入 SoS 技术是为了通过引入结构和应用抽象、关注点分离和子系统交互可观察性的简化原则来处理大型系统必要演化引起的复杂性增长(见第 2.5 节)。
 
-In many distributed real-time applications, it is not possible to bring temporally accurate real-time information to a central point of control within the available time interval between the observation of the local environment and the need to control the local environment . In these applications central control by a monolithic control system is not possible. Instead, the autonomous distributed controllers must cooper­ ate to achieve the desired effects.
+In many distributed real-time applications, it is not possible to bring temporally accurate real-time information to a central point of control within the available time interval between the observation of the local environment and the need to control the local environment. In these applications central control by a monolithic control system is not possible. Instead, the autonomous distributed controllers must cooper­ ate to achieve the desired effects.
 
 > 在许多分布式实时应用中，在观察本地环境和需要控制本地环境之间的可用时间间隔内，不可能将时间上精确的实时信息带到中心控制点。在这些应用中，通过单片控制系统进行中央控制是不可能的。相反，自主分布式控制器必须协同工作以达到预期效果。
 
@@ -4437,7 +4466,7 @@ An important characteristic of an SoS is the independent development and unco­ 
 
 [Sel08, p. 3] discusses two important properties of an evolutionary architecture : (i) the complexity of the overall framework does not grow as constituent systems are added or removed, and (ii) a given constituent system does not have to be reengi­ neered if other constituent systems are added, changed, or removed. This implies a precise specification and continuous re validation of the interface properties (in the domains of value and time) of the constituent systems. The evolution of a constitu­ ent system will have no adverse effect on the overall behavior if the relied-upon interface properties of this constituent system are not modified. Since the precise specification of the temporal dimension of the relied-upon interface properties requires a time reference, the availability of a synchronized global time in all con­ stituent systems of a large SoS is helpful, leading to a time-aware architecture (TAA; see Sect. 11.7 ). Such a global time can be established by reference to the global GPS signals (see Sect. 3.5 ). We call an SoS where all constituent systems have access to a synchronized global time a time-aware SoS .
 
-> [Sel08，第 3 页]讨论了进化架构的两个重要特性：(i)随着组成系统的添加或删除，整体框架的复杂性不会增加；(ii)如果添加、更改或删除其他组成系统，则不必重新设计给定的组成系统。这意味着对组成系统的接口属性(在价值和时间领域)进行精确的规范和持续的重新验证。如果不修改组成系统所依赖的界面特性，则组成系统的演变不会对整体行为产生不利影响。由于所依赖的接口属性的时间维度的精确规范需要时间参考，因此大型 SoS 的所有组成系统中同步全局时间的可用性是有帮助的，从而形成时间感知架构(TAA；见第 11.7 节)。这样的全球时间可以通过参考全球 GPS 信号来建立(见第 3.5 节)。我们称所有组成系统都可以访问同步全球时间的 SoS 为时间感知 SoS。
+> [Sel08，第 3 页]讨论了进化架构的两个重要特性：(i)随着组成系统的添加或删除，整体框架的复杂性不会增加；(ii)如果添加、更改或删除其他组成系统，则不必重新设计给定的组成系统。这意味着对组成系统的接口属性(在价值和时间领域)进行精确的规范和持续的重新验证。如果不修改组成系统所依赖的界面特性，则组成系统的演变不会对整体行为产生不利影响。由于所依赖的接口属性的时间维度的精确规范需要时间参考，因此大型 SoS 的所有组成系统中同步全局时间的可用性是有帮助的，从而形成时间感知架构(TAA；见第 11.7 节)。这样的全局时间可以通过参考全局 GPS 信号来建立(见第 3.5 节)。我们称所有组成系统都可以访问同步全局时间的 SoS 为时间感知 SoS。
 
 The preferred interconnection medium for the construction of systems of systems is the Internet, leading to the Internet of Things (IoT). Chap. 13 is devoted to the topic of the Internet of Things .
 
@@ -4449,7 +4478,7 @@ The preferred interconnection medium for the construction of systems of systems 
 
 > •实时组件由设计(如软件)、实施例(如硬件，包括处理单元、存储器和 I/O 接口)和实时时钟组成，实时时钟使组件知道实时的进展。
 
-• The timed sequence of output messages that a component produces at an inter­ face with its environment is the behavior of the component at that interface. The intended behavior is called the service . An unintended behavior is called a failure .
+• The timed sequence of output messages that a component produces at an inter­ face with its environment is the behavior of the component at that interface. The intended behavior is called the service. An unintended behavior is called a failure .
 
 > •组件在与其环境的接口处产生的输出消息的定时序列是组件在该接口处的行为。预期的行为称为服务。意外行为称为失败。
 
@@ -4517,7 +4546,7 @@ The preferred interconnection medium for the construction of systems of systems 
 
 > •在不了解开放组件使用背景的情况下，只能提供开放组件的操作规范。
 
-• The information on how the data field of a message is structured into syntactic units is contained in a message-structure declaration (MSD) . The MSD estab­ lishes the message variable names (i.e., the fixed part of the message variable) that point to the respective concepts and specify which part of the unstructured bit vector denotes the variable part of a message variable .
+• The information on how the data field of a message is structured into syntactic units is contained in a message-structure declaration (MSD). The MSD estab­ lishes the message variable names (i.e., the fixed part of the message variable) that point to the respective concepts and specify which part of the unstructured bit vector denotes the variable part of a message variable .
 
 > •消息结构声明(MSD)中包含了关于消息数据字段如何被结构化为句法单元的信息。MSD 建立消息变量名称(即消息变量的固定部分)，指向相应的概念，并指定非结构化位向量的哪一部分表示消息变量的变量部分。
 
@@ -4593,7 +4622,7 @@ The presented real-time model of computation has been developed over the past 25
 
 when $(p_{1}<p_{2})$ then everything ok else raise pressure alarm ;
 
-The rolling mill is characterized by the following parameters: maximum pres­ sure between the rolls of a stand $=1000\,\mathrm{kg}\,\mathrm{cm}^{-2}$ [kp is kilopond], absolute pressure measurement error in the value domain $=5\;\mathrm{kp}\;\mathrm{cm}^{-2}$ , and maximum rate of change of the pressure $=200\;\mathrm{kp\;cm}^{-2}\;\mathrm{sec}^{-1}$ . It is required that the error due to the impreci­ sion of the points in time when the pressures are measured at the different rolls should be of the same order of magnitude as the measurement error in the value domain, i.e., $0.5\%$ of the full range. The pressures must be continuously monitored, and the first alarm must be raised by the alarm monitor within 200 msec (at the lat­ est) after a process has possibly left the normal operating range. A second alarm must be raised within 200  msec after the process has definitely entered the alarm zone:
+The rolling mill is characterized by the following parameters: maximum pres­ sure between the rolls of a stand $=1000\,\mathrm{kg}\,\mathrm{cm}^{-2}$ [kp is kilopond], absolute pressure measurement error in the value domain $=5\;\mathrm{kp}\;\mathrm{cm}^{-2}$ , and maximum rate of change of the pressure $=200\;\mathrm{kp\;cm}^{-2}\;\mathrm{sec}^{-1}$. It is required that the error due to the impreci­ sion of the points in time when the pressures are measured at the different rolls should be of the same order of magnitude as the measurement error in the value domain, i.e., $0.5\%$ of the full range. The pressures must be continuously monitored, and the first alarm must be raised by the alarm monitor within 200 msec (at the lat­ est) after a process has possibly left the normal operating range. A second alarm must be raised within 200  msec after the process has definitely entered the alarm zone:
 
 > 轧机的特征在于以下参数：机架辊之间的最大压力$=1000\，\mathrm{kg}\，\math{cm}^{-2}$[kp 为千磅]，值域中的绝对压力测量误差$=5\；\mathrm{kp}\；\mathrm{cm}^{-2}$，压力的最大变化率$=200\；\mathm{kp\；cm}^{-2}\；\mathm{sec}^{-1}$。要求在不同辊处测量压力时，由于时间点的偏差引起的误差应与值域中的测量误差具有相同的数量级，即全范围的 0.5 美元。必须持续监测压力，在过程可能离开正常工作范围后 200 毫秒内(最晚)，报警监测器必须发出第一次报警。在过程明确进入报警区域后 200 毫秒内必须发出第二次报警：
 
@@ -4601,7 +4630,7 @@ The rolling mill is characterized by the following parameters: maximum pres­ su
 
 > (a) 假设一个事件触发的架构。每个节点都包含一个本地实时时钟，但没有可用的全局时间。通信系统传输单个消息的最小时间$d_{m i n}$为 1 毫秒。推导三个任务的节奏控制信号。
 
-(b) Assume a time-triggered architecture. The clocks are synchronized with a pre­ cision of $10~\upmu\mathrm{sec}$ . The time-triggered communication system is characterized by a TDMA round of 10 msec. The time for the transport of a single message by the communication system is 1 msec. Derive the temporal control signals for the three time-triggered tasks.
+(b) Assume a time-triggered architecture. The clocks are synchronized with a pre­ cision of $10~\upmu\mathrm{sec}$. The time-triggered communication system is characterized by a TDMA round of 10 msec. The time for the transport of a single message by the communication system is 1 msec. Derive the temporal control signals for the three time-triggered tasks.
 
 > (b) 假设一个时间触发的架构。时钟的同步精度为 10 美元。时间触发通信系统的特点是 TDMA 周期为 10 毫秒。通信系统传输单个消息的时间为 1 毫秒。推导三个时间触发任务的时间控制信号。
 
@@ -4629,7 +4658,7 @@ The final section of this chapter is devoted to an elaboration of the concept of
 
 A real-time (RT) entity is a state variable of relevance for the given purpose. It is located either in the environment of the computer system or in the computer system itself. Examples of RT entities are the flow of a liquid in a pipe, the set point of a control loop that is selected by the operator, or the intended position of a control valve. An RT entity has static attributes that do not change during the lifetime of the RT entity and dynamic attributes that change with the progression of real time. Examples of static attributes are the name, the type, the value domain, and the maxi­ mum rate of change. The value set at a particular instant is the most important dynamic attribute. Another example of a dynamic attribute is the rate of change at a chosen instant.
 
-> 实时(RT)实体是与给定目的相关的状态变量。它位于计算机系统的环境中或计算机系统本身中。RT 实体的示例是管道中液体的流动、操作员选择的控制回路的设定点或控制阀的预期位置。RT 实体具有在 RT 实体的生命周期内不变的静态属性和随实时进程而变化的动态属性。静态属性的示例包括名称、类型、值域和最大变化率。在特定时刻设置的值是最重要的动态属性。动态属性的另一个例子是选定时刻的变化率。
+> 实时(RT)实体是与给定目的相关的状态变量。它位于计算机系统的环境中或计算机系统本身中。RT 实体的示例是管道中液体的流动、操作员选择的控制回路(control loops)的设定点或控制阀的预期位置。RT 实体具有在 RT 实体的生命周期内不变的静态属性和随实时进程而变化的动态属性。静态属性的示例包括名称、类型、值域和最大变化率。在特定时刻设置的值是最重要的动态属性。动态属性的另一个例子是选定时刻的变化率。
 
 ### 5.1.1 Sphere of Control
 
@@ -4655,7 +4684,7 @@ Example : Consider a garage door. Between the defined states specified by door c
 
 ## 5.2 Observations
 
-The information about the state of an RT entity at a particular instant is captured by the notion of an observation . An observation is an atomic data structure
+The information about the state of an RT entity at a particular instant is captured by the notion of an observation. An observation is an atomic data structure
 
 > 关于 RT 实体在特定时刻的状态的信息由观察的概念捕获。观测是一种原子数据结构
 
@@ -4673,9 +4702,9 @@ We assume that an intelligent sensor node is associated with a physical sensor t
 
 ### 5.2.1 Untimed Observation
 
-In a distributed system without global time, a time-stamp can only be interpreted within the scope of the node that created the time-stamp. The time-stamp of a sender that made an observation is thus meaningless at the receiver of the observation message if no global time is available. Instead, the time of arrival of an untimed observation message at the receiver node is often taken to be the time of observation $t_{\mathrm{obs}}$ . This time-stamp is imprecise because of the delay and the jitter between the instant of observation and the arrival instant of the message at its destination. In a system with a significant jitter of the execution time of the communication protocol (in comparison to the median execution time) and without access to a global time base, it is not possible to determine the instant of observation of an RT entity pre­ cisely. This imprecision of time measurement can reduce the quality of the observa­ tion (see Fig.1.6 ).
+In a distributed system without global time, a time-stamp can only be interpreted within the scope of the node that created the time-stamp. The time-stamp of a sender that made an observation is thus meaningless at the receiver of the observation message if no global time is available. Instead, the time of arrival of an untimed observation message at the receiver node is often taken to be the time of observation $t_{\mathrm{obs}}$. This time-stamp is imprecise because of the delay and the jitter between the instant of observation and the arrival instant of the message at its destination. In a system with a significant jitter of the execution time of the communication protocol (in comparison to the median execution time) and without access to a global time base, it is not possible to determine the instant of observation of an RT entity pre­ cisely. This imprecision of time measurement can reduce the quality of the observa­ tion (see Fig.1.6 ).
 
-> 在没有全局时间的分布式系统中，时间戳只能在创建时间戳的节点范围内进行解释。因此，如果没有全球时间可用，则进行观察的发送者的时间戳在观察消息的接收者处是没有意义的。相反，接收器节点处未计时观测消息的到达时间通常被视为观测时间$t_{\mathrm{obs}}$。由于观察时刻和消息到达目的地时刻之间的延迟和抖动，这个时间戳是不精确的。在通信协议执行时间明显抖动(与中值执行时间相比)且无法访问全局时基的系统中，不可能精确地确定 RT 实体的观察时刻。这种时间测量的不精确性会降低观测的质量(见图 1.6)。
+> 在没有全局时间的分布式系统中，时间戳只能在创建时间戳的节点范围内进行解释。因此，如果没有全局时间可用，则进行观察的发送者的时间戳在观察消息的接收者处是没有意义的。相反，接收器节点处未计时观测消息的到达时间通常被视为观测时间$t_{\mathrm{obs}}$。由于观察时刻和消息到达目的地时刻之间的延迟和抖动，这个时间戳是不精确的。在通信协议执行时间明显抖动(与中值执行时间相比)且无法访问全局时基的系统中，不可能精确地确定 RT 实体的观察时刻。这种时间测量的不精确性会降低观测的质量(见图 1.6)。
 
 ### 5.2.2 Indirect Observation
 
@@ -4687,13 +4716,13 @@ In some situations, it is not possible to observe the value of an RT entity dire
 
 ### 5.2.3 State Observation
 
-An observation is a state observation if the value of the observation contains the state of the RT entity. The time of the state observation refers to the point in real time when the RT entity was sampled (observed). Every reading of a state observa­ tion is self-contained because it carries an absolute value . Many control algorithms require a sequence of equidistant state observations, a service provided by periodic time-triggered readings.
+An observation is a state observation if the value of the observation contains the state of the RT entity. The time of the state observation refers to the point in real time when the RT entity was sampled (observed). Every reading of a state observa­ tion is self-contained because it carries an absolute value. Many control algorithms require a sequence of equidistant state observations, a service provided by periodic time-triggered readings.
 
 > 如果观测值包含 RT 实体的状态，则观测值是状态观测。状态观测时间是指实时采样(观测)RT 实体的时间点。状态观测的每一次读数都是自包含的，因为它带有一个绝对值。许多控制算法需要一系列等距的状态观测，这是由周期性时间触发的读数提供的服务。
 
-The semantics of state observations matches well with the semantics of the state messages introduced in Sect. 4.3.4 . A new reading of a state observation replaces the previous readings because clients are normally interested in the most recent value of a state variable.
+The semantics of state observations matches well with the semantics of the state messages introduced in Sect. 4.3.4. A new reading of a state observation replaces the previous readings because clients are normally interested in the most recent value of a state variable.
 
-> 状态观察的语义与 Sect 中引入的状态消息的语义非常匹配。4.3.4 . 状态观测的新读数会取代之前的读数，因为客户端通常对状态变量的最新值感兴趣。
+> 状态观察的语义与 Sect 中引入的状态消息的语义非常匹配。4.3.4. 状态观测的新读数会取代之前的读数，因为客户端通常对状态变量的最新值感兴趣。
 
 ### 5.2.4 Event Observation
 
@@ -4715,9 +4744,9 @@ On the other hand, event observations are more data-efficient than state observa
 
 ### 5.3.1 Real-Time Images
 
-A real-time (RT) image is a current picture of an RT entity. An RT image is valid at a given instant if it is an accurate representation of the corresponding RT entity, both in the value and the time domains. The notion of temporal accuracy of an RT image will be discussed in detail in the next section. While an observation records a fact that remains valid forever (a statement about an RT entity that has been observed at a particular instant), the validity of an RT image is time dependent and thus invali­ dated by the progression of real time. RT images can be constructed from up-to-date state observations or from up-to-date event observations. They can also be estimated by a technique called state estimation that will be discussed in Sect. 5.4.3 . RT images are stored either inside the computer system or in the environment (e.g., in an actuator).
+A real-time (RT) image is a current picture of an RT entity. An RT image is valid at a given instant if it is an accurate representation of the corresponding RT entity, both in the value and the time domains. The notion of temporal accuracy of an RT image will be discussed in detail in the next section. While an observation records a fact that remains valid forever (a statement about an RT entity that has been observed at a particular instant), the validity of an RT image is time dependent and thus invali­ dated by the progression of real time. RT images can be constructed from up-to-date state observations or from up-to-date event observations. They can also be estimated by a technique called state estimation that will be discussed in Sect. 5.4.3. RT images are stored either inside the computer system or in the environment (e.g., in an actuator).
 
-> 实时(RT)图像是 RT 实体的当前图片。如果 RT 图像在值域和时域中都是相应 RT 实体的准确表示，则它在给定时刻是有效的。下一节将详细讨论 RT 图像的时间精度概念。虽然观察记录了一个永远有效的事实(关于在特定时刻观察到的 RT 实体的陈述)，但 RT 图像的有效性是时间依赖的，因此不受实时进程的影响。RT 图像可以根据最新的状态观测或最新的事件观测构建。它们也可以通过一种称为状态估计的技术来估计，该技术将在第节中讨论。5.4.3 . RT 图像存储在计算机系统内部或环境中(例如，在致动器中)。
+> 实时(RT)图像是 RT 实体的当前图片。如果 RT 图像在值域和时域中都是相应 RT 实体的准确表示，则它在给定时刻是有效的。下一节将详细讨论 RT 图像的时间精度概念。虽然观察记录了一个永远有效的事实(关于在特定时刻观察到的 RT 实体的陈述)，但 RT 图像的有效性是时间依赖的，因此不受实时进程的影响。RT 图像可以根据最新的状态观测或最新的事件观测构建。它们也可以通过一种称为状态估计的技术来估计，该技术将在第节中讨论。5.4.3. RT 图像存储在计算机系统内部或环境中(例如，在致动器中)。
 
 ### 5.3.2 Real-Time Objects
 
@@ -4729,7 +4758,7 @@ Distributed RT Objects In a distributed system, an RT object can be replicated i
 
 > 分布式 RT 对象在分布式系统中，RT 对象可以以这样的方式复制，即每个本地站点都有自己的 RT 对象版本，为本地站点提供指定的服务。分布式 RT 对象的服务质量必须符合一些指定的一致性约束。
 
-Example : A good example of a distributed RT object is global time ; every node has a local clock object that provides a synchronized time service with a specified precision Π (quality of service attribute of the internal clock synchronization). Whenever a process reads its local clock, it is guaranteed that a process running on another node that reads its local clock at the same instant will get a time value that differs by at most one tick.
+Example : A good example of a distributed RT object is global time; every node has a local clock object that provides a synchronized time service with a specified precision Π (quality of service attribute of the internal clock synchronization). Whenever a process reads its local clock, it is guaranteed that a process running on another node that reads its local clock at the same instant will get a time value that differs by at most one tick.
 
 > 示例：分布式 RT 对象的一个很好的例子是全局时间；每个节点都有一个本地时钟对象，该对象提供具有指定精度 ∏(内部时钟同步的服务质量属性)的同步时间服务。每当一个进程读取其本地时钟时，可以保证在另一个节点上运行的进程在同一时刻读取其本地钟时，将获得最多相差一个刻度的时间值。
 
@@ -4739,13 +4768,13 @@ Example : Another example of a distributed RT object is a membership service in 
 
 ## 5.4 Temporal Accuracy
 
-Temporal accuracy denotes the temporal relationship between an $R T$ entity and its associated RT image . Because an RT image is stored in an RT object, the temporal accuracy can also be viewed as a relation between an RT entity and an RT object.
+Temporal accuracy denotes the temporal relationship between an $R T$ entity and its associated RT image. Because an RT image is stored in an RT object, the temporal accuracy can also be viewed as a relation between an RT entity and an RT object.
 
 > 时间精度表示$R T$实体与其关联的 RT 图像之间的时间关系。因为 RT 图像存储在 RT 对象中，所以时间精度也可以被视为 RT 实体和 RT 对象之间的关系。
 
 ### 5.4.1 Definition
 
-The temporal accuracy of an RT image is defined by referring to the recent history of observations of the related RT entity. A recent history $\mathrm{RH}_{i}$ at time $t_{i}$ is an ordered set of instants $\{t_{i},t_{i\mathrm{~-~}1},t_{i\mathrm{~-~}2},...t_{i\mathrm{~-~}k}\}$ , where the length of the recent history, $d_{\mathrm{acc}}=z(t_{i})-z(t_{i\,-\,k})$ , is called the temporal accuracy interval or the temporal accu­ racy $d_{\mathrm{acc}}$ $\,z(e)$ is the time-stamp of event $e$ generated by the reference clock $z$ ; see Sect. 3.1.2 ). Assume that the RT entity has been observed at every instant of the recent history. An RT image is temporally accurate at the present time $t_{i}$ if
+The temporal accuracy of an RT image is defined by referring to the recent history of observations of the related RT entity. A recent history $\mathrm{RH}_{i}$ at time $t_{i}$ is an ordered set of instants $\{t_{i},t_{i\mathrm{~-~}1},t_{i\mathrm{~-~}2},...t_{i\mathrm{~-~}k}\}$ , where the length of the recent history, $d_{\mathrm{acc}}=z(t_{i})-z(t_{i\,-\,k})$ , is called the temporal accuracy interval or the temporal accu­ racy $d_{\mathrm{acc}}$ $\,z(e)$ is the time-stamp of event $e$ generated by the reference clock $z$; see Sect. 3.1.2 ). Assume that the RT entity has been observed at every instant of the recent history. An RT image is temporally accurate at the present time $t_{i}$ if
 
 > RT 图像的时间精度是通过参考相关 RT 实体的最近观测历史来定义的。近期历史{RH}_{i} $at time$t_{i}$是一个有序的时刻集$\{t*{i}，t*{i\mathrm{~-~}1}，t*{i\mathrm{~-}2}，。。。t{i\mathrm{~-~}k}\}$，其中最近历史的长度$d{\mathrm{1cc}=z(t{i})-z(t{i\，-\，k})$称为时间精度区间或时间精度$d{\mathm{acc}$$，z(e)$是由参考时钟$z$生成的事件$e$的时间戳；见 Sect。3.1.2 ). 假设 RT 实体在最近历史的每个时刻都被观察到。如果满足以下条件，则 RT 图像在当前时间$t*{i}$在时间上是准确的
 
@@ -4753,7 +4782,7 @@ $$
 \exists t_{j}\in\mathbf{RH}_{i}:\mathbf{Value}\left(\mathbf{RT}\,\mathrm{image}\,\mathrm{at}\,t_{i}\right)=\mathbf{Value}\left(\mathbf{RT}\,\mathrm{entity}\,\mathrm{at}\,t_{j}\right)
 $$
 
-Example : Let us assume that the temporal accuracy interval of a temperature measurement is $1\ \mathrm{min}$ . An RT image is temporally accurate if the value contained in the RT image has been observed at most a minute ago, i.e., it is still in the recent history of the corresponding RT entity.
+Example : Let us assume that the temporal accuracy interval of a temperature measurement is $1\ \mathrm{min}$. An RT image is temporally accurate if the value contained in the RT image has been observed at most a minute ago, i.e., it is still in the recent history of the corresponding RT entity.
 
 > 示例：假设温度测量的时间精度区间为 $1\\mathm{min}$。如果 RT 图像中包含的值最多在一分钟前被观察到，即它仍然在相应 RT 实体的最近历史中，则 RT 图像在时间上是准确的。
 
@@ -4774,7 +4803,7 @@ $$
 \mathrm{error}=\!\left(\operatorname*{max}_{\forall t}\frac{\mathrm{d}\nu\big(t\big)}{\mathrm{d}t}d_{\mathrm{acc}}\right)\!,
 $$
 
-is given by the product of the maximum gradient and the temporal accuracy $d_{\mathrm{acc}}$ . In a balanced design, this worst-case error caused by the temporal delay is in the same order of magnitude as the worst-case measurement error in the value domain and is typically a fraction of a percentage point of the full range of the measured variable.
+is given by the product of the maximum gradient and the temporal accuracy $d_{\mathrm{acc}}$. In a balanced design, this worst-case error caused by the temporal delay is in the same order of magnitude as the worst-case measurement error in the value domain and is typically a fraction of a percentage point of the full range of the measured variable.
 
 > 由最大梯度和时间精度$d{\mathrm{acc}$的乘积给出。在平衡设计中，由时间延迟引起的这种最坏情况误差与值域中的最坏情况测量误差在数量级上相同，通常是测量变量全范围的一个百分点的一小部分。
 
@@ -4824,7 +4853,7 @@ A parametric RT image can be accessed at the receiver at any time without hav­ 
 
 > 接收器可以随时访问参数化 RT 图像，而无需考虑传入观测消息与数据使用点之间的相位关系。
 
-Example : The RT transaction that handles the position of the accelerator pedal (observation and preprocessing at sender, communication to the receiver, processing at the receiver, and output to the actuator) takes an amount of time $\mathrm{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCT}_{\mathrm{rec}}=4\,\mathrm{msec}$ . Because the accuracy interval of this observation is 10 msec (Table  5.1 ), messages sent with periods less than 6 msec will make this RT image parametric .
+Example : The RT transaction that handles the position of the accelerator pedal (observation and preprocessing at sender, communication to the receiver, processing at the receiver, and output to the actuator) takes an amount of time $\mathrm{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\mathrm{WCT}_{\mathrm{rec}}=4\,\mathrm{msec}$. Because the accuracy interval of this observation is 10 msec (Table  5.1 ), messages sent with periods less than 6 msec will make this RT image parametric .
 
 > 示例：处理油门踏板位置的 RT 事务(在发送方进行观察和预处理、与接收方进行通信、在接收方进行处理以及向执行器输出)需要花费一定的时间{WCT}_{\mathrm{send}}+\mathrm{WCCOM}+\math{WCT}_{\mathrm{rec}}=4\，\mathrm{毫秒}$。由于此观察的精度间隔为 10 毫秒(表 5.1)，因此以小于 6 毫秒的周期发送的消息将使此 RT 图像参数化。
 
@@ -4857,7 +4886,7 @@ State estimation involves the building of a model of an RT entity inside an RT o
 
 > 状态估计涉及在 RT 对象内构建 RT 实体的模型，以计算 RT 实体在选定未来时刻的可能状态，并相应地更新相应的 RT 图像。状态估计模型在存储 RT 图像的 RT 对象内定期执行。模型执行的控制信号来自与 RT 对象相关的实时时钟的滴答声(见第 5.3.2 节)。RT 图像必须与 RT 实体紧密一致的最重要的未来时刻是$t_{\mathrm{use}}$，即 RT 图像的值用于向环境传递输出的时刻。状态估计是一种强大的技术，可以扩展 RT 图像的时间精度区间，即使 RT 图像与 RT 实体更好地一致。
 
-Example : Assume that the crankshaft in an engine rotates with a rotational speed of 3000 revolutions per minute, i.e., 18 degrees per millisecond. If the time interval between the instant of observation, $t_{\mathrm{obs}}$ , of the position of the crankshaft and the instant of use, $t_{\mathrm{use}}$ , of the corresponding RT image is 500 microseconds, we can update the RT image by 9 degrees to arrive at an estimate of the position of the crankshaft at $t_{\mathrm{esc}}$ . We could improve our estimate if we also consider the angular acceleration or deceleration of the engine during the interval $[t_{\mathrm{obs}},\ t_{\mathrm{osc}}]$ .
+Example : Assume that the crankshaft in an engine rotates with a rotational speed of 3000 revolutions per minute, i.e., 18 degrees per millisecond. If the time interval between the instant of observation, $t_{\mathrm{obs}}$ , of the position of the crankshaft and the instant of use, $t_{\mathrm{use}}$ , of the corresponding RT image is 500 microseconds, we can update the RT image by 9 degrees to arrive at an estimate of the position of the crankshaft at $t_{\mathrm{esc}}$. We could improve our estimate if we also consider the angular acceleration or deceleration of the engine during the interval $[t_{\mathrm{obs}},\ t_{\mathrm{osc}}]$ .
 
 > 示例：假设发动机中的曲轴以每分钟 3000 转的转速旋转，即每毫秒 18 度。如果曲轴位置的观察时刻$t_{\mathrm{obs}$和相应 RT 图像的使用时刻$t_{\mathrm{use}}$之间的时间间隔为 500 微秒，我们可以将 RT 图像更新 9 度，得出曲轴位置在$t_{\mathrm{esc}}$的估计值。如果我们还考虑发动机在$[t_{\mathrm{obs}}，\t_{\mathrm{osc}]$区间内的角加速度或减速度，我们可以改进我们的估计。
 
@@ -4865,7 +4894,7 @@ An adequate state estimation model of an RT entity can only be built if the beha
 
 > 只有当 RT 实体的行为由已知和规则的过程(即明确指定的物理或化学过程)控制时，才能建立 RT 实体的充分状态估计模型。大多数技术过程，如上述发动机控制，都属于这一类。然而，如果 RT 实体的行为是由偶然事件决定的，那么状态估计技术就不适用。
 
-Input to the State Estimation Model The most important dynamic input to the state estimation model is the precise length of the time interval $[t_{\mathrm{obs}},~t_{\mathrm{user}}]$ . Because $t_{\mathrm{obs}}$ and $t_{\mathrm{use}}$ are normally recorded at different nodes of a distributed system, a com­ munication protocol with minimal jitter or a global time base with a good precision is a prerequisite for state estimation. This prerequisite is an important requirement in the design of a field bus.
+Input to the State Estimation Model The most important dynamic input to the state estimation model is the precise length of the time interval $[t_{\mathrm{obs}},~t_{\mathrm{user}}]$. Because $t_{\mathrm{obs}}$ and $t_{\mathrm{use}}$ are normally recorded at different nodes of a distributed system, a com­ munication protocol with minimal jitter or a global time base with a good precision is a prerequisite for state estimation. This prerequisite is an important requirement in the design of a field bus.
 
 > 状态估计模型的输入状态估计模型最重要的动态输入是时间间隔$[t_{\mathrm{obs}}，~t_{\math{user}]$的精确长度。由于$t_{\mathrm{obs}$和$t_{\mathm{use}$通常记录在分布式系统的不同节点上，因此具有最小抖动的通信协议或具有良好精度的全局时基是状态估计的先决条件。这一前提条件是现场总线设计的重要要求。
 
@@ -4890,7 +4919,7 @@ Figure*5.8 Figure_5.8 Figure_5.8 $[t*{\mathrm{obs}},\,t*{\mathrm{user}}]$ igure_
 
 > 图*5.8 图\_5.8 图\_5.8$[t*{\mathrm{obs}}，\，t\*{\mathrm{user}]$igure_5.8 图-5.8$[t**{\mathrm{obs}}]，\，t={\matherm{sur}]$agure_5.8
 
-If the state estimation is performed in the RT object at the receiver, then any modification in the delay at the sender will cause a modification of the time interval that must be compensated by the state estimation of the receiver. The receiver soft­ ware must be changed if a latency change takes place inside the sender node. To decrease this coupling between the sender and the receiver, the state estimation can be performed in two steps: the sender performs a state estimation for the interval $[t_{\mathrm{obs}},\,t_{\mathrm{sur}}]$ and the receiver performs a state estimation for the interval $[t_{\mathrm{err}},\,t_{\mathrm{use}}]$ . This gives the receiver the illusion that the RT entity has been observed at the point of arrival of the observation message at the receiver. The point of arrival is then the implicit time-stamp of the observation, and the receiver is not affected by a schedule change at the sender. Such an approach helps to unify the treatment of sensor data that are collected via a field bus as well as directly by the receiving node.
+If the state estimation is performed in the RT object at the receiver, then any modification in the delay at the sender will cause a modification of the time interval that must be compensated by the state estimation of the receiver. The receiver soft­ ware must be changed if a latency change takes place inside the sender node. To decrease this coupling between the sender and the receiver, the state estimation can be performed in two steps: the sender performs a state estimation for the interval $[t_{\mathrm{obs}},\,t_{\mathrm{sur}}]$ and the receiver performs a state estimation for the interval $[t_{\mathrm{err}},\,t_{\mathrm{use}}]$. This gives the receiver the illusion that the RT entity has been observed at the point of arrival of the observation message at the receiver. The point of arrival is then the implicit time-stamp of the observation, and the receiver is not affected by a schedule change at the sender. Such an approach helps to unify the treatment of sensor data that are collected via a field bus as well as directly by the receiving node.
 
 > 如果在接收器的 RT 对象中执行状态估计，则发送器延迟的任何修改都会导致时间间隔的修改，必须由接收器的状态估计进行补偿。如果发送方节点内部发生延迟变化，则必须更改接收方软件。为了减少发送方和接收方之间的这种耦合，可以分两步进行状态估计：发送方对区间$[t_{\mathrm{obs}}，\，t_{\mastrm{sur}]$进行状态估计，接收方对区间$[t_{\matrm{err}}，\，t_{\mathm{use}]$执行状态估计。这给接收器一种错觉，即 RT 实体在观察消息到达接收器时已被观察到。到达点就是观测的隐式时间戳，接收方不受发送方时间表变化的影响。这种方法有助于统一对通过现场总线以及直接由接收节点收集的传感器数据的处理。
 
@@ -4905,7 +4934,7 @@ Permanence is a relation between a particular message arriving at a node and the
 > ![](images/a6fd5d6753b97257779c6c52417d10b0c11a40c296912f199177ab3a2bbbd3fe.jpg)
 > Figure_5.9
 
-Action Delay The time interval between the start of transmission of a given mes­ sage and the point in time when this message becomes permanent at the receiver is called the action delay . The receiver must delay any action on the message until after the action delay has passed to avoid an incorrect behavior.
+Action Delay The time interval between the start of transmission of a given mes­ sage and the point in time when this message becomes permanent at the receiver is called the action delay. The receiver must delay any action on the message until after the action delay has passed to avoid an incorrect behavior.
 
 > 动作延迟从给定消息的传输开始到该消息在接收器处永久存在的时间点之间的时间间隔称为动作延迟。接收方必须延迟对消息的任何操作，直到操作延迟过去，以避免出现错误行为。
 
@@ -4928,11 +4957,11 @@ The duration of the action delay depends on the jitter of the communication syst
 
 Systems with a Global Time In a system with global time, the send time $t_{\mathrm{end}}$ of the message, measured by the clock of the sender, can be part of the message and can be interpreted by the receiver. If the receiver knows that the maximum delay of the communication system is $d_{\mathrm{max}}$ , then the receiver can infer that the message will become permanent at $t_{\mathrm{permut}}=t_{\mathrm{send}}+d_{\mathrm{max}}+2g$ , where $g$ is the granularity of the global time base (see Sect. 3.2.4 to find out where the $_{2g}$ comes from).
 
-> 具有全局时间的系统在具有全球时间的系统中，消息的发送时间$t_{\mathrm{end}}$(由发送方的时钟测量)可以是消息的一部分，并且可以由接收方解释。如果接收器知道通信系统的最大延迟是$d_{\mathrm{max}}$，则接收器可以推断消息将在$t_{\mathrm{permut}=t_{\mastrm{send}+d_{\mathrum{max}}+2g$处永久化，其中$g$是全局时基的粒度(请参阅第 3.2.4 节以了解$_{2g}$的来源)。
+> 具有全局时间的系统在具有全局时间的系统中，消息的发送时间$t_{\mathrm{end}}$(由发送方的时钟测量)可以是消息的一部分，并且可以由接收方解释。如果接收器知道通信系统的最大延迟是$d_{\mathrm{max}}$，则接收器可以推断消息将在$t_{\mathrm{permut}=t_{\mastrm{send}+d_{\mathrum{max}}+2g$处永久化，其中$g$是全局时基的粒度(请参阅第 3.2.4 节以了解$_{2g}$的来源)。
 
 Systems Without a Global Time In a system without global time, the receiver does not know when the message has been sent. To be on the safe side, the receiver must wait $d_{\operatorname*{max}}-d_{\operatorname*{min}}$ time units after the arrival of the message, even if the message has already been $d_{\mathrm{max}}$ units in transit. In the worst case, as seen by the outside observer, the receiver thus has to wait for an amount of time
 
-> 在没有全球时间的系统中，接收方不知道消息何时发送。为了安全起见，接收方必须在消息到达后等待$d_{\operatorname*{max}-d_{\operator name*{min}$时间单位，即使消息在传输过程中已经是$d_{\mathrm{max}$单位。在最坏的情况下，正如外部观察者所看到的，接收器因此必须等待一段时间
+> 在没有全局时间的系统中，接收方不知道消息何时发送。为了安全起见，接收方必须在消息到达后等待$d_{\operatorname*{max}-d_{\operator name*{min}$时间单位，即使消息在传输过程中已经是$d_{\mathrm{max}$单位。在最坏的情况下，正如外部观察者所看到的，接收器因此必须等待一段时间
 
 $$
 t_{\mathrm{permut}}=t_{\mathrm{send}}+2d_{\mathrm{max}}-d_{\mathrm{min}}+g_{l}
@@ -4940,11 +4969,11 @@ $$
 
 before the message can be used safely (where $g_{l}$ is the granularity of the local time base). Since in an event-triggered communication system $(d_{\operatorname*{max}}-d_{\operatorname*{min}}+g_{l})$ is normally much larger than $_{2g}$ , where $g$ is the granularity of the global time, a system without a global time base is significantly slower than a system with a global time base. (In this case, the implementation of a time-triggered communication system is not possible, since we operate under the assumption that no global time base is available.)
 
-> 在消息可以安全使用之前(其中$g{l}$是本地时基的粒度)。由于在事件触发的通信系统$(d_{\operatorname*{max}-d_{\operator name*{min}+g_{l})$中，$通常比$\_{2g}$大得多，其中$g$ 是全局时间的粒度，因此没有全局时基的系统比有全局时基的系统慢得多。(在这种情况下，时间触发通信系统的实现是不可能的，因为我们是在没有全球时基的假设下运行的。)
+> 在消息可以安全使用之前(其中$g{l}$是本地时基的粒度)。由于在事件触发的通信系统$(d_{\operatorname*{max}-d_{\operator name*{min}+g_{l})$中，$通常比$\_{2g}$大得多，其中$g$ 是全局时间的粒度，因此没有全局时基的系统比有全局时基的系统慢得多。(在这种情况下，时间触发通信系统的实现是不可能的，因为我们是在没有全局时基的假设下运行的。)
 
 ### 5.5.3 Accuracy Interval Versus Action Delay
 
-An RT image may only be used if the message that transported the image is perma­ nent and the image is temporally accurate. In a system without state estimation, both conditions can only be satisfied in the time window $(t_{\mathrm{permut}},t_{\mathrm{obs}}+d_{\mathrm{acc}})$ . The tempo­ ral accuracy $d_{\mathrm{acc}}$ depends on the dynamics of the control application, while $(t_{\mathrm{perma}}$ ­ $\mathrm{~\textit~{~ncent~-~}~}t_{\mathrm{obs}})$ is an implementation-specific duration. If an implementation cannot meet the temporal requirements of the application, then state estimation may be the only alternative left in order to design a correct real-time system.
+An RT image may only be used if the message that transported the image is perma­ nent and the image is temporally accurate. In a system without state estimation, both conditions can only be satisfied in the time window $(t_{\mathrm{permut}},t_{\mathrm{obs}}+d_{\mathrm{acc}})$. The tempo­ ral accuracy $d_{\mathrm{acc}}$ depends on the dynamics of the control application, while $(t_{\mathrm{perma}}$ ­ $\mathrm{~\textit~{~ncent~-~}~}t_{\mathrm{obs}})$ is an implementation-specific duration. If an implementation cannot meet the temporal requirements of the application, then state estimation may be the only alternative left in order to design a correct real-time system.
 
 > 只有传输图像的消息是永久的，并且图像在时间上是准确的，才能使用 RT 图像。在没有状态估计的系统中，这两个条件只能在时间窗口$(t_{\mathrm{permut}}，t_{\math{obs}+d_{\mathrm{acc}})$中满足。时间精度$d_{\mathrm{acc}$取决于控制应用程序的动态，而$(t_{\mathrm{perma}$$\mathrm{~\textit~{~ncent~-}~}t_{\math{obs}})$是一个特定于实现的持续时间。如果实现不能满足应用程序的时间要求，那么状态估计可能是设计正确实时系统的唯一选择。
 
@@ -4954,7 +4983,7 @@ I dem potency is the relationship among the members of a set of replicated messa
 
 > I dem 效力是到达同一接收者的一组复制消息的成员之间的关系。如果接收消息的多个副本的效果与仅接收单个副本的效果相同，则一组复制的消息是幂等的。如果消息是幂等的，那么通过复制消息来实现容错就简化了。无论接收方是否接收到一个或多个复制的消息，结果总是相同的。
 
-Example : Let us assume that we have a distributed system without synchronized clocks. In such a system, only untimed observations can be exchanged among nodes, and the time of arrival of an observation message is taken as the time of observation. Assume a node observe an RT entity, e.g., a valve, and report this observation to other nodes in the system. The receivers use this information to construct an updated version of the local RT image of the RT entity in their RT objects. A state message might contain the absolute value position of valve at $45^{\circ}$ and will replace the old version of the image. An event message might con­ tain the relative value valve has moved by $5^{\circ}$ . The contents of this event message are added to the previous contents of the state variable in the RT object to arrive at an updated version of the RT image. While the state message is idempotent, the event message is not. A loss or duplication of the event message results in a permanent error of the RT image.
+Example : Let us assume that we have a distributed system without synchronized clocks. In such a system, only untimed observations can be exchanged among nodes, and the time of arrival of an observation message is taken as the time of observation. Assume a node observe an RT entity, e.g., a valve, and report this observation to other nodes in the system. The receivers use this information to construct an updated version of the local RT image of the RT entity in their RT objects. A state message might contain the absolute value position of valve at $45^{\circ}$ and will replace the old version of the image. An event message might con­ tain the relative value valve has moved by $5^{\circ}$. The contents of this event message are added to the previous contents of the state variable in the RT object to arrive at an updated version of the RT image. While the state message is idempotent, the event message is not. A loss or duplication of the event message results in a permanent error of the RT image.
 
 > 示例：假设我们有一个没有同步时钟的分布式系统。在这种系统中，节点之间只能交换不计时的观测，观测消息的到达时间被视为观测时间。假设一个节点观察 RT 实体，例如阀门，并将此观察结果报告给系统中的其他节点。接收器使用此信息在其 RT 对象中构建 RT 实体的本地 RT 图像的更新版本。状态消息可能包含阀门的绝对值位置为 $45^{\circ}$，并将替换旧版本的图像。事件消息可能包含相对值阀已移动了 5 美元。此事件消息的内容被添加到 RT 对象中状态变量的先前内容中，以获得 RT 映像的更新版本。虽然状态消息是幂等的，但事件消息不是。事件消息的丢失或重复会导致 RT 映像的永久错误。
 
@@ -4968,17 +4997,17 @@ Example : Consider the case of a fault-tolerant brake-by-wire system in a car. A
 
 > 示例：考虑汽车中容错线控制动系统的情况。在就传感器输入(如制动踏板位置、汽车速度等)达成一致后，三个独立但同步的通道处理相同的输入。这三个输出被提供给四个智能投票执行器(图 9.8)，分别位于汽车四个车轮的制动缸上。在第一条输出消息到达投票执行器后，会打开一个接收窗口。接受窗口的持续时间取决于三者通信系统的执行速度和抖动的差异
 
-channels, provided they operate correctly. Every correct deterministic channel will deliver the same result before the end of the acceptance window. If one channel fails, one of the three arriving result messages will contain a value that is different from the other two ( value failure ), or only two (identical) result messages will arrive during the acceptance window ( timing failure ). By selecting the majority result at the end of the acceptance window , the voter will mask a failure of any one of the three channels. The endpoint of the acceptance window is the significant event when the voting actions can be performed and the result can be transmitted to the environment . If the computations and the communication system have a large jitter, then this endpoint of the acceptance window is far in the future, and the responsiveness of the computer system is reduced.
+channels, provided they operate correctly. Every correct deterministic channel will deliver the same result before the end of the acceptance window. If one channel fails, one of the three arriving result messages will contain a value that is different from the other two ( value failure ), or only two (identical) result messages will arrive during the acceptance window ( timing failure ). By selecting the majority result at the end of the acceptance window , the voter will mask a failure of any one of the three channels. The endpoint of the acceptance window is the significant event when the voting actions can be performed and the result can be transmitted to the environment. If the computations and the communication system have a large jitter, then this endpoint of the acceptance window is far in the future, and the responsiveness of the computer system is reduced.
 
 > 只要渠道正常运作。每个正确的确定性通道都将在接受窗口结束前提供相同的结果。如果一个通道发生故障，三个到达的结果消息中的一个将包含与其他两个不同的值(值故障)，或者在接受窗口期间只会到达两个(相同)的结果消息(定时故障)。通过在接受窗口结束时选择多数结果，选民将掩盖三个渠道中任何一个的失败。接受窗口的端点是可以执行投票操作并将结果传输到环境的重要事件。如果计算和通信系统有很大的抖动，那么接受窗口的终点就在遥远的将来，计算机系统的响应性也会降低。
 
 ### 5.6.1 Definition of Determinism
 
-In Sect. 2.5 under the topic of How can we achieve simplicity? , the principle of causality has been introduced. Causality refers to the unidirectional relationship that connects an effect to a cause [Bun08]. If this relationship is one of logical and temporal entailment , we speak of determinism , which we define as follows: A physi­ cal system behaves deterministic ally if, given an initial state at instant t and a set of future timed inputs, then the future states and the values and times of future outputs are entailed . The words time and instants refer to the progression of dense (physi­ cal) time. Many natural laws of physical systems conform to this definition of deter­ minism. In a digital computer model of a physical system, there is no dense time. In a deterministic distributed computer system, we must assume that all events, e.g., the observation of the initial state at instant $t$ and the timed inputs, are sparse events on a sparse global time base (see Sect. 3.3 ) in order that the temporal properties of and the relations (such as si multan e it y ) among the events that occur in the different nodes of the distributed system can be precisely specified despite the finite precision of the clock synchronization and the discrete time base. This transformation of dense events in the physical world to sparse events in the cyber world (the distrib­ uted computer system), performed by an agreement protocol (see Sect. 3.3.1 ), reduces the faithfulness of the computer model, since events that are closer than the granularity of the time base cannot be ordered consistently.
+In Sect. 2.5 under the topic of How can we achieve simplicity? , the principle of causality has been introduced. Causality refers to the unidirectional relationship that connects an effect to a cause [Bun08]. If this relationship is one of logical and temporal entailment , we speak of determinism , which we define as follows: A physi­ cal system behaves deterministic ally if, given an initial state at instant t and a set of future timed inputs, then the future states and the values and times of future outputs are entailed. The words time and instants refer to the progression of dense (physi­ cal) time. Many natural laws of physical systems conform to this definition of deter­ minism. In a digital computer model of a physical system, there is no dense time. In a deterministic distributed computer system, we must assume that all events, e.g., the observation of the initial state at instant $t$ and the timed inputs, are sparse events on a sparse global time base (see Sect. 3.3 ) in order that the temporal properties of and the relations (such as si multan e it y ) among the events that occur in the different nodes of the distributed system can be precisely specified despite the finite precision of the clock synchronization and the discrete time base. This transformation of dense events in the physical world to sparse events in the cyber world (the distrib­ uted computer system), performed by an agreement protocol (see Sect. 3.3.1 ), reduces the faithfulness of the computer model, since events that are closer than the granularity of the time base cannot be ordered consistently.
 
 > 在门派。2.5 在“我们如何实现简单性？”的主题下，引入了因果关系原理。因果关系是指将结果与原因联系起来的单向关系[Bun08]。如果这种关系是逻辑和时间蕴涵的关系，我们称之为决定论，我们定义如下：如果给定时刻 t 的初始状态和一组未来定时输入，那么未来状态以及未来输出的值和时间是必然的，那么物理系统的行为是确定的。时间和瞬间这两个词指的是密集(物理)时间的进程。物理系统的许多自然定律都符合这种威慑的定义。在物理系统的数字计算机模型中，没有密集时间。在确定性分布式计算机系统中，我们必须假设所有事件，例如瞬时初始状态的观测和定时输入，都是稀疏全局时基上的稀疏事件(见第 3.3 节)，以便尽管时钟同步和离散时基的精度有限，但仍能精确指定分布式系统不同节点中发生的事件的时间属性和关系(如 si-multan e it y)。通过协议协议(见第 3.3.1 节)将物理世界中的密集事件转换为网络世界(分布式计算机系统)中的稀疏事件，降低了计算机模型的可信度，因为比时基粒度更接近的事件不能一致地排序。
 
-In a real-time context, the concept of determinism requires that the behavior of a system is predictable in the domains of values and time . Neglecting the temporal dimension leads to a reduced notion of determinism—we call it logical $(L)$ deter­ minism . L-determinism can be defined as follows: A system behaves $L$ -deterministic ally if, given an initial state and a set of ordered inputs, then the subsequent states and the values of subsequent outputs are entailed.
+In a real-time context, the concept of determinism requires that the behavior of a system is predictable in the domains of values and time. Neglecting the temporal dimension leads to a reduced notion of determinism—we call it logical $(L)$ deter­ minism. L-determinism can be defined as follows: A system behaves $L$ -deterministic ally if, given an initial state and a set of ordered inputs, then the subsequent states and the values of subsequent outputs are entailed.
 
 > 在实时环境中，确定性的概念要求系统的行为在值和时间域中是可预测的。忽略时间维度会导致确定性概念的减少——我们称之为逻辑$(L)$确定性。L-确定性可以定义如下：如果给定一个初始状态和一组有序输入，那么后续状态和后续输出的值是必然的，则系统的行为是$L$-确定性的。
 
@@ -5036,7 +5065,7 @@ In order to realize replica-deterministic behavior in an implementation of a fau
 
 > 为了在容错分布式实时计算机系统的实现中实现副本确定性行为，我们必须确保：
 
-• The initial state of all involved computations is defined consistently. It is impos­ sible to build a replica-deterministic distributed real-time system without the establishment of some sort of a sparse global time base for the consistent time-­ stamping of the events in order to be able to determine whether an event is included in the initial state or not . Without a sparse global time base and sparse events, si multan e it y cannot be resolved consistently in a distributed system, pos­ sibly resulting in an inconsistent temporal order of the replicated messages that report about these simultaneous events. Inconsistent ordering results in the loss of replica determinism .
+• The initial state of all involved computations is defined consistently. It is impos­ sible to build a replica-deterministic distributed real-time system without the establishment of some sort of a sparse global time base for the consistent time-­ stamping of the events in order to be able to determine whether an event is included in the initial state or not. Without a sparse global time base and sparse events, si multan e it y cannot be resolved consistently in a distributed system, pos­ sibly resulting in an inconsistent temporal order of the replicated messages that report about these simultaneous events. Inconsistent ordering results in the loss of replica determinism .
 
 > •所有相关计算的初始状态都是一致定义的。如果不为事件的一致时间戳建立某种稀疏的全局时基，以确定事件是否包含在初始状态中，就不可能构建一个副本确定性分布式实时系统。如果没有稀疏的全局时基和稀疏的事件，则无法在分布式系统中一致地解决多事件，这可能会导致报告这些同时发生的事件的复制消息的时间顺序不一致。不一致的排序会导致副本确定性的丧失。
 
@@ -5066,7 +5095,7 @@ Correct replicated channels that are introduced to mask a failure will only prod
 
 > 为掩盖故障而引入的正确复制通道只有在从相同的初始状态开始并在相同的时刻接收相同的输入时才会产生相同的结果。
 
-According to Sect. 4.2.1 , the state of a component can only be defined if there is a consistent separation of past events from future events . The sparse time model, introduced in Sect. 3.3 , provides for such a consistent separation of past events from future events and makes it possible to define the instants where the initial state of a distributed system is consistently defined. Without a sparse global time, the estab­ lishment of a consistent initial state of replicated components of a distributed sys­ tem is difficult.
+According to Sect. 4.2.1 , the state of a component can only be defined if there is a consistent separation of past events from future events. The sparse time model, introduced in Sect. 3.3 , provides for such a consistent separation of past events from future events and makes it possible to define the instants where the initial state of a distributed system is consistently defined. Without a sparse global time, the estab­ lishment of a consistent initial state of replicated components of a distributed sys­ tem is difficult.
 
 > 根据 Sect。4.2.1，只有当过去的事件与未来的事件保持一致的分离时，才能定义组件的状态。稀疏时间模型，在 Sect。3.3 提供了过去事件与未来事件的一致分离，并使得可以定义分布式系统的初始状态被一致定义的时刻。如果没有稀疏的全局时间，很难建立分布式系统复制组件的一致初始状态。
 
@@ -5154,13 +5183,13 @@ In some designs where NDDCs are present, an attempt is made to reestablish repli
 
 A loss of determinism in an L-deterministic system can be avoided if the accep­ tance window is extended such that the probability of a deadline miss (i.e., that the result is available at the end of the acceptance window) is reduced to an acceptably low value. This technique is often used to reestablish determinism at the macro-­ level, even if the precise temporal behavior at the micro-level cannot be predicted. The main disadvantage of this technique is the increased delay until a result is deliv­ ered, which causes an increase in the dead time of control loops and the reaction time of reactive systems.
 
-> 如果延长接受窗口，将错过截止日期的概率(即在接受窗口结束时结果可用)降低到可接受的低值，则可以避免 L 确定性系统中确定性的丧失。这种技术通常用于在宏观层面重建确定性，即使微观层面的精确时间行为无法预测。这种技术的主要缺点是在结果交付之前延迟增加，这会导致控制回路的死区时间和反应系统的反应时间增加。
+> 如果延长接受窗口，将错过截止日期的概率(即在接受窗口结束时结果可用)降低到可接受的低值，则可以避免 L 确定性系统中确定性的丧失。这种技术通常用于在宏观层面重建确定性，即使微观层面的精确时间行为无法预测。这种技术的主要缺点是在结果交付之前延迟增加，这会导致控制回路(control loops)的死区时间和反应系统的反应时间增加。
 
-Example : Many natural laws at the level of Newtonian physics are considered to be deter­ ministic , although the underlying quantum-mechanical processes at the micro-level are non deterministic . The abstraction of deterministic behavior at the macro-level is possible because the large number of involved particles and the large time spans at the macro level, relative to the duration of the processes at the micro-level, make it highly improbable that non deterministic behavior can be observed at the macro-level.
+Example : Many natural laws at the level of Newtonian physics are considered to be deter­ ministic , although the underlying quantum-mechanical processes at the micro-level are non deterministic. The abstraction of deterministic behavior at the macro-level is possible because the large number of involved particles and the large time spans at the macro level, relative to the duration of the processes at the micro-level, make it highly improbable that non deterministic behavior can be observed at the macro-level.
 
 > 示例：牛顿物理学层面的许多自然定律被认为是决定性的，尽管微观层面的潜在量子力学过程是非确定性的。在宏观层面对确定性行为进行抽象是可能的，因为相对于微观层面的过程持续时间，宏观层面涉及的粒子数量多，时间跨度大，这使得在宏观层面观察到非确定性行为的可能性很小。
 
-Example : In a server farm of a cloud, where more than 100,000 L-deterministic virtual machines (VMs) can be active at any instant, a failed VM can be reconfigured and restarted such that the intended result is still made available within the specified acceptance window . Such a system will have a deterministic behavior at the external level (see the four-universe model in Sect. 2.3.1 ), although the implementation at the lower informational level behaves non deterministic ally.
+Example : In a server farm of a cloud, where more than 100,000 L-deterministic virtual machines (VMs) can be active at any instant, a failed VM can be reconfigured and restarted such that the intended result is still made available within the specified acceptance window. Such a system will have a deterministic behavior at the external level (see the four-universe model in Sect. 2.3.1 ), although the implementation at the lower informational level behaves non deterministic ally.
 
 > 示例：在云的服务器场中，任何时刻都有超过 100000 个 L 确定性虚拟机(VM)处于活动状态，可以重新配置和重启故障 VM，以便在指定的接受窗口内仍能获得预期结果。这样的系统在外部层面将具有确定性行为(见第 2.3.1 节中的四宇宙模型)，尽管在较低信息层面的实现表现为非确定性。
 
@@ -5178,7 +5207,7 @@ The recovery of determinism at the external level (see the four-universe model i
 
 > •如果观测值包含 RT 实体的绝对状态，则观测值是状态观测。状态观测的时间是指 RT 实体被采样的实时点。
 
-• An observation is an event observation if it contains information about the change of value between the old state and the new state . The time of the event observation denotes the best estimate of the instant of this event.
+• An observation is an event observation if it contains information about the change of value between the old state and the new state. The time of the event observation denotes the best estimate of the instant of this event.
 
 > •如果观察包含有关旧状态和新状态之间值变化的信息，则该观察是事件观察。事件观察的时间表示对该事件瞬间的最佳估计。
 
@@ -5218,7 +5247,7 @@ The recovery of determinism at the external level (see the four-universe model i
 
 > •当节点知道在该消息的发送时间之前发送给它的所有消息都已到达(或永远不会到达)时，特定消息在给定节点上成为永久消息。
 
-• The time interval between the start of transmission of a message and the instant when this message becomes permanent at the receiver is called the action delay . To avoid incorrect behavior, the receiver must delay any action on the message until after the action delay has passed.
+• The time interval between the start of transmission of a message and the instant when this message becomes permanent at the receiver is called the action delay. To avoid incorrect behavior, the receiver must delay any action on the message until after the action delay has passed.
 
 > •从消息传输开始到该消息在接收方永久存在的时刻之间的时间间隔称为动作延迟。为了避免不正确的行为，接收者必须延迟对消息的任何操作，直到操作延迟过去。
 
@@ -5260,7 +5289,7 @@ The concept of temporal accuracy of a real-time object has been introduced in th
 
 5.3. What are the problems with event observations?
 
-5.4. Give an informal and a precise definition of the concept of temporal accu­ racy . What is the recent history ?
+5.4. Give an informal and a precise definition of the concept of temporal accu­ racy. What is the recent history ?
 
 > 5.4. 对时间准确性的概念给出一个非正式和精确的定义。最近的历史是什么？
 
@@ -5302,13 +5331,13 @@ The concept of temporal accuracy of a real-time object has been introduced in th
 
 ## Overview
 
-It is said that Nobel Laureate Hannes Alfven once remarked that in Technology Paradise no acts of God can be permitted and everything happens according to the blueprints. The real world is no technology paradise— components can fail and blueprints (software) can contain design errors. This is the subject of this chapter. The chapter introduces the notions of fault , error , and failure and discusses the important concept of a fault-containment unit . It then proceeds to investigate the topic of security and argues that a security breach can compromise the safety of a safety-critical embedded system. The direct connection of many embedded systems to the Internet—the Internet of Things (IoT)—makes it possible for a distant attacker to search for vulnerabilities and, if the intrusion is successful, to exercise remote control over the physical environment. Security is thus becoming a prime concern in the design of embedded systems that are connected to the Internet. The following section deals with the topic of anomaly detection. An anomaly is an out-of-norm behavior that indicates that some exceptional scenario is evolving. Anomaly detec­ tion can help to detect the early effects of a random failure or the activities of an intruder that tries to exploit system vulnerabilities. Whereas an anomaly lies in the gray zone between correct behavior and failure, an error is an incorrect state that requires immediate action to mitigate the consequences of the error. Error detection is based on knowledge about the intended state or behavior of a system. This knowl­ edge can stem either from a priori established regularity constraints and known properties of the correct behavior of a computation or from the comparison of the results that have been computed by two redundant channels. Different techniques for the detection of temporal failures and value errors are discussed. The following two sections deal with the design of fault-tolerant systems that are capable of mask­ ing faults that are contained in the given fault hypothesis. The most important fault-­ tolerance strategy is triple modular redundancy (TMR), which requires a deterministic behavior of replicated components and a deterministic communication infrastructure. We then discuss the robustness and resilience con­ cepts and conclude this chapter with the topic of component reintegration.
+It is said that Nobel Laureate Hannes Alfven once remarked that in Technology Paradise no acts of God can be permitted and everything happens according to the blueprints. The real world is no technology paradise— components can fail and blueprints (software) can contain design errors. This is the subject of this chapter. The chapter introduces the notions of fault , error , and failure and discusses the important concept of a fault-containment unit. It then proceeds to investigate the topic of security and argues that a security breach can compromise the safety of a safety-critical embedded system. The direct connection of many embedded systems to the Internet—the Internet of Things (IoT)—makes it possible for a distant attacker to search for vulnerabilities and, if the intrusion is successful, to exercise remote control over the physical environment. Security is thus becoming a prime concern in the design of embedded systems that are connected to the Internet. The following section deals with the topic of anomaly detection. An anomaly is an out-of-norm behavior that indicates that some exceptional scenario is evolving. Anomaly detec­ tion can help to detect the early effects of a random failure or the activities of an intruder that tries to exploit system vulnerabilities. Whereas an anomaly lies in the gray zone between correct behavior and failure, an error is an incorrect state that requires immediate action to mitigate the consequences of the error. Error detection is based on knowledge about the intended state or behavior of a system. This knowl­ edge can stem either from a priori established regularity constraints and known properties of the correct behavior of a computation or from the comparison of the results that have been computed by two redundant channels. Different techniques for the detection of temporal failures and value errors are discussed. The following two sections deal with the design of fault-tolerant systems that are capable of mask­ ing faults that are contained in the given fault hypothesis. The most important fault-­ tolerance strategy is triple modular redundancy (TMR), which requires a deterministic behavior of replicated components and a deterministic communication infrastructure. We then discuss the robustness and resilience con­ cepts and conclude this chapter with the topic of component reintegration.
 
 > 据说诺贝尔奖获得者 Hannes Alfven 曾说过，在技术天堂，上帝的行为是不允许的，一切都按照蓝图进行。现实世界不是技术天堂——组件可能会发生故障，蓝图(软件)可能包含设计错误。这是本章的主题。本章介绍了故障、错误和失效的概念，并讨论了故障控制单元的重要概念。然后，它继续研究安全问题，并认为安全漏洞会危及安全关键嵌入式系统的安全。许多嵌入式系统直接连接到互联网——物联网(IoT)——使远程攻击者能够搜索漏洞，如果入侵成功，还可以对物理环境进行远程控制。因此，安全性正成为连接到互联网的嵌入式系统设计中的首要关注点。下一节将讨论异常检测的主题。异常是一种异常行为，表明某些异常情况正在演变。异常检测可以帮助检测随机故障的早期影响或试图利用系统漏洞的入侵者的活动。虽然异常位于正确行为和失败之间的灰色地带，但错误是一种不正确的状态，需要立即采取行动来减轻错误的后果。错误检测基于对系统预期状态或行为的了解。这种已知可以源于先验建立的规则约束和计算正确行为的已知属性，也可以源于对两个冗余通道计算结果的比较。讨论了检测时间故障和值错误的不同技术。以下两节介绍了能够掩盖给定故障假设中包含的故障的容错系统的设计。最重要的容错策略是三模冗余(TMR)，它需要复制组件的确定性行为和确定性通信基础设施。然后，我们讨论了稳健性和弹性概念，并以组件重新整合的主题结束了本章。
 
 ## 6.1 Basic Concepts
 
-Computer systems are provided to offer a dependable service to system users. A user can be a human user or another computer system. Whenever the behavior of a system (see Sect. 4.1.1 ), as seen by the user of the system, deviates from the intended service , the system is said to have failed . A failure can be pinned down to an unin­ tended state within the system, which is called an error . An error is caused by an adverse phenomenon, which is called a fault .
+Computer systems are provided to offer a dependable service to system users. A user can be a human user or another computer system. Whenever the behavior of a system (see Sect. 4.1.1 ), as seen by the user of the system, deviates from the intended service , the system is said to have failed. A failure can be pinned down to an unin­ tended state within the system, which is called an error. An error is caused by an adverse phenomenon, which is called a fault .
 
 > 提供计算机系统是为了向系统用户提供可靠的服务。用户可以是人类用户或另一个计算机系统。每当系统用户看到系统的行为(见第 4.1.1 节)偏离预期服务时，系统就被称为失败。故障可以归结为系统内的一种不受关注的状态，这被称为错误。错误是由一种称为故障的不利现象引起的。
 
@@ -5329,7 +5358,7 @@ We assume that a system is built out of components. A component is a fault-­ co
 
 > 我们假设一个系统是由组件构建的。如果单个故障的直接影响仅影响单个组件的运行，则该组件是故障遏制单元(FCU)。多个 FCU 应独立发生故障。
 
-Fault Space It is important to distinguish faults that are related to a deficiency internal to the FCU or to some adverse phenomena occurring external to the FCU . An internal fault of a component, i.e., a fault within the FCU, can be a physi­ cal fault , such as the random break of a wire, or a design fault either in the software (a program error ) or in the hardware (an erratum ). An external fault can be a ­physical disturbance, e.g., a lightning stroke causing spikes in the power supply or the impact of a cosmic particle. The provision of incorrect input data is another class of an external fault. Fault containment refers to design and engineering efforts that ensure that the immediate consequences of a fault are limited to a single FCU. Many reliability models make the tacit assumption that FCUs fail independently, i.e., there is no single fault that can affect more than one FCU. This FCU independence assumption must be justified by the design of the system.
+Fault Space It is important to distinguish faults that are related to a deficiency internal to the FCU or to some adverse phenomena occurring external to the FCU. An internal fault of a component, i.e., a fault within the FCU, can be a physi­ cal fault , such as the random break of a wire, or a design fault either in the software (a program error ) or in the hardware (an erratum ). An external fault can be a ­physical disturbance, e.g., a lightning stroke causing spikes in the power supply or the impact of a cosmic particle. The provision of incorrect input data is another class of an external fault. Fault containment refers to design and engineering efforts that ensure that the immediate consequences of a fault are limited to a single FCU. Many reliability models make the tacit assumption that FCUs fail independently, i.e., there is no single fault that can affect more than one FCU. This FCU independence assumption must be justified by the design of the system.
 
 > 故障空间区分与 FCU 内部缺陷或 FCU 外部发生的一些不利现象相关的故障非常重要。组件的内部故障，即 FCU 内的故障，可以是物理故障，如电线的随机断裂，也可以是软件(程序错误)或硬件(勘误表)中的设计故障。外部故障可能是物理干扰，例如雷击导致电源尖峰或宇宙粒子的影响。提供不正确的输入数据是另一类外部故障。故障控制是指确保故障的直接后果仅限于单个 FCU 的设计和工程工作。许多可靠性模型都默认 FCU 独立失效，即没有单一故障会影响多个 FCU。这种 FCU 独立性假设必须通过系统的设计来证明。
 
@@ -5337,11 +5366,11 @@ Example: The physical separation of the FCUs of a fault-tolerant system reduces 
 
 > 示例：容错系统的 FCU 的物理分离降低了空间邻近故障的可能性，因此单个位置的故障(例如，事故发生时的影响)不能破坏多个 FCU。
 
-Fault Time In the temporal domain, a fault can be transient or permanent . Whereas physical faults can be transient or permanent , design faults (e.g., software errors) are always permanent .
+Fault Time In the temporal domain, a fault can be transient or permanent. Whereas physical faults can be transient or permanent , design faults (e.g., software errors) are always permanent .
 
 > 故障时间在时域中，故障可以是暂时的或永久的。虽然物理故障可能是暂时的或永久的，但设计故障(如软件错误)总是永久的。
 
-A transient fault appears for a short interval at the end of which it disappears without requiring any explicit repair action. A transient fault can lead to an error , i.e., the corruption of the state of an FCU, but leaves the physical hardware undam­ aged ( by definition ). We call a transient external physical fault a transitory fault . An example for a transitory fault is the impact of a cosmic particle that corrupts the state of an FCU. We call a transient internal physical fault an intermittent fault .
+A transient fault appears for a short interval at the end of which it disappears without requiring any explicit repair action. A transient fault can lead to an error , i.e., the corruption of the state of an FCU, but leaves the physical hardware undam­ aged ( by definition ). We call a transient external physical fault a transitory fault. An example for a transitory fault is the impact of a cosmic particle that corrupts the state of an FCU. We call a transient internal physical fault an intermittent fault .
 
 > 瞬态故障会在短时间内出现，结束时会消失，不需要任何明确的维修行动。瞬态故障可能会导致错误，即 FCU 状态的损坏，但物理硬件不会受损(根据定义)。我们称瞬态外部物理故障为瞬态故障。一个暂时性故障的例子是宇宙粒子的影响，它破坏了 FCU 的状态。我们称瞬态内部物理故障为间歇性故障。
 
@@ -5358,7 +5387,7 @@ A permanent fault is a fault that remains in the system until an explicit repair
 
 ### 6.1.2 Errors
 
-The immediate consequence of a fault is an incorrect state in a component. We call such an incorrect state, i.e., a wrong data element in the memory, a register or, in a flip-flop circuit of a CPU, an error . As time progresses, an error is activated by a computation, detected by some error-detection mechanism, or wiped out .
+The immediate consequence of a fault is an incorrect state in a component. We call such an incorrect state, i.e., a wrong data element in the memory, a register or, in a flip-flop circuit of a CPU, an error. As time progresses, an error is activated by a computation, detected by some error-detection mechanism, or wiped out .
 
 > 故障的直接后果是部件的状态不正确。我们称这种不正确的状态，即存储器、寄存器中的错误数据元素，或者 CPU 的触发器电路中的错误。随着时间的推移，错误会被计算激活，被某种错误检测机制检测到，或者被清除。
 
@@ -5366,7 +5395,7 @@ An error is activated if a computation accesses the error. From this instant onw
 
 > 如果计算访问错误，则激活错误。从这一刻起，计算本身就变得不正确。如果故障影响存储单元或寄存器的内容，则当计算访问该存储单元时，将激活随之而来的错误。如果涉及存储单元，则错误发生和错误激活(错误的休眠)之间可能会有很长的时间间隔。如果故障影响 CPU 的电路，则可能会立即激活故障，并且当前的计算将被破坏。一旦错误的计算将数据写入内存，这部分内存也会变得错误。
 
-We distinguish between two types of software errors, called Bohrbugs and Heisenbugs [Gra86]. A Bohrbug is a software error that can be reproduced L-deterministic ally in the data domain by providing a specific input pattern to the routine that contains the Bohrbug, i.e., a specific pattern of input data that always leads to the activation of the underlying Bohrbug. A Heisenbug is a software error that can only be observed if the input data and the exact timing of the input data—in relation to the timing of all other activities in the computer—are reproduced pre­ cisely. Since the reproduction of a Heisenbug is difficult, many software errors that pass the development and testing phase and show up in operational systems are Heisenbugs . Since the temporal control structure in event-triggered systems is dynamic, Heisenbugs are more probable in event-triggered systems than in time-­ triggered systems, which have a data-independent static control structure.
+We distinguish between two types of software errors, called Bohrbugs and Heisenbugs [Gra86]. A Bohrbug is a software error that can be reproduced L-deterministic ally in the data domain by providing a specific input pattern to the routine that contains the Bohrbug, i.e., a specific pattern of input data that always leads to the activation of the underlying Bohrbug. A Heisenbug is a software error that can only be observed if the input data and the exact timing of the input data—in relation to the timing of all other activities in the computer—are reproduced pre­ cisely. Since the reproduction of a Heisenbug is difficult, many software errors that pass the development and testing phase and show up in operational systems are Heisenbugs. Since the temporal control structure in event-triggered systems is dynamic, Heisenbugs are more probable in event-triggered systems than in time-­ triggered systems, which have a data-independent static control structure.
 
 > 我们区分了两种类型的软件错误，称为 Bohrbugs 和 Heisenbugs[Gra86]。Bohrbug 是一种软件错误，可以通过向包含 Bohrbug 的例程提供特定的输入模式，即始终导致底层 Bohrbug 激活的特定输入数据模式，在数据域中以 L 确定性方式再现。海森堡错误是一种软件错误，只有当输入数据和输入数据的确切时间(相对于计算机中所有其他活动的时间)被精确地再现时，才能观察到。由于海森堡的复制很困难，许多通过开发和测试阶段并出现在操作系统中的软件错误都是海森堡的。由于事件触发系统中的时间控制结构是动态的，因此与具有独立于数据的静态控制结构的时间触发系统相比，事件触发系统更有可能出现海森堡虫。
 
@@ -5374,11 +5403,11 @@ Example : A typical example for a Heisenbug is an error in the synchronization o
 
 > 示例：Heisenbug 的一个典型示例是并发系统中数据访问同步中的错误。只有精确再现访问互斥数据的任务之间的时间关系，才能观察到这种错误。
 
-An error is detected when a computation accesses the error and finds out that the results of the computation deviate from the expectations or the intentions of the user , either in the domain of value or the domain of time. For example, a simple parity check detects an error if it can be assumed that the fault has corrupted only a single bit of a data word. The time interval between the instant of error (fault) occurrence and the instant of error detection is called the error-detection latency . The probability that an error is detected is called error-detection coverage . Testing is a technique to detect design faults (software errors and hardware errata) in a system.
+An error is detected when a computation accesses the error and finds out that the results of the computation deviate from the expectations or the intentions of the user , either in the domain of value or the domain of time. For example, a simple parity check detects an error if it can be assumed that the fault has corrupted only a single bit of a data word. The time interval between the instant of error (fault) occurrence and the instant of error detection is called the error-detection latency. The probability that an error is detected is called error-detection coverage. Testing is a technique to detect design faults (software errors and hardware errata) in a system.
 
 > 当计算访问错误并发现计算结果在价值域或时间域中偏离用户的期望或意图时，会检测到错误。例如，如果可以假设故障仅损坏了数据字的单个比特，则简单的奇偶校验会检测到错误。错误(故障)发生时刻和错误检测时刻之间的时间间隔称为错误检测延迟。检测到错误的概率称为错误检测覆盖率。测试是一种检测系统中设计故障(软件错误和硬件勘误)的技术。
 
-An error is wiped out if a computation overwrites the error with a new value before the error has been activated or detected. An error that has neither been acti­ vated, detected, nor wiped out is called a latent error . A latent error in the state of a component results in a silent data corruption (SDC), which can lead to serious consequences.
+An error is wiped out if a computation overwrites the error with a new value before the error has been activated or detected. An error that has neither been acti­ vated, detected, nor wiped out is called a latent error. A latent error in the state of a component results in a silent data corruption (SDC), which can lead to serious consequences.
 
 > 如果在错误被激活或检测到之前，计算用新值覆盖错误，则会清除错误。未被激活、检测或消除的错误称为潜在错误。组件状态中的潜在错误会导致无声数据损坏(SDC)，这可能会导致严重的后果。
 
@@ -5388,14 +5417,14 @@ Example: Let us assume that a bitflip occurs in a memory cell that is not protec
 
 ### 6.1.3 Failures
 
-Domain A failure can occur in the value domain or in the temporal domain . A value failure means that an incorrect value is presented at the component-user inter­ face. (Remember, the user can be another system.) A temporal failure means that a value is presented outside the intended interval of real time . Temporal failures only exist if the system specification contains information about the intended temporal behavior of the system. Temporal failures can be subdivided into early temporal failures and late temporal failures . A component that contains internal error-­ detection mechanisms in order to detect any error and suppresses a result that con­ tains a value error or an early temporal failure will only exhibit a late temporal failure , i.e., an omission , at the interface to its users. We call such a failure an omis­ sion failure . A component that only makes omission failures is called a fail-silent component . If a component stops working after the first omission failure, it is called a fail-stop component . The corresponding failure is sometimes called a clean failure or a crash failure .
+Domain A failure can occur in the value domain or in the temporal domain. A value failure means that an incorrect value is presented at the component-user inter­ face. (Remember, the user can be another system.) A temporal failure means that a value is presented outside the intended interval of real time. Temporal failures only exist if the system specification contains information about the intended temporal behavior of the system. Temporal failures can be subdivided into early temporal failures and late temporal failures. A component that contains internal error-­ detection mechanisms in order to detect any error and suppresses a result that con­ tains a value error or an early temporal failure will only exhibit a late temporal failure , i.e., an omission , at the interface to its users. We call such a failure an omis­ sion failure. A component that only makes omission failures is called a fail-silent component. If a component stops working after the first omission failure, it is called a fail-stop component. The corresponding failure is sometimes called a clean failure or a crash failure .
 
 > 域 A 故障可能发生在值域或时域中。值失败意味着在组件用户界面上显示了不正确的值。(记住，用户可以是另一个系统。)时间故障意味着一个值在预期的实时间隔之外呈现。只有当系统规范包含有关系统预期时间行为的信息时，才会存在时间故障。时间故障可分为早期时间故障和晚期时间故障。一个包含内部错误检测机制的组件，用于检测任何错误并抑制包含值错误或早期时间故障的结果，只会在其用户界面上出现后期时间故障，即遗漏。我们称这种失败为疏忽失败。仅发生遗漏故障的组件称为故障静默组件。如果一个组件在第一次遗漏故障后停止工作，则称为故障停止组件。相应的故障有时被称为干净故障或崩溃故障。
 
 > ![](images/8d98552c8d79535391249ca0c6732573ec2ac96009dc2c3d0f6544c476891b92.jpg)
 > Fig.6.3 Classification of failures
 
-Example: A self-checking component is a component that contains internal failure-­ detection mechanisms such that it will only exhibit omission failures (or clean failures ) at the component-user interface . A self-checking component can be built out of two determin­ istic FCUs that produce two results at about the same time and where the two results are checked by a self-checking checker.
+Example: A self-checking component is a component that contains internal failure-­ detection mechanisms such that it will only exhibit omission failures (or clean failures ) at the component-user interface. A self-checking component can be built out of two determin­ istic FCUs that produce two results at about the same time and where the two results are checked by a self-checking checker.
 
 > 示例：自检组件是一种包含内部故障检测机制的组件，这样它只会在组件用户界面上显示遗漏故障(或清除故障)。自检组件可以由两个确定性 FCU 构建，这两个 FCU 大约同时产生两个结果，并且这两个结果由自检检查器进行检查。
 
@@ -5411,11 +5440,11 @@ Example: In a multimedia system, e.g., a digital television set, the failure of 
 
 > 示例：在多媒体系统中，例如数字电视机，在下一个周期中被覆盖的单个像素的故障被人类感知系统掩盖。因此，这种故障的严重程度可以忽略不计。
 
-Frequency Within a given time interval, a failure can occur only once or repeat­ edly . If it occurs only once, it is called a single failure. If a system continues to operate after the failure, we call the failure a transient failure . A frequently occur­ ring transient failure is called a repeated failure . A special case of a single failure is a permanent one, i.e., a failure after which the system ceases to provide a service until an explicit repair action eliminates the cause of the failure.
+Frequency Within a given time interval, a failure can occur only once or repeat­ edly. If it occurs only once, it is called a single failure. If a system continues to operate after the failure, we call the failure a transient failure. A frequently occur­ ring transient failure is called a repeated failure. A special case of a single failure is a permanent one, i.e., a failure after which the system ceases to provide a service until an explicit repair action eliminates the cause of the failure.
 
 > 频率在给定的时间间隔内，故障只能发生一次或重复发生。如果只发生一次，则称为单次故障。如果系统在故障后继续运行，我们称故障为瞬态故障。频繁发生的瞬态故障称为重复故障。单一故障的特殊情况是永久性的，即故障发生后，系统停止提供服务，直到明确的维修行动消除了故障原因。
 
-View If more than one user looks at a failing component, two cases can be distin­ guished: all users see the same failing behavior —we call this a consistent failure — or different users see different behaviors (we call this an inconsistent failure ). In the literature, different names are used for an inconsistent failure : two-faced failure , Byzantine failure , or malicious failure . Inconsistent failures are most difficult to handle, since they have the potential to confuse the correct components (see Sect. 3.4.1 ). In high-integrity systems, the occurrence of Byzantine failures must be con­ sidered [Dri03].
+View If more than one user looks at a failing component, two cases can be distin­ guished: all users see the same failing behavior —we call this a consistent failure — or different users see different behaviors (we call this an inconsistent failure ). In the literature, different names are used for an inconsistent failure : two-faced failure , Byzantine failure , or malicious failure. Inconsistent failures are most difficult to handle, since they have the potential to confuse the correct components (see Sect. 3.4.1 ). In high-integrity systems, the occurrence of Byzantine failures must be con­ sidered [Dri03].
 
 > 查看如果多个用户查看一个故障组件，可以区分两种情况：所有用户都看到相同的故障行为——我们称之为一致的故障——或者不同的用户看到不同的行为(我们称此为不一致的故障)。在文献中，不同的名称用于不一致的失败：双面失败、拜占庭式失败或恶意失败。不一致的故障最难处理，因为它们有可能混淆正确的组件(见第 3.4.1 节)。在高完整性系统中，必须考虑拜占庭式故障的发生[Dri03]。
 
@@ -5427,7 +5456,7 @@ Example: A slightly-out-of-specification (SOS) failure is a special case of a By
 
 > 示例：轻微超出规格(SOS)故障是拜占庭式故障的一种特殊情况。SOS 故障可能发生在四宇宙模型的模拟级和逻辑级之间的接口处(见第 2.3.1 节)。如果在总线系统中，发送器的高电平输出电压略低于为高电平状态指定的电平，那么一些接收器可能仍然会接受信号，假设信号值很高，而另一些接收器可能不会接受信号，假定信号值不高。如果信号相对于电压或定时处于临界状态，SOS 故障将引起严重关注。
 
-Propagation If an error inside a component is activated and propagates outside the confines of the component that has been affected by the fault, then we speak of error propagation . Let us make the simplifying assumption that a component communi­ cates with its environment solely by the exchange of messages and there is no other means of interaction of components (such as a common memory). In such a system, an error can propagate outside the affected component solely by the transmission of an incorrect message .
+Propagation If an error inside a component is activated and propagates outside the confines of the component that has been affected by the fault, then we speak of error propagation. Let us make the simplifying assumption that a component communi­ cates with its environment solely by the exchange of messages and there is no other means of interaction of components (such as a common memory). In such a system, an error can propagate outside the affected component solely by the transmission of an incorrect message .
 
 > 传播如果组件内部的错误被激活并传播到受故障影响的组件范围之外，那么我们就称之为错误传播。让我们做一个简化的假设，即组件仅通过消息交换与其环境进行通信，没有其他组件交互方式(如公共内存)。在这种系统中，错误可能仅通过传输不正确的消息传播到受影响的组件外部。
 
@@ -5441,7 +5470,7 @@ In a cyclic system, the corruption of the $g$ -state (see Sect. 4.2.3 ) is of pa
 
 ## 6.2 Information Security
 
-Information security deals with the authenticity , integrity , confidentiality , privacy , and availability of information and services that are provided by a computer system. In the following section, we always mean information security when we use the term security . We call a deficiency in the design or operation of a computer system that can lead to a security incident a vulnerability and the successful exploitation of a vulnerability an intrusion . The following reasons make clear why information security has become a prime concern in the design and operation of embedded sys­ tems [Car08]:
+Information security deals with the authenticity , integrity , confidentiality , privacy , and availability of information and services that are provided by a computer system. In the following section, we always mean information security when we use the term security. We call a deficiency in the design or operation of a computer system that can lead to a security incident a vulnerability and the successful exploitation of a vulnerability an intrusion. The following reasons make clear why information security has become a prime concern in the design and operation of embedded sys­ tems [Car08]:
 
 > 信息安全涉及计算机系统提供的信息和服务的真实性、完整性、机密性、隐私性和可用性。在下一节中，当我们使用“安全”一词时，我们总是指信息安全。我们将计算机系统设计或操作中的缺陷称为漏洞，这些缺陷可能导致安全事件，而成功利用漏洞则称为入侵。以下原因清楚地表明了为什么信息安全已成为嵌入式系统设计和操作中的首要关注点[Car08]：
 
@@ -5457,7 +5486,7 @@ Information security deals with the authenticity , integrity , confidentiality ,
 
 > (iii)嵌入式系统已连接到互联网：嵌入式系统连接到互联网，使世界任何地方的入侵者都有可能攻击远程系统，并系统地利用任何检测到的漏洞。
 
-As of today, there is normally a human mediator between the cyberspace (e.g., the Internet) and actions in the physical world . Humans are supposed to have com­ mon sense and responsibility. They are able to recognize an evidently wrong com­ puter output and will not set any actions in the physical world based on such a wrong output. The situation is different in embedded systems connected directly to the Internet—the Internet of Things (IoT) , where the smart object at the edge of the Internet (e.g., a robot) can immediately interact with the physical world. An adver­ sary can compromise the integrity of the embedded system by breaching the secu­ rity walls, thus becoming a safety hazard. Alternatively, an adversary can carry out a denial-of-service attack and thus bring down the availability of an important ser­ vice. Security and safety are thus interrelated and of utmost concern in embedded systems that are connected to the Internet.
+As of today, there is normally a human mediator between the cyberspace (e.g., the Internet) and actions in the physical world. Humans are supposed to have com­ mon sense and responsibility. They are able to recognize an evidently wrong com­ puter output and will not set any actions in the physical world based on such a wrong output. The situation is different in embedded systems connected directly to the Internet—the Internet of Things (IoT) , where the smart object at the edge of the Internet (e.g., a robot) can immediately interact with the physical world. An adver­ sary can compromise the integrity of the embedded system by breaching the secu­ rity walls, thus becoming a safety hazard. Alternatively, an adversary can carry out a denial-of-service attack and thus bring down the availability of an important ser­ vice. Security and safety are thus interrelated and of utmost concern in embedded systems that are connected to the Internet.
 
 > 截至今天，网络空间(如互联网)和现实世界中的行为之间通常有一个人类中介。人类应该有共同的意识和责任。他们能够识别出明显错误的计算机输出，并且不会根据这种错误的输出在物理世界中设置任何操作。直接连接到互联网的嵌入式系统的情况不同——物联网(IoT)，互联网边缘的智能对象(例如机器人)可以立即与物理世界进行交互。攻击者可以通过破坏安全墙来损害嵌入式系统的完整性，从而成为安全隐患。或者，对手可以实施拒绝服务攻击，从而降低重要服务的可用性。因此，在连接到互联网的嵌入式系统中，安全和安保是相互关联的，也是最受关注的问题。
 
@@ -5469,21 +5498,21 @@ might increase beyond the critical level that leads to a blackout (example taken
 
 > 可能会增加到导致停电的临界水平以上(例如[Koo04])。
 
-Standard security techniques are based on a sound security architecture that con­ trols the information flow among subsystems of different critical it y and confidenti­ ality . The architectural decisions are implemented by the deployment of cryptographic methods, such as encryption , random number generation , and hash­ ing . The execution of cryptographic methods requires extra energy and silicon real estate, which are not always available in a small (portable) embedded system.
+Standard security techniques are based on a sound security architecture that con­ trols the information flow among subsystems of different critical it y and confidenti­ ality. The architectural decisions are implemented by the deployment of cryptographic methods, such as encryption , random number generation , and hash­ ing. The execution of cryptographic methods requires extra energy and silicon real estate, which are not always available in a small (portable) embedded system.
 
 > 标准安全技术基于一个健全的安全架构，该架构控制着不同关键 it 和机密性子系统之间的信息流。架构决策是通过部署加密方法来实现的，如加密、随机数生成和哈希。加密方法的执行需要额外的能量和硅空间，这在小型(便携式)嵌入式系统中并不总是可用的。
 
 ### 6.2.1 Secure Information Flow
 
-The main security concerns in embedded systems are the authenticity and integrity of the real-time data and of the system configuration and, to a lesser extent, the control of access to data. The security policy must specify which processes are authorized to modify data ( data integrity ) and which processes are allowed to see the data ( confidentiality of data ). A security policy for data integrity can be estab­ lished on the basis of the Biba model, while a security policy for the confidentiality of data can be derived from the Bell-LaPadula model [Lan81]. Both models classify the processes and the data files according to an ordered sequence of levels, from highest to lowest . A process may read and modify data that is at the same level as the process. The respective security models govern the access and modification of data at a level that is different from the level of the reading or writing process.
+The main security concerns in embedded systems are the authenticity and integrity of the real-time data and of the system configuration and, to a lesser extent, the control of access to data. The security policy must specify which processes are authorized to modify data ( data integrity ) and which processes are allowed to see the data ( confidentiality of data ). A security policy for data integrity can be estab­ lished on the basis of the Biba model, while a security policy for the confidentiality of data can be derived from the Bell-LaPadula model [Lan81]. Both models classify the processes and the data files according to an ordered sequence of levels, from highest to lowest. A process may read and modify data that is at the same level as the process. The respective security models govern the access and modification of data at a level that is different from the level of the reading or writing process.
 
 > 嵌入式系统中的主要安全问题是实时数据和系统配置的真实性和完整性，以及在较小程度上对数据访问的控制。安全策略必须指定哪些进程被授权修改数据(数据完整性)，哪些进程被允许查看数据(数据机密性)。数据完整性的安全策略可以在 Biba 模型的基础上建立，而数据机密性的安全政策可以从 Bell-LaPadula 模型中得出[Lan81]。这两个模型都根据从最高到最低的顺序对流程和数据文件进行分类。进程可以读取和修改与进程处于同一级别的数据。相应的安全模型在不同于读取或写入过程的级别上管理数据的访问和修改。
 
-The concern of the Biba model is the integrity of the data , a concern that is highly relevant in multi-critical it y embedded systems . The classification of the data files and the processes is determined by the critical it y from the point of view of the safety analysis (see Sect. 11.4.2 ). In order to ensure the integrity of a (high-critical) process, the (high-critical) process must not read data that is classified at a lower level than the classification of the (high-critical) process. In order to ensure that a (low-critical it y) process will not corrupt data of a higher-critical it y level, the Biba model states that no (low-critical it y) process may modify data that is at a higher-­ critical it y level than that of the (low-critical it y) process.
+The concern of the Biba model is the integrity of the data , a concern that is highly relevant in multi-critical it y embedded systems. The classification of the data files and the processes is determined by the critical it y from the point of view of the safety analysis (see Sect. 11.4.2 ). In order to ensure the integrity of a (high-critical) process, the (high-critical) process must not read data that is classified at a lower level than the classification of the (high-critical) process. In order to ensure that a (low-critical it y) process will not corrupt data of a higher-critical it y level, the Biba model states that no (low-critical it y) process may modify data that is at a higher-­ critical it y level than that of the (low-critical it y) process.
 
 > Biba 模型关注的是数据的完整性，这一关注点在多关键的 it 嵌入式系统中非常重要。从安全分析的角度来看，数据文件和流程的分类是由关键信息决定的(见第 11.4.2 节)。为了确保(高临界)过程的完整性，(高临界的)过程不得读取分类级别低于(高关键的)过程分类级别的数据。为了确保(低临界 it y)进程不会损坏更高临界 it y 级别的数据，Biba 模型指出，任何(低临界 ity)进程都不能修改比(低临界 it y)进程更高临界 ity 级别的资料。
 
-The concern of the Bell-LaPadula model is the confidentiality of the data . The classification of the data files and the processes is determined by the confidentiality of the data from top secret to unclassified . In order to ensure the confidentiality of top-secret data, it must be made certain that no (unclassified) process may read data that is classified at a higher level than the classification of the (unclassified) process. In order to ensure that a (top-secret) process will not publish confidential data to a (unclassified) lower level, the Bell-LaPadula states no (top-secret) process may write data to a data file that is at a lower confidentiality level than that of the (top-­ secret) process.
+The concern of the Bell-LaPadula model is the confidentiality of the data. The classification of the data files and the processes is determined by the confidentiality of the data from top secret to unclassified. In order to ensure the confidentiality of top-secret data, it must be made certain that no (unclassified) process may read data that is classified at a higher level than the classification of the (unclassified) process. In order to ensure that a (top-secret) process will not publish confidential data to a (unclassified) lower level, the Bell-LaPadula states no (top-secret) process may write data to a data file that is at a lower confidentiality level than that of the (top-­ secret) process.
 
 > Bell-LaPadula 模型关注的是数据的机密性。数据文件和流程的分类由数据的机密性决定，从绝密到非机密。为了确保绝密数据的机密性，必须确保任何(非机密)进程都不能读取比(非机密的)进程分类级别更高的机密数据。为了确保(绝密)过程不会将机密数据发布到(非机密)较低级别，Bell-LaPadula 声明，任何(绝密)进程都不能将数据写入机密级别低于(绝密)程序的数据文件。
 
@@ -5501,7 +5530,7 @@ A systematic security analysis starts with the specification of an attack model.
 
 > 系统的安全分析始于攻击模型的规范。攻击模型提出了一个攻击假设，即它列出了威胁，并对对手的攻击策略做出了假设。然后，它概述了对手为闯入系统而采取的有效步骤。在下一阶段，制定防御策略以应对攻击。攻击假设总是不完整的，聪明的对手会找到一种攻击系统的方法，这种方法不在攻击假设的范围内。
 
-The typical attacker proceeds according to the following three phases: access to the selected subsystem , search for and discovery of a vulnerability , and, finally, intrusion and control of the selected subsystem . The control can be passive or active . In passive control, the attacker observes the system and collects confidential infor­ mation. In active control, the attacker modifies the behavior of the system such that the system will contribute to the attacker’s mean purpose. A security architecture must contain observation mechanisms, i.e., intrusion detection mechanisms, to detect malicious activities that relate to any of these three phases of an attack. It also must provide firewalls and procedures that mitigate the consequences of an attack such that the system can survive.
+The typical attacker proceeds according to the following three phases: access to the selected subsystem , search for and discovery of a vulnerability , and, finally, intrusion and control of the selected subsystem. The control can be passive or active. In passive control, the attacker observes the system and collects confidential infor­ mation. In active control, the attacker modifies the behavior of the system such that the system will contribute to the attacker’s mean purpose. A security architecture must contain observation mechanisms, i.e., intrusion detection mechanisms, to detect malicious activities that relate to any of these three phases of an attack. It also must provide firewalls and procedures that mitigate the consequences of an attack such that the system can survive.
 
 > 典型的攻击者会按照以下三个阶段进行：访问所选子系统、搜索和发现漏洞，最后是入侵和控制所选子系统。控制可以是被动的或主动的。在被动控制中，攻击者观察系统并收集机密信息。在主动控制中，攻击者修改系统的行为，使系统有助于攻击者的平均目的。安全架构必须包含观察机制，即入侵检测机制，以检测与攻击的这三个阶段中的任何一个阶段相关的恶意活动。它还必须提供防火墙和程序，以减轻攻击的后果，使系统能够生存。
 
@@ -5529,7 +5558,7 @@ The following list of security attacks is only an indication of what has been ob
 
 > 以下安全攻击列表仅表明所观察到的情况。它绝不是完整的：
 
-Malicious Code Attack: A malicious code attack is an attack where an adversary inserts malicious code , e.g., a virus , a worm , or a Trojan horse , into the software in order that the attacker gets partial or full control over the system. This mali­ cious code can be inserted statically, e.g., by a malicious maintenance action ( insider attack ), by the process of downloading a new software version, or dynamically during the operation of a system by accessing an infected Internet site or opening an infected data structure. Spoofing Attack: In a spoofing attack, an adversary masquerades as a legitimate user in order to gain unauthorized access to a system. There are many versions of spoofing attacks in the Internet: replacement of a legitimate web page (e.g., of a bank) by a seemingly identical copy that is under the control of the adversary (also called phishing ), the replacement of the correct address in an email by a fake address, and a man-in-the-middle attack where an intruder intercepts a ses­ sion between two communicating partners and gains access to all exchanged messages. Password Attack: In a password attack, an intruder tries to guess the password that protects the access to a system. There are two versions of password attacks, dic­ tionary attacks and brute force attacks . In a dictionary attack, the intruder guesses commonly used password strings. In a brute force attack, the intruder searches systematically through the full code space of the password until he is successful. Ciphertext Attack : In this attack model, the attacker assumes to have access to the ciphertext and tries to deduce the plaintext and possibly the encryption key from the ciphertext. Modern standardized encryption technologies, such as the AES (Advanced Encryption Standard), have been designed to make the success of ciphertext attacks highly improbable. Denial-of-Service Attack: A denial-of-service attack tries to make a computer sys­ tem unavailable to its users. In any wireless communication scenario, such as a sensor network, an adversary can jam the ether with high-power signals of the appropriate frequency in order to interfere with the communication of the tar­ geted devices. In the Internet, an adversary can send a coordinated burst of ser­ vice requests to a site to overload the site such that legitimate service requests cannot be handled any more. Botnet Attack: A botnet (the word bot is an abbreviation of robot ) is a set of infected networked nodes (e.g., thousands of PC or set top boxes) that are under the con­ trol of an attacker and cooperate (unknowingly to the owner of the node) to achieve a malicious mission. In a first phase, an attacker gets control over the botnet nodes and infects them with malicious code. In the second phase, he launches a distributed denial-of-service attack to a chosen target website to make the target website unavailable to legitimate users. Botnet attacks are among the most serious attack modes in the Internet.
+Malicious Code Attack: A malicious code attack is an attack where an adversary inserts malicious code , e.g., a virus , a worm , or a Trojan horse , into the software in order that the attacker gets partial or full control over the system. This mali­ cious code can be inserted statically, e.g., by a malicious maintenance action ( insider attack ), by the process of downloading a new software version, or dynamically during the operation of a system by accessing an infected Internet site or opening an infected data structure. Spoofing Attack: In a spoofing attack, an adversary masquerades as a legitimate user in order to gain unauthorized access to a system. There are many versions of spoofing attacks in the Internet: replacement of a legitimate web page (e.g., of a bank) by a seemingly identical copy that is under the control of the adversary (also called phishing ), the replacement of the correct address in an email by a fake address, and a man-in-the-middle attack where an intruder intercepts a ses­ sion between two communicating partners and gains access to all exchanged messages. Password Attack: In a password attack, an intruder tries to guess the password that protects the access to a system. There are two versions of password attacks, dic­ tionary attacks and brute force attacks. In a dictionary attack, the intruder guesses commonly used password strings. In a brute force attack, the intruder searches systematically through the full code space of the password until he is successful. Ciphertext Attack : In this attack model, the attacker assumes to have access to the ciphertext and tries to deduce the plaintext and possibly the encryption key from the ciphertext. Modern standardized encryption technologies, such as the AES (Advanced Encryption Standard), have been designed to make the success of ciphertext attacks highly improbable. Denial-of-Service Attack: A denial-of-service attack tries to make a computer sys­ tem unavailable to its users. In any wireless communication scenario, such as a sensor network, an adversary can jam the ether with high-power signals of the appropriate frequency in order to interfere with the communication of the tar­ geted devices. In the Internet, an adversary can send a coordinated burst of ser­ vice requests to a site to overload the site such that legitimate service requests cannot be handled any more. Botnet Attack: A botnet (the word bot is an abbreviation of robot ) is a set of infected networked nodes (e.g., thousands of PC or set top boxes) that are under the con­ trol of an attacker and cooperate (unknowingly to the owner of the node) to achieve a malicious mission. In a first phase, an attacker gets control over the botnet nodes and infects them with malicious code. In the second phase, he launches a distributed denial-of-service attack to a chosen target website to make the target website unavailable to legitimate users. Botnet attacks are among the most serious attack modes in the Internet.
 
 > 恶意代码攻击：恶意代码攻击是指对手在软件中插入恶意代码，如病毒、蠕虫或特洛伊木马，以便攻击者部分或完全控制系统的攻击。这种恶意代码可以静态插入，例如通过恶意维护行为(内部攻击)、下载新软件版本的过程，或者在系统运行过程中通过访问受感染的互联网站点或打开受感染的数据结构动态插入。欺骗攻击：在欺骗攻击中，对手伪装成合法用户，以获得对系统的未经授权的访问。互联网上有许多版本的欺骗攻击：用一个似乎完全相同的副本替换合法的网页(例如银行)，并由对手控制(也称为网络钓鱼)，用一个伪造的地址替换电子邮件中的正确地址，以及一种中间人攻击，入侵者拦截两个通信伙伴之间的通信并访问所有交换的消息。密码攻击：在密码攻击中，入侵者试图猜测保护系统访问的密码。密码攻击有两种版本，即字典攻击和暴力攻击。在字典攻击中，入侵者猜测常用的密码字符串。在暴力攻击中，入侵者系统地搜索密码的整个代码空间，直到成功。密文攻击：在这种攻击模型中，攻击者假设可以访问密文，并试图从密文中推断出明文和可能的加密密钥。现代标准化加密技术，如 AES(高级加密标准)，旨在使密文攻击的成功率极低。拒绝服务攻击：拒绝服务攻击试图使用户无法使用计算机系统。在任何无线通信场景中，例如传感器网络，对手都可以用适当频率的高功率信号干扰以太网，从而干扰目标设备的通信。在互联网中，对手可以向网站发送协调一致的服务请求，使网站过载，从而无法再处理合法的服务请求。僵尸网络攻击：僵尸网络(bot 是 robot 的缩写)是一组受感染的网络节点(例如，数千台 PC 或机顶盒)，它们在攻击者的控制下进行合作(在节点所有者不知情的情况下)以实现恶意任务。在第一阶段，攻击者控制僵尸网络节点，并用恶意代码感染它们。在第二阶段，他对选定的目标网站发起分布式拒绝服务攻击，使合法用户无法访问目标网站。僵尸网络攻击是互联网上最严重的攻击模式之一。
 
@@ -5563,7 +5592,7 @@ In the following paragraphs, we use the term hard to mean: it is beyond the capa
 
 > 在以下段落中，我们使用了难以理解的术语：在必须提供安全保障的时间段内，设想的对手无法破坏系统。如果系统设计、密码算法和密钥选择证明对手成功攻击的可能性极低，则使用“强密码术”一词。
 
-In cryptography, an algorithm for encryption or decryption is called a cipher . During encryption, a cipher transforms a plaintext into a ciphertext. The ciphertext holds all the information of the plaintext but cannot be understood without knowl­ edge of the algorithm and the keys to decrypt it.
+In cryptography, an algorithm for encryption or decryption is called a cipher. During encryption, a cipher transforms a plaintext into a ciphertext. The ciphertext holds all the information of the plaintext but cannot be understood without knowl­ edge of the algorithm and the keys to decrypt it.
 
 > 在密码学中，用于加密或解密的算法称为密码。在加密过程中，密码将明文转换为密文。密文包含明文的所有信息，但如果不了解算法和解密密钥，就无法理解。
 
@@ -5571,19 +5600,19 @@ A symmetric key encryption algorithm encrypts and decrypts a plaintext with the 
 
 > 对称密钥加密算法使用相同(或微不足道的相关)密钥对明文进行加密和解密。因此，加密和解密密钥都必须保密。相比之下，非对称密钥算法使用不同的密钥(公钥和私钥)进行加密和解密。虽然这两个密钥在数学上是相关的，但很难从公钥的知识中推导出私钥。非对称密钥算法构成了广泛使用的公钥加密技术[Riv78]的基础。
 
-The procedure for key distribution is called key management . In public key encryption systems , the security of the system depends on the secrecy of the private keys and the establishment of a trusted relationship between the public key and the identity of the owner of the respective private key. Such a trusted relationship can be established by executing a secure network authentication protocol to an a priori known security server . An example of such a network authentication protocol is the KERBEROS protocol that provides mutual authentication [Neu94] and establishes a secure channel between two nodes in an open (insecure) network by using a trusted security server .
+The procedure for key distribution is called key management. In public key encryption systems , the security of the system depends on the secrecy of the private keys and the establishment of a trusted relationship between the public key and the identity of the owner of the respective private key. Such a trusted relationship can be established by executing a secure network authentication protocol to an a priori known security server. An example of such a network authentication protocol is the KERBEROS protocol that provides mutual authentication [Neu94] and establishes a secure channel between two nodes in an open (insecure) network by using a trusted security server .
 
 > 密钥分发的过程称为密钥管理。在公钥加密系统中，系统的安全性取决于私钥的保密性以及公钥与相应私钥所有者身份之间建立的可信关系。通过对先验已知的安全服务器执行安全网络认证协议，可以建立这种信任关系。这种网络认证协议的一个例子是 KERBEROS 协议，该协议提供相互认证[Neu94]，并通过使用可信安全服务器在开放(不安全)网络中的两个节点之间建立安全通道。
 
-Random numbers are required in both symmetric and asymmetric cryptography for key generation and for the generation of unpredictable numbers that are used only once (called a nonce ) in order to ensure the uniqueness of a key of a session. In public key encryption , the node that needs a private key must generate the asym­ metric pair of keys out of a nonce . The private key is kept secret to the node, while the public key is disseminated over open channels to the public. A signed copy of the public key must be sent to a security server in order that other nodes can check the trusted relationship between the public key and the identity of the node that generated the public key.
+Random numbers are required in both symmetric and asymmetric cryptography for key generation and for the generation of unpredictable numbers that are used only once (called a nonce ) in order to ensure the uniqueness of a key of a session. In public key encryption , the node that needs a private key must generate the asym­ metric pair of keys out of a nonce. The private key is kept secret to the node, while the public key is disseminated over open channels to the public. A signed copy of the public key must be sent to a security server in order that other nodes can check the trusted relationship between the public key and the identity of the node that generated the public key.
 
 > 对称和非对称密码学都需要随机数来生成密钥，以及生成只使用一次的不可预测数字(称为随机数)，以确保会话密钥的唯一性。在公钥加密中，需要私钥的节点必须从随机数中生成非对称密钥对。私钥对节点保密，而公钥通过开放渠道向公众传播。必须将公钥的签名副本发送到安全服务器，以便其他节点可以检查公钥与生成公钥的节点的身份之间的信任关系。
 
-In order to ensure the secrecy, a private key should not be stored in plain text but must be sealed in a cryptographic envelope . To operate on such an envelope, a non­ encrypted key is required, which is usually called the root key. The root key serves as the starting point for the chain of trust.
+In order to ensure the secrecy, a private key should not be stored in plain text but must be sealed in a cryptographic envelope. To operate on such an envelope, a non­ encrypted key is required, which is usually called the root key. The root key serves as the starting point for the chain of trust.
 
 > 为了确保保密性，私钥不应以纯文本形式存储，而必须密封在加密信封中。要对这样的信封进行操作，需要一个未加密的密钥，通常称为根密钥。根密钥是信任链的起点。
 
-The computational effort required to support public key encryption is substan­ tially higher than the computation effort needed for symmetric key encryption . For this reason, public key encryption is sometimes only used for the secure distribution of keys, while the encryption of the data is done with symmetric keys.
+The computational effort required to support public key encryption is substan­ tially higher than the computation effort needed for symmetric key encryption. For this reason, public key encryption is sometimes only used for the secure distribution of keys, while the encryption of the data is done with symmetric keys.
 
 > 支持公钥加密所需的计算工作量远高于对称密钥加密所需计算工作量。因此，公钥加密有时仅用于密钥的安全分发，而数据的加密是使用对称密钥完成的。
 
@@ -5623,7 +5652,7 @@ The different implementations of the AES algorithm depicted in Table  6.1 show 
 
 > 表 6.1 中描述的 AES 算法的不同实现显示了适用于许多算法的硅面积(栅极计数)和速度(时钟周期)之间的权衡。公钥加密的资源需求高于表 6.1 所列。
 
-Security measures are readily available in today’s silicon solutions for embedded systems. For example, automotive microcontrollers commonly implement hard­ ware security modules (HSM) . [Pot21] gives an overview of the HSM functionality on the Infineon AURIX, discusses its limitations, and compares the HSM with a software-based implementation.
+Security measures are readily available in today’s silicon solutions for embedded systems. For example, automotive microcontrollers commonly implement hard­ ware security modules (HSM). [Pot21] gives an overview of the HSM functionality on the Infineon AURIX, discusses its limitations, and compares the HSM with a software-based implementation.
 
 > 安全措施在当今嵌入式系统的硅解决方案中很容易获得。例如，汽车微控制器通常采用硬件安全模块(HSM)。[Pot21]概述了英飞凌 AURIX 上的 HSM 功能，讨论了其局限性，并将 HSM 与基于软件的实现进行了比较。
 
@@ -5633,7 +5662,7 @@ Adapted from [Fel04a]
 
 ### 6.2.4 Network Authentication
 
-In the following section, we outline a sample of a network authentication protocol that uses public key cryptography to establish the trusted relationship between a new node and its public key . For this purpose we need the trusted security server. Let us assume all nodes know the public cryptographic key of the security server and the security server knows the public cryptographic keys of all nodes a priori.
+In the following section, we outline a sample of a network authentication protocol that uses public key cryptography to establish the trusted relationship between a new node and its public key. For this purpose we need the trusted security server. Let us assume all nodes know the public cryptographic key of the security server and the security server knows the public cryptographic keys of all nodes a priori.
 
 > 在下一节中，我们将概述一个网络身份验证协议的示例，该协议使用公钥密码学在新节点与其公钥之间建立信任关系。为此，我们需要可信的安全服务器。让我们假设所有节点都知道安全服务器的公钥，并且安全服务器先验地知道所有节点的公钥。
 
@@ -5641,7 +5670,7 @@ If a node, say node A, wants to send an encrypted message to a yet unknown node,
 
 > 如果一个节点，比如节点 a，想向一个未知的节点，比如说节点 B 发送一条加密消息，那么节点 a 会采取以下步骤：
 
-(1) Node A forms a signed message with the following content: current time , node A wants to know what is the public key of node B? , and signature of node A . It then encrypts this message with the public key of the security server and sends the ciphertext message to the security server over an open channel.
+(1) Node A forms a signed message with the following content: current time , node A wants to know what is the public key of node B? , and signature of node A. It then encrypts this message with the public key of the security server and sends the ciphertext message to the security server over an open channel.
 
 > (1) 节点 A 形成一条签名消息，内容如下：当前时间，节点 A 想知道节点 B 的公钥是什么，以及节点 A 的签名。然后，它用安全服务器的公钥加密此消息，并通过开放通道将密文消息发送到安全服务器。
 
@@ -5669,7 +5698,7 @@ Let us assume the following attack model for a real-time process-control system 
 
 In order to establish the authenticity and integrity of a sensor value, a standard security solution would be to append an electronic signature to the sensor value by the genuine sensor node and to check this signature by the controller node that receives the message. However, this approach would extend the duration of the control loop by the time it takes for generating and checking the electronic signa­ ture. Such an extension of the length of the control-loop period has a negative effect on the quality of control and must be avoided.
 
-> 为了确定传感器值的真实性和完整性，标准的安全解决方案是由真正的传感器节点在传感器值上附加电子签名，并由接收消息的控制器节点检查该签名。然而，这种方法会将控制回路的持续时间延长到生成和检查电子签名所需的时间。控制回路周期长度的这种延长对控制质量有负面影响，必须避免。
+> 为了确定传感器值的真实性和完整性，标准的安全解决方案是由真正的传感器节点在传感器值上附加电子签名，并由接收消息的控制器节点检查该签名。然而，这种方法会将控制回路(control loops)的持续时间延长到生成和检查电子签名所需的时间。控制回路(control loops)周期长度的这种延长对控制质量有负面影响，必须避免。
 
 In a real-time control system, the design challenge is to find a solution that detects an adversary without any extension of the duration of the control-loop period. The above example shows that the two requirements, real-time performance and security , cannot be dealt with separately in a real-time control system.
 
@@ -5697,7 +5726,7 @@ Some of these characteristics are helpful; others make it more difficult to find
 
 Example: It is possible to take the signature generation and the signature check of real-time data out of the control loop and perform it in parallel. As a consequence, the detection of an intrusion will be delayed by one or more control cycles (which is acceptable considering the characteristics of control system).
 
-> 示例：可以将实时数据的签名生成和签名检查从控制回路中取出，并并行执行。因此，入侵检测将延迟一个或多个控制周期(考虑到控制系统的特性，这是可以接受的)。
+> 示例：可以将实时数据的签名生成和签名检查从控制回路(control loops)中取出，并并行执行。因此，入侵检测将延迟一个或多个控制周期(考虑到控制系统的特性，这是可以接受的)。
 
 Further research is needed to find effective protection techniques for real-time data under the listed constraints.
 
@@ -5738,7 +5767,7 @@ The anomaly-detection subsystem should be separated from the subsystem that perf
 
 > •异常检测是一项定义明确的任务，必须独立于操作子系统执行。两个不同的工程组应在操作子系统和异常检测子系统上工作，以避免共模效应。
 
-The multi-cast message primitive, introduced in Sect. 4.1.1 , provides a means to make the g-state of a component accessible to an independent anomaly-detection subsystem without inducing a probe effect. The anomaly-detection subsystem clas­ sifies the observed anomalies on a severity scale and reports them either to an off-­ line diagnostic system or to an online integrity monitor . The integrity monitor can take immediate corrective action in case the observed anomaly points to a safety-­ relevant incident.
+The multi-cast message primitive, introduced in Sect. 4.1.1 , provides a means to make the g-state of a component accessible to an independent anomaly-detection subsystem without inducing a probe effect. The anomaly-detection subsystem clas­ sifies the observed anomalies on a severity scale and reports them either to an off-­ line diagnostic system or to an online integrity monitor. The integrity monitor can take immediate corrective action in case the observed anomaly points to a safety-­ relevant incident.
 
 > 门派中引入的多播消息原语。4.1.1 提供了一种方法，使独立的异常检测子系统可以访问组件的 g 状态，而不会引起探测效应。异常检测子系统根据严重程度对观察到的异常进行分类，并将其报告给离线诊断系统或在线完整性监测器。如果观察到的异常指向安全相关事件，完整性监测器可以立即采取纠正措施。
 
@@ -5760,7 +5789,7 @@ In a safety-critical system, every single observed anomaly must be scrutinized i
 
 ### 6.3.2 Failure Detection
 
-A failure can only be detected if the observed behavior of a component can be judged in relation to the intended behavior . Failure detection within a system is only possible if the system contains some form of redundant information about the intended behavior. The coverage of the failure detector , i.e., the probability that a failure will be detected if it is present, will increase if the information about the intended behavior becomes more detailed. In the extreme case, where every failure in the behavior of a component must be detected, a second component that provides the basis for the comparison—a golden reference component —is needed, i.e., the redundancy is $100\%$ .
+A failure can only be detected if the observed behavior of a component can be judged in relation to the intended behavior. Failure detection within a system is only possible if the system contains some form of redundant information about the intended behavior. The coverage of the failure detector , i.e., the probability that a failure will be detected if it is present, will increase if the information about the intended behavior becomes more detailed. In the extreme case, where every failure in the behavior of a component must be detected, a second component that provides the basis for the comparison—a golden reference component —is needed, i.e., the redundancy is $100\%$ .
 
 > 只有当观察到的组件行为与预期行为相关时，才能检测到故障。只有当系统包含有关预期行为的某种形式的冗余信息时，才有可能在系统内进行故障检测。如果有关预期行为的信息变得更加详细，故障检测器的覆盖范围，即如果存在故障，则检测到故障的概率将增加。在极端情况下，必须检测组件行为中的每个故障，需要提供比较基础的第二个组件——黄金参考组件，即冗余度为 $100\%$。
 
@@ -5774,7 +5803,7 @@ In real-time systems, the worst-case execution time (WCET; see Sect. 10.2 ) of a
 
 ### 6.3.3 Error Detection
 
-As mentioned before, an error is an incorrect data structure, e.g., an incorrect state or an incorrect program . We can only detect an error if we have some redundant information about the intended properties of the data structure under investigation. This information can be part of the data structure itself, such as a CRC field, or it can come from some other source, such as a priori knowledge expressed in the form of assertions or a golden channel that provides a result that acts as golden reference data structure .
+As mentioned before, an error is an incorrect data structure, e.g., an incorrect state or an incorrect program. We can only detect an error if we have some redundant information about the intended properties of the data structure under investigation. This information can be part of the data structure itself, such as a CRC field, or it can come from some other source, such as a priori knowledge expressed in the form of assertions or a golden channel that provides a result that acts as golden reference data structure .
 
 > 如前所述，错误是不正确的数据结构，例如不正确的状态或不正确的程序。只有当我们对所调查的数据结构的预期属性有一些冗余信息时，我们才能检测到错误。该信息可以是数据结构本身的一部分，例如 CRC 字段，也可以来自其他来源，例如以断言形式表示的先验知识或提供充当黄金参考数据结构的结果的黄金通道。
 
@@ -5790,7 +5819,7 @@ Duplicate Channels If two independent deterministic channels calculate two resul
 
 > 重复通道如果两个独立的确定性通道使用相同的输入数据计算两个结果，我们可以比较结果以检测故障，但无法确定两个通道中的哪一个是错误的。故障注入实验[AL03]表明，在不同时间重复执行应用程序任务是检测瞬态硬件故障的有效技术。即使不能保证所有任务实例都能在可用时间间隔内完成两次，也可以应用此技术来提高故障检测覆盖率。
 
-There are many different possible combinations of hardware, software, and time redundancy that can be used to detect different types of failures by performing the computations twice. Of course, both computations must be replica determinate ; otherwise, many more discrepancies are detected between the redundant channels than those that are actually caused by faults. The problems in implementing replica-­ deterministic fault-tolerant software have already been discussed in Sect. 5.6 .
+There are many different possible combinations of hardware, software, and time redundancy that can be used to detect different types of failures by performing the computations twice. Of course, both computations must be replica determinate; otherwise, many more discrepancies are detected between the redundant channels than those that are actually caused by faults. The problems in implementing replica-­ deterministic fault-tolerant software have already been discussed in Sect. 5.6 .
 
 > 硬件、软件和时间冗余有许多不同的可能组合，可以通过执行两次计算来检测不同类型的故障。当然，这两种计算都必须是副本确定的；否则，在冗余通道之间检测到的差异比实际由故障引起的差异要多得多。第 2 节已经讨论了实现副本确定性容错软件的问题。5.6 .
 
@@ -5808,7 +5837,7 @@ What can we learn from this example? We should never build a safety-critical sys
 
 ## 6.4 Fault Tolerance
 
-Example: Let us assume that the fault hypothesis states that during a specified time inter­ val, a fault of any single component must be tolerated. The case that two components fail simultaneously is thus outside the fault hypothesis, because it is considered to be a rare fault . If the simultaneous failure of two components is detected, then the NGU strategy kicks in. In the NGU strategy, it is assumed that the simultaneous faults are transient and a fast restart of the complete system will bring the system back into a correct state. In order to be able to promptly activate the NGU strategy, we must have a detection mechanism inside the system that detects the violation of the fault hypothesis. A distributed fault-­ tolerant membership service, such as the membership protocol contained in the time-­ triggered protocol (TTP) [Kop93], implements such a detection mechanism.
+Example: Let us assume that the fault hypothesis states that during a specified time inter­ val, a fault of any single component must be tolerated. The case that two components fail simultaneously is thus outside the fault hypothesis, because it is considered to be a rare fault. If the simultaneous failure of two components is detected, then the NGU strategy kicks in. In the NGU strategy, it is assumed that the simultaneous faults are transient and a fast restart of the complete system will bring the system back into a correct state. In order to be able to promptly activate the NGU strategy, we must have a detection mechanism inside the system that detects the violation of the fault hypothesis. A distributed fault-­ tolerant membership service, such as the membership protocol contained in the time-­ triggered protocol (TTP) [Kop93], implements such a detection mechanism.
 
 > 示例：让我们假设故障假设指出，在指定的时间间隔内，必须容忍任何单个组件的故障。因此，两个组件同时发生故障的情况不在故障假设的范围内，因为这被认为是一种罕见的故障。如果检测到两个组件同时发生故障，则启动 NGU 策略。在 NGU 策略中，假设同时发生的故障是暂时的，整个系统的快速重启将使系统恢复到正确的状态。为了能够及时激活 NGU 策略，我们必须在系统内部有一个检测机制来检测对故障假设的违反。分布式容错成员服务，如时间触发协议(TTP)[Kop93]中包含的成员协议，实现了这种检测机制。
 
@@ -5862,7 +5891,7 @@ A TMR configuration that is set up according to the above specified rules will t
 
 > 根据上述规定规则设置的 TMR 配置将容忍任何 FCU 和任何通信系统的任意故障，前提是容错全局时基可用。
 
-Two different kinds of voting strategies can be distinguished: exact voting and inexact voting . In exact voting , a bit-by-bit comparison of the data fields in the result messages of the three FCUs forming an FTU is performed. If two out of the three available messages have exactly the same bit pattern, then one of the two messages is selected as the output of the triad. The underlying assumption is that correctly operating replica-determinate components produce exactly the same results. Exact voting requires that the input messages and the g-state of the three FCUs that form an FTU are bit-identical . If the inputs originate from redundant sensors to the physi­ cal environment, an agreement protocol must be executed to enforce bit-identical input messages.
+Two different kinds of voting strategies can be distinguished: exact voting and inexact voting. In exact voting , a bit-by-bit comparison of the data fields in the result messages of the three FCUs forming an FTU is performed. If two out of the three available messages have exactly the same bit pattern, then one of the two messages is selected as the output of the triad. The underlying assumption is that correctly operating replica-determinate components produce exactly the same results. Exact voting requires that the input messages and the g-state of the three FCUs that form an FTU are bit-identical. If the inputs originate from redundant sensors to the physi­ cal environment, an agreement protocol must be executed to enforce bit-identical input messages.
 
 > 可以区分两种不同的投票策略：精确投票和不精确投票。在精确投票中，对形成 FTU 的三个 FCU 的结果消息中的数据字段进行逐位比较。如果三个可用消息中有两个具有完全相同的位模式，则选择这两个消息中的一个作为三元组的输出。基本假设是，正确操作副本确定组件会产生完全相同的结果。精确投票要求组成 FTU 的三个 FCU 的输入消息和 g 状态位相同。如果输入来自物理环境的冗余传感器，则必须执行协议以强制执行位相同的输入消息。
 
@@ -5894,7 +5923,7 @@ An example of an architecture that tolerates Byzantine failures of the compo­ n
 
 ### 6.4.3 The Membership Service
 
-The failure of an FTU must be reported in a consistent manner to all operating FTUs with a low latency. This is the task of the membership service . A point in real time when the membership of a component can be established is called a membership point of the component. A small temporal delay between the membership point of a component and the instant when all other components of the ensemble are informed in a consistent manner about the current membership is critical for the correct oper­ ation of many safety-relevant applications. The consistent activation of a never-­ give-­up (NGU) strategy in case the fault hypothesis is violated is another important function of the membership service.
+The failure of an FTU must be reported in a consistent manner to all operating FTUs with a low latency. This is the task of the membership service. A point in real time when the membership of a component can be established is called a membership point of the component. A small temporal delay between the membership point of a component and the instant when all other components of the ensemble are informed in a consistent manner about the current membership is critical for the correct oper­ ation of many safety-relevant applications. The consistent activation of a never-­ give-­up (NGU) strategy in case the fault hypothesis is violated is another important function of the membership service.
 
 > FTU 的故障必须以一致的方式以低延迟报告给所有正在运行的 FTU。这是会员服务的任务。可以建立组件成员资格的实时点称为组件的成员点。从组件的成员点到以一致的方式通知集成的所有其他组件当前成员的时刻之间的小时间延迟对于许多安全相关应用的正确操作至关重要。在违反故障假设的情况下，持续激活永不放弃(NGU)策略是会员服务的另一个重要功能。
 
@@ -5945,7 +5974,7 @@ Example: [Kop21] presents a fail-operational architecture for self-driving cars.
 
 ### 6.5.2 The Concept of Resilience
 
-Resilience is defined as the persistence of dependability when facing changes [Lap08]. These changes can be classified in three dimensions: nature (functional, environmental, or technological) , prospect (foreseen or unforeseen) , and timing (seconds to years) . Resilience is, thus, a broad concept. Indeed, several concepts discussed in this book directly contribute to the resilience of a system.
+Resilience is defined as the persistence of dependability when facing changes [Lap08]. These changes can be classified in three dimensions: nature (functional, environmental, or technological) , prospect (foreseen or unforeseen) , and timing (seconds to years). Resilience is, thus, a broad concept. Indeed, several concepts discussed in this book directly contribute to the resilience of a system.
 
 > 弹性被定义为在面对变化时保持可靠性[Lap08]。这些变化可以分为三个维度：自然(功能、环境或技术)、前景(可预见或不可预见)和时间(秒到年)。因此，韧性是一个广泛的概念。事实上，本书中讨论的几个概念直接有助于系统的弹性。
 
@@ -5977,7 +6006,7 @@ While a failure can occur at an arbitrary moment outside the control of the syst
 
 > 虽然故障可能发生在系统设计者无法控制的任意时刻，但系统设计者可以计划修复组件的适当重新集成点。在实时系统中重新集成组件的过程中，关键问题是找到组件状态与组件环境(即集群的其他组件和物理工厂)同步的未来时间点。由于实时数据会随着时间的推移而失效，因此回滚到过去的检查点可能是徒劳的：时间的推移可能已经使检查点信息失效(另见表 4.1)。
 
-Reintegration is simplified if the state that must be reloaded into the re integrating component is of small size and fits into a single message. Since the size of the state has a relative minimum immediately after the completion of an atomic operation, this is an ideal instant for the reintegration of a component. In Sect. 4.2.3 we have introduced the notion of the $g$ -state (ground state) to refer to the state at the reinte­ gration instant . In cyclic systems—many embedded control and multimedia sys­ tems are cyclic—an ideal reintegration instant of a component is at the beginning of a new cycle. The temporal distance between two consecutive reintegration instants, the reintegration cycle, is then identical to the duration of the control cycle. If the g-state is empty at the reintegration instant, then the reintegration of a repaired com­ ponent is trivial at this moment. In many situations, however, there is no instant during the lifetime of a component when its $\mathrm{g}.$ -state is completely empty.
+Reintegration is simplified if the state that must be reloaded into the re integrating component is of small size and fits into a single message. Since the size of the state has a relative minimum immediately after the completion of an atomic operation, this is an ideal instant for the reintegration of a component. In Sect. 4.2.3 we have introduced the notion of the $g$ -state (ground state) to refer to the state at the reinte­ gration instant. In cyclic systems—many embedded control and multimedia sys­ tems are cyclic—an ideal reintegration instant of a component is at the beginning of a new cycle. The temporal distance between two consecutive reintegration instants, the reintegration cycle, is then identical to the duration of the control cycle. If the g-state is empty at the reintegration instant, then the reintegration of a repaired com­ ponent is trivial at this moment. In many situations, however, there is no instant during the lifetime of a component when its $\mathrm{g}.$ -state is completely empty.
 
 > 如果必须重新加载到重新集成组件中的状态大小较小并且适合单个消息，则可以简化重新集成。由于原子操作完成后，状态的大小立即达到相对最小值，因此这是组件重新集成的理想时刻。在门派。4.2.3 我们引入了$g$-state(基态)的概念，指的是重新融合时刻的状态。在循环系统中——许多嵌入式控制和多媒体系统都是循环的——组件的理想重新集成时刻是新循环的开始。两个连续的重新整合时刻之间的时间距离，即重新整合周期，与控制周期的持续时间相同。如果 g 状态在重新整合的瞬间是空的，那么此时修复的组件的重新整合是微不足道的。然而，在许多情况下，在组件的生命周期中，没有一个时刻是它的$\mathrm{g}.$-国家完全是空的。
 
@@ -6061,7 +6090,7 @@ operational component decides the mode of the controlled object and selects the 
 
 > •任何安全架构中必须支持的基本加密原语是对称密钥加密、公钥加密、哈希函数和随机数生成。
 
-• An anomaly is a system state that lies in the gray zone between correct and erro­ neous . The detection of anomalies is important, since the occurrence of an anom­ aly is an indication that some atypical scenario that may require immediate corrective action is developing (e.g., the intrusion by an adversary).
+• An anomaly is a system state that lies in the gray zone between correct and erro­ neous. The detection of anomalies is important, since the occurrence of an anom­ aly is an indication that some atypical scenario that may require immediate corrective action is developing (e.g., the intrusion by an adversary).
 
 > •异常是位于正确和错误之间的灰色地带的系统状态。异常检测很重要，因为异常的发生表明可能需要立即采取纠正措施的非典型情况正在发展(例如，对手的入侵)。
 
@@ -6213,7 +6242,7 @@ The most important requirement of a real-time network is guaranteed message-­ t
 
 Guaranteed Message-Transport Latency A network is a real-time network, if and only if a bound for the worst-case message-transport latency for time-critical mes­ sages can be determined by analysis, and this bound holds during operation with $a$ sufficiently high probability. In hard real-time systems, said probability evolves toward a requirement of a de facto guarantee. For example, a common reliability requirement for ultrahigh dependable systems (e.g., airplanes) requires a failure rate of $10^{-9}$ failures/hour. It is this guarantee that common IT network technologies do not meet. The target values for the latency and its bound, on the other hand, are determined by the needs of the specific real-time application. It is, thus, also the concrete real-time application that determines whether a particular network tech­ nology is suitable as a real-time network or not. In many real-time systems, mini­ mizing the worst-case message-transport latency will directly yield quality improvements on the system level. For example, if the real-time system implements a real-time transaction (see Sect. 1.7.3 ) that starts with the acquisition of sensor values and terminates with providing output to an actuator, minimizing the message-­ transport latency reduces the response time of the real-time system’s control loop and thereby improves control stability and control quality.
 
-> 保证消息传输延迟当且仅当可以通过分析确定时间关键消息的最坏消息传输延迟的界限，并且该界限在操作过程中以足够高的概率成立时，网络才是实时网络。在硬实时系统中，所述概率朝着事实保证的要求发展。例如，超高可靠性系统(如飞机)的常见可靠性要求要求故障率为每小时 10^{-9}$ 故障。正是这种保证，常见的 It 网络技术无法满足。另一方面，延迟及其界限的目标值由特定实时应用程序的需求决定。因此，具体的实时应用程序也决定了特定的网络技术是否适合作为实时网络。在许多实时系统中，最小化最坏情况下的消息传输延迟将直接提高系统级别的质量。例如，如果实时系统实现了一个实时事务(见第 1.7.3 节)，该事务从传感器值的采集开始，到向执行器提供输出结束，那么最小化消息传输延迟可以缩短实时系统控制回路的响应时间，从而提高控制稳定性和控制质量。
+> 保证消息传输延迟当且仅当可以通过分析确定时间关键消息的最坏消息传输延迟的界限，并且该界限在操作过程中以足够高的概率成立时，网络才是实时网络。在硬实时系统中，所述概率朝着事实保证的要求发展。例如，超高可靠性系统(如飞机)的常见可靠性要求要求故障率为每小时 10^{-9}$ 故障。正是这种保证，常见的 It 网络技术无法满足。另一方面，延迟及其界限的目标值由特定实时应用程序的需求决定。因此，具体的实时应用程序也决定了特定的网络技术是否适合作为实时网络。在许多实时系统中，最小化最坏情况下的消息传输延迟将直接提高系统级别的质量。例如，如果实时系统实现了一个实时事务(见第 1.7.3 节)，该事务从传感器值的采集开始，到向执行器提供输出结束，那么最小化消息传输延迟可以缩短实时系统控制回路(control loops)的响应时间，从而提高控制稳定性和控制质量。
 
 Bounded Message-Transport Jitter The jitter is the difference between the worst-­ case and the best-case message-transport latencies. A large jitter has a negative effect on the duration of the action delay (see Sect. 5.5.1 ) and the precision of the clock synchronization (see Sect. 3.1.3 ).
 
@@ -6229,7 +6258,7 @@ Communication Reliability Messages in transport may be lost or corrupted in the 
 
 > 传输中的通信可靠性消息在时域和值域中可能会丢失或损坏。因此，实时网络通常采用冗余机制。丢失的消息通过空间冗余来补偿，即沿着不相交的通信路径传输，或通过时间冗余来补偿。在利用低消息传输延迟的实时系统中，空间冗余是可取的，因为消息的冗余副本可以并行传输。损坏的消息通常通过消息本身的数据冗余来解决。提高消息完整性的数据冗余技术包括错误检测和纠错码、时间戳和序列号。我们称通信可靠性为在应用了所有实现的消息传输冗余机制后，实时网络成功传输消息的概率。
 
-Fault Containment The real-time network must implement traffic-policing meth­ ods when multiple nodes use the same network resource (e.g., they are connected through the same physical bus or share the same network switch). Otherwise, faulty nodes may use the resource beyond their specified quota and limit its use to non-­ faulty nodes. Traffic-policing methods can be implemented at the boundary of the real-time network as part of the distributed nodes themselves, called fault contain­ ment at the source . Here, an independent component local to the node monitors the node’s communication behavior and intervenes if this behavior diverges from its specification. For example, it may shut down the complete node. On the other hand, traffic policing will often be implemented inside the real-time network, e.g., in a network switch. A common traffic-policing method, both at the source and in the network , is the leaky bucket algorithm , which only allows a node to transmit a speci­ fied amount of data within a specified interval.
+Fault Containment The real-time network must implement traffic-policing meth­ ods when multiple nodes use the same network resource (e.g., they are connected through the same physical bus or share the same network switch). Otherwise, faulty nodes may use the resource beyond their specified quota and limit its use to non-­ faulty nodes. Traffic-policing methods can be implemented at the boundary of the real-time network as part of the distributed nodes themselves, called fault contain­ ment at the source. Here, an independent component local to the node monitors the node’s communication behavior and intervenes if this behavior diverges from its specification. For example, it may shut down the complete node. On the other hand, traffic policing will often be implemented inside the real-time network, e.g., in a network switch. A common traffic-policing method, both at the source and in the network , is the leaky bucket algorithm , which only allows a node to transmit a speci­ fied amount of data within a specified interval.
 
 > 故障控制当多个节点使用相同的网络资源时(例如，它们通过相同的物理总线连接或共享相同的网络交换机)，实时网络必须实施流量监管方法。否则，故障节点可能会使用超出其指定配额的资源，并将其使用限制在非故障节点。流量监管方法可以在实时网络的边界实现，作为分布式节点本身的一部分，称为源头故障控制。在这里，节点本地的一个独立组件监视节点的通信行为，并在这种行为偏离其规范时进行干预。例如，它可能会关闭整个节点。另一方面，交通监管通常会在实时网络内部实施，例如在网络交换机中。在源和网络中，一种常见的流量监管方法是漏桶算法，它只允许节点在指定的时间间隔内传输指定数量的数据。
 
@@ -6261,7 +6290,7 @@ Communication Bandwidth The required communication bandwidth for a real-­ time 
 
 > 通信带宽实时图像所需的通信带宽由其大小和最大更新频率决定。所需的带宽可能因实时实体的类型和用例而异，例如，从 10 美元的室温传感器的几比特/秒到用于自动驾驶汽车的超高清摄像头的几吉比特/秒。
 
-The acronym SWaP $C$ stands for the system aspects: size, weight, power, and cost . While power and cost are important factors in basically every real-time sys­ tem, weight and size are especially crucial in mobile real-time systems like automo­ biles, airplanes, or spacecrafts.
+The acronym SWaP $C$ stands for the system aspects: size, weight, power, and cost. While power and cost are important factors in basically every real-time sys­ tem, weight and size are especially crucial in mobile real-time systems like automo­ biles, airplanes, or spacecrafts.
 
 > 缩写 SWaP$C$代表系统方面：尺寸、重量、功率和成本。虽然功率和成本基本上是每个实时系统的重要因素，但重量和尺寸在汽车、飞机或航天器等移动实时系统中尤为重要。
 
@@ -6289,7 +6318,7 @@ Shared Resource Multiple senders share the resource. The resource is, for exam­
 
 > 共享资源多个发件人共享资源。例如，资源是物理总线、网络集线器或网络交换机中的消息缓冲区。
 
-Example—Resources in Switched Ethernet: Nodes connect with bidirectional communi­ cation links to Ethernet switches. The unidirectional portion of the link from the sender to a switch is an individual resource . All other communication links and the message buffers in the network switches are shared resources .
+Example—Resources in Switched Ethernet: Nodes connect with bidirectional communi­ cation links to Ethernet switches. The unidirectional portion of the link from the sender to a switch is an individual resource. All other communication links and the message buffers in the network switches are shared resources .
 
 > 示例——交换式以太网中的资源：节点通过双向通信链路连接到以太网交换机。从发送方到交换机的单向链路部分是一个单独的资源。网络交换机中的所有其他通信链路和消息缓冲区都是共享资源。
 
@@ -6351,7 +6380,7 @@ From a complexity point of view, explicit flow control introduces control of the
 
 ### 7.2.4 Design Limitations
 
-Any physical communication channel is characterized by its bandwidth and its propagation delay . The bandwidth denotes the number of bits that can traverse the channel in unit time. The length of the channel and the transmission speed of the wave (electromagnetic, optical) within the channel determine the propagation delay , which is the duration it takes for a single bit to travel from one end of the channel to the other end. Because the transmission speed of a wave in a cable is approximately 2/3 of the transmission speed of light in a vacuum (about 300,000 $\mathrm{km/s})$ ), it takes a signal about $5~\upmu\mathrm{s}$ to travel across a cable of $1\;\mathrm{km}$ length. The term bit length of a channel denotes the number of bits that can reside in the channel within one propagation delay.
+Any physical communication channel is characterized by its bandwidth and its propagation delay. The bandwidth denotes the number of bits that can traverse the channel in unit time. The length of the channel and the transmission speed of the wave (electromagnetic, optical) within the channel determine the propagation delay , which is the duration it takes for a single bit to travel from one end of the channel to the other end. Because the transmission speed of a wave in a cable is approximately 2/3 of the transmission speed of light in a vacuum (about 300,000 $\mathrm{km/s})$ ), it takes a signal about $5~\upmu\mathrm{s}$ to travel across a cable of $1\;\mathrm{km}$ length. The term bit length of a channel denotes the number of bits that can reside in the channel within one propagation delay.
 
 > 任何物理通信信道都以其带宽和传播延迟为特征。带宽表示单位时间内可以遍历信道的比特数。信道的长度和信道内波(电磁波、光波)的传输速度决定了传播延迟，即单个比特从信道一端传播到另一端所需的持续时间。因为电缆中波的传输速度大约是真空中光传输速度的 2/3(约 300000 美元/秒)，所以信号需要大约 5 美元才能穿过 1 美元的电缆；\mathrm{km}$ 长度。信道的术语比特长度表示在一个传播延迟内可以驻留在信道中的比特数。
 
@@ -6361,7 +6390,7 @@ Example: If the channel bandwidth is 100 Mbit/s and the channel is $200~\mathrm{
 
 ### 7.2.4.1 Bus-Based Real-Time Networks
 
-In a bus, only one node may send a message at a time. Otherwise the multiple mes­ sages’ signals collide and cause interference on the bus. This interference will lead to message loss, in some cases even asymmetric message loss: some nodes will receive a message correctly, while others will not. Two types of media-access pro­ tocols exist: collision-detection protocols detect and resolve message collisions as they occur, and collision avoidance protocols prevent collisions from happening. Both protocol types require the nodes to sense the bus and distinguish between bus activity and bus idle phases. The minimum duration of the bus idle phase equals the propagation delay because only then do all nodes reliably sense bus idle . From this lower bound on bus idle follows the data efficiency in a physical bus as a function of its message length $m$ and bit length $b l$ :
+In a bus, only one node may send a message at a time. Otherwise the multiple mes­ sages’ signals collide and cause interference on the bus. This interference will lead to message loss, in some cases even asymmetric message loss: some nodes will receive a message correctly, while others will not. Two types of media-access pro­ tocols exist: collision-detection protocols detect and resolve message collisions as they occur, and collision avoidance protocols prevent collisions from happening. Both protocol types require the nodes to sense the bus and distinguish between bus activity and bus idle phases. The minimum duration of the bus idle phase equals the propagation delay because only then do all nodes reliably sense bus idle. From this lower bound on bus idle follows the data efficiency in a physical bus as a function of its message length $m$ and bit length $b l$ :
 
 > 在总线中，一次只能有一个节点发送消息。否则，多个消息的信号会碰撞并在总线上造成干扰。这种干扰会导致消息丢失，在某些情况下甚至会导致非对称消息丢失：一些节点会正确接收消息，而另一些节点则不会。存在两种类型的媒体访问协议：冲突检测协议在发生消息冲突时检测并解决冲突，冲突避免协议防止冲突发生。这两种协议类型都要求节点感知总线，并区分总线活动和总线空闲阶段。总线空闲阶段的最短持续时间等于传播延迟，因为只有到那时，所有节点才能可靠地检测到总线空闲。根据总线空闲的下限，物理总线中的数据效率与其消息长度[m$和比特长度$bl$ 有关：
 
@@ -6409,7 +6438,7 @@ Wireless real-time networks are also common in real-time systems. Wireless proto
 
 ### 7.2.5.1 Misconception of Subsystem Scope
 
-Subsystem Scope The real-time network is only a subsystem of an overall real-­ time system. It is, thus, crucial to understand its subsystem scope . A real-time net­ work technology must implement the previously discussed requirements but may provide services that go well beyond. Examples of higher-level network services are group membership or file-transfer protocols. The subsystem scope may include such services. On the other hand, the real-time system will implement mechanisms clearly outside the subsystem scope . For example, monitoring whether a message reception has a physical effect on the controlled object is out of the scope of a com­ munication subsystem. The research problem of which functions to include in a communication system and which not (also generally applicable to real-time net­ works) has been originally presented by Saltzer et al. [Sal84].
+Subsystem Scope The real-time network is only a subsystem of an overall real-­ time system. It is, thus, crucial to understand its subsystem scope. A real-time net­ work technology must implement the previously discussed requirements but may provide services that go well beyond. Examples of higher-level network services are group membership or file-transfer protocols. The subsystem scope may include such services. On the other hand, the real-time system will implement mechanisms clearly outside the subsystem scope. For example, monitoring whether a message reception has a physical effect on the controlled object is out of the scope of a com­ munication subsystem. The research problem of which functions to include in a communication system and which not (also generally applicable to real-time net­ works) has been originally presented by Saltzer et al. [Sal84].
 
 > 子系统范围实时网络只是整个实时系统的一个子系统。因此，了解其子系统范围至关重要。实时网络技术必须实现前面讨论的要求，但可能提供远远超出这些要求的服务。高级网络服务的示例是组成员资格或文件传输协议。子系统范围可能包括此类服务。另一方面，实时系统将实现子系统范围之外的机制。例如，监控消息接收是否对受控对象产生物理影响超出了通信子系统的范围。Saltzer 等人最初提出了通信系统中包含哪些功能以及不包含哪些功能(通常也适用于实时网络)的研究问题。[Sal84]。
 
@@ -6433,13 +6462,13 @@ Networks designed for the average case instead of the worst case will fail to de
 
 > 为平均情况而不是最坏情况设计的网络将无法满足实时网络的及时性要求。平均情况设计的一个例子是抖动。
 
-Thrashing In an ideal system, growing demand for a shared resource is served as long as there are free resource capacities. In reality, an arbitration scheme that man­ ages the resource to demand allocation can cause an arbitration overhead prevent­ ing the resource from being fully utilized. Some arbitration schemes suffer from thrashing : their arbitration overhead grows rapidly when the demand exceeds a certain level, called the thrashing point , causing even lower resource utilization than at lower demands. For example, the carrier-sense multiple access collision-­detection protocol of Ethernet is susceptible to thrashing (see Sect. 7.3.2 ). Arbitration schemes with thrashing can be acceptable for non critical systems if the average use case is below the thrashing point . However, hard real-time systems must be free of thrash­ ing effects.
+Thrashing In an ideal system, growing demand for a shared resource is served as long as there are free resource capacities. In reality, an arbitration scheme that man­ ages the resource to demand allocation can cause an arbitration overhead prevent­ ing the resource from being fully utilized. Some arbitration schemes suffer from thrashing : their arbitration overhead grows rapidly when the demand exceeds a certain level, called the thrashing point , causing even lower resource utilization than at lower demands. For example, the carrier-sense multiple access collision-­detection protocol of Ethernet is susceptible to thrashing (see Sect. 7.3.2 ). Arbitration schemes with thrashing can be acceptable for non critical systems if the average use case is below the thrashing point. However, hard real-time systems must be free of thrash­ ing effects.
 
 > 在理想的系统中，只要有空闲的资源容量，对共享资源的需求就会不断增长。事实上，将资源分配给需求分配的仲裁方案可能会导致仲裁开销，从而阻碍资源的充分利用。一些仲裁方案会受到颠簸的影响：当需求超过一定水平(称为颠簸点)时，它们的仲裁开销会迅速增长，导致资源利用率甚至低于较低需求。例如，以太网的载波侦听多址冲突检测协议容易受到抖动的影响(见第 7.3.2 节)。如果平均用例低于抖动点，则非关键系统可以接受具有抖动的仲裁方案。然而，硬实时系统必须没有抖动效应。
 
 ## 7.3 Event-Triggered Communication
 
-The different message types (event-triggered, rate-constrained, and time-triggered) differ in which a priori system information is available (and how the real-time net­ work uses it). Event-triggered messages may not have a priori system information at all. This is attractive for non-real-time systems as it minimizes the configuration burden and simplifies plug-and-play . However, such a priori system information is required to calculate bounds on the worst-case message-transport latencies in a real-­ time system. Thus, if a real-time system implements a shared network based on event-triggered messages, the analysis of their worst-case message-transport latencies cannot be addressed as an isolated problem . It is always integrated with a holistic real-time system analysis that couples the analysis of distributed real-time task executions with their communication. It is impossible to provide temporal guarantees for event-triggered messages independently from the complete real-time system analysis.
+The different message types (event-triggered, rate-constrained, and time-triggered) differ in which a priori system information is available (and how the real-time net­ work uses it). Event-triggered messages may not have a priori system information at all. This is attractive for non-real-time systems as it minimizes the configuration burden and simplifies plug-and-play. However, such a priori system information is required to calculate bounds on the worst-case message-transport latencies in a real-­ time system. Thus, if a real-time system implements a shared network based on event-triggered messages, the analysis of their worst-case message-transport latencies cannot be addressed as an isolated problem. It is always integrated with a holistic real-time system analysis that couples the analysis of distributed real-time task executions with their communication. It is impossible to provide temporal guarantees for event-triggered messages independently from the complete real-time system analysis.
 
 > 不同的消息类型(事件触发、速率约束和时间触发)在哪些先验系统信息可用(以及实时网络如何使用它)方面有所不同。事件触发的消息可能根本没有先验系统信息。这对非实时系统很有吸引力，因为它最大限度地减少了配置负担，简化了即插即用。然而，在实时系统中，需要这种先验系统信息来计算最坏情况下消息传输延迟的界限。因此，如果实时系统基于事件触发消息实现共享网络，则对其最坏情况下的消息传输延迟的分析不能作为一个孤立的问题来解决。它始终与整体实时系统分析相结合，将分布式实时任务执行的分析与其通信相结合。不可能独立于完整的实时系统分析为事件触发消息提供时间保证。
 
@@ -6451,7 +6480,7 @@ In bus-based networks, the media-access protocol of the network determines the p
 
 > 在基于总线的网络中，网络的媒体访问协议决定了从多个发送方的通信子系统选择传输消息的时间点。一旦网络从发送方选择了一条消息，它就会直接将其传递给接收节点的通信子系统。
 
-In switch-based networks, a sender’s communication subsystem may immedi­ ately transmit the event-triggered message to its directly connected switch unless the switch exerts back pressure flow control . Then, the switch will forward the mes­ sage to further switches and the final receiving nodes’ communication subsystems.
+In switch-based networks, a sender’s communication subsystem may immedi­ ately transmit the event-triggered message to its directly connected switch unless the switch exerts back pressure flow control. Then, the switch will forward the mes­ sage to further switches and the final receiving nodes’ communication subsystems.
 
 > 在基于交换机的网络中，除非交换机施加背压流控制，否则发送方的通信子系统可能会立即将事件触发的消息传输到其直接连接的交换机。然后，交换机将消息转发给其他交换机和最终接收节点的通信子系统。
 
@@ -6493,11 +6522,11 @@ While, in principle, a holistic analysis of the total real-time system could als
 
 ## 7.4 Rate-Constrained Communication
 
-We can calculate bounds for worst-case message-transport latencies in a real-time network when each node limits the number and size of these messages it sends per given time interval and makes this information a priori available for analysis. We call these messages rate-constrained messages . Still, these messages may collide, but we can adequately dimension the network’s resources to resolve these colli­ sions. These resources will be the shared message buffers in switched networks into which the messages are enqueued as a temporary buffer. In a physical bus, these resources are individual resources in the nodes’ communication subsystems.
+We can calculate bounds for worst-case message-transport latencies in a real-time network when each node limits the number and size of these messages it sends per given time interval and makes this information a priori available for analysis. We call these messages rate-constrained messages. Still, these messages may collide, but we can adequately dimension the network’s resources to resolve these colli­ sions. These resources will be the shared message buffers in switched networks into which the messages are enqueued as a temporary buffer. In a physical bus, these resources are individual resources in the nodes’ communication subsystems.
 
 > 当每个节点限制其在给定时间间隔内发送的这些消息的数量和大小，并使这些信息先验地可用于分析时，我们可以计算实时网络中最坏情况消息传输延迟的界限。我们称这些消息为速率受限消息。尽管如此，这些消息可能会发生冲突，但我们可以对网络资源进行充分的维度分析，以解决这些冲突。这些资源将是交换网络中的共享消息缓冲区，消息作为临时缓冲区排队。在物理总线中，这些资源是节点通信子系统中的单独资源。
 
-Example: In a 100 Mbit/s Ethernet network of three nodes connected via a single store-­ and-­forward switch, where two nodes send a 10,000-bit message each to the third node, the queuing delay for each message is at maximum the transmission time of the respective other message, which is $100~\upmu\mathrm{s}$ . If there are 100 sending nodes instead of 2, the queuing delay increases to 10 milliseconds.
+Example: In a 100 Mbit/s Ethernet network of three nodes connected via a single store-­ and-­forward switch, where two nodes send a 10,000-bit message each to the third node, the queuing delay for each message is at maximum the transmission time of the respective other message, which is $100~\upmu\mathrm{s}$. If there are 100 sending nodes instead of 2, the queuing delay increases to 10 milliseconds.
 
 > 示例：在一个由三个节点通过单个存储转发交换机连接的 100 Mbit/s 以太网网络中，其中两个节点分别向第三个节点发送 10000 位消息，每条消息的排队延迟最大为另一条消息的传输时间，即 100 美元。如果有 100 个发送节点而不是 2 个，排队延迟将增加到 10 毫秒。
 
@@ -6511,7 +6540,7 @@ When the avionics industry developed the Integrated Modular Avionics (IMA) para�
 
 > 当航空电子行业开发出综合模块化航空电子(IMA)方案时，根据该方案，计算节点每个都集成了多种功能，这也产生了对更强大的实时网络的需求，以将这些节点互连。为此，开发了航空电子全双工交换以太网(AFDX)技术。AFDX 是一种 100 Mbit/s 的实时以太网变体，标准化为 ARINC 664 第 7 部分。
 
-Virtual Links AFDX messages are standard Ethernet multicast messages. Each AFDX message has a unique sender and one or many receivers. An AFDX network is a switch-based network with statically configured communication paths for all AFDX messages. AFDX calls the sum of the communication paths for an AFDX message from its sender to all its receivers a virtual link . Indeed, each AFDX mes­ sage is identified by its virtual link identifier (VL ID), which is encoded in the last 16 bits of its destination address field . An AFDX switch, upon reception of an AFDX message, can determine its ports to forward said message simply by a table lookup.
+Virtual Links AFDX messages are standard Ethernet multicast messages. Each AFDX message has a unique sender and one or many receivers. An AFDX network is a switch-based network with statically configured communication paths for all AFDX messages. AFDX calls the sum of the communication paths for an AFDX message from its sender to all its receivers a virtual link. Indeed, each AFDX mes­ sage is identified by its virtual link identifier (VL ID), which is encoded in the last 16 bits of its destination address field. An AFDX switch, upon reception of an AFDX message, can determine its ports to forward said message simply by a table lookup.
 
 > 虚拟链路 AFDX 消息是标准的以太网多播消息。每条 AFDX 消息都有一个唯一的发送者和一个或多个接收者。AFDX 网络是一种基于交换机的网络，为所有 AFDX 消息静态配置通信路径。AFDX 将 AFDX 消息从发送方到所有接收方的通信路径之和称为虚拟链路。事实上，每个 AFDX 消息都由其虚拟链路标识符(VL ID)标识，该标识符编码在其目的地址字段的最后 16 位中。AFDX 交换机在接收到 AFDX 消息后，可以通过简单的表查找来确定其转发所述消息的端口。
 
@@ -6519,7 +6548,7 @@ Bandwidth Allocation Gap (BAG) AFDX messages are rate-constrained messages where
 
 > 带宽分配间隙(BAG)AFDX 消息是速率受限的消息，其中速率由 1/BAG 决定。BAG 是一个可配置的参数，范围为 1ms 到 $128~\mathrm{ms}$(以 2 的幂为步长)。
 
-Traffic Shaping and Traffic Policing The sending node’s communication subsys­ tem shapes the outing traffic to establish a minimum time between transmitting two messages on the same virtual link . AFDX switches monitor these times and discard messages if they do not meet their inter-arrival time ( traffic policing ). Traffic shap­ ing and traffic policing ensure that nodes adhere to their a priori message rates and sizes, and the aforementioned mathematical analysis frameworks return sound results.
+Traffic Shaping and Traffic Policing The sending node’s communication subsys­ tem shapes the outing traffic to establish a minimum time between transmitting two messages on the same virtual link. AFDX switches monitor these times and discard messages if they do not meet their inter-arrival time ( traffic policing ). Traffic shap­ ing and traffic policing ensure that nodes adhere to their a priori message rates and sizes, and the aforementioned mathematical analysis frameworks return sound results.
 
 > 流量整形和流量监管发送节点的通信子系统对出站流量进行整形，以确定在同一虚拟链路上传输两条消息之间的最短时间。AFDX 交换机监控这些时间，如果消息不符合到达时间间隔(交通管制)，则丢弃消息。流量统计和流量监管确保节点遵守其先验消息速率和大小，上述数学分析框架返回可靠的结果。
 
@@ -6537,7 +6566,7 @@ Many real-time extensions to Ethernet exist, but AVB has been the first one stan
 
 > 以太网存在许多实时扩展，但 AVB 是 IEEE 标准化协会(IEEE SA)内第一个标准化的扩展，其次是时间敏感网络(见第 7.5.3 节)。它针对分布式音频和视频应用，包括专业工作室设备、活动厅和车载信息娱乐网络。AVB 可以部署在具有 100 Mbit/s 或更高带宽的交换以太网中。
 
-AVB Streams AVB messages are VLAN-tagged Ethernet multicast frames where the sending node of a message is called the talker and the receiving nodes are called the listeners . The related messages a talker sends to the listeners are called a stream , and a node may be talker of multiple streams. AVB establishes the communication between talkers and listeners at runtime using the stream reservation protocol (SRP). AVB streams are classified into SR Class A and $S R$ Class $B$ streams by the priority field in the VLAN tag of Ethernet frames. AVB messages are rate-­constrained messages where the rate is defined by the amount of data a talker may transmit per Class Measurement Interval (CMI). The CMI is $125~\upmu\mathrm{s}$ for SR Class A and $250~\upmu\mathrm{s}$ for SR Class B. The amount of data a talker may transmit per CMI is determined at runtime by SRP.
+AVB Streams AVB messages are VLAN-tagged Ethernet multicast frames where the sending node of a message is called the talker and the receiving nodes are called the listeners. The related messages a talker sends to the listeners are called a stream , and a node may be talker of multiple streams. AVB establishes the communication between talkers and listeners at runtime using the stream reservation protocol (SRP). AVB streams are classified into SR Class A and $S R$ Class $B$ streams by the priority field in the VLAN tag of Ethernet frames. AVB messages are rate-­constrained messages where the rate is defined by the amount of data a talker may transmit per Class Measurement Interval (CMI). The CMI is $125~\upmu\mathrm{s}$ for SR Class A and $250~\upmu\mathrm{s}$ for SR Class B. The amount of data a talker may transmit per CMI is determined at runtime by SRP.
 
 > AVB 流 AVB 消息是 VLAN 标记的以太网多播帧，其中消息的发送节点称为发送器，接收节点称为侦听器。讲话者发送给听众的相关消息称为流，一个节点可能是多个流的讲话者。AVB 在运行时使用流预留协议(SRP)在讲话者和听众之间建立通信。AVB 流根据以太网帧的 VLAN 标签中的优先级字段分为 SR A 类和$S R$类$B$流。AVB 消息是速率受限的消息，其中速率由讲话者在每个类测量间隔(CMI)可以传输的数据量定义。SR A 类的 CMI 为 125 美元，SR B 类为 250 美元。每个 CMI 可以传输的数据量由 SRP 在运行时确定。
 
@@ -6557,7 +6586,7 @@ Message-Transport Latency IEEE 802.1BA defines AVB profiles and gives a latency 
 
 Time-triggered messages are periodic messages that maximize the use of a priori information about the real-time network to achieve optimal temporal predictability of message transports. In its strong form , all relevant communication actions of time-triggered messages happen at pre-planned instants in a synchronized global time. These instants are the transmission instant at the sender’s communication sub­ system, the reception instant at a receiver’s communication subsystem, and all mes­ sage forwarding instants (in case of a switched network). The collective configuration of these pre-planned instants is called the communication schedule , and nodes (and switches) will periodically cycle through this schedule in a coordinated manner based on the global time. The communication schedule specifies for each time-­ triggered message a period and a phase within this period in a way that excludes collisions of time-triggered message transmissions on shared resources per design.
 
-> 时间触发消息是周期性消息，它最大限度地利用了关于实时网络的先验信息，以实现消息传输的最佳时间可预测性。在其强形式中，时间触发消息的所有相关通信动作都发生在同步的全球时间中预先计划的时刻。这些时刻是发送方通信子系统上的传输时刻、接收方通信子系统的接收时刻以及所有消息转发时刻(在交换网络的情况下)。这些预先计划的时刻的集体配置称为通信调度，节点(和交换机)将根据全球时间以协调的方式定期循环通过该调度。通信时间表为每个时间触发的消息指定了一个周期和该周期内的一个阶段，从而排除了每个设计共享资源上的时间触发消息传输的冲突。
+> 时间触发消息是周期性消息，它最大限度地利用了关于实时网络的先验信息，以实现消息传输的最佳时间可预测性。在其强形式中，时间触发消息的所有相关通信动作都发生在同步的全局时间中预先计划的时刻。这些时刻是发送方通信子系统上的传输时刻、接收方通信子系统的接收时刻以及所有消息转发时刻(在交换网络的情况下)。这些预先计划的时刻的集体配置称为通信调度，节点(和交换机)将根据全局时间以协调的方式定期循环通过该调度。通信时间表为每个时间触发的消息指定了一个周期和该周期内的一个阶段，从而排除了每个设计共享资源上的时间触发消息传输的冲突。
 
 Real-time networks can implement strong time-triggered messages, but they may choose a weak form because of design tradeoffs of action delay and jitter toward network utilization. In this weak form, the message-specific actions for time-triggered messages are also pre-planned. However, their effect (transmission, reception, forwarding) may happen only within a known interval after the pre-­ planned instant and not necessarily at the instant itself. Furthermore, the communi­ cation schedule for weak time-triggered messages may tolerate collisions of messages up to a defined limit.
 
@@ -6593,7 +6622,7 @@ Fault-tolerant clock synchronization is achieved by taking the difference betwee
 
 > 容错时钟同步是通过将每条消息的测量到达时间和指定到达时间之间的差异作为发送方和接收方时钟差异的度量，并对这些差异应用容错平均算法(见第 3.4.3 节)来计算每个本地时钟的校正因子来实现的。
 
-The membership service of TTP informs all connected nodes about the health state of every cluster node and of the violation of the fault hypothesis (should it occur) such that a never-give-up (NGU) strategy can be activated quickly. The membership is encoded in a membership vector that contains as many bits as there are nodes in a cluster. A specified bit position of the membership vector is assigned to each node. When this bit is set to TRUE , a node is operating; if this bit is set to FALSE , this node is not operating correctly. The membership instant of a node is the periodic send instant of a message by this node. The state of a TTP controller ( $C$ -state ) consists of the current time and the node membership vector. To enforce agreement on the C-state of all nodes of an ensemble, TTP calculates the CRC at the sender over the message contents concatenated with the C-state of the sender. The CRC at the receiver is calculated from the received message contents concatenated with the C-state of the receiver. If the result of the CRC check at the receiver is nega­ tive, then either the message was corrupted during transmission or there is a disagreement between the C-states of the sender and receiver. In both cases, the message is discarded, and the receiving node assumes that the sender has been faulty. We call this assumption the self-confidence principle . The self-confidence principle ensures that a single faulty node cannot kill a correct node in a system that is assumed to contain at most one faulty node.
+The membership service of TTP informs all connected nodes about the health state of every cluster node and of the violation of the fault hypothesis (should it occur) such that a never-give-up (NGU) strategy can be activated quickly. The membership is encoded in a membership vector that contains as many bits as there are nodes in a cluster. A specified bit position of the membership vector is assigned to each node. When this bit is set to TRUE , a node is operating; if this bit is set to FALSE , this node is not operating correctly. The membership instant of a node is the periodic send instant of a message by this node. The state of a TTP controller ( $C$ -state ) consists of the current time and the node membership vector. To enforce agreement on the C-state of all nodes of an ensemble, TTP calculates the CRC at the sender over the message contents concatenated with the C-state of the sender. The CRC at the receiver is calculated from the received message contents concatenated with the C-state of the receiver. If the result of the CRC check at the receiver is nega­ tive, then either the message was corrupted during transmission or there is a disagreement between the C-states of the sender and receiver. In both cases, the message is discarded, and the receiving node assumes that the sender has been faulty. We call this assumption the self-confidence principle. The self-confidence principle ensures that a single faulty node cannot kill a correct node in a system that is assumed to contain at most one faulty node.
 
 > TTP 的成员服务通知所有连接的节点每个集群节点的健康状态以及违反故障假设(如果发生)的情况，以便快速激活永不放弃(NGU)策略。成员资格被编码在一个成员资格向量中，该向量包含的比特数与集群中的节点数一样多。将成员向量的指定位位置分配给每个节点。当此位设置为 TRUE 时，节点正在运行；如果此位设置为 FALSE，则此节点运行不正常。节点的成员时刻是指该节点定期发送消息的时刻。TTP 控制器的状态($C$-state)由当前时间和节点成员向量组成。为了强制对集成的所有节点的 C 状态达成一致，TTP 在发送方计算与发送方的 C 状态连接的消息内容的 CRC。接收器处的 CRC 是根据与接收器的 C 状态连接的接收消息内容计算的。如果接收方的 CRC 校验结果为负，则表明消息在传输过程中已损坏，或者发送方和接收方的 C 状态之间存在差异。在这两种情况下，消息都会被丢弃，接收节点会假设发送方有故障。我们称这种假设为自信原则。自信原则确保了在假设最多包含一个故障节点的系统中，单个故障节点不能杀死一个正确的节点。
 
@@ -6637,7 +6666,7 @@ IEEE 802.1 Time-Sensitive Networking (TSN) continues the IEEE AVB standard­ iza
 
 > IEEE 802.1 时间敏感网络(TSN)继续 IEEE AVB 标准化活动。这是首次将时间触发消息引入 IEEE 802.1 标准集。TSN 的主要目标领域是工业自动化和车载网络，但用例远远超出了航空航天市场或电信领域。TSN 与 AVB 一样，是一组标准修订(IEEE 802.1Q 的主要修订，由 IEEE 802.1Qbv 等小写字母表示)和一些独立标准(由 IEEE 802.1CB 等大写字母表示)。标准化活动可分为(i)低延迟消息传输；(ii)IEEE 802.1AS 时钟同步协议的增强；(iii)提高消息传输可靠性，例如通过消息复制；以及(iv)网络配置和资源管理。[LoB19]中给出了 TSN 协议和用例的详细讨论。本节重点介绍两个低延迟方面：时间触发消息和消息抢占。我们还将把讨论限制在具有 VLAN 标记以太网帧的交换以太网实时网络中的 TSN(典型用例)。
 
-In IEEE 802.1 switches (the standard uses the term bridges ), we can distinguish three main phases of operation: (i) ingress operation, (ii) message switching, and (iii) egress operation. A switch handles the frame reception at the ingress port, which may also execute traffic policing . Message switching determines the target egress ports and places the message in egress queues. Ethernet switches may have up to eight message queues per egress port, and the message switching function selects the queue based on the VLAN tag’s 3-bit priority code point field (IEEE 802.1CB also specifies the use of other frame fields for queue selection). The trans­ mission selection function at the egress port selects from the (up to eight) message queues the next message for transmission. The transmission selection may follow different policies, the simplest one being a strict priority policy, in which messages from higher-priority queues are always selected prior to messages from lower-­ priority queues.
+In IEEE 802.1 switches (the standard uses the term bridges ), we can distinguish three main phases of operation: (i) ingress operation, (ii) message switching, and (iii) egress operation. A switch handles the frame reception at the ingress port, which may also execute traffic policing. Message switching determines the target egress ports and places the message in egress queues. Ethernet switches may have up to eight message queues per egress port, and the message switching function selects the queue based on the VLAN tag’s 3-bit priority code point field (IEEE 802.1CB also specifies the use of other frame fields for queue selection). The trans­ mission selection function at the egress port selects from the (up to eight) message queues the next message for transmission. The transmission selection may follow different policies, the simplest one being a strict priority policy, in which messages from higher-priority queues are always selected prior to messages from lower-­ priority queues.
 
 > 在 IEEE 802.1 交换机(该标准使用术语网桥)中，我们可以区分三个主要的操作阶段：(i)入口操作，(ii)消息交换，以及(iii)出口操作。交换机处理入口端口的帧接收，也可以执行流量监管。消息交换确定目标出口端口，并将消息放置在出口队列中。以太网交换机每个出口端口最多可以有八个消息队列，消息交换功能根据 VLAN 标签的 3 位优先级码点字段选择队列(IEEE 802.1CB 还规定使用其他帧字段进行队列选择)。出口端口的传输选择功能从(最多八个)消息队列中选择下一个消息进行传输。传输选择可能遵循不同的策略，最简单的策略是严格的优先级策略，其中来自较高优先级队列的消息总是优先于来自较低优先级队列的信息。
 
@@ -6825,11 +6854,11 @@ It is the objective of this chapter to establish a framework for developing an u
 
 Computers require electric energy for the processing and transmission of data. According to a report from the International Energy Agency [IEA21]: “Global data center electricity use in 2020 was 200–250 TWh, or around $1\%$ of global final elec­ tricity demand. This excludes energy used for crypto currency mining, which was $\mathord{\sim}100$  TWh in 2020. Globally, data transmission networks consumed 260–340 TWh in 2020, or $1.1–1.4\%$ of global electricity use.” If we add to this number the energy required for the operation of the end-user equipment, we arrive at a worldwide elec­ tric energy requirement of about 800–1000 TWh for the entire ICT sector in the year 2020. This is about $4\%$ of the electricity production of about 25,000 TWh world­ wide. The climate impact of the ICT industry [Fri20] is about of the same magni­ tude as the climate impact of the airline travel industry [Ric20].
 
-> 计算机需要电能来处理和传输数据。根据国际能源署的一份报告[IEA21]：“2020 年全球数据中心用电量为 200-250 TWh，约占全球最终电力需求的 1%。这不包括用于加密货币挖矿的能源，2020 年加密货币挖矿用电量为 100 TWh。在全球范围内，2020 年数据传输网络消耗了 260-340 TWh，占全球用电量的 1.1-1.4%。”如果我们将终端用户设备运行所需的能源加到这个数字上，我们得出 2020 年整个 ICT 行业的全球电力需求约为 800-1000 TWh。这约占全球约 25000 TWh 发电量的 4%。ICT 行业的气候影响[Fri20]与航空旅行业的气候影响[Ric20]大致相同。
+> 计算机需要电能来处理和传输数据。根据国际能源署的一份报告[IEA21]：“2020 年全局数据中心用电量为 200-250 TWh，约占全局最终电力需求的 1%。这不包括用于加密货币挖矿的能源，2020 年加密货币挖矿用电量为 100 TWh。在全局范围内，2020 年数据传输网络消耗了 260-340 TWh，占全局用电量的 1.1-1.4%。”如果我们将终端用户设备运行所需的能源加到这个数字上，我们得出 2020 年整个 ICT 行业的全局电力需求约为 800-1000 TWh。这约占全局约 25000 TWh 发电量的 4%。ICT 行业的气候影响[Fri20]与航空旅行业的气候影响[Ric20]大致相同。
 
 ### 8.1.1 Basic Concepts
 
-The concept of energy, initially introduced in the field of mechanics, refers to a scalar quantity that describes the capability of work that can be performed by a sys­ tem . The intensity of the work , which is the energy used up per unit of time, is called power . Energy is thus the integral of power over time. There exist different forms of energy such as mechanical energy (potential energy and kinetic energy) and electri­ cal energy on the one hand and thermal energy and chemical energy on the other hand.
+The concept of energy, initially introduced in the field of mechanics, refers to a scalar quantity that describes the capability of work that can be performed by a sys­ tem. The intensity of the work , which is the energy used up per unit of time, is called power. Energy is thus the integral of power over time. There exist different forms of energy such as mechanical energy (potential energy and kinetic energy) and electri­ cal energy on the one hand and thermal energy and chemical energy on the other hand.
 
 > 能量的概念最初在力学领域引入，是指一个标量，描述了系统可以执行的功的能力。工作的强度，即单位时间消耗的能量，称为功率。因此，随着时间的推移，能量是力量的组成部分。存在不同形式的能量，一方面是机械能(势能和动能)和电能，另一方面是热能和化学能。
 
@@ -6837,15 +6866,15 @@ The first law of thermodynamics , relating to the conservation of energy , state
 
 > 热力学第一定律与能量守恒有关，指出在封闭系统中，所有形式的能量的总和是恒定的。一种形式的能量向另一种形式能量的转化受热力学第二定律的支配，该定律指出热能只能部分转化为其他形式的能量。
 
-It is impossible to convert thermal energy to electrical energy with an efficiency of $100\%$ , while the converse, the transformation of electrical energy to thermal energy can be performed with $100\%$ efficiency. Furthermore, heat-pumps upgrade low thermal energy from the environment to a higher level of temperature for use in heating. As a rule of thumb, the conversion efficiency of the chemical energy stored in gasoline to mechanical energy by an automotive engine is between $20\%$ and $40\%$ . However, the efficiency of the conversion of electrical energy into mechanical energy, e.g., by an electric motor, or the conversion of mechanical energy to electri­ cal energy by a generator is better than $95\%$ .
+It is impossible to convert thermal energy to electrical energy with an efficiency of $100\%$ , while the converse, the transformation of electrical energy to thermal energy can be performed with $100\%$ efficiency. Furthermore, heat-pumps upgrade low thermal energy from the environment to a higher level of temperature for use in heating. As a rule of thumb, the conversion efficiency of the chemical energy stored in gasoline to mechanical energy by an automotive engine is between $20\%$ and $40\%$. However, the efficiency of the conversion of electrical energy into mechanical energy, e.g., by an electric motor, or the conversion of mechanical energy to electri­ cal energy by a generator is better than $95\%$ .
 
 > 不可能以 100% 的效率将热能转化为电能，而反之，电能转化为热能的效率可以达到 100%。此外，热泵将环境中的低热能提升到更高的温度水平，用于供暖。根据经验，汽车发动机将汽油中储存的化学能转化为机械能的效率在 20 美元至 40 美元之间。然而，将电能转化为机械能的效率，例如通过电动机，或通过发电机将机械能转化为电能的效率优于 95%。
 
-There exist many different—and confusing—units to measure the amount of energy. The unit of energy in the $S I$ system is the Joule $(J)$ which is defined as the amount of work done by moving a mass of one $k g$ for a distance of one meter against a force of one newton . One J corresponds also to the power of one Watt last­ ing for one second $(W s)$ . A widely used energy measure is the $k W h$ which is $1000\times3600$  Ws or $3.6\ 10^{6}\ J$ (since an hour has 3600 s). A MWh is $1000\;\mathrm{kWh}$ , a $G W h$ is $1000~\mathrm{MWh}$ , and a TWh is 1000 GWh. Thermal energy, i.e., heat, is often measured in calories or BTUs ( British Thermal Units ). One kilo-calorie (kcal) is defined as the heat needed to increase the temperature of one $\mathrm{kg}$ of water at room temperature by one degree Celsius . One kcal is about $1.16\;\mathrm{Wh}$ , while one BTU cor­ responds to about $0.29\ \mathrm{Wh}$ . In this chapter, we use the Watt as a unit of power and the Watt.hour as a unit of energy if the amount of energy is large ${\langle>}1$  Wh) and the Joule (or Watt.second ) if the amount of energy is small $(<\!1\:\mathrm{J})$ .
+There exist many different—and confusing—units to measure the amount of energy. The unit of energy in the $S I$ system is the Joule $(J)$ which is defined as the amount of work done by moving a mass of one $k g$ for a distance of one meter against a force of one newton. One J corresponds also to the power of one Watt last­ ing for one second $(W s)$. A widely used energy measure is the $k W h$ which is $1000\times3600$  Ws or $3.6\ 10^{6}\ J$ (since an hour has 3600 s). A MWh is $1000\;\mathrm{kWh}$ , a $G W h$ is $1000~\mathrm{MWh}$ , and a TWh is 1000 GWh. Thermal energy, i.e., heat, is often measured in calories or BTUs ( British Thermal Units ). One kilo-calorie (kcal) is defined as the heat needed to increase the temperature of one $\mathrm{kg}$ of water at room temperature by one degree Celsius. One kcal is about $1.16\;\mathrm{Wh}$ , while one BTU cor­ responds to about $0.29\ \mathrm{Wh}$. In this chapter, we use the Watt as a unit of power and the Watt.hour as a unit of energy if the amount of energy is large ${\langle>}1$  Wh) and the Joule (or Watt.second ) if the amount of energy is small $(<\!1\:\mathrm{J})$ .
 
 > 有许多不同且令人困惑的单位来测量能量的量。$SI$系统中的能量单位是焦耳$(J)$，它被定义为一个 1kg$的质量抵抗一牛顿的力移动一米所做的工作量。一个J也对应于一瓦特持续一秒的功率$(W s)$。一个广泛使用的能量度量是$k W h$，即1000美元×3600美元W或3.6美元(因为一小时有3600秒)。MWh为1000美元；\mathrm{kWh}$，一个$G W h$是 1000 美元，一个 TWh 是 1000 GWh。热能，即热量，通常以卡路里或 BTU(英国热量单位)为单位进行测量。1 千卡(kcal)是指将室温下 1 千克水的温度升高 1 摄氏度所需的热量。1 千卡约为 1.16 美元；\mathrm{Wh}$，而一个BTU的响应约为0.29美元。在本章中，如果能量较大，我们使用瓦特作为功率单位，如果能量较小，则使用瓦特小时作为能量单位(${\langle>}1$Wh)，如果能量较小时，则使用焦耳(或瓦特秒)。
 
-Example : A liter of gasoline contains chemical energy in the amount of about $9.6\,\mathrm{kWh}$ . An automotive engine converts about one fourth of this chemical energy to mechanical energy, i.e., one liter of gasoline provides about $2.4~k W h$ of mechanical energy. The rest of the chemical energy is converted to heat. If a car requires $18~\mathrm{kWh}$ of mechanical energy for $100\,\mathrm{km}$ , this amounts to about 7.5 liters of gasoline.
+Example : A liter of gasoline contains chemical energy in the amount of about $9.6\,\mathrm{kWh}$. An automotive engine converts about one fourth of this chemical energy to mechanical energy, i.e., one liter of gasoline provides about $2.4~k W h$ of mechanical energy. The rest of the chemical energy is converted to heat. If a car requires $18~\mathrm{kWh}$ of mechanical energy for $100\,\mathrm{km}$ , this amounts to about 7.5 liters of gasoline.
 
 > 示例：一升汽油含有约 9.6 美元的化学能。汽车发动机将大约四分之一的化学能转化为机械能，即一升汽油提供大约 2.4 美元的机械能。其余的化学能被转化为热能。如果一辆汽车每 100 美元需要 18 美元的机械能，这相当于 7.5 升汽油。
 
@@ -6861,7 +6890,7 @@ where $m$ is the mass of the object expressed in $k g,\,g$ is the gravitational 
 
 > 其中$m$是物体的质量，用$k g表示，\，g$是引力常数$(在地球上为9.8；\mathrm{m}；\mathrm{sec}^{-2}$)，$h$是高度差，用米$(m)$表示。
 
-Example : If a car with a weight of $1800\,\mathrm{kg}$ is driven from the ground to a mountain that is $1000\;\mathrm{m}$ above ground, the potential energy increase is $E_{p}=I800\times9.8\times I O00=I7{,}640{,}00$ $\it{O J}$ or $4.9\;\mathrm{kWh}$ . This is the mechanical energy provided by an automotive engine when it burns about 2 liters of gasoline.
+Example : If a car with a weight of $1800\,\mathrm{kg}$ is driven from the ground to a mountain that is $1000\;\mathrm{m}$ above ground, the potential energy increase is $E_{p}=I800\times9.8\times I O00=I7{,}640{,}00$ $\it{O J}$ or $4.9\;\mathrm{kWh}$. This is the mechanical energy provided by an automotive engine when it burns about 2 liters of gasoline.
 
 > 示例：如果一辆重量为 1800 美元的汽车从地面开到 1000 美元的山上；\mathrm{m}$在地面上，势能增加为$E\_{p}=I800\times 9.8\times I O00=I7{，}640{，}00$或4.9美元；\mathm{kWh}$。这是汽车发动机燃烧约 2 升汽油时提供的机械能。
 
@@ -7015,7 +7044,7 @@ $$
 E_{\mathrm{tr}}=d^{2}b
 $$
 
-where $d$ is the distance between the sender and the receiver in $m$ and $b$ is a constant. This square relationship between distance and energy is a gross approximation and must be adapted to the energy characteristics of the concrete antenna. In many por­ table devices, such as mobile phones, the sender adjusts the transmit energy dynam­ ically in order to find the most appropriate energy level for the actual distance to the receiver. A typical value for the parameter $b$ is given by [Hei00] as $\mathrm{100\,pJ/(bit/m^{2})}$ . If we send a 32 byte message from a sender to a receiver which is $\it{10\;m}$ away, then we need a transmit energy in the order of about 10 nJ/bit or about $2.5\,\mu J$ per message.
+where $d$ is the distance between the sender and the receiver in $m$ and $b$ is a constant. This square relationship between distance and energy is a gross approximation and must be adapted to the energy characteristics of the concrete antenna. In many por­ table devices, such as mobile phones, the sender adjusts the transmit energy dynam­ ically in order to find the most appropriate energy level for the actual distance to the receiver. A typical value for the parameter $b$ is given by [Hei00] as $\mathrm{100\,pJ/(bit/m^{2})}$. If we send a 32 byte message from a sender to a receiver which is $\it{10\;m}$ away, then we need a transmit energy in the order of about 10 nJ/bit or about $2.5\,\mu J$ per message.
 
 > 其中$d$是发送方和接收方之间的距离，单位为$m$，$b$是一个常数。距离和能量之间的平方关系是一个粗略的近似值，必须适应混凝土天线的能量特性。在许多便携式设备中，如手机，发送方动态调整发射能量，以找到与接收方实际距离最合适的能量水平。参数$b$的典型值由[Hie00]给出，为$\mathrm{100\，pJ/(bit/m^{2})}$。如果我们从发送方向相距$\t{10\；m}$的接收方发送一条 32 字节的消息，那么我们需要大约 10nJ/bit 或每条消息大约 2.5 美元的传输能量。
 
@@ -7055,7 +7084,7 @@ The dissipation of electric energy in a device causes a heating of the device. T
 
 > 设备中电能的耗散会导致设备发热。设备的温升取决于耗散的能量、设备的热容量以及设备与其环境之间的热流。
 
-Example : Let us assume an MPSoC with an area of $\it{100}\ m m^{2}$ housing $32~\mathrm{IP}$ -cores con­ nected by a network-on-chip. One of the IP-cores executes the program of the above exam­ ple. It is physically contained in a block of $I\ \mathrm{mm}\times I$  mm of a $\mathrm{0.5.mm}$ -thick silicon die. If we assume that this block of silicon, measuring $0.5\;m m^{3}$ , is thermally isolated and no heat can be transferred to the block’s environment, then the temperature of our silicon block will increase by $1\,^{\circ}C$ if about $8I5\,\mu J$ of energy are dissipated in this block. (Silicon has density of $2.33\ g/c m^{3}$ and a specific heat of $\mathit{O.77}{}J/g^{\circ}C.$ ) The execution of the program of the above hypothetical example—generating a heat of 1 joule—would thus lead to a temperature rise in the order of $I000\,^{\circ}\!C$ and result in a hot spot on the die . In reality, such a temperature rise will not occur, since any temperature difference between two bodies forces a heat flow from the warmer body to the colder body that reduces the temperature difference.
+Example : Let us assume an MPSoC with an area of $\it{100}\ m m^{2}$ housing $32~\mathrm{IP}$ -cores con­ nected by a network-on-chip. One of the IP-cores executes the program of the above exam­ ple. It is physically contained in a block of $I\ \mathrm{mm}\times I$  mm of a $\mathrm{0.5.mm}$ -thick silicon die. If we assume that this block of silicon, measuring $0.5\;m m^{3}$ , is thermally isolated and no heat can be transferred to the block’s environment, then the temperature of our silicon block will increase by $1\,^{\circ}C$ if about $8I5\,\mu J$ of energy are dissipated in this block. (Silicon has density of $2.33\ g/c m^{3}$ and a specific heat of $\mathit{O.77}{}J/g^{\circ}C.$ ) The execution of the program of the above hypothetical example—generating a heat of 1 joule—would thus lead to a temperature rise in the order of $I000\,^{\circ}\!C$ and result in a hot spot on the die. In reality, such a temperature rise will not occur, since any temperature difference between two bodies forces a heat flow from the warmer body to the colder body that reduces the temperature difference.
 
 > 示例：让我们假设一个 MPSoC 的面积为 100 平方米，包含 32 个由片上网络连接的核心。其中一个 IP 核执行上述检查的程序。它物理上包含在$\mathrm{mm}\times I$mm 的$\mathrm{0.5.mm}$厚硅管芯块中。如果我们假设这块硅块，测量值为 0.5 美元；m m^{3}$是隔热的，没有热量可以传递到块的环境中，那么如果这个块中耗散了大约8I5\mu J$的能量，我们的硅块的温度将增加 1\^{\circ}C$。(硅的密度为2.33美元/立方厘米，比热为0.77焦耳/立方厘米)执行上述假设示例的程序——产生1焦耳的热量——将导致温度上升约1000美元！C$，导致模具上出现热点。实际上，这种温度升高不会发生，因为两个物体之间的任何温差都会迫使热量从较暖的物体流向较冷的物体，从而减小温差。
 
@@ -7095,7 +7124,7 @@ Device scaling has made it possible to place up to one billion transistors on a 
 
 > 器件扩展使在单个管芯上放置多达 10 亿个晶体管成为可能。因此，半导体行业有能力在单个芯片上放置一个完整的系统，包括处理器、存储器和输入/输出电路，从而形成片上系统(SoC)。参与计算的子系统在空间和时间上的紧密性可以显著提高能源效率。空间局部性降低了开关动作的有效电容，这意味着更低的能量需求和更快的操作。时间局部性减少了缓存未命中的次数。如果驻留在不同芯片上的子系统集成在单个芯片上，则可以节省芯片之间交换数据和控制所需的大量能量。
 
-Example : According to Intel [Int09], the 1996 design of the first teraflop super computer , consisting of 10,000 Pentium Pro Processors, operated with an energy efficiency of 2 MegaFlops/Joule or $500\;n J$ per instruction. Ten years later, in 2006, a teraflop research chip of Intel containing 80 IP-cores on a single die connected by a network-on-chip achieved an energy efficiency of 16,000 MegaFlops/Joule or 62 pJ/instruction . This is an increase in the energy performance by a factor of 8000 within 10 years. If we assume that in 10 years five generations of scaling are taking place, the increase in the energy perfor­ mance in one generation is not only factor of $2\check{\sqrt{2}}$ , the value stipulated by ideal scaling, but by a factor of more than 4 . This additional improvement is caused by the integration of all subsystems on a single die.
+Example : According to Intel [Int09], the 1996 design of the first teraflop super computer , consisting of 10,000 Pentium Pro Processors, operated with an energy efficiency of 2 MegaFlops/Joule or $500\;n J$ per instruction. Ten years later, in 2006, a teraflop research chip of Intel containing 80 IP-cores on a single die connected by a network-on-chip achieved an energy efficiency of 16,000 MegaFlops/Joule or 62 pJ/instruction. This is an increase in the energy performance by a factor of 8000 within 10 years. If we assume that in 10 years five generations of scaling are taking place, the increase in the energy perfor­ mance in one generation is not only factor of $2\check{\sqrt{2}}$ , the value stipulated by ideal scaling, but by a factor of more than 4. This additional improvement is caused by the integration of all subsystems on a single die.
 
 > 示例：根据英特尔[Int09]，1996 年设计的第一台 teraflop 超级计算机，由 10000 个奔腾 Pro 处理器组成，能效为 2 兆次浮点/焦耳，即 500 美元；n 每条指令的金额为 J$。十年后，在 2006 年，英特尔的一款 teraflop 研究芯片在一个由片上网络连接的单个芯片上包含 80 个 IP 核，实现了 16000 兆浮点/焦耳或 62 pJ/指令的能效。这意味着 10 年内能源性能将提高 8000 倍。如果我们假设在 10 年内发生了五代缩放，那么一代能源性能的提高不仅是理想缩放规定的 2 美元，而且是 4 倍以上。这种额外的改进是由于将所有子系统集成在单个芯片上造成的。
 
@@ -7110,7 +7139,7 @@ reliability despite the fact that many more transistors are contained in a scale
 
 > 尽管在缩放的芯片中包含了更多的晶体管，但可靠性仍然很高。工业最先进芯片的 MTTF 相对永久故障率明显低于 100 FIT[Pau98]。
 
-Scaling cannot continue indefinitely because there are limits due to the discrete structure of matter and quantum mechanical effects, such as electron tunneling . The reduction in the number of dopants in a transistor increases the statistical variations. The thermal energy of noise limits the reduction of the supply voltage. If the supply voltage is higher than stipulated by ideal scaling , then scaling will lead to an increased thermal stress. In submicron technologies, we have reached the point where these effects cannot be neglected any more. The International Technology Roadmap for Semiconductors 2009 [ITR09, p. 15] summarizes these challenges in a single sentence: The ITRS is entering a new era as the industry begins to address the theoretical limits of CMOS scaling .
+Scaling cannot continue indefinitely because there are limits due to the discrete structure of matter and quantum mechanical effects, such as electron tunneling. The reduction in the number of dopants in a transistor increases the statistical variations. The thermal energy of noise limits the reduction of the supply voltage. If the supply voltage is higher than stipulated by ideal scaling , then scaling will lead to an increased thermal stress. In submicron technologies, we have reached the point where these effects cannot be neglected any more. The International Technology Roadmap for Semiconductors 2009 [ITR09, p. 15] summarizes these challenges in a single sentence: The ITRS is entering a new era as the industry begins to address the theoretical limits of CMOS scaling .
 
 > 缩放不能无限期地持续下去，因为物质的离散结构和量子力学效应(如电子隧穿)存在限制。晶体管中掺杂剂数量的减少增加了统计变化。噪声的热能限制了电源电压的降低。如果电源电压高于理想缩放的规定，那么缩放将导致热应力增加。在亚微米技术中，我们已经到了不能再忽视这些影响的地步。2009 年国际半导体技术路线图[ITR09，第 15 页]用一句话总结了这些挑战：随着行业开始解决 CMOS 缩放的理论限制，ITRS 正在进入一个新时代。
 
@@ -7130,11 +7159,11 @@ It has been observed that, within limits characteristic for each technology, the
 
 > 已经观察到，在每种技术的极限特征内，频率对电压几乎呈线性依赖关系。如果设备的操作频率降低，电压也可以降低，而不会干扰设备的功能[Kea07]。由于功耗随频率而线性增长，但随电压的平方而增长，因此电压和频率的组合缩放不仅会降低功率，还会降低执行计算所需的能量。
 
-Example : The Intel XScale ® processor can dynamically operate over the voltage range of $0.7–l.75\ V$ and at a frequency range of $I5O–8O O\;M H z$ . The highest energy consumption is 6.3 times the lowest energy consumption.
+Example : The Intel XScale ® processor can dynamically operate over the voltage range of $0.7–l.75\ V$ and at a frequency range of $I5O–8O O\;M H z$. The highest energy consumption is 6.3 times the lowest energy consumption.
 
 > 示例：“英特尔 XScale&#xAE；”处理器可以在 0.7-1.75 美元的电压范围和 1.5-8 美元的频率范围内动态运行；M H z$。最高能耗是最低能耗的 6.3 倍。
 
-Voltage scaling can be performed in the interval $<V_{\mathrm{threshold}}$ , $V_{\mathrm{normal}}>$ . Since $V_{\mathrm{normal}}$ is reduced as a device is scaled to lower dimensions (see Sect. 8.2.1 ), the range that is available for voltage scaling in submicron devices is reduced and voltage scaling becomes less effective.
+Voltage scaling can be performed in the interval $<V_{\mathrm{threshold}}$ , $V_{\mathrm{normal}}>$. Since $V_{\mathrm{normal}}$ is reduced as a device is scaled to lower dimensions (see Sect. 8.2.1 ), the range that is available for voltage scaling in submicron devices is reduced and voltage scaling becomes less effective.
 
 > 电压缩放可以在$<V_{\mathrm{threshold}$、$V_{\mashrm{normal}}>$的区间内执行。由于随着器件被缩放到较低的尺寸，$V_{\mathrm{normal}}$减小了(见第 8.2.1 节)，亚微米器件中电压缩放的可用范围减小了，电压缩放的效果也降低了。
 
@@ -7158,7 +7187,7 @@ Next to device scaling, the following system architecture techniques are most ef
 
 ### 8.3.1 Technology-Agnostic Design
 
-At a high level of abstraction, an application requirement can be expressed by a platform-independent model (PIM) (see also Sect. 4.4 ). A PIM describes the func­ tional and temporal properties of the requested solution without making any refer­ ence to the concrete hardware implementation. For example, when we specify the functionality and timing of the braking system of a car, we demand that the proper braking action will start within 2 milliseconds after stepping on the brake pedal. We say that such a high-level description of an application is technology agnostic . A PIM can be expressed in a procedural language, e.g., System C, augmented by the required timing information, e.g., by UML-MARTE [OMG08]. The system imple­ menter has then the freedom to select the implementation technology that is most appropriate for his/her purpose.
+At a high level of abstraction, an application requirement can be expressed by a platform-independent model (PIM) (see also Sect. 4.4 ). A PIM describes the func­ tional and temporal properties of the requested solution without making any refer­ ence to the concrete hardware implementation. For example, when we specify the functionality and timing of the braking system of a car, we demand that the proper braking action will start within 2 milliseconds after stepping on the brake pedal. We say that such a high-level description of an application is technology agnostic. A PIM can be expressed in a procedural language, e.g., System C, augmented by the required timing information, e.g., by UML-MARTE [OMG08]. The system imple­ menter has then the freedom to select the implementation technology that is most appropriate for his/her purpose.
 
 > 在高度抽象的层面上，应用程序需求可以通过平台无关模型(PIM)来表达(另见第 4.4 节)。PIM 描述了所请求解决方案的功能和时间属性，而不涉及具体的硬件实现。例如，当我们指定汽车制动系统的功能和时间时，我们要求在踩下制动踏板后 2 毫秒内开始正确的制动动作。我们说，对应用程序的这种高级描述与技术无关。PIM 可以用程序语言表示，例如系统 C，并辅以所需的定时信息，例如 UML-MARTE[OMG08]。然后，系统实施者可以自由选择最适合他/她的目的的实施技术。
 
@@ -7191,7 +7220,7 @@ Embedded systems are characterized by an application-inherent parallelism , i.e.
 
 > 嵌入式系统的特点是应用程序固有的并行性，即它们由许多并发的、几乎独立的进程组成。为了为这些几乎独立的并行进程建立一个可行的软件执行环境，必须在顺序处理器上实现一个提供空间和时间划分的复杂操作系统。从能源的角度来看，这是又一次挫折。首先，执行强大的顺序机会浪费能量，然后再次浪费能量来提供封装的并行执行环境，以支持在该顺序机上运行的并行进程。
 
-Example : According to Pollack’s rule, the speed improvement of an IP-core achieved by advanced micro-architectural mechanisms scales by the square root of two, while the required energy and the silicon area increase by factor of 2 . After four generations of micro-­ architecture evolutions, an IP-core would have grown $^{l6}$ times its original size, would con­ sume $^{I6}$ times as much energy as the original, and achieve a time performance improvement of four. The micro-architecture evolution has degraded the energy efficiency by $400\%$ .
+Example : According to Pollack’s rule, the speed improvement of an IP-core achieved by advanced micro-architectural mechanisms scales by the square root of two, while the required energy and the silicon area increase by factor of 2. After four generations of micro-­ architecture evolutions, an IP-core would have grown $^{l6}$ times its original size, would con­ sume $^{I6}$ times as much energy as the original, and achieve a time performance improvement of four. The micro-architecture evolution has degraded the energy efficiency by $400\%$ .
 
 > 示例：根据 Pollack 的规则，通过先进的微架构机制实现的 IP 核的速度提高是 2 的平方根，而所需的能量和硅面积增加了 2 倍。经过四代微架构的演变，一个 IP 核的大小将增长到原始大小的 ^{l6}$ 倍，消耗的能量将是原始的 ^{I6}倍，时间性能将提高四倍。微架构的演变使能源效率降低了 400%。
 
@@ -7225,19 +7254,19 @@ In an MPSoC architecture that consists of a plurality of components that are con
 
 > 在由片上网络(NoC)连接的多个组件组成的 MPSoC 架构中，功率门控是一种非常有效的节能技术。不使用的组件可以完全关闭，从而不仅可以节省动态功率，还可以节省静态功率。由于当我们部署低于 100 美元的技术时，静态功率会大幅增加，因此功率门控成为一种极其重要的节能技术。
 
-In many devices, it is useful to distinguish between two major modes of opera­ tion: service mode and sleep mode . In service mode, the full set of device services is provided and the dynamic power dissipation is dominant. In sleep mode, only the minimal functionality for activating the device upon arrival of a wake-up signal is required. In sleep mode, the static (leakage) power is of major concern. Power gat­ ing can be very effective in reducing the power demand in sleep mode. Alternatively, the sleep mode can be implemented in a completely different technology, e.g., in sub-threshold logic, that starts up the service mode as soon as a relevant wake-up signal is recognized. In this case, all components that are involved in the service mode can be shut down completely while in sleep mode, thus not consuming any power at all.
+In many devices, it is useful to distinguish between two major modes of opera­ tion: service mode and sleep mode. In service mode, the full set of device services is provided and the dynamic power dissipation is dominant. In sleep mode, only the minimal functionality for activating the device upon arrival of a wake-up signal is required. In sleep mode, the static (leakage) power is of major concern. Power gat­ ing can be very effective in reducing the power demand in sleep mode. Alternatively, the sleep mode can be implemented in a completely different technology, e.g., in sub-threshold logic, that starts up the service mode as soon as a relevant wake-up signal is recognized. In this case, all components that are involved in the service mode can be shut down completely while in sleep mode, thus not consuming any power at all.
 
 > 在许多设备中，区分两种主要操作模式是有用的：服务模式和睡眠模式。在服务模式下，提供全套设备服务，动态功耗占主导地位。在睡眠模式下，只需要在唤醒信号到达时激活设备的最小功能。在睡眠模式下，静态(泄漏)功率是主要问题。电源门控在降低睡眠模式下的电源需求方面非常有效。或者，睡眠模式可以用完全不同的技术来实现，例如，在亚阈值逻辑中，一旦识别到相关的唤醒信号，就会启动服务模式。在这种情况下，服务模式中涉及的所有组件都可以在睡眠模式下完全关闭，从而根本不消耗任何电力。
 
 ### 8.3.4 Real Time Versus Execution Time
 
-It is important to stress the fundamental difference between real time and execution time in a distributed real-time system. There is no close relation between these two time bases. In an MPSoC, the granularity of the real time will be one or two orders of magnitude larger (and correspondingly, the frequency lower) than the granularity of the execution time at the chip level. Since the power consumption is proportional to the frequency—see Sect. 8.1.2 —the global real-time clock distribution network will only consume a small fraction of the power that would be needed for a global execution time clock distribution network . Establishing a single global real-time base for the whole MPSoC, but many local asynchronous execution time bases, one in each IP-core of an MPSoC, can itself save a significant amount of energy and furthermore increase the energy savings potentials of a chip, as explained in the fol­ lowing paragraphs.
+It is important to stress the fundamental difference between real time and execution time in a distributed real-time system. There is no close relation between these two time bases. In an MPSoC, the granularity of the real time will be one or two orders of magnitude larger (and correspondingly, the frequency lower) than the granularity of the execution time at the chip level. Since the power consumption is proportional to the frequency—see Sect. 8.1.2 —the global real-time clock distribution network will only consume a small fraction of the power that would be needed for a global execution time clock distribution network. Establishing a single global real-time base for the whole MPSoC, but many local asynchronous execution time bases, one in each IP-core of an MPSoC, can itself save a significant amount of energy and furthermore increase the energy savings potentials of a chip, as explained in the fol­ lowing paragraphs.
 
-> 在分布式实时系统中，强调实时和执行时间之间的根本区别非常重要。这两个时间基准之间没有密切关系。在 MPSoC 中，实时的粒度将比芯片级的执行时间粒度大一到两个数量级(相应地，频率也较低)。由于功耗与频率成正比，请参见第节。8.1.2--全球实时时钟分配网络将只消耗全球执行时间时钟分配网络所需功率的一小部分。为整个 MPSoC 建立一个单一的全局实时库，但在 MPSoC 的每个 IP 核中建立一个本地异步执行时基，本身可以节省大量能源，并进一步提高芯片的节能潜力，如以下段落所述。
+> 在分布式实时系统中，强调实时和执行时间之间的根本区别非常重要。这两个时间基准之间没有密切关系。在 MPSoC 中，实时的粒度将比芯片级的执行时间粒度大一到两个数量级(相应地，频率也较低)。由于功耗与频率成正比，请参见第节。8.1.2--全局实时时钟分配网络将只消耗全局执行时间时钟分配网络所需功率的一小部分。为整个 MPSoC 建立一个单一的全局实时库，但在 MPSoC 的每个 IP 核中建立一个本地异步执行时基，本身可以节省大量能源，并进一步提高芯片的节能潜力，如以下段落所述。
 
 The real-time base makes the nodes of a distributed system aware of the progres­ sion of real time and provides the basis for the generation of temporal control sig­ nals (see also Sect. 4.1.3 ). The local real-time clocks should be incremented according to the international standard of time TIA. If no external clock synchroni­ zation is available, real time is established by a real-time reference clock that forms the source of the distributed real-time base. The granularity of the global real time depends on the precision of the clock synchronization and will be different at differ­ ent integration levels. For example, at the chip level, where the IP-cores of a SoC communicate via a NoC, the local real-time clocks in the IP-cores will have a better precision (and consequently a smaller granularity) than the global real time at the device level, where devices communicate via a local area network (see Chap. 3 on clock synchronization). At the chip level, the establishment of the global real time can be realized by a stand-alone real-time clock distribution network or it can be integrated into the NoC.
 
-> 实时基础使分布式系统的节点意识到实时的进展，并为生成时间控制信号提供了基础(另见第 4.1.3 节)。本地实时时钟应按照国际时间标准 TIA 递增。如果没有外部时钟同步可用，则实时由形成分布式实时基础的实时参考时钟建立。全局实时的粒度取决于时钟同步的精度，并且在不同的集成级别上会有所不同。例如，在芯片级，SoC 的 IP 核通过 NoC 通信，IP 核中的本地实时时钟将比设备级的全局实时具有更好的精度(因此粒度更小)，在设备级，设备通过局域网通信(见第 3 章关于时钟同步)。在芯片层面，全球实时的建立可以通过独立的实时时钟分配网络来实现，也可以集成到 NoC 中。
+> 实时基础使分布式系统的节点意识到实时的进展，并为生成时间控制信号提供了基础(另见第 4.1.3 节)。本地实时时钟应按照国际时间标准 TIA 递增。如果没有外部时钟同步可用，则实时由形成分布式实时基础的实时参考时钟建立。全局实时的粒度取决于时钟同步的精度，并且在不同的集成级别上会有所不同。例如，在芯片级，SoC 的 IP 核通过 NoC 通信，IP 核中的本地实时时钟将比设备级的全局实时具有更好的精度(因此粒度更小)，在设备级，设备通过局域网通信(见第 3 章关于时钟同步)。在芯片层面，全局实时的建立可以通过独立的实时时钟分配网络来实现，也可以集成到 NoC 中。
 
 The execution time base drives the algorithmic computations of the nodes and thus determines the speed of the computation (logical control—see Sect. 4.1.3 ). In a large SoC, the energy dissipation of a global execution time clocking system of a SoC can form a large part of the chip’s energy consumption. In addition, the location-­dependent delay of the central high-frequency timing signals results in a clock skew that is difficult to control. Furthermore, the individual control of the voltage and frequency of an IP-core is not possible if all IP-cores operate with the same clock signal. It makes therefore sense to design each IP-core and the NoC as an island of synchronicity that generates its clocking signal for the execution time locally. If the voltage of an IP-core can also be controlled locally, then the IP-core is an encapsulated subsystem with the capability for local voltage-frequency scaling and power gating. In the architecture model outlined in Chap. 4 , clock-domain crossing occurs in the message-interface between an IP-core and the NoC, which must be carefully designed in order to avoid meta-stability problems.
 
@@ -7245,7 +7274,7 @@ The execution time base drives the algorithmic computations of the nodes and thu
 
 ## 8.4 Software Techniques
 
-The equation $E=C_{\mathrm{eff}}\,V^{2}N$ of Sect. 8.1.2 gives the dynamic energy $E$ required for the execution of a program. There are three parameters in this equation, the effective capacitance $C_{\mathrm{eff}}$ , the supply voltage $V.$ , and the number of instructions $N.$ . Reducing the effective capacitance $C_{\mathrm{eff}}$ and reducing the number of instructions per task reduces the time needed to complete a computational task. There is thus no inherent conflict at the software level between designing for energy performance and design­ ing for time performance.
+The equation $E=C_{\mathrm{eff}}\,V^{2}N$ of Sect. 8.1.2 gives the dynamic energy $E$ required for the execution of a program. There are three parameters in this equation, the effective capacitance $C_{\mathrm{eff}}$ , the supply voltage $V.$ , and the number of instructions $N.$. Reducing the effective capacitance $C_{\mathrm{eff}}$ and reducing the number of instructions per task reduces the time needed to complete a computational task. There is thus no inherent conflict at the software level between designing for energy performance and design­ ing for time performance.
 
 > 方程$E=C_{\mathrm{eff}}\，V^{2}N$的教派。8.1.2 给出了执行程序所需的动态能量$E$。该方程中有三个参数，有效电容$C_{\mathrm{eff}}$、电源电压$V.$和指令数$N.$。减小有效电容$C_{\mathrm{eff}}$并减少每个任务的指令数可以减少完成计算任务所需的时间。因此，在软件层面，能源性能设计和时间性能设计之间没有固有的冲突。
 
@@ -7373,7 +7402,7 @@ System designers need tools to estimate the power consumption at an early stage 
 
 ## Bibliographic Notes
 
-The tutorial survey by Benini and Micheli [Ben00] gives an excellent overview of system- level design methods that lead to energy-efficient electronic systems. Pedram and Nazarian [Ped06] provide models to investigate the thermal effects in submicron VLSI circuits. The limits of device scaling are the topic of [Fra01]. Pollack’s rule and the future of SoC architectures are the topic of [Bor07] . Issues of energy awareness in systems-on-chip are discussed in [Pol07]. The review paper by Sah and Amgoth [Sah20] contains a good survey of energy harvesting.
+The tutorial survey by Benini and Micheli [Ben00] gives an excellent overview of system- level design methods that lead to energy-efficient electronic systems. Pedram and Nazarian [Ped06] provide models to investigate the thermal effects in submicron VLSI circuits. The limits of device scaling are the topic of [Fra01]. Pollack’s rule and the future of SoC architectures are the topic of [Bor07]. Issues of energy awareness in systems-on-chip are discussed in [Pol07]. The review paper by Sah and Amgoth [Sah20] contains a good survey of energy harvesting.
 
 > Benini 和 Micheli 的教程调查[Ben00]对导致节能电子系统的系统级设计方法进行了很好的概述。Pedram 和 Nazarian[Ped06]提供了研究亚微米 VLSI 电路中热效应的模型。设备缩放的限制是[Fra01]的主题。Pollack 的规则和 SoC 架构的未来是[Bor07]的主题。[Pol07]中讨论了片上系统中的能量意识问题。Sah 和 Amgoth 的综述论文[Sah20]对能量收集进行了很好的调查。
 
@@ -7395,11 +7424,11 @@ The tutorial survey by Benini and Micheli [Ben00] gives an excellent overview of
 
 > 8.6 传感器节点每秒执行 100000 条指令(电源电压为 $1\\mathrm{V}$，指令上的有效电容为$1\&mathrm{nF}$)，并每秒向其相距 $10\\mathrm{m}$的邻居节点发送一条长度为 32 字节的消息。变送器的电压为 3 美元；\mathrm{V}.$驱动传感器节点需要多少电力？如果电源包含两节 AAA 电池，传感器节点将运行多少小时？
 
-8.7 A processor has two operating modes, a time performance optimized mode characterized by a voltage of $_{2\textrm{V}}$ and a frequency of ${500}\ \mathrm{MHz}$ and an energy-­ optimized mode characterized by a voltage of $1\;\mathrm{V}$ and a frequency of ${200}\,\mathrm{MHz}$ . The effective capacity of an instruction is $1\;\mathrm{nF}.$  What is the power requirement in each of the two modes?
+8.7 A processor has two operating modes, a time performance optimized mode characterized by a voltage of $_{2\textrm{V}}$ and a frequency of ${500}\ \mathrm{MHz}$ and an energy-­ optimized mode characterized by a voltage of $1\;\mathrm{V}$ and a frequency of ${200}\,\mathrm{MHz}$. The effective capacity of an instruction is $1\;\mathrm{nF}.$  What is the power requirement in each of the two modes?
 
 > 8.7 处理器有两种操作模式，一种是时间性能优化模式，其特征是电压为${2\textrm{V}}$，频率为${500}\\mathrm{MHz}$，另一种是能量优化模式，其二是电压为 $1；\mathrm{V}$和频率{200}\，\mathrm{MHz}$。一条指令的有效容量为 1 美元；\mathm{nF}.$ 两种模式中的每种模式的功率要求是什么？
 
-8.8 A lithium-ion laptop battery weighs $380~\mathrm{g}$ . How long will a battery-load last if the laptop has a power demand of $10\:\mathrm{W?}$
+8.8 A lithium-ion laptop battery weighs $380~\mathrm{g}$. How long will a battery-load last if the laptop has a power demand of $10\:\mathrm{W?}$
 
 > 8.8 锂离子笔记本电脑电池的重量为 380 美元。如果笔记本电脑的电力需求为 10 美元，电池负载能持续多久 $
 
@@ -7411,7 +7440,7 @@ In a component-based distributed real-time system, we distinguish two levels of 
 
 > 在基于组件的分布式实时系统中，我们区分了两个级别的系统管理，即组件之间基于消息的通信和资源分配的协调，以及每个组件内并发任务的建立、协调和控制。本章的重点是组件中的操作系统和中间件功能。
 
-In case the software core image is not permanently residing in a component (e.g., in read-only memory), mechanisms must be provided for a secure boot of the com­ ponent software via the technology-independent interface. Control mechanisms must be made available to reset , start , and control the execution of the component software at run time. The software within a component will normally be organized in a set of concurrent tasks. Task management and inter-component task interactions have to be designed carefully in order to ensure temporal predictability and deter­ minism . The proper handling of time and time-related signals is of special impor­ tance in real-time operating systems. The operating system must also support the programmer in establishing new message communication channels at run time and in controlling the access to the message-based interfaces of the components. Domain-specific higher-level protocols, such as a simple request-reply protocol , that consist of a sequence of rule-based message exchanges should be implemented in the middleware of a component. Finally, the operating system must provide mechanisms to access the local process input/output interfaces that connect a com­ ponent to the physical plant. Since the value domain and the time domain of the RT entities in the physical plant are dense , but the representation of the values and times inside the computer is discrete , some inaccuracy in the representation of values and times inside the computer system cannot be avoided. In order to reduce the effects of these representation inaccuracies and to establish a consistent (but not fully faith­ ful) model of the physical plant inside the computer system, agreement protocols must be executed at the interface between the physical world and cyberspace to create a consistent digital image of the external world inside the distributed com­ puter system.
+In case the software core image is not permanently residing in a component (e.g., in read-only memory), mechanisms must be provided for a secure boot of the com­ ponent software via the technology-independent interface. Control mechanisms must be made available to reset , start , and control the execution of the component software at run time. The software within a component will normally be organized in a set of concurrent tasks. Task management and inter-component task interactions have to be designed carefully in order to ensure temporal predictability and deter­ minism. The proper handling of time and time-related signals is of special impor­ tance in real-time operating systems. The operating system must also support the programmer in establishing new message communication channels at run time and in controlling the access to the message-based interfaces of the components. Domain-specific higher-level protocols, such as a simple request-reply protocol , that consist of a sequence of rule-based message exchanges should be implemented in the middleware of a component. Finally, the operating system must provide mechanisms to access the local process input/output interfaces that connect a com­ ponent to the physical plant. Since the value domain and the time domain of the RT entities in the physical plant are dense , but the representation of the values and times inside the computer is discrete , some inaccuracy in the representation of values and times inside the computer system cannot be avoided. In order to reduce the effects of these representation inaccuracies and to establish a consistent (but not fully faith­ ful) model of the physical plant inside the computer system, agreement protocols must be executed at the interface between the physical world and cyberspace to create a consistent digital image of the external world inside the distributed com­ puter system.
 
 > 如果软件核心映像不是永久驻留在组件中(例如，在只读存储器中)，则必须提供机制，通过独立于技术的接口安全引导组件软件。必须提供控制机制，以便在运行时重置、启动和控制组件软件的执行。组件内的软件通常会组织在一组并发任务中。任务管理和组件间任务交互必须仔细设计，以确保时间的可预测性和确定性。在实时操作系统中，正确处理时间和时间相关信号尤为重要。操作系统还必须支持程序员在运行时建立新的消息通信通道，并控制对组件基于消息的接口的访问。特定于域的高级协议，如简单的请求-应答协议，由一系列基于规则的消息交换组成，应在组件的中间件中实现。最后，操作系统必须提供访问将组件连接到物理工厂的本地进程输入/输出接口的机制。由于物理工厂中 RT 实体的值域和时域是密集的，但计算机内部的值和时间的表示是离散的，因此无法避免计算机系统内部值和时间表示的一些不准确性。为了减少这些表示不准确的影响，并在计算机系统内建立一个一致的(但不完全可信的)物理工厂模型，必须在物理世界和网络空间之间的接口处执行协议，以在分布式计算机系统内创建外部世界的一致数字图像。
 
@@ -7421,13 +7450,13 @@ A real-time operating system (OS) within a component must be temporally pre­ di
 
 ## 9.1 Inter-Component Communication
 
-The information exchange of a component with its environment, i.e., other compo­ nents and the physical plant, is realized exclusively across the four message-based interfaces introduced in Sect. 4.4 . It is up to the generic middleware and the compo­ nent’s operating system to manage the access to these four message interfaces for inter-component communication. The TII, the LIF, and the TDI are discussed in this section, while the local interface is discussed in the section on process input/output.
+The information exchange of a component with its environment, i.e., other compo­ nents and the physical plant, is realized exclusively across the four message-based interfaces introduced in Sect. 4.4. It is up to the generic middleware and the compo­ nent’s operating system to manage the access to these four message interfaces for inter-component communication. The TII, the LIF, and the TDI are discussed in this section, while the local interface is discussed in the section on process input/output.
 
-> 组件与其环境(即其他组件和物理设备)的信息交换仅通过第节中介绍的四个基于消息的接口实现。4.4 . 通用中间件和组件的操作系统负责管理对这四个消息接口的访问，以实现组件间的通信。本节讨论了 TII、LIF 和 TDI，而本地接口在过程输入/输出部分讨论。
+> 组件与其环境(即其他组件和物理设备)的信息交换仅通过第节中介绍的四个基于消息的接口实现。4.4. 通用中间件和组件的操作系统负责管理对这四个消息接口的访问，以实现组件间的通信。本节讨论了 TII、LIF 和 TDI，而本地接口在过程输入/输出部分讨论。
 
 ### 9.1.1 Technology-Independent Interface (TII)
 
-In some sense, the TII is a meta-level interface that brings a new component out of the core image of the software, the job , and the given embodiment, the component hardware into existence . The purpose of the TII is the configuration of the compo­ nent and the control of the execution of the software within a component. The com­ ponent hardware must provide a dedicated TII port for the secure download of a new software image onto a component. Periodically, the $\mathrm{g}$ -state (see Sect. 4.2.3 ) of the component should be published at the TII in order to be able to check the contents of the g-state by a dedicated diagnostic component. A further TII port directly con­ nected to the component hardware must allow the resetting of the component hard­ ware and the restart of the component software at the next reintegration point with a relevant g-state that is contained in the reset message. The TII is also used to control the voltage and frequency of the component hardware, provided the given hardware supports voltage-frequency scaling. Since malicious TII messages have the potential to destroy the correct operation of a component, the authenticity and integrity of all messages that are sent to the TII interface must be assured.
+In some sense, the TII is a meta-level interface that brings a new component out of the core image of the software, the job , and the given embodiment, the component hardware into existence. The purpose of the TII is the configuration of the compo­ nent and the control of the execution of the software within a component. The com­ ponent hardware must provide a dedicated TII port for the secure download of a new software image onto a component. Periodically, the $\mathrm{g}$ -state (see Sect. 4.2.3 ) of the component should be published at the TII in order to be able to check the contents of the g-state by a dedicated diagnostic component. A further TII port directly con­ nected to the component hardware must allow the resetting of the component hard­ ware and the restart of the component software at the next reintegration point with a relevant g-state that is contained in the reset message. The TII is also used to control the voltage and frequency of the component hardware, provided the given hardware supports voltage-frequency scaling. Since malicious TII messages have the potential to destroy the correct operation of a component, the authenticity and integrity of all messages that are sent to the TII interface must be assured.
 
 > 在某种意义上，TII 是一个元级接口，它从软件、作业和给定实施例的核心映像中引入了一个新组件，即组件硬件。TII 的目的是配置组件并控制组件内软件的执行。组件硬件必须提供专用 TII 端口，以便将新软件映像安全下载到组件上。应定期在 TII 上发布组件的$\mathrm{g}$-state(见第 4.2.3 节)，以便能够通过专用诊断组件检查 g-state 的内容。直接连接到组件硬件的另一个 TII 端口必须允许重置组件硬件，并在下一个重新集成点重新启动组件软件，重置消息中包含相关的 g 状态。TII 还用于控制组件硬件的电压和频率，前提是给定的硬件支持电压频率缩放。由于恶意 TII 消息有可能破坏组件的正确操作，因此必须确保发送到 TII 接口的所有消息的真实性和完整性。
 
@@ -7450,25 +7479,25 @@ In the domain of VLSI design, it is common practice to provide a dedicated inter
 
 Example : A high-level time-monitored request-reply protocol that is a unique concept at the level of the API requires two or more independent messages at the basic message trans­ port service (BMTS) level and a set of local timer and operating system calls for its ­implementation. The GM implements this high-level protocol. It keeps track of all relevant messages and coordinates the timeouts and operating system calls.
 
-> 示例：API 级别的高级时间监控请求响应协议是一个独特的概念，它需要两个或多个基本消息传输服务(BMTS)级别的独立消息，以及一组本地定时器和操作系统调用才能实现。全球机制执行这一高级协议。它跟踪所有相关消息，并协调超时和操作系统调用。
+> 示例：API 级别的高级时间监控请求响应协议是一个独特的概念，它需要两个或多个基本消息传输服务(BMTS)级别的独立消息，以及一组本地定时器和操作系统调用才能实现。全局机制执行这一高级协议。它跟踪所有相关消息，并协调超时和操作系统调用。
 
 ## 9.2 Task Management
 
-In our model, the component software is assumed to be a unit of design , and a whole component is the smallest unit of fault containment. The concurrent tasks within a component are cooperative and not competitive . Since the whole component is a unit of failure, it is not justified to design and implement resource-intensive mecha­ nisms to protect the component-internal tasks from each other. The component-­ internal operating system is thus a lightweight operating system that manages the task execution and the resource allocation inside a component.
+In our model, the component software is assumed to be a unit of design , and a whole component is the smallest unit of fault containment. The concurrent tasks within a component are cooperative and not competitive. Since the whole component is a unit of failure, it is not justified to design and implement resource-intensive mecha­ nisms to protect the component-internal tasks from each other. The component-­ internal operating system is thus a lightweight operating system that manages the task execution and the resource allocation inside a component.
 
 > 在我们的模型中，组件软件被假设为一个设计单元，整个组件是故障控制的最小单元。组件内的并发任务是协作的，而不是竞争的。由于整个组件是一个故障单元，因此没有理由设计和实施资源密集型机制来保护组件内部任务。因此，组件内部操作系统是一个轻量级的操作系统，负责管理组件内部的任务执行和资源分配。
 
-A task is the execution of a sequential program. It starts with reading of input data and of its internal state and terminates with the production of the results and updated internal state. A task that does not have an internal state at its point of invo­ cation is called a stateless task ; otherwise, it is called a statefull task . Task manage­ ment is concerned with the initialization, execution, monitoring, error handling, interaction, and termination of tasks.
+A task is the execution of a sequential program. It starts with reading of input data and of its internal state and terminates with the production of the results and updated internal state. A task that does not have an internal state at its point of invo­ cation is called a stateless task; otherwise, it is called a statefull task. Task manage­ ment is concerned with the initialization, execution, monitoring, error handling, interaction, and termination of tasks.
 
 > 任务是执行顺序程序。它从读取输入数据及其内部状态开始，到产生结果和更新的内部状态结束。在调用点没有内部状态的任务称为无状态任务；否则，它被称为状态任务。任务管理涉及任务的初始化、执行、监控、错误处理、交互和终止。
 
 ### 9.2.1 Simple Tasks
 
-If there is no synchronization point within a task, we call it a simple task ( S-task ), i.e., whenever an S-task is started, it can continue until its termination point is reached, provided the CPU is allocated to the task. Because an S-task cannot be blocked within the body of the task by waiting for an event external to the S-task, the execution time of an S-task is not directly dependent on the progress of other tasks in the node and can be determined in isolation . It is possible for the execution time of an S-task to be extended by indirect interactions, such as the preemption of the task execution by a task with higher priority.
+If there is no synchronization point within a task, we call it a simple task ( S-task ), i.e., whenever an S-task is started, it can continue until its termination point is reached, provided the CPU is allocated to the task. Because an S-task cannot be blocked within the body of the task by waiting for an event external to the S-task, the execution time of an S-task is not directly dependent on the progress of other tasks in the node and can be determined in isolation. It is possible for the execution time of an S-task to be extended by indirect interactions, such as the preemption of the task execution by a task with higher priority.
 
 > 如果任务中没有同步点，我们称之为简单任务(S-task)，即每当启动 S-task 时，只要 CPU 被分配给该任务，它就可以继续，直到达到其终止点。因为 S 任务不能通过等待 S 任务外部的事件在任务主体内被阻止，所以 S 任务的执行时间并不直接取决于节点中其他任务的进度，可以单独确定。S 任务的执行时间可以通过间接交互来延长，例如优先级较高的任务抢占任务执行时间。
 
-Depending on the triggering signal for the activation of a task, we distinguish time-triggered (TT) tasks and (ET) event-triggered tasks . A cycle (see Sect. 3.3.4 ) is assigned to every TT-task, and the task execution is started whenever the global time reaches the start of a new cycle. Event-triggered tasks are started whenever a start-­ event for the task occurs. A start event can be the completion of another task or an external event that is relayed to the operating system by an incoming message or by the interrupt mechanism.
+Depending on the triggering signal for the activation of a task, we distinguish time-triggered (TT) tasks and (ET) event-triggered tasks. A cycle (see Sect. 3.3.4 ) is assigned to every TT-task, and the task execution is started whenever the global time reaches the start of a new cycle. Event-triggered tasks are started whenever a start-­ event for the task occurs. A start event can be the completion of another task or an external event that is relayed to the operating system by an incoming message or by the interrupt mechanism.
 
 > 根据任务激活的触发信号，我们区分了时间触发(TT)任务和(ET)事件触发任务。为每个 TT 任务分配一个周期(见第 3.3.4 节)，每当全局时间到达新周期的开始时，任务执行就会开始。每当任务的启动事件发生时，事件触发的任务就会启动。启动事件可以是另一个任务的完成，也可以是通过传入消息或中断机制中继到操作系统的外部事件。
 
@@ -7505,7 +7534,7 @@ An ET operating system that supports non-preemptive S-tasks will take a new sche
 
 > 支持非抢占式 S 任务的 ET 操作系统将在当前运行的任务终止后采取新的调度决策。这简化了操作系统的任务管理，但严重限制了其响应能力。如果在安排最长任务后立即发生重大事件，则在完成此最长任务之前，不会考虑此事件。
 
-In an RT operating system that supports task preemption, each occurrence of a significant event can potentially activate a new task and cause an immediate inter­ ruption of the currently executing task. Depending on the outcome of the dynamic scheduling algorithm, the new task will be selected for execution or the interrupted task will be continued. Data conflicts between concurrently executing S-tasks can be avoided if the operating system copies all input data required by this task from the global data area into a private data area of the task at the time of task invocation. If components are replicated, care must be taken that the preemption points at all replicas is at the same statement ; otherwise replica determinism may be lost.
+In an RT operating system that supports task preemption, each occurrence of a significant event can potentially activate a new task and cause an immediate inter­ ruption of the currently executing task. Depending on the outcome of the dynamic scheduling algorithm, the new task will be selected for execution or the interrupted task will be continued. Data conflicts between concurrently executing S-tasks can be avoided if the operating system copies all input data required by this task from the global data area into a private data area of the task at the time of task invocation. If components are replicated, care must be taken that the preemption points at all replicas is at the same statement; otherwise replica determinism may be lost.
 
 > 在支持任务抢占的 RT 操作系统中，每次发生重大事件都可能激活一个新任务，并导致当前正在执行的任务立即中断。根据动态调度算法的结果，将选择执行新任务，或者继续执行中断的任务。如果操作系统在任务调用时将此任务所需的所有输入数据从全局数据区复制到任务的私有数据区，则可以避免并发执行的 S 任务之间的数据冲突。如果复制组件，必须注意所有副本的抢占点都在同一语句中；否则，副本确定性可能会丢失。
 
@@ -7527,7 +7556,7 @@ A task is called a complex task (C-Task) if it contains a blocking synchronizati
 
 The WCET of a C-task cannot be determined independently of the other tasks in the node. It can depend on the occurrence of an event in the node environment, as seen from the example of waiting for an input message. The timing analysis is not a local issue of a single task anymore; it becomes a global system issue. It is impos­ sible to give an upper bound for the WCET of a C-task by analyzing the task code only.
 
-> C 任务的 WCET 不能独立于节点中的其他任务来确定。它可能取决于节点环境中事件的发生，如等待输入消息的示例所示。时间分析不再是单一任务的局部问题；这已成为一个全球性的系统性问题。仅通过分析任务代码不可能给出 C 任务的 WCET 上限。
+> C 任务的 WCET 不能独立于节点中的其他任务来确定。它可能取决于节点环境中事件的发生，如等待输入消息的示例所示。时间分析不再是单一任务的局部问题；这已成为一个全局性的系统性问题。仅通过分析任务代码不可能给出 C 任务的 WCET 上限。
 
 The application programming interface of a C-task is more complex than that of S-tasks. In addition to the three data structures already introduced, i.e., the input data structure , the output data structure , and the $g$ -state data structure, the global data structures that are accessed at the blocking point must be defined. System calls must be provided that handle a WAIT-FOR-EVENT and a SIGNAL-EVENT. After the execution of the WAIT-FOR-EVENT, the task enters the blocked state and waits in the queue. The event occurrence releases the task from the blocked state. It must be monitored by a time-out task to avoid permanent blocking. The time-out task must be deactivated in case the awaited event occurs within the time-out period, otherwise the blocked task must be killed .
 
@@ -7537,7 +7566,7 @@ The application programming interface of a C-task is more complex than that of S
 
 A real-time image must be temporally accurate at the instant of use (see Sect. 5.4 ). In a distributed system, the temporal accuracy can only be checked if the duration between the instant of observation of a RT entity, observed by the sensor node, and the instant of use , determined by the actuator node, can be measured. This requires the availability of a global time base of proper precision among all involved nodes. If fault tolerance is required, two independent self-checking channels must be pro­ vided to link an end system to the fault-tolerant communication infrastructure. The clock synchronization messages must be provided on both channels in order to tol­ erate the loss of any one of the channels.
 
-> 实时图像在使用时必须在时间上准确(见第 5.4 节)。在分布式系统中，只有能够测量传感器节点观察到的 RT 实体的观察时刻与致动器节点确定的使用时刻之间的持续时间，才能检查时间精度。这需要在所有相关节点之间提供具有适当精度的全球时基。如果需要容错，则必须提供两个独立的自检通道，将终端系统连接到容错通信基础设施。必须在两个通道上提供时钟同步消息，以减少任何一个通道的丢失。
+> 实时图像在使用时必须在时间上准确(见第 5.4 节)。在分布式系统中，只有能够测量传感器节点观察到的 RT 实体的观察时刻与致动器节点确定的使用时刻之间的持续时间，才能检查时间精度。这需要在所有相关节点之间提供具有适当精度的全局时基。如果需要容错，则必须提供两个独立的自检通道，将终端系统连接到容错通信基础设施。必须在两个通道上提供时钟同步消息，以减少任何一个通道的丢失。
 
 Every I/O signal has two dimensions, the value dimension and the temporal dimension. The value dimension relates to the value of the I/O signal. The temporal dimension relates to the instant when the value was captured from the environment or released to the environment.
 
@@ -7581,7 +7610,7 @@ In a TT system that exchanges messages at a priori known instants with a fixed p
 
 > 在以消息之间的固定周期在先验已知时刻交换消息的 TT 系统中，定时消息中的时间表示可以利用这一先验信息。时间值可以按消息周期的分数进行编码，从而提高数据效率。例如，如果每 100 毫秒交换一次观测消息，则相对于时段开始的 7 位时间表示将以优于 1 毫秒的粒度标识事件。这种 7 位时间表示，以及表示事件发生的附加位，可以打包成一个字节。这种事件发生瞬间的紧凑表示在报警监控系统中非常有用，在该系统中，循环触发任务会定期查询数千个报警。触发任务的周期决定了报警报告的最大延迟(时间作为控制)，而时间戳的分辨率则通知了上一个周期中报警事件(时间作为数据)的确切发生。
 
-Example: In a single periodic TTEthernet message with a data field of 1000 bytes and cycle time of $I O$ msec , 1000 alarms can be encoded in a single message with a worst-case reaction time of $I O$ msec and an alarm resolution time of better than 100 μ sec . In a 100 Mbit/sec Ethernet system, these periodic alarm messages will generate a (background) system load of less than $1\%$ of the network capacity. Such an alarm reporting system will not cause any increase in load if all $l000$ alarms occur at the same instant. If, in an event-triggered system, a $I O O$ byte Ethernet message is sent whenever an alarm occurs, then the peak-load of 1000 alarm messages will generate a load of $10\,\%$ of the network capacity and a worst-case reac­ tion time of 100 msec .
+Example: In a single periodic TTEthernet message with a data field of 1000 bytes and cycle time of $I O$ msec , 1000 alarms can be encoded in a single message with a worst-case reaction time of $I O$ msec and an alarm resolution time of better than 100 μ sec. In a 100 Mbit/sec Ethernet system, these periodic alarm messages will generate a (background) system load of less than $1\%$ of the network capacity. Such an alarm reporting system will not cause any increase in load if all $l000$ alarms occur at the same instant. If, in an event-triggered system, a $I O O$ byte Ethernet message is sent whenever an alarm occurs, then the peak-load of 1000 alarm messages will generate a load of $10\,\%$ of the network capacity and a worst-case reac­ tion time of 100 msec .
 
 > 示例：在数据字段为 1000 字节、循环时间为$IO$msec 的单个周期性 TTEthernet 消息中，1000 个警报可以编码在一个消息中，最坏情况下的反应时间为$IO$msec，警报解决时间优于 100μsec。在 100 Mbit/sec 以太网系统中，这些周期性报警消息将产生小于网络容量 1 美元的(后台)系统负载。如果所有 1000 美元的警报同时发生，这种警报报告系统不会导致负载增加。如果在事件触发系统中，每当发生警报时都会发送一条$I O$字节的以太网消息，那么 1000 条警报消息的峰值负载将产生 10 美元的网络容量负载和 100 毫秒的最坏反应时间。
 
@@ -7673,13 +7702,13 @@ In the first step, many sensors of analog physical quantities produce analog sig
 
 > 在第一步中，许多模拟物理量的传感器产生标准$\mathit{4-20\ m A}$范围内的模拟信号(4mA 表示值域的$O\%$，$2O\m A$表示值域中的$I O\%$)，然后通过模数(AD)转换器将其转换为数字形式。如果测量值编码在$\scriptstyle4-2O\中；m A$范围内，可以将没有电流流动的断线$(O\m A)$与测量值$O\%\left(4\：m A\right)$ 区分开来。
 
-Without special care, the electric-noise level limits the accuracy of any analog control signal to about $0.1\%$ . Analog-to-digital (AD) converters with a resolution of more than 10 bits require a carefully controlled physical environment that is not available in typical industrial applications. A 16-bit word length is thus more than sufficient to encode the value of an RT entity measured by an analog sensor.
+Without special care, the electric-noise level limits the accuracy of any analog control signal to about $0.1\%$. Analog-to-digital (AD) converters with a resolution of more than 10 bits require a carefully controlled physical environment that is not available in typical industrial applications. A 16-bit word length is thus more than sufficient to encode the value of an RT entity measured by an analog sensor.
 
 > 如果不特别小心，电噪声水平将任何模拟控制信号的精度限制在约 0.1 美元。分辨率超过 10 位的模数(AD)转换器需要一个精心控制的物理环境，这在典型的工业应用中是不可用的。因此，16 位字长足以对模拟传感器测量的 RT 实体的值进行编码。
 
 In many control applications, the instant when an analog physical quantity is observed (sampled) is in the sphere of control of the computer system. In order to reduce the dead time of a control loop, the instant of sampling, the transmission of the sampled data to the control node, and the transmission of the set point data to the actuator node should be phase-aligned (see Sect. 3.3.4 ).
 
-> 在许多控制应用中，观察(采样)模拟物理量的时刻在计算机系统的控制范围内。为了减少控制回路的死区时间，采样时刻、采样数据向控制节点的传输以及设定点数据向执行器节点的传输应相位对齐(见第 3.3.4 节)。
+> 在许多控制应用中，观察(采样)模拟物理量的时刻在计算机系统的控制范围内。为了减少控制回路(control loops)的死区时间，采样时刻、采样数据向控制节点的传输以及设定点数据向执行器节点的传输应相位对齐(见第 3.3.4 节)。
 
 ### 9.5.2 Digital Input/Output
 
@@ -7821,7 +7850,7 @@ In general, the number of rounds (or stages) of information exchange needed depe
 
 ### 9.6.1 Raw Data, Measured Data, and Agreed Data
 
-In Sect. 1.2.1 , the concepts of raw data, measured data, and agreed data have been introduced: raw data are produced at the digital hardware interface of the physical sensor. Measured data , presented in standard engineering units, are derived from one or a sequence of raw data samples by the process of signal conditioning . Measured data that are judged to be a correct image of the RT entity, e.g., after the comparison with other measured data elements that have been derived by diverse techniques, are called agreed data . Agreed data form the inputs to control actions. In a safety-critical system where no single point of failure is allowed to exist, an agreed data element may not originate from a single sensor. The challenge in the development of a safety-critical input system is the selection and placement of the redundant sensors and the design of the agreement algorithms. We distinguish two types of agreement, syntactic agreement and semantic agreement .
+In Sect. 1.2.1 , the concepts of raw data, measured data, and agreed data have been introduced: raw data are produced at the digital hardware interface of the physical sensor. Measured data , presented in standard engineering units, are derived from one or a sequence of raw data samples by the process of signal conditioning. Measured data that are judged to be a correct image of the RT entity, e.g., after the comparison with other measured data elements that have been derived by diverse techniques, are called agreed data. Agreed data form the inputs to control actions. In a safety-critical system where no single point of failure is allowed to exist, an agreed data element may not originate from a single sensor. The challenge in the development of a safety-critical input system is the selection and placement of the redundant sensors and the design of the agreement algorithms. We distinguish two types of agreement, syntactic agreement and semantic agreement .
 
 > 在门派。1.2.1、介绍了原始数据、测量数据和约定数据的概念：原始数据是在物理传感器的数字硬件接口处产生的。以标准工程单位表示的测量数据是通过信号调理过程从一个或一系列原始数据样本中得出的。例如，在与通过不同技术得出的其他测量数据元素进行比较后，被判断为 RT 实体正确图像的测量数据称为商定数据。商定的数据构成控制行动的输入。在不允许存在单点故障的安全关键系统中，商定的数据元素可能不是来自单个传感器。开发安全关键输入系统的挑战在于冗余传感器的选择和放置以及协议算法的设计。我们区分了两种类型的协议，句法协议和语义协议。
 
@@ -7833,7 +7862,7 @@ Assume that two independent sensors measure a single RT entity. When the two obs
 
 ### 9.6.3 Semantic Agreement
 
-If the meanings of the different measured values are related to each other by a pro­ cess model based on a priori knowledge about the relationships and the physical characteristics of the process parameters of the controlled object, we speak of semantic agreement . In semantic agreement, it is not necessary to duplicate or trip­ licate every sensor. Different redundant sensors observe different RT entities. A model of the physical process relates these redundant sensor readings to each other to find a set of plausible agreed values and to identify implausible values that indi­ cate a sensor failure. Such an erroneous sensor value must be replaced by a calcu­ lated estimate of the most probable value at the given point in time, based on the inherent semantic redundancy in the set of measurements.
+If the meanings of the different measured values are related to each other by a pro­ cess model based on a priori knowledge about the relationships and the physical characteristics of the process parameters of the controlled object, we speak of semantic agreement. In semantic agreement, it is not necessary to duplicate or trip­ licate every sensor. Different redundant sensors observe different RT entities. A model of the physical process relates these redundant sensor readings to each other to find a set of plausible agreed values and to identify implausible values that indi­ cate a sensor failure. Such an erroneous sensor value must be replaced by a calcu­ lated estimate of the most probable value at the given point in time, based on the inherent semantic redundancy in the set of measurements.
 
 > 如果不同测量值的含义通过基于受控对象过程参数的关系和物理特性的先验知识的过程模型相互关联，我们就称之为语义一致。在语义一致性中，没有必要复制或绊倒每个传感器。不同的冗余传感器观察不同的 RT 实体。物理过程模型将这些冗余传感器读数相互关联，以找到一组合理的商定值，并识别指示传感器故障的不合理值。这种错误的传感器值必须由给定时间点最可能值的计算估计值代替，该估计值基于测量值集中的固有语义冗余。
 
@@ -7901,15 +7930,15 @@ A more sophisticated error detection mechanism that also covers part of the valu
 
 > •在完全时间触发的系统中，所有任务的静态时间控制结构都是通过离线调度工具预先建立的。这种时间控制结构被编码在任务描述符列表(TADL)中，该列表包含节点所有活动的循环调度。此计划考虑了任务之间所需的前置和互斥关系，因此不需要操作系统在运行时对任务进行明确的协调。
 
-• In a RT operating system that supports task preemption, each occurrence of a significant event can potentially activate a new task and cause an immediate interruption of the currently executing task. If components are replicated, care must be taken that the preemption points at all replicas is at the same statement ; otherwise replica determinism may be lost.
+• In a RT operating system that supports task preemption, each occurrence of a significant event can potentially activate a new task and cause an immediate interruption of the currently executing task. If components are replicated, care must be taken that the preemption points at all replicas is at the same statement; otherwise replica determinism may be lost.
 
 > •在支持任务抢占的 RT 操作系统中，每次发生重大事件都可能激活一个新任务，并导致当前正在执行的任务立即中断。如果复制组件，必须注意所有副本的抢占点都在同一语句中；否则，副本确定性可能会丢失。
 
 • The timing analysis of a C-task is not a local issue of a single task anymore; it becomes a global system issue. In the general case, it is impossible to give an upper bound for the WCET of a C-task.
 
-> •C 任务的时间分析不再是单个任务的局部问题；这已成为一个全球性的系统性问题。在一般情况下，不可能给出 C 任务的 WCET 的上限。
+> •C 任务的时间分析不再是单个任务的局部问题；这已成为一个全局性的系统性问题。在一般情况下，不可能给出 C 任务的 WCET 的上限。
 
-• It is important to distinguish time as data and time as control . Time as control is more difficult to handle than time as data , because it may sometimes require a dynamic data-dependent modification of the temporal control structure.
+• It is important to distinguish time as data and time as control. Time as control is more difficult to handle than time as data , because it may sometimes require a dynamic data-dependent modification of the temporal control structure.
 
 > •区分时间作为数据和时间作为控制非常重要。时间即控制比时间即数据更难处理，因为它有时可能需要对时间控制结构进行动态的数据相关修改。
 
@@ -7919,7 +7948,7 @@ A more sophisticated error detection mechanism that also covers part of the valu
 
 • In order to reduce the dead time of a control loop, the instant of sampling, the transmission of the sampled data to the control node, and the transmission of the set point data to the actuator node should be phase-aligned in a time-­ triggered system.
 
-> •为了减少控制回路的死区时间，采样时刻、采样数据到控制节点的传输以及设定点数据到执行器节点的传输应在时间触发系统中相位对齐。
+> •为了减少控制回路(control loops)的死区时间，采样时刻、采样数据到控制节点的传输以及设定点数据到执行器节点的传输应在时间触发系统中相位对齐。
 
 • In an interrupt-driven software system, a transient error on the interrupt line may upset the temporal control pattern of the complete node and may cause the viola­ tion of important deadlines.
 
@@ -8030,7 +8059,7 @@ Centralized Versus Distributed Scheduling In a dynamic distributed real-time sys
 
 ### 10.1.2 S ched ul ability Test
 
-A test that determines whether a set of ready tasks can be scheduled such that each task meets its deadline is called a s ched ul ability test . We distinguish between exact , necessary , and sufficient s ched ul ability tests (Fig.10.2 ).
+A test that determines whether a set of ready tasks can be scheduled such that each task meets its deadline is called a s ched ul ability test. We distinguish between exact , necessary , and sufficient s ched ul ability tests (Fig.10.2 ).
 
 > 确定是否可以安排一组准备好的任务，使每个任务都能在截止日期前完成的测试称为成功能力测试。我们区分了精确、必要和充分的成功能力测试(图 10.2)。
 
@@ -8067,7 +8096,7 @@ The adversary argument [Mok83, p.41] states that, in general, it is not possible
 
 > 对手论点[Mok83，第 41 页]指出，一般来说，如果周期性任务和零星任务之间存在相互排斥约束，则不可能构建一个最优的完全在线动态调度器。对手论点的证明相对简单。
 
-Consider two mutually exclusive tasks, task $T l$ is periodic and the other task $T2$ is sporadic, with the parameters given in Fig.10.3 . The necessary s ched ul ability test introduced above is satisfied, because
+Consider two mutually exclusive tasks, task $T l$ is periodic and the other task $T2$ is sporadic, with the parameters given in Fig.10.3. The necessary s ched ul ability test introduced above is satisfied, because
 
 > 考虑两个互斥的任务，任务$Tl$是周期性的，另一个任务$T2$是零星的，参数如图 10.3 所示。上述必要的能力测试是令人满意的，因为
 
@@ -8150,7 +8179,7 @@ where $T(S)$ is the maximum execution time of statement $S$ , with T(exp) , $T(S
 
 > 其中$T(S)$是语句$S$的最大执行时间，T(exp)、$T(S_{I})$和$T(S_{2})$是各个构造的 WCET 边界。这种用于预测程序时序行为的公式称为时序模式[Sha89]。
 
-The WCET analysis of a program which is written in a high-level language must determine which program path, i.e., which sequence of instructions, will be exe­ cuted in the worst-case scenario. The longest program path is called the critical path . Because the number of program paths normally grows exponentially with the program size, the search for the critical path can become intractable if the search is not properly guided and the search space is not reduced by excluding infeasi­ ble paths.
+The WCET analysis of a program which is written in a high-level language must determine which program path, i.e., which sequence of instructions, will be exe­ cuted in the worst-case scenario. The longest program path is called the critical path. Because the number of program paths normally grows exponentially with the program size, the search for the critical path can become intractable if the search is not properly guided and the search space is not reduced by excluding infeasi­ ble paths.
 
 > 用高级语言编写的程序的 WCET 分析必须确定在最坏的情况下将执行哪个程序路径，即哪个指令序列。最长的程序路径称为关键路径。由于程序路径的数量通常随程序大小呈指数增长，如果搜索没有得到适当的引导，并且没有通过排除不可行的路径来减少搜索空间，那么对关键路径的搜索可能会变得棘手。
 
@@ -8272,7 +8301,7 @@ Static scheduling is based on strong regularity assumptions about the points in 
 
 > 静态调度基于对未来服务请求将得到满足的时间点的强规律性假设。虽然需要服务的外部事件的发生不在计算机系统的控制之下，但通过为每类事件选择适当的采样率，可以预先确定这些事件将得到服务的重复时间点。在系统设计期间，必须确定系统识别请求之前的最大延迟时间加上最大事务响应时间之和小于指定的服务截止日期。
 
-The Role of Time A static schedule is a periodic time-triggered schedule. The timeline is partitioned into a sequence of basic granules, the basic cycle time . There is only one interrupt in the system: the periodic clock interrupt denoting the start of a new basic granule. In a distributed system, this clock interrupt must be globally synchronized to a precision that is much better than the duration of a basic granule. Every transaction is periodic, its period being a multiple of the basic granule. The least common multiple of all transaction periods is the schedule period . At compile time, the scheduling decision for every point of the schedule period must be deter­ mined and stored in a dispatcher table for the operating system for the full schedule period. At run time, the preplanned decision is executed by the dispatcher after every clock interrupt.
+The Role of Time A static schedule is a periodic time-triggered schedule. The timeline is partitioned into a sequence of basic granules, the basic cycle time. There is only one interrupt in the system: the periodic clock interrupt denoting the start of a new basic granule. In a distributed system, this clock interrupt must be globally synchronized to a precision that is much better than the duration of a basic granule. Every transaction is periodic, its period being a multiple of the basic granule. The least common multiple of all transaction periods is the schedule period. At compile time, the scheduling decision for every point of the schedule period must be deter­ mined and stored in a dispatcher table for the operating system for the full schedule period. At run time, the preplanned decision is executed by the dispatcher after every clock interrupt.
 
 > 时间的作用静态计划是一种周期性的时间触发计划。时间线被划分为一系列基本颗粒，即基本循环时间。系统中只有一个中断：表示新基本粒子开始的周期性时钟中断。在分布式系统中，这个时钟中断必须全局同步到比基本颗粒持续时间好得多的精度。每笔交易都是周期性的，其周期是基本颗粒的倍数。所有交易周期中最不常见的倍数是计划周期。在编译时，必须确定调度周期内每个点的调度决策，并将其存储在整个调度周期内操作系统的调度表中。在运行时，调度程序在每次时钟中断后执行预先计划的决策。
 
@@ -8287,7 +8316,7 @@ Static scheduling can be applied to a single processor, to a multiple-processor,
 > ![](images/533332d39f1dfb155ef45686fe000063af8ba8f32840aefb0e1f36205121ffd1.jpg)
 > Fig.10.6 A search tree for the precedence graph of Fig.10.5
 
-The Search Tree The solution to the scheduling problem can be seen as finding a path, a feasible schedule, in a search tree by applying a search strategy. An example of a simple search tree for the precedence graph of Fig.10.5 is shown in Fig.10.6 . Every level of the search tree corresponds to one unit of time. The depth of the search tree corresponds to the period of the schedule. The search starts with an empty schedule at the root node of this tree. The outward edges of a node point to the possible alternatives that exist at this point of the search. A path from the root node to a particular node at level $n$ records the sequence of scheduling decisions that have been made up to time-point $n$ . Each path to a leaf node describes a complete schedule. It is the goal of the search to find a complete schedule that observes all precedence and mutual exclusion constraints, and which completes before the dead­ line. From Fig.10.6 , it can be seen that the lower branch of the search tree will lead to a shorter overall execution time than the upper branches.
+The Search Tree The solution to the scheduling problem can be seen as finding a path, a feasible schedule, in a search tree by applying a search strategy. An example of a simple search tree for the precedence graph of Fig.10.5 is shown in Fig.10.6. Every level of the search tree corresponds to one unit of time. The depth of the search tree corresponds to the period of the schedule. The search starts with an empty schedule at the root node of this tree. The outward edges of a node point to the possible alternatives that exist at this point of the search. A path from the root node to a particular node at level $n$ records the sequence of scheduling decisions that have been made up to time-point $n$. Each path to a leaf node describes a complete schedule. It is the goal of the search to find a complete schedule that observes all precedence and mutual exclusion constraints, and which completes before the dead­ line. From Fig.10.6 , it can be seen that the lower branch of the search tree will lead to a shorter overall execution time than the upper branches.
 
 > 搜索树调度问题的解决方案可以看作是通过应用搜索策略在搜索树中找到一条路径，一个可行的调度。图 10.6 展示了图 10.5 中优先级图的简单搜索树示例。搜索树的每个级别对应一个时间单位。搜索树的深度对应于计划的周期。搜索从该树根节点处的空计划开始。节点的外边缘指向搜索此点存在的可能替代方案。从根节点到级别$n$的特定节点的路径记录了截至时间点$n$所做的调度决策序列。叶子节点的每条路径都描述了一个完整的时间表。搜索的目标是找到一个遵守所有优先级和互斥约束的完整时间表，并在截止日期前完成。从图 10.6 可以看出，搜索树的下分支将导致比上分支更短的总体执行时间。
 
@@ -8315,7 +8344,7 @@ Transformation of a Sporadic Request to a Periodic Request While the future requ
 
 > 将偶发请求转换为周期性请求虽然周期性任务的未来请求时间是先验已知的，但只有偶发任务的最小到达间隔时间是预先已知的。在请求事件之前，无法知道必须为零星任务提供服务的实际时间点。这种有限的信息使得在运行时之前很难安排零星的请求。最苛刻的零星请求是那些响应时间短的请求，即相应的服务任务具有低延迟。
 
-It is possible to find solutions to the scheduling problem if an independent spo­ radic task has a laxity $l$ . One such solution, proposed by Mok [Mok83, p.44], is the replacement of a sporadic task $T$ by a pseudo-periodic task $T^{\prime}$ as seen in Table  10.1 .
+It is possible to find solutions to the scheduling problem if an independent spo­ radic task has a laxity $l$. One such solution, proposed by Mok [Mok83, p.44], is the replacement of a sporadic task $T$ by a pseudo-periodic task $T^{\prime}$ as seen in Table  10.1 .
 
 > 如果一个独立的随机任务具有松弛度$l$，则有可能找到调度问题的解决方案。Mok 提出的一种解决方案[Mok83，第 44 页]是用伪周期性任务$T^{\prime}$替换零星任务$T$，如表 10.1 所示。
 
@@ -8448,7 +8477,7 @@ The example of Fig.10.7 , taken from [Sha90], illustrates the operation of the p
 
 > 图 10.7 的示例取自[Sha90]，说明了优先级上限协议的操作。一个由三个任务组成的系统，T1(最高优先级)、T2(中等优先级)和$T3$(最低优先级)，竞争由三个信号量 S1、S2 和 S3 保护的三个关键区域。
 
-S ched ul ability Test for the Priority Ceiling Protocol The following sufficient s ched ul ability test for the priority ceiling protocol has been given by [Sha90, Theorem 16]. Assume a set of periodic tasks, $\{T_{i}\}$ with periods $p_{i}$ and computation times $c_{i}$ . We denote the worst-case blocking time of a task $\mathrm{t_{i}}$ by lower priority tasks by $B_{i}$ . The set of $n$ periodic tasks $\left\{{{T}_{i}}\right\}$ can be scheduled, if the following set of inequalities holds:
+S ched ul ability Test for the Priority Ceiling Protocol The following sufficient s ched ul ability test for the priority ceiling protocol has been given by [Sha90, Theorem 16]. Assume a set of periodic tasks, $\{T_{i}\}$ with periods $p_{i}$ and computation times $c_{i}$. We denote the worst-case blocking time of a task $\mathrm{t_{i}}$ by lower priority tasks by $B_{i}$. The set of $n$ periodic tasks $\left\{{{T}_{i}}\right\}$ can be scheduled, if the following set of inequalities holds:
 
 > 优先级上限协议的安全能力测试[Sha90，定理 16]给出了优先级上限协议以下充分的安全能力的测试。假设一组周期性任务$\{T_{i}\}$，其周期为$p_{i}$，计算时间为$c_{i}美元。我们用$B*{i}$表示低优先级任务$\mathrm{t*{i}$$的最坏阻塞时间。$n$周期性任务$\left 的集合\{{{T}\_{i} 如果以下不等式成立，则可以调度 $：
 
@@ -8465,7 +8494,7 @@ In these inequalities, the effect of preemption s by higher priority tasks is co
 > ![](images/09e7db3483980ac14f3eb7eb6fbee6d274c6e72cb85dc5d4ac4232f3cb9c7569.jpg)
 > Fig.10.7 The priority ceiling protocol. (Example taken from Ref. [Sha90])
 
-Example: The NASA Pathfinder robot on MARS experienced a problem that was diag­ nosed as a classic case of priority inversion, due to a missing priority ceiling protocol . The full and most interesting story is contained in [Jon97]: Very infrequently it was possible for an interrupt to occur that caused the (medium priority) communications task to be sched­ uled during the short interval while the (high priority) information bus thread was blocked waiting for the (low priority) meteorological data thread. In this case, the long-running communications task, having higher priority than the meteorological task, would prevent it from running, consequently preventing the blocked information bus task from running. After some time had passed, a watchdog timer would go off, notice that the data bus task had not been executed for some time, conclude that something had gone drastically wrong, and initiate a total system reset.
+Example: The NASA Pathfinder robot on MARS experienced a problem that was diag­ nosed as a classic case of priority inversion, due to a missing priority ceiling protocol. The full and most interesting story is contained in [Jon97]: Very infrequently it was possible for an interrupt to occur that caused the (medium priority) communications task to be sched­ uled during the short interval while the (high priority) information bus thread was blocked waiting for the (low priority) meteorological data thread. In this case, the long-running communications task, having higher priority than the meteorological task, would prevent it from running, consequently preventing the blocked information bus task from running. After some time had passed, a watchdog timer would go off, notice that the data bus task had not been executed for some time, conclude that something had gone drastically wrong, and initiate a total system reset.
 
 > 示例：火星上的美国国家航空航天局探路者机器人遇到了一个问题，由于缺少优先级上限协议，该问题被诊断为优先级反转的典型案例。完整而最有趣的故事包含在[Jon97]中：很少有可能发生中断，导致(中等优先级)通信任务在短间隔内被调度，而(高优先级)信息总线线程在等待(低优先级)气象数据线程时被阻塞。在这种情况下，具有比气象任务更高优先级的长时间运行的通信任务将阻止其运行，从而阻止被阻止的信息总线任务运行。过了一段时间后，看门狗定时器会关闭，注意到数据总线任务已经有一段时间没有执行了，得出结论认为出现了严重问题，并启动全面系统重置。
 
@@ -8475,7 +8504,7 @@ Example: The NASA Pathfinder robot on MARS experienced a problem that was diag­
 
 In a control system, the maximum duration of an RT transaction is the critical parameter for the quality of control, since it contributes to the dead time of a control loop. In a distributed system, the duration of this transaction depends on the sum of the durations of all processing and communication actions that form the transaction. In such a system, it makes sense to develop a holistic schedule that considers all these actions together. In a time-triggered system, the processing actions and the communication actions can be phase aligned (see Sect. 3.3.4 ), such that a send slot in the communication system is available immediately after the WCET of a process­ ing action.
 
-> 在控制系统中，RT 事务的最大持续时间是控制质量的关键参数，因为它会导致控制回路的死区时间。在分布式系统中，此事务的持续时间取决于构成事务的所有处理和通信操作的持续时间之和。在这样一个系统中，制定一个综合考虑所有这些行动的整体时间表是有意义的。在时间触发系统中，处理动作和通信动作可以相位对齐(见第 3.3.4 节)，以便在处理动作的 WCET 之后，通信系统中的发送时隙立即可用。
+> 在控制系统中，RT 事务的最大持续时间是控制质量的关键参数，因为它会导致控制回路(control loops)的死区时间。在分布式系统中，此事务的持续时间取决于构成事务的所有处理和通信操作的持续时间之和。在这样一个系统中，制定一个综合考虑所有这些行动的整体时间表是有意义的。在时间触发系统中，处理动作和通信动作可以相位对齐(见第 3.3.4 节)，以便在处理动作的 WCET 之后，通信系统中的发送时隙立即可用。
 
 It is already difficult to guarantee tight deadlines by dynamic scheduling tech­ niques in a single processor event-triggered multi-tasking system if mutual exclu­ sion and precedence constraints among the tasks must be considered. The situation is more complex in a distributed system, where the non-preemptive access to the communication medium must be considered. Tindell [Tin95] analyzes distributed systems that use the CAN bus as the communication channel and establishes ana­ lytical upper bounds to the communication delays that are encountered by a set of periodic messages. These results are then integrated with the results of the node-­ local task scheduling to arrive at the worst-case execution time of distributed real-­ time transactions. One difficult problem is the control of transaction jitter.
 
@@ -8505,7 +8534,7 @@ By looking at the scheduling problem and control problem in an integrated fash­
 
 > •如果调度器在运行时做出调度决策，从当前的一组就绪任务中选择一个，则称为动态(或在线)调度器。如果调度器在编译时做出调度决策，则称为静态(或预运行时)。它为离线运行时调度员生成调度表。
 
-• A test that determines whether a set of ready tasks can be scheduled so that each task meets its deadline is called a s ched ul ability test . We distinguish between exact , necessary , and sufficient s ched ul ability tests. In nearly all cases of task dependency, even if there is only one common resource, the complexity of an exact s ched ul ability test algorithm belongs to the class of NP-complete problems and is thus computationally intractable.
+• A test that determines whether a set of ready tasks can be scheduled so that each task meets its deadline is called a s ched ul ability test. We distinguish between exact , necessary , and sufficient s ched ul ability tests. In nearly all cases of task dependency, even if there is only one common resource, the complexity of an exact s ched ul ability test algorithm belongs to the class of NP-complete problems and is thus computationally intractable.
 
 > •确定是否可以安排一组准备好的任务，以便每个任务都能在截止日期前完成的测试称为成功能力测试。我们区分精确、必要和充分的能力测试。在几乎所有任务依赖的情况下，即使只有一个公共资源，精确搜索能力测试算法的复杂性也属于 NP 完全问题，因此在计算上很难处理。
 
@@ -8641,7 +8670,7 @@ Starting with the seminal work of Liu and Layland [Liu73] in 1973 on scheduling 
 
 ## Overview
 
-This chapter on system design starts with a discussion on design in general. The designer must get a deep insight into all different aspects of the problem domain before she/he can design a proper architecture for an application. In computer sys­ tem design, the most important goal is controlling the complexity of the evolving artifact. A thorough analysis of the purpose, the requirements, and constraints con­ fine the design space and avoids the investigation of unrealistic design alternatives. The central step in the design of an architecture is the allocation of the identified system functions to nearly independent subsystems. The result of the architecture design phase is an Interface Control Document that precisely specifies the func­ tional and temporal properties of the interfaces among the subsystems. A subsystem should have a high internal cohesion and simple external interfaces. In the follow­ ing, different design styles such as model-based design and component-based design are discussed. The design of safety-critical systems starts with a safety anal­ ysis such as fault tree analysis and/or failure mode and effect analysis (FMEA) of the envisioned application and the development of a convincing safety case . Different standards that must be observed in the design of a safety-critical system are referred to, such as the IEC 61508 for electric and electronic equipment and the ARINC DO 178C standard for airborne equipment software. The elimination of all design errors, e.g., software errors or hardware errata of a large safety-critical sys­ tem, is a major challenge. Design diversity can help to mitigate the problem of remaining design errors and support software maintainability. Maintainability of software is needed to correct design errors in the software and to adapt the software to the never-ending needs of an evolving application scenario. The final section of this chapter presents the principles that have been followed in the design of the time-triggered architecture.
+This chapter on system design starts with a discussion on design in general. The designer must get a deep insight into all different aspects of the problem domain before she/he can design a proper architecture for an application. In computer sys­ tem design, the most important goal is controlling the complexity of the evolving artifact. A thorough analysis of the purpose, the requirements, and constraints con­ fine the design space and avoids the investigation of unrealistic design alternatives. The central step in the design of an architecture is the allocation of the identified system functions to nearly independent subsystems. The result of the architecture design phase is an Interface Control Document that precisely specifies the func­ tional and temporal properties of the interfaces among the subsystems. A subsystem should have a high internal cohesion and simple external interfaces. In the follow­ ing, different design styles such as model-based design and component-based design are discussed. The design of safety-critical systems starts with a safety anal­ ysis such as fault tree analysis and/or failure mode and effect analysis (FMEA) of the envisioned application and the development of a convincing safety case. Different standards that must be observed in the design of a safety-critical system are referred to, such as the IEC 61508 for electric and electronic equipment and the ARINC DO 178C standard for airborne equipment software. The elimination of all design errors, e.g., software errors or hardware errata of a large safety-critical sys­ tem, is a major challenge. Design diversity can help to mitigate the problem of remaining design errors and support software maintainability. Maintainability of software is needed to correct design errors in the software and to adapt the software to the never-ending needs of an evolving application scenario. The final section of this chapter presents the principles that have been followed in the design of the time-triggered architecture.
 
 > 本章从系统设计的一般讨论开始。设计师必须深入了解问题领域的所有不同方面，然后才能为应用程序设计合适的架构。在计算机系统设计中，最重要的目标是控制不断发展的工件的复杂性。对目的、要求和约束的彻底分析可以优化设计空间，避免调查不切实际的设计方案。架构设计的核心步骤是将已识别的系统功能分配给几乎独立的子系统。架构设计阶段的结果是一份接口控制文件，该文件精确地指定了子系统之间接口的功能和时间属性。子系统应该具有高度的内部凝聚力和简单的外部接口。在下文中，讨论了不同的设计风格，如基于模型的设计和基于组件的设计。安全关键系统的设计始于安全分析，如对设想的应用进行故障树分析和/或故障模式与影响分析(FMEA)，并制定令人信服的安全案例。参考了安全关键系统设计中必须遵守的不同标准，如电气和电子设备的 IEC 61508 和机载设备软件的 ARINC DO 178C 标准。消除所有设计错误，例如大型安全关键系统的软件错误或硬件勘误，是一项重大挑战。设计多样性可以帮助减轻剩余设计错误的问题，并支持软件的可维护性。需要软件的可维护性来纠正软件中的设计错误，并使软件适应不断发展的应用场景的永无止境的需求。本章的最后一节介绍了时间触发架构设计中遵循的原则。
 
@@ -8661,7 +8690,7 @@ Let us, at the starting point, introduce a rather abstract definition of a syste
 
 > 首先，让我们介绍一个相当抽象的系统定义：一个系统，如汽车，是许多相关部分(子系统)相互作用的结果，这些部分形成一个整体，并为其环境提供有目的的服务。它由物理或虚拟皮肤封装，将系统与其环境隔开。在计算机系统中，皮肤中的接口使系统与其环境之间能够交换信息[Kop22，第 10 页]。
 
-The first activity in the design of a system is the purpose analysis . During the purpose analysis phase , the goals and the economic and technical constraints of an envisioned solution are established. If the evaluation at the end of this phase results in a go ahead decision, a project team is formed to start the requirement analysis and the system design phase. There are three opposing views how to proceed in this first most critical phase when designing a large system:
+The first activity in the design of a system is the purpose analysis. During the purpose analysis phase , the goals and the economic and technical constraints of an envisioned solution are established. If the evaluation at the end of this phase results in a go ahead decision, a project team is formed to start the requirement analysis and the system design phase. There are three opposing views how to proceed in this first most critical phase when designing a large system:
 
 > 系统设计中的第一项活动是目的分析。在目的分析阶段，确定了设想解决方案的目标以及经济和技术约束。如果此阶段结束时的评估导致继续决策，则组建项目团队开始需求分析和系统设计阶段。在设计大型系统时，如何在第一个最关键的阶段进行，有三种相反的观点：
 
@@ -8677,7 +8706,7 @@ The first activity in the design of a system is the purpose analysis . During th
 
 > (iii)分层架构设计方法，其中将总体系统功能分配给顶级子系统，并首先制定这些子系统之间相互作用的精确规范
 
-The rationale for the grand design is that a detailed and unbiased specification of the complete problem (the What ?) must be available before a particular solution (the How?) is designed. The difficulty with grand design is that there are no clear stop­ ping rules . The analysis and understanding of a large problem is never complete, and there are always good arguments for asking more questions concerning the requirements before starting with the real design work. Furthermore, the world evolves while the analysis is done, changing the original scenario. The phrase paral­ ysis by analysis has been coined to point to this danger.
+The rationale for the grand design is that a detailed and unbiased specification of the complete problem (the What ?) must be available before a particular solution (the How?) is designed. The difficulty with grand design is that there are no clear stop­ ping rules. The analysis and understanding of a large problem is never complete, and there are always good arguments for asking more questions concerning the requirements before starting with the real design work. Furthermore, the world evolves while the analysis is done, changing the original scenario. The phrase paral­ ysis by analysis has been coined to point to this danger.
 
 > 大设计的基本原理是，在设计特定的解决方案(How？)之前，必须提供完整问题(What？)的详细和无偏见的规范。宏伟设计的难点在于没有明确的停止规则。对一个大问题的分析和理解从来都是不完整的，在开始真正的设计工作之前，总是有很好的理由提出更多关于需求的问题。此外，在分析完成的同时，世界也在不断发展，改变了最初的场景。人们创造了“通过分析进行并行分析”这一短语来指出这种危险。
 
@@ -8689,11 +8718,11 @@ The rationale for the hierarchical architecture design approach is that it follo
 
 > 分层架构设计方法的基本原理是，它遵循经过充分验证的设计原则，将复杂的设计问题划分为复杂性较低的几乎独立的子系统，并为子系统的开发建立明确的约束(精确指定的接口)。作者认为，第三种选择，即分层架构设计，是设计大型系统的最合理方法。
 
-In the architecture design phase, a key designer should try to get a good under­ standing of the purpose and the gross architectural functions first, leaving detailed issues that affect only the internals of subsystems open. In his book [Bro10], Fred Brook states that conceptual integrity of a design is the result of a single mind . If it is not clear how to solve a particular problem, then a preliminary prototype of the most difficult part should be investigated with the explicit intent of discarding the solution if the looked-for insight has been gained .
+In the architecture design phase, a key designer should try to get a good under­ standing of the purpose and the gross architectural functions first, leaving detailed issues that affect only the internals of subsystems open. In his book [Bro10], Fred Brook states that conceptual integrity of a design is the result of a single mind. If it is not clear how to solve a particular problem, then a preliminary prototype of the most difficult part should be investigated with the explicit intent of discarding the solution if the looked-for insight has been gained .
 
 > 在架构设计阶段，关键设计师应该首先尝试很好地理解目的和总体架构功能，留下只影响子系统内部的详细问题。Fred Brook 在他的书[Bro10]中指出，设计的概念完整性是单一思维的结果。如果不清楚如何解决特定问题，那么应该对最困难部分的初步原型进行调查，如果已经获得了所寻求的见解，则应明确放弃该解决方案。
 
-Some years ago, Peters [Pet79] argued in a paper about design that design belongs to the set of wicked problems . Wicked problems are described by the fol­ lowing characteristics:
+Some years ago, Peters [Pet79] argued in a paper about design that design belongs to the set of wicked problems. Wicked problems are described by the fol­ lowing characteristics:
 
 > 几年前，Peters[Pet79]在一篇关于设计的论文中指出，设计属于一系列棘手的问题。不良问题由以下特征描述：
 
@@ -8719,7 +8748,7 @@ Some years ago, Peters [Pet79] argued in a paper about design that design belong
 
 ### 11.1.2 The Role of Constraints
 
-Every design is embedded in a design space that is bounded by a set of known and unknown constraints . In some sense, constraints are antonyms to requirements. It is good practice to start a design by capturing the constraints and classifying them into soft constraints , hard constraints , and limiting constraints . A soft constraint is a desired but not obligatory constraint. A hard constraint is a given mandatory con­ straint that must not be neglected. A limiting constraint is a constraint that limits the utility of a design.
+Every design is embedded in a design space that is bounded by a set of known and unknown constraints. In some sense, constraints are antonyms to requirements. It is good practice to start a design by capturing the constraints and classifying them into soft constraints , hard constraints , and limiting constraints. A soft constraint is a desired but not obligatory constraint. A hard constraint is a given mandatory con­ straint that must not be neglected. A limiting constraint is a constraint that limits the utility of a design.
 
 > 每个设计都嵌入在一个由一组已知和未知约束约束所限定的设计空间中。从某种意义上说，约束是需求的反义词。通过捕获约束并将其分为软约束、硬约束和限制约束来开始设计是一种很好的做法。软约束是一种期望的约束，但不是强制性的约束。硬约束是一种不可忽视的强制性约束。限制约束是限制设计效用的约束。
 
@@ -8733,7 +8762,7 @@ Constraints limit the design space and help the designer to avoid the exploratio
 
 ### 11.1.3 System Design Versus Software Design
 
-In the early days of computer-application design , the focus of design was on the functional aspects of software, with little regard for the non functional properties of the computations that are generated by the software, such as timing , energy effi­ ciency , or fault tolerance . This focus has led to software design methods— still prev­ alent today — that concentrate on the data transformation aspects of a program with little regard for non-functional requirements, such as timing or energy consumption.
+In the early days of computer-application design , the focus of design was on the functional aspects of software, with little regard for the non functional properties of the computations that are generated by the software, such as timing , energy effi­ ciency , or fault tolerance. This focus has led to software design methods— still prev­ alent today — that concentrate on the data transformation aspects of a program with little regard for non-functional requirements, such as timing or energy consumption.
 
 > 在计算机应用程序设计的早期，设计的重点是软件的功能方面，很少考虑软件生成的计算的非功能特性，如时序、能效或容错性。这种关注导致了软件设计方法——今天仍然很流行——专注于程序的数据转换方面，很少考虑非功能需求，如时间或能耗。
 
@@ -8741,7 +8770,7 @@ Example: A critical constraint in the design of a smart phone is the expected li
 
 > 示例：智能手机设计中的一个关键约束是电池负载的预期寿命。如果设计过程中的重点仅放在设计的功能属性上，则忽略了这一非功能约束。
 
-Software per se is a plan describing the operations of a real or virtual machine. A plan by itself (without a machine) does not have any temporal dimension , cannot have state (which depends on a precise notion of real time—see Sect. 4.2.1 ) and has no behavior . Only the combination of software and the targeted machine, the plat­ form , produces behavior. This is one of the reasons why we consider the component and not the job (see Sect. 4.1.1 ) as the primitive construct at the level of architecture design of an embedded system.
+Software per se is a plan describing the operations of a real or virtual machine. A plan by itself (without a machine) does not have any temporal dimension , cannot have state (which depends on a precise notion of real time—see Sect. 4.2.1 ) and has no behavior. Only the combination of software and the targeted machine, the plat­ form , produces behavior. This is one of the reasons why we consider the component and not the job (see Sect. 4.1.1 ) as the primitive construct at the level of architecture design of an embedded system.
 
 > 软件本身是描述真实或虚拟机操作的计划。一个计划本身(没有机器)没有任何时间维度，不能有状态(这取决于实时的精确概念——见第 4.2.1 节)，也没有行为。只有软件和目标机器(平台)的结合才能产生行为。这就是为什么我们将组件而不是作业(见第 4.1.1 节)视为嵌入式系统架构设计级别的原始构造的原因之一。
 
@@ -8821,7 +8850,7 @@ The focus of this chapter is on the architecture design phase, while the validat
 
 ### 11.2.1 Purpose Analysis
 
-Every rational design is driven by a given purpose . The purpose puts the design into the wider context of user expectations and economic justification and thus precedes the requirements. Purpose analysis , i.e., the analysis why a new system is needed and what is the ultimate goal of a design, must precede the requirements analysis, which already limits the scope of analysis and directs the design effort to a specific direction. Critical purpose analysis is needed in order to put the requirements into the proper perspective.
+Every rational design is driven by a given purpose. The purpose puts the design into the wider context of user expectations and economic justification and thus precedes the requirements. Purpose analysis , i.e., the analysis why a new system is needed and what is the ultimate goal of a design, must precede the requirements analysis, which already limits the scope of analysis and directs the design effort to a specific direction. Critical purpose analysis is needed in order to put the requirements into the proper perspective.
 
 > 每一个合理的设计都是由特定的目的驱动的。其目的是将设计置于用户期望和经济合理性的更广泛背景下，从而先于需求。目的分析，即分析为什么需要一个新系统以及设计的最终目标是什么，必须先于需求分析，这已经限制了分析的范围，并将设计工作引向了特定的方向。需要进行关键目的分析，以便正确看待需求。
 
@@ -8939,11 +8968,11 @@ The representation of the platform independent model, the PIM (the design at the
 
 > 独立于平台的模型 PIM(架构级别的设计——见第 4.4 节)的表示，例如以组件和消息的形式，需要一种适合此目的的符号。
 
-In 2007, the Object Management Group (OMG) extended the Unified Modeling Language (UML) by a profile called MARTE (Modeling and Analysis of Real-Time and Embedded system) that extends UML to support the specification, design, and analysis of embedded real-time systems at the architectural level [OMG98]. UML-­ MARTE targets the modeling of both the software part and of the hardware part of an embedded system. The core concepts of UML-MARTE are expressed in two packages, the foundation package that is concerned with structural models and the causality package that focuses on behavioral modeling and timing aspects. In UML-­ MARTE, the fundamental unit of behavior is called an action that transforms a set of inputs into a set of outputs, taking a specified duration of real time. Behaviors are composed out of actions and are initiated by triggers . The UML-MARTE specifica­ tion contains a special section on the modeling of time. It distinguishes between three different kinds of time abstractions : (i) logical time (called causal/temporal ) that is only concerned with temporal order without any notion of a temporal metric between events; (ii) discrete time (called clocked-synchronous ) where the contin­ uum of time is partitioned by a clock into a set of ordered granules and where actions may be performed within a granule; and (iii) real time (called physical/real time ) where the progression of real time is precisely modeled. For a detailed descrip­ tion of UML-MARTE refer to [OMG08]. SysML [Hau06] is another UML profile (addressing systems engineering) that is receiving more and more attention from the real-time industry.
+In 2007, the Object Management Group (OMG) extended the Unified Modeling Language (UML) by a profile called MARTE (Modeling and Analysis of Real-Time and Embedded system) that extends UML to support the specification, design, and analysis of embedded real-time systems at the architectural level [OMG98]. UML-­ MARTE targets the modeling of both the software part and of the hardware part of an embedded system. The core concepts of UML-MARTE are expressed in two packages, the foundation package that is concerned with structural models and the causality package that focuses on behavioral modeling and timing aspects. In UML-­ MARTE, the fundamental unit of behavior is called an action that transforms a set of inputs into a set of outputs, taking a specified duration of real time. Behaviors are composed out of actions and are initiated by triggers. The UML-MARTE specifica­ tion contains a special section on the modeling of time. It distinguishes between three different kinds of time abstractions : (i) logical time (called causal/temporal ) that is only concerned with temporal order without any notion of a temporal metric between events; (ii) discrete time (called clocked-synchronous ) where the contin­ uum of time is partitioned by a clock into a set of ordered granules and where actions may be performed within a granule; and (iii) real time (called physical/real time ) where the progression of real time is precisely modeled. For a detailed descrip­ tion of UML-MARTE refer to [OMG08]. SysML [Hau06] is another UML profile (addressing systems engineering) that is receiving more and more attention from the real-time industry.
 
 > 2007 年，对象管理组织(OMG)通过一个名为 MARTE(实时和嵌入式系统的建模和分析)的配置文件扩展了统一建模语言(UML)，该配置文件扩展 UML 以支持架构级别的嵌入式实时系统的规范、设计和分析[OMG98]。UML-MARTE 的目标是对嵌入式系统的软件部分和硬件部分进行建模。UML-MARTE 的核心概念分为两个包，基础包关注结构模型，因果包关注行为建模和时间方面。在 UML-MARTE 中，行为的基本单位称为动作，它将一组输入转换为一组输出，并持续指定的实时时间。行为由动作组成，由触发器触发。UML-MARTE 规范包含一个关于时间建模的特殊部分。它区分了三种不同类型的时间抽象：(i)逻辑时间(称为因果/时间)，只关注时间顺序，而不考虑事件之间的时间度量；(ii)离散时间(称为时钟同步)，其中时间序列由时钟划分为一组有序的颗粒，并且可以在颗粒内执行操作；以及(iii)实时(称为物理/实时)，其中实时的进程被精确地建模。有关 UML-MARTE 的详细说明，请参阅[OMG08]。SysML[Hou06]是另一个 UML 概要文件(解决系统工程问题)，越来越受到实时行业的关注。
 
-Another example of an architecture design language is the AADL (Architecture Analysis and Design Language) developed at the Carnegie Mellon University Software Engineering Institute and standardized in 2004 by the Society of Automotive Engineers (SAE). AADL has been designed to specify and analyze the architecture of large embedded real-time systems. The core concept of AADL is the notion of a component that interacts with other components across interfaces. An AADL component is a software unit enhanced by attributes that capture the charac­ teristics of the machine that is bound to the software unit, such that timing require­ ments and the worst-case execution time (WCET) of a computation can be expressed. AADL components interact exclusively though defined interfaces that are bound to each other by declared connections . AADL supports a graphical user interface and contains language constructs that are concerned with the implementation of compo­ nents and the grouping of components into more abstract units called packages . There are tools available to analyze an AADL design from the point of view of tim­ ing and reliability. For a detailed description of AADL, refer to [Fei06]. The AADL modeling of Integrated-Modular Avionics (IMA) using TTEthernet (see Sect. 7.5.2 ) is given in [Rob16].
+Another example of an architecture design language is the AADL (Architecture Analysis and Design Language) developed at the Carnegie Mellon University Software Engineering Institute and standardized in 2004 by the Society of Automotive Engineers (SAE). AADL has been designed to specify and analyze the architecture of large embedded real-time systems. The core concept of AADL is the notion of a component that interacts with other components across interfaces. An AADL component is a software unit enhanced by attributes that capture the charac­ teristics of the machine that is bound to the software unit, such that timing require­ ments and the worst-case execution time (WCET) of a computation can be expressed. AADL components interact exclusively though defined interfaces that are bound to each other by declared connections. AADL supports a graphical user interface and contains language constructs that are concerned with the implementation of compo­ nents and the grouping of components into more abstract units called packages. There are tools available to analyze an AADL design from the point of view of tim­ ing and reliability. For a detailed description of AADL, refer to [Fei06]. The AADL modeling of Integrated-Modular Avionics (IMA) using TTEthernet (see Sect. 7.5.2 ) is given in [Rob16].
 
 > 架构设计语言的另一个例子是卡内基梅隆大学软件工程研究所开发的 AADL(架构分析和设计语言)，并于 2004 年由汽车工程师学会(SAE)标准化。AADL 旨在指定和分析大型嵌入式实时系统的架构。AADL 的核心概念是跨接口与其他组件交互的组件的概念。AADL 组件是一个软件单元，通过捕获绑定到软件单元的机器特性的属性进行增强，从而可以表示计算的时间要求和最坏情况执行时间(WCET)。AADL 组件通过定义的接口进行排他性交互，这些接口通过声明的连接相互绑定。AADL 支持图形用户界面，并包含与组件的实现以及将组件分组为称为包的更抽象单元有关的语言构造。有工具可以从时间和可靠性的角度分析 AADL 设计。有关 AADL 的详细说明，请参阅[Fei06]。[Rob16]中给出了使用 TTEthernet(见第 7.5.2 节)的集成模块化航空电子设备(IMA)的 AADL 建模。
 
@@ -8953,7 +8982,7 @@ A detailed comparison of UML, SysML, AADL, and MARTE is given in [Eve10]. Furthe
 
 GIOTTO [Hen03] is a language for representing the design of a time-triggered embedded system at the architectural level. GIOTTO provides for intermediate abstractions that allow the design engineer to annotate the functional programming modules with temporal attributes that are derived from the high-level stability anal­ ysis of the control loops. In the final development step, the assignment of the soft­ ware modules to the target architecture, these annotations are constraints that must be considered by the GIOTTO compiler.
 
-> GIOTTO[Hen03]是一种在架构级别表示时间触发嵌入式系统设计的语言。GIOTTO 提供了中间抽象，允许设计工程师用从控制回路的高级稳定性分析中导出的时间属性来注释功能编程模块。在最后的开发步骤中，将软件模块分配给目标架构，这些注释是 GIOTTO 编译器必须考虑的约束。
+> GIOTTO[Hen03]是一种在架构级别表示时间触发嵌入式系统设计的语言。GIOTTO 提供了中间抽象，允许设计工程师用从控制回路(control loops)的高级稳定性分析中导出的时间属性来注释功能编程模块。在最后的开发步骤中，将软件模块分配给目标架构，这些注释是 GIOTTO 编译器必须考虑的约束。
 
 System C is an extension of $\mathrm{C++}$ that enables the seamless hardware/software co-simulation of a design at the architectural level and provides for a step-by-step refinement of a design down to the register transfer level of a hardware implementa­ tion or to a C program [Bla09]. System C is well suited to represent the functionality of a design at the PIM level.
 
@@ -8979,7 +9008,7 @@ Functional Coherence A component should implement a self-contained function with
 
 > (iii)在任何故障后提供单一级别的错误恢复是否足够，即重新启动整个组件？对多级错误恢复的需求总是表明功能连贯性较弱。
 
-(iv) Are there any control signals crossing the message interface or is the interface of a component to its environment a strict data-sharing interface? A strict data-­ sharing interface is simpler and should therefore be preferred. Whenever pos­ sible, try to keep the temporal control within the subsystem that you are designing (e.g., on input, information pull is preferable over information push ; see Sect. 4.4.1 )!
+(iv) Are there any control signals crossing the message interface or is the interface of a component to its environment a strict data-sharing interface? A strict data-­ sharing interface is simpler and should therefore be preferred. Whenever pos­ sible, try to keep the temporal control within the subsystem that you are designing (e.g., on input, information pull is preferable over information push; see Sect. 4.4.1 )!
 
 > (iv)是否有任何控制信号穿过消息接口，或者组件与其环境的接口是否是严格的数据共享接口？严格的数据共享接口更简单，因此应该是首选。只要有可能，尽量将时间控制保持在您正在设计的子系统内(例如，在输入方面，信息拉取比信息推送更可取；见第 4.4.1 节)！
 
@@ -9095,7 +9124,7 @@ Example: Some examples of safety-critical embedded systems are as follows: a fli
 
 ### 11.4.1 What Is Safety?
 
-Safety can be defined as the probability that a system will survive a given time-span without the occurrence of a critical failure mode that can lead to catastrophic con­ sequences . In the literature [Lal94], the magical number $10^{9}$  hours, i.e., 115,000 years, is the MTTF (mean time to failure) that is associated with safety-critical operations. Since the hardware reliability of a VLSI component is less than $10^{9}$  hours, a safety-­ aware design must be based on hardware-fault masking by redundancy. It is impos­ sible to achieve confidence in the correctness of the design to the level of the required MTTF in safety-critical applications by testing only—extensive testing can establish confidence in a MTTF in the order of $10^{4}$ to $10^{5}$  hours [Lit93]. A formal reliability model must be developed in order to establish the required level of safety, considering the experimental failure rates of the subsystems and the redundant structure of the system.
+Safety can be defined as the probability that a system will survive a given time-span without the occurrence of a critical failure mode that can lead to catastrophic con­ sequences. In the literature [Lal94], the magical number $10^{9}$  hours, i.e., 115,000 years, is the MTTF (mean time to failure) that is associated with safety-critical operations. Since the hardware reliability of a VLSI component is less than $10^{9}$  hours, a safety-­ aware design must be based on hardware-fault masking by redundancy. It is impos­ sible to achieve confidence in the correctness of the design to the level of the required MTTF in safety-critical applications by testing only—extensive testing can establish confidence in a MTTF in the order of $10^{4}$ to $10^{5}$  hours [Lit93]. A formal reliability model must be developed in order to establish the required level of safety, considering the experimental failure rates of the subsystems and the redundant structure of the system.
 
 > 安全性可以定义为系统在给定时间跨度内存活的概率，而不会发生可能导致灾难性后果的关键故障模式。在文献[Lal94]中，神奇的数字 $10^{9}$小时，即 115000 年，是与安全关键操作相关的 MTTF(平均故障时间)。由于 VLSI 组件的硬件可靠性低于 10^{9}$小时，因此安全意识设计必须基于冗余的硬件故障屏蔽。仅通过测试不可能对设计的正确性充满信心，达到安全关键应用中所需的 MTTF 水平——广泛的测试可以建立对 MTTF 的信心，大约为 10^{4}$到 10^{5}$小时[Lit93]。必须开发一个正式的可靠性模型，以建立所需的安全水平，同时考虑到子系统的实验故障率和系统的冗余结构。
 
@@ -9161,7 +9190,7 @@ The architecture of a safety-critical system must be carefully analyzed before i
 
 > 在投入运行之前，必须仔细分析安全关键系统的架构，以降低计算机故障导致事故发生的可能性。
 
-Damage is a pecuniary measure for the loss in an accident, e.g., death, illness, injury, loss of property, or environmental harm. Undesirable conditions that have the potential to cause or contribute to an accident are called hazards . A hazard is thus a dangerous state that can lead to an accident, given certain environmental trig­ gering conditions. Hazards have a severity and a probability . The severity is related to the worst potential damage that can result from the accident associated with the hazard. The severity of hazards is often classified in a severity class. The product of hazard severity and hazard probability is called risk . The goal of safety analysis and safety engineering is to identify hazards and to propose measures that eliminate or at least reduce the hazard or reduce the probability of a hazard turning into a catas­ trophe, i.e., to minimize the risk [Lev95]. A risk originating from a particular hazard should be reduced to a level that is as low as reasonably practical (ALARP). This is a rather imprecise statement that must be interpreted with good engineering judg­ ment. An action that is provided to reduce the risk associated with a hazard to a tolerable level is called a safety function. Functional safety encompasses the analy­ sis, design, and implementation of safety functions. There exists an international standard, IEC 61508 on functional safety .
+Damage is a pecuniary measure for the loss in an accident, e.g., death, illness, injury, loss of property, or environmental harm. Undesirable conditions that have the potential to cause or contribute to an accident are called hazards. A hazard is thus a dangerous state that can lead to an accident, given certain environmental trig­ gering conditions. Hazards have a severity and a probability. The severity is related to the worst potential damage that can result from the accident associated with the hazard. The severity of hazards is often classified in a severity class. The product of hazard severity and hazard probability is called risk. The goal of safety analysis and safety engineering is to identify hazards and to propose measures that eliminate or at least reduce the hazard or reduce the probability of a hazard turning into a catas­ trophe, i.e., to minimize the risk [Lev95]. A risk originating from a particular hazard should be reduced to a level that is as low as reasonably practical (ALARP). This is a rather imprecise statement that must be interpreted with good engineering judg­ ment. An action that is provided to reduce the risk associated with a hazard to a tolerable level is called a safety function. Functional safety encompasses the analy­ sis, design, and implementation of safety functions. There exists an international standard, IEC 61508 on functional safety .
 
 > 损害是对事故中损失的金钱衡量，例如死亡、疾病、受伤、财产损失或环境损害。有可能导致或促成事故的不利条件称为危险。因此，在某些环境触发条件下，危险是一种可能导致事故的危险状态。危险有严重性和可能性。严重程度与与危险相关的事故可能造成的最严重的潜在损害有关。危害的严重程度通常按严重程度分类。危害严重程度和危害概率的乘积称为风险。安全分析和安全工程的目标是识别危险，并提出消除或至少减少危险或降低危险变成灾难的可能性的措施，即尽量减少风险[Lev95]。源自特定危险的风险应降低到合理可行的最低水平(ALARP)。这是一个相当不精确的陈述，必须用良好的工程判断来解释。将与危险相关的风险降低到可容忍水平的动作称为安全功能。功能安全包括安全功能的分析、设计和实施。有一个关于功能安全的国际标准，即 IEC 61508。
 
@@ -9321,7 +9350,7 @@ RTCA/DO-178C and DO-254 Over the past decades, safety-relevant computer systems 
 
 > RTCA/DO-178C 和 DO-254 在过去的几十年里，安全相关的计算机系统在飞机工业中得到了广泛的应用。这就是为什么飞机工业在安全相关计算机系统的设计和操作方面积累了丰富的经验。RTCA/DO-178C：机载系统和设备认证中的软件考虑因素[ARI11]和相关文件 RTCA/DO-254：机载电子硬件设计保证指南[ARI05]包含机载安全相关计算机系统软件和硬件设计和验证的标准和建议。这些文件是由一个由主要航空航天公司、航空公司和监管机构的代表组成的委员会制定的，因此代表了国际社会对生产安全系统的合理实用方法的共识。在许多重大项目中已经获得了使用该标准的经验，例如在波音 777 飞机和后续飞机的设计中应用 RTCA/DO-178B(RTCA/DO/178C 之前)。
 
-The basic idea of RTCA/DO-178C is a two-phase approach: in the first phase, the planning phase , the structure of the safety case, the procedures that must be fol­ lowed in the execution of the project, and the produced documentation are defined. In the second phase, the execution phase , it is checked that all procedures that are established in the first phase are precisely adhered to in the execution of the project. The critical it y of the software is derived from the critical it y of the software-related function that has been identified during safety analysis and is classified according to Table  11.1 . The rigor of the software development process increases with an increase in the critical it y level of the software. The standard contains tables and checklists that suggest the design, validation, documentation, and project management meth­ ods that must be followed when developing software for a given critical it y level. At higher critical it y levels, the inspection procedures must be performed by personal that is independent from the development group. For the highest critical it y level, level A , the application of formal methods is recommended, but not demanded.
+The basic idea of RTCA/DO-178C is a two-phase approach: in the first phase, the planning phase , the structure of the safety case, the procedures that must be fol­ lowed in the execution of the project, and the produced documentation are defined. In the second phase, the execution phase , it is checked that all procedures that are established in the first phase are precisely adhered to in the execution of the project. The critical it y of the software is derived from the critical it y of the software-related function that has been identified during safety analysis and is classified according to Table  11.1. The rigor of the software development process increases with an increase in the critical it y level of the software. The standard contains tables and checklists that suggest the design, validation, documentation, and project management meth­ ods that must be followed when developing software for a given critical it y level. At higher critical it y levels, the inspection procedures must be performed by personal that is independent from the development group. For the highest critical it y level, level A , the application of formal methods is recommended, but not demanded.
 
 > RTCA/DO-178C 的基本思想是一种两阶段方法：在第一阶段，即规划阶段，定义安全案例的结构、项目执行中必须遵循的程序以及生成的文件。在第二阶段，即执行阶段，检查第一阶段建立的所有程序在项目执行过程中是否得到了严格遵守。软件的临界 it y 来源于安全分析期间确定的软件相关功能的临界 it，并根据表 11.1 进行分类。软件开发过程的严谨性随着软件关键 it 水平的提高而提高。该标准包含表格和清单，建议在为给定的关键 it 级别开发软件时必须遵循的设计、验证、文档和项目管理方法。在更高的关键 it 级别，检查程序必须由独立于开发团队的人员执行。对于最高临界 it y 级别，即 A 级，建议使用形式化方法，但不是必需的。
 
@@ -9512,7 +9541,7 @@ Any embedded system that is connected to the Internet must support a secure down
 
 > 任何连接到互联网的嵌入式系统都必须支持安全的下载服务[Obe09]。此服务对于软件的持续远程维护至关重要。安全下载必须使用强大的加密方法，以确保对手无法控制连接的硬件设备并下载自己喜欢的软件。
 
-Example: A producer of modems sold ten thousands of modems all over the world before hackers found out that the modems contained a vulnerability . The producer did not consider to provide the infrastructure for a secure download service for installing a new corrected version of the software remotely.
+Example: A producer of modems sold ten thousands of modems all over the world before hackers found out that the modems contained a vulnerability. The producer did not consider to provide the infrastructure for a secure download service for installing a new corrected version of the software remotely.
 
 > 示例：在黑客发现调制解调器包含漏洞之前，一家调制解调器生产商在世界各地销售了一万台调制解调器。生产商没有考虑为远程安装新的更正版本的软件提供安全下载服务的基础设施。
 
@@ -9528,9 +9557,9 @@ In the following paragraphs, we discuss the key architectural principles of the 
 
 ### 11.7.1 Principle of a Consistent Global Time
 
-Of distinct importance for the TTA is the principle of a consistent global time (see Sect. 2.5 ) . Embedded computer systems must interact with the physical environ­ ment that is ruled by the progression of physical time. The progression of physical time is thus a first-order citizen and not an add-on to the cyber-model that is the basis of the computer control of the physical environment. The availability of a fault-tolerant sparse global time base in every node of a large embedded system is at the foundation of the TTA. This global time base helps to simplify a design. In the TTA, this global time base is used
+Of distinct importance for the TTA is the principle of a consistent global time (see Sect. 2.5 ). Embedded computer systems must interact with the physical environ­ ment that is ruled by the progression of physical time. The progression of physical time is thus a first-order citizen and not an add-on to the cyber-model that is the basis of the computer control of the physical environment. The availability of a fault-tolerant sparse global time base in every node of a large embedded system is at the foundation of the TTA. This global time base helps to simplify a design. In the TTA, this global time base is used
 
-> 对于 TTA 来说，具有明显重要性的是一致的全球时间原则(见第 2.5 节)。嵌入式计算机系统必须与受物理时间进程支配的物理环境进行交互。因此，物理时间的进程是一个一等公民，而不是作为计算机控制物理环境基础的网络模型的附加组件。大型嵌入式系统的每个节点中容错稀疏全局时基的可用性是 TTA 的基础。这个全局时基有助于简化设计。在 TTA 中，使用这个全球时基
+> 对于 TTA 来说，具有明显重要性的是一致的全局时间原则(见第 2.5 节)。嵌入式计算机系统必须与受物理时间进程支配的物理环境进行交互。因此，物理时间的进程是一个一等公民，而不是作为计算机控制物理环境基础的网络模型的附加组件。大型嵌入式系统的每个节点中容错稀疏全局时基的可用性是 TTA 的基础。这个全局时基有助于简化设计。在 TTA 中，使用这个全局时基
 
 • To establish a consistent temporal order of all relevant events and to solve the problem of si multan e it y in a distributed computer system. The consistent tempo­ ral order is a prerequisite for introducing the notion of a consistent state of a distributed system. A consistent notion of state is needed when a new (repaired) component must be reintegrated into a running system.
 
@@ -9542,7 +9571,7 @@ Of distinct importance for the TTA is the principle of a consistent global time 
 
 • To establish conflict-free time-controlled communication channels for the trans­ port of time-triggered (TT) messages. TT messages have a short and predictable latency and thus help to reduce the dead time in distributed phase-aligned con­ trol loops.
 
-> •为传输时间触发(TT)消息建立无冲突的时间控制通信信道。TT 消息具有短而可预测的延迟，因此有助于减少分布式相位对齐控制回路中的死区时间。
+> •为传输时间触发(TT)消息建立无冲突的时间控制通信信道。TT 消息具有短而可预测的延迟，因此有助于减少分布式相位对齐控制回路(control loops)中的死区时间。
 
 • To construct unidirectional multicast communication channels with error detec­ tion at the receiver, where a failure of a receiver cannot propagate back to the sender.
 
@@ -9578,7 +9607,7 @@ The basic communication mechanism of the TTA is the unidirectional BMTS (basic m
 
 As long as different subsystems of the TTA are connected by time-triggered communication systems, such as the TTNoC, TTP, or TTEthernet, the BMTS is characterized by a constant transport delay and a minimal jitter of one granule of the global time. If a message is transported via an event-triggered protocol (e.g., in the Internet), no such temporal guarantee can be given.
 
-> 只要 TTA 的不同子系统通过时间触发通信系统(如 TTNoC、TTP 或 TTEthernet)连接，BMTS 的特征就是恒定的传输延迟和全球时间一个颗粒的最小抖动。如果消息是通过事件触发协议传输的(例如，在互联网中)，则不能给出这样的时间保证。
+> 只要 TTA 的不同子系统通过时间触发通信系统(如 TTNoC、TTP 或 TTEthernet)连接，BMTS 的特征就是恒定的传输延迟和全局时间一个颗粒的最小抖动。如果消息是通过事件触发协议传输的(例如，在互联网中)，则不能给出这样的时间保证。
 
 This single coherent communication mechanism makes it possible to move a component (which can be an IP-core of a system-on-chip) to another physical loca­ tion without changing the basic communication mechanism among the components.
 
@@ -9626,7 +9655,7 @@ Many books have been written about design, most of them emanating from the field
 
 > •约束限制了设计空间，并帮助设计师避免探索在给定环境中不切实际的设计备选方案。因此，约束是我们的朋友，而不是我们的对手。
 
-• Software per se is an action plan describing the operations of a real or virtual machine. A plan by itself (without a machine) does not have any temporal dimen­ sion , cannot have state , and has no behavior . This is one of the reasons why we consider the component and not the job as the primitive construct at the level of architecture design of an embedded system.
+• Software per se is an action plan describing the operations of a real or virtual machine. A plan by itself (without a machine) does not have any temporal dimen­ sion , cannot have state , and has no behavior. This is one of the reasons why we consider the component and not the job as the primitive construct at the level of architecture design of an embedded system.
 
 > •软件本身是描述真实或虚拟机操作的行动计划。一个计划本身(没有机器)没有任何时间维度，不能有状态，也没有行为。这就是为什么我们将组件而不是作业视为嵌入式系统架构设计级别的原始构造的原因之一。
 
@@ -9650,11 +9679,11 @@ Many books have been written about design, most of them emanating from the field
 
 > •安全性可以定义为系统在给定时间跨度内存活的概率，而不会发生可能导致灾难后果的关键故障模式。
 
-• Damage is a pecuniary measure for the loss in an accident, e.g., death, illness, injury, loss of property, or environmental harm. Undesirable conditions that have the potential to cause or contribute to an accident are called hazards . A hazard is thus a dangerous state that can lead to an accident, given certain environmental triggering conditions.
+• Damage is a pecuniary measure for the loss in an accident, e.g., death, illness, injury, loss of property, or environmental harm. Undesirable conditions that have the potential to cause or contribute to an accident are called hazards. A hazard is thus a dangerous state that can lead to an accident, given certain environmental triggering conditions.
 
 > •损害是对事故损失的金钱衡量，例如死亡、疾病、受伤、财产损失或环境损害。有可能导致或促成事故的不利条件称为危险。因此，在某些环境触发条件下，危险是一种可能导致事故的危险状态。
 
-• Hazards have a severity and a probability . The severity is related to the worst potential damage that can result from the accident associated with the hazard. The severity of hazards is often classified in a severity class. The product of haz­ ard severity and hazard probability is called risk .
+• Hazards have a severity and a probability. The severity is related to the worst potential damage that can result from the accident associated with the hazard. The severity of hazards is often classified in a severity class. The product of haz­ ard severity and hazard probability is called risk .
 
 > •危险具有严重性和可能性。严重程度与与危险相关的事故可能造成的最严重的潜在损害有关。危害的严重程度通常按严重程度分类。危险严重程度和危险概率的乘积称为风险。
 
@@ -9728,13 +9757,13 @@ Many books have been written about design, most of them emanating from the field
 
 ## Overview
 
-This chapter deals with assessment technologies. These technologies must convince a designer, user, or a certification authority that the developed computer system is safe to deploy and will fulfill its intended function in the planned real-world envi­ ronment. In the first section of this chapter, we elaborate on the differences between validation and verification . Validation deals with the consistency between the infor­ mal model of the user’s intention and the behavior of the system-under-test ( SUT ), while verification deals with the consistency between a given (formal) specification and the SUT . The missing link between validation and verification are errors in the specification. The following section deals with the challenges of testing and the preferred validation technique. At the core of testing are the interference-free ob ser v ability of results and the control l ability of the inputs. The design for testabil­ ity provides a framework that supports these characteristics. In most cases, only a tiny fraction of the input space can be examined by test cases. The proper selection of test cases should justify the assumption that, given the results of the test cases are correct, the system will operate correctly all over the input domain. In digital sys­ tems, the validity of such an induction is doubtful, since digital inputs are not con­ tinuous but discrete—a single bit-flip can make a correct result erroneous. The decision whether the result of a test input is correct is delegated to a test oracle . The automation of test oracles is another challenge in the domain of testing. Model-­ based design, where a model of the plant and a model of the computer controller are interconnected to study the performance of closed-loop control systems is a promis­ ing route toward the automation of the test oracle. Given that a complete formal model of a design is available, formal methods can be deployed to check whether selected properties hold in all possible states of the model. In the last few years, the technique of model checking has matured such that it can handle systems of indus­ trial size. The correct operation of the fault-masking mechanisms of a fault-tolerant system can only be assessed if the input space is extended to include the faults the system is supposed to tolerate. In the last section, the topics of physical fault injection and software-based fault injection are covered. Since any physical sensor or actuator will eventually fail, fault-injection campaigns must establish the safe operation of a system even in the case that any particular sensor or actuator has failed.
+This chapter deals with assessment technologies. These technologies must convince a designer, user, or a certification authority that the developed computer system is safe to deploy and will fulfill its intended function in the planned real-world envi­ ronment. In the first section of this chapter, we elaborate on the differences between validation and verification. Validation deals with the consistency between the infor­ mal model of the user’s intention and the behavior of the system-under-test ( SUT ), while verification deals with the consistency between a given (formal) specification and the SUT. The missing link between validation and verification are errors in the specification. The following section deals with the challenges of testing and the preferred validation technique. At the core of testing are the interference-free ob ser v ability of results and the control l ability of the inputs. The design for testabil­ ity provides a framework that supports these characteristics. In most cases, only a tiny fraction of the input space can be examined by test cases. The proper selection of test cases should justify the assumption that, given the results of the test cases are correct, the system will operate correctly all over the input domain. In digital sys­ tems, the validity of such an induction is doubtful, since digital inputs are not con­ tinuous but discrete—a single bit-flip can make a correct result erroneous. The decision whether the result of a test input is correct is delegated to a test oracle. The automation of test oracles is another challenge in the domain of testing. Model-­ based design, where a model of the plant and a model of the computer controller are interconnected to study the performance of closed-loop control systems is a promis­ ing route toward the automation of the test oracle. Given that a complete formal model of a design is available, formal methods can be deployed to check whether selected properties hold in all possible states of the model. In the last few years, the technique of model checking has matured such that it can handle systems of indus­ trial size. The correct operation of the fault-masking mechanisms of a fault-tolerant system can only be assessed if the input space is extended to include the faults the system is supposed to tolerate. In the last section, the topics of physical fault injection and software-based fault injection are covered. Since any physical sensor or actuator will eventually fail, fault-injection campaigns must establish the safe operation of a system even in the case that any particular sensor or actuator has failed.
 
 > 本章介绍评估技术。这些技术必须让设计师、用户或认证机构相信，开发的计算机系统可以安全部署，并将在计划的现实环境中实现其预期功能。在本章的第一节中，我们详细阐述了验证和核实之间的区别。验证处理用户意图的信息模型与被测系统(SUT)行为之间的一致性，而验证处理给定(正式)规范与 SUT 之间的一致。验证和确认之间缺失的环节是规范中的错误。下一节将讨论测试的挑战和首选的验证技术。测试的核心是结果的无干扰观测能力和输入的控制能力。可测试性设计提供了一个支持这些特性的框架。在大多数情况下，测试用例只能检查输入空间的一小部分。正确选择测试用例应证明以下假设是合理的，即假设测试用例的结果是正确的，系统将在整个输入域中正确运行。在数字系统中，这种归纳的有效性值得怀疑，因为数字输入不是连续的，而是离散的——单个位翻转可能会使正确的结果出错。测试输入的结果是否正确的决定委托给测试预言机。测试预言机的自动化是测试领域的另一个挑战。基于模型的设计，其中工厂模型和计算机控制器模型相互连接，以研究闭环控制系统的性能，是实现测试预言机自动化的一条有前景的途径。鉴于设计的完整形式化模型可用，可以部署形式化方法来检查所选属性是否在模型的所有可能状态下都成立。在过去的几年里，模型检查技术已经成熟，可以处理工业规模的系统。只有当输入空间扩展到包括系统应该容忍的故障时，才能评估容错系统的故障屏蔽机制的正确操作。在最后一节中，介绍了物理故障注入和基于软件的故障注入的主题。由于任何物理传感器或执行器最终都会发生故障，因此即使在任何特定传感器或执行机构发生故障的情况下，故障注入活动也必须建立系统的安全运行。
 
 ## 12.1 Validation Versus Verification
 
-An essential fraction—up to $50\%$ —of the development costs of a real-time com­ puter system is devoted to ensure that the system is fit-for-purpose . In safety-critical applications that must be certified, this fraction is even higher.
+An essential fraction—up to $50\%$ —of the development costs of a real-time com­ puter system is devoted to ensure that the system is fit-for-purpose. In safety-critical applications that must be certified, this fraction is even higher.
 
 > 实时计算机系统开发成本的一个重要部分——高达 50%——用于确保系统适用。在必须经过认证的安全关键应用中，这一比例甚至更高。
 
@@ -9754,7 +9783,7 @@ When developing an embedded computer system, it is useful to distinguish between
 
 > (iii)应根据用户意图模型执行系统功能的被测系统(SUT)(系统开发的结果)。
 
-Verification establishes the consistency between a ( formal) system specification and the SUT , while validation is concerned with the consistency between the model of the user’s intention and the SUT. The missing link between verification and vali­ dation is the relation between the ( informal) model of the user’s intention and the (formal) specification of the system. We call errors that occur in this phase of devel­ opment specification errors , while we call errors that occur during the transforma­ tion of a given specification to the SUT implementation errors . While verification can, in theory, be reduced to a formal process, validation must examine the system’s behavior in the real world. If properties of a system have been formally verified, it still has not been established whether the existing formal specification captures all aspects of the intended behavior in the user’s environment, i.e., if it is free of speci­ fication errors. Sometimes the term specification testing is used to find out whether the specification is consistent with the model of the user’s intentions [Gau05].
+Verification establishes the consistency between a ( formal) system specification and the SUT , while validation is concerned with the consistency between the model of the user’s intention and the SUT. The missing link between verification and vali­ dation is the relation between the ( informal) model of the user’s intention and the (formal) specification of the system. We call errors that occur in this phase of devel­ opment specification errors , while we call errors that occur during the transforma­ tion of a given specification to the SUT implementation errors. While verification can, in theory, be reduced to a formal process, validation must examine the system’s behavior in the real world. If properties of a system have been formally verified, it still has not been established whether the existing formal specification captures all aspects of the intended behavior in the user’s environment, i.e., if it is free of speci­ fication errors. Sometimes the term specification testing is used to find out whether the specification is consistent with the model of the user’s intentions [Gau05].
 
 > 验证建立(正式)系统规范和 SUT 之间的一致性，而验证则关注用户意图模型和 SUT 的一致性。验证和确认之间缺失的环节是用户意图的(非正式)模型与系统的(正式)规范之间的关系。我们称在开发规范的这个阶段发生的错误为错误，而我们称在将给定规范转换为 SUT 实现错误期间发生的错误。虽然从理论上讲，验证可以简化为一个正式的过程，但验证必须检查系统在现实世界中的行为。如果系统的属性已经过正式验证，那么现有的正式规范是否捕捉到了用户环境中预期行为的所有方面，即是否没有规范错误，仍然没有确定。有时，术语规范测试用于确定规范是否与用户意图的模型一致[Gau05]。
 
@@ -9762,7 +9791,7 @@ Validation, specification testing, and verification are thus three complementary
 
 > 因此，验证、规范测试和验证是支持质量保证的三种互补手段。主要的验证方法是测试，而理想的验证方法则是形式分析。
 
-During testing , the behavior of a real-time computer system is exercised at care­ fully selected points of the input domain, and the corresponding results in the domains of value and time are classified as correct or erroneous . It is assumed, given that the test cases have been properly selected and correctly executed, that the induction that the program will operate correctly at all points of the enormous input space is justified. In a digital system, where the change of a single bit can have dras­ tic consequences on the behavior, this induction is fragile . If we take a purely proba­ bilistic point of view, an estimate that the mean time to failure (MTTF) of the SUT will be larger than a given number of hours can only be made if operational tests have been executed for a duration that corresponds to this number of hours [Lit93]. In practice, this means that it is not possible to establish an MTTF of more than $10^{3}–10^{5}$  hours by operational testing. This is orders of magnitude lower than the desired MTTF of safety-critical systems, which is in the order of $10^{9}$  hours.
+During testing , the behavior of a real-time computer system is exercised at care­ fully selected points of the input domain, and the corresponding results in the domains of value and time are classified as correct or erroneous. It is assumed, given that the test cases have been properly selected and correctly executed, that the induction that the program will operate correctly at all points of the enormous input space is justified. In a digital system, where the change of a single bit can have dras­ tic consequences on the behavior, this induction is fragile. If we take a purely proba­ bilistic point of view, an estimate that the mean time to failure (MTTF) of the SUT will be larger than a given number of hours can only be made if operational tests have been executed for a duration that corresponds to this number of hours [Lit93]. In practice, this means that it is not possible to establish an MTTF of more than $10^{3}–10^{5}$  hours by operational testing. This is orders of magnitude lower than the desired MTTF of safety-critical systems, which is in the order of $10^{9}$  hours.
 
 > 在测试过程中，实时计算机系统的行为在输入域的精心选择的点上进行，值域和时间域中的相应结果被分为正确或错误。假设测试用例已被正确选择和执行，那么程序将在巨大输入空间的所有点上正确运行的推断是合理的。在数字系统中，单个比特的变化可能会对行为产生严重后果，这种归纳是脆弱的。如果我们纯粹从概率论的角度来看，只有在运行测试的持续时间与给定的小时数相对应的情况下，才能估计 SUT 的平均故障时间(MTTF)将大于给定的小时数来[Lit93]。在实践中，这意味着通过操作测试不可能建立超过 10^{3}-10^{5}$小时的MTTF。这比安全关键系统所需的MTTF低几个数量级，MTTF约为10^{9}$小时。
 
@@ -9844,11 +9873,11 @@ Model-Based Test Data Selection: The test data is derived from a model of the sy
 
 > 基于模型的测试数据选择：测试数据来自被测系统的模型和物理工厂的模型。基于模型的测试数据选择可以自动化，因为测试结果的正确性可能与物理过程的性能标准有关。
 
-Example : Consider the case where a controller of an automotive engine is tested versus a model of this engine . The model of the engine has been extensively validated with respect to the operation of the real engine and is assumed to be correct. The control algorithms that are implemented in the controller determine the performance parameters of the engine such as energy efficiency, torque, pollution, etc. By observing the performance parameters of the engine, we can detect anomalies that are caused by a misbehavior of the controller software.
+Example : Consider the case where a controller of an automotive engine is tested versus a model of this engine. The model of the engine has been extensively validated with respect to the operation of the real engine and is assumed to be correct. The control algorithms that are implemented in the controller determine the performance parameters of the engine such as energy efficiency, torque, pollution, etc. By observing the performance parameters of the engine, we can detect anomalies that are caused by a misbehavior of the controller software.
 
 > 示例：考虑汽车发动机的控制器与该发动机的模型进行测试的情况。发动机的模型已针对实际发动机的运行进行了广泛验证，并被认为是正确的。控制器中实现的控制算法决定了发动机的性能参数，如能效、扭矩、污染等。通过观察发动机的性能指标，我们可以检测到由控制器软件的不当行为引起的异常。
 
-Operational profile : The basis of the test data selection is the operational profile of the system under test in the given application context. This test data selection criterion misses rare events. Peak load: A hard real-time system must provide the specified timely service under all conditions covered by the load and fault hypothesis, i.e., also under peak loads that are caused by rare events . The peak load scenario puts extreme stress on the system and should be tested extensively. The behavior of the system in above peak load situations must also be tested. If peak load activity is handled correctly, the normal load case will take care of itself. In most cases, it is not possible to generate rare events and peak load in the real-world operational envi­ ronment. Therefore peak load testing is best performed in a model-based test environment. Worst-Case Execution Time (WCET): To determine the WCET of a task experimen­ tally, the task source code can be analyzed to generate a test data set that is biased toward the worst-case execution time. Fault-Tolerance Mechanisms: Testing the correctness of the fault-tolerance mecha­ nism is difficult, because faults are not part of the normal input domain. Mechanisms must be provided that can activate the faults during the test phase. For example, software- or hardware-implemented fault injection can be used to test the correctness of the fault-tolerance mechanisms (see the following Sect. 12.5 ). Cyclic systems: If a system has a cyclic behavior (many control systems are cyclic), the crossing of a particular phase of the cycle is a repetitive event in the temporal domain. In many cyclic systems, it is sufficient to test all events that occur in a single cycle.
+Operational profile : The basis of the test data selection is the operational profile of the system under test in the given application context. This test data selection criterion misses rare events. Peak load: A hard real-time system must provide the specified timely service under all conditions covered by the load and fault hypothesis, i.e., also under peak loads that are caused by rare events. The peak load scenario puts extreme stress on the system and should be tested extensively. The behavior of the system in above peak load situations must also be tested. If peak load activity is handled correctly, the normal load case will take care of itself. In most cases, it is not possible to generate rare events and peak load in the real-world operational envi­ ronment. Therefore peak load testing is best performed in a model-based test environment. Worst-Case Execution Time (WCET): To determine the WCET of a task experimen­ tally, the task source code can be analyzed to generate a test data set that is biased toward the worst-case execution time. Fault-Tolerance Mechanisms: Testing the correctness of the fault-tolerance mecha­ nism is difficult, because faults are not part of the normal input domain. Mechanisms must be provided that can activate the faults during the test phase. For example, software- or hardware-implemented fault injection can be used to test the correctness of the fault-tolerance mechanisms (see the following Sect. 12.5 ). Cyclic systems: If a system has a cyclic behavior (many control systems are cyclic), the crossing of a particular phase of the cycle is a repetitive event in the temporal domain. In many cyclic systems, it is sufficient to test all events that occur in a single cycle.
 
 > 操作配置文件：测试数据选择的基础是给定应用程序上下文中被测系统的操作配置文件。此测试数据选择标准忽略了罕见事件。峰值负载：硬实时系统必须在负载和故障假设涵盖的所有条件下，即在罕见事件引起的峰值负载下，提供指定的及时服务。峰值负载场景给系统带来了极大的压力，应该进行广泛的测试。还必须测试系统在高于峰值负载情况下的行为。如果正确处理峰值负载活动，正常负载情况将自行解决。在大多数情况下，在现实操作环境中不可能产生罕见事件和峰值负载。因此，峰值负载测试最好在基于模型的测试环境中进行。最坏情况执行时间(WCET)：为了实验性地确定任务的 WCET，可以分析任务源代码以生成偏向最坏情况的执行时间的测试数据集。容错机制：测试容错机制的正确性是困难的，因为故障不是正常输入域的一部分。必须提供能够在测试阶段激活故障的机制。例如，软件或硬件实现的故障注入可用于测试容错机制的正确性(见以下第 12.5 节)。循环系统：如果一个系统具有循环行为(许多控制系统是循环的)，则循环特定阶段的交叉是时域中的重复事件。在许多循环系统中，测试单个循环中发生的所有事件就足够了。
 
@@ -9892,11 +9921,11 @@ In practice, the judgment whether the result of a test case is in conformance wi
 
 > 在实践中，判断测试用例的结果是否符合用户意图模型的自然语言表示通常委托给人类。基于模型的设计和基于模型的测试可以帮助部分解决问题。
 
-The structured design process, discussed in Sect. 4.4 and Chap. 11 , distinguishes between the PIM (platform-independent model) and the PSM (platform-specific model) of a component. An executable representation of the complete interface behavior (in the domains of value and time) at the PIM level of a design can act as the reference for the adjudication of a test result at the PSM level and thus help to detect implementation errors . The oracle challenge is thus shifted from the PSM level to the PIM level. Since the PIM is developed in an early phase of the design, errors can be captured early in the life cycle, which reduces the cost associated with correction of the errors.
+The structured design process, discussed in Sect. 4.4 and Chap. 11 , distinguishes between the PIM (platform-independent model) and the PSM (platform-specific model) of a component. An executable representation of the complete interface behavior (in the domains of value and time) at the PIM level of a design can act as the reference for the adjudication of a test result at the PSM level and thus help to detect implementation errors. The oracle challenge is thus shifted from the PSM level to the PIM level. Since the PIM is developed in an early phase of the design, errors can be captured early in the life cycle, which reduces the cost associated with correction of the errors.
 
 > 结构化设计过程，在第节中讨论。4.4 和第 11 章对组件的 PIM(平台无关模型)和 PSM(平台特定模型)进行了区分。设计 PIM 级别完整接口行为(在价值和时间域中)的可执行表示可以作为 PSM 级别测试结果判定的参考，从而有助于检测实施错误。因此，预言机挑战从 PSM 级别转移到 PIM 级别。由于无源互调是在设计的早期阶段开发的，因此可以在生命周期的早期捕获错误，从而降低了与纠正错误相关的成本。
 
-The LIF specification of a component (see Sect. 4.4.2 ) should contain input assertions and output assertions . Input assertions limit the input space of the com­ ponent and exclude input data that the component is not designed to handle. Output assertions help to immediately detect errors that occur inside a component. Both input assertions and output assertions can be considered to act as a test oracle light [Bar01] . Since the PIM is not resource constrained, the wide use of input assertions and output assertions at the PIM level can help to debug the PIM specification. In the second phase, when the PIM is transformed to the PSM, some of these asser­ tions can be removed to arrive at an efficient code for the target machine.
+The LIF specification of a component (see Sect. 4.4.2 ) should contain input assertions and output assertions. Input assertions limit the input space of the com­ ponent and exclude input data that the component is not designed to handle. Output assertions help to immediately detect errors that occur inside a component. Both input assertions and output assertions can be considered to act as a test oracle light [Bar01]. Since the PIM is not resource constrained, the wide use of input assertions and output assertions at the PIM level can help to debug the PIM specification. In the second phase, when the PIM is transformed to the PSM, some of these asser­ tions can be removed to arrive at an efficient code for the target machine.
 
 > 组件的 LIF 规范(见第 4.4.2 节)应包含输入断言和输出断言。输入断言限制了组件的输入空间，并排除了组件不打算处理的输入数据。输出断言有助于立即检测组件内部发生的错误。输入断言和输出断言都可以被视为测试预言灯[Bar01]。由于 PIM 不受资源限制，因此在 PIM 级别广泛使用输入断言和输出断言有助于调试 PIM 规范。在第二阶段，当 PIM 转换为 PSM 时，可以删除其中一些组件，为目标机器生成高效的代码。
 
@@ -9978,7 +10007,7 @@ The integration of components can give rise to planned or unanticipated emer­ g
 
 ### 12.3.3 Communicating Components
 
-During system integration, commercial-off-the-shelf (COTS) components or application-­specific components are connected by their corresponding linking inter­ faces (LIFs). The message exchange across these linking interfaces must be care­ fully tested. In Sect. 4.6 , we have introduced three levels of a LIF specification: the transport level , the operational level , and the semantic level . The LIF tests can fol­ low along these three levels. The test at the transport level and the operational level, which must be precisely specified, can be performed mechanically, while the test of the meta-level (the semantics) will normally need human intervention. The multi­ cast capability of the BMTS (basic message transport service—see Sect. 4.1.1 ) enables the probe effect-free observation of the information exchanged among com­ municating components.
+During system integration, commercial-off-the-shelf (COTS) components or application-­specific components are connected by their corresponding linking inter­ faces (LIFs). The message exchange across these linking interfaces must be care­ fully tested. In Sect. 4.6 , we have introduced three levels of a LIF specification: the transport level , the operational level , and the semantic level. The LIF tests can fol­ low along these three levels. The test at the transport level and the operational level, which must be precisely specified, can be performed mechanically, while the test of the meta-level (the semantics) will normally need human intervention. The multi­ cast capability of the BMTS (basic message transport service—see Sect. 4.1.1 ) enables the probe effect-free observation of the information exchanged among com­ municating components.
 
 > 在系统集成过程中，商用现货(COTS)组件或特定应用组件通过其相应的链接接口(LIF)连接。必须仔细测试这些链接接口之间的消息交换。在门派。4.6，我们引入了 LIF 规范的三个级别：传输级别、操作级别和语义级别。LIF 测试可以沿着这三个层次进行。必须精确指定的传输级别和操作级别的测试可以机械地执行，而元级别(语义)的测试通常需要人工干预。BMTS 的多播功能(基本消息传输服务——见第 4.1.1 节)能够无探测效应地观察通信组件之间交换的信息。
 
@@ -10036,7 +10065,7 @@ Rushby [Rus93] classifies the use of formal methods in computer science accordin
 
 > (i) 离散数学概念和符号的使用。在这个层面上，有时关于系统需求和规范的模糊自然语言陈述被离散数学和逻辑的符号和惯例所取代，例如集合论、关系和函数。关于规范的完整性和一致性的推理遵循半形式的手动风格，就像在数学的许多分支中一样。
 
-(ii) Use of formalized specification languages with some mechanical support tools . At this level, a formal specification language with a fixed syntax is introduced that allows the mechanical analysis of some properties of the problems expressed in the specification language. At level (ii), it is not possible to gener­ ate complete proofs mechanically.
+(ii) Use of formalized specification languages with some mechanical support tools. At this level, a formal specification language with a fixed syntax is introduced that allows the mechanical analysis of some properties of the problems expressed in the specification language. At level (ii), it is not possible to gener­ ate complete proofs mechanically.
 
 > (ii)使用形式化的规范语言和一些机械支持工具。在这个级别，引入了一种具有固定语法的形式化规范语言，允许对规范语言中表达的问题的某些属性进行机械分析。在第(ii)级，不可能机械地生成完整的证明。
 
@@ -10070,7 +10099,7 @@ In the last few years, the verification technique of model checking , a level (i
 
 ## 12.5 Fault Injection
 
-Fault injection is the intentional introduction of faults by software or hardware in order to validate the system behavior under fault conditions. During a fault-injection experiment, the target system is exposed to two types of inputs: the injected faults and the input data . The faults can be seen as another type of input that activates the fault-management mechanisms. Careful testing and debugging of the fault-­ management mechanisms are necessary because a notable number of system fail­ ures are caused by errors in the fault-management mechanisms.
+Fault injection is the intentional introduction of faults by software or hardware in order to validate the system behavior under fault conditions. During a fault-injection experiment, the target system is exposed to two types of inputs: the injected faults and the input data. The faults can be seen as another type of input that activates the fault-management mechanisms. Careful testing and debugging of the fault-­ management mechanisms are necessary because a notable number of system fail­ ures are caused by errors in the fault-management mechanisms.
 
 > 故障注入是指通过软件或硬件有意引入故障，以验证系统在故障条件下的行为。在故障注入实验中，目标系统暴露于两种类型的输入：注入的故障和输入数据。故障可以被视为激活故障管理机制的另一种输入。对故障管理机制进行仔细的测试和调试是必要的，因为大量的系统故障是由故障管理机制中的错误引起的。
 
@@ -10169,7 +10198,7 @@ In safety-critical applications, these fault-injection tests must be carefully d
 
 ## Points to Remember
 
-• An essential fraction—up to $50\%$ —of the development costs of a real-time com­ puter system is devoted to ensure that the system is fit-for-purpose . In safety-­ critical applications that must be certified, this fraction is even higher.
+• An essential fraction—up to $50\%$ —of the development costs of a real-time com­ puter system is devoted to ensure that the system is fit-for-purpose. In safety-­ critical applications that must be certified, this fraction is even higher.
 
 > •实时计算机系统开发成本中的一小部分(高达 50%)用于确保系统适用。在必须经过认证的安全关键应用中，这一比例甚至更高。
 
@@ -10251,19 +10280,19 @@ In the survey article Software Testing Research: Achievements, Challenges, Dream
 
 ## Overview
 
-The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of cap­ tured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object , which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet. There is another technology that points in the same direction—the RFID technology . The RFID technology, an extension of the ubiquitous optical bar codes that are found on many everyday products, requires the attachment of a smart low-cost electronic ID-tag to a product such that the identity of a product can be decoded from a dis­ tance. By putting more intelligence into the ID tag, the tagged thing becomes a smart object. The novelty of the Internet of Things (IoT) is not in any new disruptive technology, but in the pervasive deployment of smart objects .
+The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of cap­ tured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object , which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet. There is another technology that points in the same direction—the RFID technology. The RFID technology, an extension of the ubiquitous optical bar codes that are found on many everyday products, requires the attachment of a smart low-cost electronic ID-tag to a product such that the identity of a product can be decoded from a dis­ tance. By putting more intelligence into the ID tag, the tagged thing becomes a smart object. The novelty of the Internet of Things (IoT) is not in any new disruptive technology, but in the pervasive deployment of smart objects .
 
 > 物理事物与互联网的连接使得访问远程传感器数据和从远处控制物理世界成为可能。有上限的数据与从其他来源检索到的数据(例如，与 Web 中包含的数据)的混搭，产生了新的协同服务，这些服务超出了孤立的嵌入式系统可以提供的服务。物联网就是基于这一愿景。智能对象是物联网的构建块，它只是连接到互联网的嵌入式系统的另一个名称。还有另一种技术指向同一个方向——RFID 技术。RFID 技术是许多日常产品上无处不在的光学条形码的扩展，需要在产品上附加一个智能的低成本电子身份标签，以便从远处解码产品的身份。通过在 ID 标签中添加更多智能，标记的东西就变成了一个智能对象。物联网(IoT)的新颖之处不在于任何新的颠覆性技术，而在于智能对象的普遍部署。
 
-At the beginning of this chapter, the vision of the IoT is introduced. The next section elaborates on the forces that drive the development of the IoT. We distin­ guish between technology push and technology pull forces . The technology push forces see in the IoT the possibility of vast new markets for novel ICT products and services, while the technology pull forces see the potential of the IoT to increase the productivity in many sectors of the economy, to provide new services, e.g., for an aging society, and to promote a new lifestyle. Section 13.3 focuses on the technol­ ogy issues that have to be addressed in order to bring the IoT to a mass market. Section 13.4 discusses the RFID technology, which can be seen as a forerunner of the IoT. The topic of wireless sensor networks, where self-organizing smart objects build ad hoc networks and collect data from the environment, is covered in Sect. 13.5 . The pervasive deployment of smart objects that collect data and control the physical environment from a distance poses a severe challenge to the security and safety of the world and the privacy of our lives.
+At the beginning of this chapter, the vision of the IoT is introduced. The next section elaborates on the forces that drive the development of the IoT. We distin­ guish between technology push and technology pull forces. The technology push forces see in the IoT the possibility of vast new markets for novel ICT products and services, while the technology pull forces see the potential of the IoT to increase the productivity in many sectors of the economy, to provide new services, e.g., for an aging society, and to promote a new lifestyle. Section 13.3 focuses on the technol­ ogy issues that have to be addressed in order to bring the IoT to a mass market. Section 13.4 discusses the RFID technology, which can be seen as a forerunner of the IoT. The topic of wireless sensor networks, where self-organizing smart objects build ad hoc networks and collect data from the environment, is covered in Sect. 13.5. The pervasive deployment of smart objects that collect data and control the physical environment from a distance poses a severe challenge to the security and safety of the world and the privacy of our lives.
 
-> 在本章的开头，介绍了物联网的愿景。下一节将详细阐述推动物联网发展的力量。我们区分技术推动和技术拉力。技术推动力在物联网中看到了新型 ICT 产品和服务广阔新市场的可能性，而技术拉力则看到了物联网在提高许多经济部门的生产力、为老龄化社会等提供新服务以及促进新生活方式方面的潜力。第 13.3 节重点介绍了将物联网推向大众市场所必须解决的技术问题。第 13.4 节讨论了 RFID 技术，它可以被视为物联网的先驱。无线传感器网络的主题，即自组织智能对象构建自组织网络并从环境中收集数据，在第节中有所介绍。13.5 . 从远处收集数据和控制物理环境的智能对象的广泛部署对世界的安全和保障以及我们的生活隐私构成了严峻的挑战。
+> 在本章的开头，介绍了物联网的愿景。下一节将详细阐述推动物联网发展的力量。我们区分技术推动和技术拉力。技术推动力在物联网中看到了新型 ICT 产品和服务广阔新市场的可能性，而技术拉力则看到了物联网在提高许多经济部门的生产力、为老龄化社会等提供新服务以及促进新生活方式方面的潜力。第 13.3 节重点介绍了将物联网推向大众市场所必须解决的技术问题。第 13.4 节讨论了 RFID 技术，它可以被视为物联网的先驱。无线传感器网络的主题，即自组织智能对象构建自组织网络并从环境中收集数据，在第节中有所介绍。13.5. 从远处收集数据和控制物理环境的智能对象的广泛部署对世界的安全和保障以及我们的生活隐私构成了严峻的挑战。
 
 ## 13.1 The Vision of the Internet of Things (IoT)
 
 Over the past 50 years, the Internet has exponentially grown form a small research network, comprising only a few nodes, to a worldwide pervasive network that ser­ vices more than a billion users. The further miniaturization and cost reduction of electronic devices make it possible to expand the Internet into a new dimension: to smart objects , i.e., everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the Internet. The small electronic device, a computational component that is attached to a physical thing , bridges the gap between the physical world and the information world. A smart object is thus a cyber-physical system or an embedded system , con­ sisting of a thing (the physical entity) and a component (the computer) that processes the sensor data and supports a wireless communication link to the Internet.
 
-> 在过去的 50 年里，互联网呈指数级增长，从一个只有几个节点的小型研究网络，发展成为一个为超过 10 亿用户提供服务的全球普及网络。电子设备的进一步小型化和成本降低使互联网有可能扩展到一个新的维度：智能对象，即通过小型电子设备增强的日常物理事物，以提供本地智能和与互联网建立的网络空间的连接。小型电子设备是一种附着在物理事物上的计算组件，它弥合了物理世界和信息世界之间的差距。因此，智能对象是一个网络物理系统或嵌入式系统，由一个事物(物理实体)和一个处理传感器数据并支持与互联网无线通信链接的组件(计算机)组成。
+> 在过去的 50 年里，互联网呈指数级增长，从一个只有几个节点的小型研究网络，发展成为一个为超过 10 亿用户提供服务的全局普及网络。电子设备的进一步小型化和成本降低使互联网有可能扩展到一个新的维度：智能对象，即通过小型电子设备增强的日常物理事物，以提供本地智能和与互联网建立的网络空间的连接。小型电子设备是一种附着在物理事物上的计算组件，它弥合了物理世界和信息世界之间的差距。因此，智能对象是一个网络物理系统或嵌入式系统，由一个事物(物理实体)和一个处理传感器数据并支持与互联网无线通信链接的组件(计算机)组成。
 
 Example : Consider a smart refrigerator that keeps track of the availability and expiry date of food items and autonomously places an order to the next grocery shop if the supply of a food item is below a given limit.
 
@@ -10275,7 +10304,7 @@ The novelty of the IoT is not in the functional capability of a smart object —
 
 The advent of low-power wireless communication enables the communication with a smart object without the need of a physical connection. Mobile smart objects can move around in the physical space while maintaining their identity. The wide availability of signals from the global positioning system (GPS) makes it possible to make a smart object location and time-aware and offer services that are tuned to the current context of use.
 
-> 低功耗无线通信的出现使得无需物理连接即可与智能对象进行通信。移动智能对象可以在物理空间中移动，同时保持其身份。全球定位系统(GPS)信号的广泛可用性使得智能物体的位置和时间感知成为可能，并提供适应当前使用环境的服务。
+> 低功耗无线通信的出现使得无需物理连接即可与智能对象进行通信。移动智能对象可以在物理空间中移动，同时保持其身份。全局定位系统(GPS)信号的广泛可用性使得智能物体的位置和时间感知成为可能，并提供适应当前使用环境的服务。
 
 We can envision an autonomic smart object that has access to a domain-specific knowledge base—similar to the conceptual landscape introduced in Sect. 2.2 —and is empowered with reasoning capabilities to orient itself in the selected application domain. Based on the capability level of a smart object, [Kor10] distinguish between activity-aware , policy-aware , and process -aware smart objects.
 
@@ -10291,19 +10320,19 @@ According to the IoT vision, a smart planet will evolve, where many of the every
 
 ## 13.2 Drivers for an IoT
 
-Which are the forces that drive the development of the Internet of Things? They are on both sides of the technology landscape: technology push forces and technology pull forces . The technology push forces see in the IoT a vast new market for the deployment of current and future information and communication technologies (ICT). The IoT will help to utilize existing and new factories, provide new employ­ ment opportunities in the ICT sector, and contribute to the further development of the ICT technologies in general.
+Which are the forces that drive the development of the Internet of Things? They are on both sides of the technology landscape: technology push forces and technology pull forces. The technology push forces see in the IoT a vast new market for the deployment of current and future information and communication technologies (ICT). The IoT will help to utilize existing and new factories, provide new employ­ ment opportunities in the ICT sector, and contribute to the further development of the ICT technologies in general.
 
 > 推动物联网发展的力量是什么？他们处于技术格局的两侧：技术推动力和技术拉力。技术推动力量在物联网中看到了一个巨大的新市场，用于部署当前和未来的信息和通信技术(ICT)。物联网将有助于利用现有和新工厂，为 ICT 行业提供新的就业机会，并促进 ICT 技术的进一步发展。
 
-In this section, the focus is mainly on technology pull forces . Which areas of our economy, society, and life in general will benefit from the wide deployment of the IoT? The following analysis is not exhaustive—we are only highlighting some sec­ tors where, according to our present understanding, the wide deployment of the IoT technology will have a major impact.
+In this section, the focus is mainly on technology pull forces. Which areas of our economy, society, and life in general will benefit from the wide deployment of the IoT? The following analysis is not exhaustive—we are only highlighting some sec­ tors where, according to our present understanding, the wide deployment of the IoT technology will have a major impact.
 
 > 本节主要关注技术拉力。我们的经济、社会和生活的哪些领域将从物联网的广泛部署中受益？以下分析并不详尽——我们只是强调了一些环节，根据我们目前的理解，物联网技术的广泛部署将产生重大影响。
 
 ### 13.2.1 Uniformity of Access
 
-The Internet has achieved the worldwide interoperability of heterogeneous end sys­ tems over a wide variety of communication channels. The IoT should extend this interoperability to the universe of heterogeneous smart objects . From the point of view of reduction of the cognitive complexity (see Chap. 2 ), the IoT can make a very significant contribution: the establishment of a uniform access pattern to things in the physical world.
+The Internet has achieved the worldwide interoperability of heterogeneous end sys­ tems over a wide variety of communication channels. The IoT should extend this interoperability to the universe of heterogeneous smart objects. From the point of view of reduction of the cognitive complexity (see Chap. 2 ), the IoT can make a very significant contribution: the establishment of a uniform access pattern to things in the physical world.
 
-> 互联网通过各种通信渠道实现了异构终端系统的全球互操作性。物联网应该将这种互操作性扩展到异构智能对象的领域。从降低认知复杂性的角度来看(见第 2 章)，物联网可以做出非常重要的贡献：建立对物理世界中事物的统一访问模式。
+> 互联网通过各种通信渠道实现了异构终端系统的全局互操作性。物联网应该将这种互操作性扩展到异构智能对象的领域。从降低认知复杂性的角度来看(见第 2 章)，物联网可以做出非常重要的贡献：建立对物理世界中事物的统一访问模式。
 
 ### 13.2.2 Logistics
 
@@ -10361,7 +10390,7 @@ The IoT can lead to a change in lifestyle. A smart phone can function as a brows
 
 ### 13.3.1 Internet Integration
 
-Depending on the computational capabilities and the available energy, a smart object can be integrated into the Internet either directly or indirectly via a base sta­ tion that is connected to the Internet. The indirect integration will be chosen when the smart object has a very limited power budget. Application-specific power-­ optimized protocols are used to connect the smart object to a nearby base station . The base station that is not power constrained can act as a standard Web server that provides gateway access to the reachable smart objects.
+Depending on the computational capabilities and the available energy, a smart object can be integrated into the Internet either directly or indirectly via a base sta­ tion that is connected to the Internet. The indirect integration will be chosen when the smart object has a very limited power budget. Application-specific power-­ optimized protocols are used to connect the smart object to a nearby base station. The base station that is not power constrained can act as a standard Web server that provides gateway access to the reachable smart objects.
 
 > 根据计算能力和可用能量，智能对象可以直接或间接地通过连接到互联网的基站集成到互联网中。当智能对象的功率预算非常有限时，将选择间接集成。特定于应用程序的功率优化协议用于将智能对象连接到附近的基站。不受功率限制的基站可以充当标准 Web 服务器，为可访问的智能对象提供网关访问。
 
@@ -10399,7 +10428,7 @@ Isolated Objects The following three different object names have to be distin­ 
 
 > •对象类型名称：指理想情况下具有相同特性的一类对象。它是在完善的光学条形码中编码的名称。
 
-• Object role name : In a given use context, an object plays a specific role that is denoted by the object role name . At different times, the same object can play dif­ ferent roles. An object can play a number or roles and a role can be played by a number of objects.
+• Object role name : In a given use context, an object plays a specific role that is denoted by the object role name. At different times, the same object can play dif­ ferent roles. An object can play a number or roles and a role can be played by a number of objects.
 
 > •对象角色名称：在给定的使用上下文中，对象扮演由对象角色名称表示的特定角色。在不同的时间，同一个对象可以扮演不同的角色。一个对象可以扮演一个或多个角色，一个角色可以由多个对象扮演。
 
@@ -10407,7 +10436,7 @@ Example : The assumption that all objects that have the same object type name ar
 
 > 示例：具有相同对象类型名称的所有对象都相同的假设并不总是成立。考虑一个未经批准的备件的情况，该备件具有与批准的备件相同的可见特性和类型，但是批准零件的更便宜的副本。
 
-Example : An office key is an object role name for a physical object type that unlocks the door of an office. Any instance of the object type is an office key . When the lock in the office door is changed, a different object type assumes the role of the office key . A particular office key can also unlock the laboratory. It then plays two roles, the role of an office key and the role of a laboratory key . A master key can open any office—there are thus two different keys that play the same role.
+Example : An office key is an object role name for a physical object type that unlocks the door of an office. Any instance of the object type is an office key. When the lock in the office door is changed, a different object type assumes the role of the office key. A particular office key can also unlock the laboratory. It then plays two roles, the role of an office key and the role of a laboratory key. A master key can open any office—there are thus two different keys that play the same role.
 
 > 示例：办公室钥匙是解锁办公室门的物理对象类型的对象角色名称。对象类型的任何实例都是 office 键。当办公室门上的锁被更改时，另一种对象类型将扮演办公室钥匙的角色。特定的办公室钥匙也可以解锁实验室。然后，它扮演两个角色，办公室钥匙和实验室钥匙。一把万能钥匙可以打开任何办公室——因此有两把不同的钥匙起着相同的作用。
 
@@ -10437,7 +10466,7 @@ The IoT requires, in addition to the established WLANs (wireless local area net�
 
 > 除了已建立的 WLAN(无线局域网)外，物联网还需要短程节能 WPAN(无线个域网)，以便在短距离内实现对智能对象的节能无线访问。IEEE 802.15 标准工作组为 WPAN 网络制定标准。符合 802.15 标准的网络包括蓝牙网络和 ZigBee 网络。
 
-Originally, Bluetooth has been introduced as a wireless alternative to the RS232 wire-bound communication channel [Bar07]. Bluetooth, standardized in IEEE 802.15.1, defines a complete WPAN architecture, including a security layer. At the physical level, it achieves a data rate of up to 3 Mbit/second over a distance of $1\textrm{m}$ (Class 3—maximum transmission power of $1\;\mathrm{mW}$ ) to $100\;\mathrm{m}$ (Class 1—maximum transmission power $100\:\mathrm{mW}$ ) using the transmission technology of frequency hop­ ping . Bluetooth allows multiple devices to communicate over a single adapter.
+Originally, Bluetooth has been introduced as a wireless alternative to the RS232 wire-bound communication channel [Bar07]. Bluetooth, standardized in IEEE 802.15.1, defines a complete WPAN architecture, including a security layer. At the physical level, it achieves a data rate of up to 3 Mbit/second over a distance of $1\textrm{m}$ (Class 3—maximum transmission power of $1\;\mathrm{mW}$ ) to $100\;\mathrm{m}$ (Class 1—maximum transmission power $100\:\mathrm{mW}$ ) using the transmission technology of frequency hop­ ping. Bluetooth allows multiple devices to communicate over a single adapter.
 
 > 最初，蓝牙被引入作为 RS232 有线通信信道的无线替代方案[Bar07]。IEEE 802.15.1 标准化的蓝牙定义了一个完整的 WPAN 架构，包括安全层。在物理层面，它在 1 美元到 100 美元的距离内实现了高达 3 兆比特/秒的数据速率(第 3 类——最大传输功率为 1 美元到 10 美元)；\mathrm{m}$(第1类——最大传输功率$100 \：\mathrm{mW}$)使用跳频传输技术。蓝牙允许多个设备通过单个适配器进行通信。
 
@@ -10445,15 +10474,15 @@ The ZigBee alliance is a group of companies that develops a secure WPAN that is 
 
 > ZigBee 联盟是一组开发安全 WPAN 的公司，旨在比蓝牙更简单、更节能、更便宜[Bar07]。ZigBee 使用基于 IEEE 802.15.4 标准的高级通信协议用于低功耗数字无线电。ZigBee 设备要求电池寿命超过一年。
 
-The NFC (near-field communication) standard [Fin03], an extension of the ISO/ IEC 14443 proximity card standard, is a short-range high-­frequency wireless com­ munication technology which enables the exchange of data between devices over a distance of less than $20\,\mathrm{cm}$ . The technology is compatible with both existing smart­ cards and readers, as well as with other NFC devices, and is thereby compatible with the existing contactless infrastructure already in use for public transportation and payment. NFC is primarily aimed for use in mobile phones .
+The NFC (near-field communication) standard [Fin03], an extension of the ISO/ IEC 14443 proximity card standard, is a short-range high-­frequency wireless com­ munication technology which enables the exchange of data between devices over a distance of less than $20\,\mathrm{cm}$. The technology is compatible with both existing smart­ cards and readers, as well as with other NFC devices, and is thereby compatible with the existing contactless infrastructure already in use for public transportation and payment. NFC is primarily aimed for use in mobile phones .
 
 > NFC(近场通信)标准[Fin03]是 ISO/IEC 14443 感应卡标准的扩展，是一种短程高频无线通信技术，可以在不到 20 美元的距离内实现设备之间的数据交换。该技术与现有的智能卡和读卡器以及其他 NFC 设备兼容，从而与已经用于公共交通和支付的现有非接触式基础设施兼容。NFC 主要用于手机。
 
 ### 13.3.4 IoT Device Capabilities Versus Cloud Computing
 
-Smart objects that have access to the Internet can take advantage of services that are offered by the cloud (large data centers that provide their services through the Internet). The division of work between a smart object and the cloud will be deter­ mined, to a considerable degree, by privacy and energy considerations $[\mathrm{Kum}10]$ . If the energy required to execute a task locally is larger than the energy required to send the task parameters to a server in the cloud, then the task is a candidate for remote processing. However, there are other aspects that influence the decision about work distribution: autonomy of the smart object, response time, reliability, and security.
+Smart objects that have access to the Internet can take advantage of services that are offered by the cloud (large data centers that provide their services through the Internet). The division of work between a smart object and the cloud will be deter­ mined, to a considerable degree, by privacy and energy considerations $[\mathrm{Kum}10]$. If the energy required to execute a task locally is larger than the energy required to send the task parameters to a server in the cloud, then the task is a candidate for remote processing. However, there are other aspects that influence the decision about work distribution: autonomy of the smart object, response time, reliability, and security.
 
-> 可以访问互联网的智能对象可以利用云提供的服务(通过互联网提供服务的大型数据中心)。智能对象和云之间的分工在很大程度上取决于隐私和能源考虑{Kum}10]$ . 如果在本地执行任务所需的能量大于将任务参数发送到云中的服务器所需的能源，则该任务是远程处理的候选者。然而，还有其他方面会影响工作分配的决策：智能对象的自主性、响应时间、可靠性和安全性。
+> 可以访问互联网的智能对象可以利用云提供的服务(通过互联网提供服务的大型数据中心)。智能对象和云之间的分工在很大程度上取决于隐私和能源考虑{Kum}10]$. 如果在本地执行任务所需的能量大于将任务参数发送到云中的服务器所需的能源，则该任务是远程处理的候选者。然而，还有其他方面会影响工作分配的决策：智能对象的自主性、响应时间、可靠性和安全性。
 
 ### 13.3.5 Autonomic Components
 
@@ -10492,9 +10521,9 @@ Example : An electronic ski pass is an RFID tag that is queried by the reader th
 
 Whereas an optical barcode denotes a product class (all boxes of the same product have the same barcode), the EPC of an RFID tag denotes an object instance (every box has a unique identifier). It is the intent of the EPC to assign a unique identifier (UID) to every identifiable thing on the globe, i.e., a unique name to each smart object of the IoT.
 
-> 光学条形码表示产品类别(同一产品的所有箱子都有相同的条形码)，而 RFID 标签的 EPC 表示对象实例(每个箱子都有一个唯一的标识符)。EPC 的目的是为全球每个可识别的事物分配一个唯一的标识符(UID)，即为物联网的每个智能对象分配一个独特的名称。
+> 光学条形码表示产品类别(同一产品的所有箱子都有相同的条形码)，而 RFID 标签的 EPC 表示对象实例(每个箱子都有一个唯一的标识符)。EPC 的目的是为全局每个可识别的事物分配一个唯一的标识符(UID)，即为物联网的每个智能对象分配一个独特的名称。
 
-The EPC is managed by the international organization EPC global . In order to cope with the huge number of things the EPC must identify, the EPC contains a number of fields. A small header field determines the structure of the remaining fields. A typical EPC has a length of 96 bits and contains the following fields:
+The EPC is managed by the international organization EPC global. In order to cope with the huge number of things the EPC must identify, the EPC contains a number of fields. A small header field determines the structure of the remaining fields. A typical EPC has a length of 96 bits and contains the following fields:
 
 > EPC 由国际组织 EPC global 管理。为了应对 EPC 必须识别的大量内容，EPC 包含许多字段。一个小的标题字段决定了其余字段的结构。典型的 EPC 长度为 96 位，包含以下字段：
 
@@ -10514,13 +10543,13 @@ The EPC is managed by the international organization EPC global . In order to co
 
 > •对象标识号(36 位)：包含对象类中的序列号。
 
-The EPC is unique product identification but does not reveal anything about the properties of the product. Two things that have the same properties, but are designed by two different manufacturers, will have completely different EPCs. Normally, the unique EPC is used as a key to find the product record in a product database . The product record contains all required information about the attributes of the product.
+The EPC is unique product identification but does not reveal anything about the properties of the product. Two things that have the same properties, but are designed by two different manufacturers, will have completely different EPCs. Normally, the unique EPC is used as a key to find the product record in a product database. The product record contains all required information about the attributes of the product.
 
 > EPC 是唯一的产品标识，但不会透露任何关于产品特性的信息。两个具有相同属性但由两个不同制造商设计的东西将具有完全不同的 EPC。通常，唯一的 EPC 被用作在产品数据库中查找产品记录的密钥。产品记录包含有关产品属性的所有必需信息。
 
 ### 13.4.3 RFID Tags
 
-A RFID tag contains as its most important data element the EPC of the associated physical thing . A number of different RFID tags have been developed and standard­ ized. Basically, they fall into two main categories: passive RFID tags and active RFID tags .
+A RFID tag contains as its most important data element the EPC of the associated physical thing. A number of different RFID tags have been developed and standard­ ized. Basically, they fall into two main categories: passive RFID tags and active RFID tags .
 
 > RFID 标签包含相关物理事物的 EPC 作为其最重要的数据元素。已经开发并标准化了许多不同的 RFID 标签。基本上，它们分为两大类：无源 RFID 标签和有源 RFID 标签。
 
@@ -10541,9 +10570,9 @@ The RFID reader is a gateway component between the world of RFID tags and the In
 
 ### 13.4.5 RFID Security
 
-Whenever we connect a computer to the Internet, sensitive security issues arise [Lan97] that must be addressed. Standard security techniques are based on the deployment of cryptographic methods, like encryption , random number generation , and hashing as outlined in Sect. 6.2 . The execution of cryptographic methods requires energy and silicon real estate, which are not sufficiently available in all smart objects, such as low-cost RFID tags. The often-heard argument that computa­ tionally constrained RFID tagged objects will disappear in the near future as the micro electronic devices become cheaper overlooks the price pressure on simple RFID tags. If low-cost RFID tags are placed on billions of retail products, even a one-cent increase in the cost of a tag for the provision of cryptographic capabilities will be shunned.
+Whenever we connect a computer to the Internet, sensitive security issues arise [Lan97] that must be addressed. Standard security techniques are based on the deployment of cryptographic methods, like encryption , random number generation , and hashing as outlined in Sect. 6.2. The execution of cryptographic methods requires energy and silicon real estate, which are not sufficiently available in all smart objects, such as low-cost RFID tags. The often-heard argument that computa­ tionally constrained RFID tagged objects will disappear in the near future as the micro electronic devices become cheaper overlooks the price pressure on simple RFID tags. If low-cost RFID tags are placed on billions of retail products, even a one-cent increase in the cost of a tag for the provision of cryptographic capabilities will be shunned.
 
-> 每当我们将计算机连接到互联网时，都会出现必须解决的敏感安全问题[Lan97]。标准安全技术基于加密方法的部署，如加密、随机数生成和哈希，如第节所述。6.2 . 加密方法的执行需要能源和硅资源，但并非所有智能物体都能充分利用这些资源，例如低成本 RFID 标签。经常听到的论点是，随着微电子设备变得更便宜，计算受限的 RFID 标签对象将在不久的将来消失，这忽视了简单 RFID 标签的价格压力。如果低成本的 RFID 标签被放置在数十亿的零售产品上，那么即使提供加密功能的标签成本增加一分钱，也将被避免。
+> 每当我们将计算机连接到互联网时，都会出现必须解决的敏感安全问题[Lan97]。标准安全技术基于加密方法的部署，如加密、随机数生成和哈希，如第节所述。6.2. 加密方法的执行需要能源和硅资源，但并非所有智能物体都能充分利用这些资源，例如低成本 RFID 标签。经常听到的论点是，随着微电子设备变得更便宜，计算受限的 RFID 标签对象将在不久的将来消失，这忽视了简单 RFID 标签的价格压力。如果低成本的 RFID 标签被放置在数十亿的零售产品上，那么即使提供加密功能的标签成本增加一分钱，也将被避免。
 
 The information security threats in the IoT can be classified into three groups: (I) the threats that compromise the authenticity of information, (ii) the threats to pri­ vacy caused by a pervasive deployment of IoT products, and (iii) denial of service threats. We assume that the vast majority of IoT devices are connected to the cyber­ space by a wireless connection. A wireless connection always presents a serious vulnerability since it opens the door to an unnoticed observation of the traffic by an adversary.
 
@@ -10561,7 +10590,7 @@ Attaching another physical thing —e.g., a faked product —to an authentic tag
 
 > 将另一个物理对象(例如伪造的产品)附加到真实的标签上，可以打破物理对象和标签之间的联系，标签是网络空间中物理对象的代表。这种攻击必须在智能对象的物理设计层面加以解决，而网络空间安全方法无法应对。
 
-The known techniques to ensure the authenticity of the thing behind a low-cost RFID tag are quite limited. A tag is a bit-string that can be read by any commodity reader and can be copied to produce a cloned tag . Even a digital signature could not prevent cloning of tags . Men in the middle attacks , where an attacker mimics a cor­ rect tag, might break the established link between the reader and the tag. Accessing the product database can detect the existence of cloned tags by discovering that the uniqueness property of the EPC has been violated, but it cannot eliminate cloning.
+The known techniques to ensure the authenticity of the thing behind a low-cost RFID tag are quite limited. A tag is a bit-string that can be read by any commodity reader and can be copied to produce a cloned tag. Even a digital signature could not prevent cloning of tags. Men in the middle attacks , where an attacker mimics a cor­ rect tag, might break the established link between the reader and the tag. Accessing the product database can detect the existence of cloned tags by discovering that the uniqueness property of the EPC has been violated, but it cannot eliminate cloning.
 
 > 确保低成本 RFID 标签背后事物真实性的已知技术非常有限。标签是一个位字符串，任何商品阅读器都可以读取它，并可以复制它来生成克隆标签。即使是数字签名也无法阻止标签的克隆。中间人攻击，即攻击者模仿正确的标签，可能会破坏阅读器和标签之间建立的联系。访问产品数据库可以通过发现 EPC 的唯一性属性被违反来检测克隆标签的存在，但不能消除克隆。
 
@@ -10725,9 +10754,9 @@ In 2009, the European Union has published a Strategic Research Roadmap for the I
 
 Cloud computing has evolved from commercializing excess capacity in data centers in the early 2000s. Operators of large data centers then realized that their resource utilization was, on average, so low that it became profitable to rent out resources like computation time and storage to paying customers. As a result, the cloud computing paradigm has been quickly adopted worldwide with soaring success. By the end of 2020, about six hundred hyper-scale data centers offering cloud computing have been in operation. Cloud computing is frequently used to realize soft real-time systems, like video-streaming, E-commerce, or office and collaboration applications. However, this chapter is rather interested in exploring how cloud computing fits in as a design prin­ ciple for distributed embedded applications that form hard real-time systems.
 
-> 云计算是从 21 世纪初将数据中心的过剩容量商业化发展而来的。大型数据中心的运营商随后意识到，他们的资源利用率平均很低，因此将计算时间和存储等资源出租给付费客户是有利可图的。因此，云计算范式在全球范围内迅速被采用，并取得了巨大的成功。到 2020 年底，大约有 600 个提供云计算的超大规模数据中心已经投入运行。云计算经常用于实现软实时系统，如视频流、电子商务或办公和协作应用程序。然而，本章相当感兴趣的是探索云计算如何作为构成硬实时系统的分布式嵌入式应用程序的设计原则。
+> 云计算是从 21 世纪初将数据中心的过剩容量商业化发展而来的。大型数据中心的运营商随后意识到，他们的资源利用率平均很低，因此将计算时间和存储等资源出租给付费客户是有利可图的。因此，云计算范式在全局范围内迅速被采用，并取得了巨大的成功。到 2020 年底，大约有 600 个提供云计算的超大规模数据中心已经投入运行。云计算经常用于实现软实时系统，如视频流、电子商务或办公和协作应用程序。然而，本章相当感兴趣的是探索云计算如何作为构成硬实时系统的分布式嵌入式应用程序的设计原则。
 
-We start this chapter by outlining significant differences between the world of cloud and the world of RT systems . We argue that the world of cloud on its own is unfit for hard real-time systems because of its inability to provide timeliness guar­ antees and introduce fog computing (also called edge computing ) as a means to leverage cloud benefits. Fog computing is an architectural style that differentiates between the embedded , the fog , and the cloud layers . In contrast to the cloud, the fog layer is close to the controlled object and consists of fog nodes characterized by their ability to provide resource pooling , northbound and southbound connectivity , and configuration of the fog and embedded layer . We detail the main benefits and risks of fog computing and continue with key fog and cloud technologies along said characteristics. We discuss virtualization as a method for resource pooling, intro­ duce time-triggered virtual machines (TTVM), and give a prospect of containers and serverless computing . Northbound connectivity connects the fog layer to the cloud, while southbound connectivity connects the fog layer to the embedded layer. We discuss the main differences between northbound and southbound connectivity. We also give examples for the configuration characteristic . We conclude this chap­ ter with a discussion of use cases of cloud computing and fog computing for hard real-time systems and explain how the Nerve software platform for industrial fog computing satisfies the fog node characteristics.
+We start this chapter by outlining significant differences between the world of cloud and the world of RT systems. We argue that the world of cloud on its own is unfit for hard real-time systems because of its inability to provide timeliness guar­ antees and introduce fog computing (also called edge computing ) as a means to leverage cloud benefits. Fog computing is an architectural style that differentiates between the embedded , the fog , and the cloud layers. In contrast to the cloud, the fog layer is close to the controlled object and consists of fog nodes characterized by their ability to provide resource pooling , northbound and southbound connectivity , and configuration of the fog and embedded layer. We detail the main benefits and risks of fog computing and continue with key fog and cloud technologies along said characteristics. We discuss virtualization as a method for resource pooling, intro­ duce time-triggered virtual machines (TTVM), and give a prospect of containers and serverless computing. Northbound connectivity connects the fog layer to the cloud, while southbound connectivity connects the fog layer to the embedded layer. We discuss the main differences between northbound and southbound connectivity. We also give examples for the configuration characteristic. We conclude this chap­ ter with a discussion of use cases of cloud computing and fog computing for hard real-time systems and explain how the Nerve software platform for industrial fog computing satisfies the fog node characteristics.
 
 > 本章首先概述了云世界和 RT 系统世界之间的显著差异。我们认为，云世界本身不适合硬实时系统，因为它无法提供及时性保证，并引入雾计算(也称为边缘计算)作为利用云优势的一种手段。雾计算是一种区分嵌入式、雾层和云层的架构风格。与云相比，雾层靠近受控对象，由雾节点组成，其特征是能够提供资源池、南北向连接以及雾和嵌入层的配置。我们详细介绍了雾计算的主要好处和风险，并继续介绍了关键的雾和云技术。我们讨论了虚拟化作为资源池的一种方法，介绍了时间触发虚拟机(TTVM)，并展望了容器和无服务器计算的前景。北向连接将雾层连接到云，而南向连接将雾气层连接到嵌入层。我们讨论了南北向连通性的主要区别。我们还给出了配置特征的示例。最后，我们讨论了硬实时系统的云计算和雾计算的用例，并解释了用于工业雾计算的 Nerve 软件平台如何满足雾节点特性。
 
@@ -10753,7 +10782,7 @@ The said challenge originates from the complexity of the distributed computer th
 
 > 所述挑战源于形成云的分布式计算机的复杂性及其与实时实体的连接，这导致了与云的通信和云中任务执行时间的高度时间变化(即抖动)。因此，往返于云端的消息的动作延迟及其处理质量将很低，在实践中甚至可能无法可靠地计算。
 
-Example: Tools to measure Internet latency are commonly available. For example, the ping command can measure the round-trip delay from a pinging entity to a cloud server and back again. Pinging [www.google.com](http://www.google.com) from central Europe results in round-trip delays of about $20~\mathrm{ms}$ on average, but occasionally, the delays significantly exceed $100~\mathrm{ms}$ . Another stan­ dard tool is traceroute , which measures the number of hops between a sender and a receiver. A brief experiment shows that common domains like [www.google.com](http://www.google.com) or [www.aws.com](http://www.aws.com) are reachable in between ten and twenty hops (again from central Europe).
+Example: Tools to measure Internet latency are commonly available. For example, the ping command can measure the round-trip delay from a pinging entity to a cloud server and back again. Pinging [www.google.com](http://www.google.com) from central Europe results in round-trip delays of about $20~\mathrm{ms}$ on average, but occasionally, the delays significantly exceed $100~\mathrm{ms}$. Another stan­ dard tool is traceroute , which measures the number of hops between a sender and a receiver. A brief experiment shows that common domains like [www.google.com](http://www.google.com) or [www.aws.com](http://www.aws.com) are reachable in between ten and twenty hops (again from central Europe).
 
 > 示例：通常可以使用测量互联网延迟的工具。例如，ping 命令可以测量从 ping 实体到云服务器并再次返回的往返延迟。从中欧 Pinging [www.google.com](http://www.google.com) 平均会导致往返延误约 20 美元，但偶尔延误会大大超过 100 美元。另一个标准工具是 traceroute，它测量发送方和接收方之间的跳数。一个简短的实验表明，像 [www.google.com](http://www.google.com) 或 [www.aws.com](http://www.aws.com) 这样的常见域名可以在 10 到 20 个跃点之间到达(同样来自中欧)。
 
@@ -10929,7 +10958,7 @@ We also address system design automation in fog computing in this section and em
 
 ### 14.4.1 Resource Pooling
 
-A fog node for real-time systems must limit the interference between the different applications it hosts and provide predictable bounds to its southbound user. Only then will the fog node’s real-time services adhere to their specifications. Standard software techniques in cloud computing for resource pooling are virtualization , container iz ation , and serverless computing . Although these techniques limit inter­ ference, their actual implementations (i) lack the scrutiny typically required for safety-related and safety-critical systems and (ii) typically only consider the limita­ tion of interference in the value domain but are not concerned with the interference in the time domain that is absolutely necessary for hard real-time systems.
+A fog node for real-time systems must limit the interference between the different applications it hosts and provide predictable bounds to its southbound user. Only then will the fog node’s real-time services adhere to their specifications. Standard software techniques in cloud computing for resource pooling are virtualization , container iz ation , and serverless computing. Although these techniques limit inter­ ference, their actual implementations (i) lack the scrutiny typically required for safety-related and safety-critical systems and (ii) typically only consider the limita­ tion of interference in the value domain but are not concerned with the interference in the time domain that is absolutely necessary for hard real-time systems.
 
 > 实时系统的雾节点必须限制其托管的不同应用程序之间的干扰，并为其南行用户提供可预测的边界。只有这样，雾节点的实时服务才能遵守其规范。云计算中用于资源池的标准软件技术是虚拟化、容器化和无服务器计算。尽管这些技术限制了干扰，但它们的实际实现(i)缺乏安全相关和安全关键系统通常所需的审查，(ii)通常只考虑值域中的干扰限制，而不考虑硬实时系统绝对必要的时域中的干扰。
 
@@ -10953,11 +10982,11 @@ Software solutions can also limit interference. For example, in traditional embe
 
 > 软件解决方案还可以限制干扰。例如，在传统的嵌入式系统中，实时操作系统的任务是调度实时任务。因此，只要操作系统满足任务的截止日期，任务之间的时间干扰是可以接受的。同样，其他操作系统服务将确保值域中的干扰限制(例如内存管理、I/O)。
 
-Virtualization With the growing semiconductor performance, particularly multi-­ core SoCs, virtualization becomes technically feasible for hard real-time systems, enabling the fog computing benefits discussed in the previous section. Virtualization is a well-established hardware abstraction technology introduced by Goldberg [Gol73], and formal requirements for virtual iz able computer architectures are for­ mulated by Popek and Goldberg [Pop74]. Virtualization makes use of a virtual machine monitor (VMM) that manages and controls virtual machines (VMs). Today, VMMs are commonly referred to as hypervisor s , and they come in two types. A type 1 hypervisor is a software layer that operates directly on top of the hardware compute resource (i.e., the processor); it is also said to operate on bare metal . In contrast, a type 2 hypervisor operates on top of an operating system. Thus, in the case of type 2 hypervisor s, an operating system sits between the hypervisor and the bare metal, called the host operating system . Typically, operating systems are also installed inside the VMs—these operating systems are called guest operat­ ing system s.
+Virtualization With the growing semiconductor performance, particularly multi-­ core SoCs, virtualization becomes technically feasible for hard real-time systems, enabling the fog computing benefits discussed in the previous section. Virtualization is a well-established hardware abstraction technology introduced by Goldberg [Gol73], and formal requirements for virtual iz able computer architectures are for­ mulated by Popek and Goldberg [Pop74]. Virtualization makes use of a virtual machine monitor (VMM) that manages and controls virtual machines (VMs). Today, VMMs are commonly referred to as hypervisor s , and they come in two types. A type 1 hypervisor is a software layer that operates directly on top of the hardware compute resource (i.e., the processor); it is also said to operate on bare metal. In contrast, a type 2 hypervisor operates on top of an operating system. Thus, in the case of type 2 hypervisor s, an operating system sits between the hypervisor and the bare metal, called the host operating system. Typically, operating systems are also installed inside the VMs—these operating systems are called guest operat­ ing system s.
 
 > 虚拟化随着半导体性能的不断提高，特别是多核 SoC，虚拟化在硬实时系统的技术上变得可行，从而实现了前一节中讨论的雾计算优势。虚拟化是 Goldberg[Gol73]提出的一种成熟的硬件抽象技术，Popek 和 Goldberg[Pop74]提出了虚拟可操作计算机架构的正式要求。虚拟化利用了管理和控制虚拟机(VM)的虚拟机监视器(VMM)。如今，VMM 通常被称为管理程序，它们有两种类型。类型 1 管理程序是直接在硬件计算资源(即处理器)之上运行的软件层；据说它也可以在裸金属上运行。相比之下，类型 2 管理程序在操作系统之上运行。因此，在类型 2 管理程序的情况下，操作系统位于管理程序和裸机之间，称为主机操作系统。通常，操作系统也安装在 VM 内部——这些操作系统称为客户操作系统。
 
-Today, modern processors support virtualization not only for computation but also for I/O and graphics. With the growing number of computing cores per proces­ sor, virtualization has become a major technology that enables fine-grained resource pooling. For example, VMs may be configured to execute on a fixed set of processor cores called pinning . Cores can also be configured to be shared between VMs, including VMs from different consumers.
+Today, modern processors support virtualization not only for computation but also for I/O and graphics. With the growing number of computing cores per proces­ sor, virtualization has become a major technology that enables fine-grained resource pooling. For example, VMs may be configured to execute on a fixed set of processor cores called pinning. Cores can also be configured to be shared between VMs, including VMs from different consumers.
 
 > 如今，现代处理器不仅支持计算虚拟化，还支持 I/O 和图形虚拟化。随着每个处理器的计算核心数量不断增加，虚拟化已成为实现细粒度资源池的主要技术。例如，VM 可以被配置为在一组称为钉扎的固定处理器核心上执行。核心也可以配置为在 VM 之间共享，包括来自不同消费者的 VM。
 
@@ -10997,7 +11026,7 @@ Containers Virtualization through a hypervisor provides strong isolation between
 
 > 通过管理程序实现的容器虚拟化在不同的 VM 之间提供了强大的隔离，但这需要付出一定的代价：每个 VM 都需要实现一个客户操作系统。因此，在过去几年中，已经开发了更轻量级的虚拟化形式。其中一种技术被称为基于容器的虚拟化[Sol07]，其最突出的实现是 LXC(https://linux containers.org/)和 Docker[Ber14]。与虚拟机相比，容器不是使用管理程序分离的，而是直接使用操作系统的内核机制(例如，在 Linux 中：命名空间、cgroups 和功能)。为此，容器由容器引擎管理和控制，该引擎通过对内核函数的适当调用来设置容器的执行。因此，容器是操作系统级虚拟化的一种形式。
 
-Containers solve very practical problems in software development: the software image to be executed within the container consists not only of the application code itself but also includes all dependencies (e.g., libraries, stacks, and portions of Fig.14.2 operating systems user spaces in general). Thus, the image to be executed within a container is self-contained . Since images are self-contained, they are also easy to scale. Each physical server that implements a container engine for compatible con­ tainers knows how to set up said container’s execution.
+Containers solve very practical problems in software development: the software image to be executed within the container consists not only of the application code itself but also includes all dependencies (e.g., libraries, stacks, and portions of Fig.14.2 operating systems user spaces in general). Thus, the image to be executed within a container is self-contained. Since images are self-contained, they are also easy to scale. Each physical server that implements a container engine for compatible con­ tainers knows how to set up said container’s execution.
 
 > 容器解决了软件开发中非常实际的问题：在容器中执行的软件映像不仅包括应用程序代码本身，还包括所有依赖项(例如，库、堆栈和图 14.2 操作系统用户空间的一部分)。因此，要在容器内执行的图像是自包含的。由于图像是自包含的，因此也易于缩放。每个为兼容容器实现容器引擎的物理服务器都知道如何设置所述容器的执行。
 
@@ -11054,7 +11083,7 @@ Example: The Data Distribution Service (DDS) includes a publish-subscribe messag
 
 > 示例：数据分发服务(DDS)包括一个发布-订阅消息代理系统。一方面，DDS 节点将其输出(称为主题)作为消息发布。另一方面，DDS 节点可以订阅主题。DDS 建立了发布者和订阅者之间的信息交换。DDS 由 OMG 标准化[OMG15]。
 
-Some industries, especially the automotive industry, differentiate between signal-­based and service-oriented communication . Signal-based typically means message-based communication directly on lower network layers where the com­ munication configuration is also often hard-coded. A signal may, for example, relate to a certain field in the payload of an Ethernet message that has a hard-coded sender and receiver. Service-oriented is also message-based but means richer communica­ tion systems that consist of lower and higher network layers. On the higher layers, service-oriented communication may, for example, include a publish-­subscribe message broker system or service discovery protocols. Service-oriented communi­ cation increases a system’s flexibility but also increases its complexity.
+Some industries, especially the automotive industry, differentiate between signal-­based and service-oriented communication. Signal-based typically means message-based communication directly on lower network layers where the com­ munication configuration is also often hard-coded. A signal may, for example, relate to a certain field in the payload of an Ethernet message that has a hard-coded sender and receiver. Service-oriented is also message-based but means richer communica­ tion systems that consist of lower and higher network layers. On the higher layers, service-oriented communication may, for example, include a publish-­subscribe message broker system or service discovery protocols. Service-oriented communi­ cation increases a system’s flexibility but also increases its complexity.
 
 > 一些行业，特别是汽车行业，对基于信号的通信和面向服务的通信进行了区分。基于信号通常意味着直接在较低的网络层上进行基于消息的通信，其中通信配置也通常是硬编码的。例如，信号可能与以太网消息的有效载荷中的某个字段有关，该字段具有硬编码的发送方和接收方。面向服务也是基于消息的，但意味着由较低和较高网络层组成的更丰富的通信系统。在更高层，面向服务的通信可能包括发布-订阅消息代理系统或服务发现协议。面向服务的通信增加了系统的灵活性，但也增加了其复杂性。
 
@@ -11355,7 +11384,7 @@ Fog computing for industrial automation has been researched by the European Proj
 
 AD Automated driving ADAS Advanced driver assistance systems AES Advanced Encryption Standard ALARP As low as reasonably practical API Application programming interface ASIC Application-specific integrated circuit AVB Audio-Video Bridging BMTS Basic message transport service CAN Control area network CCF Concurrency control field EDF Earliest-deadline-first EMI Electro-magnetic interference EPC Electronic Product Code ET Event-triggered FRU Field-replaceable unit FTU Fault-tolerant unit GPS Global positioning system IaaS Infrastructure as a service ICCP In-car compute platform IoT Internet of Things LIF Linking interface LL Least-laxity MARS Maintainable real-time system MPSoC Multiprocessor system-on-chip
 
-> AD 自动驾驶 ADAS 高级驾驶员辅助系统 AES 高级加密标准 ALARP 低至合理实用的 API 应用程序编程接口 ASIC 专用集成电路 AVB 音频视频桥接 BMTS 基本消息传输服务 CAN 控制区域网络 CCF 并发控制字段 EDF Earliest-deadline-first EMI 电磁干扰 EPC 电子产品代码 ET 事件放大 FRU 现场可更换单元 FTU 容错单元 GPS 全球定位系统 IaaS 基础设施即服务 ICCP In-car 计算平台物联网 LIF 链接接口 LL Least-laxity MARS 可维护实时系统 MPSoC 多处理器系统 on-chip
+> AD 自动驾驶 ADAS 高级驾驶员辅助系统 AES 高级加密标准 ALARP 低至合理实用的 API 应用程序编程接口 ASIC 专用集成电路 AVB 音频视频桥接 BMTS 基本消息传输服务 CAN 控制区域网络 CCF 并发控制字段 EDF Earliest-deadline-first EMI 电磁干扰 EPC 电子产品代码 ET 事件放大 FRU 现场可更换单元 FTU 容错单元 GPS 全局定位系统 IaaS 基础设施即服务 ICCP In-car 计算平台物联网 LIF 链接接口 LL Least-laxity MARS 可维护实时系统 MPSoC 多处理器系统 on-chip
 
 MSD Message structure declaration NBW Non-blocking write NDDC Non-deterministic design construct NoC Network-on-chip NTP Network time protocol OTA Over the air (update) PaaS Platform as a service PAR Positive-acknowledgment-or-retransmission PFSM Periodic finite state machine PIM Platform independent model PSM Platform specific model RFID Radio frequency identification RT Real time SaaS Software as a service SLA Service-level agreement SOC Sphere of control SoC System-on-chip SRU Smallest replaceable unit TADL Task descriptor list TAI International Atomic Time TDMA Time-division multiple access TMR Triple-modular redundancy TSN Time-sensitive networking TT Time-triggered TTA Time-triggered architecture TTEthernet Time-triggered Ethernet TTP Time-triggered protocol TTVM Time-triggered virtual machine UID Unique identifier UTC Universal Time Coordinated WCAO Worst-case administrative overhead WCCOM Worst-case communication delay WCET Worst-case execution time WSN Wireless sensor network
 
@@ -11363,17 +11392,17 @@ MSD Message structure declaration NBW Non-blocking write NDDC Non-deterministic 
 
 ## Annex 2: Glossary 2
 
-Absolute Time-stamp: An absolute time-stamp of an event $e$ is the time-stamp of this event that is generated by the reference clock (Sect. 3.1.2 ). Accuracy Interval: The maximum permitted time interval between the point of observation of a real-time entity and the point of use of the corresponding real-­ time image (Sect. 1.2.1 ). Accuracy of a Clock: The accuracy of a clock denotes the maximum offset of a given clock from the external time reference during the time interval of interest (Sect. 3.1.3 ). Action: An action is the execution of a (part of a) program or a (part of a) commu­ nication protocol (Sect. 1.3.1 ). Action Delay: The action delay is the maximum time interval between the start of sending a message and the instant when this message becomes permanent at the receiver (Sect. 5.5.1 ). Actuator: A transducer that accepts data and trigger information from a gateway component and realizes the intended physical effect in the controlled object (Sect. 9.5.4 ). Advanced Encryption Standard (AES): An international standard for the encryption of data (Sect. 6.2.2 ). Audio Video Bridging (AVB): The IEEE 802.1 audio/video bridging (AVB) task force has developed a set of protocols based on the Ethernet standard that meets the requirements of multimedia systems (Sect. 7.4.2 ). Agreed Data: An agreed data element is a measured data element that has been checked for plausibility and related to other measured data elements, e.g., by the use of model of the controlled object . An agreed data element has been judged to be a correct image of the corresponding real-time entity ( $\rightarrow$ raw data, measured data) (Sect. 9.6.1 ). Agreement Protocol: An agreement protocol is a protocol that is executed among a set of components of a distributed system to come to a common (agreed) view about the state of the world, both in the discrete value domain and in the sparse time domain (Sect. 9.6 ). Alarm Monitoring: Alarm monitoring refers to the continuous observation of the RT entities to detect an abnormal behavior of the controlled object (Sect. 1.2.1 ). Alarm Shower: An alarm shower is a correlated set of alarms that is caused by a single primary event (Sect. 1.2.1 ). Analytic Rational Subsystem: A conscious human problem-solving subsystem that operates according to the laws of causality and logic (Sect. 2.1.1 ). Anytime Algorithm: An anytime algorithms consist of a root segment that calculates a first approximation of the result of sufficient quality and a periodic segment that improves the quality of the previously calculated result. The periodic seg­ ment is executed repeatedly until the deadline is reached (Sect. 10.2.3 ). Aperiodic Task: An aperiodic task is a task where neither the task request times nor the minimum time interval between successive requests for activation are known ( $\rightarrow$ periodic task, $\rightarrow$ sporadic task) (Sect. 10.1.2 ). Application Programming Interface (API): The interface between an application program and the operating system within a component (Sect. 9.1.4 ). A Priori Knowledge: Knowledge about the future behavior of a system that is avail­ able ahead of time (Sect. 1.5.5 ). Assumption Coverage: Assumption coverage is the probability that assumptions that are made in the model building process hold in reality. The assumption cov­ erage limits the probability that conclusions derived from a perfect model will be valid in the real world (Sect. 1.5.3 ). Atomic Action: An atomic action is an action that has the all-or-nothing property. It either completes and delivers the intended result or does not have any effect on its environment (Sect. 4.2.3 ). Atomic Data Structure: An atomic data structure is a data structure that has to be interpreted as a whole (Sect. 5.2 .). Availability: Availability is a measure of the correct service delivery regarding the alternation of correct and incorrect service, measured by the fraction of time that the system is ready to provide the service (Sect. 1.4.4 ). Babbling Idiot: A component of a distributed computer system that sends messages outside the specified time interval is called a babbling idiot (Sect. 4.7.1 ). Back-Pressure Flow Control: In back-pressure flow control the receiver of a sequence of messages exerts back pressure on the sender so that the sender will not outpace the receiver (Sect. 7.2.3 ). Basic Message Transport Service (BMTS): The basic message transport service transports a message from a sending component to one or more receiving com­ ponents (Sect. 7.2 ). Benign Failure: A failure is benign if the worst-case failure costs are of the same order of magnitude as the loss of the normal utility of the system (Sect. 6.1.3 ). Best Effort: A real-time system is a best-effort system if it is not possible to establish the temporal properties by analytical methods, even if the load- and fault hypoth­ esis holds ( $\rightarrow$ guaranteed timeliness) (Sect. 1.5.3 ). Bit-length of a Channel: The bit length of a channel denotes the number of bits that can traverse the channel within one propagation delay (Sect. 7.2.4 ). Bus Guardian: The independent hardware unit of a TTP controller that ensures fail silence in the temporal domain (Sect. 7.5.1 ). Byzantine Error: A Byzantine error occurs if a set of receivers observes different (conflicting) values of a RT entity . Some or all of these values are incorrect (syn­ onym: malicious error, two-faced error, inconsistent error) (Sect. 3.4.1 ). Causal Order: A causal order among a set of events is an order that reflects the cause-effect relationships between the events (Sect. 3.1.1 ). Causality: The causality relationship between a cause C and an event E is defined as follows: If C happens, then E is always produced by it (Sect. 2.1.1 ).
+Absolute Time-stamp: An absolute time-stamp of an event $e$ is the time-stamp of this event that is generated by the reference clock (Sect. 3.1.2 ). Accuracy Interval: The maximum permitted time interval between the point of observation of a real-time entity and the point of use of the corresponding real-­ time image (Sect. 1.2.1 ). Accuracy of a Clock: The accuracy of a clock denotes the maximum offset of a given clock from the external time reference during the time interval of interest (Sect. 3.1.3 ). Action: An action is the execution of a (part of a) program or a (part of a) commu­ nication protocol (Sect. 1.3.1 ). Action Delay: The action delay is the maximum time interval between the start of sending a message and the instant when this message becomes permanent at the receiver (Sect. 5.5.1 ). Actuator: A transducer that accepts data and trigger information from a gateway component and realizes the intended physical effect in the controlled object (Sect. 9.5.4 ). Advanced Encryption Standard (AES): An international standard for the encryption of data (Sect. 6.2.2 ). Audio Video Bridging (AVB): The IEEE 802.1 audio/video bridging (AVB) task force has developed a set of protocols based on the Ethernet standard that meets the requirements of multimedia systems (Sect. 7.4.2 ). Agreed Data: An agreed data element is a measured data element that has been checked for plausibility and related to other measured data elements, e.g., by the use of model of the controlled object. An agreed data element has been judged to be a correct image of the corresponding real-time entity ( $\rightarrow$ raw data, measured data) (Sect. 9.6.1 ). Agreement Protocol: An agreement protocol is a protocol that is executed among a set of components of a distributed system to come to a common (agreed) view about the state of the world, both in the discrete value domain and in the sparse time domain (Sect. 9.6 ). Alarm Monitoring: Alarm monitoring refers to the continuous observation of the RT entities to detect an abnormal behavior of the controlled object (Sect. 1.2.1 ). Alarm Shower: An alarm shower is a correlated set of alarms that is caused by a single primary event (Sect. 1.2.1 ). Analytic Rational Subsystem: A conscious human problem-solving subsystem that operates according to the laws of causality and logic (Sect. 2.1.1 ). Anytime Algorithm: An anytime algorithms consist of a root segment that calculates a first approximation of the result of sufficient quality and a periodic segment that improves the quality of the previously calculated result. The periodic seg­ ment is executed repeatedly until the deadline is reached (Sect. 10.2.3 ). Aperiodic Task: An aperiodic task is a task where neither the task request times nor the minimum time interval between successive requests for activation are known ( $\rightarrow$ periodic task, $\rightarrow$ sporadic task) (Sect. 10.1.2 ). Application Programming Interface (API): The interface between an application program and the operating system within a component (Sect. 9.1.4 ). A Priori Knowledge: Knowledge about the future behavior of a system that is avail­ able ahead of time (Sect. 1.5.5 ). Assumption Coverage: Assumption coverage is the probability that assumptions that are made in the model building process hold in reality. The assumption cov­ erage limits the probability that conclusions derived from a perfect model will be valid in the real world (Sect. 1.5.3 ). Atomic Action: An atomic action is an action that has the all-or-nothing property. It either completes and delivers the intended result or does not have any effect on its environment (Sect. 4.2.3 ). Atomic Data Structure: An atomic data structure is a data structure that has to be interpreted as a whole (Sect. 5.2 .). Availability: Availability is a measure of the correct service delivery regarding the alternation of correct and incorrect service, measured by the fraction of time that the system is ready to provide the service (Sect. 1.4.4 ). Babbling Idiot: A component of a distributed computer system that sends messages outside the specified time interval is called a babbling idiot (Sect. 4.7.1 ). Back-Pressure Flow Control: In back-pressure flow control the receiver of a sequence of messages exerts back pressure on the sender so that the sender will not outpace the receiver (Sect. 7.2.3 ). Basic Message Transport Service (BMTS): The basic message transport service transports a message from a sending component to one or more receiving com­ ponents (Sect. 7.2 ). Benign Failure: A failure is benign if the worst-case failure costs are of the same order of magnitude as the loss of the normal utility of the system (Sect. 6.1.3 ). Best Effort: A real-time system is a best-effort system if it is not possible to establish the temporal properties by analytical methods, even if the load- and fault hypoth­ esis holds ( $\rightarrow$ guaranteed timeliness) (Sect. 1.5.3 ). Bit-length of a Channel: The bit length of a channel denotes the number of bits that can traverse the channel within one propagation delay (Sect. 7.2.4 ). Bus Guardian: The independent hardware unit of a TTP controller that ensures fail silence in the temporal domain (Sect. 7.5.1 ). Byzantine Error: A Byzantine error occurs if a set of receivers observes different (conflicting) values of a RT entity. Some or all of these values are incorrect (syn­ onym: malicious error, two-faced error, inconsistent error) (Sect. 3.4.1 ). Causal Order: A causal order among a set of events is an order that reflects the cause-effect relationships between the events (Sect. 3.1.1 ). Causality: The causality relationship between a cause C and an event E is defined as follows: If C happens, then E is always produced by it (Sect. 2.1.1 ).
 
 > 绝对时间戳：事件的绝对时间戳$e$是由参考时钟生成的此事件的时间戳(第 3.1.2 节)。精度间隔：实时实体的观察点和相应实时图像的使用点之间的最大允许时间间隔(第 1.2.1 节)。时钟的精度：时钟的精度表示在感兴趣的时间间隔内，给定时钟与外部时间参考的最大偏移量(第 3.1.3 节)。动作：动作是执行程序(部分)或通信协议(部分)(第 1.3.1 节)。动作延迟：动作延迟是指从开始发送消息到该消息在接收方永久存在之间的最大时间间隔(第 5.5.1 节)。执行器：一种传感器，从网关组件接收数据和触发信息，并在受控对象中实现预期的物理效果(第 9.5.4 节)。高级加密标准(AES)：数据加密的国际标准(第 6.2.2 节)。音视频桥接(AVB)：IEEE 802.1 音视频桥接工作组开发了一套基于以太网标准的协议，以满足多媒体系统的要求(第 7.4.2 节)。约定数据：约定数据元素是经过合理性检查的测量数据元素，与其他测量数据元素相关，例如通过使用受控对象的模型。已判断一个商定的数据元素是相应实时实体的正确图像($\rightarrow$原始数据，测量数据)(第 9.6.1 节)。协议协议：协议协议是在分布式系统的一组组件之间执行的协议，用于在离散值域和稀疏时域中对世界状态达成共同(商定)的看法(第 9.6 节)。报警监控：报警监控是指对 RT 实体进行连续观察，以检测受控对象的异常行为(第 1.2.1 节)。报警阵雨：报警阵雨是由单个主要事件引起的一组相关报警(第 1.2.1 节)。分析推理子系统：一个有意识的人类问题解决子系统，根据因果关系和逻辑定律运行(第 2.1.1 节)。Anytime 算法：Anytime 算法由一个根段和一个周期段组成，根段计算足够质量的结果的第一近似值，周期段提高先前计算结果的质量。重复执行周期性分段，直到达到截止日期(第 10.2.3 节)。非周期任务：非周期任务是指既不知道任务请求时间也不知道连续激活请求之间的最小时间间隔的任务($\rightarrow$周期性任务，$\right arrow$零星任务)(第 10.1.2 节)。应用程序编程接口(API)：组件内应用程序与操作系统之间的接口(第 9.1.4 节)。先验知识：关于系统未来行为的知识，可以提前使用(第 1.5.5 节)。假设覆盖率：假设覆盖率是模型构建过程中做出的假设在现实中成立的概率。假设范围限制了从完美模型得出的结论在现实世界中有效的概率(第 1.5.3 节)。原子动作：原子动作是一种具有全有或全无属性的动作。它要么完成并交付预期结果，要么对其环境没有任何影响(第 4.2.3 节)。原子数据结构：原子数据结构是一种必须作为一个整体来解释的数据结构(第 5.2 节)。可用性：可用性是关于正确和不正确服务交替的正确服务交付的衡量标准，通过系统准备提供服务的时间分数来衡量(第 1.4.4 节)。喋喋不休的白痴：分布式计算机系统中在指定时间间隔之外发送消息的组件称为喋喋不休的白痴(第 4.7.1 节)。背压流量控制：在背压流量控制中，一系列消息的接收者对发送者施加背压，使发送者不会超过接收者(第 7.2.3 节)。基本消息传输服务(BMTS)：该服务将消息从发送组件传输至一个或多个接收组件(第 7.2 节)。良性故障：如果最坏的故障成本与系统正常效用的损失具有相同的数量级，则故障是良性的(第 6.1.3 节)。尽力而为：如果无法通过分析方法建立时间属性，即使负载和故障假设成立($\rightarrow$保证及时性)，实时系统也是尽力而为的系统(第 1.5.3 节)。信道比特长度：信道比特长度表示在一个传播延迟内可以遍历信道的比特数(第 7.2.4 节)。总线守护器：TTP 控制器的独立硬件单元，确保时域中的故障静音(第 7.5.1 节)。拜占庭错误：如果一组接收器观察到 RT 实体的不同(冲突)值，则会发生拜占庭错误。这些值中的一些或全部是不正确的(同义词：恶意错误、双面错误、不一致错误)(第 3.4.1 节)。因果顺序：一组事件之间的因果顺序是反映事件之间因果关系的顺序(第 3.1.1 节)。因果关系：原因 C 和事件 E 之间的因果关系定义如下：如果 C 发生，那么 E 总是由它产生的(第 2.1.1 节)。
 
-Clock: A clock is a device for time measurement that contains a counter and a physi­ cal oscillation mechanism that periodically generates an event, the $\rightarrow t i c k$ or $\rightarrow$ microtick of the clock, to increase the counter (Sect. 3.1.2 ). Cluster: A cluster is a subsystem of a real-time system. Examples of clusters are the real-time computer system , the operator, or the controlled object (Sect. 1.1 ). Cognitive Complexity: The elapsed time needed to $\rightarrow$ understand a model by a given observer is a measure for the cognitive effort and thus for the cognitive complexity of a model relative to the observer. We assume that the given observer is representative for the intended user group of the model. (Sect. 2.1.3 ) Complex Task (C-task): A complex task (C-task) is a task that contains a blocking synchronization statement (e.g., a semaphore operation wait ) within the task body (Sect. 9.2.3 ). Component: A component is a hardware-software unit, i.e., a self-contained com­ puter including system and application software that performs a well-defined function within a distributed computer system (Sect. 4.1.1 ). Com pos ability: An architecture is composable regarding a specified property if the system integration will not invalidate this property, provided it has been estab­ lished at the subsystem level (Sect. 4.7.1 ). Computational Cluster: A subsystem of a real-time system that consists of a set of components interconnected by a real-time communication network (Sect. 1.1 ). Concept: A concept is a category that is augmented by a set of beliefs about its rela­ tions to other categories . The set of beliefs relates a new concept to already exist­ ing concepts and provides for an implicit theory (Sect. 2.1.2 ). Conceptual Landscape: The conceptual landscape refers to the personal knowledge base that has been built up and maintained by an individual in the experiential and rational subsystem of the mind (Sect. 2.2 ). Concrete World Interface: The concrete world interface is the physical I/O interface between an interface component and an external device or another external com­ ponent (Sect. 4.5 ). Concurrency Control Field (CCF): The concurrency control field (CCF) is a single-­ word data field that is used in the NBW protocol (Sect. 9.4.2 ). Consistent Failure: A consistent failure occurs if all users see the same erroneous result in a multi-user system (Sect. 6.1.3 ). Contact Bounce: The random oscillation of a mechanical contact immediately after closing (Sect. 9.5.2 ). Control Area Network (CAN): The control area network (CAN) is a low-cost event -­ triggered communication network that is based on the carrier-sense multiple-­ access collision-avoidance technology (Sect. 7.3.1 ). Controlled Object: The controlled object is the industrial plant, the process, or the device that is to be controlled by the real-time computer system (Sect. 1.1 ) . Convergence Function: The convergence function denotes the maximum offset of the local representations of the global time within an ensemble of clocks (Sect. 3.4.1 ). Deadline: A deadline is the instant when a result should/must be produced ( $\rightarrow$ soft deadline, firm deadline, and hard deadline ) (Sect. 1.1 ).
+Clock: A clock is a device for time measurement that contains a counter and a physi­ cal oscillation mechanism that periodically generates an event, the $\rightarrow t i c k$ or $\rightarrow$ microtick of the clock, to increase the counter (Sect. 3.1.2 ). Cluster: A cluster is a subsystem of a real-time system. Examples of clusters are the real-time computer system , the operator, or the controlled object (Sect. 1.1 ). Cognitive Complexity: The elapsed time needed to $\rightarrow$ understand a model by a given observer is a measure for the cognitive effort and thus for the cognitive complexity of a model relative to the observer. We assume that the given observer is representative for the intended user group of the model. (Sect. 2.1.3 ) Complex Task (C-task): A complex task (C-task) is a task that contains a blocking synchronization statement (e.g., a semaphore operation wait ) within the task body (Sect. 9.2.3 ). Component: A component is a hardware-software unit, i.e., a self-contained com­ puter including system and application software that performs a well-defined function within a distributed computer system (Sect. 4.1.1 ). Com pos ability: An architecture is composable regarding a specified property if the system integration will not invalidate this property, provided it has been estab­ lished at the subsystem level (Sect. 4.7.1 ). Computational Cluster: A subsystem of a real-time system that consists of a set of components interconnected by a real-time communication network (Sect. 1.1 ). Concept: A concept is a category that is augmented by a set of beliefs about its rela­ tions to other categories. The set of beliefs relates a new concept to already exist­ ing concepts and provides for an implicit theory (Sect. 2.1.2 ). Conceptual Landscape: The conceptual landscape refers to the personal knowledge base that has been built up and maintained by an individual in the experiential and rational subsystem of the mind (Sect. 2.2 ). Concrete World Interface: The concrete world interface is the physical I/O interface between an interface component and an external device or another external com­ ponent (Sect. 4.5 ). Concurrency Control Field (CCF): The concurrency control field (CCF) is a single-­ word data field that is used in the NBW protocol (Sect. 9.4.2 ). Consistent Failure: A consistent failure occurs if all users see the same erroneous result in a multi-user system (Sect. 6.1.3 ). Contact Bounce: The random oscillation of a mechanical contact immediately after closing (Sect. 9.5.2 ). Control Area Network (CAN): The control area network (CAN) is a low-cost event -­ triggered communication network that is based on the carrier-sense multiple-­ access collision-avoidance technology (Sect. 7.3.1 ). Controlled Object: The controlled object is the industrial plant, the process, or the device that is to be controlled by the real-time computer system (Sect. 1.1 ). Convergence Function: The convergence function denotes the maximum offset of the local representations of the global time within an ensemble of clocks (Sect. 3.4.1 ). Deadline: A deadline is the instant when a result should/must be produced ( $\rightarrow$ soft deadline, firm deadline, and hard deadline ) (Sect. 1.1 ).
 
 > 时钟：时钟是一种用于时间测量的设备，它包含一个计数器和一个物理振荡机制，该机制会定期生成一个事件，即时钟的$\rightarrow t i c k$或$\right arrow$微指针，以增加计数器(第 3.1.2 节)。集群：集群是实时系统的一个子系统。集群的例子是实时计算机系统、操作员或受控对象(第 1.1 节)。认知复杂性：给定观察者理解模型所需的时间是认知努力的衡量标准，因此也是模型相对于观察者的认知复杂性的衡量标准。我们假设给定的观察者代表模型的预期用户组。(第 2.1.3 节)复杂任务(C-Task)：复杂任务(C-任务)是指在任务体中包含阻塞同步语句(例如，信号量操作等待)的任务(第 9.2.3 节)。组件：组件是一个硬件软件单元，即一个自包含的计算机，包括在分布式计算机系统中执行明确功能的系统和应用软件(第 4.1.1 节)。可组合性：如果系统集成不会使特定属性无效，则架构可以针对该属性进行组合，前提是该属性是在子系统级别建立的(第 4.7.1 节)。计算集群：实时系统的一个子系统，由一组通过实时通信网络互连的组件组成(第 1.1 节)。概念：概念是一个范畴，它被一组关于它与其他范畴关系的信念所增强。这套信念将一个新概念与现有概念联系起来，并提供了一个隐含的理论(第 2.1.2 节)。概念景观：概念景观是指个人在心灵的经验和理性子系统中建立和维护的个人知识库(第 2.2 节)。具体世界接口：具体世界接口是接口组件与外部设备或其他外部组件之间的物理 I/O 接口(第 4.5 节)。并发控制字段(CCF)：并发控制字段是一个单字数据字段，用于 NBW 协议(第 9.4.2 节)。一致性故障：如果所有用户在多用户系统中看到相同的错误结果，则发生一致性故障(第 6.1.3 节)。触点弹跳：机械触点在闭合后立即发生的随机振荡(第 9.5.2 节)。控制区域网络(CAN)：控制区域网络是一种基于载波侦听多路访问防撞技术的低成本事件触发通信网络(第 7.3.1 节)。受控对象：受控对象是由实时计算机系统控制的工业厂房、过程或设备(第 1.1 节)。收敛函数：收敛函数表示时钟集合内全局时间局部表示的最大偏移量(第 3.4.1 节)。截止日期：截止日期是应该/必须产生结果的时刻($\rightarrow$软截止日期、固定截止日期和硬截止日期)(第 1.1 节)。
 
 Deadline Interval: The deadline interval is the interval between the task request time and the deadline (Sect. 10.1 ). Determinism: A physical system behaves deterministic ally if given an initial state at instant t and a set of future timed inputs, then the future states and the values and times of future outputs are entailed. In a deterministic distributed computer sys­ tem, we must assume that all events, e.g., the observation of the initial state at instant t and the timed inputs, are sparse events on a sparse global time base (Sect. 5.6.1 ). Drift: The drift of a physical clock $k$ between microtick $i$ and microtick $i\!+\!I$ is the frequency ratio between this clock $k$ and the reference clock at the time of microtick i. (Sect. 3.1.2 ). Drift Offset: The drift offset denotes the maximum deviation between any two good clocks if they are free running during the re synchronization interval (Sect. 3.1.3 ). Duration: A duration is a section of the timeline (Sect. 3.1.1 ). Dynamic Scheduler: A dynamic scheduler is a scheduler that decides at run time after the occurrence of a significant event which task is to be executed next (Sect. 10.4 ). Earliest-Deadline-First (EDF) Algorithm: An optimal dynamic preemptive schedul­ ing algorithm for scheduling a set of independent tasks (Sect. 10.4.1 ). Electro-Magnetic Interference (EMI): The disturbance of an electronic system by electromagnetic radiation (Sect. 11.3.4 ). Electronic Product Code (EPC): A code designed by the RFID community that can be used to uniquely identify every product on the globe (Sect. 13.4.2 ). Embedded System: A real-time computer that is embedded in a well-specified larger system, consisting in addition to the embedded computer of a mechanical sub­ system and, often, a man-machine interface $\because$ intelligent product ) (Sect. 1.6.1 ). Emergence: We speak of emergence when the interactions of subsystems give rise to unique global properties at the system level that are not present at the level of the subsystems (Sect. 2.4 ). End-to-End Protocol: An end-to-end protocol is a protocol between the users (machines or humans) residing at the end points of a communication channel (Sect. 1.7 ). Environment of a Computational Cluster: The environment of a given computa­ tional cluster is the set of all clusters that interact with this cluster , either directly or indirectly (Sect. 1.1 ). Error: An error is that part of the state of a system that deviates from the intended specification (Sect. 6.1.2 ). Event: An event is a happening at a cut of the time-line. Every change of state is an event (Sect. 1.1 ). Event Message: A message is an event message if it contains information about events and if every new version of the message is queued at the receiver and consumed on reading ( $\rightarrow$ state message ) (Sect. 4.3.3 ). Event-triggered (ET) Observation: An observation is event-triggered if the point of observation is determined by the occurrence of an event other than a tick of a clock (Sect. 5.2 ).
 
-> 截止时间间隔：截止时间间隔是任务请求时间和截止时间之间的间隔(第 10.1 节)。决定论：如果在时刻 t 给出一个初始状态和一组未来的定时输入，那么物理系统的行为是确定的，那么未来的状态以及未来输出的值和时间都是必然的。在确定性分布式计算机系统中，我们必须假设所有事件，例如对时刻 t 的初始状态的观察和定时输入，都是稀疏全局时基上的稀疏事件(第 5.6.1 节)。漂移：物理时钟$k$在 microtick$i$和 microtick[i]之间的漂移！+\！I$是该时钟$k$与microtick I时的参考时钟之间的频率比。(第3.1.2节)。漂移偏移：漂移偏移表示任何两个正常时钟在重新同步间隔内自由运行时的最大偏差(第3.1.3节)。持续时间：持续时间是时间线的一部分(第3.1.1节)。动态调度器：动态调度器是一种在重大事件发生后的运行时决定下一步执行哪个任务的调度器(第10.4节)。最早截止日期优先(EDF)算法：一种用于调度一组独立任务的最优动态抢占调度算法(第10.4.1节)。电磁干扰(EMI)：电磁辐射对电子系统的干扰(第11.3.4节)。电子产品代码(EPC)：由RFID社区设计的代码，可用于唯一标识全球每种产品(第13.4.2节)。嵌入式系统：一种嵌入在指定较大系统中的实时计算机，除了嵌入式计算机外，还包括一个机械子系统，通常还有一个人机界面(第1.6.1节)。涌现：当子系统的相互作用在系统级别产生子系统级别不存在的独特全局属性时，我们称之为涌现(第2.4节)。端对端协议：端到端协议是驻留在通信信道端点的用户(机器或人类)之间的协议(第1.7节)。计算集群环境：给定计算集群的环境是与该集群直接或间接交互的所有集群的集合(第1.1节)。错误：错误是指系统状态中偏离预期规范的部分(第6.1.2节)。事件：事件是在时间线的某一时刻发生的。每一次状态变化都是一个事件(第1.1节)。事件消息：如果消息包含有关事件的信息，并且消息的每个新版本都在接收者处排队并在读取时被消费($\rightarrow$state 消息)，则该消息是事件消息(第 4.3.3 节)。事件触发(ET)观察：如果观察点是由时钟滴答声以外的事件的发生决定的，则观察是事件触发的(第 5.2 节)。
+> 截止时间间隔：截止时间间隔是任务请求时间和截止时间之间的间隔(第 10.1 节)。决定论：如果在时刻 t 给出一个初始状态和一组未来的定时输入，那么物理系统的行为是确定的，那么未来的状态以及未来输出的值和时间都是必然的。在确定性分布式计算机系统中，我们必须假设所有事件，例如对时刻 t 的初始状态的观察和定时输入，都是稀疏全局时基上的稀疏事件(第 5.6.1 节)。漂移：物理时钟$k$在 microtick$i$和 microtick[i]之间的漂移！+\！I$是该时钟$k$与microtick I时的参考时钟之间的频率比。(第3.1.2节)。漂移偏移：漂移偏移表示任何两个正常时钟在重新同步间隔内自由运行时的最大偏差(第3.1.3节)。持续时间：持续时间是时间线的一部分(第3.1.1节)。动态调度器：动态调度器是一种在重大事件发生后的运行时决定下一步执行哪个任务的调度器(第10.4节)。最早截止日期优先(EDF)算法：一种用于调度一组独立任务的最优动态抢占调度算法(第10.4.1节)。电磁干扰(EMI)：电磁辐射对电子系统的干扰(第11.3.4节)。电子产品代码(EPC)：由RFID社区设计的代码，可用于唯一标识全局每种产品(第13.4.2节)。嵌入式系统：一种嵌入在指定较大系统中的实时计算机，除了嵌入式计算机外，还包括一个机械子系统，通常还有一个人机界面(第1.6.1节)。涌现：当子系统的相互作用在系统级别产生子系统级别不存在的独特全局属性时，我们称之为涌现(第2.4节)。端对端协议：端到端协议是驻留在通信信道端点的用户(机器或人类)之间的协议(第1.7节)。计算集群环境：给定计算集群的环境是与该集群直接或间接交互的所有集群的集合(第1.1节)。错误：错误是指系统状态中偏离预期规范的部分(第6.1.2节)。事件：事件是在时间线的某一时刻发生的。每一次状态变化都是一个事件(第1.1节)。事件消息：如果消息包含有关事件的信息，并且消息的每个新版本都在接收者处排队并在读取时被消费($\rightarrow$state 消息)，则该消息是事件消息(第 4.3.3 节)。事件触发(ET)观察：如果观察点是由时钟滴答声以外的事件的发生决定的，则观察是事件触发的(第 5.2 节)。
 
 Event-Triggered (ET) System: A real-time computer system is event-triggered (ET) if all communication and processing activities are triggered by events other than a clock tick (Sect. 1.5.5 ). Exact Voting: A voter that considers two messages the same if they contain the exactly same sequence of bits ( $\rightarrow$ inexact voter) (Sect. 6.4.2 ). Execution Time: The execution time is the duration it takes to execute an action by a computer. If the speed of the oscillator that drives a computer is increased, the execution time is decreased. The worst-case execution time is called $\rightarrow W C E T$ (Sect. 10.2 ). Explicit Flow Control: When a sender or multiple senders aim to exceed the resource capacities of the network or the receiver, messages will be lost. Explicit flow control prevents these situations by (the receiver or the communication system) signaling all or some senders to pause and resume their message transmissions. ( $\rightarrow$ flow control, $\rightarrow$ implicit flow control ) (Sect. 7.2.3 ). External Clock Synchronization: The process of synchronization of a clock with a reference clock (Sect. 3.1.3 ). Fail-Operational System: A fail-operational system is a real-time system where a safe state cannot be reached immediately after the occurrence of a failure (Sect. 1.5.2 ). Fail-Safe System: A fail-safe system is a real-time system where a safe state can be identified and quickly reached after the occurrence of a failure (Sect. 1.5.2 ). Fail-Silence: A subsystem is fail-silent if it either produces correct results or no results at all, i.e., it is quiet in case it cannot deliver the correct service (Sect. 6.1.3 ). Failure: A failure is an event that denotes a deviation of the actual service from the intended service (Sect. 6.1.3 ). Fault: A fault is the cause of an error (Sect. 6.1.1 ). Fault Hypothesis: The fault hypothesis identifies the assumptions that relate to the type and frequency of faults that a fault-tolerant computer system is supposed to handle (Sect. 6.4 ). Fault-Tolerant Average Algorithm (FTA): A distributed clock synchronization algo­ rithm that handles Byzantine failures of clocks (Sect. 3.4.3 ). Fault-Containment Unit (FCU): A unit that contains the direct consequences of a fault. Different FCUs must fail independently. A component should be an FCU (Sect. 6.4.1 ). Fault-Tolerant Unit (FTU): A unit consisting of a number of replica deterministic $\rightarrow$ FCUs that provides the specified service even if some of its constituent FCUs (components) fail (Sect. 6.4.2 ). Field Replaceable Unit (FRU): An FRU is a subsystem that is considered atomic from the point of view of a repair action (Sect. 1.4.3 ). Firm Deadline: A deadline for a result is firm if the result has no utility after the deadline has passed (Sect. 1.1 ). FIT: A FIT is a unit for expressing the failure rate. 1 FIT is 1 failure in $10^{9}$   h (Sect. 1.4.1 ).
 
@@ -11381,21 +11410,21 @@ Event-Triggered (ET) System: A real-time computer system is event-triggered (ET)
 
 Flow Control: Flow control assures that the speed of the information flow between a sender and a receiver is such that the receiver can keep up with the sender ( $\rightarrow$ explicit flow control, $\rightarrow$ implicit flow control) (Sect. 7.2.3 ). Gateway component: A component of a distributed real-time system that is a mem­ ber of two clusters and implements the relative views of these two interacting clusters (Sect. 4.5 ). Global Time: The global time is an abstract notion that is approximated by a prop­ erly selected subset of the microticks of each synchronized local clock of an ensemble. The selected microticks of a local clock are called the ticks of the global time (Sect. 3.2.1 ). Granularity of a Clock: The granularity of a clock is the nominal number of microticks of the reference clock between two microticks of the clock (Sect. 3.1.2 ). Ground (g) State: The ground state of a component of a distributed system at a given level of abstraction is a state at an instant where there is a minimal dependency of future behavior on past behavior. At the ground state instant all information of the past that is considered relevant for the future behavior is contained in a declared ground state data structure. At the ground state instant no task is active and all communication channels are flushed. The instants of the ground state are ideal for re integrating components (Sect. 4.2.3 ). Guaranteed Timeliness: A real-time system is a guaranteed timeliness system if it is possible to reason about the temporal adequacy of the design without reference to probabilistic arguments, provided the assumptions about the load- and fault hypothesis hold ( $\rightarrow$ best effort ) (Sect. 1.5.3 ). Hamming Distance: The Hamming distance is one plus the maximum number of bit errors in a codeword that can be detected by syntactic means (Sect. 6.3.3 ). Hard Deadline: A deadline for a result is hard if a catastrophe can occur in case the deadline is missed (Sect. 1.1 ). Hard Real-Time Computer System: A real-time computer system that must meet at least one hard deadline (Synonym: safety-critical real-time computer system ) (Sect. 1.1 ). Hazard: A hazard is an undesirable condition that has the potential to cause or con­ tribute to an accident (Sect. 11.4.2 ). Hidden Channel: A communication channel outside the given computational cluster (Sect. 5.5.1 ). I dem potency: I dem potency is a relation between a set of replicated messages arriv­ ing at the same receiver. A set of replicated messages is idempotent if the effect of receiving more than one copy of a message is the same as receiving only a single copy (Sect. 5.5.4 ). Implicit Flow Control: In implicit flow control , the sender and receiver agree a pri­ ori, i.e., before the start of a communication session, about the instants when messages will be sent, or the message send rate. The sender commits to send only messages at the agreed instants or rate, and the receiver commits to accept all messages sent by the sender, as long as the sender fulfills its obligation ( $\rightarrow$ explicit flow control , $\rightarrow$ flow control ) (Sect. 7.2.3 ).
 
-> 流控制：流控制确保发送方和接收方之间的信息流速度，使接收方能够跟上发送方($\rightarrow$显式流控制，$\rightarrow$隐式流控制)(第 7.2.3 节)。网关组件：分布式实时系统的一个组件，由两个集群组成，实现这两个交互集群的相对视图(第 4.5 节)。全球时间：全球时间是一个抽象概念，由一个集合中每个同步本地时钟的微时钟的适当选择子集近似表示。本地时钟的选定微滴答声称为全球时间的滴答声(第 3.2.1 节)。时钟的粒度：时钟的粒度是时钟的两个微点之间的参考时钟的微点的标称数量(第 3.1.2 节)。地面(g)状态：分布式系统组件在给定抽象级别的地面状态是指未来行为对过去行为的依赖性最小的时刻的状态。在基态时刻，所有被认为与未来行为相关的过去信息都包含在声明的基态数据结构中。在地面状态时刻，没有任务处于活动状态，所有通信信道都被刷新。基态的瞬间非常适合重新集成组件(第 4.2.3 节)。保证及时性：如果可以在不参考概率论证的情况下对设计的时间充分性进行推理，那么实时系统就是一个保证及时性的系统，前提是关于负载和故障假设的假设成立($\rightarrow$尽力而为)(第 1.5.3 节)。汉明距离：汉明距离是一加上码字中可以通过句法手段检测到的最大比特错误数(第 6.3.3 节)。硬截止日期：如果错过截止日期可能会发生灾难，那么结果的截止日期就很难了(第 1.1 节)。硬实时计算机系统：必须满足至少一个硬截止日期的实时计算机系统(同义词：安全关键实时计算机系统)(第 1.1 节)。危险：危险是一种可能导致或促成事故的不良情况(第 11.4.2 节)。隐藏通道：给定计算集群之外的通信通道(第 5.5.1 节)。I dem 效力：I dem 效力是到达同一接收者的一组复制消息之间的关系。如果接收多个消息副本的效果与仅接收单个副本的效果相同，则一组复制的消息是幂等的(第 5.5.4 节)。隐式流控制：在隐式流控中，发送方和接收方就发送消息的时刻或消息发送速率达成一致，即在通信会话开始之前。发送方承诺仅在约定的时刻或速率发送消息，接收方承诺接受发送方发送的所有消息，只要发送方履行其义务($\rightarrow$显式流控制，$\rightarrow$流控制)(第 7.2.3 节)。
+> 流控制：流控制确保发送方和接收方之间的信息流速度，使接收方能够跟上发送方($\rightarrow$显式流控制，$\rightarrow$隐式流控制)(第 7.2.3 节)。网关组件：分布式实时系统的一个组件，由两个集群组成，实现这两个交互集群的相对视图(第 4.5 节)。全局时间：全局时间是一个抽象概念，由一个集合中每个同步本地时钟的微时钟的适当选择子集近似表示。本地时钟的选定微滴答声称为全局时间的滴答声(第 3.2.1 节)。时钟的粒度：时钟的粒度是时钟的两个微点之间的参考时钟的微点的标称数量(第 3.1.2 节)。地面(g)状态：分布式系统组件在给定抽象级别的地面状态是指未来行为对过去行为的依赖性最小的时刻的状态。在基态时刻，所有被认为与未来行为相关的过去信息都包含在声明的基态数据结构中。在地面状态时刻，没有任务处于活动状态，所有通信信道都被刷新。基态的瞬间非常适合重新集成组件(第 4.2.3 节)。保证及时性：如果可以在不参考概率论证的情况下对设计的时间充分性进行推理，那么实时系统就是一个保证及时性的系统，前提是关于负载和故障假设的假设成立($\rightarrow$尽力而为)(第 1.5.3 节)。汉明距离：汉明距离是一加上码字中可以通过句法手段检测到的最大比特错误数(第 6.3.3 节)。硬截止日期：如果错过截止日期可能会发生灾难，那么结果的截止日期就很难了(第 1.1 节)。硬实时计算机系统：必须满足至少一个硬截止日期的实时计算机系统(同义词：安全关键实时计算机系统)(第 1.1 节)。危险：危险是一种可能导致或促成事故的不良情况(第 11.4.2 节)。隐藏通道：给定计算集群之外的通信通道(第 5.5.1 节)。I dem 效力：I dem 效力是到达同一接收者的一组复制消息之间的关系。如果接收多个消息副本的效果与仅接收单个副本的效果相同，则一组复制的消息是幂等的(第 5.5.4 节)。隐式流控制：在隐式流控中，发送方和接收方就发送消息的时刻或消息发送速率达成一致，即在通信会话开始之前。发送方承诺仅在约定的时刻或速率发送消息，接收方承诺接受发送方发送的所有消息，只要发送方履行其义务($\rightarrow$显式流控制，$\rightarrow$流控制)(第 7.2.3 节)。
 
-Inexact Voting: A voter that considers two messages the “same” if both of them conform to some application-specific “sameness” criterion ( $\rightarrow$ exact voter ) (Sect. 6.4.2 ). Instant: An instant is a cut of the timeline (Sect. 1.1 ). Instrumentation Interface: The instrumentation interface is the interface between the real-time computer system and the controlled object (Sect. 1.1 ). Intelligent Actuator: An intelligent actuator consists of an actuator and a microcon­ troller, both mounted together in a single housing (Sect. 9.5.5 ). Intelligent Product: An intelligent product is a self-contained system that consists of a mechanical subsystem, a user interface , and a controlling embedded real-time computer system ( $\rightarrow$ embedded system ) (Sect. 1.6.1 ). Intelligent Sensor: An intelligent sensor consists of a sensor and a microcontroller such that measured data is produced at the output interface . If the intelligent sen­ sor is fault-tolerant, agreed data is produced at the output interface (Sect. 9.5.5 ). Interface: An interface is a common boundary between two subsystems (Sect. 4.4 ). Interface Component: A component with an interface to the external environment of a component. An interface component is a gateway (Sect. 4.5 ). Internal Clock Synchronization: The process of mutual synchronization of an ensemble of clocks in order to establish a global time with a bounded precision (Sect. 3.1.3 ). International Atomic Time (TAI): An international time standard, where the second is defined as 9 192 631 770 periods of oscillation of a specified transition of the Cesium atom 133 (Sect. 3.1.4 ). Intrusion: The successful exploitation of a vulnerability (Sect. 6.2 ). Intuitive Experiential Problem-Solving System: A human pre conscious emotionally based problem-solving subsystem that operates holistic ally, automatically, and rapidly and demands minimal cognitive resources for its execution (Sect. 2.1.1 ). Internet of Things (IoT): The direct connection of physical things to the Internet such that remote access and control of physical devices is enabled (13). Irrevocable action: An action that cannot be undone, e.g., drilling a hole, activation of the firing mechanism of a firearm (Sect. 1.5.1 ). Jitter: The jitter is the difference between the maximum and the minimum duration of an action (processing action, communication action) (Sect. 1.3.1 ). Laxity: The laxity of a task is the difference between the deadline interval minus the execution time (the WCET ) of the task (Sect. 9.2.2 ). Least-Laxity (LL) Algorithm: An optimal dynamic preemptive scheduling algo­ rithm for scheduling a set of independent tasks (Sect. 10.4.1 ). Logical Control: Logical control is concerned with the control flow within a task. The logical control is determined by the given program structure and the particu­ lar input data to achieve the desired data transformation ( $\rightarrow$ temporal control ) (Sect. 4.1.3 ). Maintainability: The Maintainability $M(d)$ is the probability that the system is restored to its operational state and restarted within a time interval $d$ after a fail­ ure (Sect. 1.4.3 ).
+Inexact Voting: A voter that considers two messages the “same” if both of them conform to some application-specific “sameness” criterion ( $\rightarrow$ exact voter ) (Sect. 6.4.2 ). Instant: An instant is a cut of the timeline (Sect. 1.1 ). Instrumentation Interface: The instrumentation interface is the interface between the real-time computer system and the controlled object (Sect. 1.1 ). Intelligent Actuator: An intelligent actuator consists of an actuator and a microcon­ troller, both mounted together in a single housing (Sect. 9.5.5 ). Intelligent Product: An intelligent product is a self-contained system that consists of a mechanical subsystem, a user interface , and a controlling embedded real-time computer system ( $\rightarrow$ embedded system ) (Sect. 1.6.1 ). Intelligent Sensor: An intelligent sensor consists of a sensor and a microcontroller such that measured data is produced at the output interface. If the intelligent sen­ sor is fault-tolerant, agreed data is produced at the output interface (Sect. 9.5.5 ). Interface: An interface is a common boundary between two subsystems (Sect. 4.4 ). Interface Component: A component with an interface to the external environment of a component. An interface component is a gateway (Sect. 4.5 ). Internal Clock Synchronization: The process of mutual synchronization of an ensemble of clocks in order to establish a global time with a bounded precision (Sect. 3.1.3 ). International Atomic Time (TAI): An international time standard, where the second is defined as 9 192 631 770 periods of oscillation of a specified transition of the Cesium atom 133 (Sect. 3.1.4 ). Intrusion: The successful exploitation of a vulnerability (Sect. 6.2 ). Intuitive Experiential Problem-Solving System: A human pre conscious emotionally based problem-solving subsystem that operates holistic ally, automatically, and rapidly and demands minimal cognitive resources for its execution (Sect. 2.1.1 ). Internet of Things (IoT): The direct connection of physical things to the Internet such that remote access and control of physical devices is enabled (13). Irrevocable action: An action that cannot be undone, e.g., drilling a hole, activation of the firing mechanism of a firearm (Sect. 1.5.1 ). Jitter: The jitter is the difference between the maximum and the minimum duration of an action (processing action, communication action) (Sect. 1.3.1 ). Laxity: The laxity of a task is the difference between the deadline interval minus the execution time (the WCET ) of the task (Sect. 9.2.2 ). Least-Laxity (LL) Algorithm: An optimal dynamic preemptive scheduling algo­ rithm for scheduling a set of independent tasks (Sect. 10.4.1 ). Logical Control: Logical control is concerned with the control flow within a task. The logical control is determined by the given program structure and the particu­ lar input data to achieve the desired data transformation ( $\rightarrow$ temporal control ) (Sect. 4.1.3 ). Maintainability: The Maintainability $M(d)$ is the probability that the system is restored to its operational state and restarted within a time interval $d$ after a fail­ ure (Sect. 1.4.3 ).
 
-> 不精确投票：如果两条消息都符合特定应用程序的“相同性”标准，则认为这两条消息“相同”的投票人($\rightarrow$精确投票人)(第 6.4.2 节)。瞬间：瞬间是时间线的一部分(第 1.1 节)。仪表接口：仪表接口是实时计算机系统和受控对象之间的接口(第 1.1 节)。智能执行器：智能执行器由执行器和微控制器组成，两者都安装在一个外壳中(第 9.5.5 节)。智能产品：智能产品是一个自包含的系统，由机械子系统、用户界面和控制嵌入式实时计算机系统($\rightarrow$嵌入式系统)组成(第 1.6.1 节)。智能传感器：智能传感器由传感器和微控制器组成，在输出接口产生测量数据。如果智能传感器是容错的，则在输出接口处产生商定的数据(第 9.5.5 节)。接口：接口是两个子系统之间的公共边界(第 4.4 节)。接口组件：具有与组件外部环境接口的组件。接口组件是网关(第 4.5 节)。内部时钟同步：一组时钟相互同步的过程，以建立具有有界精度的全球时间(第 3.1.3 节)。国际原子时(TAI)：一种国际时间标准，其中秒被定义为铯原子 133 特定跃迁的 9 192 631 770 个振荡周期(第 3.1.4 节)。入侵：成功利用漏洞(第 6.2 节)。直觉体验式问题解决系统：一种基于情感的人类前意识问题解决子系统，它全面、自动、快速地运行，执行时需要最少的认知资源(第 2.1.1 节)。物联网(IoT)：将物理事物直接连接到互联网，从而实现对物理设备的远程访问和控制(13)。不可撤销的行为：无法撤销的行为，例如钻孔、激活枪支的射击机制(第 1.5.1 节)。抖动：抖动是动作(处理动作、通信动作)的最大和最小持续时间之间的差值(第 1.3.1 节)。松弛度：任务的松弛度是任务的截止时间间隔减去执行时间(WCET)之间的差值(第 9.2.2 节)。最小松弛度(LL)算法：一种用于调度一组独立任务的最优动态抢占式调度算法(第 10.4.1 节)。逻辑控制：逻辑控制与任务中的控制流有关。逻辑控制由给定的程序结构和特定的输入数据决定，以实现所需的数据转换($\rightarrow$temporal control)(第 4.1.3 节)。可维护性：可维护性$M(d)$是系统在故障后在时间间隔$d$内恢复到其运行状态并重新启动的概率(第 1.4.3 节)。
+> 不精确投票：如果两条消息都符合特定应用程序的“相同性”标准，则认为这两条消息“相同”的投票人($\rightarrow$精确投票人)(第 6.4.2 节)。瞬间：瞬间是时间线的一部分(第 1.1 节)。仪表接口：仪表接口是实时计算机系统和受控对象之间的接口(第 1.1 节)。智能执行器：智能执行器由执行器和微控制器组成，两者都安装在一个外壳中(第 9.5.5 节)。智能产品：智能产品是一个自包含的系统，由机械子系统、用户界面和控制嵌入式实时计算机系统($\rightarrow$嵌入式系统)组成(第 1.6.1 节)。智能传感器：智能传感器由传感器和微控制器组成，在输出接口产生测量数据。如果智能传感器是容错的，则在输出接口处产生商定的数据(第 9.5.5 节)。接口：接口是两个子系统之间的公共边界(第 4.4 节)。接口组件：具有与组件外部环境接口的组件。接口组件是网关(第 4.5 节)。内部时钟同步：一组时钟相互同步的过程，以建立具有有界精度的全局时间(第 3.1.3 节)。国际原子时(TAI)：一种国际时间标准，其中秒被定义为铯原子 133 特定跃迁的 9 192 631 770 个振荡周期(第 3.1.4 节)。入侵：成功利用漏洞(第 6.2 节)。直觉体验式问题解决系统：一种基于情感的人类前意识问题解决子系统，它全面、自动、快速地运行，执行时需要最少的认知资源(第 2.1.1 节)。物联网(IoT)：将物理事物直接连接到互联网，从而实现对物理设备的远程访问和控制(13)。不可撤销的行为：无法撤销的行为，例如钻孔、激活枪支的射击机制(第 1.5.1 节)。抖动：抖动是动作(处理动作、通信动作)的最大和最小持续时间之间的差值(第 1.3.1 节)。松弛度：任务的松弛度是任务的截止时间间隔减去执行时间(WCET)之间的差值(第 9.2.2 节)。最小松弛度(LL)算法：一种用于调度一组独立任务的最优动态抢占式调度算法(第 10.4.1 节)。逻辑控制：逻辑控制与任务中的控制流有关。逻辑控制由给定的程序结构和特定的输入数据决定，以实现所需的数据转换($\rightarrow$temporal control)(第 4.1.3 节)。可维护性：可维护性$M(d)$是系统在故障后在时间间隔$d$内恢复到其运行状态并重新启动的概率(第 1.4.3 节)。
 
 Malicious Code Attack: A malicious code attack is an attack where an adversary inserts malicious code, e.g., a virus, a worm, or a Trojan horse, into the software in order that the attacker gets partial or full control over the system (Sect. 6.2.2 ). Measured Data: A measured data element is a raw data element that has been pre­ processed and converted to standard technical units. A sensor that delivers mea­ sured data is called an intelligent sensor ( $\rightarrow$ raw data , agreed data ) (Sect. 9.6.1 ). Membership Service: A membership service is a service in a distributed system that generates consistent information about the operational state (operating or failed) of all components at agreed instants (membership points). The length of the interval between a membership point and the moment when the consistent mem­ bership information is available at the other components is a quality of service parameter of the membership service (Sect. 5.3.2 ). Message Structure Declaration (MSD): A specification that explains how the data field of a message is structured into syntactic units and assigns names to these syntactic units. The names identify the concepts that explain the meaning of the data (Sect. 4.6.2 ). Microtick: A microtick of a physical clock is a periodic event generated by this clock $(\rightarrow t i c k)$ (Sect. 3.1.2 ). Non-Blocking Write Protocol (NBW): The non-blocking write protocol ( NBW ) is a synchronization protocol between a single writing task and many reading tasks that achieves data consistency without blocking the writer (Sect. 9.4.2 ). Non-Deterministic Design Construct (NDDC): A non-deterministic design con­ struct is a design construct that produces unpredictable results either in the value domain or the temporal domain (Sect. 5.6.3 ). Observation: An observation of a real-time entity is an atomic triple consisting of the name of the real-time entity, the instant of the observation, and the value of the real-time entity (Sect. 5.2 ). Offset: The offset between two events denotes the time difference between these events (Sect. 3.1.3 ). Periodic Finite State Machine (PFSM): A PFSM is an extension of the finite state machine model to include the progression of real time (Sect. 4.1.3 ). Periodic Task: A periodic task is a task that has a constant time interval between successive task request times ( $\rightarrow$ aperiodic task , $\rightarrow$ sporadic task ) (Sect. 10.1.2 ). Permanence: Permanence is a relation between a given message and all related mes­ sages that have been sent to the same receiver before this given message has been sent. A particular message becomes permanent at a given component at the moment when it is known that all earlier sent related messages have arrived (or will never arrive) (Sect. 5.5.1 ). Phase-Aligned Transaction : A phase-aligned transaction is a real-time transaction where the constituting processing and communication actions are synchronized (Sect. 5.4.1 ). Point of Observation: The instant when a real-time entity is observed (Sect. 1.2.1 ). Precision: The precision of an ensemble of clocks denotes the maximum offset of respective ticks of any two clocks of the ensemble over the period of interest. The precision is expressed in the number of ticks of the reference clock (Sect. 3.1.3 ).
 
 > 恶意代码攻击：恶意代码攻击是指对手在软件中插入恶意代码，如病毒、蠕虫或特洛伊木马，以使攻击者部分或完全控制系统的攻击(第 6.2.2 节)。测量数据：测量数据元素是经过预处理并转换为标准技术单位的原始数据元素。提供测量数据的传感器称为智能传感器($\rightarrow$原始数据，约定数据)(第 9.6.1 节)。会员服务：会员服务是分布式系统中的一种服务，它在商定的时刻(会员点)生成有关所有组件运行状态(运行或故障)的一致信息。从成员点到其他组件获得一致成员信息的时刻之间的间隔长度是成员服务的服务质量参数(第 5.3.2 节)。消息结构声明(MSD)：一种规范，解释了消息的数据字段如何被结构化为句法单元，并为这些句法单元命名。这些名称标识了解释数据含义的概念(第 4.6.2 节)。Microtick：物理时钟的 Microtick 是由该时钟$(\rightarrow t i c k)$(第 3.1.2 节)生成的周期性事件。非阻塞写入协议(NBW)：非阻塞写入协定(NBW，Non-Blocking Write Protocol)是一个单一写入任务和多个读取任务之间的同步协议，在不阻塞写入器的情况下实现数据一致性(第 9.4.2 节)。非确定性设计构造(NDDC)：非确定性设计结构是一种在值域或时域中产生不可预测结果的设计构造(第 5.6.3 节)。观察：实时实体的观察是一个原子三元组，由实时实体的名称、观察的时刻和实时实体的值组成(第 5.2 节)。偏移：两个事件之间的偏移表示这些事件之间的时间差(第 3.1.3 节)。周期性有限状态机(PFSM)：PFSM 是有限状态机模型的扩展，包括实时进程(第 4.1.3 节)。周期性任务：周期性任务是指连续任务请求时间之间具有恒定时间间隔的任务($\rightarrow$非周期性任务，$\rightarrow$零星任务)(第 10.1.2 节)。永久性：永久性是给定消息与在发送该消息之前发送给同一接收者的所有相关消息之间的关系。当已知所有先前发送的相关消息都已到达(或永远不会到达)时，特定消息在给定组件上成为永久消息(第 5.5.1 节)。阶段对齐事务：阶段对齐事务是一种实时事务，其中构成的处理和通信操作是同步的(第 5.4.1 节)。观察点：观察到实时实体的时刻(第 1.2.1 节)。精度：一组时钟的精度表示在感兴趣的时间段内，该组中任何两个时钟的各自滴答声的最大偏移。精度以参考时钟的滴答数表示(第 3.1.3 节)。
 
-Primary Event: A primary event is the cause of an alarm shower (Sect. 1.2.1 ). Priority Ceiling Protocol: A scheduling algorithm for scheduling a set of dependent periodic tasks (Sect. 10.4.2 ). Process Lag: The delay between applying a step function to an input of a controlled object and the start of response of the controlled object (Sect. 1.3.1 ). Propagation Delay: The propagation delay of a communication channel denotes the time interval it takes for a single bit to traverse the channel (Sect. 7.2.4 ). Protocol: A protocol is a set of rules that governs the communication among part­ ners (Sect. 2.2.3 ). Radio Frequency Identification (RFID): A technology for the identification of objects by electronic means (Sect. 13.4 ) Rare Event: A rare event is a seldomly occurring event that is of critical importance. In a number of applications the predictable performance of a real-time computer system in rare event situations is of overriding concern (Sect. 1.2.1 ). Rate-Monotonic Algorithm: A dynamic preemptive scheduling algorithm for sched­ uling a set of independent periodic tasks (Sect. 10.4.1 ). Raw Data: A raw data element is an analog or digital data element as it is delivered by an unintelligent sensor ( $\rightarrow$ measured data , agreed data ) (Sect. 9.6.1 ). Real-Time (RT) Entity: A real-time (RT) entity is a state variable, either in the envi­ ronment of the computational cluster , or in the computational cluster itself, that is relevant for the given purpose. Examples of RT entities are the temperature of a vessel, the position of a switch, the set point selected by an operator, or the intended valve position calculated by the computer (Sect. 5.1 ). Real-Time (RT) Image: A real-time (RT) image is a current picture of a real-time entity (Sect. 5.3 ). Real-Time Computer System: A real-time computer system is a computer system, in which the correctness of the system behavior depends not only on the logical results of the computations, but also on the physical time when these results are produced. A real-time computer system can consist of one or more computa­ tional clusters (Sect. 1.1 ). Real-time Data Base: The real-time database is formed by the set of all temporally accurate real-time images (Sect. 1.2.1 ). Real-Time Object: A real-time (RT) object is a container inside a computer for a $R T$ entity or a RT image . A clock with a granularity that is in agreement with the dynamics of the RT object is associated with every RT object (Sect. 5.3.2 ). Real-Time Transaction: A real-time (RT) transaction is a sequence of computa­ tional and communication actions between a stimulus from the environment and a response to the environment of a computational cluster (Sect. 1.7.3 ). Reasonableness Condition: The reasonableness condition of clock synchronization states that the granularity of the global time must be larger than the precision of the ensemble of clocks (Sect. 3.2.1 ). Reference Clock: The reference clock is an ideal clock that ticks always in perfect agreement with the international standard of time (Sect. 3.1.2 ).
+Primary Event: A primary event is the cause of an alarm shower (Sect. 1.2.1 ). Priority Ceiling Protocol: A scheduling algorithm for scheduling a set of dependent periodic tasks (Sect. 10.4.2 ). Process Lag: The delay between applying a step function to an input of a controlled object and the start of response of the controlled object (Sect. 1.3.1 ). Propagation Delay: The propagation delay of a communication channel denotes the time interval it takes for a single bit to traverse the channel (Sect. 7.2.4 ). Protocol: A protocol is a set of rules that governs the communication among part­ ners (Sect. 2.2.3 ). Radio Frequency Identification (RFID): A technology for the identification of objects by electronic means (Sect. 13.4 ) Rare Event: A rare event is a seldomly occurring event that is of critical importance. In a number of applications the predictable performance of a real-time computer system in rare event situations is of overriding concern (Sect. 1.2.1 ). Rate-Monotonic Algorithm: A dynamic preemptive scheduling algorithm for sched­ uling a set of independent periodic tasks (Sect. 10.4.1 ). Raw Data: A raw data element is an analog or digital data element as it is delivered by an unintelligent sensor ( $\rightarrow$ measured data , agreed data ) (Sect. 9.6.1 ). Real-Time (RT) Entity: A real-time (RT) entity is a state variable, either in the envi­ ronment of the computational cluster , or in the computational cluster itself, that is relevant for the given purpose. Examples of RT entities are the temperature of a vessel, the position of a switch, the set point selected by an operator, or the intended valve position calculated by the computer (Sect. 5.1 ). Real-Time (RT) Image: A real-time (RT) image is a current picture of a real-time entity (Sect. 5.3 ). Real-Time Computer System: A real-time computer system is a computer system, in which the correctness of the system behavior depends not only on the logical results of the computations, but also on the physical time when these results are produced. A real-time computer system can consist of one or more computa­ tional clusters (Sect. 1.1 ). Real-time Data Base: The real-time database is formed by the set of all temporally accurate real-time images (Sect. 1.2.1 ). Real-Time Object: A real-time (RT) object is a container inside a computer for a $R T$ entity or a RT image. A clock with a granularity that is in agreement with the dynamics of the RT object is associated with every RT object (Sect. 5.3.2 ). Real-Time Transaction: A real-time (RT) transaction is a sequence of computa­ tional and communication actions between a stimulus from the environment and a response to the environment of a computational cluster (Sect. 1.7.3 ). Reasonableness Condition: The reasonableness condition of clock synchronization states that the granularity of the global time must be larger than the precision of the ensemble of clocks (Sect. 3.2.1 ). Reference Clock: The reference clock is an ideal clock that ticks always in perfect agreement with the international standard of time (Sect. 3.1.2 ).
 
 > 主要事件：主要事件是警报淋浴的原因(第 1.2.1 节)。优先级上限协议：一种用于调度一组依赖的周期性任务的调度算法(第 10.4.2 节)。过程滞后：将阶跃函数应用于受控对象的输入与受控对象开始响应之间的延迟(第 1.3.1 节)。传播延迟：通信信道的传播延迟表示单个比特穿过信道所需的时间间隔(第 7.2.4 节)。协议：协议是一组管理参与者之间通信的规则(第 2.2.3 节)。射频识别(RFID)：一种通过电子手段识别物体的技术(第 13.4 节)罕见事件：罕见事件是一种罕见的、至关重要的事件。在许多应用中，实时计算机系统在罕见事件情况下的可预测性能是最重要的问题(第 1.2.1 节)。速率单调算法：一种动态抢占式调度算法，用于调度一组独立的周期性任务(第 10.4.1 节)。原始数据：原始数据元素是由非智能传感器传递的模拟或数字数据元素($\rightarrow$测量数据，商定数据)(第 9.6.1 节)。实时实体(RT)：实时实体是一个状态变量，无论是在计算集群的环境中，还是在计算集群本身中，都与给定目的相关。RT 实体的示例包括容器的温度、开关的位置、操作员选择的设定点或计算机计算的预期阀门位置(第 5.1 节)。实时图像：实时图像是实时实体的当前图片(第 5.3 节)。实时计算机系统：实时计算机系统是一种计算机系统，其中系统行为的正确性不仅取决于计算的逻辑结果，还取决于产生这些结果的物理时间。实时计算机系统可以由一个或多个计算集群组成(第 1.1 节)。实时数据库：实时数据库由一组时间上精确的实时图像组成(第 1.2.1 节)。实时对象：实时(RT)对象是计算机内用于$R T$实体或 RT 图像的容器。具有与 RT 对象的动态一致的粒度的时钟与每个 RT 对象相关联(第 5.3.2 节)。实时事务：实时(RT)事务是来自环境的刺激和对计算集群环境的响应之间的一系列计算和通信动作(第 1.7.3 节)。合理性条件：时钟同步的合理性条件规定，全局时间的粒度必须大于时钟集合的精度(第 3.2.1 节)。参考时钟：参考时钟是一种理想的时钟，其滴答声始终与国际时间标准完全一致(第 3.1.2 节)。
 
-Reliability: The reliability $R\ (t)$ of a system is the probability that a system will provide the specified service until time $t$ , given that the system was operational at $t=t_{0}$ . (Sect. 1.4.1 ). Replica Determinism: Replica Determinism is a desired relation between replicated RT objects . A set of replicated RT objects is replica determinate if all objects of this set have the same visible state and produce the same output messages at instants that are at most an interval of $d$ time units apart (Sect. 5.6 ). Resource Adequacy: A real-time computer system is resource adequate if there are enough computing resources available to handle the specified peak load and the faults specified in the fault hypothesis . Guaranteed response systems must be based on resource adequacy ( $\rightarrow$ guaranteed timeliness ) (Sect. 1.5.4 ). Rise Time: The rise time is the time required for the output of a system to rise to a specific percentage of its final equilibrium value as a result of step change on the input (Sect. 1.3.1 ). Risk: Risk is the product of hazard severity and hazard probability. The severity of a hazard is the worst-case damage of a potential accident related to the hazard (Sect. 11.4.2 ). Safety: Safety is reliability regarding critical failure modes (Sect. 1.4.2 ). Safety Case: A safety case is a combination of a sound set of arguments supported by analytical and experimental evidence substantiating the safety of a given sys­ tem (Sect. 11.4.3 ). Safety-Critical Real-Time Computer System: Synonym to hard real-time computer system (Sect. 1.1 ). Sampling: In sampling , the state of a RT entity is periodically interrogated by the computer system at instants that are in the sphere of control of the computer system. If a memory element is required to store the effect of an event , the mem­ ory element is outside the sphere of control of the computer system (Sect. 1.3.1 ). S ched ul ability Test: A s ched ul ability test determines whether there exists a schedule such that all tasks of a given set will meet their deadlines (Sect. 10.1.2 ). Semantic Agreement: An agreement among measured variables is called semantic agreement if the meanings of the different measured values are related to each other by a process model that is based on a priori knowledge about the physical characteristics and the dynamics of the controlled object (Sect. 9.6.3 ). Semantic Content: The essential meaning of a statement or variable as understood by an end-user. The same semantic content can be represented in different syn­ tactic forms (Sect. 2.2.4 ). Signal Conditioning: Signal conditioning refers to all processing steps that are required to generate a measured data element from a raw data element (Sect. 1.2.1 ). Soft Deadline: A deadline for a result is soft if the result has utility even after the deadline has passed (Sect. 1.1 ). Soft Real-Time Computer System: A real-time computer system that is only con­ cerned with soft deadlines (Sect. 1.1 ). Sparse Event: An event that occurs in the active interval of a $\rightarrow$ sparse time base (Sect. 3.3 ).
+Reliability: The reliability $R\ (t)$ of a system is the probability that a system will provide the specified service until time $t$ , given that the system was operational at $t=t_{0}$. (Sect. 1.4.1 ). Replica Determinism: Replica Determinism is a desired relation between replicated RT objects. A set of replicated RT objects is replica determinate if all objects of this set have the same visible state and produce the same output messages at instants that are at most an interval of $d$ time units apart (Sect. 5.6 ). Resource Adequacy: A real-time computer system is resource adequate if there are enough computing resources available to handle the specified peak load and the faults specified in the fault hypothesis. Guaranteed response systems must be based on resource adequacy ( $\rightarrow$ guaranteed timeliness ) (Sect. 1.5.4 ). Rise Time: The rise time is the time required for the output of a system to rise to a specific percentage of its final equilibrium value as a result of step change on the input (Sect. 1.3.1 ). Risk: Risk is the product of hazard severity and hazard probability. The severity of a hazard is the worst-case damage of a potential accident related to the hazard (Sect. 11.4.2 ). Safety: Safety is reliability regarding critical failure modes (Sect. 1.4.2 ). Safety Case: A safety case is a combination of a sound set of arguments supported by analytical and experimental evidence substantiating the safety of a given sys­ tem (Sect. 11.4.3 ). Safety-Critical Real-Time Computer System: Synonym to hard real-time computer system (Sect. 1.1 ). Sampling: In sampling , the state of a RT entity is periodically interrogated by the computer system at instants that are in the sphere of control of the computer system. If a memory element is required to store the effect of an event , the mem­ ory element is outside the sphere of control of the computer system (Sect. 1.3.1 ). S ched ul ability Test: A s ched ul ability test determines whether there exists a schedule such that all tasks of a given set will meet their deadlines (Sect. 10.1.2 ). Semantic Agreement: An agreement among measured variables is called semantic agreement if the meanings of the different measured values are related to each other by a process model that is based on a priori knowledge about the physical characteristics and the dynamics of the controlled object (Sect. 9.6.3 ). Semantic Content: The essential meaning of a statement or variable as understood by an end-user. The same semantic content can be represented in different syn­ tactic forms (Sect. 2.2.4 ). Signal Conditioning: Signal conditioning refers to all processing steps that are required to generate a measured data element from a raw data element (Sect. 1.2.1 ). Soft Deadline: A deadline for a result is soft if the result has utility even after the deadline has passed (Sect. 1.1 ). Soft Real-Time Computer System: A real-time computer system that is only con­ cerned with soft deadlines (Sect. 1.1 ). Sparse Event: An event that occurs in the active interval of a $\rightarrow$ sparse time base (Sect. 3.3 ).
 
 > 可靠性：系统的可靠性$R\(t)$是指系统在时间$t$之前提供指定服务的概率，前提是系统在$t=t_{0}$时运行。(第 1.4.1 节)。副本决定论：副本决定论是复制的 RT 对象之间的一种理想关系。如果一组复制的 RT 对象的所有对象都具有相同的可见状态，并且在相隔最多$d$个时间单位的时刻产生相同的输出消息，则该组复制 RT 对象是副本确定的(第 5.6 节)。资源充足性：如果有足够的计算资源来处理指定的峰值负载和故障假设中指定的故障，则实时计算机系统是资源充足的。保证响应系统必须基于资源充足性($\rightarrow$保证及时性)(第 1.5.4 节)。上升时间：上升时间是指由于输入的阶跃变化，系统输出上升到其最终平衡值的特定百分比所需的时间(第 1.3.1 节)。风险：风险是危害严重程度和危害概率的乘积。危险的严重程度是与危险相关的潜在事故的最坏损害(第 11.4.2 节)。安全：安全是指关键故障模式的可靠性(第 1.4.2 节)。安全案例：安全案例是一组健全的论点的组合，这些论点得到了分析和实验证据的支持，证明了给定系统的安全性(第 11.4.3 节)。安全关键实时计算机系统：硬实时计算机系统的同义词(第 1.1 节)。采样：在采样中，计算机系统会在计算机系统控制范围内的时刻定期询问 RT 实体的状态。如果需要存储元件来存储事件的效果，则该存储元件不在计算机系统的控制范围内(第 1.3.1 节)。成功能力测试：成功能力测试确定是否存在一个时间表，使给定集合的所有任务都能在截止日期前完成(第 10.1.2 节)。语义一致性：如果不同测量值的含义通过基于受控对象物理特性和动力学先验知识的过程模型相互关联，则测量变量之间的一致性称为语义一致性(第 9.6.3 节)。语义内容：最终用户理解的语句或变量的基本含义。相同的语义内容可以用不同的同义形式表示(第 2.2.4 节)。信号调节：信号调节是指从原始数据元素生成测量数据元素所需的所有处理步骤(第 1.2.1 节)。软截止日期：如果结果在截止日期之后仍然有用，则结果的截止日期是软的(第 1.1 节)。软实时计算机系统：仅与软截止日期相关的实时计算机系统(第 1.1 节)。稀疏事件：在$\rightarrow$稀疏时基的活动间隔内发生的事件(第 3.3 节)。
 
@@ -11403,11 +11432,11 @@ Sparse Time Base: A time base in a distributed computer systems where the physi�
 
 > 稀疏时基：分布式计算机系统中的时基，其中物理时间被划分为无限序列的活动和静默间隔，稀疏事件可能仅在活动间隔中生成(第 3.3 节)。控制范围(SOC)：子系统的控制范围由一组 RT 实体定义，其值在该子系统内建立(第 5.1.1 节)。零星任务：零星任务是指任务请求时间未知，但已知连续执行请求之间存在最小时间间隔的任务($\rightarrow$周期性任务，$\right arrow$非周期性任务)(第 10.1.2 节)。欺骗攻击：一种安全攻击，对手伪装成合法用户，以获得对系统的未经授权的访问(第 6.2.2 节)。状态：组件在给定时刻的状态是一种数据结构，其中包含与组件未来操作相关的所有过去信息(第 4.2 节)。状态估计：状态估计是一种在 RT 对象内构建 RT 实体模型的技术，用于计算 RT 实体在选定未来时刻的可能状态，并相应地更新相关的 RT 图像(第 5.4.3 节)。状态消息：如果消息包含有关状态的信息，如果消息的新版本替换了以前的版本，并且在读取时没有使用该消息($\rightarrow$事件消息)，则该消息是状态消息(第 4.3.4 节)。同步条件：同步条件是时钟同步的必要条件。它涉及收敛函数、漂移偏移和精度(第 3.4.1 节)。系统体系(SoS)：由一组几乎自主的组成系统组成的系统，这些系统决定合作以实现共同目标(第 4.7.3 节)。任务描述符列表(TADL)：任务描述符列表是时间触发操作系统中的静态数据结构，包含必须分派任务的时刻(第 9.2.1 节)。任务请求时间：任务请求时间是指任务准备执行的时刻(第 10.1.2 节)。任务：任务是程序的执行($\rightarrow$简单任务，$\right arrow$复杂任务)(第 9.2 节)。时间精度：如果实时图像的当前值为相应 RT 实体值的时刻与“现在”之间的时间间隔小于特定应用的界限，则实时图像在时间上是准确的(第 5.4 节)。时间控制：时间控制涉及确定必须激活任务或必须阻止任务的实时时刻($\rightarrow$逻辑控制)(第 4.1.3 节)。时间故障：当一个值在系统用户界面上显示在预期的实时间隔之外时，就会发生时间故障。只有当系统规范包含有关系统预期时间行为的信息时，才会存在时间故障(同义词计时故障)(第 6.1.3 节)。时间顺序：一组事件的时间顺序是事件在时间线上发生的顺序(第 3.1.1 节)。
 
-Thrashing: The phenomenon that a system’s throughput decreases abruptly with increasing load is called thrashing (Sect. 7.2.5 ) . Tick: A tick (synonym: macrotick) of the global time is a selected microtick of the local clock. The offset between any two respective global ticks of an ensemble of synchronized clocks must always be less than the precision of the ensemble ( $\rightarrow$ microtick, reasonableness condition ) (Sect. 3.2.1 ). Time-Stamp: A time-stamp of an event with respect to a given clock is the state of the clock at the instant of occurrence of the event (Sect. 3.1.2 ). Time-Division Multiple Access (TDMA): Time-division multiple access is a time-­ triggered communication technology where the time axis is statically partitioned into slots. Each slot is statically assigned to a component . A component is only allowed to send a message during its slot (Sect. 7.5 ). Time-Triggered Architecture (TTA): A distributed computer architecture for real-­ time applications, where all components are aware of the progression of the global time and where most actions are triggered by the progression of this global time (Sect. 11.7 ). Time-Triggered Ethernet (TTEthernet): An extension of standard Ethernet that sup­ ports deterministic message transport (Sect. 7.5.2 ). Time-Triggered Protocol (TTP): A communication protocol where the instant of starting a message transmission is derived from the progression of the global time (Sect. 7.5.1 ). Time-Sensitive Networking (TSN): A set of protocols and mechanisms for real-time communication, standardized within the IEEE 802.1, including time-triggered communication (Sect. 7.5.3 ). Timed Message: A timed message is a message that contains the time-stamp of an event (e.g., point of observation) in the data field of the message (Sect. 9.3.1 ). Timing Failure: $\rightarrow$ Temporal failure Transducer: A device converting energy from one domain into another. The device can either be a sensor or an actuator (Sect. 9.5 ) Transient Fault: A transient fault is a fault that exists only for a short period of time after which it disappears. The hardware is not permanently affected by a tran­ sient fault (Sect. 6.1.1 ). Trigger: A trigger is an event that causes the start of some action (Sect. 1.5.5 ). Trigger Task: A trigger task is a time-triggered task that evaluates a condition on a set of temporally accurate variables and generates a trigger for an application task (Sect. 9.2.2).Triple-Modular Redundancy (TMR): A fault-tolerant system configuration where a fault-tolerant unit (FTU) consists of three synchronized replica deterministic components . A value or timing failure of one component can be masked by the majority ( $\rightarrow$ voting ) (Sect. 6.4.2 ). Understanding: Understanding develops if the concepts and relationships that are employed in the representation a model have been adequately linked with the $\rightarrow$ conceptual landscape and the methods of reasoning of the observer (Sect. 2.1.3 ).
+Thrashing: The phenomenon that a system’s throughput decreases abruptly with increasing load is called thrashing (Sect. 7.2.5 ). Tick: A tick (synonym: macrotick) of the global time is a selected microtick of the local clock. The offset between any two respective global ticks of an ensemble of synchronized clocks must always be less than the precision of the ensemble ( $\rightarrow$ microtick, reasonableness condition ) (Sect. 3.2.1 ). Time-Stamp: A time-stamp of an event with respect to a given clock is the state of the clock at the instant of occurrence of the event (Sect. 3.1.2 ). Time-Division Multiple Access (TDMA): Time-division multiple access is a time-­ triggered communication technology where the time axis is statically partitioned into slots. Each slot is statically assigned to a component. A component is only allowed to send a message during its slot (Sect. 7.5 ). Time-Triggered Architecture (TTA): A distributed computer architecture for real-­ time applications, where all components are aware of the progression of the global time and where most actions are triggered by the progression of this global time (Sect. 11.7 ). Time-Triggered Ethernet (TTEthernet): An extension of standard Ethernet that sup­ ports deterministic message transport (Sect. 7.5.2 ). Time-Triggered Protocol (TTP): A communication protocol where the instant of starting a message transmission is derived from the progression of the global time (Sect. 7.5.1 ). Time-Sensitive Networking (TSN): A set of protocols and mechanisms for real-time communication, standardized within the IEEE 802.1, including time-triggered communication (Sect. 7.5.3 ). Timed Message: A timed message is a message that contains the time-stamp of an event (e.g., point of observation) in the data field of the message (Sect. 9.3.1 ). Timing Failure: $\rightarrow$ Temporal failure Transducer: A device converting energy from one domain into another. The device can either be a sensor or an actuator (Sect. 9.5 ) Transient Fault: A transient fault is a fault that exists only for a short period of time after which it disappears. The hardware is not permanently affected by a tran­ sient fault (Sect. 6.1.1 ). Trigger: A trigger is an event that causes the start of some action (Sect. 1.5.5 ). Trigger Task: A trigger task is a time-triggered task that evaluates a condition on a set of temporally accurate variables and generates a trigger for an application task (Sect. 9.2.2).Triple-Modular Redundancy (TMR): A fault-tolerant system configuration where a fault-tolerant unit (FTU) consists of three synchronized replica deterministic components. A value or timing failure of one component can be masked by the majority ( $\rightarrow$ voting ) (Sect. 6.4.2 ). Understanding: Understanding develops if the concepts and relationships that are employed in the representation a model have been adequately linked with the $\rightarrow$ conceptual landscape and the methods of reasoning of the observer (Sect. 2.1.3 ).
 
-> 抖动：系统吞吐量随着负载的增加而突然下降的现象称为抖动(第 7.2.5 节)。滴答：全球时间的滴答(同义词：macrotick)是本地时钟的选定微滴答。同步时钟集合的任何两个相应全局滴答之间的偏移必须始终小于集合的精度($\rightarrow$microtick，合理性条件)(第 3.2.1 节)。时间戳：事件相对于给定时钟的时间戳是事件发生时时钟的状态(第 3.1.2 节)。时分多址(TDMA)：时分多址是一种时间触发的通信技术，其中时间轴被静态地划分为时隙。每个插槽都静态分配给一个组件。组件只允许在其插槽期间发送消息(第 7.5 节)。时间触发架构(TTA)：一种用于实时应用程序的分布式计算机架构，其中所有组件都知道全球时间的进程，并且大多数操作都是由该全球时间的进展触发的(第 11.7 节)。时间触发以太网(TTEthernet)：支持确定性消息传输的标准以太网的扩展(第 7.5.2 节)。时间触发协议(TTP)：一种通信协议，其中开始消息传输的时刻来自全球时间的进程(第 7.5.1 节)。时间敏感网络(TSN)：一组用于实时通信的协议和机制，在 IEEE 802.1 中标准化，包括时间触发通信(第 7.5.3 节)。定时消息：定时消息是在消息的数据字段中包含事件(例如观察点)的时间戳的消息(第 9.3.1 节)。定时故障：$\rightarrow$时间故障传感器：一种将能量从一个域转换到另一个域的设备。该设备可以是传感器或执行器(第 9.5 节)瞬态故障：瞬态故障是指仅在短时间内存在，之后消失的故障。硬件不会受到传输故障的永久影响(第 6.1.1 节)。触发器：触发器是导致某个动作开始的事件(第 1.5.5 节)。触发器任务：触发器任务是一种时间触发的任务，它评估一组时间精确变量的条件，并为应用程序任务生成触发器(第 9.2.2 节)。三模冗余(TMR)：一种容错系统配置，其中容错单元(FTU)由三个同步的副本确定性组件组成。一个组件的值或时间故障可以被多数票($\rightarrow$投票)掩盖(第 6.4.2 节)。理解：如果模型表示中使用的概念和关系与$\rightarrow$概念景观和观察者的推理方法充分联系在一起，就会产生理解(第 2.1.3 节)。
+> 抖动：系统吞吐量随着负载的增加而突然下降的现象称为抖动(第 7.2.5 节)。滴答：全局时间的滴答(同义词：macrotick)是本地时钟的选定微滴答。同步时钟集合的任何两个相应全局滴答之间的偏移必须始终小于集合的精度($\rightarrow$microtick，合理性条件)(第 3.2.1 节)。时间戳：事件相对于给定时钟的时间戳是事件发生时时钟的状态(第 3.1.2 节)。时分多址(TDMA)：时分多址是一种时间触发的通信技术，其中时间轴被静态地划分为时隙。每个插槽都静态分配给一个组件。组件只允许在其插槽期间发送消息(第 7.5 节)。时间触发架构(TTA)：一种用于实时应用程序的分布式计算机架构，其中所有组件都知道全局时间的进程，并且大多数操作都是由该全局时间的进展触发的(第 11.7 节)。时间触发以太网(TTEthernet)：支持确定性消息传输的标准以太网的扩展(第 7.5.2 节)。时间触发协议(TTP)：一种通信协议，其中开始消息传输的时刻来自全局时间的进程(第 7.5.1 节)。时间敏感网络(TSN)：一组用于实时通信的协议和机制，在 IEEE 802.1 中标准化，包括时间触发通信(第 7.5.3 节)。定时消息：定时消息是在消息的数据字段中包含事件(例如观察点)的时间戳的消息(第 9.3.1 节)。定时故障：$\rightarrow$时间故障传感器：一种将能量从一个域转换到另一个域的设备。该设备可以是传感器或执行器(第 9.5 节)瞬态故障：瞬态故障是指仅在短时间内存在，之后消失的故障。硬件不会受到传输故障的永久影响(第 6.1.1 节)。触发器：触发器是导致某个动作开始的事件(第 1.5.5 节)。触发器任务：触发器任务是一种时间触发的任务，它评估一组时间精确变量的条件，并为应用程序任务生成触发器(第 9.2.2 节)。三模冗余(TMR)：一种容错系统配置，其中容错单元(FTU)由三个同步的副本确定性组件组成。一个组件的值或时间故障可以被多数票($\rightarrow$投票)掩盖(第 6.4.2 节)。理解：如果模型表示中使用的概念和关系与$\rightarrow$概念景观和观察者的推理方法充分联系在一起，就会产生理解(第 2.1.3 节)。
 
-Universal Time Coordinated (UTC): An international time standard that is based on astronomical phenomena ( $\rightarrow$ International Atomic Time ) (Sect. 3.1.4 ) . Value Failure: A value failure occurs if an incorrect value is presented at the system-­ user interface (Sect. 6.1.3 ). Voter: A voter is a unit that detects and masks errors by comparing a number of independently computed input messages and delivers an output message that is based on the analysis of the inputs ( $\rightarrow$ exact voting , $\rightarrow$ inexact voting ) (Sect. 6.4.2 ). Vulnerability: A deficiency in the design or operation of a computer system that can lead to a security incident, such as an intrusion (Sect. 6.2 ). Watchdog: A watchdog is an independent external device that monitors the opera­ tion of a computer. The computer must send a periodic signal ( life sign ) to the watchdog . If this life sign fails to arrive at the watchdog within the specified time interval, the watchdog assumes that the computer has failed and takes some action (e.g., the watchdog forces the controlled object into the safe state) (Sect. 9.7.4 ). Worst-Case Administrative Overhead (WCAO): The worst-case execution time of the administrative services provided by an operating system (Sect. 10.2 ). Worst-Case Communication Delay (WCCOM): The worst-case communication delay is the maximum duration it may take to complete a communication action under the stated load- and fault hypothesis (Sect. 5.4.1 ). Worst-Case Execution Time (WCET): The worst-case execution time (WCET) is the maximum duration it may take to complete an action under the stated load and fault hypothesis , quantified over all possible input data (Sect. 10.2 ).
+Universal Time Coordinated (UTC): An international time standard that is based on astronomical phenomena ( $\rightarrow$ International Atomic Time ) (Sect. 3.1.4 ). Value Failure: A value failure occurs if an incorrect value is presented at the system-­ user interface (Sect. 6.1.3 ). Voter: A voter is a unit that detects and masks errors by comparing a number of independently computed input messages and delivers an output message that is based on the analysis of the inputs ( $\rightarrow$ exact voting , $\rightarrow$ inexact voting ) (Sect. 6.4.2 ). Vulnerability: A deficiency in the design or operation of a computer system that can lead to a security incident, such as an intrusion (Sect. 6.2 ). Watchdog: A watchdog is an independent external device that monitors the opera­ tion of a computer. The computer must send a periodic signal ( life sign ) to the watchdog. If this life sign fails to arrive at the watchdog within the specified time interval, the watchdog assumes that the computer has failed and takes some action (e.g., the watchdog forces the controlled object into the safe state) (Sect. 9.7.4 ). Worst-Case Administrative Overhead (WCAO): The worst-case execution time of the administrative services provided by an operating system (Sect. 10.2 ). Worst-Case Communication Delay (WCCOM): The worst-case communication delay is the maximum duration it may take to complete a communication action under the stated load- and fault hypothesis (Sect. 5.4.1 ). Worst-Case Execution Time (WCET): The worst-case execution time (WCET) is the maximum duration it may take to complete an action under the stated load and fault hypothesis , quantified over all possible input data (Sect. 10.2 ).
 
 > 协调世界时(UTC)：基于天文现象的国际时间标准($\rightarrow$国际原子时)(第 3.1.4 节)。值故障：如果在系统用户界面上显示不正确的值，则会发生值故障(第 6.1.3 节)。投票器：投票器是一个通过比较多个独立计算的输入消息来检测和掩盖错误的单元，并根据对输入的分析($\rightarrow$精确投票，$\right arrow$不精确投票)传递输出消息(第 6.4.2 节)。漏洞：计算机系统设计或操作中的缺陷，可能导致安全事件，如入侵(第 6.2 节)。看门狗：看门狗是一种独立的外部设备，用于监控计算机的运行。计算机必须向监视器发送周期性信号(生命信号)。如果这个生命信号未能在指定的时间间隔内到达看门狗，看门狗会认为计算机发生了故障并采取了一些行动(例如，看门狗迫使受控对象进入安全状态)(第 9.7.4 节)。最坏情况管理开销(WCAO)：操作系统提供的管理服务的最坏情况执行时间(第 10.2 节)。最坏情况通信延迟(WCCOM)：最坏情况的通信延迟是在规定的负载和故障假设下完成通信操作可能需要的最大持续时间(第 5.4.1 节)。最坏情况执行时间(WCET)：在规定的负载和故障假设下，完成一个动作可能需要的最长持续时间，在所有可能的输入数据上进行量化(第 10.2 节)。
 
@@ -11417,7 +11446,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Ahu90]Ahuja，M.，K she mk aly ani，A.D 卡尔森，T.(1990)。分布式系统中的基本计算单位。第 10 届 IEEE 分布式计算机系统会议论文集(第 12-19 页)。IEEE 出版社。
 
-[Ale77] Alexander, C. S., et al. (1977). A pattern language . Oxford University Press.
+[Ale77] Alexander, C. S., et al. (1977). A pattern language. Oxford University Press.
 
 > [Ale77]亚历山大，C.S。，等人。(1977). 一种模式语言。牛津大学出版社。
 
@@ -11425,13 +11454,13 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [All21]阿连德，I.等人。(2021). 迈向基于 Linux 的安全系统——软件执行路径覆盖率的统计方法。爱思唯尔系统架构杂志。
 
-[Alu15] Alur, R. (2015). Principles of cyber-physical systems . MIT Press.
+[Alu15] Alur, R. (2015). Principles of cyber-physical systems. MIT Press.
 
 > [Alu15]阿鲁尔，R.(2015)。网络物理系统原理。麻省理工学院出版社。
 
-[Ama21] Amazon. (2021). AWS Lambda . [https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/) . Accessed 3 Aug 2021.
+[Ama21] Amazon. (2021). AWS Lambda. [https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/). Accessed 3 Aug 2021.
 
-> [Am21]亚马逊。(2021). AWS Lambda。[https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/) . 2021 年 8 月 3 日访问。
+> [Am21]亚马逊。(2021). AWS Lambda。[https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/). 2021 年 8 月 3 日访问。
 
 [Ami01] Amidzic, O., Riehle, H. J., Fehr, T., Wienbruch, C., & Elbert, T. (2001). Pattern of focal y-bursts in chess players. Nature, 412 , 603.
 
@@ -11439,7 +11468,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 [And01] Anderson, D. L. (2001). Occam’s razor; simplicity, complexity, and global geodynam­ ics. Proceedings of the American Philosophical Society, 14 (1), 56–76.
 
-> [And01]安德森，D.L。(2001). 奥卡姆剃刀；简单性、复杂性和全球地质动力学。《美国哲学学会会报》，14(1)，56-76。
+> [And01]安德森，D.L。(2001). 奥卡姆剃刀；简单性、复杂性和全局地质动力学。《美国哲学学会会报》，14(1)，56-76。
 
 [And95] Anderson, J., Ramamurthy, S., & Jeffay, K. (1995). Real-time computing with lock-free shared objects. In Proceedings RTSS 1995 (pp. 28–37). IEEE Press.
 
@@ -11457,7 +11486,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [ARI11]ARINC.(2011)。机载系统和设备认证中的软件考虑因素(ARINC DO-178C)。ARINC。
 
-[ARI91] ARINC. (1991). Multi-transmitter data bus ARINC 629 – Part 1: Technical descrip­ tion . ARINC.
+[ARI91] ARINC. (1991). Multi-transmitter data bus ARINC 629 – Part 1: Technical descrip­ tion. ARINC.
 
 > [ARI91]ARINC.(1991)。多发射机数据总线 ARINC 629——第 1 部分：技术说明。ARINC。
 
@@ -11469,19 +11498,19 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Arm10]Armbrust，M.等人。(2010). 云计算的观点。ACM 通讯，53(4)，50-58。
 
-[Art06] ARTEMIS. (2006). Strategic research agenda. Reference designs and architectures . https://www.artemisia-­association.org/downloads/RAPPORT RD A.pdf
+[Art06] ARTEMIS. (2006). Strategic research agenda. Reference designs and architectures. https://www.artemisia-­association.org/downloads/RAPPORT RD A.pdf
 
 > [第 06 条]阿特米斯。(2006). 战略研究议程。参考设计和架构。[https://www.artemisia-association.org/downloads/RAPPORT](https://www.artemisia-association.org/downloads/RAPPORT) RD A.pdf
 
-[Art94] Arthur, W.B. (1994). On the evolution of complexity. In G.Cowan, D.Pines, & D. Meltzer (Eds.), Complexity: Metaphors, models, and reality . Westview Press.
+[Art94] Arthur, W.B. (1994). On the evolution of complexity. In G.Cowan, D.Pines, & D. Meltzer (Eds.), Complexity: Metaphors, models, and reality. Westview Press.
 
 > [第 94 条]亚瑟，W.B.(1994)。关于复杂性的演变。G.Cowan、D.Pines 和 D.Meltzer(编辑)，《复杂性：隐喻、模型和现实》。Westview 出版社。
 
-[Att09] Attaway, S. (2009). Matlab, a practical introduction to programming and problem solv­ ing . Elsevier.
+[Att09] Attaway, S. (2009). Matlab, a practical introduction to programming and problem solv­ ing. Elsevier.
 
 > [At09]阿塔韦，S.(2009)。Matlab，编程和问题解决的实用介绍。爱思唯尔。
 
-[AUD17] Audi. (2017). Audi A8  – Zentrales Fa hrer assist enz ste ue rger t (zFAS) . https://www. audi-­technology-­portal.de/de/elektrik-­elektronik/fa hrer assist enz system e/audi-­a8-­ zentrales-­fa hrer assist enz st eu er gera et-­zfas . Accessed 27 Jan 2022.
+[AUD17] Audi. (2017). Audi A8  – Zentrales Fa hrer assist enz ste ue rger t (zFAS). https://www. audi-­technology-­portal.de/de/elektrik-­elektronik/fa hrer assist enz system e/audi-­a8-­ zentrales-­fa hrer assist enz st eu er gera et-­zfas. Accessed 27 Jan 2022.
 
 > [AD17]奥迪。(2017). 奥迪 A8-Zentrales Fa hrer 辅助系统(zFAS)。https://www.奥迪技术门户网站。de/de/elektrik-elektronik/fa 负责人协助 enz 系统 e/audi-a8-zentrales-fa 负责人辅助 enz 系统。2022 年 1 月 27 日访问。
 
@@ -11509,7 +11538,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Bal17]巴尔迪尼，I.等人。(2017). 无服务器计算：当前趋势和悬而未决的问题。云计算的研究进展(第 1-20 页)。斯普林格。
 
-[Bar01] Baresi, L., & Young, M. (2001). Test Oracles . University of Oregon, Department of Computer Science.
+[Bar01] Baresi, L., & Young, M. (2001). Test Oracles. University of Oregon, Department of Computer Science.
 
 > [Bar01]巴雷西，L.和杨，M.(2001)。测试神谕。俄勒冈大学计算机科学系。
 
@@ -11536,7 +11565,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 [Bea08] Beautement, A., Sasse, M.A., & Wonham, M. (2009). The compliance budget: Managing security behavior in organizations. In Proceedings of NSPW 08 (pp. 47–58). ACM Press.
 
 > [Bea08]Beautement，A.，Sasse，M.A.和 Wonham，M.(2009)。合规预算：管理组织中的安全行为。《美国国家体育与体育协会学报》第 08 期(第 47-58 页)。ACM 出版社。
-> [Bed08] Bedau, M. A., & Humphrey, P. (2008). Emergence . MIT Press.
+> [Bed08] Bedau, M. A., & Humphrey, P. (2008). Emergence. MIT Press.
 
 [Ben00] Benini, L., & DeMicheli, G. (2000). System level power estimation: Techniques and tools. ACM Transactions on Design Automation of Electronic Systems, 5 (2), 115–192.
 
@@ -11562,7 +11591,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Bha10]Bhatt a char-yya，R.等人。(2010). 基于低成本、无处不在的 RFID 标签天线的传感。IEEE 会议录。98 (10). 1593-1600.
 
-[Bla09] Black, D.C., Donovan, J., & Bunton, B. (2009). System C: From the ground up . Springer.
+[Bla09] Black, D.C., Donovan, J., & Bunton, B. (2009). System C: From the ground up. Springer.
 
 > [Bla09]Black，D.C.、Donovan，J.和 Bunton，B.(2009)。系统 C：从头开始。斯普林格。
 
@@ -11573,7 +11602,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 [Bor07] Borkar, S. (2007). Thousand core chips – A technology perspective. In Proceedings of DAC 2007 (pp. 746–749). ACM Press.
 
 > [Bor07]博卡尔，S.(2007)。千核芯片——技术视角。2007 年 DAC 会议记录(第 746-749 页)。ACM 出版社。
-> [Bou61] Boulding, K. E. (1961). The image . Ann Arbor Paperbacks.
+> [Bou61] Boulding, K. E. (1961). The image. Ann Arbor Paperbacks.
 
 [Bou96] Boussinot, F., & Simone, R. (1996). The SL synchronous language. IEEE Transactions on Software Engineering, 22 (4), 256–266.
 
@@ -11587,31 +11616,31 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Bro00]布朗，S.(2000)。IEC 61508 概述——电气/电子/可编程电子安全相关系统的设计。计算与控制工程杂志，11(1)，6-12。
 
-[Bro10] Brooks, F.P. (2010). The design of design: Essays from a computer scientist . Addison Wesley.
+[Bro10] Brooks, F.P. (2010). The design of design: Essays from a computer scientist. Addison Wesley.
 
 > [Bro10]布鲁克斯，F.P.(2010)。设计的设计：一位计算机科学家的论文集。艾迪森·韦斯利。
 
-[Bun08] Bunge, M. (2008). Causality and modern science . Transaction Publishers.
+[Bun08] Bunge, M. (2008). Causality and modern science. Transaction Publishers.
 
 > [Bun08]邦吉，M.(2008)。因果关系与现代科学。交易发布者。
 
-[Bur09] Burns, A., & Wellings, A. (2009). Real-time systems and programming languages: Ada, real-time Java and C/real-time POSIX . Addison-Wesley.
+[Bur09] Burns, A., & Wellings, A. (2009). Real-time systems and programming languages: Ada, real-time Java and C/real-time POSIX. Addison-Wesley.
 
 > [Bur09]Burns，A.和 Wellings，A.(2009)。实时系统和编程语言：Ada、实时 Java 和 C/Real-time POSIX。艾迪森·韦斯利。
 
-[But04] Buttazzo, G. (2004). Hard real-time computing systems: Predictable scheduling algo­ rithms and applications . Springer.
+[But04] Buttazzo, G. (2004). Hard real-time computing systems: Predictable scheduling algo­ rithms and applications. Springer.
 
 > [But04]Buttazzo，G.(2004)。硬实时计算系统：可预测的调度算法和应用。斯普林格。
 
-[Cad22] Cadavid, H., et al. (2022). System and software architect ing harmonization practices in ultra-­large-­scale Systems of Systems . Preprint at: [https://arxiv.org/pdf/2201.03275.pdf](https://arxiv.org/pdf/2201.03275.pdf) . Accessed 22 Feb 2022.
+[Cad22] Cadavid, H., et al. (2022). System and software architect ing harmonization practices in ultra-­large-­scale Systems of Systems. Preprint at: [https://arxiv.org/pdf/2201.03275.pdf](https://arxiv.org/pdf/2201.03275.pdf). Accessed 22 Feb 2022.
 
-> [Cad22]卡达维德，H.等人。(2022). 超大规模系统体系中的系统和软件架构协调实践。预印本地址：[https://arxiv.org/pdf/2201.03275.pdf](https://arxiv.org/pdf/2201.03275.pdf) . 2022 年 2 月 22 日访问。
+> [Cad22]卡达维德，H.等人。(2022). 超大规模系统体系中的系统和软件架构协调实践。预印本地址：[https://arxiv.org/pdf/2201.03275.pdf](https://arxiv.org/pdf/2201.03275.pdf). 2022 年 2 月 22 日访问。
 
 [CAN90] CAN. (1992). Controller area network CAN, an in-vehicle serial communication proto­ col (SAE Handbook 1992) (pp. 20.341–20.355). SAE Press.
 
 > [CAN90]可以。(1992). 控制器局域网 CAN，一种车载串行通信协议(SAE 手册 1992)(第 20.341-20.355 页)。SAE 出版社。
 
-[Car08] Cardenas, A., Amin, S., & Shastry, S. (2008). Research challenges for the security of control systems. In Proceedings of the workshop on Hot topics in security . Usenix Association. [http://portal.acm.org/citation.cfm?id=1496671.1496677](http://portal.acm.org/citation.cfm?id=1496671.1496677)
+[Car08] Cardenas, A., Amin, S., & Shastry, S. (2008). Research challenges for the security of control systems. In Proceedings of the workshop on Hot topics in security. Usenix Association. [http://portal.acm.org/citation.cfm?id=1496671.1496677](http://portal.acm.org/citation.cfm?id=1496671.1496677)
 
 > [Car08]卡德纳斯，A.、阿明，S.和沙斯特里，S.(2008)。控制系统安全的研究挑战。安全热点问题研讨会论文集。Usenix 协会。[http://portal.acm.org/citation.cfm?id=1496671.1496677](http://portal.acm.org/citation.cfm?id=1496671.1496677)
 
@@ -11619,7 +11648,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Cha09]Chandola，V.、Banerjee，A.和 Kumar，V.(2009)。异常检测：一项调查。ACM 计算调查，41(3)，15.1-15.58。
 
-[Che87] Cheng, S. C. (1987). Scheduling algorithms for hard real-time systems – A brief survey. In Hard real-time systems . IEEE Press.
+[Che87] Cheng, S. C. (1987). Scheduling algorithms for hard real-time systems – A brief survey. In Hard real-time systems. IEEE Press.
 
 > 〔车 87〕程。(1987). 硬实时系统的调度算法——简要概述。在硬实时系统中。IEEE 出版社。
 
@@ -11683,7 +11712,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Diz19]Dizdarevic，J.等人(2019)。物联网通信协议调查以及雾和云计算集成的相关挑战。ACM 计算调查，51(6)，1-29。
 
-[Dra17] Dragoni, N., et al. (2017). Micro services: Yesterday, today, and tomorrow. In Present and ulterior software engineering . Springer.
+[Dra17] Dragoni, N., et al. (2017). Micro services: Yesterday, today, and tomorrow. In Present and ulterior software engineering. Springer.
 
 > [Dra17]Dragoni，N.等人。(2017). 微服务：昨天、今天和明天。在当前和未来的软件工程中。斯普林格。
 
@@ -11691,9 +11720,9 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Dri03]Driscoll，K.等人(2003)。拜占庭容错：从理论到现实。2003 年 SAFECOMP 会议记录(LNCS 2788)(第 235-248 页)。斯普林格。
 
-[Dys98] Dyson, G. B. (1998). Darwin among the machines – The evolution of global intelli­ gence . Basic Books.
+[Dys98] Dyson, G. B. (1998). Darwin among the machines – The evolution of global intelli­ gence. Basic Books.
 
-> [Dys98]戴森，G.B。(1998). 机器中的达尔文——全球智能的进化。基础书籍。
+> [Dys98]戴森，G.B。(1998). 机器中的达尔文——全局智能的进化。基础书籍。
 
 [EAR14] European Association of Research & Technology Organisations. (2014). The TRL scale as a research & innovation policy tool, EARTO recommendations .
 
@@ -11703,7 +11732,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Edm00]埃德蒙兹，B.(2000)。复杂性和科学建模。《科学基础》(第 379-390 页)。斯普林格。
 
-[Eid06] Eidson, J. (2006). Measurement, control and communication using IEEE 1588 . Springer.
+[Eid06] Eidson, J. (2006). Measurement, control and communication using IEEE 1588. Springer.
 
 > [Eid06]艾德森，J.(2006)。使用 IEEE 1588 进行测量、控制和通信。斯普林格。
 
@@ -11734,13 +11763,13 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 [Fel04a] Feldhofer, M., Dominikus, S., & Woke rst or fer, J. (2004). Strong authentication for RFID systems using the AES algorithms (LCNS 3156) (pp. 357–370). Springer.
 
 > [Fel04a]Feldhofer，M.、Dominikus，S.和 Woke rst or fer，J.(2004)。使用 AES 算法对 RFID 系统进行强身份验证(LCNS 3156)(第 357-370 页)。斯普林格。
-> [Fin03] Fin kenz eller, K. (2003). RFID handbook . Wiley.
+> [Fin03] Fin kenz eller, K. (2003). RFID handbook. Wiley.
 
 [Fis06] Fisher, D. A. (2006). An emergent perspective on the operation of system-of-systems (CMU/SEI-2006-TR-003). Carnegie Mellon Software Engineering Institute. http://www. dtic.mil/cgi-­bin/GetTRDoc?Location=U2&doc=GetTRDoc.pdf&AD $\leftrightharpoons$ ADA449020
 
 > [Fis06]费舍尔，D.A。(2006). 系统体系运行的紧急视角(CMU/SEI-2006-TR-003)。卡内基梅隆大学软件工程学院。http://www.dtic.mil/cgi-bin/GetTRDoc？位置=U2 和 doc=GetTRDoc.pdf 和 AD$\左右鱼叉$ADA449020
 
-[Foh94] Fohler, G. (1994). Flexibility in statically scheduled hard real-time systems . PhD thesis, Institut für Technische Informatik. Technical University of Vienna.
+[Foh94] Fohler, G. (1994). Flexibility in statically scheduled hard real-time systems. PhD thesis, Institut für Technische Informatik. Technical University of Vienna.
 
 > [Foh94]Fohler，G.(1994)。静态调度硬实时系统的灵活性。技术信息研究所博士论文。维也纳技术大学。
 
@@ -11748,14 +11777,14 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Fra01]Frank，D.等人。(2001). 硅 MOSFET 的器件缩放限制及其应用依赖性。IEEE 会议记录，89(3)，259-288。
 
-[Fri20] Freitag, C., et  al. (2020). The climate impact of ICT: A review of estimates, trends and regulations . Lancester University. [https://arxiv.org/abs/2102.02622](https://arxiv.org/abs/2102.02622) . Accessed 11 Mar 2022
+[Fri20] Freitag, C., et  al. (2020). The climate impact of ICT: A review of estimates, trends and regulations. Lancester University. [https://arxiv.org/abs/2102.02622](https://arxiv.org/abs/2102.02622). Accessed 11 Mar 2022
 
-> [Fri20]弗雷塔格，C.等人(2020)。ICT 对气候的影响：对估计、趋势和法规的回顾。兰斯特大学。[https://arxiv.org/abs/2102.02622](https://arxiv.org/abs/2102.02622) . 访问时间 2022 年 3 月 11 日
+> [Fri20]弗雷塔格，C.等人(2020)。ICT 对气候的影响：对估计、趋势和法规的回顾。兰斯特大学。[https://arxiv.org/abs/2102.02622](https://arxiv.org/abs/2102.02622). 访问时间 2022 年 3 月 11 日
 
 [Gad10] Gadh, R., et  al. (2010). RFID: A unique radio innovation for the 21st century. Proceedings of the IEEE, 98 (2), 1541–1680.
 
 > [Gad10]Gadh，R.等人(2010)。RFID：21 世纪独特的无线电创新。IEEE 会议记录，98(2)，1541–1680。
-> [Gaj09] Gajski, D. D., et al. (2009). Embedded system design . Springer.
+> [Gaj09] Gajski, D. D., et al. (2009). Embedded system design. Springer.
 
 [Gar75] Garey, M. R., & Johnson, D. S. (1975). Complexity results for multiprocessor schedul­ ing under resource constraints. SIAM Journal of Computing, 4 (4), 397–411.
 
@@ -11777,11 +11806,11 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Hal05]哈尔福德，G.S。，等人。(2005). 人类可以处理多少变量？心理科学，16(1)，70-76。
 
-[Hal92] Halbwachs, N. (1992). Synchronous programming of reactive systems . Springer.
+[Hal92] Halbwachs, N. (1992). Synchronous programming of reactive systems. Springer.
 
 > [Hl92]Halbwachs，N.(1992 年)。无功系统的同步编程。斯普林格。
 
-[Hal96] Halford, G. S., Wilson, W. H., & Phillips, S. (1996). Abstraction, nature, costs, and benefits . Department of Psychology, University of Queensland.
+[Hal96] Halford, G. S., Wilson, W. H., & Phillips, S. (1996). Abstraction, nature, costs, and benefits. Department of Psychology, University of Queensland.
 
 > [Hal96]哈尔福德，G.S。，威尔逊，W.H.和菲利普斯，S.(1996)。抽象、自然、成本和收益。昆士兰大学心理学系。
 
@@ -11789,7 +11818,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Hou06]豪斯，M.(2006)。SysML 建模语言。第十五届欧洲系统工程会议(第 9 卷，第 1-12 页)。
 
-[Hay90] Hayakawa, S. I. (1990). Language in thought and action . Harvest Original.
+[Hay90] Hayakawa, S. I. (1990). Language in thought and action. Harvest Original.
 
 > [Hay90]早川，S.I。(1990). 语言在思想和行动中。收获原创。
 
@@ -11809,7 +11838,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Her09]Herault，L.(2009)。未来节能蜂窝网络的整体方法。第二届日本-欧盟未来互联网研讨会论文集(第 212-220 页)。布鲁塞尔欧洲共同体。
 
-[HER15] HERE. (2015). Sensor ingestion interface specification . https://360.here. com/2015/06/23/here-­sensor-­data-­ingestion/ . [https://developer.here.com/documenta](https://developer.here.com/documenta)­ tion/sdii-­data-­spec/ . Accessed 27 Jan 2022.
+[HER15] HERE. (2015). Sensor ingestion interface specification. https://360.here. com/2015/06/23/here-­sensor-­data-­ingestion/. [https://developer.here.com/documenta](https://developer.here.com/documenta)­ tion/sdii-­data-­spec/. Accessed 27 Jan 2022.
 
 > [她 15]在这里。(2015). 传感器摄入接口规范。[https://360.here.com/2015/06/23/](https://360.here.com/2015/06/23/)这里-传感器-数据-摄入/。[https://developer.here.com/documentaation/sdii-data-spec/](https://developer.here.com/documentaation/sdii-data-spec/)。2022 年 1 月 27 日访问。
 
@@ -11829,7 +11858,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Hue08]休布舍尔，M.C.，&麦肯，J.A。(2008). 自主计算调查——学位、模型和应用。ACM 计算调查，40(3)，7.1-7.28。
 
-[IEA21] Data Centres and Data Transmission Networks . (2022). IEA. [https://www.iea.org/](https://www.iea.org/) reports/data-­centres-­and-­data-­transmission-­networks . Accessed 11 Mar 2022.
+[IEA21] Data Centres and Data Transmission Networks. (2022). IEA. [https://www.iea.org/](https://www.iea.org/) reports/data-­centres-­and-­data-­transmission-­networks. Accessed 11 Mar 2022.
 
 > [IEA21]数据中心和数据传输网络。(2022). IEA。[https://www.iea.org/](https://www.iea.org/)报告/数据中心和数据传输网络。访问时间 2022 年 3 月 11 日。
 
@@ -11837,7 +11866,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [IEC21]国际电工委员会。(2021). 工业通信网络——网络和系统安全(IEC 62443)。IEC。
 
-[Int09] Intel. (2009). Teraflop research chip . http://tech research.intel.com/articles/Tera-­ Scale/1449.htm
+[Int09] Intel. (2009). Teraflop research chip. http://tech research.intel.com/articles/Tera-­ Scale/1449.htm
 
 > [Int09]英特尔。(2009). Teraflop 研究芯片。[http://techresearch.intel.com/articles/Tera-Scale/1449.htm](http://techresearch.intel.com/articles/Tera-Scale/1449.htm)
 
@@ -11849,7 +11878,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [ISO21]国际标准化组织。(2021). 道路车辆——网络安全工程(ISO/SAE 21434:2021)。ISO。
 
-[ITR09] ITRS Roadmap. (2009). International technology roadmap for semiconductors, 2009 ed. Executive summary . Semiconductor Industry Association.
+[ITR09] ITRS Roadmap. (2009). International technology roadmap for semiconductors, 2009 ed. Executive summary. Semiconductor Industry Association.
 
 > [ITR09]ITRS 路线图。(2009). 国际半导体技术路线图，2009 年版。执行摘要。半导体工业协会。
 
@@ -11865,11 +11894,11 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Joh92]约翰逊，S.C.&巴特勒，R.W。(1992). 验证设计。IEEE 航空航天和电子系统杂志，7(1)，38-43。
 
-[Jon78] Jones, J. C. (1978). Design methods, seeds of human futures . Wiley.
+[Jon78] Jones, J. C. (1978). Design methods, seeds of human futures. Wiley.
 
 > [Jon78]琼斯，J.C。(1978). 设计方法，人类未来的种子。威利。
 
-[Jon97] Jones, M. (1997). What really happened on Mars Rover Pathfinder . http://catless.ncl. ac.uk/Risks/19.49.html#subj1
+[Jon97] Jones, M. (1997). What really happened on Mars Rover Pathfinder. http://catless.ncl. ac.uk/Risks/19.49.html#subj1
 
 > [Jon97]琼斯，M.(1997)。火星漫游者探路者号上到底发生了什么。http://catless.ncl.ac.uk/风险/19.49.html#subj1
 
@@ -11893,19 +11922,19 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Kan95]坎茨，H.和科扎，C.(1995)。ELECTRA 铁路信号系统：具有多样性的主动复制系统的现场经验。《金融时报》，25453-458。
 
-[Kar95] Karlson, J., et al. (1995). Integration and comparison of three physical fault-injection experiments. In Predictably dependable computing systems . Springer.
+[Kar95] Karlson, J., et al. (1995). Integration and comparison of three physical fault-injection experiments. In Predictably dependable computing systems. Springer.
 
 > [Kar95]卡尔森，J.等人。(1995). 三个物理故障注入实验的整合与比较。在可预测的可靠计算系统中。斯普林格。
 
-[Kau93] Kauffman, S. (1993). The origins of order: Self-organization and selection in evolution . Oxford University Press.
+[Kau93] Kauffman, S. (1993). The origins of order: Self-organization and selection in evolution. Oxford University Press.
 
 > [Kau93]考夫曼，S.(1993)。秩序的起源：进化中的自组织和选择。牛津大学出版社。
 
-[Kea07] Keating, M., et al. (2007). Low power methodology manual for chip design . Springer.
+[Kea07] Keating, M., et al. (2007). Low power methodology manual for chip design. Springer.
 
 > [Kea07]基廷，M.等人。(2007). 芯片设计低功耗方法手册。斯普林格。
 
-[Kim94] Kim, K. H., & Kopetz, H. (1994). A real-time object model RTO.k and an experimental investigation of its potential. In Proceedings COMPSAC 94 . IEEE Press.
+[Kim94] Kim, K. H., & Kopetz, H. (1994). A real-time object model RTO.k and an experimental investigation of its potential. In Proceedings COMPSAC 94. IEEE Press.
 
 > [Kim94]金 H.Kopetz(1994)。实时对象模型 RTO.k 及其潜力的实验研究。在 COMPSAC 94 会议记录中。IEEE 出版社。
 
@@ -11957,7 +11986,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Kop10]科佩茨，H.(2010)。时间触发架构中的节能机制。《第十三届国际学生权利委员会会议记录》(第 28-33 页)。IEEE 出版社。
 
-[Kop21] Kopetz, H. (2021). An architecture for driving automation . https://www.the-­autonomous. com/news/an-­architecture-­for-­driving-­automation . Accessed 13 Dec 2021.
+[Kop21] Kopetz, H. (2021). An architecture for driving automation. https://www.the-­autonomous. com/news/an-­architecture-­for-­driving-­automation. Accessed 13 Dec 2021.
 
 > [Kop21]H.科佩茨(2021)。一种用于驾驶自动化的架构。https://www.the--自主。com/news/an-architecture-for-drive-automation。2021 年 12 月 13 日访问。
 
@@ -12053,15 +12082,15 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Lee02]李，E.A。(2002). 嵌入式软件。《计算机进展》(第 56 卷)。学术。
 
-[Lee10] Lee, E. A., & Seshia, S. A. (2010). Introduction to embedded systems  – A cyber-physi­ cal systems approach . [http://LeeSeshia.org](http://LeeSeshia.org)
+[Lee10] Lee, E. A., & Seshia, S. A. (2010). Introduction to embedded systems  – A cyber-physi­ cal systems approach. [http://LeeSeshia.org](http://LeeSeshia.org)
 
 > [Lee10]李塞希亚，S.A。(2010). 嵌入式系统导论——一种网络物理系统方法。[http://LeeSeshia.org](http://LeeSeshia.org)
 
-[Lee90] Lee, P. A., & Anderson, T. (1990). Fault tolerance: Principles and practice . Springer.
+[Lee90] Lee, P. A., & Anderson, T. (1990). Fault tolerance: Principles and practice. Springer.
 
 > [Lee90]李，P.A.，&安德森，T.(1990)。容错：原则和实践。斯普林格。
 
-[Leh85) Lehmann, M.M., & Belady, L. (1985). Program evolution: Processes of software change . Academic.
+[Leh85) Lehmann, M.M., & Belady, L. (1985). Program evolution: Processes of software change. Academic.
 
 > [Leh85)Lehmann，M.M.和 Belady，L.(1985).程序演化：软件变革的过程。学术。
 
@@ -12069,7 +12098,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Lev08]Leverich，J.等人。(2008). 芯片多处理器存储器模型的比较评估。ACM 体系结构和代码优化汇刊，5(3)，12.1-12.30。
 
-[Lev95] Leveson, N.G. (1995). Safeware: System safety and computers . Addison Wesley Company.
+[Lev95] Leveson, N.G. (1995). Safeware: System safety and computers. Addison Wesley Company.
 
 > [Lev95]Leveson，N.G.(1995)。安全软件：系统安全和计算机。Addison-Wesley 公司。
 
@@ -12084,7 +12113,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 [Lit93] Littlewood, B., & Strigini, L. (1993). Validation of ultra-high dependability for soft­ ware-based systems. Communications of the ACM, 36 (11), 69–80.
 
 > [Lit93]Littlewood，B.和 Strigini，L.(1993)。验证基于软件的系统的超高可靠性。ACM 通讯，36(11)，69-80。
-> [Liu00] Liu, J. W. S. (2000). Real-time systems . Prentice Hall.
+> [Liu00] Liu, J. W. S. (2000). Real-time systems. Prentice Hall.
 
 [Liu73] Liu, C. L., & Layland, J. W. (1973). Scheduling algorithms for multi programming in a hard-real-­time environment. Journal of the ACM, 20 (1), 46–61.
 
@@ -12098,7 +12127,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Lun84]Lundelius，L.和 Lynch，N.(1984)。时钟同步的上限和下限。信息与控制，62199-204。
 
-[Lv09] Lv, M., et al. (2009). A survey of WCET analysis of real-time operating systems . www.neu-­rtes.org/publications/lv_ICESS09.pdf
+[Lv09] Lv, M., et al. (2009). A survey of WCET analysis of real-time operating systems. www.neu-­rtes.org/publications/lv_ICESS09.pdf
 
 > [Lv09]吕等。(2009). 实时操作系统 WCET 分析综述。[http://www.neu-rtes.org/publications/lv_ICESS09.pdf](http://www.neu-rtes.org/publications/lv_ICESS09.pdf)
 
@@ -12106,7 +12135,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Mai98]梅尔，M.W.(1998)。系统体系的架构原则。系统工程，1(4)，267-284。
 
-[Mar91] MARS. (1991). The Mars video . TU Vienna. http://pan.vmars.tuwien.ac.at/mars/video
+[Mar91] MARS. (1991). The Mars video. TU Vienna. http://pan.vmars.tuwien.ac.at/mars/video
 
 > 〔1991 年 3 月〕MARS。火星视频。TU 维也纳。http://pan.vmars.tuwien.ac.at/mars/video
 
@@ -12134,7 +12163,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Met76]梅特卡夫，R.M.和以太网。(1976). 本地计算机网络的分布式分组交换。ACM 通讯，395-404。
 
-[Mil04] Miller, D. (2004, October 27). AFDX determinism . Visual Presentation at ARINC gen­ eral session, Rockwell Collins.
+[Mil04] Miller, D. (2004, October 27). AFDX determinism. Visual Presentation at ARINC gen­ eral session, Rockwell Collins.
 
 > [Mil04]米勒，D.(2004 年 10 月 27 日)。AFDX 决定论。罗克韦尔柯林斯公司 ARINC 大会上的视觉演示。
 
@@ -12154,16 +12183,16 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Mog06]莫卧儿，C.(2006)。紧急(错误)行为与复杂软件系统。2006 年欧洲系统会议记录。ACM 出版社。
 
-[Mok83] Mok, A. (1983). Fundamental design problems of distributed systems for the hard realtime environment . PhD thesis, Massachusetts Institute of Technology.
+[Mok83] Mok, A. (1983). Fundamental design problems of distributed systems for the hard realtime environment. PhD thesis, Massachusetts Institute of Technology.
 
 > [Mok83]莫，A.(1983)。硬实时环境下分布式系统的基本设计问题。麻省理工学院博士论文。
 
-[Mor07] Morin, E. (2007). Restricted complexity, general complexity . World Scientific Publishing Corporation.
+[Mor07] Morin, E. (2007). Restricted complexity, general complexity. World Scientific Publishing Corporation.
 
 > [Mor07]莫兰，E.(2007)。受限复杂性，一般复杂性。世界科学出版公司。
 > [Mos] Moses, J. Complexity and flexibility (Working Paper).
 
-[NAS99] NASA. (1999). Mars climate orbiter Mishap investigation report . Washington, DC. [ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/M](ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/M) CO MIB Report.pdf
+[NAS99] NASA. (1999). Mars climate orbiter Mishap investigation report. Washington, DC. [ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/M](ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/M) CO MIB Report.pdf
 
 > 美国国家航空航天局。(1999). 火星气候轨道器米沙普调查报告。华盛顿特区。[ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/MCO](ftp://ftp.hq.nasa.gov/pub/pao/reports/2000/MCO) MIB 报告.pdf
 
@@ -12175,7 +12204,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Neu94]纽曼，B.C.&曹(1994)。Kerberos–计算机网络的身份验证服务。IEEE 通信杂志，32(9)，33-38。
 
-[Neu95] Neumann, P. G. (1995). Computer related risks . Addison Wesley/ACM Press.
+[Neu95] Neumann, P. G. (1995). Computer related risks. Addison Wesley/ACM Press.
 
 > [Neu95]诺伊曼，P.G。(1995). 计算机相关风险。Addison Wesley/ACM 出版社。
 
@@ -12187,15 +12216,15 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [NIS21]Ross，R.等人。(2021). 开发网络弹性系统：系统安全工程方法(NIST SP 800-160)(第 2 卷，第 1 版)。NIST。
 
-[Obe09] Obermaisser, R., & Kopetz, H. (2009). GENSYS  – An ARTEMIS cross-domain reference architecture for embedded systems . S d westdeutscher Verlag für Hoch s chul schr if ten (SVH).
+[Obe09] Obermaisser, R., & Kopetz, H. (2009). GENSYS  – An ARTEMIS cross-domain reference architecture for embedded systems. S d westdeutscher Verlag für Hoch s chul schr if ten (SVH).
 
 > [Obe09]Obermaisser，R.和 Kopetz，H.(2009)。GENSYS——嵌入式系统的 ARTEMIS 跨域参考架构。S d westdeutscher Verlag für Hoch schul if ten(SVH)。
 
-[OMG08] OMG, MARTE. (2008). Modeling and analysis of real-time and embedded systems . Object Management Group.
+[OMG08] OMG, MARTE. (2008). Modeling and analysis of real-time and embedded systems. Object Management Group.
 
 > [OMG08]天哪，马特。(2008). 实时和嵌入式系统的建模和分析。对象管理组。
 
-[OMG15] OMG. (2015). OMG data distribution service (DDS). Version 1.4 . Object Management Group.
+[OMG15] OMG. (2015). OMG data distribution service (DDS). Version 1.4. Object Management Group.
 
 > [OMG15]OMG.(2015)。OMG 数据分发服务(DDS)。版本 1.4。对象管理组。
 
@@ -12227,11 +12256,11 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Per10]佩雷斯，J.M.(2010)。用于开发安全关键嵌入式系统的可执行时间触发模型(E-TTM)(第 1-168 页)。博士。论文，奥地利维也纳工业大学技术信息研究所。
 
-[Per99] Perrow, C. (1999). Normal accidents: Living with high risk technologies . Princeton University Press.
+[Per99] Perrow, C. (1999). Normal accidents: Living with high risk technologies. Princeton University Press.
 
 > [Per99]佩罗，C.(1999)。正常事故：生活在高风险技术中。普林斯顿大学出版社。
 
-[Pet79] Peters, L. (1979). Software design: Current methods and techniques. In Infotech state of the art report on structured software development . Infotech International.
+[Pet79] Peters, L. (1979). Software design: Current methods and techniques. In Infotech state of the art report on structured software development. Infotech International.
 
 > [Pet79]彼得斯，L.(1979)。软件设计：当前的方法和技术。在 Infotech 关于结构化软件开发的最新技术报告中。信息技术国际。
 
@@ -12243,7 +12272,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Pol07]Polleti，F.等人。(2007). 用于嵌入式计算的节能多处理器片上系统：探索编程模型及其架构支持。IEEE 会议记录，56(5)，606-620。
 
-[Pol95] Poledna, S. (1995). Fault-tolerant real-time systems, the problem of replica determin­ ism . Springer.
+[Pol95] Poledna, S. (1995). Fault-tolerant real-time systems, the problem of replica determin­ ism. Springer.
 
 > [Pol95]Poledna，S.(1995)。容错实时系统，副本确定性问题。斯普林格。
 
@@ -12259,7 +12288,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Pop21]Pop，P.等人。(2021). FORA 工业物联网雾计算平台。爱思唯尔信息系统，98101727。
 
-[Pop68] Popper, K. R. (1968). The logic of scientific discovery . Hutchinson.
+[Pop68] Popper, K. R. (1968). The logic of scientific discovery. Hutchinson.
 
 > [Pop68]波普尔，K.R。(1968). 科学发现的逻辑。哈钦森。
 
@@ -12291,23 +12320,23 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Ran75]兰德尔，B.(1975)。软件容错的系统结构。IEEE 软件工程学报，SE-1(2)，220-232。
 
-[Ray10] Ray, K. (2010). Introduction to service-oriented architectures . http://an engineers per­ spective.com/wp-­content/uploads/2010/03/Introduction-­to-­SOA.pdf
+[Ray10] Ray, K. (2010). Introduction to service-oriented architectures. http://an engineers per­ spective.com/wp-­content/uploads/2010/03/Introduction-­to-­SOA.pdf
 
 > [Ray10]雷，K.(2010)。面向服务的体系结构介绍。http://anengineers perspective.com/wp-content/uploads/2010/03/SOA.pdf 简介
 
-[Rec02] Rechtin, E., & Maier, M. W. (2002). The art of systems architect ing . CRC Press.
+[Rec02] Rechtin, E., & Maier, M. W. (2002). The art of systems architect ing. CRC Press.
 
 > [Rec02]雷赫廷，E.和梅尔，M.W。(2002). 系统架构的艺术。CRC 出版社。
 
-[Rec91] Rechtin, E. (1991). Systems architect ing, creating and building complex systems . Prentice Hall.
+[Rec91] Rechtin, E. (1991). Systems architect ing, creating and building complex systems. Prentice Hall.
 
 > [建议 91]雷钦，E.(1991)。系统架构师，创建和构建复杂的系统。普伦蒂斯·霍尔。
-> [Rei10] Reisberg, D. (2010). Cognition . W.W. Norton.
-> [Rei57] Reichenbach, H. (1957). The philosophy of space and time . Dover.
+> [Rei10] Reisberg, D. (2010). Cognition. W.W. Norton.
+> [Rei57] Reichenbach, H. (1957). The philosophy of space and time. Dover.
 
-[Ric20] Ritchie, H. (2020). Climate change and flying: What share of global $C O_{2}$ emissions come from aviation? Our World in Data. https://our world in data.org/co2-­emissions-­ from-­aviation . Accessed 11 Mar 2022
+[Ric20] Ritchie, H. (2020). Climate change and flying: What share of global $C O_{2}$ emissions come from aviation? Our World in Data. https://our world in data.org/co2-­emissions-­ from-­aviation. Accessed 11 Mar 2022
 
-> [Ric20]里奇，H.(2020)。气候变化和飞行：全球二氧化碳排放量中有多少来自航空？我们的数据世界。https://our 世界数据。org/航空二氧化碳排放。访问时间 2022 年 3 月 11 日
+> [Ric20]里奇，H.(2020)。气候变化和飞行：全局二氧化碳排放量中有多少来自航空？我们的数据世界。https://our 世界数据。org/航空二氧化碳排放。访问时间 2022 年 3 月 11 日
 
 [Riv78] Rivest, R. L., Shamir, A., & Adleman, L. (1978). A method for obtaining signatures and public-key cryptosystems. Communications of the ACM, 21 (2), 120–126.
 
@@ -12329,7 +12358,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Rui14]Ruiz De Azua，J.A.和博耶，M.(2014)。在第 22 届实时网络和系统国际会议上(第 55-64 页)，在网络课程框架中完成 AVB 的建模。国际计算机学会
 
-[Rum08] Rumpler, B. (2008). Design comprehension of embedded rea-time systems . PhD thesis, Institut für Technische Informatik, TU Wien.
+[Rum08] Rumpler, B. (2008). Design comprehension of embedded rea-time systems. PhD thesis, Institut für Technische Informatik, TU Wien.
 
 > [Rum08]兰普勒，B.(2008)。嵌入式实时系统的设计理解。维也纳工业大学技术信息研究所博士论文。
 
@@ -12337,7 +12366,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Rus02]拉什比，J.(1999)。容错时间触发算法的系统形式化验证。IEEE 软件工程学报，25(5)，651-660。
 
-[Rus03] Rushby, J. (2003). A comparison of bus architectures for safety critical embedded sys­ tems . Report NASA/CR–2003–212161.
+[Rus03] Rushby, J. (2003). A comparison of bus architectures for safety critical embedded sys­ tems. Report NASA/CR–2003–212161.
 
 > [Rus03]拉什比，J.(2003)。安全关键嵌入式系统总线架构的比较。美国国家航空航天局/加拿大航天局报告-2003-212161。
 
@@ -12365,15 +12394,15 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Sal84]索尔泽，J.，里德，D.P.，&克拉克，D。(1984). 系统设计中的端到端论证。ACM 计算机系统汇刊，2(4)，277-288。
 
-[Sch88] Schwabl, W. (1988). The effect of random and systematic errors on clock synchroni­ zation in distributed systems . PhD thesis, Technical University of Vienna, Institut für Technische Informatik.
+[Sch88] Schwabl, W. (1988). The effect of random and systematic errors on clock synchroni­ zation in distributed systems. PhD thesis, Technical University of Vienna, Institut für Technische Informatik.
 
 > [Sch88]施瓦布，W.(1988)。随机和系统误差对分布式系统时钟同步的影响。维也纳技术大学技术信息研究所博士论文。
 
-[Sel08] Selberg, S. A., & Austin, M. A. (2008). Towards an evolutionary system of systems architecture . Institute for Systems Research. [http://ajcisr.eng.umd.edu/](http://ajcisr.eng.umd.edu/)\~austin/ reports.d/INCOSE2008-­Paper378.pdf
+[Sel08] Selberg, S. A., & Austin, M. A. (2008). Towards an evolutionary system of systems architecture. Institute for Systems Research. [http://ajcisr.eng.umd.edu/](http://ajcisr.eng.umd.edu/)\~austin/ reports.d/INCOSE2008-­Paper378.pdf
 
 > [Sel08]塞尔伯格，S.A.，&奥斯汀，硕士。(2008). 迈向系统架构的进化系统。系统研究所。[http://ajcisr.eng.umd.edu/](http://ajcisr.eng.umd.edu/)\~奥斯汀/报告.d/INCOSE2008-纸张 378.pdf
 
-[Ses08] Sessions, R. (2008). Simple architectures for complex enterprises . Microsoft Press.
+[Ses08] Sessions, R. (2008). Simple architectures for complex enterprises. Microsoft Press.
 
 > [Ses08]塞申斯，R.(2008)。复杂企业的简单架构。微软出版社。
 
@@ -12381,7 +12410,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Sha04]沙等。(2004). 实时调度理论：历史视角。《实时系统杂志》，28(3/4)，101-155。斯普林格。
 
-[Sha10] Shafto, M., et  al. (2010). Draft: NASA technology roadmap: Modeling, simulation, information technology & processing roadmap – Technology area 11 . NASA.
+[Sha10] Shafto, M., et  al. (2010). Draft: NASA technology roadmap: Modeling, simulation, information technology & processing roadmap – Technology area 11. NASA.
 
 > [Sha10]沙夫托，M.等人(2010)。草案：美国国家航空航天局技术路线图：建模、仿真、信息技术和处理路线图——技术领域 11。美国国家航空航天局。
 
@@ -12401,16 +12430,16 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Shi16]石，W.，等。(2016). 边缘计算：愿景与挑战。IEEE 物联网杂志，3(5)，637-646。
 
-[Sie00] Siegel, J. (2000). CORBA 3 – Fundamentals and programming . OMG Press/Wiley.
+[Sie00] Siegel, J. (2000). CORBA 3 – Fundamentals and programming. OMG Press/Wiley.
 
 > [Sie00]西格尔，J.(2000)。CORBA 3——基础和编程。OMG 出版社/威利出版社。
 
 [Sim11] Siminiceanu, R., Miner, P.S., & Person, S. (2011). A methodology for evaluat­ ing artifacts produced by a formal verification process (Technical Memorandum 20110022654). NASA.
 
 > [Sim11]Siminiceanu，R.、Miner，P.S.和 Person，S.(2011)。一种评估正式验证过程产生的工件的方法(技术备忘录 20110022654)。美国国家航空航天局。
-> [Sim81] Simon, H. A. (1981). Science of the artificial . MIT Press.
+> [Sim81] Simon, H. A. (1981). Science of the artificial. MIT Press.
 
-[Smi97] Smith, J. S. S. (1997). Application specific integrated circuits . Addision Wesley.
+[Smi97] Smith, J. S. S. (1997). Application specific integrated circuits. Addision Wesley.
 
 > [Smi97]史密斯，J.S。第(1997)条。专用集成电路。上瘾韦斯利。
 
@@ -12426,11 +12455,11 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Spr89]斯普伦特，B.，沙，L.和莱霍茨基，J.(1989)。硬实时系统的非周期性任务调度。实时系统，1(1)，27-60。
 
-[Sta03] Stamatis, D. H. (2003). Failure mode and effect analysis: FMEA from theory to execu­ tion . ASQ Quality Press.
+[Sta03] Stamatis, D. H. (2003). Failure mode and effect analysis: FMEA from theory to execu­ tion. ASQ Quality Press.
 
 > [Sta03]斯塔马蒂斯，D.H。(2003). 失效模式和影响分析：从理论到执行的 FMEA。ASQ 质量出版社。
 
-[Sta18] Stallings, W. (2018). Operating systems: Internals and design principles . Pearson.
+[Sta18] Stallings, W. (2018). Operating systems: Internals and design principles. Pearson.
 
 > [Sta18]斯托林斯，W.(2018)。操作系统：内部构件和设计原则。皮尔森。
 
@@ -12446,7 +12475,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Ste11b]Steiner，W.和 Rushby，J.(2011)。TTA 和 PALS：分布式网络物理系统的正式验证设计模式。2011 年 IEEE/AIAA 第 30 届数字航空电子系统会议(第 7B5-1 至 7B5-15 页)。IEEE。
 
-[Sus00] Sussman, J. (2000). Introduction to Transportation Systems . Artech House Publishers.
+[Sus00] Sussman, J. (2000). Introduction to Transportation Systems. Artech House Publishers.
 
 > [Sus00]萨斯曼，J.(2000)。交通系统导论。Artech House 出版社。
 
@@ -12454,7 +12483,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Sus03]萨斯曼，J.(2003)。收集关于系统复杂性的观点(工作文件系列。ESD-WP-2003-01.06-ESD)。麻省理工学院工程系统部。
 
-[Szy99] Szyperski, C. (1999). Component software  – Beyond object-oriented programming . Addision Wesley.
+[Szy99] Szyperski, C. (1999). Component software  – Beyond object-oriented programming. Addision Wesley.
 
 > [Szy99]希佩尔斯基，C.(1999)。组件软件——超越面向对象编程。上瘾韦斯利。
 
@@ -12462,11 +12491,11 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Tai03]Taiani，F.，Fabre，J.C.和 Killijian，M.O.(2003)。实现多层反射以实现容错。《2003 年 DSN 会议记录》(第 435-444 页)。IEEE 出版社。
 
-[Tal08] Taleb, N. N. (2008). The black swan: The impact of the highly improbable . Penguin.
+[Tal08] Taleb, N. N. (2008). The black swan: The impact of the highly improbable. Penguin.
 
 > [Tal08]塔勒布，N.N。(2008). 黑天鹅：极不可能的影响。企鹅。
 
-[Tas03] Force, T. (2004). Final report on the August 14, 2003 Blackout in the United States and Canada . US Department of Energy.
+[Tas03] Force, T. (2004). Final report on the August 14, 2003 Blackout in the United States and Canada. US Department of Energy.
 
 > [Tas03]原力，T.(2004)。2003 年 8 月 14 日美国和加拿大停电的最终报告。美国能源部。
 
@@ -12478,15 +12507,15 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Tin95]廷德尔，K.(1995)。硬实时通信分析。实时系统，9(2)，147-171。
 
-[Tra88] Traverse, P. (1988). AIRBUS and ATR system architecture and specification. In Software diversity in computerized control systems . Springer.
+[Tra88] Traverse, P. (1988). AIRBUS and ATR system architecture and specification. In Software diversity in computerized control systems. Springer.
 
 > [Tra88]特拉弗斯，P.(1988)。空客和 ATR 系统架构和规范。计算机控制系统中的软件多样性。斯普林格。
 
-[TTT21] TTTech. (2021). Nerve . https://www.tttech-­industrial.com/products/nerve . Accessed 28 Dec 2021.
+[TTT21] TTTech. (2021). Nerve. https://www.tttech-­industrial.com/products/nerve. Accessed 28 Dec 2021.
 
 > [TTT21]TTTech。(2021). 神经。[https://www.tttech-industrial.com/products/neural](https://www.tttech-industrial.com/products/neural)。2021 年 12 月 28 日访问。
 
-[Ver09] Vermesan, O., et al. (2009). Internet of things – Strategic research roadmap . European Commission-­Information Society and Media DG.
+[Ver09] Vermesan, O., et al. (2009). Internet of things – Strategic research roadmap. European Commission-­Information Society and Media DG.
 
 > [Ver09]Vermesan，O.等人。(2009). 物联网——战略研究路线图。欧盟委员会——信息社会与媒体总局。
 
@@ -12494,16 +12523,16 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [第 94 版]Verissimo，P.(1994)。可靠实时程序的订购和及时性要求。实时系统，7(3)，105-128。
 
-[Vig10] Vigras, W. J. (2010). Calculation of semiconductor failure data . [http://rel.intersil.com/](http://rel.intersil.com/) docs/rel/calculation of semiconductor failure rates.pdf
+[Vig10] Vigras, W. J. (2010). Calculation of semiconductor failure data. [http://rel.intersil.com/](http://rel.intersil.com/) docs/rel/calculation of semiconductor failure rates.pdf
 
 > [Vig10]维格拉斯，W.J。(2010). 半导体故障数据的计算。[http://rel.intersil.com/docs/rel/](http://rel.intersil.com/docs/rel/)半导体故障率计算.pdf
-> [Vig62] Vigotsky, L. S. (1962). Thought and language . MIT Press.
+> [Vig62] Vigotsky, L. S. (1962). Thought and language. MIT Press.
 
 [Wen78] Wensley, J. H., et al. (1978). SIFT: The design and analysis of a fault-tolerant computer for aircraft control. Proceedings IEEE, 66 (10), 1240–1255.
 
 > [Win78]温斯利，J.H。，等人。(1978). SIFT：飞机控制容错计算机的设计和分析。IEEE 会议记录，66(10)，1240-1255。
 
-[Wik10] Washington’s Axe. (2010). Wikipedia . [http://en.wikipedia.org/wiki/](http://en.wikipedia.org/wiki/) George Washington%27s_axe#George Washington.27s_axe
+[Wik10] Washington’s Axe. (2010). Wikipedia. [http://en.wikipedia.org/wiki/](http://en.wikipedia.org/wiki/) George Washington%27s_axe#George Washington.27s_axe
 
 > [Wik10]华盛顿的斧头。(2010). 维基百科。[http://en.wikipedia.org/wiki/](http://en.wikipedia.org/wiki/)乔治华盛顿 %27s_axe#乔治华盛顿.27s_axy
 
@@ -12511,7 +12540,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Wil08]Wilhelm，R.等人(2008)。最坏情况下的执行时间问题——方法概述和工具调查。ACM 嵌入式计算系统汇刊，7(3)，1-53。
 
-[Wil21] Williams son, D., & Sellgren, U. (2022). Integrated modular iz ation methodol­ ogy and process of heavy-duty trucks . https://www.diva-­portal.org/smash/record. jsf?pid=diva2%3A1532165&dswid=-­5065 . Accessed 22 Feb 2022.
+[Wil21] Williams son, D., & Sellgren, U. (2022). Integrated modular iz ation methodol­ ogy and process of heavy-duty trucks. https://www.diva-­portal.org/smash/record. jsf?pid=diva2%3A1532165&dswid=-­5065. Accessed 22 Feb 2022.
 
 > [Wil21]威廉姆斯之子，D.和塞尔格伦，U.(2022)。重型卡车的集成模块化建模方法和过程。[https://www.diva-portal.org/mash/record](https://www.diva-portal.org/mash/record)。jsf？pid=diva2%3A1532165 和 dswid=-5065。2022 年 2 月 22 日访问。
 
@@ -12519,19 +12548,19 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > [Wil90]威廉姆斯，T.J。(1990). 从工业自动化的角度来看，计算机集成制造的参考模型。爱思唯尔国际会计师联合会论文集，第 23 卷(8)，281-291 页。
 
-[Wil98] Wilson, E. O. (1998). Cons i lien ce – The unity of knowledge . Vintage Books.
+[Wil98] Wilson, E. O. (1998). Cons i lien ce – The unity of knowledge. Vintage Books.
 
 > [Wil98]威尔逊，E.O。(1998). Cons i lience——知识的统一。复古书籍。
 
-[Win01] Winfree, A. T. (2001). The geometry of biological time . Springer.
+[Win01] Winfree, A. T. (2001). The geometry of biological time. Springer.
 
 > [Win01]温弗里，A.T。(2001). 生物时间的几何学。斯普林格。
 
-[Wit90] Withrow, G. J. (1990). The natural philosophy of time . Oxford Science Publications/ Clarendon Press.
+[Wit90] Withrow, G. J. (1990). The natural philosophy of time. Oxford Science Publications/ Clarendon Press.
 
 > [Wit90]G.J.威瑟。(1990). 时间的自然哲学。牛津科学出版社/Clarendon 出版社。
 
-[Woj17] Wojciak, J., & Bray, T. (2017). Decouple and scale applications using Amazon SQS and Amazon SNS . [https://aws.amazon.com/pub](https://aws.amazon.com/pub)-­sub-­messaging/ . Accessed 3 Aug 2021.
+[Woj17] Wojciak, J., & Bray, T. (2017). Decouple and scale applications using Amazon SQS and Amazon SNS. [https://aws.amazon.com/pub](https://aws.amazon.com/pub)-­sub-­messaging/. Accessed 3 Aug 2021.
 
 > [Woj17]沃恰克，J.和布雷，T.(2017)。使用 Amazon SQS 和 Amazon SNS 解耦和扩展应用程序。[https://aws.amazon.com/pub-](https://aws.amazon.com/pub-)-子消息/。2021 年 8 月 3 日访问。
 
@@ -12539,7 +12568,7 @@ Universal Time Coordinated (UTC): An international time standard that is based o
 
 > 【Xi11】Xi，S.等人(2011)。RT Xen：在 Xen 中实现实时管理程序调度。嵌入式软件国际会议(EMSOFT)(第 39-48 页)。IEEE 出版社。
 
-[Xin08] Xing, L., & Amari, S. V. (2008). Handbook of perform ability engineering . Springer.
+[Xin08] Xing, L., & Amari, S. V. (2008). Handbook of perform ability engineering. Springer.
 
 > [新 08]邢，&阿玛丽，S.V。(2008). 执行能力工程手册。斯普林格。
 
@@ -12752,7 +12781,7 @@ Controlled object, 2–4, 6–9, 14–17, 23, 26, 28, 58, 71, 72, 88, 90, 119, 1
 
 Control loop, 1, 7–10, 21, 25, 26, 58, 70, 72, 120, 138, 158, 167, 179, 235, 245, 264, 281, 300
 
-> 控制回路，1、7–10、21、25、26、58、70、72、120、138、158、167、179、235、245、264、281、300
+> 控制回路(control loops)，1、7–10、21、25、26、58、70、72、120、138、158、167、179、235、245、264、281、300
 > Control of pace, 14
 
 Control structure, 23, 146, 224, 227, 230, 231, 236, 243–245, 256, 310, 313
@@ -12960,11 +12989,11 @@ Gateway component, 42, 52, 54, 87, 89, 103–107, 112, 113, 116, 118, 301, 302, 
 
 Global time, 17, 53, 60, 64–66, 69, 71, 73, 75, 76, 79–81, 83, 84, 92, 115, 118, 121, 122, 124, 132, 136, 141, 160, 164, 183, 193, 196, 198, 227, 244, 300–302, 354, 355, 371, 373–375, 377, 379, 380
 
-> 全球时间，17、53、60、64-66、69、71、73、75、76、79-81、83、84、92、115、118、121、122、124、132、136、141、160、164、183、193、196、198、227、244、300-302、354、355、371、373-375、377、379、380
+> 全局时间，17、53、60、64-66、69、71、73、75、76、79-81、83、84、92、115、118、121、122、124、132、136、141、160、164、183、193、196、198、227、244、300-302、354、355、371、373-375、377、379、380
 
 Global time base, 53, 57–59, 65, 66, 68, 71, 73, 79, 80, 83, 122, 129, 132, 134, 135, 141, 144, 165, 166, 197, 229, 230, 300, 371
 
-> 全球时基，53、57-59、65、66、68、71、73、79、80、83、122、129、132、134、135、141、144、165、166、197、229、230、300、371
+> 全局时基，53、57-59、65、66、68、71、73、79、80、83、122、129、132、134、135、141、144、165、166、197、229、230、300、371
 > Good clock, 61
 
 Granularity, 17, 60, 61, 64–66, 68–70, 84, 94, 119, 124, 132, 134, 139, 141, 217, 231, 310, 374, 377
